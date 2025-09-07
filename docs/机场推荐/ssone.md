@@ -7,7 +7,7 @@ tags:
   - 机场
   - 推荐
 title: 机场推荐ssone-便宜稳定
-permalink: /posts/vpn/
+permalink: /posts/vpn5/
 ---
 ssone机场，最低价10元60G/月，便宜稳定
 
