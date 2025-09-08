@@ -6,7 +6,7 @@ tags:
   - VPN
   - 机场
   - 推荐
-title: 机场推荐ssone-便宜稳定
+title: 机场推荐ssone：价格实惠速度稳定，科学上网VPN优选节点
 permalink: /posts/vpn5/
 ---
 
@@ -15,7 +15,7 @@ permalink: /posts/vpn5/
 <!-- more -->
 [ssone](https://hello-ssone.com/register?aff=QpXdVaKY)机场，最低价10元60G/月，便宜稳定
 
-## ssone 官网地址
+## 机场推荐ssone：价格实惠速度稳定，科学上网VPN优选节点
 
 [hello-ssone.com](https://hello-ssone.com/register?aff=QpXdVaKY)
 

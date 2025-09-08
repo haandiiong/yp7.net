@@ -5,7 +5,7 @@ tags:
   - VPN
   - 机场
   - 推荐
-title: Telegram 使用教程（新手必看）
+title: Telegram使用教程（新手必看）：下载注册、群组频道与代理设置全攻略
 permalink: /posts/Telegram/
 
 ---
@@ -14,7 +14,7 @@ Telegram使用教程，涵盖下载、注册、群组频道、代理设置等，
 
 <!-- more -->
 
-# Telegram 使用教程（新手必看）
+# Telegram使用教程（新手必看）：下载注册、群组频道与代理设置全攻略
 
 ## 什么是 Telegram？
 

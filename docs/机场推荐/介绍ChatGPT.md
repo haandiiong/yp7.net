@@ -5,14 +5,14 @@ tags:
   - VPN
   - 机场
   - 推荐
-title: ChatGPT 介绍
+title: ChatGPT介绍：功能亮点、应用场景与AI对话工具高效用法解析
 permalink: /posts/chatgpt/
 ---
 
 ChatGPT介绍，涵盖功能、应用场景与优势，助力科学上网用户了解AI对话工具及其高效用法。
 
 <!-- more -->
-# ChatGPT 介绍
+# ChatGPT介绍：功能亮点、应用场景与AI对话工具高效用法解析
 
 ## 一、什么是 ChatGPT？
 ChatGPT 是由 **OpenAI** 开发的一款基于 **GPT（Generative Pre-trained Transformer）系列模型** 的对话型人工智能。  
