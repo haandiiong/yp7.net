@@ -9,6 +9,11 @@ title: Telegram 使用教程（新手必看）
 permalink: /posts/Telegram/
 
 ---
+
+Telegram使用教程，涵盖下载、注册、群组频道、代理设置等，适合科学上网和新手快速入门。
+
+<!-- more -->
+
 # Telegram 使用教程（新手必看）
 
 ## 什么是 Telegram？
@@ -114,3 +119,7 @@ Telegram 是一款 **功能强大、跨平台、隐私安全** 的即时通讯�
 如果你正在寻找一款 **安全、快速、功能丰富** 的聊天软件，Telegram 是值得推荐的选择。  
 
 关键词：Telegram 使用教程、Telegram 功能、Telegram 下载方法
+
+[ssone官网](https://hello-ssone.com/register?aff=QpXdVaKY) 个人使用，稳定可靠
+
+[乐速官网](https://www.luxd.uk/#/register?code=mquP7UE5) 备选机场，按流量购买，永久使用
