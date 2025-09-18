@@ -6,16 +6,16 @@ tags:
   - 机场
   - 推荐
 title: 2025最新版Clash下载安装与订阅导入详细教程
-permalink: /posts/vpn3/
+permalink: /posts/clashverge/
 ---
 
 Clash最新版下载安装与订阅导入教程，适合科学上网、VPN用户快速配置稳定节点。
 
 <!-- more -->
 
-# 2025最新版Clash下载安装与订阅导入详细教程
+## 2025最新版Clash下载安装与订阅导入详细教程
 
-# [下载 Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.4.2)
+## [下载 Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.4.2)
 
 ## 一、开始安装  
 
@@ -29,14 +29,11 @@ Clash最新版下载安装与订阅导入教程，适合科学上网、VPN用户
 
 5. **确认以上设置无误后，点击 “安装” 开始安装过程。**  
 
-
 ## 二、完成安装与自启设置
 
 - **安装完成后，勾选 “启动 Clash for Windows”，点击 “完成”后应用会自动启动。**
 
 - **在Clash for Windows 的主界面，点击右上角的设置按钮，然后在 “GENERAL” 中找到 “Start with Windows” 选项。**
-
-
 
 ## 三、导入配置文件
 

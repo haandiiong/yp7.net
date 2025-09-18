@@ -13,7 +13,7 @@ permalink: /posts/Clash/
 Clash Verge跨平台图形化客户端，支持科学上网、代理管理、节点分流，操作简单，适合新手和进阶用户。
 
 <!-- more -->
-# Clash Verge简介：跨平台科学上网图形化客户端与代理分流全攻略
+## Clash Verge简介：跨平台科学上网图形化客户端与代理分流全攻略
 
 ## 什么是 Clash Verge？
 

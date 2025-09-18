@@ -15,7 +15,7 @@ Shadowrocket下载、安装与配置教程，支持多协议科学上网，适�
 
 <!-- more -->
 
-# Shadowrocket 下载与安装教程（iOS 科学上网工具）
+## Shadowrocket 下载与安装教程（iOS 科学上网工具）
 
 **Shadowrocket** 是一款运行在 iOS 系统上的网络代理工具，支持多种协议（如 Shadowsocks、Vmess、Trojan 等），并且可以实现规则分流、广告屏蔽、网络加速等功能。  
 本文将详细介绍 **Shadowrocket 的下载方法、安装步骤、配置教程**，帮助你快速上手。
@@ -27,6 +27,7 @@ Shadowrocket下载、安装与配置教程，支持多协议科学上网，适�
 Shadowrocket（中文常称“小火箭”）是一款专门为 iPhone 和 iPad 用户开发的网络代理客户端。它基于规则的分流机制，可以灵活管理网络流量，常用于科学上网和隐私保护。
 
 主要功能特点：
+
 - 支持 **多种代理协议**：Shadowsocks、Vmess、Trojan 等  
 - 内置 **规则分流系统**，可实现国内直连、国外代理  
 - **广告拦截与网络优化**，提升上网体验  
@@ -43,7 +44,7 @@ Shadowrocket（中文常称“小火箭”）是一款专门为 iPhone 和 iPad 
    - 支付完成后即可下载并安装  
 
 2. **Apple ID 共享下载（不推荐）**
-   - 博主可提供免费的苹果id，可发邮件给haandiiong@gmail.com，备注：需要免费的苹果id
+   - 博主可提供免费的苹果id，可发邮件给<haandiiong@gmail.com>，备注：需要免费的苹果id
 
 3. **需要注意**
    - Shadowrocket **仅在 App Store（美区/港区等）提供下载**  

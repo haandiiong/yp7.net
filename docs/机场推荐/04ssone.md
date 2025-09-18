@@ -7,7 +7,7 @@ tags:
   - 机场
   - 推荐
 title: 机场推荐ssone：价格实惠速度稳定，科学上网VPN优选节点
-permalink: /posts/vpn5/
+permalink: /posts/ssone/
 ---
 
 [ssone](https://hello-ssone.com/register?aff=QpXdVaKY)机场，价格实惠，速度稳定，支持多种套餐，是科学上网和VPN用户的优选推荐。
@@ -29,5 +29,3 @@ permalink: /posts/vpn5/
 |200元一年|5000G每年|一年，两年，三年|
 
 ## 自己用的机场，极力推荐，价格低，网速快，支持微信支付宝
-
-
