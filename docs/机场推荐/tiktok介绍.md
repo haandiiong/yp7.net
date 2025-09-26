@@ -6,7 +6,7 @@ tags:
   - 机场
   - 推荐
 title: TikTok使用教程：下载注册、视频发布与热门玩法全攻略（2025最新版）
-permalink: /posts/USDT/
+permalink: /posts/tiktok1/
 ---
 
 TikTok使用教程，详解下载、注册、视频发布与热门玩法，适合新手快速上手短视频创作。
