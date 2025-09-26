@@ -103,6 +103,4 @@ Clash 安卓版作为一款功能强大的代理工具，可以帮助你在手�
 
 如果你正在寻找 **安卓手机代理软件** 或 **科学上网工具**，Clash for Android 是一个非常值得推荐的选择。  
 
-[ssone官网](https://hello-ssone.com/register?aff=QpXdVaKY) 个人使用，稳定可靠
-
-[乐速官网](https://www.luxd.uk/#/register?code=mquP7UE5) 备选机场，按流量购买，永久使用
+[👉 立即访问机场合集](https://yp7.net/posts/vpnsum/)

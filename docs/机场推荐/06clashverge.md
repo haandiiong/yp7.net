@@ -40,6 +40,4 @@ Clash最新版下载安装与订阅导入教程，适合科学上网、VPN用户
 - **一键导入订阅链接**：各大机场订阅网站均可
 - **手工导入订阅链接**：需要购买订阅链接
 
-[ssone官网](https://hello-ssone.com/register?aff=QpXdVaKY) 个人使用，稳定可靠
-
-[乐速官网](https://www.luxd.uk/#/register?code=mquP7UE5) 备选机场，按流量购买，永久使用
+[👉 立即访问机场合集](https://yp7.net/posts/vpnsum/)

@@ -110,6 +110,4 @@ Shadowrocket（中文常称“小火箭”）是一款专门为 iPhone 和 iPad 
 
 ---
 
-[ssone官网](https://hello-ssone.com/register?aff=QpXdVaKY) 个人使用，稳定可靠
-
-[乐速官网](https://www.luxd.uk/#/register?code=mquP7UE5) 备选机场，按流量购买，永久使用
+[👉 立即访问机场合集](https://yp7.net/posts/vpnsum/)
