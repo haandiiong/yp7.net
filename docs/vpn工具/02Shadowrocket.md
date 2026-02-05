@@ -43,13 +43,10 @@ Shadowrocket（中文常称“小火箭”）是一款专门为 iPhone 和 iPad 
    - 价格约 **2.99 美元**（根据地区有所差异）  
    - 支付完成后即可下载并安装  
 
-2. **Apple ID 共享下载（不推荐）**
-   - 博主可提供免费的苹果id，可发邮件给<haandiiong@gmail.com>，备注：需要免费的苹果id
-
-3. **第三方购买渠道**
+2. **第三方购买渠道**
    - 选择已购Shadowrocket的苹果id，可省去2.99美元，但已购Shadowrocket的苹果id价格高于普通苹果id。[立即购买苹果id](https://yh.vip9.pro/#group-5)
 
-4. **需要注意**
+3. **需要注意**
    - Shadowrocket **仅在 App Store（美区/港区等）提供下载**  
    - 中国大陆区 App Store 无法直接搜索到，需要切换账号  
 
