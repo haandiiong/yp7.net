@@ -134,4 +134,4 @@ Shadowrocket 是 iOS 平台上功能最完整、使用体验最优的代理客�
 
 [👉 机场合集与推荐配置](https://yp7.net/posts/vpnsum/)
 
-[👉 第三方 Apple ID 获取（可选）](https://yh.vip9.pro/#group-5)
+[👉 第三方 Apple ID 获取（可选）](https://yh.vip9.pro/?aff=8ke9x6Xp)
