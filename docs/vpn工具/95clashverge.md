@@ -1,5 +1,6 @@
 ---
-createTime: 2025/04/06 17:38:00
+createTime: 2026/02/06 17:38:00
+sticky: 95
 tags:
   - 科学上网
   - VPN
@@ -15,7 +16,7 @@ Clash最新版下载安装与订阅导入教程，适合科学上网、VPN用户
 
 ## 2025最新版Clash下载安装与订阅导入详细教程
 
-## [下载 Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.4.2)
+## [下载 Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/autobuild)
 
 ## 一、开始安装  
 
