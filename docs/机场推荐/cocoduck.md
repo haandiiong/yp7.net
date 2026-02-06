@@ -278,7 +278,7 @@ CocoDuck在国际翻墙服务市场中，以独立自主的运维态度和专业
 
 ### 📚 使用教程
 - 📱 [Clash for Android使用教程](https://www.yp7.net/article/eh8f4n86/)
-- 🖥️ [Clash for Windows使用教程](https://www.yp7.net/posts/clashverge/)
+- 🖥️ [Clash for Windows使用教程](https://www.yp7.net/article/0gematwc/)
 - 🍎 [Clash for iOS使用教程](https://www.yp7.net/posts/Shadowrocket/)
 
 ### 🏆 更多机场推荐
@@ -292,7 +292,7 @@ CocoDuck在国际翻墙服务市场中，以独立自主的运维态度和专业
 | 平台 | 推荐客户端 | 详细教程 |
 | :--- | :--- | :--- |
 | **Android** | Clash for Android | [安卓 Clash 使用教程](/article/eh8f4n86/) |
-| **iOS** | Shadowrocket | [小火箭(Shadowrocket)使用教程](/article/z747kgjd/) |
+| **iOS** | Shadowrocket | [小火箭(Shadowrocket)使用教程](/posts/Shadowrocket/) |
 | **Windows** | Clash Verge Rev | [Windows Clash 安装教程](/article/0gematwc/) |
 | **macOS** | ClashX / Verge | [Mac Clash 使用教程](/article/0gematwc/) |
 

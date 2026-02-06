@@ -120,7 +120,7 @@ XXYUN 作为运营时间超过2年的专线中转网络，依靠全国性的BGP�
 ### 客户端使用文档资源
 
 - 📱 [Clash for Android使用教程](https://www.yp7.net/article/eh8f4n86/)
-- 🖥️ [Clash for Windows使用教程](https://www.yp7.net/posts/clashverge/)
+- 🖥️ [Clash for Windows使用教程](https://www.yp7.net/article/0gematwc/)
 - 🍎 [Clash for iOS使用教程](https://www.yp7.net/posts/Shadowrocket/)
 
 ## 应用场景与最佳实践 {#section-6}
@@ -180,6 +180,6 @@ A：可按顺序尝试以下调试步骤：第一步更换不同的地理位置�
 | 操作系统 | 推荐工具方案 | 配置与使用完整教程 |
 | :--- | :--- | :--- |
 | **Android** | Clash for Android / V2rayNG | [在Clash框架下的Android快速指南](/article/eh8f4n86/) |
-| **iOS** | Shadowrocket 或 Quantumult X | [iOS Shadowrocket客户端深度教程](/article/z747kgjd/) |
+| **iOS** | Shadowrocket 或 Quantumult X | [iOS Shadowrocket客户端深度教程](/posts/Shadowrocket/) |
 | **Windows** | Clash Verge/ Clash for Windows | [Windows系统Clash部署全流程](/article/0gematwc/) |
 | **macOS** | ClashX / Clash for Mac | [Mac平台Clash工具的实用指南](/article/0gematwc/) |
