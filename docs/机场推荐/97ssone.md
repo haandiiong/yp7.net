@@ -101,3 +101,13 @@ A: 支持7天内无条件退款，满足条件即可在后台申请。
 
 **Q5: 会不会被检测到使用VPN而限制？**
 A: 使用Trojan协议时隐蔽性更强，且ssone节点均为优质供应商提供，风险相对较低。
+
+## 机场汇总
+
+- [更多VPN合集选择指南](https://www.yp7.net/posts/vpnsum/)
+
+### 客户端使用方法
+
+- 📱 [Android系统Clash完整部署](https://www.yp7.net/article/eh8f4n86/)
+- 🖥️ [Windows电脑Clash快速安装](https://www.yp7.net/article/0gematwc/)
+- 🍎 [iPhone手机工具配置全攻略](https://www.yp7.net/posts/Shadowrocket/)
