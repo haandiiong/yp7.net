@@ -37,7 +37,7 @@ flybit官网地址：[goflybit.com](https://www.fb2026.cc/#/register?code=p3DOcg
 
 ## 机场汇总
 
-- [更多VPN合集选择指南](https://www.yp7.net/posts/vpnsum/)
+- [更多VPN合集选择指南]((https://www.yp7.net/posts/low-latency-vpn-guide-2026/))
 
 ### 客户端使用方法
 
