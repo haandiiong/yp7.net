@@ -80,4 +80,4 @@ description: 2026年Android手机Clash下载安装教程，简单易用适合新
 
 然后就完成了
 
-[👉 机场合集与更多教程](https://yp7.net/posts/vpnsum/)
+[👉 机场合集与更多教程](https://www.yp7.net/posts/low-latency-vpn-guide-2026/)

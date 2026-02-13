@@ -104,7 +104,7 @@ A: 使用Trojan协议时隐蔽性更强，且ssone节点均为优质供应商提
 
 ## 机场汇总
 
-- [更多VPN合集选择指南]((https://www.yp7.net/posts/low-latency-vpn-guide-2026/))
+- [更多VPN合集选择指南](https://www.yp7.net/posts/low-latency-vpn-guide-2026/)
 
 ### 客户端使用方法
 
