@@ -1,7 +1,7 @@
 ---
 title: XXYUN机场怎么样？2026真实评测 | 9.99元100GB是否值得？官网入口+测速分析
-createtime: 2026/02/23
-permalink: /xxyun-review-2026/
+createtime: 2026/02/23 19:36:00
+permalink: /posts/xxyun-review-2026/
 tags:
   - XXYUN
   - 机场评测
@@ -11,6 +11,8 @@ tags:
   - 流媒体解锁
 description: XXYUN机场靠谱吗？2026年最新深度评测，包含真实测速数据、优缺点分析、流媒体解锁测试、ChatGPT支持情况及官网入口说明。适合想找9.99元100GB高性价比专线机场的用户参考。
 ---
+
+<!-- more -->
 
 # XXYUN机场怎么样？2026年真实评测
 
@@ -213,3 +215,13 @@ BGP多线优化对三网兼容性更好，高峰期更稳定。
 # 法律声明
 
 本文仅用于技术评测与网络知识交流，请遵守所在地法律法规使用相关服务。
+
+## 机场汇总
+
+- [更多VPN合集选择指南](https://www.yp7.net/posts/low-latency-vpn-guide-2026/)
+
+### 客户端使用方法
+
+- 📱 [Android系统Clash完整部署](https://www.yp7.net/article/eh8f4n86/)
+- 🖥️ [Windows电脑Clash快速安装](https://www.yp7.net/article/0gematwc/)
+- 🍎 [iPhone手机工具配置全攻略](https://www.yp7.net/posts/Shadowrocket/)
