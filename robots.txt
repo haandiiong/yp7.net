@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /blog/
+
+Sitemap: https://yp7.net/sitemap.xml
+
+User-agent:*
+Disallow:
