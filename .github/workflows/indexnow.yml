@@ -1,0 +1,26 @@
+name: IndexNow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Submit URLs
+        run: |
+          curl -X POST "https://api.indexnow.org/indexnow" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "host": "yp7.net",
+            "key": "8465d5c195b646239252f14d3840d869",
+            "urlList": [
+              "https://yp7.net/",
+              "https://yp7.net/posts/",
+              "https://yp7.net/article/",
+              "https://yp7.net/sitemap.xml"
+            ]
+          }'
