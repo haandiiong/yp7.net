@@ -5,31 +5,11 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   lang: 'zh-CN',
   head: [
-    // ['link', { rel: 'icon', href: '/images/favicon.ico' }],
     ['meta', { charset: 'utf-8' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
-
-    ['meta', {
-      name: 'keywords',
-      content: 'VPN推荐,机场推荐,科学上网教程,翻墙教程,低延迟VPN,节点测速'
-    }],
-
-    ['link', { rel: 'canonical', href: 'https://yp7.net/' }],
-
-    // OpenGraph
-    ['meta', { property: 'og:title', content: 'yp7 - VPN与机场推荐' }],
-    ['meta', { property: 'og:description', content: '稳定机场评测、科学上网完整教程与节点测速。' }],
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:url', content: 'https://yp7.net/' }],
-    ['meta', { property: 'og:site_name', content: 'yp7.net' }],
-    ['meta', { property: 'og:locale', content: 'zh_CN' }],
-    ['meta', { property: 'og:image', content: 'https://yp7.net/image.png' }],
-
-    // Twitter
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: 'yp7.net - 2026机场推荐指南' }],
-    ['meta', { name: 'twitter:description', content: '最新VPN推荐、机场评测与低延迟节点测速。' }],
-    ['meta', { name: 'twitter:image', content: 'https://yp7.net/image.png' }],
+    ['meta', { name: 'robots', content: 'index, follow' }],
+    ['meta', { name: 'author', content: 'yp7' }],
+    ['meta', { name: 'keywords', content: 'VPN推荐,科学上网,机场推荐,翻墙VPN' }],
   ],
   theme: plumeTheme({
     // logo: '/images/logo.svg',
