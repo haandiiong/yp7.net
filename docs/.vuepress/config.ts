@@ -37,7 +37,21 @@ export default defineUserConfig({
     },
     markdown: {
       collapse: true,
-    }
+    },
+    blog: {
+      tags: false,
+      categories: false,
+      archives: false
+    },
+    collections: [
+      {
+        type: 'post',
+        dir: 'blog',
+        tags: false,
+        categories: false,
+        archives: false
+      }
+    ]
   }),
   bundler: viteBundler({
     viteOptions: {

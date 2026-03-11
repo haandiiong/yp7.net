@@ -6,9 +6,9 @@ tags:
   - Shadowrocket
   - 教程
   - 工具
-title: Shadowrocket 配置指南与 iOS 科学上网应用详解（下载、安装、订阅）
+title: Shadowrocket 下载与配置教程（2026最新）iOS 小火箭订阅导入完整指南
 permalink: /posts/Shadowrocket/
-description: 本文为 Shadowrocket（小火箭）完整使用指南，覆盖 App Store 获取、VPN 权限配置、订阅导入、规则分流设置及常见问题解答，适合 iPhone/iPad 用户快速上手。
+description: Shadowrocket 下载与使用教程（2026）：详细讲解 Shadowrocket 安装、订阅导入、节点更新和分流规则设置，适用于 iPhone 和 iPad 用户快速配置小火箭代理。
 ---
 
 Shadowrocket（小火箭）是 iOS 平台上功能完整的代理客户端，支持多协议与灵活分流。本文为新手提供详细的下载、安装与配置步骤，帮助快速建立稳定的科学上网环境。
