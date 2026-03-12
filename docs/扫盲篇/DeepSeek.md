@@ -1,6 +1,6 @@
 ---
 title: 利用搜索引擎定位 Ollama / DeepSeek 服务（合规方式接入与验证）
-createTime: '2025/02/12 07:25:01'
+createTime: '2026/03/11 07:25:01'
 permalink: /article/tj38tso3/
 tags:
   - Ollama
