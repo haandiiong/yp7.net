@@ -1,6 +1,5 @@
 ---
 createTime: 2026/03/11
-sticky: 97
 tags:
   - 科学上网
   - VPN
@@ -123,7 +122,7 @@ A: 使用Trojan协议时隐蔽性更强，且ssone节点均为优质供应商提
 
 如果你想查看更多机场推荐，可以参考：
 
-- 👉 [更多VPN合集选择指南](https://www.yp7.net/posts/low-latency-vpn-guide-2026/)
+- 👉 [更多VPN合集选择指南](https://www.yp7.net/posts/vpn-airport-ranking-2026/)
 
 ## 客户端使用方法
 

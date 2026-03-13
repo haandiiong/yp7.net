@@ -2,7 +2,6 @@
 title: 2026年 Clash for android 下载与安装
 createTime: 2026/03/11 17:26:51
 permalink: /article/eh8f4n86/
-sticky: 98
 tags:
   - 科学上网
   - VPN
@@ -56,7 +55,7 @@ description: 2026年Android手机Clash下载安装教程，简单易用适合新
 
 将获取到的 URL 粘贴到这里，点击确定
 
-如果你没有 URL，可以在这里获取：[便宜好用的翻墙机场推荐评测](https://www.yp7.net/posts/low-latency-vpn-guide-2026/)
+如果你没有 URL，可以在这里获取：[便宜好用的翻墙机场推荐评测](https://www.yp7.net/posts/vpn-airport-ranking-2026/)
 
 ![Android Clash设置自动更新时间](https://image.ermao.net/images/article/eh8f4n86/image-4.png)
 
@@ -80,4 +79,4 @@ description: 2026年Android手机Clash下载安装教程，简单易用适合新
 
 然后就完成了
 
-[👉 机场合集与更多教程](https://www.yp7.net/posts/low-latency-vpn-guide-2026/)
+[👉 机场合集与更多教程](https://www.yp7.net/posts/vpn-airport-ranking-2026/)

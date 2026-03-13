@@ -149,7 +149,7 @@ A: 注册后24小时内可申请无条件退款。
 
 ## 机场汇总 {#summary}
 
-- [更多VPN合集选择指南](https://www.yp7.net/posts/low-latency-vpn-guide-2026/)
+- [更多VPN合集选择指南](https://www.yp7.net/posts/vpn-airport-ranking-2026/)
 
 ### 客户端使用方法
 - 📱 [Android系统Clash完整部署](https://www.yp7.net/article/eh8f4n86/)  

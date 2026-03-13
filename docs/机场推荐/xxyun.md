@@ -222,7 +222,7 @@ BGP多线优化对三网兼容性更好，高峰期更稳定。
 
 ## 机场汇总
 
-- [更多VPN合集选择指南](https://www.yp7.net/posts/low-latency-vpn-guide-2026/)
+- [更多VPN合集选择指南](https://www.yp7.net/posts/vpn-airport-ranking-2026/)
 
 ## 客户端使用方法
 

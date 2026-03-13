@@ -92,4 +92,4 @@ USDT 作为流动性最强的稳定币，是数字资产配置、风险对冲与
 
 [👉 OKX 官网 - USDT](https://www.okx.com/)
 
-[👉 机场合集与更多教程](https://www.yp7.net/posts/low-latency-vpn-guide-2026/)
+[👉 机场合集与更多教程](https://www.yp7.net/posts/vpn-airport-ranking-2026/)
