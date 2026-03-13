@@ -1,6 +1,6 @@
 ---
 title: CocoDuck机场评测 2026：40+全球节点高速稳定VPN｜ChatGPT解锁｜高性价比推荐
-createTime: 2026/03/11 20:08:48
+createTime: 2026/03/11
 permalink: /posts/cocoduck-review/
 tags:
   - 科学上网
@@ -11,7 +11,6 @@ tags:
   - 稳定VPN
   - 翻墙工具
 description: CocoDuck机场2026深度评测：海外团队运营、自建机房、全球40+高速节点，支持Shadowsocks、V2Ray、Trojan协议。稳定访问ChatGPT、Netflix、YouTube等海外服务，提供24小时试用和高性价比套餐，是热门科学上网VPN机场推荐。
-
 ---
 
 [CocoDuck](https://cocoduck.live/auth/register?code=ca0cfb89fa)是由国际化团队运营的现代翻墙服务品牌，拥有自建机房和遍布全球的40+优选节点，尤其适合访问ChatGPT、Netflix、Disney+等海外服务。本文从套餐、节点、性能、客户端支持等维度进行深度评测，为用户提供选购参考。

@@ -11,8 +11,7 @@ tags:
   - AI
   - 搜索引擎
   - 服务定位
-description: >-
-  本文介绍在合规与授权前提下，如何使用 Fofa、Shodan 等互联网资产搜索工具定位对外提供 Ollama/DeepSeek API 的实例，并给出授权接入、验证与安全防护的最佳实践建议。
+description: 本文介绍在合规与授权前提下，如何使用 Fofa、Shodan 等互联网资产搜索工具定位对外提供 Ollama/DeepSeek API 的实例，并给出授权接入、验证与安全防护的最佳实践建议。
 ---
 
 在合规与授权的前提下，Fofa、Shodan 等资产搜索引擎可以帮助研发与安全团队发现已对外提供 API 的 Ollama / DeepSeek 实例。本文侧重于可复现、低侵入的查找思路、授权接入流程与安全防护建议，避免任何未授权或越权操作。
