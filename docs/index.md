@@ -9,33 +9,35 @@ config:
       name: "Your Proxy 7"
       text: "科学上网教程与机场推荐"
       tagline: "最新 VPN、机场节点、Shadowrocket 与 Clash 使用指南"
-      image: "/logo.png"
       actions:
         - theme: brand
           text: "查看教程 →"
-          link: "/posts/"
+          link: "https://www.yp7.net/posts/jieshao/"
         - theme: alt
           text: "机场推荐"
-          link: "/posts/jichang/"
+          link: "https://www.yp7.net/posts/vpn-airport-ranking-2026/"
 
   - type: features
     features:
       - title: "ssone"
-        image: "https://image.ermao.net/images/article/ssone/image.png"
+        icon: "../ssone.png"
         details: "ssone机场，最低仅10元/月即可获得60GB高速流量，微信支付宝付款方便快捷"
         link: "https://hello-ssone.com/register?aff=QpXdVaKY"
 
       - title: "xxyun"
-        icon: "📖"
+        icon: "./xxyun.png"
         details: "xxyun机场，9.99元100GB高性价比专线机场，微信支付宝付款方便快捷"
+        link: "https://cloud.xxvip.shop/register?code=3AYVsSKY"
 
       - title: "光年梯"
-        icon: "🚀"
-        details: "光年梯机场"
+        icon: "./gnt.png"
+        details: "光年梯机场,18元110GB晚高峰低延迟，节点稳定，是流媒体爱好者首选，微信支付宝付款方便快捷"
+        link: "https://haandiiong.gntvipaff.cc/#/?code=ZWhMOU3y"
 
       - title: "全球云"
-        icon: "⚖"
-        details: "内置了 中文/英文支持，还可以自定义添加更多的语言支持"
+        icon: "./gnt.png"
+        details: "全球云机场，20元120GB提供低延迟、高稳定性的IPLC/IEPL专线VPN，微信支付宝付款方便快捷"
+        link: "https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf"
 
       - title: "冲上云霄"
         icon: "👨‍💻"
