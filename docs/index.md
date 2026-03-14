@@ -21,7 +21,7 @@ config:
   - type: features
     features:
       - title: "ssone"
-        icon: "https://image.ermao.net/images/article/ssone/image.png"
+        image: "https://image.ermao.net/images/article/ssone/image.png"
         details: "ssone机场，最低仅10元/月即可获得60GB高速流量，微信支付宝付款方便快捷"
         link: "https://hello-ssone.com/register?aff=QpXdVaKY"
 
