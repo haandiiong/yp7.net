@@ -10,17 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Submit URLs
+      - name: Get URLs from sitemap
         run: |
+          curl https://yp7.net/sitemap.xml | grep -oP '(?<=<loc>)[^<]+' > urls.txt
+
+      - name: Submit to IndexNow
+        run: |
+          urls=$(jq -R . < urls.txt | jq -s .)
           curl -X POST "https://api.indexnow.org/indexnow" \
           -H "Content-Type: application/json" \
-          -d '{
-            "host": "yp7.net",
-            "key": "8465d5c195b646239252f14d3840d869",
-            "urlList": [
-              "https://yp7.net/",
-              "https://yp7.net/posts/",
-              "https://yp7.net/article/",
-              "https://yp7.net/sitemap.xml"
-            ]
-          }'
+          -d "{
+            \"host\": \"yp7.net\",
+            \"key\": \"8465d5c195b646239252f14d3840d869\",
+            \"keyLocation\": \"https://yp7.net/8465d5c195b646239252f14d3840d869.txt\",
+            \"urlList\": $urls
+          }"
