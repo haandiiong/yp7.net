@@ -1,6 +1,6 @@
 ---
 home: true
-title: Your Proxy 7
+title: 科学上网教程与机场推荐
 description: "科学上网教程、VPN推荐、机场评测与软路由配置指南，持续更新稳定翻墙方案。"
 
 config:
@@ -13,8 +13,8 @@ config:
         - theme: brand
           text: "查看教程 →"
           link: "https://www.yp7.net/posts/jieshao/"
-        - theme: alt
-          text: "机场推荐"
+        - theme: brand
+          text: "机场推荐 →"
           link: "https://www.yp7.net/posts/vpn-airport-ranking-2026/"
 
   - type: features
@@ -28,7 +28,7 @@ config:
         link: "https://cloud.xxvip.shop/register?code=3AYVsSKY"
 
       - title: "光年梯"
-        details: "光年梯机场,18元110GB晚高峰低延迟，节点稳定，是流媒体爱好者首选，微信支付宝付款方便快捷"
+        details: "光年梯机场，18元110GB晚高峰低延迟，节点稳定，是流媒体爱好者首选，微信支付宝付款方便快捷"
         link: "https://haandiiong.gntvipaff.cc/#/?code=ZWhMOU3y"
 
       - title: "全球云"
@@ -36,14 +36,27 @@ config:
         link: "https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf"
 
       - title: "冲上云霄"
-        icon: "👨‍💻"
-        details: "支持 浅色/深色 主题，包括代码高亮"
+        details: "冲上云霄机场，5元80GB，稳定的台湾家宽VPN，微信支付宝付款方便快捷"
+        link: "https://cpdd.one/?r=156735"
 
       - title: "cocoduck"
-        icon: "📦"
-        details: "内置丰富的插件，一站式解决网站一般需求"
+        details: "cocoduck机场，15元150GB，北美技术团队倾情奉献，高可用/高可靠/低延迟，微信支付宝付款方便快捷"
+        link: "https://cocoduck.live/auth/register?code=ca0cfb89fa"
 
       - title: "99吧"
-        icon: "🔍"
+        details: "99吧机场，12.99元99GB，深圳港澳IEPL直连，广东移动中继，微信支付宝付款方便快捷"
+        link: "https://99vpn.bar/#/register?code=Wls9E3cC"
+
+      - title: "极连云"
+        details: "极连云机场，15.5元100GB，微信支付宝付款方便快捷"
+        link: "https://mind01.jlcvipaff.cc/#/?code=KphXzUot"
+
+      - title: "更多机场..."
         details: "支持多种评论系统，支持本地搜索、Algolia搜索"
+        link: "https://yp7.net"        
+
+      - title: "更多机场..."
+        details: "支持多种评论系统，支持本地搜索、Algolia搜索"
+        link: "https://yp7.net"        
+
 ---
