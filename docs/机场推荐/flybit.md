@@ -17,7 +17,7 @@ description: 2026 Flybit机场深度评测：最低15元/月享128GB高速流量
 Flybit机场是近年来比较热门的科学上网服务之一，以低价高流量和稳定的IEPL专线节点受到许多用户关注。
 - 官方入口： [https://goflybit.com](https://goflybit.com/#/register?code=p3DOcgzt)  
 - 最便宜套餐：**15元 / 128GB / 30天**  
-> 🔑 小贴士：首次购买9折优惠码“flybit”
+> 🔑 小贴士：点此链接注册可享9折优惠码“flybit”
 
 <!-- more -->
 
@@ -136,7 +136,7 @@ Flybit节点支持：
 
 ## 速度与稳定性测试 {#performance}
 
-![Flybit机场速度测试2026](https://image.ermao.net/images/article/q8yp9r2b/image-1.png)
+![Flybit机场速度测试2026](https://yp7.net/flybit.jpg)
 
 **测试环境**
 
