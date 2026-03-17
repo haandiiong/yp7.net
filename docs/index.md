@@ -1,7 +1,7 @@
 ---
 home: true
-title: 科学上网教程与机场推荐
-description: "科学上网教程、VPN推荐、机场评测与软路由配置指南，持续更新稳定翻墙方案。"
+title: 2026最新科学上网教程｜稳定VPN推荐｜翻墙机场排行｜Clash与Shadowrocket配置指南
+description: 2026最新科学上网教程，精选稳定VPN与机场推荐，支持ChatGPT、TikTok、Netflix解锁，提供Clash与Shadowrocket详细配置指南。
 
 config:
   - type: doc-hero
