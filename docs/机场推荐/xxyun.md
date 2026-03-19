@@ -222,10 +222,10 @@ BGP多线优化对三网兼容性更好，高峰期更稳定。
 
 ## 机场汇总
 
-- [更多VPN合集选择指南](https://www.yp7.net/posts/vpn-airport-ranking-2026/)
+- [更多VPN合集选择指南](/vpn-airport-ranking-2026/)
 
 ## 客户端使用方法
 
-- 📱 [Android系统Clash完整部署](https://www.yp7.net/article/eh8f4n86/)
-- 🖥️ [Windows电脑Clash快速安装](https://www.yp7.net/article/0gematwc/)
-- 🍎 [iPhone手机工具配置全攻略](https://www.yp7.net/posts/Shadowrocket/)
+- 📱 [Android系统Clash完整部署](/article/eh8f4n86/)
+- 🖥️ [Windows电脑Clash快速安装](/article/0gematwc/)
+- 🍎 [iPhone手机工具配置全攻略](/posts/Shadowrocket/)

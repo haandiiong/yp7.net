@@ -1,42 +1,494 @@
-# aaa
+更新时间：**2026年3月**
 
-The Site is generated using [vuepress](https://vuepress.vuejs.org/) and [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
+随着科学上网需求的增加，越来越多用户开始寻找**稳定、速度快、价格合理的机场服务**。面对市场上众多翻墙工具，很多用户最关心的问题是：
 
-## Install
+- 哪个机场最稳定？
+- 哪个机场速度最快？
+- 哪个机场性价比最高？
 
-```sh
-pnpm i
-```
+本文整理了 **2026年最新机场推荐排行榜**，从 **稳定性、速度、价格、流媒体解锁能力、节点质量** 等多个维度进行综合评测。
 
-## Usage
+帮助你选择适合自己的机场服务。
 
-```sh
-# start dev server
-pnpm docs:dev
-# build for production
-pnpm docs:build
-# preview production build in local
-pnpm docs:preview
-# update vuepress and theme
-pnpm vp-update
-```
+---
 
-## Deploy to GitHub Pages
+## 什么是机场？
 
-The plume theme has been created with GitHub Actions: `.github/workflows/docs-deploy.yml`. You also need to make the following settings in the GitHub repository:
+在科学上网领域，“机场”通常指提供 **代理节点订阅服务的平台**。  
+用户购买订阅后，可以通过客户端连接节点访问国际互联网。
 
-- [ ] `settings > Actions > General`, Scroll to the bottom of the page, under `Workflow permissions`, check `Read and write permissions`, and click the save button.
+常见协议包括：
 
-- [ ] `settings > Pages`, In `Build and deployment`, select `Deploy from a branch` for `Source`, choose `gh-pages` for `Branch`, and click the save button.
-  (The `gh-pages` branch may not exist upon first creation. You can complete the above setup first, push the code to the main branch, wait for `github actions` to finish, and then proceed with the setup.)
+- Shadowsocks
+- V2Ray
+- Trojan
 
-- [ ] Modify the `base` option in `docs/.vuepress/config.ts`:
-  - If you are planning to deploy to `https://<USERNAME>.github.io/`, you can skip this step as `base` defaults to `"/"`.
-  - If you are planning to deploy to `https://<USERNAME>.github.io/<REPO>/`, meaning your repository URL is `https://github.com/<USERNAME>/<REPO>`, set `base` to `"/<REPO>/"`.
+与传统 VPN 相比，机场通常具有：
 
-To customize a domain name, please refer to [Github Pages](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
+- 节点更多
+- 速度更快
+- 支持流媒体解锁
+- 价格更灵活
 
-## Documents
+因此越来越多用户选择机场作为翻墙工具。
 
-- [vuepress](https://vuepress.vuejs.org/)
-- [vuepress-theme-plume](https://theme-plume.vuejs.press/)
+---
+
+## 2026机场推荐排行榜
+
+根据稳定性与用户体验，2026年比较推荐的机场包括：
+
+|机场品牌|官网地址|最低价套餐|免费试用|按流量购买（最低价）|
+|---|---|---|--|---|
+|[**全球云机场**](#全球云机场)|[haandiiong.gcvipaff.cc](https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf)|￥20元120GB/月|无试用|不支持|
+|[**光年梯机场**](#光年梯机场)|[haandiiong.gntvipaff.cc](https://haandiiong.gntvipaff.cc/#/?code=ZWhMOU3y)|￥18元110GB/月|无试用|不支持|
+|[**XXYUN机场**](#xxyun机场)|[xxyun.de](https://xxyun.de/3AYVsSKY.html)|￥9.99元100GB/月|无试用|￥66.66元500GB|
+|[**Flybit机场**](#flybit机场)|[goflybit.com](https://goflybit.com/#/register?code=p3DOcgzt)|￥15元128GB/月|一天2GB|￥36元128GB|
+|[**99吧机场**](#99吧机场)|[99ba.net](https://99ba.net/#/register?code=Wls9E3cC)|￥10元60GB/月|无试用|￥35.9元111GB|
+|[**冲上云霄机场**](#冲上云霄机场)|[cpdd.one](https://cpdd.one/?r=156735)|￥5元80GB/月|无试用|￥50元500GB|
+|[**SSONE机场**](#ssone机场)|[hello-ssone.com](https://hello-ssone.com/register?aff=QpXdVaKY)|￥10元60GB/月|无试用|不支持|
+|[**唯兔云机场**](#唯兔云机场)|[haandiiong.v2cvipaff.cc](https://haandiiong.v2cvipaff.cc/#/?code=jLYAKndB)|￥14.9元100GB/月|无试用|不支持|
+[**u1s1机场**](#u1s1机场)|[haandiiong.vipaff.cc](https://haandiiong.vipaff.cc/#/?code=2hetA61B)|￥20元120GB/月|无试用|不支持|
+|[**网际快车机场**](#网际快车机场)|[wjkc66.vip](https://wjkc66.vip/?c=GDIHMU)|￥24元1500GB/月|一天5GB|￥6.8元20GB|
+|[**奈云机场**](#奈云机场)|[6.vip.v2ny.me](http://6.vip.v2ny.me?path=register&code=DJYy4gfX)|￥28元388GB/月|无试用|￥118元280GB|
+[**cocoduck机场**](#cocoduck机场)|[www.cocoduck.live](https://www.cocoduck.live/auth/register?code=ca0cfb89fa)|￥15元150GB/月|一天2GB|不支持|
+
+## 全球云机场
+
+官网入口：
+
+👉 [https://haandiiong.gcvipaff.cc](https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf)
+
+特点：
+
+- 老牌机场
+- IEPL专线
+- 稳定性高
+
+价格：
+
+20元 - 600元
+
+适合人群：
+
+- 长期稳定使用
+- 看视频
+- AI工具访问
+
+优惠：
+
+首次购买 **8折优惠码：3838**
+
+详细评测：
+
+👉 [全球云详细评测指南](https://www.yp7.net/posts/quanqiuyun/)
+
+---
+
+## 光年梯机场
+
+官网入口：
+
+👉 [https://haandiiong.gntvipaff.cc](https://haandiiong.gntvipaff.cc/#/?code=ZWhMOU3y)
+
+特点：
+
+- IEPL专线
+- 晚高峰稳定
+- 流媒体解锁优秀
+
+价格：
+
+18元 - 680元/月
+
+适合人群：
+
+- 日常科学上网
+- 视频观看
+- ChatGPT访问
+
+优惠：
+
+首次购买 **7折优惠码：GNT70**
+
+详细评测：
+
+👉 [光年梯详细评测指南](https://www.yp7.net/posts/guangnianti-review-2026/)
+
+---
+
+## xxyun机场
+
+官网入口：
+
+👉 [https://cloud.xxvip.shop](https://xxyun.de/3AYVsSKY.html)
+
+特点：
+
+- BGP中转
+- 价格较低
+- 节点数量多
+
+价格：
+
+9.9元 - 39.9元/月
+
+适合人群：
+
+- 预算有限用户
+- 轻度科学上网
+
+优惠：
+
+首次购买 **9折优惠码：xxyun**
+
+详细评测：
+
+👉[xxyun详细评测指南](https://www.yp7.net/posts/xxyun-review-2026/)
+
+---
+
+## Flybit机场
+
+官网入口：
+
+👉 [https://goflybit.com](https://goflybit.com/#/register?code=p3DOcgzt)
+
+特点：
+
+- BGP中转
+- IEPL专线
+- 节点数量较多
+- 支持流媒体解锁
+
+价格：
+
+15元 - 52元/月
+
+适合人群：
+
+- 新手用户
+- 日常使用
+- AI工具访问
+
+优惠：
+
+首次购买 **9折优惠码：flybit**
+
+详细评测：
+
+👉 [flybit详细评测指南](https://www.yp7.net/posts/flybit-seo/)
+
+---
+
+## 冲上云霄机场
+
+官网入口：
+
+👉 [https://cpdd.one](https://cpdd.one/?r=156735)
+
+特点：
+
+- 新机场
+- 价格便宜
+- 节点增长快
+
+价格：
+
+5元 - 40元
+
+适合：
+
+- 新手体验
+- 短期使用
+
+详细评测：
+
+👉 [冲上云霄机场详细评测指南](https://www.yp7.net/posts/chongshangyunxiao/)
+
+---
+
+## SSONE机场
+
+官网入口：
+
+👉[https://hello-ssone.com](https://hello-ssone.com/register?aff=QpXdVaKY)
+
+特点：
+
+- Netflix解锁
+- Disney+支持
+- 节点覆盖广
+
+价格：
+
+10元 - 200元
+
+适合：
+
+- 看流媒体
+- 海外内容访问
+
+优惠：
+
+首次购买 **9折优惠码：2026a**
+
+详细评测：
+
+👉 [ssone机场详细评测指南](https://www.yp7.net/posts/ssone/)
+
+---
+
+## 唯兔云机场
+
+官网入口：
+
+👉[(https://haandiiong.v2cvipaff.cc](https://haandiiong.v2cvipaff.cc/#/?code=jLYAKndB)
+
+特点：
+
+- IPLC 专线节点
+- 节点速度快
+- 节点覆盖广
+- 适合流媒体和跨境办公
+
+价格：
+
+14.9元 - 119.9元
+
+适合：
+- 看流媒体
+- 海外内容访问
+
+优惠：
+
+首次购买 **9折优惠码：rabbit**
+
+详细评测：
+
+👉 [唯兔云机场详细评测指南](https://www.yp7.net/posts/weituyun/)
+
+---
+
+## 网际快车机场
+
+官网入口：
+
+👉[https://wjkc66.vip](https://wjkc66.vip/?c=GDIHMU)
+
+特点：
+
+- 中转，家庭宽带占比高
+- 节点速度快
+- 节点覆盖广
+- 适合跨境办公
+
+价格：
+
+14.9元 - 119.9元
+
+适合：
+- 看流媒体
+- 海外内容访问
+
+优惠：
+
+1天5GB试用券 **yp7net**
+
+详细评测：
+
+👉 暂无
+
+---
+
+## cocoduck机场
+
+官网入口：
+
+👉[https://cocoduck.live](https://cocoduck.live/auth/register?code=ca0cfb89fa)
+
+特点：
+
+- 中转，家庭宽带占比高
+- 节点速度快
+- 节点覆盖广
+- 适合跨境办公
+
+价格：
+
+15元 - 93元
+
+适合：
+- 看流媒体
+- 海外内容访问
+
+优惠：
+
+新用户注册可享1天2GB的免费体验服务，体验满意再购买
+
+详细评测：
+
+👉 [cocoduck机场详细评测指南](https://www.yp7.net/posts/cocoduck-review/)
+
+
+## 奈云机场
+
+官网入口：
+
+👉[6.vip.v2ny.me](http://6.vip.v2ny.me?path=register&code=DJYy4gfX)
+
+特点：
+
+- 中转，家庭宽带占比高
+- 节点速度快
+- 节点覆盖广
+- 适合跨境办公
+
+价格：
+
+28元 - 498元
+
+适合：
+- 看流媒体
+- 海外内容访问
+
+优惠：
+
+首次购买 **7.5折优惠码0308**
+
+详细评测：
+
+👉 待评测
+
+
+## u1s1
+
+官网入口：
+
+👉[https://haandiiong.vipaff.cc](https://haandiiong.vipaff.cc/#/?code=2hetA61B)
+
+特点：
+
+- 中转，家庭宽带占比高
+- 节点速度快
+- 节点覆盖广
+- 适合跨境办公
+
+价格：
+
+28元 - 498元
+
+适合：
+- 看流媒体
+- 海外内容访问
+
+优惠：
+
+首次购买 **7.5折优惠码0308**
+
+详细评测：
+
+👉 待评测
+
+
+<!-- 1、千兆极速，全量畅享： 提供高达 2000Mbps 的疾速带宽，承诺晚高峰绝不降速。同时，我们打破常规，不限制 IP 地址与连接设备的数量，让您的所有设备都能随时火力全开。
+
+2、全球解锁，无界浏览： 轻松突破网络地域限制，完美解锁 TikTok、ChatGPT，以及 Netflix、Disney+、HBO 等全球主流流媒体平台，带您无缝连接海量精彩内容。
+
+3、量身定制，赋能业务： 针对个人与企业的不同需求，提供专属定制化方案。无论您是开展跨境电商业务，还是进行 TikTok 运营与海外直播，我们都能提供最专业的网络底层支持。
+
+4、安全加密，贴心守护： 采用行业顶级的安全加密技术，全方位保障您在全球范围内的网络数据与隐私安全。专业客服团队全天候在线，确保您的疑问和需求能在第一时间得到解决，畅享无忧服务。
+U1S1 -->
+
+## 机场推荐对比表
+
+| 机场 | 价格 | 稳定性 | 流媒体 | 推荐指数 |
+|----|----|----|----|----|
+| 全球云 | 20-60元 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| 光年梯 | 18-680元 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| XXYUN | 9.9-39.9元 | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| Flybit | 15-52元 | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| 冲上云霄 | 5-40元 | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| SSONE | 10-200元 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+
+---
+
+## 如何选择机场？
+
+选择机场时建议关注以下因素：
+
+### 1 稳定性
+
+优先选择：
+
+- IEPL专线
+- 老牌机场
+
+### 2 速度
+
+节点质量决定速度。
+
+推荐节点：
+
+- 香港节点
+- 日本节点
+
+### 3 流媒体解锁
+
+如果需要观看 Netflix 或 Disney+：
+
+建议选择 **流媒体优化节点**。
+
+---
+
+## 常见问题 FAQ
+
+### 机场和VPN有什么区别？
+
+机场通常提供 **SS / Trojan / V2Ray 代理节点**，  
+相比传统VPN：
+
+- 节点更多
+- 速度更快
+- 成本更低
+
+---
+
+### 新手应该选什么机场？
+
+建议选择：
+
+- 月付套餐
+- 20-30元价位
+- 稳定机场
+
+例如：
+
+- 光年梯
+- 全球云
+
+---
+
+### 机场安全吗？
+
+正规机场使用 **加密代理协议**，  
+在日常使用中可以提供一定隐私保护能力。
+
+---
+
+## 总结
+
+如果你是新手用户，推荐：
+
+- 光年梯机场
+- 全球云机场
+
+如果追求性价比：
+
+- XXYUN机场
+
+如果主要观看流媒体：
+
+- SSONE机场
+
+建议先 **月付测试** 再长期订阅。
