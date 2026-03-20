@@ -10,6 +10,8 @@ permalink: /posts/chatgpt/
 description: 本文为 ChatGPT 使用入门与进阶指南，覆盖功能概述、实战提示、提示工程（Prompt）技巧、隐私与安全建议，以及常见场景示例，适合想用 AI 提升效率的读者。
 ---
 
+本文为 ChatGPT 使用入门与进阶指南，覆盖功能概述、实战提示、提示工程（Prompt）技巧、隐私与安全建议，以及常见场景示例，适合想用 AI 提升效率的读者。
+
 <!-- more -->
 
 ## 什么是 ChatGPT？（简要）

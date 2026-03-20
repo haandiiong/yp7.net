@@ -37,7 +37,7 @@ config:
       - title: "xxyun"
         icon: {src: "/xxyun.png"}
         details: "xxyun机场，最低价9.99元100GB/月，高性价比专线机场，微信支付宝付款方便快捷"
-        link: "https://cloud.xxvip.shop/register?code=3AYVsSKY"
+        link: "https://xxyun.de/3AYVsSKY.html"
 
       - title: "flybit"
         icon: {src: "/flybit.png"}
