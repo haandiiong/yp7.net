@@ -6,7 +6,6 @@ description: 2026最新科学上网教程，精选稳定VPN与机场推荐，支
 config:
   - type: doc-hero
     hero:
-      name: "Your Proxy 7"
       text: "科学上网教程与机场推荐"
       tagline: "最新 VPN、机场节点、Shadowrocket 与 Clash 使用指南"
       actions:
