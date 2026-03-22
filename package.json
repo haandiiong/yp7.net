@@ -1,8 +1,8 @@
 {
-  "name": "py7.net",
+  "name": "yp7.net",
   "type": "module",
   "version": "1.0.0",
-  "description": "py7.net",
+  "description": "",
   "packageManager": "pnpm@10.15.0",
   "pnpm": {
     "onlyBuiltDependencies": [
