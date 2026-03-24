@@ -2,7 +2,6 @@
 home: true
 title: 2026最新科学上网教程｜稳定VPN推荐｜翻墙机场排行｜Clash与Shadowrocket配置指南
 description: 2026最新科学上网教程，精选稳定VPN与机场推荐，支持ChatGPT、TikTok、Netflix解锁，提供Clash与Shadowrocket详细配置指南。
-
 config:
   - type: doc-hero
     hero:
@@ -69,7 +68,7 @@ config:
         link: "https://wjkc66.vip/?c=GDIHMU"        
 
       - title: "更多机场..."
-        details: "支持多种评论系统，支持本地搜索、Algolia搜索"
+        details: "暂无"
         link: "https://yp7.net"        
 
 ---
