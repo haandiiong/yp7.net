@@ -15,10 +15,12 @@ export default defineUserConfig({
     // logo: '/images/logo.svg',
     home: '/',
     hostname: 'https://yp7.net',
-    footer: { message: "© 2025 CFF 版权所有" },
-
+    footer: { message: "© 2026 CFF 版权所有" },
+    
     navbar: [
-
+      { text: '首页' , link: '/'},
+      { text: '博客' , link: '/blog/'},
+      { text: '友链' , link: '/friends/'},
     ],
     profile: {
       name: 'CFF',
