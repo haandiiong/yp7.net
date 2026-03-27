@@ -12,20 +12,17 @@ export default defineUserConfig({
     ['meta', { name: 'keywords', content: 'VPN推荐,科学上网,机场推荐,翻墙VPN' }],
   ],
   theme: plumeTheme({
-    // logo: '/images/logo.svg',
     home: '/',
     hostname: 'https://yp7.net',
-    footer: { message: "© 2026 CFF 版权所有" },
-    
+    footer: { message: "yp7.net © 2026 CFF 版权所有" },
     navbar: [
       { text: '首页' , link: '/'},
       { text: '博客' , link: '/blog/'},
       { text: '友链' , link: '/friends/'},
     ],
     profile: {
-      name: 'CFF',
-      description: '一个神秘的IT程序猿',
-      // avatar: '/images/logo.svg',
+      name: 'yp7.net',
+      description: '网络大乞丐之非正规机场测评业余选手。',
     },
     social: [
       { icon: 'github', link: 'https://github.com/haandiiong' },
@@ -45,15 +42,6 @@ export default defineUserConfig({
       categories: false,
       archives: false
     },
-    collections: [
-      {
-        type: 'post',
-        dir: 'blog',
-        tags: false,
-        categories: false,
-        archives: false
-      }
-    ]
   }),
   bundler: viteBundler({
     viteOptions: {
