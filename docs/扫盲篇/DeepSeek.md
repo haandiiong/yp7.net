@@ -104,4 +104,4 @@ A: 仅在签署相应 SLA/合同并完成安全评估后才建议用于生产环
 
 ## 七、参考与延伸阅读
 
-[👉 机场合集与推荐配置](https://www.yp7.net/posts/vpn-airport-ranking-2026/)
+[👉 机场合集与推荐配置](/posts/airport-recommend-2026/)  

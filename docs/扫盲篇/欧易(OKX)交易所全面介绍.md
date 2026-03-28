@@ -320,6 +320,6 @@ https://www.okx.com/
 
 ## 相关阅读
 
-- [2026年稳定机场推荐](https://www.yp7.net/posts/vpn-airport-ranking-2026/)
-- [Clash科学上网完整教程](https://www.yp7.net/article/eh8f4n86/)
-- [Shadowrocket使用教程](https://www.yp7.net/posts/Shadowrocket/)
+- [2026年稳定机场推荐](/posts/airport-recommend-2026/)  
+- [Clash科学上网完整教程](/article/eh8f4n86/)
+- [Shadowrocket使用教程](/posts/Shadowrocket/)

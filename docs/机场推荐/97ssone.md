@@ -123,7 +123,7 @@ A: 使用Trojan协议时隐蔽性更强，且ssone节点均为优质供应商提
 
 如果你想查看更多机场推荐，可以参考：
 
-- 👉 [更多VPN合集选择指南](/posts/vpn-airport-ranking-2026/)
+- 👉 [更多VPN合集选择指南](/posts/airport-recommend-2026/)  
 
 ## 客户端使用方法
 

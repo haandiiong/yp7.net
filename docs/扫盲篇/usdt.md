@@ -207,4 +207,4 @@ USDT 是加密货币市场中不可或缺的基础资产，适用于：
 
 👉 [OKX官网 - 购买USDT](https://www.okx.com/)
 
-👉 [2026稳定机场推荐合集](/posts/vpn-airport-ranking-2026/)
+👉 [2026稳定机场推荐合集](/posts/airport-recommend-2026/)  

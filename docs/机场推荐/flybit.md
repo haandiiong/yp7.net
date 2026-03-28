@@ -210,6 +210,6 @@ Flybit是一款 **稳定型、长期使用友好** 的机场，优势：
 
 ## 🔗 延伸阅读
 
-- [更多VPN合集选择指南](/posts/vpn-airport-ranking-2026/)  
+- [更多VPN合集选择指南](/posts/airport-recommend-2026/)    
 - [安卓系统Clash完整部署](/article/eh8f4n86/)  
 - [iPhone Shadowrocket配置教程](/posts/Shadowrocket/)
