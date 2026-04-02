@@ -12,17 +12,19 @@ export default defineUserConfig({
     ['meta', { name: 'keywords', content: 'VPN推荐,科学上网,机场推荐,翻墙VPN' }],
   ],
   theme: plumeTheme({
+    logo: '/logo.png',
     home: '/',
     hostname: 'https://yp7.net',
     footer: { message: "yp7.net © 2026 CFF 版权所有" },
     navbar: [
-      { text: '首页' , link: '/'},
-      { text: '博客' , link: '/blog/'},
-      { text: '友链' , link: '/friends/'},
+      { text: '首页', link: '/' },
+      { text: '博客', link: '/blog/' },
+      { text: '友链', link: '/friends/' },
     ],
     profile: {
       name: 'yp7.net',
-      description: '网络大乞丐之非正规机场测评业余选手。',
+      description: 'Y.P.7 的个人博客，分享VPN推荐、科学上网技巧和翻墙资源，帮助你畅游互联网世界。',
+      avatar: '/logo.png',
     },
     social: [
       { icon: 'github', link: 'https://github.com/haandiiong' },
