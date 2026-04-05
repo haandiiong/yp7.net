@@ -1,5 +1,5 @@
 ---
-title: Clash节点是什么？新手入门指南（2026最新SEO优化版）
+title: Clash节点是什么？新手入门指南
 createTime: 2026/03/27
 permalink: /posts/clash-guide/
 tags:

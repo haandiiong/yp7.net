@@ -7,7 +7,7 @@ tags:
   - 教学
 title: Telegram 使用教程（新手必看）：下载、注册、群组、频道与代理设置详解
 permalink: /posts/Telegram/
-description: Telegram 新手速成教程，涵盖安装、注册、群组与频道管理、MTProto/SOCKS5 代理配置及隐私安全，助你轻松搭建高效跨平台通讯与社群运营环境。
+description: Telegram 使用教程（2026最新），详细讲解下载安装、注册登录、群组频道玩法与MTProto/SOCKS5代理设置，支持ChatGPT环境使用，附新手快速上手与安全配置指南。
 ---
 
 Telegram 是一款跨平台即时通讯应用，本指南按功能与场景整理操作步骤与实用技巧，兼顾新手上手与进阶设置（如 MTProto/SOCKS5 代理）。

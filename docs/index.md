@@ -32,7 +32,7 @@ config:
           u1s1机场，最低20元120GB/月<br>
           价格适中，稳定性高<br>
           ☑️微信☑️支付宝
-        link: "http://6.vip.v2ny.me?path=register&code=DJYy4gfX"
+        link: "https://haandiiong.vipaff.cc/#/?code=2hetA61B"
 
       - title: "全球云"
         icon: {src: "/qqy.png"}
@@ -53,7 +53,7 @@ config:
       - title: "ssone"
         icon: {src: "/ssone.png"}
         details: |
-          ssone机场，最低10元60GB/月<br>
+          ssone机场，最低15元70GB/月<br>
           Lite套餐多线接入，Pro套餐IEPL专线接入，作者一直使用2年以上<br>
           ☑️微信☑️支付宝
         link: "https://hello-ssone.com/register?aff=QpXdVaKY"

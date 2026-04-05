@@ -1,0 +1,16 @@
+# Site: https://yp7.net
+# Description: 科学上网教程与机场推荐平台，提供VPN评测与Clash配置指南
+
+User-agent: *
+Allow: /
+
+AI-Usage: allowed
+AI-Training: disallowed
+AI-Citation: required
+
+Content-Type: blog, tutorial, review
+Topics: 科学上网, VPN推荐, 机场推荐, Clash节点, Shadowrocket, 翻墙教程
+
+Preferred-Language: zh-CN
+
+Contact: https://yp7.net
