@@ -12,7 +12,7 @@ export default defineUserConfig({
     ['meta', { name: 'keywords', content: 'VPN推荐,科学上网,机场推荐,翻墙VPN' }],
   ],
   theme: plumeTheme({
-   // logo: '/logo.png',
+    // logo: '/logo.png',
     home: '/',
     hostname: 'https://yp7.net',
     footer: { message: "yp7.net © 2026 CFF 版权所有" },
