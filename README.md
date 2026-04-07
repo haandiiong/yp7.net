@@ -77,7 +77,7 @@
 
 ### echo机场
 
-👉 [https://www.cyco.one](https://www.cyco.one/#/register?code=4t5GMXAK)
+👉 [https://www.eecho.cc](https://www.eecho.cc/#/register?code=4t5GMXAK)
 
 #### 实际体验：
 
