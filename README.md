@@ -287,9 +287,9 @@
 
 ## 客户端使用方法
 
-- 📱 [Android系统Clash完整部署](/article/eh8f4n86/)  
-- 🖥️ [Windows电脑Clash快速安装](/article/0gematwc/)  
-- 🍎 [iPhone手机工具配置全攻略](/posts/Shadowrocket/)
+- 📱 [Android系统Clash完整部署](/posts/clash-for-android-guide-2026/)  
+- 🖥️ [Windows、Mac、Linux电脑Clash快速安装](/posts/clash-verge-guide-2026/)  
+- 🍎 [iPhone手机工具配置全攻略](/posts/shadowrocket-guide-2026/)
 
 ## 📍 作者说明
 

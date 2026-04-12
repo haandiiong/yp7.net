@@ -10,10 +10,10 @@ config:
       actions:
         - theme: brand
           text: "查看教程 →"
-          link: "https://yp7.net/posts/jieshao/"
+          link: "/posts/vpn-guide-2026/"
         - theme: brand
           text: "机场推荐 →"
-          link: "https://yp7.net/posts/airport-recommend-2026/"
+          link: "/posts/airport-recommend-2026/"
 
   - type: features
     features:
