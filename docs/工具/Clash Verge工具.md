@@ -13,6 +13,11 @@ tags:
 description: Clash Verge 2026最新安装配置教程，支持Windows、Mac、Linux系统。包含下载、订阅导入、TUN模式开启、系统代理设置及常见问题解决，新手3分钟快速上手。
 ---
 
+更新时间：**2026年4月**
+
+**写在前面**
+>各大优质机场均有自己的专属客户端，使用专属客户端更加稳定便捷
+
 想在Windows电脑、Mac苹果电脑、或Linux系统上快速部署Clash Verge科学上网工具？**Clash Verge**是目前最流行的PC端翻墙客户端，支持系统代理、TUN模式等高级功能。本完整教程包含官方+国内加速下载链接、分平台安装步骤、订阅导入配置、TUN开启方法及常见故障排查，帮你在3分钟内搞定PC翻墙工具的安装与配置，无需任何技术基础。
 
 <!-- more -->
@@ -21,32 +26,9 @@ description: Clash Verge 2026最新安装配置教程，支持Windows、Mac、Li
 
 作为目前最优秀的PC翻墙客户端，Clash Verge具备界面简洁、功能完整、系统代理稳定等优势。以下提供多个下载渠道以满足不同网络环境：
 
-::: tabs
-
-@tab Windows
-
-- 推荐：Clash Verge Windows x64（直链下载，含系统代理/TUN 支持）
-  - [国内加速下载](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Windows.x64.exe)
-  - [ARM 版本下载](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Windows.arm64.exe)
-
-@tab macOS
-
-- 推荐：Clash Verge macOS x64 / Apple Silicon (M 系列)
-  - [Intel 芯片下载](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Mac.x64.dmg)
-  - [Apple Silicon 下载](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Mac.aarch64.dmg)
-
-@tab Linux
-
-- 推荐：Deb 包（多数发行版）
-  - [Linux x64 deb](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Linux.x64.deb)
-  - [Linux arm64 deb](https://file.ermao.net/files/clash-verge-rev/Clash.Verge.Linux.arm64.deb)
-
-@tab GitHub 官方
+推荐使用 GitHub 官方版本
 
 - [GitHub Releases（更多版本）](https://github.com/clash-verge-rev/clash-verge-rev/releases)
-- [Clash for Windows 汉化版](https://github.com/Z-Siqi/Clash-for-Windows_Chinese/releases/)
-
-:::
 
 **选择你的操作系统平台下载对应的Clash Verge翻墙工具版本：**
 
@@ -78,81 +60,23 @@ description: Clash Verge 2026最新安装配置教程，支持Windows、Mac、Li
 
 ## ⚙️ Clash Verge订阅导入与完整配置步骤
 
-### 第一步：导入翻墙VPN订阅链接
+### 导入机场VPN订阅链接
 
-![Clash Verge 导入订阅界面示例](https://image.ermao.net/images/posts/clash-verge-guide-2026/image.png)
+![Clash Verge 新建订阅界面示例](/clashVerge1.png)
+- 打开Clash Verge应用，点击左侧导航栏中的「**订阅**」选项，点击「**新建**」按钮，打开新建配置界面
 
-1. 打开Clash Verge应用，点击左侧导航栏中的「**订阅**」选项
-2. 在右侧输入框中粘贴你的翻墙机场订阅链接（可从订阅管理后台复制获得）
-3. 点击「**导入**」按钮，系统将自动下载并解析订阅中的所有代理节点
-4. 导入成功后，订阅会显示在列表中，标注订阅名称、节点数量和最后更新时间
+![Clash Verge 编辑订阅配置](/clashVerge2.png)
+- 在名称输入框输入购买机场名称，在订阅链接输入框粘贴你的翻墙机场订阅链接（可从订阅管理后台复制获得），更新时间建议60分钟（1小时），点击保存。
+**提示**：没有订阅链接？参考这篇详细评测：[2026年最值得购买的翻墙机场推荐](/posts/airport-recommend-2026/)
 
-**提示**：没有订阅链接？参考这篇详细评测：[2026年最值得购买的翻墙机场推荐](/posts/airport-recommend-2026/)  
+![Clash Verge 选择低延迟节点](/clashVerge3.png)
+- 点击左侧导航栏中的「**代理**」选项，选择延迟低的节点，也可以自动选择
 
-### 第二步：验证订阅导入成功
+![Clash Verge 开启系统代理](/clashVerge4.png)
+- 点击左侧导航栏中的「**首页**」选项，开启系统代理
 
-![订阅列表显示示例](https://image.ermao.net/images/posts/clash-verge-guide-2026/image-1.png)
-
-成功导入的订阅会在列表中显示，显示信息包括：
-- 订阅名称（可自定义修改）
-- 包含的节点总数
-- 最后一次更新的时间戳
-- 订阅过期时间（若适用）
-
-### 第三步：调整订阅更新频率
-
-![编辑订阅更新时间与名称](https://image.ermao.net/images/posts/clash-verge-guide-2026/image-2.png)
-
-默认情况下，订阅会每1440分钟（即24小时）自动更新一次。如需更改：
-1. 在订阅列表中**右键点击**目标订阅
-2. 选择「**编辑配置**」打开编辑窗口
-3. 可修改的选项包括：
-   - **更新间隔**：建议设置为 6-24 小时之间
-   - **订阅链接**：若链接变更可直接替换
-   - **自定义名称**：便于区分多个订阅
-4. 修改完成后点保存即可生效
-
-### 第四步：启用系统代理与TUN模式
-
-![开启服务模式与 Tun 模式](https://image.ermao.net/images/posts/clash-verge-guide-2026/image-3.png)
-
-Clash Verge的核心功能需要在设置中启用。具体步骤：
-
-1. **打开设置界面**：点击左上角「⚙️ 设置」按钮
-2. **安装服务模式**：在「服务模式」区域点击「**安装**」按钮（仅需一次）
-3. **启动服务**：安装完成后点击「**启动**」按钮，使Clash Verge获得系统级代理权限
-4. **打开TUN模式**：启用「**Tun 模式**」开关（此模式可代理所有应用包括系统流量）
-5. **启用系统代理**：打开「**系统代理**」开关，使代理对所有网络连接生效
-
-### 第五步：确认代理模式配置正确
-
-![确认代理模式为规则模式](https://image.ermao.net/images/posts/clash-verge-guide-2026/image-4.png)
-
-配置代理工作模式是保证科学上网正常工作的关键：
-1. 点击左侧「**代理**」菜单
-2. 检查右侧模式选择**是否为「规则模式」**（推荐默认设置）
-3. 规则模式说明：Clash会根据规则文件自动判断流量是否需走代理
-4. 若使用其他模式（如全局代理），则所有流量都会通过代理节点
-5. 可根据个人需求在两种模式间切换
-
-## ✅ 科学上网配置测试与验证
-
-### 运行连通性测试
-
-![测速与连通性检查示例](https://image.ermao.net/images/posts/clash-verge-guide-2026/image-5.png)
-
-完成上述所有配置步骤后，需要测试翻墙工具是否正常运作：
-
-1. **打开测试窗口**：点击Clash Verge界面的「**测试**」模块
-2. **执行全面测试**：点击「**测试全部**」按钮，系统将逐个检测所有代理节点的连通性
-3. **查看测试结果**：
-   - 绿色✅表示节点正常可用
-   - 红色❌表示节点无法连接（通常因订阅过期或节点故障）
-4. **延迟查看**：每个节点旁会显示到代理服务器的延迟值（毫秒），延迟越低速度越快
-5. **大功告成**：如果大部分节点测试通过，说明Clash Verge科学上网工具配置成功！
-
-### 快速验证翻墙效果
-- 打开浏览器访问 Google.com 或 YouTube，应能正常加载
+![访问google网页](/clashVerge5.png)
+- 打开浏览器访问 [https://www.google.com](https://www.google.com) 或 YouTube，应能正常加载
 - 在Clash Verge的日志窗口能看到实时的流量走向记录
 - 如仍无法访问，尝试手动选择不同的代理节点重试
 
