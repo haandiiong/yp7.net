@@ -163,7 +163,7 @@ XXYUN是一类提供多地区节点的订阅服务，采用 **BGP多线中转架
 
 官方地址（请自行判断访问）：
 
-[https://xxyun.de](https://xxyun.de/3AYVsSKY.html)
+[https://xxyun.de](https://xxyun.at/?code=3AYVsSKY)
 
 ---
 

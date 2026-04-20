@@ -34,7 +34,7 @@ config:
           专属客户端更稳定<br>
           客户端不限数量，最优选择<br>
           9折优惠码xxyun
-        link: "https://xxyun.de/3AYVsSKY.html"
+        link: "https://xxyun.at/?code=3AYVsSKY"
 
       - title: "uuone"
         icon: {src: "/uuone.png"}
@@ -43,7 +43,7 @@ config:
           专属客户端更稳定<br>
           客户端不限数量，最优选择<br>
           9折优惠码uuone
-        link: "https://uuone.de/bKQXx1jc.html"
+        link: "https://uuone.at/?code=bKQXx1jc"
 
       - title: "ccyz"
         icon: {src: "/ccyz.png"}
@@ -52,7 +52,7 @@ config:
           专属客户端更稳定<br>
           客户端不限数量，最优选择<br>
           95折优惠码ccyz
-        link: "https://ccyz.org/QrBkwkM6.html"
+        link: "https://ccyz.org/?code=QrBkwkM6"
 
       - title: "奈云"
         icon: {src: "/naiyun.png"}
@@ -188,7 +188,7 @@ config:
           专属客户端更稳定<br>
           客户端不限数量，最优选择<br>
           8折优惠码20OFF
-        link: "https://aa.tankejiasu.com/#/register?code=hZKUg7Sw"
+        link: "https://ddd.jichang.best/#/register?code=p2IsV5RR"
 
       - title: "二猫云"
         icon: {src: "/ermaoyun.png"}
