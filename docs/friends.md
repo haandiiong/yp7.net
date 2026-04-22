@@ -32,4 +32,3 @@ desc: 网络大乞丐之非正规机场测评业余选手。
 ---
 
 <LinkCard title="一键联系电报Telegram" href="https://t.me/cff66778" />
-> 联系邮箱haandiiong@gmail.com
