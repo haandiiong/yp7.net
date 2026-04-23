@@ -214,5 +214,5 @@ config:
           专属客户端更稳定<br>
           客户端不限数量，最优选择<br>
           行情不允许试用，暂无任何优惠
-        link: "https://xs-us.com/register?code=6hl2OXGR"  
+        link: "https://xsus.cloud/register?code=6hl2OXGR"  
 ---

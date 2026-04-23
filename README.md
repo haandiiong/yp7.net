@@ -37,7 +37,7 @@
 |[**奈云机场**](#奈云机场)|[6.vip.v2ny.me](http://6.vip.v2ny.me?path=register&code=DJYy4gfX)|￥28元388GB/月|无试用|￥118元280GB|
 |[**隐云机场**](#隐云机场)|[wkacc.xyz](https://wkacc.xyz/?code=8945ba00)|￥29元/月|三天5GB|不支持|
 |[**cocoduck机场**](#cocoduck机场)|[www.cocoduck.live](https://www.cocoduck.live/auth/register?code=ca0cfb89fa)|￥15元150GB/月|一天2GB|不支持|
-|[**xsus机场**](#xsus机场)|[xs-us.xyz](https://xs-us.com/register?code=6hl2OXGR)|￥10元168GB/月|无试用|不支持|
+|[**xsus机场**](#xsus机场)|[xs-us.xyz](https://xsus.cloud/register?code=6hl2OXGR)|￥10元168GB/月|无试用|不支持|
 |[**runway机场**](#runway机场)|[new.runwayhz.com](https://new.runwayhz.com/#/register?code=cgkx147T)|￥9.9元100GB/月|一天6GB|￥45元150GB|
 |[**坦克加速机场**](#坦克加速机场)|[aa.tankejiasu.com](https://aa.tankejiasu.com/#/register?code=hZKUg7Sw)|￥8.88元80GB/月|一天2GB|￥50元100GB|
 |[**echo机场**](#echo机场)|[www.cyco.one](https://www.eecho.cc/#/register?code=4t5GMXAK)|￥10元80GB/月|三小时5GB|不支持|
@@ -509,7 +509,7 @@
 
 官网入口：
 
-👉[https://xs-us.xyz](https://xs-us.com/register?code=6hl2OXGR)
+👉[https://xs-us.xyz](https://xsus.cloud/register?code=6hl2OXGR)
 
 价格：
 
