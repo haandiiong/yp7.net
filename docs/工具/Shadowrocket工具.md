@@ -69,8 +69,6 @@ Shadowrocket 已从中国区下架，需要使用：
 2️⃣ 点击头像 → 退出当前账号  
 3️⃣ 登录海外 Apple ID  
 4️⃣ 搜索：Shadowrocket或直接下载👇  
-👉 [https://apps.apple.com/us/app/shadowrocket/id932747118](https://apps.apple.com/us/app/shadowrocket/id932747118)  
-
 5️⃣ 点击下载（约 $2.99）  
 6️⃣ 安装完成后打开  
 
