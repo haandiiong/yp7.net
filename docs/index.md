@@ -27,6 +27,14 @@ config:
           一天5GB试用码yp7net以及9折优惠码ZLOARB
         link: "https://wjkc66.vip/?c=GDIHMU"        
 
+      - title: "全球云"
+        icon: {src: "/qqy.png"}
+        details: |
+          最低20元120GB/月<br>
+          提供低延迟、高稳定性的IPLC/IEPL专线VPN<br>
+          ☑️微信☑️支付宝
+        link: "https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf"
+
       - title: "xxyun"
         icon: {src: "/xxyun.png"}
         details: | 
@@ -35,6 +43,14 @@ config:
           客户端不限数量，最优选择<br>
           9折优惠码xxyun
         link: "https://xxyun.at/?code=3AYVsSKY"
+
+      - title: "阿达西"
+        icon: {src: "/adaxi.png"}
+        details: |
+          最低3元20GB/月<br>
+          全球节点覆盖，企业级加密传输。<br>
+          ☑️微信☑️支付宝
+        link: "https://adaxi.net/?r=156726"
 
       - title: "uuone"
         icon: {src: "/uuone.png"}
@@ -102,14 +118,6 @@ config:
           ☑️微信☑️支付宝
         link: "https://haandiiong.vipaff.cc/#/?code=2hetA61B"
 
-      - title: "全球云"
-        icon: {src: "/qqy.png"}
-        details: |
-          最低20元120GB/月<br>
-          提供低延迟、高稳定性的IPLC/IEPL专线VPN<br>
-          ☑️微信☑️支付宝
-        link: "https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf"
-
       - title: "光年梯"
         icon: {src: "/gnt.png"}
         details: |
@@ -141,14 +149,6 @@ config:
           稳定的台湾家宽VPN<br>
           ☑️微信☑️支付宝
         link: "https://cpdd.one/?r=156735"
-
-      - title: "阿达西"
-        icon: {src: "/adaxi.png"}
-        details: |
-          最低3元20GB/月<br>
-          全球节点覆盖，企业级加密传输。<br>
-          ☑️微信☑️支付宝
-        link: "https://adaxi.net/?r=156726"
 
       - title: "cocoduck"
         icon: {src: "/cocoduck.png"}
@@ -214,5 +214,32 @@ config:
           专属客户端更稳定<br>
           客户端不限数量，最优选择<br>
           行情不允许试用，暂无任何优惠
-        link: "https://xsus.cloud/register?code=6hl2OXGR"  
+        link: "https://xsus.cloud/register?code=6hl2OXGR"
+     
+      - title: "寰宇云"
+        icon: {src: "/huanyuyun.png"}
+        details: |
+          最低18元150GB/月<br>
+          专属客户端更稳定<br>
+          客户端不限数量，最优选择<br>
+          78折优惠码KY78
+        link: "https://huanyuyunvip.com/#/register?code=5lSDLsfF" 
+        
+      - title: "光速云"
+        icon: {src: "/guangsuyun.png"}
+        details: |
+          最低17元110GB/月<br>
+          专属客户端更稳定<br>
+          客户端不限数量，最优选择<br>
+          8折优惠码yp7
+        link: "https://yp7.gsyaff.com/#/?code=38fT49vM" 
+        
+      - title: "sogo"
+        icon: {src: "/sogo.png"}
+        details: |
+          最低25元120GB/月<br>
+          专属客户端更稳定<br>
+          客户端不限数量，最优选择<br>
+          8折优惠码SOGO168
+        link: "https://01.sogoyunaff.cc/#/register?code=ha4vvpdI"  
 ---
