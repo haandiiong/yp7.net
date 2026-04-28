@@ -209,6 +209,6 @@ description: VPN是什么？3分钟看懂VPN的原理、作用、优缺点及是
 
 👉 [科学上网完整指南](/posts/vpn-guide-2026/)  
 
-👉 [2026机场推荐合集](/posts/airport-recommend-2026/)  
+👉 [2026机场推荐合集](/posts/vpn/)  
 
 👉 [Clash使用教程](/posts/clash-guide/)  

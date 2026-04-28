@@ -222,7 +222,7 @@ TikTok是视频平台：
 
 👉 推荐入口：
 
-👉 [2026稳定VPN/机场推荐合集](/posts/airport-recommend-2026/)
+👉 [2026稳定VPN/机场推荐合集](/posts/vpn/)
 
 ---
 
@@ -271,4 +271,4 @@ TikTok是视频平台：
 👉 不要折腾免费工具  
 👉 直接用稳定节点（成功率最高）
 
-👉 [2026稳定VPN/机场推荐合集](/posts/airport-recommend-2026/)
+👉 [2026稳定VPN/机场推荐合集](/posts/vpn/)

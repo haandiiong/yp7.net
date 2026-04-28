@@ -13,7 +13,7 @@ config:
           link: "/posts/vpn-guide-2026/"
         - theme: brand
           text: "机场推荐 →"
-          link: "/posts/airport-recommend-2026/"
+          link: "/posts/vpn/"
 
   - type: features
     features:

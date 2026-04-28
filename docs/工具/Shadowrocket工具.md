@@ -94,7 +94,7 @@ Shadowrocket本身不能直接使用，需要：
 👉 购买机场订阅  
 
 推荐阅读：  
-👉 [2026机场推荐](/posts/airport-recommend-2026/)
+👉 [2026机场推荐](/posts/vpn/)
 
 ---
 
@@ -257,4 +257,4 @@ Shadowrocket使用核心只有三步：
 
 ## 👉 延伸阅读（提高排名权重）
 
-- [2026机场推荐](/posts/airport-recommend-2026/)
+- [2026机场推荐](/posts/vpn/)

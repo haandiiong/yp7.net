@@ -7,7 +7,7 @@
 ## 机场价格与流量汇总（核心数据）
 
 -  **官网**，**价格计划**，**详细测评**以及各种**优惠**（点击机场名字可查看机场简介）
-- 如果有选择困难，可查看精心挑选的八大优质机场[精心挑选的七大机场（每周更新）](/posts/airport-recommend-2026/)
+- 如果有选择困难，可查看精心挑选的八大优质机场[精心挑选的七大机场（每周更新）](/posts/vpn/)
 >**小提示**：使用机场自家的专属客户端延迟低，网速更稳定
 
 |品牌|官网地址|最低包月套餐|试用|不限时|专属客户端|通用订阅|
@@ -703,7 +703,7 @@
 
 ## 📚 相关阅读
 
-- ✈️ [2026年最值得使用的机场](https://yp7.net/posts/airport-recommend-2026/)  
+- ✈️ [2026年最值得使用的机场](https://yp7.net/posts/vpn/)  
 - 📱 [Android系统Clash完整部署](https://yp7.net/posts/clash-for-android-guide-2026/)  
 - 🖥️ [Windows、Mac、Linux电脑Clash快速安装](https://yp7.net/posts/clash-verge-guide-2026/)  
 - 🍎 [iPhone手机工具配置全攻略](https://yp7.net/posts/shadowrocket-guide-2026/)
