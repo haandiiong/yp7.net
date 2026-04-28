@@ -208,7 +208,5 @@ description: VPN是什么？3分钟看懂VPN的原理、作用、优缺点及是
 如果你已经理解VPN，可以继续看：
 
 👉 [科学上网完整指南](/posts/vpn-guide-2026/)  
-
-👉 [2026机场推荐合集](/posts/vpn/)  
-
+👉 [2026机场推荐合集](/posts/airport-recommend-2026/)  
 👉 [Clash使用教程](/posts/clash-guide/)  

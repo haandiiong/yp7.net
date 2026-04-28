@@ -200,7 +200,7 @@ Runway机场是一个提供 **Clash / Shadowsocks 节点订阅** 的服务平台
 
 ## 📚 相关阅读
 
-- ✈️ [2026机场推荐合集](/posts/vpn/)  
+- ✈️ [2026机场推荐合集](/posts/airport-recommend-2026/)  
 - 📱 [Android系统Clash完整部署](/posts/clash-for-android-guide-2026/)  
 - 🖥️ [Windows、Mac、Linux电脑Clash快速安装](/posts/clash-verge-guide-2026/)  
 - 🍎 [iPhone手机工具配置全攻略](/posts/shadowrocket-guide-2026/)
