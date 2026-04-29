@@ -123,11 +123,11 @@ A: 使用Trojan协议时隐蔽性更强，且ssone节点均为优质供应商提
 
 如果你想查看更多机场推荐，可以参考：
 
-- 👉 [更多VPN合集选择指南](/posts/airport-recommend-2026/)  
+- 👉 [更多VPN合集选择指南](/posts/vpn-recommend/)  
 
 ## 📚 相关阅读
 
-- ✈️ [2026机场推荐合集](/posts/airport-recommend-2026/)  
+- ✈️ [2026机场推荐合集](/posts/vpn-recommend/)  
 - 📱 [Android系统Clash完整部署](/posts/clash-for-android-guide-2026/)  
 - 🖥️ [Windows、Mac、Linux电脑Clash快速安装](/posts/clash-verge-guide-2026/)  
 - 🍎 [iPhone手机工具配置全攻略](/posts/shadowrocket-guide-2026/)

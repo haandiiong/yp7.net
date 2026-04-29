@@ -245,4 +245,4 @@ OKX采用：
 ## 🔗 延伸阅读
 
 👉 [USDT是什么？](/posts/what-is-usdt/)  
-👉 [机场推荐（访问交易所必备）](/posts/airport-recommend-2026/)
+👉 [机场推荐（访问交易所必备）](/posts/vpn-recommend/)
