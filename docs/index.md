@@ -199,14 +199,6 @@ config:
           7折优惠码yp7
         link: "https://falnixx.2maoyuntt.club/#/register?code=uT1DE9p8"
 
-      - title: "echo"
-        icon: {src: "/echo.png"}
-        details: |
-          最低10元80GB/月<br>
-          全球节点覆盖，企业级加密传输。<br>
-          ☑️微信☑️支付宝
-        link: "https://www.eecho.cc/#/register?code=4t5GMXAK"
-
       - title: "xsus"
         icon: {src: "/xsus.png"}
         details: |
@@ -241,5 +233,5 @@ config:
           专属客户端更稳定<br>
           客户端不限数量，最优选择<br>
           8折优惠码SOGO168
-        link: "https://01.sogoyunaff.cc/#/register?code=ha4vvpdI"  
+        link: "https://01.sogoyunaff.cc/#/login?code=ha4vvpdI"  
 ---
