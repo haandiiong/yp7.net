@@ -6,7 +6,7 @@ permalink: /friends/
 list:
   - name: 二猫子
     link: https://www.ermao.net/
-    avatar: https://www.ermao.net/images/logo.svg
+    avatar: https://www.ermao.net/img/logo.svg
     desc: 老老实实的二猫子，从不胡说八道。
   - name: YouYou
     link: https://vpnnew.net/blog/

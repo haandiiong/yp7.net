@@ -292,7 +292,7 @@ TikTok已经不是娱乐平台，而是：
 
 ## 🚀 延伸阅读（提升转化）
 
-👉 [2026稳定机场推荐合集](/posts/vpn-recommend/)
+👉 [2026稳定机场推荐合集](/posts/airport-recommend-2026/)
 
 👉 [苹果手机工具配置全攻略](/posts/shadowrocket-guide-2026/)
 

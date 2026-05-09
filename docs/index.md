@@ -13,7 +13,7 @@ config:
           link: "/posts/vpn-guide-2026/"
         - theme: brand
           text: "机场推荐 →"
-          link: "/posts/vpn-recommend/"
+          link: "/posts/airport-recommend-2026/"
 
   - type: features
     features:
@@ -197,7 +197,7 @@ config:
           专属客户端更稳定<br>
           客户端不限数量，最优选择<br>
           7折优惠码yp7
-        link: "https://falnixx.2maoyuntt.club/#/register?code=uT1DE9p8"
+        link: "https://velmora.2maoyuntt.cc/register?code=uT1DE9p8"
 
       - title: "xsus"
         icon: {src: "/xsus.png"}

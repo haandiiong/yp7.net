@@ -85,7 +85,7 @@ sudo dpkg -i Clash.Verge.Linux.x64.deb
 3. 填写名称
 4. 粘贴配置地址
 
-如果还没有订阅点击查看👉[2026年稳定好用的机场推荐](/posts/vpn-recommend/)
+如果还没有订阅点击查看👉[2026年稳定好用的机场推荐](/posts/airport-recommend-2026/)
 
 5. 保存
 
