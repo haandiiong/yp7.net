@@ -197,7 +197,7 @@ config:
           专属客户端更稳定<br>
           客户端不限数量，最优选择<br>
           7折优惠码yp7
-        link: "https://velmora.2maoyuntt.cc/register?code=uT1DE9p8"
+        link: "https://01.2maoyunaff.cc/#/register?code=uT1DE9p8"
 
       - title: "xsus"
         icon: {src: "/xsus.png"}
