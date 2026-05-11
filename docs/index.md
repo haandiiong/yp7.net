@@ -215,7 +215,7 @@ config:
           专属客户端更稳定<br>
           客户端不限数量，最优选择<br>
           78折优惠码KY78
-        link: "https://huanyuyunvip.com/#/register?code=5lSDLsfF" 
+        link: "https://vip4.huanyuyunbest.com/#/register?code=5lSDLsfF" 
         
       - title: "光速云"
         icon: {src: "/guangsuyun.png"}
