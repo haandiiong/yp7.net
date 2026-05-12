@@ -28,21 +28,22 @@ config:
       - title: "全球云"
         icon: {src: "/qqy.png"}
         details: |
-          专属客户端更稳定<br>
-          客户端不限数量，强烈推荐<br>
+          最低20元120GB/月<br>
+          8折优惠码cff88<br>
         link: "https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf"
 
       - title: "xxyun"
         icon: {src: "/xxyun.png"}
         details: | 
           最低9.99元100GB/月<br>
-          9折优惠码xxyun<br><br>
+          9折优惠码xxyun<br>
         link: "https://xxyun.at/?code=3AYVsSKY"
 
       - title: "阿达西"
         icon: {src: "/adaxi.png"}
         details: |
           最低3元20GB/月<br>
+          行情不允许试用，暂无任何优惠
         link: "https://adaxi.net/?r=156726"
 
       - title: "uuone"
@@ -63,86 +64,98 @@ config:
         icon: {src: "/naiyun.png"}
         details: |
           最低28元388GB/月<br>
+          8折优惠码NY8Z
         link: "http://6.vip.v2ny.me?path=register&code=DJYy4gfX"
 
       - title: "隐云"
         icon: {src: "/yinyun.png"}
         details: |
           最低29元无限流量限2台设备专属客户端<br>
-          全球节点覆盖，企业级加密传输。<br>
-          ☑️微信☑️支付宝
+          新用户注册可享3天5GB的免费体验服务
         link: "https://wkacc.xyz/?code=8945ba00"
 
       - title: "flybit"
         icon: {src: "/flybit.png"}
         details: |
           最低15元128GB/月<br>
+          9折优惠码flybit
         link: "https://goflybit.com/#/register?code=p3DOcgzt"
 
       - title: "99吧"
         icon: {src: "/99ba.png"}
         details: |
           最低12.99元99GB/月<br>
+          9折优惠码2026-99
         link: "https://99ba.net/#/register?code=Wls9E3cC"
 
       - title: "唯兔云"
         icon: {src: "/weituyun.png"}
         details: |
           最低14.9元100GB/月<br>
+          9折优惠码rabbit
         link: "https://haandiiong.v2cvipaff.cc/#/?code=jLYAKndB"  
 
       - title: "u1s1"
         icon: {src: "/u1s1.png"}
         details: |
           最低20元120GB/月<br>
+          85折优惠码U1S1
         link: "https://haandiiong.vipaff.cc/#/?code=2hetA61B"
 
       - title: "光年梯"
         icon: {src: "/gnt.png"}
         details: |
           最低18元110GB/月<br>
+          7折优惠码GNT70
         link: "https://haandiiong.gntvipaff.cc/#/?code=ZWhMOU3y"
 
       - title: "ssone"
         icon: {src: "/ssone.png"}
         details: |
           最低15元70GB/月<br>
+          9折优惠码2026a
         link: "https://hello-ssone.com/register?aff=QpXdVaKY"
 
       - title: "迅达"
         icon: {src: "/xunda.png"}
         details: |
           最低15元150GB/月<br>
+          新用户注册可享三天5GB的免费体验服务
         link: "https://sulianproxy.com/register?code=wUdcc9nV"
 
       - title: "冲上云霄"
         icon: {src: "/csyx.png"}
         details: | 
           最低5元80GB/月<br>
+          行情不允许试用，暂无任何优惠
         link: "https://cpdd.one/?r=156735"
 
       - title: "cocoduck"
         icon: {src: "/cocoduck.png"}
         details: |
           最低15元150GB/月<br>
+          新用户注册可享1天2GB的免费体验服务
         link: "https://cocoduck.live/auth/register?code=ca0cfb89fa"
 
       - title: "极连云"
         icon: {src: "/jilianyun.png"}
         details: |
           最低15.5元100GB/月<br>
+          8折优惠码JLY888
         link: "https://mind01.jlcvipaff.cc/#/?code=KphXzUot"
 
       - title: "runway"
         icon: {src: "/runway.png"}
         details: |
           最低9.9元100GB/月<br>
+          新用户注册可享1天6GB的免费体验服务
         link: "https://new.runwayhz.com/#/register?code=cgkx147T"
 
       - title: "坦克加速"
         icon: {src: "/tankejiasu.png"}
         details: |
           最低9.9元100GB/月<br>
+          9折优惠码zkm9
         link: "https://aa.tankejiasu.com/#/register?code=hZKUg7Sw"
 
       - title: "瞬云"
@@ -212,6 +225,6 @@ config:
         icon: {src: "/xingdaomeng.png"}
         details: |
           最低16元100GB/月<br>
-          8折优惠码SOGO168
+          8折优惠码XDM888
         link: "https://yp7.xingdaomeng.com/#/?code=QiAgQc3t"  
 ---
