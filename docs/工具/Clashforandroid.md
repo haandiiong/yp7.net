@@ -237,4 +237,4 @@ Clash for Android 是目前最强大的安卓科学上网工具之一：
 
 ## 👉 延伸阅读
 
-- [机场推荐（2026稳定节点合集）](/posts/airport-recommend-2026/)
+- [机场推荐（2026更新）](/posts/airport-recommend-2026/)

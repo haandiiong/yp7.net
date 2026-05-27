@@ -288,16 +288,11 @@ TikTok已经不是娱乐平台，而是：
 - 副业人群  
 - 跨境卖家  
 
----
-
-## 🚀 延伸阅读（提升转化）
-
-👉 [2026稳定机场推荐合集](/posts/airport-recommend-2026/)
-
-👉 [苹果手机工具配置全攻略](/posts/shadowrocket-guide-2026/)
-
----
-
 ## 📌 一句话总结
 
 👉 学会TikTok = 拿到全球流量 + 长期赚钱能力
+
+## 相关阅读
+
+- [机场推荐（2026更新）](/posts/airport-recommend-2026/)
+- [机场大全（2026更新）](/posts/airport-list-2026/)

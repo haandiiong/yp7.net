@@ -263,4 +263,7 @@ TikTok只允许**特定地区IP访问**
 👉 不要折腾配置  
 👉 直接用稳定机场（成功率最高）
 
-👉 [2026稳定VPN/机场推荐合集](/posts/airport-recommend-2026/)
+## 相关阅读
+
+- [机场推荐（2026更新）](/posts/airport-recommend-2026/)
+- [机场大全（2026更新）](/posts/airport-list-2026/)

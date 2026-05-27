@@ -4,27 +4,37 @@ import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
   lang: 'zh-CN',
+  title: 'yp7.net',
+  description: '机场推荐、VPN推荐、科学上网教程、Clash节点使用指南，分享稳定高速的网络加速工具与翻墙资源。',
   head: [
-    ['meta', { charset: 'utf-8' }],
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
     ['meta', { name: 'robots', content: 'index, follow' }],
     ['meta', { name: 'author', content: 'yp7' }],
-    ['meta', { name: 'keywords', content: 'VPN推荐,科学上网,机场推荐,翻墙VPN' }],
+    ['meta', { name: 'keywords', content: '机场推荐,机场推荐,VPN推荐,科学上网,Clash节点推荐,翻墙VPN' }],
   ],
   theme: plumeTheme({
-    // logo: '/logo.png',
     home: '/',
     hostname: 'https://yp7.net',
     footer: { message: "yp7.net © 2026 CFF 版权所有" },
     navbar: [
-      { text: '首页', link: '/' },
+      { text: '首页', link: '/' , icon: 'material-symbols:home-rounded' },
+      // { text: '二毛博客', link: '/blog/', icon: 'material-symbols:home-rounded' },
+
+      { text: '机场推荐', link: '/posts/airport-recommend-2026/', icon: 'material-symbols:flight-takeoff' },
+      {
+        text: '翻墙工具',
+        icon: 'ic:baseline-construction',
+        items: [
+          { text: 'Windows/Linux/MacOS', link: '/posts/clash-verge-guide-2026/', icon: 'ic:baseline-personal-video' },
+          { text: 'Android手机', link: '/posts/clash-for-android-guide-2026/', icon: 'ic:baseline-android' },
+          { text: 'iOS苹果手机', link: '/posts/shadowrocket-guide-2026/', icon: 'ic:baseline-rocket-launch' },
+        ],
+      },
       { text: '博客', link: '/blog/' },
       { text: '友链', link: '/friends/' },
     ],
     profile: {
       name: 'yp7.net',
-      description: 'Y.P.7 的个人博客，分享VPN推荐、科学上网技巧和翻墙资源，帮助你畅游互联网世界。',
-      //avatar: '/logo.png',
+      description: 'yp7.net 专注于机场推荐、VPN推荐、Clash节点使用教程和科学上网问题解决，帮助用户选择稳定高速的网络加速方案。',
     },
     social: [
       { icon: 'github', link: 'https://github.com/haandiiong' },

@@ -1,0 +1,4 @@
+# pnpm-workspace.yaml
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild

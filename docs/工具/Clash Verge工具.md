@@ -84,9 +84,6 @@ sudo dpkg -i Clash.Verge.Linux.x64.deb
 2. 点击新建
 3. 填写名称
 4. 粘贴配置地址
-
-如果还没有订阅点击查看👉[2026年稳定好用的机场推荐](/posts/airport-recommend-2026/)
-
 5. 保存
 
 ![clashverge系统代理](/clashVerge2.png)
@@ -185,3 +182,8 @@ Clash Verge 使用流程：
 4. 开启代理
 
 完成即可使用。
+
+## 相关阅读
+
+- [机场推荐（2026更新）](/posts/airport-recommend-2026/)
+- [什么是Clash](/posts/clash-guide/)

@@ -358,7 +358,5 @@ Flybit整体属于：
 
 ## 相关阅读
 
-- [2026稳定机场推荐](/posts/airport-recommend-2026/)
+- [机场推荐（2026更新）](/posts/airport-recommend-2026/)
 - [机场大全（2026更新）](/posts/airport-list-2026/)
-- [Clash Verge完整教程](/posts/clash-verge-guide-2026/)
-- [机场测速方法详解](/posts/speedtest-vpn/)

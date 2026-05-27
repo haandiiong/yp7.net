@@ -240,9 +240,8 @@ OKX采用：
 - 备用：再开一个 Binance  
 - 大额：不要长期放交易所  
 
----
+## 相关阅读
 
-## 🔗 延伸阅读
-
-👉 [USDT是什么？](/posts/what-is-usdt/)  
-👉 [机场推荐（访问交易所必备）](/posts/airport-recommend-2026/)
+- [USDT是什么？](/posts/what-is-usdt/)  
+- [机场推荐（2026更新）](/posts/airport-recommend-2026/)
+- [机场大全（2026更新）](/posts/airport-list-2026/)

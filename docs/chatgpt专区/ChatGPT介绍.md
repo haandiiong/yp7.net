@@ -232,3 +232,8 @@ ChatGPT会直接生成内容。
 1️⃣ ChatGPT = AI助手  
 2️⃣ 会提问比会用更重要  
 3️⃣ 一定使用正版入口  
+
+## 相关阅读
+
+- [机场推荐（2026更新）](/posts/airport-recommend-2026/)
+- [机场大全（2026更新）](/posts/airport-list-2026/)
