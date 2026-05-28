@@ -123,9 +123,9 @@ A: 使用Trojan协议时隐蔽性更强，且ssone节点均为优质供应商提
 
 如果你想查看更多机场推荐，可以参考：
 
-- 👉 [更多VPN合集选择指南](/posts/airport-recommend-2026/)  
+- 👉 [更多VPN合集选择指南](/posts/jichang-tuijian/)  
 
 ## 相关阅读
 
-- [机场推荐（2026更新）](/posts/airport-recommend-2026/)
-- [机场大全（2026更新）](/posts/airport-list-2026/)
+- [机场推荐（2026更新）](/posts/jichang-tuijian/)
+- [机场大全（2026更新）](/posts/jichang-heji/)

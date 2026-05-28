@@ -64,7 +64,7 @@ ChatGPT的用途非常广泛：
 👉 很多人把它当作：  
 **“超级搜索引擎 + 写作助手”**
 
-- 如果不能流畅使用chatGPT可以查看这篇文章[2026年稳定好用的机场推荐](/posts/airport-recommend-2026/)
+- 如果不能流畅使用chatGPT可以查看这篇文章[2026年稳定好用的机场推荐](/posts/jichang-tuijian/)
 
 ---
 
@@ -235,5 +235,5 @@ ChatGPT会直接生成内容。
 
 ## 相关阅读
 
-- [机场推荐（2026更新）](/posts/airport-recommend-2026/)
-- [机场大全（2026更新）](/posts/airport-list-2026/)
+- [机场推荐（2026更新）](/posts/jichang-tuijian/)
+- [机场大全（2026更新）](/posts/jichang-heji/)

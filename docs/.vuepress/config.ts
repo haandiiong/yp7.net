@@ -5,21 +5,18 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   lang: 'zh-CN',
   title: 'yp7.net',
-  description: '机场推荐、VPN推荐、科学上网教程、Clash节点使用指南，分享稳定高速的网络加速工具与翻墙资源。',
+  description: 'yp7.net 提供2026机场推荐、VPN推荐、Clash节点使用教程与科学上网问题解决方案，帮助用户选择稳定高速的网络加速工具。',
   head: [
     ['meta', { name: 'robots', content: 'index, follow' }],
     ['meta', { name: 'author', content: 'yp7' }],
-    ['meta', { name: 'keywords', content: '机场推荐,机场推荐,VPN推荐,科学上网,Clash节点推荐,翻墙VPN' }],
   ],
+  shouldPrefetch: false,
   theme: plumeTheme({
-    home: '/',
     hostname: 'https://yp7.net',
     footer: { message: "yp7.net © 2026 CFF 版权所有" },
     navbar: [
-      { text: '首页', link: '/' , icon: 'material-symbols:home-rounded' },
-      // { text: '二毛博客', link: '/blog/', icon: 'material-symbols:home-rounded' },
-
-      { text: '机场推荐', link: '/posts/airport-recommend-2026/', icon: 'material-symbols:flight-takeoff' },
+      { text: '首页', link: '/', icon: 'material-symbols:home-rounded' },
+      { text: '机场推荐', link: '/posts/jichang-tuijian/', icon: 'material-symbols:flight-takeoff' },
       {
         text: '翻墙工具',
         icon: 'ic:baseline-construction',
@@ -29,7 +26,7 @@ export default defineUserConfig({
           { text: 'iOS苹果手机', link: '/posts/shadowrocket-guide-2026/', icon: 'ic:baseline-rocket-launch' },
         ],
       },
-      { text: '博客', link: '/blog/' },
+      { text: '全部文章', link: '/blog/' },
       { text: '友链', link: '/friends/' },
     ],
     profile: {
@@ -43,9 +40,6 @@ export default defineUserConfig({
         link: 'https://t.me/yp7net'
       },
     ],
-    plugins: {
-
-    },
     markdown: {
       collapse: true,
     },
@@ -57,17 +51,9 @@ export default defineUserConfig({
   }),
   bundler: viteBundler({
     viteOptions: {
-      optimizeDeps: {
-        exclude: [
-          'mark.js/src/vanilla.js',
-          '@vueuse/integrations/useFocusTrap',
-          '@vueuse/core',
-          'bcrypt-ts/browser',
-          '@vuepress/helper/client',
-          '@iconify/vue',
-          '@iconify/vue/offline'
-        ]
-      }
+      build: {
+        modulePreload: false,
+      },
     }
-  }),
+  })
 })

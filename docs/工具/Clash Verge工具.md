@@ -185,5 +185,5 @@ Clash Verge 使用流程：
 
 ## 相关阅读
 
-- [机场推荐（2026更新）](/posts/airport-recommend-2026/)
+- [机场推荐（2026更新）](/posts/jichang-tuijian/)
 - [什么是Clash](/posts/clash-guide/)

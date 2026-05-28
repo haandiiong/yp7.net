@@ -190,7 +190,7 @@ description: 本文详细讲解机场测速方法，包括Clash测速、Speedtes
 
 ## 📚 相关阅读
 
-- [机场推荐（2026更新）](/posts/airport-recommend-2026/)  
+- [机场推荐（2026更新）](/posts/jichang-tuijian/)  
 - [Clash节点是什么？新手入门指南](/posts/clash-guide/)  
 - [Clash客户端安装与配置教程](/posts/clash-verge-guide-2026/)
 

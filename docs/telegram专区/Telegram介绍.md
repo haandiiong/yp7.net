@@ -300,5 +300,5 @@ Telegram 不只是聊天工具，而是一个：
 
 ## 相关阅读
 
-- [机场推荐（2026更新）](/posts/airport-recommend-2026/)
-- [机场大全（2026更新）](/posts/airport-list-2026/)
+- [机场推荐（2026更新）](/posts/jichang-tuijian/)
+- [机场大全（2026更新）](/posts/jichang-heji/)
