@@ -14,4 +14,40 @@ config:
         - theme: alt
           text: "科学上网教程 →"
           link: "/posts/vpn-guide-2026/"
+  - type: features
+    title: "yp7.net 是什么"
+    description: "中文科学上网教程与机场测评站点，整理机场推荐、VPN 使用方法、Clash 节点配置、Shadowrocket 教程、TikTok 和 ChatGPT 访问问题。"
+    features:
+      - title: "机场推荐"
+        details: "按晚高峰体验、长期稳定性、适合人群和新手友好度整理主推机场。"
+        link: "/posts/jichang-tuijian/"
+        linkText: "查看推荐"
+      - title: "套餐数据"
+        details: "汇总最低价格、月流量、试用信息、客户端类型和优惠码，适合横向对比。"
+        link: "/posts/jichang-heji/"
+        linkText: "查看大全"
+      - title: "新手教程"
+        details: "解释 VPN、机场、代理协议、Clash、Shadowrocket 和常见使用场景。"
+        link: "/posts/vpn-guide-2026/"
+        linkText: "开始入门"
+  - type: features
+    title: "测评方法"
+    description: "单次测速不能代表长期稳定性，本站更关注晚高峰、真实场景和持续使用表现。"
+    features:
+      - title: "晚高峰测试"
+        details: "优先观察 20:00-23:00 是否能稳定打开网页、播放视频和使用 ChatGPT。"
+      - title: "客户端兼容"
+        details: "关注 Clash Verge、Shadowrocket、Clash Meta 和专属客户端的订阅导入与节点切换体验。"
+      - title: "购买风险"
+        details: "结合套餐价格、流量、试用、退款、售后和跑路风险，不建议未经测试直接年付。"
+  - type: features
+    title: "风险提示"
+    description: "机场、VPN、代理节点和流媒体解锁服务都具有时效性，价格、优惠码、节点数量、解锁能力和测速结果可能随时间变化。"
+    features:
+      - title: "先短期测试"
+        details: "购买前建议先选择月付或更短周期，在自己的常用设备、地区和时段完成测试。"
+      - title: "以官网为准"
+        details: "套餐、价格、优惠码、节点和退款规则最终以服务商官网和实际后台为准。"
+      - title: "自行判断规则"
+        details: "涉及支付、账号、USDT、交易所和跨境网络访问时，请自行确认当地规则、服务条款和资金风险。"
 ---
