@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /assets/
 Disallow: /.temp/
 Disallow: /.cache/
 Disallow: /blog/tags/

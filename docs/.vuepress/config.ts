@@ -3,17 +3,154 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { plumeTheme } from 'vuepress-theme-plume'
 // import  mediumZoomPlugin from '@vuepress/plugin-medium-zoom'
 
+const hostname = 'https://yp7.net'
+const siteName = 'yp7.net'
+const siteDescription = 'yp7.net 提供2026机场推荐、VPN推荐、Clash节点使用教程与科学上网问题解决方案，帮助用户选择稳定高速的网络加速工具。'
+
+const getCanonicalUrl = (path: string) => `${hostname}${path}`
+
+const stripMarkdown = (content: string) => content
+  .replace(/==([^=]+)==\{[^}]+\}/g, '$1')
+  .replace(/<[^>]+>/g, '')
+  .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+  .replace(/[*_`>#{}]/g, '')
+  .replace(/\s+/g, ' ')
+  .trim()
+
+const getFaqItems = (content = '') => {
+  const lines = content.split('\n')
+  const faqItems = []
+  let inFaqSection = false
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index].trim()
+
+    if (line.startsWith('## ')) {
+      inFaqSection = /FAQ|常见问题/.test(line)
+      continue
+    }
+
+    if (!inFaqSection || !line.startsWith('### ')) continue
+
+    const question = stripMarkdown(line.replace(/^###\s+/, ''))
+    const answerLines = []
+
+    for (let nextIndex = index + 1; nextIndex < lines.length; nextIndex += 1) {
+      const nextLine = lines[nextIndex].trim()
+      if (nextLine.startsWith('## ') || nextLine.startsWith('### ')) break
+      if (nextLine && !nextLine.startsWith('---')) answerLines.push(nextLine)
+    }
+
+    const answer = stripMarkdown(answerLines.join(' '))
+    if (question && answer) {
+      faqItems.push({
+        '@type': 'Question',
+        name: question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: answer,
+        },
+      })
+    }
+  }
+
+  return faqItems.slice(0, 8)
+}
+
+const getPageSchema = (page: any) => {
+  const canonicalUrl = getCanonicalUrl(page.path)
+  const title = page.title || siteName
+  const description = page.frontmatter.description || siteDescription
+  const faqItems = getFaqItems(page.content)
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': `${hostname}/#organization`,
+        name: siteName,
+        url: hostname,
+        sameAs: [
+          'https://github.com/haandiiong',
+          'https://t.me/yp7net',
+        ],
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${hostname}/#website`,
+        url: hostname,
+        name: siteName,
+        description: siteDescription,
+        inLanguage: 'zh-CN',
+        publisher: { '@id': `${hostname}/#organization` },
+      },
+      {
+        '@type': page.path === '/' ? 'WebPage' : 'Article',
+        '@id': `${canonicalUrl}#webpage`,
+        url: canonicalUrl,
+        name: title,
+        headline: title,
+        description,
+        inLanguage: 'zh-CN',
+        isPartOf: { '@id': `${hostname}/#website` },
+        author: { '@id': `${hostname}/#organization` },
+        publisher: { '@id': `${hostname}/#organization` },
+        mainEntityOfPage: canonicalUrl,
+        datePublished: page.frontmatter.createTime || undefined,
+        dateModified: page.data.git?.updatedTime
+          ? new Date(page.data.git.updatedTime).toISOString()
+          : page.frontmatter.createTime || undefined,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${canonicalUrl}#breadcrumb`,
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: '首页',
+            item: hostname,
+          },
+          ...(page.path === '/'
+            ? []
+            : [{
+                '@type': 'ListItem',
+                position: 2,
+                name: title,
+                item: canonicalUrl,
+              }]),
+        ],
+      },
+      ...(faqItems.length
+        ? [{
+            '@type': 'FAQPage',
+            '@id': `${canonicalUrl}#faq`,
+            mainEntity: faqItems,
+          }]
+        : []),
+    ],
+  }
+}
+
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: 'yp7.net',
-  description: 'yp7.net 提供2026机场推荐、VPN推荐、Clash节点使用教程与科学上网问题解决方案，帮助用户选择稳定高速的网络加速工具。',
+  title: siteName,
+  description: siteDescription,
   head: [
     ['meta', { name: 'robots', content: 'index, follow' }],
     ['meta', { name: 'author', content: 'yp7' }],
   ],
+  extendsPage: (page) => {
+    page.frontmatter.head = [
+      ...(page.frontmatter.head || []),
+      ['link', { rel: 'canonical', href: getCanonicalUrl(page.path) }],
+      ['script', { type: 'application/ld+json' }, JSON.stringify(getPageSchema(page))],
+    ]
+  },
   shouldPrefetch: false,
   theme: plumeTheme({
-    hostname: 'https://yp7.net',
+    hostname,
     footer: { message: "yp7.net © 2026 CFF 版权所有" },
     navbar: [
       { text: '首页', link: '/', icon: 'material-symbols:home-rounded' },

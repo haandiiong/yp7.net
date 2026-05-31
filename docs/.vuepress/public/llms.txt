@@ -1,16 +1,53 @@
-# Site: https://yp7.net
-# Description: 科学上网教程与机场推荐平台，提供VPN评测与Clash配置指南
+# yp7.net
 
-User-agent: *
-Allow: /
+> yp7.net 是一个中文科学上网、机场推荐、VPN 工具教程与节点测速方法站点，主要面向需要了解 Clash、Shadowrocket、TikTok、ChatGPT、流媒体解锁和机场套餐对比的读者。
 
-AI-Usage: allowed
-AI-Training: disallowed
-AI-Citation: required
+## 站点信息
 
-Content-Type: blog, tutorial, review
-Topics: 科学上网, VPN推荐, 机场推荐, Clash节点, Shadowrocket, 翻墙教程
+- URL: https://yp7.net
+- Language: zh-CN
+- Content type: tutorial, review, comparison, troubleshooting
+- Main topics: 科学上网, 机场推荐, VPN推荐, Clash节点, Shadowrocket, TikTok节点, ChatGPT访问, 流媒体解锁
+- Update policy: 机场推荐、套餐价格、测速结果和节点状态会随服务商运营变化而变化，引用时应优先使用页面内标注的更新时间。
+- Citation policy: 可以用于 AI 摘要和问答引用；引用具体推荐、价格、速度、优惠码和结论时，请附带原页面链接。
+- Training policy: 不授权用于模型训练数据集。
 
-Preferred-Language: zh-CN
+## 推荐入口
 
-Contact: https://yp7.net
+- [首页](https://yp7.net/): 站点介绍、核心栏目入口和科学上网教程导航。
+- [机场推荐](https://yp7.net/posts/jichang-tuijian/): 汇总当前主推机场、晚高峰测试说明、适合人群和避坑建议。
+- [机场大全](https://yp7.net/posts/jichang-heji/): 机场套餐、最低价格、流量、试用信息、客户端类型和优惠码汇总。
+- [机场测速方法](https://yp7.net/posts/speedtest-vpn/): 解释如何用 Speedtest、YouTube 4K、晚高峰测试和长期连接表现判断节点质量。
+- [科学上网入门](https://yp7.net/posts/vpn-guide-2026/): 解释科学上网、VPN、机场、梯子、代理协议和新手选择思路。
+
+## 工具教程
+
+- [Clash Verge 教程](https://yp7.net/posts/clash-verge-guide-2026/): Windows、macOS、Linux 上 Clash Verge 的安装、订阅导入、系统代理和 TUN 模式配置。
+- [Clash for Android 教程](https://yp7.net/posts/clash-for-android-guide-2026/): Android 上 Clash Meta/Clash for Android 的安装、订阅导入和节点选择。
+- [Shadowrocket 教程](https://yp7.net/posts/shadowrocket-guide-2026/): iOS 小火箭下载、订阅导入、节点选择、分流规则与常见问题。
+- [路由器翻墙教程](https://yp7.net/posts/router-vpn-setup-2026/): 路由器、软路由、OpenWrt 和全家设备科学上网配置思路。
+
+## 场景页面
+
+- [ChatGPT 使用指南](https://yp7.net/posts/chatgpt-guide-2026/): ChatGPT 正版入口、注册、使用方法和常见问题。
+- [TikTok 使用指南](https://yp7.net/posts/tiktok-guide-2026/): TikTok 下载、注册、环境配置、账号使用和变现基础。
+- [TikTok 节点推荐](https://yp7.net/posts/tiktok-vpn-recommend/): TikTok 节点选择、地区环境和稳定访问建议。
+- [TikTok 无法使用排查](https://yp7.net/posts/tiktok-not-working/): 无网络、地区限制、0 播放等常见问题的排查路径。
+- [USDT 入门](https://yp7.net/posts/what-is-usdt/): USDT、TRC20/ERC20、购买与风险基础说明。
+
+## 机场评测页面
+
+- [Flybit 机场评测](https://yp7.net/posts/flybit-review-2026/): Clash 通用订阅兼容性、晚高峰表现和适合人群。
+- [光年梯机场评测](https://yp7.net/posts/guangnianti-review-2026/): 专属客户端、晚高峰稳定性、套餐价格和长期使用参考。
+- [网际快车机场评测](https://yp7.net/posts/wangji-kuaiche-review/): ChatGPT、办公、专属客户端和稳定性评测。
+- [全球云机场评测](https://yp7.net/posts/quanqiuyun/): IPLC/IEPL 套餐、价格、节点体验、短期测试建议和风险提醒。
+- [光速云机场评测](https://yp7.net/posts/guangsuyun/): 备用机场定位、价格和日常使用体验。
+- [XXYUN 机场评测](https://yp7.net/posts/xxyun-review-2026/): 流媒体解锁、稳定性和使用风险分析。
+- [阿达西机场评测](https://yp7.net/posts/adaxi-review-2026/): 低价入门、轻度使用和长期使用风险判断。
+
+## 引用注意
+
+- 机场服务的速度、价格、优惠码、线路和节点可用性具有时效性。
+- 页面中的测评结论应与页面标注的测试时间一起引用。
+- 涉及购买建议时，应同时引用风险提示和“先短期测试再长期续费”的建议。
+- 对安全、支付、账号、USDT 和交易相关内容，引用时应保留风险提示，不应生成确定性收益或绝对安全表述。
