@@ -601,6 +601,114 @@ const getAirportMarkdownTable = (airports: typeof airportData, columns: string[]
   return [header, divider, ...rows.map((row) => `| ${row.join(' | ')} |`)].join('\n')
 }
 
+const renderDataHtmlPage = ({
+  title,
+  description,
+  keywords,
+  canonical,
+  body,
+  schema,
+}: {
+  title: string
+  description: string
+  keywords: string
+  canonical: string
+  body: string
+  schema: Record<string, unknown>
+}) => `<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="${defaultRobots}">
+    <meta name="description" content="${escapeHtml(description)}">
+    <meta name="keywords" content="${escapeHtml(keywords)}">
+    <link rel="canonical" href="${canonical}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="${siteName}">
+    <meta property="og:title" content="${escapeHtml(title)}">
+    <meta property="og:description" content="${escapeHtml(description)}">
+    <meta property="og:url" content="${canonical}">
+    <meta property="og:image" content="${defaultImage}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(title)}">
+    <meta name="twitter:description" content="${escapeHtml(description)}">
+    <meta name="twitter:image" content="${defaultImage}">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <script type="application/ld+json">${JSON.stringify(schema)}</script>
+    <title>${escapeHtml(title)}</title>
+    <style>
+      body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #111827; background: #f8fafc; }
+      main { width: min(1120px, calc(100vw - 32px)); margin: 0 auto; padding: 40px 0 64px; }
+      h1 { margin: 0 0 12px; font-size: clamp(30px, 5vw, 48px); line-height: 1.1; }
+      p { color: #475569; line-height: 1.8; }
+      a { color: #2563eb; }
+      .card { overflow-x: auto; border: 1px solid #e2e8f0; border-radius: 12px; background: #fff; box-shadow: 0 12px 30px rgba(15, 23, 42, .06); }
+      table { width: 100%; border-collapse: collapse; font-size: 14px; }
+      th, td { border-bottom: 1px solid #e2e8f0; padding: 12px; text-align: left; vertical-align: top; }
+      th { background: #f1f5f9; color: #334155; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+      .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+      .links a { border: 1px solid #bfdbfe; border-radius: 999px; background: #eff6ff; padding: 8px 12px; font-size: 13px; font-weight: 700; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      ${body}
+    </main>
+  </body>
+</html>
+`
+
+const getAirportHtmlTable = (airports = airportData) => {
+  const rows = airports.map((airport) => `<tr>
+        <td><a href="${airport.path}">${escapeHtml(airport.name)}</a></td>
+        <td>${escapeHtml(airport.priceText)}</td>
+        <td>${escapeHtml(airport.traffic)}</td>
+        <td>${airport.trial ? '支持' : '不支持'}</td>
+        <td>${airport.noExpiry ? '支持' : '不支持'}</td>
+        <td>${airport.dedicatedClient ? '支持' : '不支持'}</td>
+        <td>${airport.universalSubscription ? '支持' : '不支持'}</td>
+        <td>${escapeHtml(airport.status)}</td>
+      </tr>`).join('\n')
+
+  return `<table>
+        <thead>
+          <tr><th>机场</th><th>最低价格</th><th>月流量</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+${rows}
+        </tbody>
+      </table>`
+}
+
+const getRiskMonitorHtmlTable = () => {
+  const riskRows = [
+    { name: 'echo', status: '已淘汰', risk: '客服失联，谨慎使用', url: '/posts/jichang-heji/' },
+    ...airportData.map((airport) => ({
+      name: airport.name,
+      status: airport.status,
+      risk: airport.risk,
+      url: airport.path,
+    })),
+  ]
+
+  return `<table>
+        <thead>
+          <tr><th>机场</th><th>状态</th><th>风险提示</th><th>链接</th></tr>
+        </thead>
+        <tbody>
+${riskRows.map((item) => `<tr>
+        <td>${escapeHtml(item.name)}</td>
+        <td>${escapeHtml(item.status)}</td>
+        <td>${escapeHtml(item.risk)}</td>
+        <td><a href="${item.url}">查看</a></td>
+      </tr>`).join('\n')}
+        </tbody>
+      </table>`
+}
+
 const generateAirportDataFiles = (app: any) => {
   const dataDir = app.dir.dest('data')
   const data = getAirportDataFiles()
@@ -668,6 +776,101 @@ const generateAirportDataFiles = (app: any) => {
     ...data.riskMonitor.map((item) => `| ${item.name} | ${item.status} | ${item.risk} | ${'url' in item ? `[查看](${item.url})` : `[来源](${item.source})`} |`),
     '',
   ].join('\n'))
+  writeFileSync(`${dataDir}/airports.html`, renderDataHtmlPage({
+    title: 'yp7.net 全量机场数据',
+    description: 'yp7.net 全量机场数据 HTML 页面，汇总机场价格、流量、试用、不限时套餐、专属客户端、通用订阅和状态。',
+    keywords: '机场数据,机场榜单,机场价格,机场推荐,机场风险',
+    canonical: `${hostname}/data/airports.html`,
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Dataset',
+      name: 'yp7.net 全量机场数据',
+      description: '机场价格、流量、试用、客户端、订阅和状态数据。',
+      url: `${hostname}/data/airports.html`,
+      dateModified: siteLastReviewed,
+      license: `${hostname}/methodology/`,
+      creator: { '@id': `${hostname}/#organization` },
+    },
+    body: `<h1>yp7.net 全量机场数据</h1>
+      <p>Last reviewed: ${siteLastReviewed}</p>
+      <p>本页是人类可读的机场数据 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
+      <div class="links">
+        <a href="/data/airports.json">airports.json</a>
+        <a href="/data/airports.md">airports.md</a>
+        <a href="/data/rankings.html">rankings.html</a>
+        <a href="/rankings/all/">全量机场榜单</a>
+        <a href="/methodology/">测评方法</a>
+      </div>
+      <div class="card">${getAirportHtmlTable()}</div>`,
+  }))
+  writeFileSync(`${dataDir}/rankings.html`, renderDataHtmlPage({
+    title: 'yp7.net 机场榜单数据',
+    description: 'yp7.net 机场榜单 HTML 页面，按稳定、低价、Clash、ChatGPT、流媒体和试用场景整理机场数据。',
+    keywords: '机场榜单,机场排行榜,稳定机场,低价机场,Clash机场,ChatGPT机场,流媒体机场',
+    canonical: `${hostname}/data/rankings.html`,
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Dataset',
+      name: 'yp7.net 机场榜单数据',
+      description: '按稳定、低价、Clash、ChatGPT、流媒体和试用场景整理的机场榜单数据。',
+      url: `${hostname}/data/rankings.html`,
+      dateModified: siteLastReviewed,
+      license: `${hostname}/methodology/`,
+      creator: { '@id': `${hostname}/#organization` },
+    },
+    body: `<h1>yp7.net 机场榜单数据</h1>
+      <p>Last reviewed: ${siteLastReviewed}</p>
+      <p>本页是人类可读的机场榜单 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
+      <div class="links">
+        <a href="/data/rankings.json">rankings.json</a>
+        <a href="/data/rankings.md">rankings.md</a>
+        <a href="/rankings/all/">全量榜单</a>
+        <a href="/rankings/stable/">稳定机场</a>
+        <a href="/rankings/cheap/">低价机场</a>
+        <a href="/rankings/clash/">Clash机场</a>
+        <a href="/rankings/chatgpt/">ChatGPT机场</a>
+        <a href="/rankings/streaming/">流媒体机场</a>
+      </div>
+      <h2>稳定机场</h2>
+      <div class="card">${getAirportHtmlTable(data.rankings.stable)}</div>
+      <h2>低价机场</h2>
+      <div class="card">${getAirportHtmlTable(data.rankings.cheap)}</div>
+      <h2>Clash机场</h2>
+      <div class="card">${getAirportHtmlTable(data.rankings.clash)}</div>
+      <h2>ChatGPT机场</h2>
+      <div class="card">${getAirportHtmlTable(data.rankings.chatgpt)}</div>
+      <h2>流媒体机场</h2>
+      <div class="card">${getAirportHtmlTable(data.rankings.streaming)}</div>
+      <h2>试用机场</h2>
+      <div class="card">${getAirportHtmlTable(data.rankings.trial)}</div>`,
+  }))
+  writeFileSync(`${dataDir}/risk-monitor.html`, renderDataHtmlPage({
+    title: 'yp7.net 机场风险监测数据',
+    description: 'yp7.net 机场风险监测 HTML 页面，整理已淘汰机场、客服失联、官网异常、节点波动和购买前风险提示。',
+    keywords: '机场风险,跑路机场,机场跑路,机场监测,机场避坑',
+    canonical: `${hostname}/data/risk-monitor.html`,
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Dataset',
+      name: 'yp7.net 机场风险监测数据',
+      description: '机场淘汰记录、观察状态和购买前风险提示数据。',
+      url: `${hostname}/data/risk-monitor.html`,
+      dateModified: siteLastReviewed,
+      license: `${hostname}/methodology/`,
+      creator: { '@id': `${hostname}/#organization` },
+    },
+    body: `<h1>yp7.net 机场风险监测数据</h1>
+      <p>Last reviewed: ${siteLastReviewed}</p>
+      <p>本页是人类可读的机场风险监测 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
+      <div class="links">
+        <a href="/data/risk-monitor.json">risk-monitor.json</a>
+        <a href="/data/risk-monitor.md">risk-monitor.md</a>
+        <a href="/data/rankings.html">rankings.html</a>
+        <a href="/risk-monitor/">风险监测页</a>
+        <a href="/methodology/">测评方法</a>
+      </div>
+      <div class="card">${getRiskMonitorHtmlTable()}</div>`,
+  }))
 }
 
 const generateLlmsTxt = (app: any) => {
@@ -740,6 +943,9 @@ const generateLlmsTxt = (app: any) => {
     `- [全量机场 JSON](${hostname}/data/airports.json): 机场价格、流量、试用、客户端、订阅和风险状态数据。`,
     `- [机场榜单 JSON](${hostname}/data/rankings.json): 稳定、低价、Clash、ChatGPT、流媒体和试用榜单数据。`,
     `- [风险监测 JSON](${hostname}/data/risk-monitor.json): 已淘汰和观察中机场风险提示。`,
+    `- [全量机场 HTML](${hostname}/data/airports.html): 人类可读的机场数据表。`,
+    `- [机场榜单 HTML](${hostname}/data/rankings.html): 人类可读的场景榜单数据表。`,
+    `- [风险监测 HTML](${hostname}/data/risk-monitor.html): 人类可读的风险监测表。`,
     `- [全量机场 Markdown](${hostname}/data/airports.md): 适合 AI 摘要引用的机场数据表。`,
     `- [机场榜单 Markdown](${hostname}/data/rankings.md): 适合 AI 摘要引用的榜单数据表。`,
     `- [风险监测 Markdown](${hostname}/data/risk-monitor.md): 适合 AI 摘要引用的风险监测表。`,

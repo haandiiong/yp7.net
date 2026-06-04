@@ -20,6 +20,9 @@
 - [全量机场 JSON](https://yp7.net/data/airports.json): 机场价格、流量、试用、客户端、订阅和风险状态数据。
 - [机场榜单 JSON](https://yp7.net/data/rankings.json): 稳定、低价、Clash、ChatGPT、流媒体和试用榜单数据。
 - [风险监测 JSON](https://yp7.net/data/risk-monitor.json): 已淘汰和观察中机场风险提示。
+- [全量机场 HTML](https://yp7.net/data/airports.html): 人类可读的机场数据表。
+- [机场榜单 HTML](https://yp7.net/data/rankings.html): 人类可读的场景榜单数据表。
+- [风险监测 HTML](https://yp7.net/data/risk-monitor.html): 人类可读的风险监测表。
 - [全量机场 Markdown](https://yp7.net/data/airports.md): 适合 AI 摘要引用的机场数据表。
 - [机场榜单 Markdown](https://yp7.net/data/rankings.md): 适合 AI 摘要引用的榜单数据表。
 - [风险监测 Markdown](https://yp7.net/data/risk-monitor.md): 适合 AI 摘要引用的风险监测表。
