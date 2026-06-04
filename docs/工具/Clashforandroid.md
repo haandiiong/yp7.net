@@ -1,5 +1,5 @@
 ---
-title: Clash for Android 下载与配置教程（2026最新版）｜Clash Meta安卓安装+订阅导入完整指南
+title: Clash for Android教程：Clash Meta安卓安装与订阅配置
 createTime: 2026/03/11
 permalink: /posts/clash-for-android-guide-2026/
 tags:
@@ -11,6 +11,10 @@ tags:
   - 订阅配置
 description: 2026最新Clash for Android使用教程，包含Clash Meta下载安装、订阅URL导入、节点选择与常见问题，适合新手快速上手科学上网。
 ---
+## 使用风险提示
+
+本文内容具有时效性，软件下载入口、账号规则、节点可用性、支付方式和平台政策都可能变化。涉及下载、注册、支付、账号交易或跨境网络访问时，请优先核对官方信息和当地规则；本文只提供教程与经验参考，不承诺任何工具、节点或账号长期可用。
+
 
 Clash for Android 是目前最主流的科学上网工具之一，支持 **Clash Meta 内核、订阅链接、规则分流**，相比传统 VPN 更灵活、更稳定。
 

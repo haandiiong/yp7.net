@@ -1,8 +1,9 @@
 User-agent: *
-Disallow: /.temp/
-Disallow: /.cache/
-Disallow: /blog/tags/
-Disallow: /blog/categories/
-Disallow: /blog/archives/
+Allow: /
 
 Sitemap: https://yp7.net/sitemap.xml
+
+# Content signals
+# yp7.net allows search indexing and AI retrieval/grounding.
+# yp7.net does not grant permission for model training unless separately authorized.
+Content-Signal: search=yes, ai-input=yes, ai-train=no

@@ -14,6 +14,9 @@ config:
         - theme: alt
           text: "科学上网教程 →"
           link: "/posts/vpn-guide-2026/"
+        - theme: alt
+          text: "全量机场榜单 →"
+          link: "/rankings/all/"
   - type: features
     title: "yp7.net 是什么"
     description: "中文科学上网教程与机场测评站点，整理机场推荐、VPN 使用方法、Clash 节点配置、Shadowrocket 教程、TikTok 和 ChatGPT 访问问题。"
@@ -26,6 +29,14 @@ config:
         details: "汇总最低价格、月流量、试用信息、客户端类型和优惠码，适合横向对比。"
         link: "/posts/jichang-heji/"
         linkText: "查看大全"
+      - title: "机场榜单"
+        details: "按稳定性、低价、Clash、ChatGPT和流媒体场景整理榜单入口。"
+        link: "/rankings/all/"
+        linkText: "查看榜单"
+      - title: "风险监测"
+        details: "整理客服失联、官网异常、套餐变化和购买前风险检查清单。"
+        link: "/risk-monitor/"
+        linkText: "查看风险"
       - title: "新手教程"
         details: "解释 VPN、机场、代理协议、Clash、Shadowrocket 和常见使用场景。"
         link: "/posts/vpn-guide-2026/"

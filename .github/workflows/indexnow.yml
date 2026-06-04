@@ -1,27 +1,38 @@
 name: IndexNow
 
 on:
-  push:
+  workflow_run:
+    workflows:
+      - deploy
+    types:
+      - completed
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   indexnow:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
 
     steps:
+      - name: Wait for deployed sitemap propagation
+        run: sleep 30
+
       - name: Get URLs from sitemap
         run: |
-          curl https://yp7.net/sitemap.xml | grep -oP '(?<=<loc>)[^<]+' > urls.txt
+          curl --fail --silent --show-error --location https://yp7.net/sitemap.xml \
+            | grep -oP '(?<=<loc>)[^<]+' > urls.txt
+          test -s urls.txt
 
       - name: Submit to IndexNow
         run: |
           urls=$(jq -R . < urls.txt | jq -s .)
-          curl -X POST "https://api.indexnow.org/indexnow" \
-          -H "Content-Type: application/json" \
-          -d "{
-            \"host\": \"yp7.net\",
-            \"key\": \"8465d5c195b646239252f14d3840d869\",
-            \"keyLocation\": \"https://yp7.net/8465d5c195b646239252f14d3840d869.txt\",
-            \"urlList\": $urls
-          }"
+          curl --fail --silent --show-error --location -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"host\": \"yp7.net\",
+              \"key\": \"8465d5c195b646239252f14d3840d869\",
+              \"keyLocation\": \"https://yp7.net/8465d5c195b646239252f14d3840d869.txt\",
+              \"urlList\": $urls
+            }"
