@@ -174,8 +174,6 @@ const getAirportServiceSchemas = (page: any) => {
   if (!airport) return []
 
   const canonicalUrl = getCanonicalUrl(page.path)
-  const datePublished = getPageDatePublished(page)
-  const dateModified = getPageDateModified(page)
 
   return [
     {
@@ -203,17 +201,6 @@ const getAirportServiceSchemas = (page: any) => {
         { '@type': 'PropertyValue', name: '观察状态', value: airport.status },
         { '@type': 'PropertyValue', name: '风险提示', value: airport.risk },
       ],
-    },
-    {
-      '@type': 'Review',
-      '@id': `${canonicalUrl}#review`,
-      name: `${airport.name}机场测评`,
-      itemReviewed: { '@id': `${canonicalUrl}#service` },
-      author: { '@id': `${hostname}/#author` },
-      publisher: { '@id': `${hostname}/#organization` },
-      reviewBody: airport.summary,
-      ...(datePublished ? { datePublished } : {}),
-      ...(dateModified ? { dateModified } : {}),
     },
   ]
 }
@@ -709,6 +696,13 @@ ${riskRows.map((item) => `<tr>
       </table>`
 }
 
+const datasetCreator = {
+  '@type': 'Organization',
+  '@id': `${hostname}/#organization`,
+  name: siteName,
+  url: hostname,
+}
+
 const generateAirportDataFiles = (app: any) => {
   const dataDir = app.dir.dest('data')
   const data = getAirportDataFiles()
@@ -785,11 +779,11 @@ const generateAirportDataFiles = (app: any) => {
       '@context': 'https://schema.org',
       '@type': 'Dataset',
       name: 'yp7.net 全量机场数据',
-      description: '机场价格、流量、试用、客户端、订阅和状态数据。',
+      description: 'yp7.net 全量机场数据集汇总机场名称、页面链接、最低价格、月流量、试用状态、不限时套餐、专属客户端、通用订阅、适合场景、观察状态和购买风险提示，方便用户和机器读取机场推荐基础数据。',
       url: `${hostname}/data/airports.html`,
       dateModified: siteLastReviewed,
       license: `${hostname}/methodology/`,
-      creator: { '@id': `${hostname}/#organization` },
+      creator: datasetCreator,
     },
     body: `<h1>yp7.net 全量机场数据</h1>
       <p>Last reviewed: ${siteLastReviewed}</p>
@@ -812,11 +806,11 @@ const generateAirportDataFiles = (app: any) => {
       '@context': 'https://schema.org',
       '@type': 'Dataset',
       name: 'yp7.net 机场榜单数据',
-      description: '按稳定、低价、Clash、ChatGPT、流媒体和试用场景整理的机场榜单数据。',
+      description: 'yp7.net 机场榜单数据集按稳定机场、低价机场、Clash 机场、ChatGPT 机场、流媒体机场和试用机场等场景整理机场条目，包含价格、流量、客户端类型、订阅支持、适合场景和风险提示等可对比字段。',
       url: `${hostname}/data/rankings.html`,
       dateModified: siteLastReviewed,
       license: `${hostname}/methodology/`,
-      creator: { '@id': `${hostname}/#organization` },
+      creator: datasetCreator,
     },
     body: `<h1>yp7.net 机场榜单数据</h1>
       <p>Last reviewed: ${siteLastReviewed}</p>
@@ -853,11 +847,11 @@ const generateAirportDataFiles = (app: any) => {
       '@context': 'https://schema.org',
       '@type': 'Dataset',
       name: 'yp7.net 机场风险监测数据',
-      description: '机场淘汰记录、观察状态和购买前风险提示数据。',
+      description: 'yp7.net 机场风险监测数据集记录已淘汰机场、观察中机场、官网异常、客服失联、节点波动、套餐变化和购买前风险提示，并关联对应页面，帮助用户在购买或续费前识别机场服务的时效性风险。',
       url: `${hostname}/data/risk-monitor.html`,
       dateModified: siteLastReviewed,
       license: `${hostname}/methodology/`,
-      creator: { '@id': `${hostname}/#organization` },
+      creator: datasetCreator,
     },
     body: `<h1>yp7.net 机场风险监测数据</h1>
       <p>Last reviewed: ${siteLastReviewed}</p>
