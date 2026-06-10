@@ -41,6 +41,8 @@ jobs:
       - name: Build VuePress site
         run: pnpm run docs:build
 
+      - name: Check generated data
+        run: pnpm run docs:check-data
 
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
