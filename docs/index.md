@@ -5,18 +5,38 @@ description: 2026最新科学上网教程，精选稳定VPN与机场推荐，支
 config:
   - type: hero
     hero:
-      text: "机场推荐与科学上网工具教程指南"
-      tagline: "提供最新的科学上网教程以及涵盖了市面上常见的翻墙机场测评数据指南"
+      name: "2026机场推荐与科学上网教程"
+      tagline: "机场推荐与科学上网工具教程指南"
+      text: "提供最新的科学上网教程以及涵盖了市面上常见的翻墙机场测评数据指南"
       actions:  
         - theme: brand
           text: "最新机场推荐 →"
           link: "/posts/jichang-tuijian/"
         - theme: alt
-          text: "科学上网教程 →"
-          link: "/posts/vpn-guide-2026/"
+          text: "免费试用机场 →"
+          link: "/rankings/trial/"
+        - theme: alt
+          text: "优惠码汇总 →"
+          link: "/rankings/coupons/"
         - theme: alt
           text: "全量机场榜单 →"
           link: "/rankings/all/"
+  - type: features
+    title: "2026年6月10日数据看板"
+    description: "当前站内结构化收录30个机场，覆盖稳定、低价、免费试用、不限时、专属客户端、Clash、ChatGPT、流媒体和风险监测等筛选入口。"
+    features:
+      - title: "30个机场"
+        details: "全量榜单按最低价格、月流量、试用、不限时、专属客户端、通用订阅和风险状态统一整理。"
+        link: "/rankings/all/"
+        linkText: "查看全量数据"
+      - title: "9个筛选场景"
+        details: "新增免费试用、不限时套餐、专属客户端和优惠码入口，减少用户在长文中反复查找。"
+        link: "/rankings/trial/"
+        linkText: "查看试用入口"
+      - title: "风险监测"
+        details: "持续记录已淘汰、观察中、官网异常、售后失联、套餐变化和晚高峰波动风险。"
+        link: "/risk-monitor/"
+        linkText: "查看风险"
   - type: features
     title: "yp7.net 是什么"
     description: "中文科学上网教程与机场测评站点，整理机场推荐、VPN 使用方法、Clash 节点配置、Shadowrocket 教程、TikTok 和 ChatGPT 访问问题。"
@@ -30,7 +50,7 @@ config:
         link: "/posts/jichang-heji/"
         linkText: "查看大全"
       - title: "机场榜单"
-        details: "按稳定性、低价、Clash、ChatGPT和流媒体场景整理榜单入口。"
+        details: "按稳定性、低价、免费试用、不限时、Clash、ChatGPT和流媒体场景整理榜单入口。"
         link: "/rankings/all/"
         linkText: "查看榜单"
       - title: "风险监测"
