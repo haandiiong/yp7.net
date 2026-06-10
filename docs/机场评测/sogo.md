@@ -1,6 +1,7 @@
 ---
 title: sogo机场怎么样？sogo好用吗？2026实测：专属客户端、套餐价格、新手体验与晚高峰稳定性
 createTime: 2026/05/12
+dateModified: 2026/06/10
 permalink: /posts/sogo-review-2026/
 tags:
   - sogo机场

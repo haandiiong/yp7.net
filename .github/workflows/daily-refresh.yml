@@ -43,6 +43,9 @@ jobs:
       - name: Check generated data
         run: pnpm run docs:check-data
 
+      - name: Check content health
+        run: pnpm run docs:check-content
+
       - name: Commit refreshed data
         run: |
           if [ -z "$(git status --porcelain)" ]; then
@@ -52,6 +55,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/.vuepress/config/site.ts docs/.vuepress/public/data docs/index.md
+          git add docs/.vuepress/config/site.ts docs/.vuepress/public/data docs/.vuepress/public/llms.txt docs/index.md
           git commit -m "chore: daily site refresh"
           git push

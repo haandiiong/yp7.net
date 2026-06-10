@@ -1,6 +1,7 @@
 ---
 title: Clash for Android教程：Clash Meta安卓安装与订阅配置
 createTime: 2026/03/11
+dateModified: 2026/06/10
 permalink: /posts/clash-for-android-guide-2026/
 tags:
   - Clash for Android

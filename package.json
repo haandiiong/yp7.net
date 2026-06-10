@@ -14,6 +14,7 @@
     "docs:build": "vuepress build docs --clean-cache --clean-temp",
     "docs:sync-data": "node scripts/sync-generated-data.mjs",
     "docs:check-data": "node scripts/check-generated-data.mjs",
+    "docs:check-content": "node scripts/check-content-health.mjs",
     "docs:update-reviewed-date": "node scripts/update-reviewed-date.mjs",
     "docs:preview": "http-server docs/.vuepress/dist",
     "vp-update": "pnpm dlx vp-update"

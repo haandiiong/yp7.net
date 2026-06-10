@@ -44,6 +44,9 @@ jobs:
       - name: Check generated data
         run: pnpm run docs:check-data
 
+      - name: Check content health
+        run: pnpm run docs:check-content
+
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages

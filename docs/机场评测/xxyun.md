@@ -1,6 +1,7 @@
 ---
 title: xxyun机场怎么样？xxyun好用吗？2026实测：官网入口、流媒体解锁、套餐价格与稳定性分析
 createTime: 2026/04/23
+dateModified: 2026/06/10
 permalink: /posts/xxyun-review-2026/
 tags:
   - xxyun机场

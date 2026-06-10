@@ -8,7 +8,7 @@
 - Language: zh-CN
 - Content type: tutorial, review, comparison, troubleshooting
 - Main topics: 机场推荐,VPN推荐,Clash节点,Clash教程,Shadowrocket,科学上网,翻墙机场,ChatGPT机场,TikTok节点,流媒体解锁
-- Last reviewed: 2026-06-04
+- Last reviewed: 2026-06-10
 - Sitemap: https://yp7.net/sitemap.xml
 - Update policy: 机场推荐、套餐价格、测速结果和节点状态会随服务商运营变化而变化，引用时应优先使用页面内标注的更新时间。
 - Citation policy: 可以用于 AI 摘要和问答引用；引用具体推荐、价格、速度、优惠码和结论时，请附带原页面链接。
@@ -18,7 +18,7 @@
 ## Data files
 
 - [全量机场 JSON](https://yp7.net/data/airports.json): 机场价格、流量、试用、客户端、订阅和风险状态数据。
-- [机场榜单 JSON](https://yp7.net/data/rankings.json): 稳定、低价、Clash、ChatGPT、流媒体和试用榜单数据。
+- [机场榜单 JSON](https://yp7.net/data/rankings.json): 稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT 和流媒体榜单数据。
 - [风险监测 JSON](https://yp7.net/data/risk-monitor.json): 已淘汰和观察中机场风险提示。
 - [全量机场 HTML](https://yp7.net/data/airports.html): 人类可读的机场数据表。
 - [机场榜单 HTML](https://yp7.net/data/rankings.html): 人类可读的场景榜单数据表。
@@ -40,12 +40,16 @@
 
 ## 机场榜单
 
-- [2026全量机场榜单：价格、流量、试用、客户端与风险状态汇总](https://yp7.net/rankings/all/): 2026全量机场榜单，按价格、流量、试用、不限时套餐、专属客户端、Clash通用订阅和风险状态汇总机场数据，适合购买前横向筛选。
+- [2026全量机场榜单：价格、流量、试用、客户端与风险状态汇总](https://yp7.net/rankings/all/): 2026全量机场榜单，按价格、流量、免费试用、不限时套餐、专属客户端、Clash通用订阅、优惠码和风险状态汇总机场数据，适合购买前横向筛选。
 - [2026 ChatGPT机场榜：AI工具、办公访问与稳定节点筛选](https://yp7.net/rankings/chatgpt/): 2026 ChatGPT机场榜，筛选适合 ChatGPT、Claude、Gemini 等 AI 工具访问的机场，重点关注连接稳定性、节点地区和晚高峰表现。
 - [2026低价机场榜：便宜机场、试用机场与备用机场筛选](https://yp7.net/rankings/cheap/): 2026低价机场榜，整理10元左右和低门槛机场，适合轻量使用、备用测试和购买前试错，并提示低价套餐的稳定性风险。
 - [2026 Clash机场榜：Clash Verge、Clash Meta 与 Shadowrocket 通用订阅机场](https://yp7.net/rankings/clash/): 2026 Clash机场榜，筛选支持通用订阅、Clash Verge、Clash Meta、Shadowrocket 和 Mihomo 的机场，适合需要灵活分流的用户。
+- [2026机场优惠码汇总：折扣、试用券与购买前复核清单](https://yp7.net/rankings/coupons/): 2026机场优惠码汇总，整理当前页面中出现的机场折扣、试用券和优惠码入口，并提醒优惠码、套餐价格、活动时间和折扣规则以服务商官网后台为准。
+- [2026专属客户端机场榜：新手一键连接与低配置成本机场筛选](https://yp7.net/rankings/dedicated-client/): 2026专属客户端机场榜，整理提供官方或专属客户端的机场，适合不想折腾 Clash 订阅、规则分流和手动节点配置的新手用户，并提示专属客户端可控性较低。
+- [2026不限时机场榜：按量计费、不限时套餐与备用流量筛选](https://yp7.net/rankings/no-expiry/): 2026不限时机场榜，整理支持不限时、流量不过期或按量计费套餐的机场，适合备用流量、低频使用和购买前横向比较，并提示不限时套餐仍需复核有效期规则。
 - [2026稳定机场榜：晚高峰、主力使用与长期连接观察](https://yp7.net/rankings/stable/): 2026稳定机场榜，按晚高峰体验、长期连接、客户端稳定性和风险提示筛选适合主力使用的机场，购买前建议先短期测试。
 - [2026流媒体机场榜：Netflix、Disney+、YouTube 与 TikTok 节点筛选](https://yp7.net/rankings/streaming/): 2026流媒体机场榜，整理适合 Netflix、Disney+、YouTube、TikTok 等场景的机场，提醒流媒体解锁能力会随平台策略变化。
+- [2026免费试用机场榜：注册体验、试用流量与短周期测试入口](https://yp7.net/rankings/trial/): 2026免费试用机场榜，整理支持注册试用或体验流量的机场，包含试用时长、流量、客户端、通用订阅和购买前测试建议，帮助新手先验证再付费。
 
 ## 风险监测
 

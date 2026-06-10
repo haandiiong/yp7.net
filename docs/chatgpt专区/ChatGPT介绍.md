@@ -1,6 +1,7 @@
 ---
 title: ChatGPT是什么？ChatGPT怎么使用（2026最全指南｜正版入口+注册+使用教程）
 createTime: 2026/05/02
+dateModified: 2026/06/10
 permalink: /posts/chatgpt-guide-2026/
 tags:
   - ChatGPT是什么

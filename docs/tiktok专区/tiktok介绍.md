@@ -1,6 +1,7 @@
 ---
 title: TikTok是什么？中国大陆如何使用TikTok（2026最全教程｜下载注册+环境配置+涨粉+变现指南）
 createTime: 2026/05/02
+dateModified: 2026/06/10
 permalink: /posts/tiktok-guide-2026/
 tags:
   - TikTok教程

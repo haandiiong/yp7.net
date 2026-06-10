@@ -3,6 +3,8 @@ import { join } from 'node:path'
 
 const publicDataDir = 'docs/.vuepress/public/data'
 const generatedDataDir = 'docs/.vuepress/dist/data'
+const publicLlmsPath = 'docs/.vuepress/public/llms.txt'
+const generatedLlmsPath = 'docs/.vuepress/dist/llms.txt'
 
 const fail = (message) => {
   console.error(message)
@@ -11,6 +13,8 @@ const fail = (message) => {
 
 if (!existsSync(publicDataDir)) fail(`Missing ${publicDataDir}`)
 if (!existsSync(generatedDataDir)) fail(`Missing ${generatedDataDir}. Run pnpm run docs:build first.`)
+if (!existsSync(publicLlmsPath)) fail(`Missing ${publicLlmsPath}`)
+if (!existsSync(generatedLlmsPath)) fail(`Missing ${generatedLlmsPath}. Run pnpm run docs:build first.`)
 
 const getFiles = (dir) => readdirSync(dir, { withFileTypes: true })
   .filter((entry) => entry.isFile())
@@ -39,6 +43,10 @@ for (const file of expected) {
   if (readFileSync(publicPath, 'utf8') !== readFileSync(generatedPath, 'utf8')) {
     mismatches.push(`${file}: content differs`)
   }
+}
+
+if (readFileSync(publicLlmsPath, 'utf8') !== readFileSync(generatedLlmsPath, 'utf8')) {
+  mismatches.push('llms.txt: content differs')
 }
 
 if (mismatches.length) {

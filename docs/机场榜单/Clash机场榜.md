@@ -1,6 +1,7 @@
 ---
 title: 2026 Clash机场榜：Clash Verge、Clash Meta 与 Shadowrocket 通用订阅机场
 createTime: 2026/06/04
+dateModified: 2026/06/10
 permalink: /rankings/clash/
 tags:
   - Clash机场
@@ -28,7 +29,7 @@ schema:
         url: "https://yp7.net/posts/99ba-review-2026/"
 ---
 
-更新时间：2026年6月4日
+更新时间：2026年6月10日
 
 ## 筛选口径
 

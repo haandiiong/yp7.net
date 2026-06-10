@@ -1,6 +1,7 @@
 ---
 title: 机场测速方法详解：如何选择最快最稳定的节点（2026实测教程）
 createTime: 2026/03/27
+dateModified: 2026/06/10
 permalink: /posts/speedtest-vpn/
 tags:
   - 机场测速

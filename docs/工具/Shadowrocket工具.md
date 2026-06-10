@@ -1,6 +1,7 @@
 ---
 title: Shadowrocket下载与使用教程2026（小火箭iOS完整指南：安装+订阅导入+配置+常见问题）
 createTime: 2026/03/11
+dateModified: 2026/06/10
 permalink: /posts/shadowrocket-guide-2026/
 tags:
   - Shadowrocket

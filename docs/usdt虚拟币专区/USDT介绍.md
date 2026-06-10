@@ -1,6 +1,7 @@
 ---
 title: USDT是什么？2026最新详解：稳定币原理、TRC20/ERC20区别、购买与风险全指南
 createTime: 2026/04/09
+dateModified: 2026/06/10
 permalink: /posts/what-is-usdt/
 tags:
   - USDT是什么

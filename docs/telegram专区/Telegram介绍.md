@@ -1,6 +1,7 @@
 ---
 title: Telegram 教程（2026最新）：下载安装、注册登录、群组频道玩法与代理设置全指南
 createTime: 2026/04/10
+dateModified: 2026/06/10
 permalink: /posts/telegram-guide-2026/
 tags:
   - Telegram教程

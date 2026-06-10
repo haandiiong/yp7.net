@@ -1,6 +1,7 @@
 ---
 title: Clash Verge下载与使用教程（2026最新版）｜安装+配置+订阅导入完整指南
 createTime: 2026/05/02
+dateModified: 2026/06/10
 permalink: /posts/clash-verge-guide-2026/
 tags:
   - Clash Verge
@@ -11,7 +12,7 @@ tags:
 description: Clash Verge是什么？本文提供2026最新Clash Verge下载安装与配置教程，包含订阅导入、系统代理、TUN模式开启等完整步骤，新手也能快速上手。
 ---
 
-更新时间：2026年5月
+更新时间：2026年6月10日
 
 ## 使用风险提示
 
