@@ -9,6 +9,7 @@ interface LlmsOptions {
 }
 
 const getCanonicalUrl = (path: string) => `${hostname}${path}`
+const getDataCanonicalUrl = (slug: string) => `${hostname}/data/${slug}`
 
 const escapeHtml = (value = '') => value
   .replace(/&/g, '&amp;')
@@ -372,13 +373,13 @@ export const generateAirportDataFiles = (app: any) => {
     title: 'yp7.net 全量机场数据',
     description: 'yp7.net 全量机场数据 HTML 页面，汇总机场价格、流量、试用、不限时套餐、专属客户端、通用订阅和状态。',
     keywords: '机场数据,机场榜单,机场价格,机场推荐,机场风险',
-    canonical: `${hostname}/data/airports.html`,
+    canonical: getDataCanonicalUrl('airports'),
     schema: {
       '@context': 'https://schema.org',
       '@type': 'Dataset',
       name: 'yp7.net 全量机场数据',
       description: 'yp7.net 全量机场数据集汇总机场名称、页面链接、最低价格、月流量、试用状态、不限时套餐、专属客户端、通用订阅、适合场景、观察状态和购买风险提示，方便用户和机器读取机场推荐基础数据。',
-      url: `${hostname}/data/airports.html`,
+      url: getDataCanonicalUrl('airports'),
       dateModified: siteLastReviewed,
       license: `${hostname}/methodology/`,
       creator: datasetCreator,
@@ -389,7 +390,7 @@ export const generateAirportDataFiles = (app: any) => {
       <div class="links">
         <a href="/data/airports.json">airports.json</a>
         <a href="/data/airports.md">airports.md</a>
-        <a href="/data/rankings.html">rankings.html</a>
+        <a href="/data/rankings">rankings</a>
         <a href="/rankings/all/">全量机场榜单</a>
         <a href="/methodology/">测评方法</a>
       </div>
@@ -399,13 +400,13 @@ export const generateAirportDataFiles = (app: any) => {
     title: 'yp7.net 机场榜单数据',
     description: 'yp7.net 机场榜单 HTML 页面，按稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT和流媒体场景整理机场数据。',
     keywords: '机场榜单,机场排行榜,稳定机场,低价机场,Clash机场,ChatGPT机场,流媒体机场',
-    canonical: `${hostname}/data/rankings.html`,
+    canonical: getDataCanonicalUrl('rankings'),
     schema: {
       '@context': 'https://schema.org',
       '@type': 'Dataset',
       name: 'yp7.net 机场榜单数据',
       description: 'yp7.net 机场榜单数据集按稳定机场、低价机场、免费试用机场、不限时套餐机场、专属客户端机场、Clash 机场、ChatGPT 机场和流媒体机场等场景整理机场条目，包含价格、流量、客户端类型、订阅支持、适合场景和风险提示等可对比字段。',
-      url: `${hostname}/data/rankings.html`,
+      url: getDataCanonicalUrl('rankings'),
       dateModified: siteLastReviewed,
       license: `${hostname}/methodology/`,
       creator: datasetCreator,
@@ -449,13 +450,13 @@ export const generateAirportDataFiles = (app: any) => {
     title: 'yp7.net 机场风险监测数据',
     description: 'yp7.net 机场风险监测 HTML 页面，整理已淘汰机场、客服失联、官网异常、节点波动和购买前风险提示。',
     keywords: '机场风险,跑路机场,机场跑路,机场监测,机场避坑',
-    canonical: `${hostname}/data/risk-monitor.html`,
+    canonical: getDataCanonicalUrl('risk-monitor'),
     schema: {
       '@context': 'https://schema.org',
       '@type': 'Dataset',
       name: 'yp7.net 机场风险监测数据',
       description: 'yp7.net 机场风险监测数据集记录已淘汰机场、观察中机场、官网异常、客服失联、节点波动、套餐变化和购买前风险提示，并关联对应页面，帮助用户在购买或续费前识别机场服务的时效性风险。',
-      url: `${hostname}/data/risk-monitor.html`,
+      url: getDataCanonicalUrl('risk-monitor'),
       dateModified: siteLastReviewed,
       license: `${hostname}/methodology/`,
       creator: datasetCreator,
@@ -466,7 +467,7 @@ export const generateAirportDataFiles = (app: any) => {
       <div class="links">
         <a href="/data/risk-monitor.json">risk-monitor.json</a>
         <a href="/data/risk-monitor.md">risk-monitor.md</a>
-        <a href="/data/rankings.html">rankings.html</a>
+        <a href="/data/rankings">rankings</a>
         <a href="/risk-monitor/">风险监测页</a>
         <a href="/methodology/">测评方法</a>
       </div>

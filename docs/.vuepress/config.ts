@@ -579,9 +579,9 @@ export default defineUserConfig({
           return page.data.git?.updatedTime ? new Date(page.data.git.updatedTime).toISOString() : ''
         },
         extraUrls: [
-          '/data/airports.html',
-          '/data/rankings.html',
-          '/data/risk-monitor.html',
+          '/data/airports',
+          '/data/rankings',
+          '/data/risk-monitor',
         ],
       },
       seo: false,

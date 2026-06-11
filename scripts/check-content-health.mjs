@@ -42,6 +42,7 @@ const normalizeRoute = (path) => {
 
 const countMatches = (content, pattern) => content.match(pattern)?.length || 0
 
+const redirectSourcePaths = new Set()
 const redirectsPath = join(publicDir, '_redirects')
 if (existsSync(redirectsPath)) {
   const redirectLines = readFileSync(redirectsPath, 'utf8').split('\n')
@@ -52,11 +53,25 @@ if (existsSync(redirectsPath)) {
 
     const [source, target] = trimmedLine.split(/\s+/)
     if (!source || !target) return
+    if (source.startsWith('/') && !source.includes('*')) {
+      redirectSourcePaths.add(source)
+      redirectSourcePaths.add(normalizeRoute(source))
+    }
 
     if (!extname(source) && target.endsWith('.html')) {
       errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: extensionless redirect to .html can loop on clean-url hosts`)
     }
   })
+}
+
+const getSitemapHtmlPath = (pathname) => {
+  const decodedPathname = decodeURIComponent(pathname)
+
+  if (decodedPathname === '/') return join(distDir, 'index.html')
+  if (decodedPathname.endsWith('/')) return join(distDir, decodedPathname.slice(1), 'index.html')
+  if (extname(decodedPathname)) return join(distDir, decodedPathname.slice(1))
+
+  return join(distDir, `${decodedPathname.slice(1)}.html`)
 }
 
 const getDisplayDate = (value = '') => {
@@ -510,6 +525,7 @@ if (!existsSync(distDir)) {
   errors.push('docs/.vuepress/dist: missing build output. Run pnpm run docs:build first.')
 } else {
   const htmlFiles = walkFiles(distDir).filter((filePath) => filePath.endsWith('.html'))
+  const sitemapPath = join(distDir, 'sitemap.xml')
 
   for (const filePath of htmlFiles) {
     const html = readFileSync(filePath, 'utf8')
@@ -524,6 +540,44 @@ if (!existsSync(distDir)) {
     if (countMatches(html, /<h1\b/g) < 1) htmlIssues.push('missing H1')
 
     htmlIssues.forEach((issue) => errors.push(`${projectPath}: ${issue}`))
+  }
+
+  if (!existsSync(sitemapPath)) {
+    errors.push('docs/.vuepress/dist/sitemap.xml: missing generated sitemap')
+  } else {
+    const sitemap = readFileSync(sitemapPath, 'utf8')
+    const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1])
+
+    sitemapUrls.forEach((loc) => {
+      let url
+
+      try {
+        url = new URL(loc)
+      } catch {
+        errors.push(`docs/.vuepress/dist/sitemap.xml: invalid sitemap URL ${loc}`)
+        return
+      }
+
+      const pathname = url.pathname
+      if (pathname.endsWith('.html')) {
+        errors.push(`docs/.vuepress/dist/sitemap.xml: ${loc} should use clean URL instead of .html`)
+      }
+
+      if (redirectSourcePaths.has(pathname) || redirectSourcePaths.has(normalizeRoute(pathname))) {
+        errors.push(`docs/.vuepress/dist/sitemap.xml: ${loc} points to a redirect source`)
+      }
+
+      const htmlPath = getSitemapHtmlPath(pathname)
+      if (!existsSync(htmlPath)) {
+        errors.push(`docs/.vuepress/dist/sitemap.xml: ${loc} has no generated HTML file`)
+        return
+      }
+
+      const html = readFileSync(htmlPath, 'utf8')
+      if (/<meta name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html)) {
+        errors.push(`docs/.vuepress/dist/sitemap.xml: ${loc} points to a noindex page`)
+      }
+    })
   }
 }
 
