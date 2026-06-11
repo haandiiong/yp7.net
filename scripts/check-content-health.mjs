@@ -42,6 +42,23 @@ const normalizeRoute = (path) => {
 
 const countMatches = (content, pattern) => content.match(pattern)?.length || 0
 
+const redirectsPath = join(publicDir, '_redirects')
+if (existsSync(redirectsPath)) {
+  const redirectLines = readFileSync(redirectsPath, 'utf8').split('\n')
+
+  redirectLines.forEach((line, index) => {
+    const trimmedLine = line.trim()
+    if (!trimmedLine || trimmedLine.startsWith('#')) return
+
+    const [source, target] = trimmedLine.split(/\s+/)
+    if (!source || !target) return
+
+    if (!extname(source) && target.endsWith('.html')) {
+      errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: extensionless redirect to .html can loop on clean-url hosts`)
+    }
+  })
+}
+
 const getDisplayDate = (value = '') => {
   const [year, month, day] = value.replace(/\//g, '-').split('-').map((part) => Number(part))
   if (!year || !month || !day) return undefined
