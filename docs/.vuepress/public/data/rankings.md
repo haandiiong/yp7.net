@@ -1,6 +1,6 @@
 # yp7.net 机场榜单数据
 
-Last reviewed: 2026-06-11
+Last reviewed: 2026-06-12
 
 ## 稳定机场
 
