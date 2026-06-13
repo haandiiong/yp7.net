@@ -1,7 +1,7 @@
 ---
 title: 2026 Clash机场榜：Clash Verge、Clash Meta 与 Shadowrocket 通用订阅机场
 createTime: 2026/06/04
-dateModified: 2026/06/10
+dateModified: 2026/06/13
 permalink: /rankings/clash/
 tags:
   - Clash机场
@@ -29,7 +29,7 @@ schema:
         url: "https://yp7.net/posts/99ba-review-2026/"
 ---
 
-更新时间：2026年6月10日
+更新时间：2026年6月13日
 
 ## 筛选口径
 
@@ -44,6 +44,8 @@ Clash机场榜优先看是否支持通用订阅、是否适合 Clash Verge、Cla
 | [99吧](/posts/99ba-review-2026/) | 12.99元/月 | 99GB/月 | 支持 | 支持 | 先试用再导入 |
 | [xxyun](/posts/xxyun-review-2026/) | 9.99元/月 | 100GB/月 | 不支持 | 支持 | 流媒体和通用订阅 |
 | [迅达](/posts/xunda-review-2026/) | 15元/月 | 150GB/月 | 支持 | 支持 | ChatGPT办公 |
+| [速界](/posts/sujie-review-2026/) | 25元/月 | 120GB/月 | 支持 | 支持 | IEPL、流媒体、临时300分钟订阅验证 |
+| [边缘节点](/posts/bianyuan-review-2026/) | 25元/月 | 120GB/月 | 不支持 | 支持 | IEPL、AI工具、临时一次性订阅验证 |
 | [奈云](/posts/naiyun-review-2026/) | 28元/月 | 388GB/月 | 支持 | 支持 | 大流量和通用订阅 |
 | [坦克加速](/posts/tank-review-2026/) | 8.8元/月 | 80GB/月 | 支持 | 支持 | 低价试用 |
 
@@ -52,6 +54,8 @@ Clash机场榜优先看是否支持通用订阅、是否适合 Clash Verge、Cla
 - 电脑端优先看 [Clash Verge教程](/posts/clash-verge-guide-2026/)。
 - Android 端优先看 [Clash for Android教程](/posts/clash-for-android-guide-2026/)。
 - iOS 端优先看 [Shadowrocket教程](/posts/shadowrocket-guide-2026/)。
+
+> 速界的通用订阅当前备注为临时 300 分钟，边缘节点的通用订阅当前备注为临时一次性订阅，更适合短时验证 Clash、Mihomo、Shadowrocket 或软路由导入，不建议直接按长期通用订阅机场理解。
 
 ## 常见问题
 

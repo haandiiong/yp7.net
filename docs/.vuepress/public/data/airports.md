@@ -30,6 +30,8 @@ Last reviewed: 2026-06-13
 | [二猫云](https://yp7.net/posts/ermiao-vpn-review/) | 20元/月 | 100GB/月 | 不支持 | 不支持 | 支持 | 不支持 | 性价比观察 |
 | [寰宇云](https://yp7.net/posts/huanyuyun-review-2026/) | 18元/月 | 150GB/月 | 不支持 | 支持 | 不支持 | 支持 | 备用观察 |
 | [sogo](https://yp7.net/posts/sogo-review-2026/) | 25元/月 | 120GB/月 | 不支持 | 支持 | 支持 | 不支持 | 新手观察 |
+| [速界](https://yp7.net/posts/sujie-review-2026/) | 25元/月 | 120GB/月 | 支持 | 不支持 | 支持 | 支持 | 专线观察 |
+| [边缘节点](https://yp7.net/posts/bianyuan-review-2026/) | 25元/月 | 120GB/月 | 不支持 | 不支持 | 支持 | 支持 | 专线观察 |
 | [宇宙云](https://yp7.net/posts/yuzhoucloud-review-2026/) | 12.5元/月 | 50GB/月 | 不支持 | 不支持 | 支持 | 不支持 | 低价观察 |
 | [快狸](https://yp7.net/posts/kuaili-review-2026/) | 15元/月 | 50GB/月 | 不支持 | 不支持 | 支持 | 不支持 | 客户端观察 |
 | [可信云](https://yp7.net/posts/kexinyun-review-2026/) | 15元/月 | 60GB/月 | 不支持 | 不支持 | 支持 | 不支持 | 稳定备用 |

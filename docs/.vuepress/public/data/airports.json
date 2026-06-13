@@ -508,6 +508,50 @@
       "url": "https://yp7.net/posts/sogo-review-2026/"
     },
     {
+      "name": "速界",
+      "path": "/posts/sujie-review-2026/",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "120GB/月",
+      "trial": true,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "streaming",
+        "newbie",
+        "trial",
+        "clash"
+      ],
+      "status": "专线观察",
+      "risk": "新站需复核，通用订阅临时300分钟",
+      "summary": "2026年2月开始运营的 IEPL 专线机场，支持 24 小时试用、专属客户端和临时 300 分钟通用订阅，适合流媒体、远程办公和低延迟场景先测。",
+      "url": "https://yp7.net/posts/sujie-review-2026/"
+    },
+    {
+      "name": "边缘节点",
+      "path": "/posts/bianyuan-review-2026/",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "120GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "streaming",
+        "chatgpt",
+        "newbie",
+        "clash"
+      ],
+      "status": "专线观察",
+      "risk": "通用订阅临时一次性，先月付复测",
+      "summary": "EdgeNode/边缘节点定位全球网络加速与 IEPL 专线，提供 60+ 全球节点、专属客户端和临时一次性通用订阅，适合流媒体、AI 工具和跨境办公先月付测试。",
+      "url": "https://yp7.net/posts/bianyuan-review-2026/"
+    },
+    {
       "name": "宇宙云",
       "path": "/posts/yuzhoucloud-review-2026/",
       "price": 12.5,

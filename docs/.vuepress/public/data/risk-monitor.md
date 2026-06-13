@@ -31,6 +31,8 @@ Last reviewed: 2026-06-13
 | 二猫云 | 性价比观察 | 长期稳定需复测 | [查看](https://yp7.net/posts/ermiao-vpn-review/) |
 | 寰宇云 | 备用观察 | 售后需复核 | [查看](https://yp7.net/posts/huanyuyun-review-2026/) |
 | sogo | 新手观察 | 价格较高需复测 | [查看](https://yp7.net/posts/sogo-review-2026/) |
+| 速界 | 专线观察 | 新站需复核，通用订阅临时300分钟 | [查看](https://yp7.net/posts/sujie-review-2026/) |
+| 边缘节点 | 专线观察 | 通用订阅临时一次性，先月付复测 | [查看](https://yp7.net/posts/bianyuan-review-2026/) |
 | 宇宙云 | 低价观察 | 流量较小 | [查看](https://yp7.net/posts/yuzhoucloud-review-2026/) |
 | 快狸 | 客户端观察 | 流量较小 | [查看](https://yp7.net/posts/kuaili-review-2026/) |
 | 可信云 | 稳定备用 | 流量较小 | [查看](https://yp7.net/posts/kexinyun-review-2026/) |

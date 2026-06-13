@@ -23,9 +23,9 @@ config:
           link: "/rankings/all/"
   - type: features
     title: "2026年6月13日数据看板"
-    description: "当前站内结构化收录30个机场，覆盖稳定、低价、免费试用、不限时、专属客户端、Clash、ChatGPT、流媒体和风险监测等筛选入口。"
+    description: "当前站内结构化收录32个机场，覆盖稳定、低价、免费试用、不限时、专属客户端、Clash、ChatGPT、流媒体和风险监测等筛选入口。"
     features:
-      - title: "30个机场"
+      - title: "32个机场"
         details: "全量榜单按最低价格、月流量、试用、不限时、专属客户端、通用订阅和风险状态统一整理。"
         link: "/rankings/all/"
         linkText: "查看全量数据"

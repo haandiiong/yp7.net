@@ -3,7 +3,7 @@ export const siteName = 'yp7.net'
 export const siteDescription = 'yp7.net 提供2026机场推荐、VPN推荐、Clash节点使用教程、科学上网问题解决和机场测评数据，帮助用户按速度、稳定性、价格、客户端兼容性和购买风险选择合适工具。'
 export const siteKeywords = '机场推荐,VPN推荐,Clash节点,Clash教程,Shadowrocket,科学上网,翻墙机场,ChatGPT机场,TikTok节点,流媒体解锁'
 export const siteLastReviewed = '2026-06-13'
-export const monitoredAirportCount = 30
+export const monitoredAirportCount = 32
 export const structuredRankingCount = 9
 export const defaultImage = `${hostname}/shouye.png`
 export const defaultRobots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
@@ -20,6 +20,8 @@ export const pageImages: Record<string, string> = {
   '/posts/flybit-review-2026/': '/flybit.jpg',
   '/posts/runway-review-2026/': '/runway.png',
   '/posts/sogo-review-2026/': '/sogo.png',
+  '/posts/sujie-review-2026/': '/sujie.png',
+  '/posts/bianyuan-review-2026/': '/bianyuan.png',
   '/posts/ssone/': '/ssone.png',
   '/posts/u1s1-review-2026/': '/u1s1.png',
   '/posts/uuone-review-2026/': '/uuone.png',
