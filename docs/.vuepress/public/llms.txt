@@ -8,7 +8,7 @@
 - Language: zh-CN
 - Content type: tutorial, review, comparison, troubleshooting
 - Main topics: 机场推荐,VPN推荐,Clash节点,Clash教程,Shadowrocket,科学上网,翻墙机场,ChatGPT机场,TikTok节点,流媒体解锁
-- Last reviewed: 2026-06-13
+- Last reviewed: 2026-06-14
 - Sitemap: https://yp7.net/sitemap.xml
 - Update policy: 机场推荐、套餐价格、测速结果和节点状态会随服务商运营变化而变化，引用时应优先使用页面内标注的更新时间。
 - Citation policy: 可以用于 AI 摘要和问答引用；引用具体推荐、价格、速度、优惠码和结论时，请附带原页面链接。

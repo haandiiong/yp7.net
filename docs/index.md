@@ -22,7 +22,7 @@ config:
           text: "全量机场榜单 →"
           link: "/rankings/all/"
   - type: features
-    title: "2026年6月13日数据看板"
+    title: "2026年6月14日数据看板"
     description: "当前站内结构化收录32个机场，覆盖稳定、低价、免费试用、不限时、专属客户端、Clash、ChatGPT、流媒体和风险监测等筛选入口。"
     features:
       - title: "32个机场"
