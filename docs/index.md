@@ -1,6 +1,6 @@
 ---
 home: true
-title: 2026机场推荐与科学上网教程
+title: 2026机场推荐与科学上网教程：稳定机场榜单、Clash配置与风险监测
 description: 2026最新科学上网教程，精选稳定VPN与机场推荐，支持ChatGPT、TikTok、Netflix解锁，提供Clash与Shadowrocket详细配置指南。
 config:
   - type: hero

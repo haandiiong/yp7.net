@@ -1,6 +1,6 @@
 ---
 friends: true
-title: 友链
+title: yp7.net 友情链接：科学上网、机场测评与网络工具资源站点
 description: yp7.net 友情链接页面，收录科学上网、机场测评、VPN 教程和网络工具相关站点，方便读者发现更多中文技术内容；欢迎同类优质站点交换友链。
 dateModified: 2026/06/10
 permalink: /friends/

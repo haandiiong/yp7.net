@@ -65,6 +65,18 @@ const injectGeneratedH1 = (html = '', title = '') => {
   return html.replace(/(<div id="VPContent"[^>]*>)/, `$1<h1 class="visually-hidden">${escapeHtml(title)}</h1>`)
 }
 
+const replaceGeneratedTitle = (html = '', title = '') => (
+  html.replace(/<title>.*?<\/title>/s, `<title>${escapeHtml(title)}</title>`)
+)
+
+const replaceRobotsMeta = (html = '', content = defaultRobots) => {
+  if (/<meta name="robots"/i.test(html)) {
+    return html.replace(/<meta name="robots"[^>]*>/i, `<meta name="robots" content="${escapeHtml(content)}">`)
+  }
+
+  return html.replace(/(<head[^>]*>)/i, `$1<meta name="robots" content="${escapeHtml(content)}">`)
+}
+
 const mergeRel = (current = '', additions: string[]) => Array.from(new Set([
   ...current.split(/\s+/).filter(Boolean),
   ...additions,
@@ -95,20 +107,21 @@ const walkGeneratedHtml = (dir: string, visit: (file: string) => void) => {
 
 export const patchGeneratedHtml = (app: any) => {
   const pages = [
-    ['index.html', '2026机场推荐与科学上网教程'],
-    ['blog/index.html', '全部文章'],
-    ['blog/tags/index.html', '标签索引'],
-    ['blog/categories/index.html', '分类索引'],
-    ['blog/archives/index.html', '时间归档'],
-    ['friends/index.html', '友链'],
+    ['index.html', '2026机场推荐与科学上网教程：稳定机场榜单、Clash配置与风险监测', defaultRobots],
+    ['blog/index.html', 'yp7.net 全部文章：机场推荐、机场评测、Clash教程与科学上网指南', defaultRobots],
+    ['blog/tags/index.html', 'yp7.net 标签索引：机场推荐、VPN教程、Clash节点与流媒体解锁', defaultRobots],
+    ['blog/categories/index.html', 'yp7.net 分类索引：机场榜单、机场评测、工具教程与风险监测', defaultRobots],
+    ['blog/archives/index.html', 'yp7.net 时间归档：2026机场测评、科学上网教程与节点更新记录', defaultRobots],
+    ['friends/index.html', 'yp7.net 友情链接：科学上网、机场测评与网络工具资源站点', defaultRobots],
+    ['404.html', '页面未找到：yp7.net 机场推荐与科学上网教程', 'noindex, follow'],
   ]
 
-  pages.forEach(([file, title]) => {
+  pages.forEach(([file, title, robots]) => {
     const htmlPath = app.dir.dest(file)
     if (!existsSync(htmlPath)) return
 
     const html = readFileSync(htmlPath, 'utf-8')
-    const patched = injectGeneratedH1(html, title)
+    const patched = replaceRobotsMeta(injectGeneratedH1(replaceGeneratedTitle(html, title), title), robots)
     if (patched !== html) writeFileSync(htmlPath, patched)
   })
 
@@ -372,7 +385,7 @@ export const generateAirportDataFiles = (app: any) => {
     '',
   ].join('\n'))
   writeFileSync(`${dataDir}/airports.html`, renderDataHtmlPage({
-    title: 'yp7.net 全量机场数据',
+    title: 'yp7.net 全量机场数据：价格、流量、试用、客户端与风险状态',
     description: 'yp7.net 全量机场数据 HTML 页面，汇总机场价格、流量、试用、不限时套餐、专属客户端、通用订阅和状态。',
     keywords: '机场数据,机场榜单,机场价格,机场推荐,机场风险',
     canonical: getDataCanonicalUrl('airports'),
@@ -399,7 +412,7 @@ export const generateAirportDataFiles = (app: any) => {
       <div class="card">${getAirportHtmlTable()}</div>`,
   }))
   writeFileSync(`${dataDir}/rankings.html`, renderDataHtmlPage({
-    title: 'yp7.net 机场榜单数据',
+    title: 'yp7.net 机场榜单数据：稳定、低价、Clash、ChatGPT与流媒体场景',
     description: 'yp7.net 机场榜单 HTML 页面，按稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT和流媒体场景整理机场数据。',
     keywords: '机场榜单,机场排行榜,稳定机场,低价机场,Clash机场,ChatGPT机场,流媒体机场',
     canonical: getDataCanonicalUrl('rankings'),
@@ -449,7 +462,7 @@ export const generateAirportDataFiles = (app: any) => {
       <div class="card">${getAirportHtmlTable(data.rankings.trial)}</div>`,
   }))
   writeFileSync(`${dataDir}/risk-monitor.html`, renderDataHtmlPage({
-    title: 'yp7.net 机场风险监测数据',
+    title: 'yp7.net 机场风险监测数据：跑路风险、官网异常、客服失联与购买提示',
     description: 'yp7.net 机场风险监测 HTML 页面，整理已淘汰机场、客服失联、官网异常、节点波动和购买前风险提示。',
     keywords: '机场风险,跑路机场,机场跑路,机场监测,机场避坑',
     canonical: getDataCanonicalUrl('risk-monitor'),
@@ -551,9 +564,9 @@ export const generateLlmsTxt = (app: any, {
     `- [全量机场 JSON](${hostname}/data/airports.json): 机场价格、流量、试用、客户端、订阅和风险状态数据。`,
     `- [机场榜单 JSON](${hostname}/data/rankings.json): 稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT 和流媒体榜单数据。`,
     `- [风险监测 JSON](${hostname}/data/risk-monitor.json): 已淘汰和观察中机场风险提示。`,
-    `- [全量机场 HTML](${hostname}/data/airports.html): 人类可读的机场数据表。`,
-    `- [机场榜单 HTML](${hostname}/data/rankings.html): 人类可读的场景榜单数据表。`,
-    `- [风险监测 HTML](${hostname}/data/risk-monitor.html): 人类可读的风险监测表。`,
+    `- [全量机场 HTML](${hostname}/data/airports): 人类可读的机场数据表。`,
+    `- [机场榜单 HTML](${hostname}/data/rankings): 人类可读的场景榜单数据表。`,
+    `- [风险监测 HTML](${hostname}/data/risk-monitor): 人类可读的风险监测表。`,
     `- [全量机场 Markdown](${hostname}/data/airports.md): 适合 AI 摘要引用的机场数据表。`,
     `- [机场榜单 Markdown](${hostname}/data/rankings.md): 适合 AI 摘要引用的榜单数据表。`,
     `- [风险监测 Markdown](${hostname}/data/risk-monitor.md): 适合 AI 摘要引用的风险监测表。`,

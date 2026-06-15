@@ -20,16 +20,16 @@
 - [全量机场 JSON](https://yp7.net/data/airports.json): 机场价格、流量、试用、客户端、订阅和风险状态数据。
 - [机场榜单 JSON](https://yp7.net/data/rankings.json): 稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT 和流媒体榜单数据。
 - [风险监测 JSON](https://yp7.net/data/risk-monitor.json): 已淘汰和观察中机场风险提示。
-- [全量机场 HTML](https://yp7.net/data/airports.html): 人类可读的机场数据表。
-- [机场榜单 HTML](https://yp7.net/data/rankings.html): 人类可读的场景榜单数据表。
-- [风险监测 HTML](https://yp7.net/data/risk-monitor.html): 人类可读的风险监测表。
+- [全量机场 HTML](https://yp7.net/data/airports): 人类可读的机场数据表。
+- [机场榜单 HTML](https://yp7.net/data/rankings): 人类可读的场景榜单数据表。
+- [风险监测 HTML](https://yp7.net/data/risk-monitor): 人类可读的风险监测表。
 - [全量机场 Markdown](https://yp7.net/data/airports.md): 适合 AI 摘要引用的机场数据表。
 - [机场榜单 Markdown](https://yp7.net/data/rankings.md): 适合 AI 摘要引用的榜单数据表。
 - [风险监测 Markdown](https://yp7.net/data/risk-monitor.md): 适合 AI 摘要引用的风险监测表。
 
 ## 站点入口
 
-- [2026机场推荐与科学上网教程](https://yp7.net/): 2026最新科学上网教程，精选稳定VPN与机场推荐，支持ChatGPT、TikTok、Netflix解锁，提供Clash与Shadowrocket详细配置指南。
+- [2026机场推荐与科学上网教程：稳定机场榜单、Clash配置与风险监测](https://yp7.net/): 2026最新科学上网教程，精选稳定VPN与机场推荐，支持ChatGPT、TikTok、Netflix解锁，提供Clash与Shadowrocket详细配置指南。
 
 ## 聚合索引
 
@@ -68,7 +68,7 @@
 
 - [99吧机场怎么样？99吧好用吗？2026实测：Clash订阅、不限时套餐、优惠码与晚高峰表现](https://yp7.net/posts/99ba-review-2026/): 99吧机场怎么样？99吧好用吗？本文基于2026年晚高峰实测，整理99吧官网入口、Clash订阅、不限时套餐、优惠码、节点速度、ChatGPT体验、优缺点与是否适合长期使用。
 - [阿达西机场怎么样？阿达西好用吗？2026实测：3元低价套餐、Clash订阅、晚高峰稳定性与优缺点](https://yp7.net/posts/adaxi-review-2026/): 阿达西机场怎么样？阿达西好用吗？本文基于2026年晚高峰实测，整理阿达西官网入口、3元低价套餐、Clash订阅、节点速度、ChatGPT体验、优缺点与是否适合长期使用。
-- [边缘节点机场怎么样？边缘节点好用吗？2026实测：IEPL专线、25元120GB套餐、AI工具与流媒体体验](https://yp7.net/posts/bianyuan-review-2026/): 边缘节点机场怎么样？边缘节点好用吗？本文基于2026年5月30日测试，整理边缘节点官网入口、25元120GB套餐、IEPL专线、60+全球节点、专属客户端、临时一次性通用订阅、AI工具、流媒体和购买前风险提示。
+- [边缘节点机场怎么样？边缘节点好用吗？2026实测：IEPL专线、25元120GB套餐、AI工具与流媒体体验](https://yp7.net/posts/bianyuan-review-2026/): 边缘节点机场怎么样？边缘节点好用吗？本文基于2026年5月30日测试，整理边缘节点注册链接、25元120GB套餐、IEPL专线、60+全球节点、专属客户端、临时一次性通用订阅、AI工具、流媒体和购买前风险提示。
 - [CCYZ机场怎么样？CCYZ好用吗？2026实测：流媒体解锁、稳定性、价格与风险判断](https://yp7.net/posts/ccyz-review-2026/): CCYZ机场怎么样？CCYZ好用吗？本文从流媒体解锁、晚高峰稳定性、套餐价格、使用风险和适合人群分析CCYZ是否值得选择，并提醒购买前先短期测试，关注官网价格、节点维护、退款规则和本地网络差异。
 - [冲上云霄机场怎么样？冲上云霄好用吗？2026实测：视频娱乐、节点速度、价格与稳定性](https://yp7.net/posts/chongshangyunxiao/): 冲上云霄机场怎么样？冲上云霄好用吗？本文从视频娱乐、节点速度、套餐价格、晚高峰稳定性和优缺点分析冲上云霄是否值得使用，并提醒购买前先短期测试，关注官网价格、节点维护、退款规则和本地网络差异。
 - [cocoduck机场怎么样？cocoduck好用吗？2026实测：小众机场、流媒体、套餐价格与稳定性](https://yp7.net/posts/cocoduck-review/): cocoduck机场怎么样？cocoduck好用吗？本文从小众机场定位、流媒体体验、套餐价格、晚高峰稳定性和购买风险分析cocoduck是否值得使用。
@@ -110,7 +110,7 @@
 ## 科学上网教程
 
 - [2026年4月中国大陆翻墙环境分析：快连停止运营后，机场与VPN发生了什么？](https://yp7.net/posts/china-vpn-april/): 详细分析2026年4月中国大陆翻墙环境变化，包括快连（LetsVPN）停止部分大陆业务、大量机场失效、IEPL/IPLC波动、Clash订阅频繁失效以及AI流量识别趋势。
-- [Clash节点是什么？新手入门指南](https://yp7.net/posts/clash-guide/): 本文详解Clash节点概念、分类、使用方法和新手配置指南，附实测经验和避坑建议，并说明订阅导入、规则分流、节点选择和常见配置风险，帮助新手更稳地使用Clash科学上网。
+- [Clash节点是什么？2026新手入门指南：订阅导入、协议分类与避坑建议](https://yp7.net/posts/clash-guide/): 本文详解Clash节点概念、分类、使用方法和新手配置指南，附实测经验和避坑建议，并说明订阅导入、规则分流、节点选择和常见配置风险，帮助新手更稳地使用Clash科学上网。
 - [翻墙、科学上网与机场的优缺点全解析（2026最新版）](https://yp7.net/posts/is-vpn-or-airport-better-pros-cons-analysis/): 全面解析翻墙、科学上网、VPN与机场的优缺点，从安全性、速度、稳定性、成本等多个维度深度对比，帮助新手在购买前理解隐私、价格、速度和长期稳定性的取舍。
 - [软路由是什么？2026最全入门指南（OpenWrt / 爱快安装+科学上网配置）](https://yp7.net/posts/soft-router-guide-2026/): 软路由是什么？2026最新软路由入门教程，详解原理、与普通路由区别、OpenWrt与爱快安装配置、硬件推荐及科学上网分流方案，新手也能快速上手。
 - [科学上网是什么？翻墙、梯子、机场全解析（2026最全指南）](https://yp7.net/posts/vpn-guide-2026/): 科学上网是什么？翻墙、梯子、机场有什么区别？本文从原理、工具到实操全面讲解VPN、Shadowsocks、V2Ray及最简单上手方案，适合2026新手入门。
