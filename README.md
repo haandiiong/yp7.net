@@ -68,7 +68,6 @@ pnpm run docs:check-content
 ## CI 与发布
 
 - `.github/workflows/deploy.yml`：push 到 `main` 后构建并部署到 `gh-pages`。
-- `.github/workflows/daily-refresh.yml`：每天按 Asia/Shanghai 07:00 刷新站点复核日期、构建、同步数据并提交。
 - `.github/workflows/indexnow.yml`：部署成功后提交 sitemap URL 到 IndexNow。
 
 CI 会检查生成数据同步和内容健康，包括断链、缺图、缺 H1、缺 canonical、缺 JSON-LD、机场数据页面映射和 `dateModified` 覆盖。
