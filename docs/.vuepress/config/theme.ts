@@ -13,6 +13,7 @@ export const theme = plumeTheme({
       icon: 'material-symbols:leaderboard',
       items: [
         { text: '全量榜单', link: '/rankings/all/', icon: 'material-symbols:format-list-numbered' },
+        { text: '销量榜', link: '/rankings/sales/', icon: 'material-symbols:trending-up' },
         { text: '稳定机场', link: '/rankings/stable/', icon: 'material-symbols:verified-rounded' },
         { text: '低价机场', link: '/rankings/cheap/', icon: 'material-symbols:sell-outline' },
         { text: '免费试用', link: '/rankings/trial/', icon: 'material-symbols:redeem-outline' },
@@ -46,6 +47,7 @@ export const theme = plumeTheme({
       ],
     },
     { text: '友链', link: '/friends/' },
+    { text: '关于本站', link: '/about/' },
   ],
   profile: {
     name: 'yp7.net',

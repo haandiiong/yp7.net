@@ -1,6 +1,29 @@
 # yp7.net 机场榜单数据
 
-Last reviewed: 2026-06-15
+Last reviewed: 2026-06-18
+
+## 销量机场
+
+| 机场 | 销量样本 | 最低价格 | 月流量 | 试用 | 专属客户端 | 通用订阅 | 状态 |
+| --- | ---: | --- | --- | --- | --- | --- | --- |
+| [全球云](https://yp7.net/posts/quanqiuyun/) | 1048 | 20元/月 | 120GB/月 | 不支持 | 支持 | 不支持 | 主推观察 |
+| [xxyun](https://yp7.net/posts/xxyun-review-2026/) | 942 | 9.99元/月 | 100GB/月 | 不支持 | 支持 | 支持 | 流媒体观察 |
+| [冲上云霄](https://yp7.net/posts/chongshangyunxiao/) | 929 | 5元/月 | 80GB/月 | 不支持 | 不支持 | 支持 | 低价观察 |
+| [网际快车](https://yp7.net/posts/wangji-kuaiche-review/) | 849 | 16元/月 | 100GB/月 | 支持 | 支持 | 支持 | 重点观察 |
+| [光年梯](https://yp7.net/posts/guangnianti-review-2026/) | 832 | 18元/月 | 110GB/月 | 不支持 | 支持 | 不支持 | 主推观察 |
+| [奈云](https://yp7.net/posts/naiyun-review-2026/) | 774 | 28元/月 | 388GB/月 | 支持 | 支持 | 支持 | 老牌观察 |
+| [Flybit](https://yp7.net/posts/flybit-review-2026/) | 744 | 15元/月 | 128GB/月 | 支持 | 不支持 | 支持 | Clash观察 |
+| [阿达西](https://yp7.net/posts/adaxi-review-2026/) | 462 | 3元/月 | 20GB/月 | 不支持 | 不支持 | 支持 | 低价观察 |
+| [runway](https://yp7.net/posts/runway-review-2026/) | 445 | 9.9元/月 | 80GB/月 | 支持 | 支持 | 不支持 | 新手观察 |
+| [sogo](https://yp7.net/posts/sogo-review-2026/) | 419 | 25元/月 | 120GB/月 | 不支持 | 支持 | 不支持 | 新手观察 |
+| [99吧](https://yp7.net/posts/99ba-review-2026/) | 413 | 12.99元/月 | 99GB/月 | 支持 | 不支持 | 支持 | 试用观察 |
+| [光速云](https://yp7.net/posts/guangsuyun/) | 346 | 17元/月 | 110GB/月 | 不支持 | 不支持 | 支持 | 备用观察 |
+| [cocoduck](https://yp7.net/posts/cocoduck-review/) | 280 | 15元/月 | 100GB/月 | 支持 | 支持 | 支持 | 小众观察 |
+| [唯兔云](https://yp7.net/posts/weituyun/) | 221 | 14.9元/月 | 100GB/月 | 不支持 | 支持 | 不支持 | 流媒体观察 |
+| [坦克加速](https://yp7.net/posts/tank-review-2026/) | 219 | 8.8元/月 | 80GB/月 | 支持 | 支持 | 支持 | 新手观察 |
+| [二猫云](https://yp7.net/posts/ermiao-vpn-review/) | 191 | 20元/月 | 100GB/月 | 不支持 | 支持 | 不支持 | 性价比观察 |
+| [瞬云](https://yp7.net/posts/shunyun-review-2026/) | 128 | 20元/月 | 150GB/月 | 不支持 | 不支持 | 支持 | 备用观察 |
+| [U1S1](https://yp7.net/posts/u1s1-review-2026/) | 82 | 20元/月 | 120GB/月 | 不支持 | 支持 | 支持 | 办公观察 |
 
 ## 稳定机场
 

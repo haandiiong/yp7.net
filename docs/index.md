@@ -2,6 +2,7 @@
 home: true
 title: 2026机场推荐与科学上网教程：稳定机场榜单、Clash配置与风险监测
 description: 2026最新科学上网教程，精选稳定VPN与机场推荐，支持ChatGPT、TikTok、Netflix解锁，提供Clash与Shadowrocket详细配置指南。
+dateModified: 2026/06/18
 config:
   - type: hero
     hero:
@@ -22,17 +23,17 @@ config:
           text: "全量机场榜单 →"
           link: "/rankings/all/"
   - type: features
-    title: "2026年6月15日数据看板"
-    description: "当前站内结构化收录32个机场，覆盖稳定、低价、免费试用、不限时、专属客户端、Clash、ChatGPT、流媒体和风险监测等筛选入口。"
+    title: "2026年6月18日数据看板"
+    description: "当前站内结构化收录32个机场，覆盖销量、稳定、低价、免费试用、不限时、专属客户端、Clash、ChatGPT、流媒体和风险监测等筛选入口。"
     features:
       - title: "32个机场"
         details: "全量榜单按最低价格、月流量、试用、不限时、专属客户端、通用订阅和风险状态统一整理。"
         link: "/rankings/all/"
         linkText: "查看全量数据"
-      - title: "9个筛选场景"
-        details: "新增免费试用、不限时套餐、专属客户端和优惠码入口，减少用户在长文中反复查找。"
-        link: "/rankings/trial/"
-        linkText: "查看试用入口"
+      - title: "10个筛选场景"
+        details: "新增销量榜、免费试用、不限时套餐、专属客户端和优惠码入口，减少用户在长文中反复查找。"
+        link: "/rankings/sales/"
+        linkText: "查看销量榜"
       - title: "风险监测"
         details: "持续记录已淘汰、观察中、官网异常、售后失联、套餐变化和晚高峰波动风险。"
         link: "/risk-monitor/"
@@ -50,7 +51,7 @@ config:
         link: "/posts/jichang-heji/"
         linkText: "查看大全"
       - title: "机场榜单"
-        details: "按稳定性、低价、免费试用、不限时、Clash、ChatGPT和流媒体场景整理榜单入口。"
+        details: "按销量、稳定性、低价、免费试用、不限时、Clash、ChatGPT和流媒体场景整理榜单入口。"
         link: "/rankings/all/"
         linkText: "查看榜单"
       - title: "风险监测"

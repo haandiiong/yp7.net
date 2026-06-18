@@ -132,17 +132,46 @@ export const patchGeneratedHtml = (app: any) => {
   })
 }
 
+const salesSampleCounts: Record<string, number> = {
+  全球云: 1048,
+  光年梯: 832,
+  网际快车: 849,
+  光速云: 346,
+  xxyun: 942,
+  Flybit: 744,
+  阿达西: 462,
+  runway: 445,
+  唯兔云: 221,
+  '99吧': 413,
+  冲上云霄: 929,
+  U1S1: 82,
+  奈云: 774,
+  cocoduck: 280,
+  坦克加速: 219,
+  瞬云: 128,
+  二猫云: 191,
+  sogo: 419,
+}
+
 const getAirportDataFiles = () => {
   const serializeAirport = (airport: typeof airportData[number]) => ({
     ...airport,
     url: getCanonicalUrl(airport.path),
   })
+  const serializeSalesAirport = (airport: typeof airportData[number]) => ({
+    ...serializeAirport(airport),
+    salesSample: salesSampleCounts[airport.name],
+  })
   const byScenario = (scenario: string) => airportData.filter((airport) => airport.scenarios.includes(scenario))
+  const salesRanking = airportData
+    .filter((airport) => salesSampleCounts[airport.name] !== undefined)
+    .sort((a, b) => salesSampleCounts[b.name] - salesSampleCounts[a.name])
 
   return {
     airports: airportData.map(serializeAirport),
     rankings: {
       all: airportData.map(serializeAirport),
+      sales: salesRanking.map(serializeSalesAirport),
       stable: byScenario('stable').map(serializeAirport),
       cheap: airportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap')).map(serializeAirport),
       clash: airportData.filter((airport) => airport.universalSubscription || airport.scenarios.includes('clash')).map(serializeAirport),
@@ -178,6 +207,23 @@ const getAirportMarkdownTable = (airports: typeof airportData, columns: string[]
     airport.traffic,
     airport.trial ? '支持' : '不支持',
     airport.noExpiry ? '支持' : '不支持',
+    airport.dedicatedClient ? '支持' : '不支持',
+    airport.universalSubscription ? '支持' : '不支持',
+    airport.status,
+  ])
+
+  return [header, divider, ...rows.map((row) => `| ${row.join(' | ')} |`)].join('\n')
+}
+
+const getSalesMarkdownTable = (airports: Array<any>) => {
+  const header = '| 机场 | 销量样本 | 最低价格 | 月流量 | 试用 | 专属客户端 | 通用订阅 | 状态 |'
+  const divider = '| --- | ---: | --- | --- | --- | --- | --- | --- |'
+  const rows = airports.map((airport) => [
+    `[${airport.name}](${getCanonicalUrl(airport.path)})`,
+    airport.salesSample,
+    airport.priceText,
+    airport.traffic,
+    airport.trial ? '支持' : '不支持',
     airport.dedicatedClient ? '支持' : '不支持',
     airport.universalSubscription ? '支持' : '不支持',
     airport.status,
@@ -272,6 +318,28 @@ ${rows}
       </table>`
 }
 
+const getSalesHtmlTable = (airports: Array<any>) => {
+  const rows = airports.map((airport) => `<tr>
+        <td><a href="${airport.path}">${escapeHtml(airport.name)}</a></td>
+        <td>${airport.salesSample}</td>
+        <td>${escapeHtml(airport.priceText)}</td>
+        <td>${escapeHtml(airport.traffic)}</td>
+        <td>${airport.trial ? '支持' : '不支持'}</td>
+        <td>${airport.dedicatedClient ? '支持' : '不支持'}</td>
+        <td>${airport.universalSubscription ? '支持' : '不支持'}</td>
+        <td>${escapeHtml(airport.status)}</td>
+      </tr>`).join('\n')
+
+  return `<table>
+        <thead>
+          <tr><th>机场</th><th>销量样本</th><th>最低价格</th><th>月流量</th><th>试用</th><th>专属客户端</th><th>通用订阅</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+${rows}
+        </tbody>
+      </table>`
+}
+
 const getRiskMonitorHtmlTable = () => {
   const riskRows = [
     { name: 'echo', status: '已淘汰', risk: '客服失联，谨慎使用', url: '/posts/jichang-heji/' },
@@ -340,6 +408,10 @@ export const generateAirportDataFiles = (app: any) => {
     '# yp7.net 机场榜单数据',
     '',
     `Last reviewed: ${siteLastReviewed}`,
+    '',
+    '## 销量机场',
+    '',
+    getSalesMarkdownTable(data.rankings.sales),
     '',
     '## 稳定机场',
     '',
@@ -412,15 +484,15 @@ export const generateAirportDataFiles = (app: any) => {
       <div class="card">${getAirportHtmlTable()}</div>`,
   }))
   writeFileSync(`${dataDir}/rankings.html`, renderDataHtmlPage({
-    title: 'yp7.net 机场榜单数据：稳定、低价、Clash、ChatGPT与流媒体场景',
-    description: 'yp7.net 机场榜单 HTML 页面，按稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT和流媒体场景整理机场数据。',
-    keywords: '机场榜单,机场排行榜,稳定机场,低价机场,Clash机场,ChatGPT机场,流媒体机场',
+    title: 'yp7.net 机场榜单数据：销量、稳定、低价、Clash、ChatGPT与流媒体场景',
+    description: 'yp7.net 机场榜单 HTML 页面，按销量样本、稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT和流媒体场景整理机场数据。',
+    keywords: '机场榜单,机场排行榜,销量机场,稳定机场,低价机场,Clash机场,ChatGPT机场,流媒体机场',
     canonical: getDataCanonicalUrl('rankings'),
     schema: {
       '@context': 'https://schema.org',
       '@type': 'Dataset',
       name: 'yp7.net 机场榜单数据',
-      description: 'yp7.net 机场榜单数据集按稳定机场、低价机场、免费试用机场、不限时套餐机场、专属客户端机场、Clash 机场、ChatGPT 机场和流媒体机场等场景整理机场条目，包含价格、流量、客户端类型、订阅支持、适合场景和风险提示等可对比字段。',
+      description: 'yp7.net 机场榜单数据集按销量样本、稳定机场、低价机场、免费试用机场、不限时套餐机场、专属客户端机场、Clash 机场、ChatGPT 机场和流媒体机场等场景整理机场条目，包含价格、流量、客户端类型、订阅支持、适合场景和风险提示等可对比字段。',
       url: getDataCanonicalUrl('rankings'),
       dateModified: siteLastReviewed,
       license: `${hostname}/methodology/`,
@@ -433,6 +505,7 @@ export const generateAirportDataFiles = (app: any) => {
         <a href="/data/rankings.json">rankings.json</a>
         <a href="/data/rankings.md">rankings.md</a>
         <a href="/rankings/all/">全量榜单</a>
+        <a href="/rankings/sales/">销量机场</a>
         <a href="/rankings/stable/">稳定机场</a>
         <a href="/rankings/cheap/">低价机场</a>
         <a href="/rankings/trial/">免费试用</a>
@@ -442,6 +515,8 @@ export const generateAirportDataFiles = (app: any) => {
         <a href="/rankings/chatgpt/">ChatGPT机场</a>
         <a href="/rankings/streaming/">流媒体机场</a>
       </div>
+      <h2>销量机场</h2>
+      <div class="card">${getSalesHtmlTable(data.rankings.sales)}</div>
       <h2>稳定机场</h2>
       <div class="card">${getAirportHtmlTable(data.rankings.stable)}</div>
       <h2>低价机场</h2>
@@ -562,7 +637,7 @@ export const generateLlmsTxt = (app: any, {
     '## Data files',
     '',
     `- [全量机场 JSON](${hostname}/data/airports.json): 机场价格、流量、试用、客户端、订阅和风险状态数据。`,
-    `- [机场榜单 JSON](${hostname}/data/rankings.json): 稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT 和流媒体榜单数据。`,
+    `- [机场榜单 JSON](${hostname}/data/rankings.json): 销量样本、稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT 和流媒体榜单数据。`,
     `- [风险监测 JSON](${hostname}/data/risk-monitor.json): 已淘汰和观察中机场风险提示。`,
     `- [全量机场 HTML](${hostname}/data/airports): 人类可读的机场数据表。`,
     `- [机场榜单 HTML](${hostname}/data/rankings): 人类可读的场景榜单数据表。`,

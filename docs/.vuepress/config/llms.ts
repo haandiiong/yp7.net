@@ -3,6 +3,7 @@ import { getArticleSection, stripMarkdown } from './page-utils'
 export const getLlmsSection = (page: any) => {
   if (page.path === '/') return '站点入口'
   if (page.path === '/blog/' || page.path === '/blog/tags/' || page.path === '/blog/categories/' || page.path === '/blog/archives/') return '聚合索引'
+  if (page.path === '/about/') return '站点说明'
   if (page.path.startsWith('/rankings/')) return '机场榜单'
   if (page.path === '/risk-monitor/') return '风险监测'
   if (page.path === '/methodology/') return '测评方法'

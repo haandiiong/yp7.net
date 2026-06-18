@@ -12,7 +12,16 @@ import {
   isArticlePage,
   stripMarkdown,
 } from './page-utils'
-import { hostname, siteDescription, siteName } from './site'
+import {
+  hostname,
+  siteAuthorDescription,
+  siteAuthorName,
+  siteAuthorUrl,
+  siteContactUrl,
+  siteDescription,
+  siteName,
+  sitePublishingPrinciplesUrl,
+} from './site'
 
 export const hasJsonLdHead = (head: unknown) => Array.isArray(head) && head.some((item) => {
   if (!Array.isArray(item)) return false
@@ -220,16 +229,37 @@ export const getPageSchema = (page: any) => {
         name: siteName,
         url: hostname,
         logo: `${hostname}/logo.png`,
+        description: siteDescription,
+        publishingPrinciples: sitePublishingPrinciplesUrl,
+        contactPoint: {
+          '@type': 'ContactPoint',
+          contactType: 'editorial',
+          url: siteContactUrl,
+        },
         sameAs: [
           'https://github.com/haandiiong',
-          'https://t.me/yp7net',
+          siteContactUrl,
         ],
       },
       {
         '@type': 'Person',
         '@id': `${hostname}/#author`,
-        name: 'yp7',
-        url: hostname,
+        name: siteAuthorName,
+        description: siteAuthorDescription,
+        url: siteAuthorUrl,
+        sameAs: [
+          'https://github.com/haandiiong',
+          siteContactUrl,
+        ],
+        knowsAbout: [
+          '机场推荐',
+          '机场测评',
+          'Clash',
+          'Shadowrocket',
+          '科学上网',
+          'ChatGPT 访问',
+          '流媒体解锁',
+        ],
       },
       {
         '@type': 'WebSite',
@@ -239,6 +269,7 @@ export const getPageSchema = (page: any) => {
         description: siteDescription,
         inLanguage: 'zh-CN',
         publisher: { '@id': `${hostname}/#organization` },
+        publishingPrinciples: sitePublishingPrinciplesUrl,
       },
       {
         '@type': articlePage ? 'BlogPosting' : 'WebPage',
