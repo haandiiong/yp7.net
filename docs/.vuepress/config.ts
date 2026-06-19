@@ -20,7 +20,6 @@ export default defineUserConfig({
   title: siteName,
   description: siteDescription,
   head: [
-    ['meta', { name: 'robots', content: defaultRobots }],
     ['meta', { name: 'author', content: 'yp7' }],
     ['meta', { name: 'theme-color', content: '#2563eb' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],

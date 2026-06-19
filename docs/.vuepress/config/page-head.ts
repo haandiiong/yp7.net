@@ -21,12 +21,18 @@ const getSocialHead = (page: any) => {
   const dateModified = getPageDateModified(page)
 
   return [
+    ['meta', { name: 'geo.position', content: '22.3193;114.1694' }],
+    ['meta', { name: 'ICBM', content: '22.3193, 114.1694' }],
+    ['meta', { name: 'geo.placename', content: 'Hong Kong' }],
+    ['meta', { name: 'geo.region', content: 'HK' }],
     ['meta', { property: 'og:url', content: canonicalUrl }],
     ['meta', { property: 'og:site_name', content: siteName }],
     ['meta', { property: 'og:title', content: title }],
     ['meta', { property: 'og:description', content: description }],
     ['meta', { property: 'og:type', content: articlePage ? 'article' : 'website' }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    ['meta', { property: 'og:locale:alternate', content: 'zh_TW' }],
+    ['meta', { property: 'og:locale:alternate', content: 'zh_HK' }],
     ['meta', { property: 'og:image', content: image }],
     ['meta', { property: 'og:image:alt', content: title }],
     ...(articlePage && datePublished
@@ -45,8 +51,14 @@ const getSocialHead = (page: any) => {
 
 const getBasicPageHead = (page: any) => {
   const keywords = getPageMetaKeywords(page)
+  const robots = page.path.startsWith('/rankings/')
+    ? 'index, follow, max-snippet:160, max-image-preview:large'
+    : page.path.startsWith('/posts/') && page.path.includes('-review')
+    ? 'index, follow, max-snippet:320, max-image-preview:large'
+    : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
 
   return [
+    ['meta', { name: 'robots', content: robots }],
     ['meta', { name: 'description', content: getPageDescription(page) }],
     ...(keywords ? [['meta', { name: 'keywords', content: keywords }]] : []),
   ]

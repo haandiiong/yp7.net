@@ -52,7 +52,15 @@ const getAirportServiceSchemas = (page: any) => {
       url: canonicalUrl,
       image: getPageImage(page),
       provider: { '@id': `${hostname}/#organization` },
-      areaServed: '全球',
+      areaServed: [
+        { '@type': 'Country', name: '中国' },
+        { '@type': 'Country', name: '台湾' },
+        { '@type': 'Country', name: '香港' },
+        { '@type': 'Country', name: '新加坡' },
+        { '@type': 'Country', name: '日本' },
+        { '@type': 'Country', name: '美国' },
+        { '@type': 'Country', name: '韩国' },
+      ],
       audience: {
         '@type': 'Audience',
         audienceType: airport.scenarios.join(', '),
@@ -159,6 +167,7 @@ function normalizeExtraSchema(schema: Record<string, any>) {
     return {
       ...normalized,
       itemListElement: normalized.itemListElement.map(normalizeItemListElement),
+      itemListOrder: normalized.itemListOrder || 'https://schema.org/ItemListOrderAscending',
     }
   }
 

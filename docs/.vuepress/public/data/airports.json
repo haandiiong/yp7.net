@@ -6,6 +6,7 @@
     {
       "name": "全球云",
       "path": "/posts/quanqiuyun/",
+      "image": "/qqy.png",
       "price": 20,
       "priceText": "20元/月",
       "traffic": "120GB/月",
@@ -22,11 +23,13 @@
       "status": "主推观察",
       "risk": "先月付测试",
       "summary": "新手友好，专属客户端上手成本低，适合先测试日常网页、ChatGPT 和流媒体。",
+      "salesSample": 1048,
       "url": "https://yp7.net/posts/quanqiuyun/"
     },
     {
       "name": "光年梯",
       "path": "/posts/guangnianti-review-2026/",
+      "image": "/gnt.png",
       "price": 18,
       "priceText": "18元/月",
       "traffic": "110GB/月",
@@ -42,11 +45,13 @@
       "status": "主推观察",
       "risk": "先月付测试",
       "summary": "偏长期主力测试，适合重视稳定性和专属客户端体验的用户。",
+      "salesSample": 832,
       "url": "https://yp7.net/posts/guangnianti-review-2026/"
     },
     {
       "name": "网际快车",
       "path": "/posts/wangji-kuaiche-review/",
+      "image": "/kuaiche.png",
       "price": 16,
       "priceText": "16元/月",
       "traffic": "100GB/月",
@@ -63,11 +68,13 @@
       "status": "重点观察",
       "risk": "需复核官网与试用",
       "summary": "支持试用和通用订阅，适合 Clash 用户和想先短期测试的人。",
+      "salesSample": 849,
       "url": "https://yp7.net/posts/wangji-kuaiche-review/"
     },
     {
       "name": "光速云",
       "path": "/posts/guangsuyun/",
+      "image": "/guangsuyun.png",
       "price": 17,
       "priceText": "17元/月",
       "traffic": "110GB/月",
@@ -83,11 +90,13 @@
       "status": "备用观察",
       "risk": "晚高峰复测",
       "summary": "适合作为备用机场或 Clash 通用订阅测试，需关注晚高峰表现。",
+      "salesSample": 346,
       "url": "https://yp7.net/posts/guangsuyun/"
     },
     {
       "name": "xxyun",
       "path": "/posts/xxyun-review-2026/",
+      "image": "/xxyun.png",
       "price": 9.99,
       "priceText": "9.99元/月",
       "traffic": "100GB/月",
@@ -103,11 +112,13 @@
       "status": "流媒体观察",
       "risk": "解锁能力会变化",
       "summary": "低价且偏流媒体场景，适合 Netflix、Disney+、YouTube 用户短期测试。",
+      "salesSample": 942,
       "url": "https://yp7.net/posts/xxyun-review-2026/"
     },
     {
       "name": "Flybit",
       "path": "/posts/flybit-review-2026/",
+      "image": "/flybit.jpg",
       "price": 15,
       "priceText": "15元/月",
       "traffic": "128GB/月",
@@ -122,11 +133,13 @@
       "status": "Clash观察",
       "risk": "长期稳定需复测",
       "summary": "通用订阅兼容性更突出，适合 Clash Verge、Clash Meta、Shadowrocket 用户。",
+      "salesSample": 744,
       "url": "https://yp7.net/posts/flybit-review-2026/"
     },
     {
       "name": "阿达西",
       "path": "/posts/adaxi-review-2026/",
+      "image": "/adaxi.png",
       "price": 3,
       "priceText": "3元/月",
       "traffic": "20GB/月",
@@ -141,11 +154,13 @@
       "status": "低价观察",
       "risk": "不建议直接长期付费",
       "summary": "价格门槛低，更适合轻量测试和备用，不适合高强度主力依赖。",
+      "salesSample": 462,
       "url": "https://yp7.net/posts/adaxi-review-2026/"
     },
     {
       "name": "runway",
       "path": "/posts/runway-review-2026/",
+      "image": "/runway.png",
       "price": 9.9,
       "priceText": "9.9元/月",
       "traffic": "80GB/月",
@@ -161,11 +176,13 @@
       "status": "新手观察",
       "risk": "先试用再续费",
       "summary": "支持免费试用和专属客户端，适合新手先体验连接流程。",
+      "salesSample": 445,
       "url": "https://yp7.net/posts/runway-review-2026/"
     },
     {
       "name": "唯兔云",
       "path": "/posts/weituyun/",
+      "image": "/weituyun.png",
       "price": 14.9,
       "priceText": "14.9元/月",
       "traffic": "100GB/月",
@@ -179,11 +196,13 @@
       "status": "流媒体观察",
       "risk": "解锁能力会变化",
       "summary": "偏流媒体体验，适合短期测试视频平台和节点稳定性。",
+      "salesSample": 221,
       "url": "https://yp7.net/posts/weituyun/"
     },
     {
       "name": "99吧",
       "path": "/posts/99ba-review-2026/",
+      "image": "/99ba.png",
       "price": 12.99,
       "priceText": "12.99元/月",
       "traffic": "99GB/月",
@@ -198,11 +217,13 @@
       "status": "试用观察",
       "risk": "先测试订阅可用性",
       "summary": "支持试用与通用订阅，适合购买前验证 Clash 导入和节点延迟。",
+      "salesSample": 413,
       "url": "https://yp7.net/posts/99ba-review-2026/"
     },
     {
       "name": "迅达",
       "path": "/posts/xunda-review-2026/",
+      "image": "/xunda.png",
       "price": 15,
       "priceText": "15元/月",
       "traffic": "150GB/月",
@@ -223,6 +244,7 @@
     {
       "name": "ccyz",
       "path": "/posts/ccyz-review-2026/",
+      "image": "/ccyz.png",
       "price": 19.9,
       "priceText": "19.9元/月",
       "traffic": "150GB/月",
@@ -241,6 +263,7 @@
     {
       "name": "uuone",
       "path": "/posts/uuone-review-2026/",
+      "image": "/uuone.png",
       "price": 12,
       "priceText": "12元/月",
       "traffic": "150GB/月",
@@ -260,6 +283,7 @@
     {
       "name": "冲上云霄",
       "path": "/posts/chongshangyunxiao/",
+      "image": "/csyx.png",
       "price": 5,
       "priceText": "5元/月",
       "traffic": "80GB/月",
@@ -275,11 +299,13 @@
       "status": "低价观察",
       "risk": "晚高峰复测",
       "summary": "低价且支持通用订阅，适合作为轻量备用或短期测试。",
+      "salesSample": 929,
       "url": "https://yp7.net/posts/chongshangyunxiao/"
     },
     {
       "name": "SSONE",
       "path": "/posts/ssone/",
+      "image": "/ssone.png",
       "price": 15,
       "priceText": "15元/月",
       "traffic": "70GB/月",
@@ -298,6 +324,7 @@
     {
       "name": "U1S1",
       "path": "/posts/u1s1-review-2026/",
+      "image": "/u1s1.png",
       "price": 20,
       "priceText": "20元/月",
       "traffic": "120GB/月",
@@ -313,11 +340,13 @@
       "status": "办公观察",
       "risk": "晚高峰复测",
       "summary": "偏办公与稳定场景，适合重视 ChatGPT、网页访问和视频体验的用户。",
+      "salesSample": 82,
       "url": "https://yp7.net/posts/u1s1-review-2026/"
     },
     {
       "name": "奈云",
       "path": "/posts/naiyun-review-2026/",
+      "image": "/naiyun.png",
       "price": 28,
       "priceText": "28元/月",
       "traffic": "388GB/月",
@@ -333,11 +362,13 @@
       "status": "老牌观察",
       "risk": "价格较高需试用",
       "summary": "老牌机场定位，流量较高，适合愿意先试用再判断长期稳定性的用户。",
+      "salesSample": 774,
       "url": "https://yp7.net/posts/naiyun-review-2026/"
     },
     {
       "name": "隐云",
       "path": "/posts/yinyun-review-2026/",
+      "image": "/yinyun.png",
       "price": 29,
       "priceText": "29元/月",
       "traffic": "不限流量",
@@ -358,6 +389,7 @@
     {
       "name": "cocoduck",
       "path": "/posts/cocoduck-review/",
+      "image": "/cocoduck.png",
       "price": 15,
       "priceText": "15元/月",
       "traffic": "100GB/月",
@@ -373,11 +405,13 @@
       "status": "小众观察",
       "risk": "小众服务需谨慎",
       "summary": "小众机场定位，适合短期测试流媒体和通用订阅体验。",
+      "salesSample": 280,
       "url": "https://yp7.net/posts/cocoduck-review/"
     },
     {
       "name": "XSUS",
       "path": "/posts/xsus-review-2026/",
+      "image": "/xsus.png",
       "price": 10,
       "priceText": "10元/月",
       "traffic": "168GB/月",
@@ -398,6 +432,7 @@
     {
       "name": "坦克加速",
       "path": "/posts/tank-review-2026/",
+      "image": "/tankejiasu.png",
       "price": 8.8,
       "priceText": "8.8元/月",
       "traffic": "80GB/月",
@@ -413,11 +448,13 @@
       "status": "新手观察",
       "risk": "先试用再购买",
       "summary": "价格较低且支持试用，适合新手验证客户端和节点可用性。",
+      "salesSample": 219,
       "url": "https://yp7.net/posts/tank-review-2026/"
     },
     {
       "name": "瞬云",
       "path": "/posts/shunyun-review-2026/",
+      "image": "/shunyun.png",
       "price": 20,
       "priceText": "20元/月",
       "traffic": "150GB/月",
@@ -432,11 +469,13 @@
       "status": "备用观察",
       "risk": "晚高峰复测",
       "summary": "轻量备用定位，适合 Clash 通用订阅用户持续观察。",
+      "salesSample": 128,
       "url": "https://yp7.net/posts/shunyun-review-2026/"
     },
     {
       "name": "极连云",
       "path": "/posts/jilianyun-review-2026/",
+      "image": "/jilianyun.png",
       "price": 15.5,
       "priceText": "15.5元/月",
       "traffic": "100GB/月",
@@ -455,6 +494,7 @@
     {
       "name": "二猫云",
       "path": "/posts/ermiao-vpn-review/",
+      "image": "/ermaoyun.png",
       "price": 20,
       "priceText": "20元/月",
       "traffic": "100GB/月",
@@ -468,11 +508,13 @@
       "status": "性价比观察",
       "risk": "长期稳定需复测",
       "summary": "偏专属客户端和性价比方向，适合轻中度用户短期测试。",
+      "salesSample": 191,
       "url": "https://yp7.net/posts/ermiao-vpn-review/"
     },
     {
       "name": "寰宇云",
       "path": "/posts/huanyuyun-review-2026/",
+      "image": "/huanyuyun.png",
       "price": 18,
       "priceText": "18元/月",
       "traffic": "150GB/月",
@@ -492,6 +534,7 @@
     {
       "name": "sogo",
       "path": "/posts/sogo-review-2026/",
+      "image": "/sogo.png",
       "price": 25,
       "priceText": "25元/月",
       "traffic": "120GB/月",
@@ -505,11 +548,13 @@
       "status": "新手观察",
       "risk": "价格较高需复测",
       "summary": "专属客户端新手体验较好，适合不想折腾配置的人短期测试。",
+      "salesSample": 419,
       "url": "https://yp7.net/posts/sogo-review-2026/"
     },
     {
       "name": "速界",
       "path": "/posts/sujie-review-2026/",
+      "image": "/sujie.png",
       "price": 25,
       "priceText": "25元/月",
       "traffic": "120GB/月",
@@ -532,6 +577,7 @@
     {
       "name": "边缘节点",
       "path": "/posts/bianyuan-review-2026/",
+      "image": "/bianyuan.png",
       "price": 25,
       "priceText": "25元/月",
       "traffic": "120GB/月",
@@ -554,6 +600,7 @@
     {
       "name": "宇宙云",
       "path": "/posts/yuzhoucloud-review-2026/",
+      "image": "/yuzhouyun.png",
       "price": 12.5,
       "priceText": "12.5元/月",
       "traffic": "50GB/月",
@@ -572,6 +619,7 @@
     {
       "name": "快狸",
       "path": "/posts/kuaili-review-2026/",
+      "image": "/kuaili.png",
       "price": 15,
       "priceText": "15元/月",
       "traffic": "50GB/月",
@@ -591,6 +639,7 @@
     {
       "name": "可信云",
       "path": "/posts/kexinyun-review-2026/",
+      "image": "/kexinyun.png",
       "price": 15,
       "priceText": "15元/月",
       "traffic": "60GB/月",
@@ -609,6 +658,7 @@
     {
       "name": "星岛梦",
       "path": "/posts/xingdaomeng-review-2026/",
+      "image": "/xingdaomeng.png",
       "price": 16,
       "priceText": "16元/月",
       "traffic": "100GB/月",

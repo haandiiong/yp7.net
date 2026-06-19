@@ -35,6 +35,17 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Create IndexNow key file
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          case "$INDEXNOW_KEY" in
+            ''|*[!A-Za-z0-9_-]*)
+              echo "INDEXNOW_KEY secret is missing or contains unsupported characters."
+              exit 1
+              ;;
+          esac
+          printf '%s' "$INDEXNOW_KEY" > "docs/.vuepress/public/${INDEXNOW_KEY}.txt"
 
       # 运行构建脚本
       # Run the build script

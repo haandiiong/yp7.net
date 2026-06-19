@@ -1,5 +1,5 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { airportData } from './airports'
+import { airportData, visibleAirportData } from './airports'
 import { defaultImage, defaultRobots, hostname, siteDescription, siteKeywords, siteLastReviewed, siteName } from './site'
 
 interface LlmsOptions {
@@ -105,18 +105,18 @@ const walkGeneratedHtml = (dir: string, visit: (file: string) => void) => {
   })
 }
 
-export const patchGeneratedHtml = (app: any) => {
-  const pages = [
-    ['index.html', '2026机场推荐与科学上网教程：稳定机场榜单、Clash配置与风险监测', defaultRobots],
-    ['blog/index.html', 'yp7.net 全部文章：机场推荐、机场评测、Clash教程与科学上网指南', defaultRobots],
-    ['blog/tags/index.html', 'yp7.net 标签索引：机场推荐、VPN教程、Clash节点与流媒体解锁', defaultRobots],
-    ['blog/categories/index.html', 'yp7.net 分类索引：机场榜单、机场评测、工具教程与风险监测', defaultRobots],
-    ['blog/archives/index.html', 'yp7.net 时间归档：2026机场测评、科学上网教程与节点更新记录', defaultRobots],
-    ['friends/index.html', 'yp7.net 友情链接：科学上网、机场测评与网络工具资源站点', defaultRobots],
-    ['404.html', '页面未找到：yp7.net 机场推荐与科学上网教程', 'noindex, follow'],
-  ]
+const generatedHtmlPatches = [
+  ['index.html', '2026机场推荐与科学上网教程：稳定机场榜单、Clash配置与风险监测', defaultRobots],
+  ['blog/index.html', 'yp7.net 全部文章：机场推荐、机场评测、Clash教程与科学上网指南', defaultRobots],
+  ['blog/tags/index.html', 'yp7.net 标签索引：机场推荐、VPN教程、Clash节点与流媒体解锁', defaultRobots],
+  ['blog/categories/index.html', 'yp7.net 分类索引：机场榜单、机场评测、工具教程与风险监测', defaultRobots],
+  ['blog/archives/index.html', 'yp7.net 时间归档：2026机场测评、科学上网教程与节点更新记录', defaultRobots],
+  ['friends/index.html', 'yp7.net 友情链接：科学上网、机场测评与网络工具资源站点', defaultRobots],
+  ['404.html', '页面未找到：yp7.net 机场推荐与科学上网教程', 'noindex, follow'],
+] as const
 
-  pages.forEach(([file, title, robots]) => {
+export const patchGeneratedHtml = (app: any) => {
+  generatedHtmlPatches.forEach(([file, title, robots]) => {
     const htmlPath = app.dir.dest(file)
     if (!existsSync(htmlPath)) return
 
@@ -132,27 +132,6 @@ export const patchGeneratedHtml = (app: any) => {
   })
 }
 
-const salesSampleCounts: Record<string, number> = {
-  全球云: 1048,
-  光年梯: 832,
-  网际快车: 849,
-  光速云: 346,
-  xxyun: 942,
-  Flybit: 744,
-  阿达西: 462,
-  runway: 445,
-  唯兔云: 221,
-  '99吧': 413,
-  冲上云霄: 929,
-  U1S1: 82,
-  奈云: 774,
-  cocoduck: 280,
-  坦克加速: 219,
-  瞬云: 128,
-  二猫云: 191,
-  sogo: 419,
-}
-
 const getAirportDataFiles = () => {
   const serializeAirport = (airport: typeof airportData[number]) => ({
     ...airport,
@@ -160,26 +139,27 @@ const getAirportDataFiles = () => {
   })
   const serializeSalesAirport = (airport: typeof airportData[number]) => ({
     ...serializeAirport(airport),
-    salesSample: salesSampleCounts[airport.name],
+    salesSample: airport.salesSample,
   })
-  const byScenario = (scenario: string) => airportData.filter((airport) => airport.scenarios.includes(scenario))
-  const salesRanking = airportData
-    .filter((airport) => salesSampleCounts[airport.name] !== undefined)
-    .sort((a, b) => salesSampleCounts[b.name] - salesSampleCounts[a.name])
+  const hasSalesSample = (airport: typeof airportData[number]) => typeof airport.salesSample === 'number'
+  const byScenario = (scenario: string) => visibleAirportData.filter((airport) => airport.scenarios.includes(scenario))
+  const salesRanking = visibleAirportData
+    .filter(hasSalesSample)
+    .sort((a, b) => b.salesSample! - a.salesSample!)
 
   return {
-    airports: airportData.map(serializeAirport),
+    airports: visibleAirportData.map(serializeAirport),
     rankings: {
-      all: airportData.map(serializeAirport),
+      all: visibleAirportData.map(serializeAirport),
       sales: salesRanking.map(serializeSalesAirport),
       stable: byScenario('stable').map(serializeAirport),
-      cheap: airportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap')).map(serializeAirport),
-      clash: airportData.filter((airport) => airport.universalSubscription || airport.scenarios.includes('clash')).map(serializeAirport),
+      cheap: visibleAirportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap')).map(serializeAirport),
+      clash: visibleAirportData.filter((airport) => airport.universalSubscription || airport.scenarios.includes('clash')).map(serializeAirport),
       chatgpt: byScenario('chatgpt').map(serializeAirport),
       streaming: byScenario('streaming').map(serializeAirport),
-      trial: airportData.filter((airport) => airport.trial).map(serializeAirport),
-      noExpiry: airportData.filter((airport) => airport.noExpiry).map(serializeAirport),
-      dedicatedClient: airportData.filter((airport) => airport.dedicatedClient).map(serializeAirport),
+      trial: visibleAirportData.filter((airport) => airport.trial).map(serializeAirport),
+      noExpiry: visibleAirportData.filter((airport) => airport.noExpiry).map(serializeAirport),
+      dedicatedClient: visibleAirportData.filter((airport) => airport.dedicatedClient).map(serializeAirport),
     },
     riskMonitor: [
       {
@@ -296,7 +276,7 @@ const renderDataHtmlPage = ({
 `
 }
 
-const getAirportHtmlTable = (airports = airportData) => {
+const getAirportHtmlTable = (airports = visibleAirportData) => {
   const rows = airports.map((airport) => `<tr>
         <td><a href="${airport.path}">${escapeHtml(airport.name)}</a></td>
         <td>${escapeHtml(airport.priceText)}</td>
@@ -373,9 +353,51 @@ const datasetCreator = {
   url: hostname,
 }
 
+const dataPageConfigs = {
+  airports: {
+    file: 'airports.html',
+    slug: 'airports',
+    title: 'yp7.net 全量机场数据：价格、流量、试用、客户端与风险状态',
+    description: 'yp7.net 全量机场数据 HTML 页面，汇总机场价格、流量、试用、不限时套餐、专属客户端、通用订阅和状态。',
+    keywords: '机场数据,机场榜单,机场价格,机场推荐,机场风险',
+    schemaName: 'yp7.net 全量机场数据',
+    schemaDescription: 'yp7.net 全量机场数据集汇总机场名称、页面链接、最低价格、月流量、试用状态、不限时套餐、专属客户端、通用订阅、适合场景、观察状态和购买风险提示，方便用户和机器读取机场推荐基础数据。',
+  },
+  rankings: {
+    file: 'rankings.html',
+    slug: 'rankings',
+    title: 'yp7.net 机场榜单数据：销量、稳定、低价、Clash、ChatGPT与流媒体场景',
+    description: 'yp7.net 机场榜单 HTML 页面，按销量样本、稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT和流媒体场景整理机场数据。',
+    keywords: '机场榜单,机场排行榜,销量机场,稳定机场,低价机场,Clash机场,ChatGPT机场,流媒体机场',
+    schemaName: 'yp7.net 机场榜单数据',
+    schemaDescription: 'yp7.net 机场榜单数据集按销量样本、稳定机场、低价机场、免费试用机场、不限时套餐机场、专属客户端机场、Clash 机场、ChatGPT 机场和流媒体机场等场景整理机场条目，包含价格、流量、客户端类型、订阅支持、适合场景和风险提示等可对比字段。',
+  },
+  riskMonitor: {
+    file: 'risk-monitor.html',
+    slug: 'risk-monitor',
+    title: 'yp7.net 机场风险监测数据：跑路风险、官网异常、客服失联与购买提示',
+    description: 'yp7.net 机场风险监测 HTML 页面，整理已淘汰机场、客服失联、官网异常、节点波动和购买前风险提示。',
+    keywords: '机场风险,跑路机场,机场跑路,机场监测,机场避坑',
+    schemaName: 'yp7.net 机场风险监测数据',
+    schemaDescription: 'yp7.net 机场风险监测数据集记录已淘汰机场、观察中机场、官网异常、客服失联、节点波动、套餐变化和购买前风险提示，并关联对应页面，帮助用户在购买或续费前识别机场服务的时效性风险。',
+  },
+}
+
+const getDatasetSchema = (config: typeof dataPageConfigs[keyof typeof dataPageConfigs]) => ({
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: config.schemaName,
+  description: config.schemaDescription,
+  url: getDataCanonicalUrl(config.slug),
+  dateModified: siteLastReviewed,
+  license: `${hostname}/methodology/`,
+  creator: datasetCreator,
+})
+
 export const generateAirportDataFiles = (app: any) => {
   const dataDir = app.dir.dest('data')
   const data = getAirportDataFiles()
+  const { airports, rankings, riskMonitor } = dataPageConfigs
 
   mkdirSync(dataDir, { recursive: true })
   writeFileSync(`${dataDir}/airports.json`, JSON.stringify({
@@ -401,7 +423,7 @@ export const generateAirportDataFiles = (app: any) => {
     '',
     `Last reviewed: ${siteLastReviewed}`,
     '',
-    getAirportMarkdownTable(airportData),
+    getAirportMarkdownTable(visibleAirportData),
     '',
   ].join('\n'))
   writeFileSync(`${dataDir}/rankings.md`, [
@@ -456,21 +478,12 @@ export const generateAirportDataFiles = (app: any) => {
     ...data.riskMonitor.map((item) => `| ${item.name} | ${item.status} | ${item.risk} | ${'url' in item ? `[查看](${item.url})` : `[来源](${item.source})`} |`),
     '',
   ].join('\n'))
-  writeFileSync(`${dataDir}/airports.html`, renderDataHtmlPage({
-    title: 'yp7.net 全量机场数据：价格、流量、试用、客户端与风险状态',
-    description: 'yp7.net 全量机场数据 HTML 页面，汇总机场价格、流量、试用、不限时套餐、专属客户端、通用订阅和状态。',
-    keywords: '机场数据,机场榜单,机场价格,机场推荐,机场风险',
-    canonical: getDataCanonicalUrl('airports'),
-    schema: {
-      '@context': 'https://schema.org',
-      '@type': 'Dataset',
-      name: 'yp7.net 全量机场数据',
-      description: 'yp7.net 全量机场数据集汇总机场名称、页面链接、最低价格、月流量、试用状态、不限时套餐、专属客户端、通用订阅、适合场景、观察状态和购买风险提示，方便用户和机器读取机场推荐基础数据。',
-      url: getDataCanonicalUrl('airports'),
-      dateModified: siteLastReviewed,
-      license: `${hostname}/methodology/`,
-      creator: datasetCreator,
-    },
+  writeFileSync(`${dataDir}/${airports.file}`, renderDataHtmlPage({
+    title: airports.title,
+    description: airports.description,
+    keywords: airports.keywords,
+    canonical: getDataCanonicalUrl(airports.slug),
+    schema: getDatasetSchema(airports),
     body: `<h1>yp7.net 全量机场数据</h1>
       <p>Last reviewed: ${siteLastReviewed}</p>
       <p>本页是人类可读的机场数据 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
@@ -483,21 +496,12 @@ export const generateAirportDataFiles = (app: any) => {
       </div>
       <div class="card">${getAirportHtmlTable()}</div>`,
   }))
-  writeFileSync(`${dataDir}/rankings.html`, renderDataHtmlPage({
-    title: 'yp7.net 机场榜单数据：销量、稳定、低价、Clash、ChatGPT与流媒体场景',
-    description: 'yp7.net 机场榜单 HTML 页面，按销量样本、稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT和流媒体场景整理机场数据。',
-    keywords: '机场榜单,机场排行榜,销量机场,稳定机场,低价机场,Clash机场,ChatGPT机场,流媒体机场',
-    canonical: getDataCanonicalUrl('rankings'),
-    schema: {
-      '@context': 'https://schema.org',
-      '@type': 'Dataset',
-      name: 'yp7.net 机场榜单数据',
-      description: 'yp7.net 机场榜单数据集按销量样本、稳定机场、低价机场、免费试用机场、不限时套餐机场、专属客户端机场、Clash 机场、ChatGPT 机场和流媒体机场等场景整理机场条目，包含价格、流量、客户端类型、订阅支持、适合场景和风险提示等可对比字段。',
-      url: getDataCanonicalUrl('rankings'),
-      dateModified: siteLastReviewed,
-      license: `${hostname}/methodology/`,
-      creator: datasetCreator,
-    },
+  writeFileSync(`${dataDir}/${rankings.file}`, renderDataHtmlPage({
+    title: rankings.title,
+    description: rankings.description,
+    keywords: rankings.keywords,
+    canonical: getDataCanonicalUrl(rankings.slug),
+    schema: getDatasetSchema(rankings),
     body: `<h1>yp7.net 机场榜单数据</h1>
       <p>Last reviewed: ${siteLastReviewed}</p>
       <p>本页是人类可读的机场榜单 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
@@ -536,21 +540,12 @@ export const generateAirportDataFiles = (app: any) => {
       <h2>试用机场</h2>
       <div class="card">${getAirportHtmlTable(data.rankings.trial)}</div>`,
   }))
-  writeFileSync(`${dataDir}/risk-monitor.html`, renderDataHtmlPage({
-    title: 'yp7.net 机场风险监测数据：跑路风险、官网异常、客服失联与购买提示',
-    description: 'yp7.net 机场风险监测 HTML 页面，整理已淘汰机场、客服失联、官网异常、节点波动和购买前风险提示。',
-    keywords: '机场风险,跑路机场,机场跑路,机场监测,机场避坑',
-    canonical: getDataCanonicalUrl('risk-monitor'),
-    schema: {
-      '@context': 'https://schema.org',
-      '@type': 'Dataset',
-      name: 'yp7.net 机场风险监测数据',
-      description: 'yp7.net 机场风险监测数据集记录已淘汰机场、观察中机场、官网异常、客服失联、节点波动、套餐变化和购买前风险提示，并关联对应页面，帮助用户在购买或续费前识别机场服务的时效性风险。',
-      url: getDataCanonicalUrl('risk-monitor'),
-      dateModified: siteLastReviewed,
-      license: `${hostname}/methodology/`,
-      creator: datasetCreator,
-    },
+  writeFileSync(`${dataDir}/${riskMonitor.file}`, renderDataHtmlPage({
+    title: riskMonitor.title,
+    description: riskMonitor.description,
+    keywords: riskMonitor.keywords,
+    canonical: getDataCanonicalUrl(riskMonitor.slug),
+    schema: getDatasetSchema(riskMonitor),
     body: `<h1>yp7.net 机场风险监测数据</h1>
       <p>Last reviewed: ${siteLastReviewed}</p>
       <p>本页是人类可读的机场风险监测 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>

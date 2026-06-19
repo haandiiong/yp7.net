@@ -62,3 +62,18 @@ Clash机场榜优先看是否支持通用订阅、是否适合 Clash Verge、Cla
 ### Clash机场和专属客户端机场哪个好？
 
 Clash机场更灵活，适合规则分流和多客户端；专属客户端更省心，适合新手。长期使用可以准备一个通用订阅机场和一个专属客户端备用。
+
+## 相关排名推荐
+
+| 场景 | 排名 | 查看 |
+|------|------|------|
+| 🏆 全部选项 | 全量榜单 | [32个机场对比](/rankings/all/) |
+| ⭐ 主力方案 | 稳定机场榜 | [晚高峰体验](/rankings/stable/) |
+| 💰 预算有限 | 低价机场榜 | [便宜方案](/rankings/cheap/) |
+| ⏰ 先体验 | 免费试用机场榜 | [注册体验](/rankings/trial/) |
+| 📦 长期 | 不限时套餐榜 | [备用方案](/rankings/no-expiry/) |
+| 🎬 流媒体 | 流媒体机场榜 | [Netflix等解锁](/rankings/streaming/) |
+| 🤖 AI工具 | ChatGPT机场榜 | [访问稳定](/rankings/chatgpt/) |
+| 👤 新手 | 专属客户端榜 | [一键连接](/rankings/dedicated-client/) |
+| 🏷️ 优惠 | 机场优惠码汇总 | [折扣信息](/rankings/coupons/) |
+| 📊 热销 | 销量机场榜 | [排行榜](/rankings/sales/) |

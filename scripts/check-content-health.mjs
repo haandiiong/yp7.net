@@ -84,7 +84,7 @@ const getDisplayDate = (value = '') => {
   }
 }
 
-const loadAirportData = (filePath) => {
+const loadAirportConfig = (filePath) => {
   const source = readFileSync(filePath, 'utf8')
   const output = ts.transpileModule(source, {
     compilerOptions: {
@@ -96,7 +96,10 @@ const loadAirportData = (filePath) => {
 
   vm.runInNewContext(output, context)
 
-  return context.exports.airportData || []
+  return {
+    airportData: context.exports.airportData || [],
+    visibleAirportData: context.exports.visibleAirportData || context.exports.airportData || [],
+  }
 }
 
 const booleanText = (value) => (value ? '支持' : '不支持')
@@ -319,10 +322,13 @@ for (const page of pages) {
 
 const airportsPath = join(root, 'docs/.vuepress/config/airports.ts')
 let airportData = []
+let visibleAirportData = []
 let airportByPath = new Map()
 
 if (existsSync(airportsPath)) {
-  airportData = loadAirportData(airportsPath)
+  const airportConfig = loadAirportConfig(airportsPath)
+  airportData = airportConfig.airportData
+  visibleAirportData = airportConfig.visibleAirportData
   airportByPath = new Map(airportData.map((airport) => [normalizeRoute(airport.path), airport]))
   const missingAirportPages = airportData
     .map((airport) => normalizeRoute(airport.path))
@@ -331,6 +337,21 @@ if (existsSync(airportsPath)) {
   if (missingAirportPages.length) {
     missingAirportPages.forEach((route) => errors.push(`airports.ts: missing page for ${route}`))
   }
+
+  airportData.forEach((airport) => {
+    if (!airport.image) {
+      errors.push(`airports.ts: ${airport.name} missing image`)
+    } else if (!existsSync(join(publicDir, airport.image))) {
+      errors.push(`airports.ts: ${airport.name} image asset missing ${airport.image}`)
+    }
+
+    if (
+      airport.salesSample !== undefined
+      && (!Number.isFinite(airport.salesSample) || airport.salesSample < 0)
+    ) {
+      errors.push(`airports.ts: ${airport.name} salesSample must be a non-negative number`)
+    }
+  })
 } else {
   errors.push('docs/.vuepress/config/airports.ts: missing airport data config')
 }
@@ -353,15 +374,15 @@ if (existsSync(siteConfigPath)) {
 }
 
 if (airportData.length) {
-  const allAirports = airportData
-  const stableAirports = airportData.filter((airport) => airport.scenarios.includes('stable'))
-  const cheapAirports = airportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap'))
-  const clashAirports = airportData.filter((airport) => airport.universalSubscription || airport.scenarios.includes('clash'))
-  const chatgptAirports = airportData.filter((airport) => airport.scenarios.includes('chatgpt'))
-  const streamingAirports = airportData.filter((airport) => airport.scenarios.includes('streaming'))
-  const trialAirports = airportData.filter((airport) => airport.trial)
-  const noExpiryAirports = airportData.filter((airport) => airport.noExpiry)
-  const dedicatedClientAirports = airportData.filter((airport) => airport.dedicatedClient)
+  const allAirports = visibleAirportData
+  const stableAirports = visibleAirportData.filter((airport) => airport.scenarios.includes('stable'))
+  const cheapAirports = visibleAirportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap'))
+  const clashAirports = visibleAirportData.filter((airport) => airport.universalSubscription || airport.scenarios.includes('clash'))
+  const chatgptAirports = visibleAirportData.filter((airport) => airport.scenarios.includes('chatgpt'))
+  const streamingAirports = visibleAirportData.filter((airport) => airport.scenarios.includes('streaming'))
+  const trialAirports = visibleAirportData.filter((airport) => airport.trial)
+  const noExpiryAirports = visibleAirportData.filter((airport) => airport.noExpiry)
+  const dedicatedClientAirports = visibleAirportData.filter((airport) => airport.dedicatedClient)
 
   validateAirportTable({
     filePath: 'docs/机场榜单/全量机场榜单.md',
