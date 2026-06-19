@@ -7,6 +7,7 @@ const root = process.cwd()
 const docsDir = join(root, 'docs')
 const publicDir = join(root, 'docs/.vuepress/public')
 const distDir = join(root, 'docs/.vuepress/dist')
+const hostname = 'https://yp7.net'
 
 const errors = []
 const toProjectPath = (filePath) => relative(root, filePath).replace(/\\/g, '/')
@@ -254,6 +255,27 @@ const generatedRoutes = new Set([
   '/blog/categories/',
   '/blog/archives/',
 ])
+const requiredDataSitemapPaths = [
+  '/data/airports',
+  '/data/rankings',
+  '/data/risk-monitor',
+]
+const blockedDataResourcePaths = [
+  '/data/airports.json',
+  '/data/airports.md',
+  '/data/rankings.json',
+  '/data/rankings.md',
+  '/data/risk-monitor.json',
+  '/data/risk-monitor.md',
+]
+const minTitleLengthByGeneratedHtml = new Map([
+  ['docs/.vuepress/dist/blog/index.html', 50],
+  ['docs/.vuepress/dist/blog/tags/index.html', 50],
+  ['docs/.vuepress/dist/blog/categories/index.html', 50],
+  ['docs/.vuepress/dist/blog/archives/index.html', 50],
+  ['docs/.vuepress/dist/friends/index.html', 50],
+  ['docs/.vuepress/dist/data/risk-monitor.html', 50],
+])
 const routeMap = new Map([['/', 'docs/index.md']])
 const pages = []
 
@@ -371,6 +393,18 @@ if (existsSync(siteConfigPath)) {
       errors.push(`site.ts: page image asset missing ${image}`)
     }
   }
+}
+
+const robotsPath = join(publicDir, 'robots.txt')
+if (existsSync(robotsPath)) {
+  const robots = readFileSync(robotsPath, 'utf8')
+  blockedDataResourcePaths.forEach((path) => {
+    if (!new RegExp(`^Disallow:\\s*${path.replace(/\./g, '\\.')}$`, 'm').test(robots)) {
+      errors.push(`docs/.vuepress/public/robots.txt: missing Disallow for ${path}`)
+    }
+  })
+} else {
+  errors.push('docs/.vuepress/public/robots.txt: missing robots file')
 }
 
 if (airportData.length) {
@@ -561,6 +595,12 @@ if (!existsSync(distDir)) {
     if (countMatches(html, /<h1\b/g) < 1) htmlIssues.push('missing H1')
 
     htmlIssues.forEach((issue) => errors.push(`${projectPath}: ${issue}`))
+
+    const minTitleLength = minTitleLengthByGeneratedHtml.get(projectPath)
+    const title = html.match(/<title>(.*?)<\/title>/s)?.[1] || ''
+    if (minTitleLength && title.length < minTitleLength) {
+      errors.push(`${projectPath}: title is ${title.length} characters, expected at least ${minTitleLength}`)
+    }
   }
 
   if (!existsSync(sitemapPath)) {
@@ -568,6 +608,7 @@ if (!existsSync(distDir)) {
   } else {
     const sitemap = readFileSync(sitemapPath, 'utf8')
     const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1])
+    const sitemapPathnames = new Set()
 
     sitemapUrls.forEach((loc) => {
       let url
@@ -580,6 +621,7 @@ if (!existsSync(distDir)) {
       }
 
       const pathname = url.pathname
+      sitemapPathnames.add(pathname)
       if (pathname.endsWith('.html')) {
         errors.push(`docs/.vuepress/dist/sitemap.xml: ${loc} should use clean URL instead of .html`)
       }
@@ -597,6 +639,23 @@ if (!existsSync(distDir)) {
       const html = readFileSync(htmlPath, 'utf8')
       if (/<meta name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html)) {
         errors.push(`docs/.vuepress/dist/sitemap.xml: ${loc} points to a noindex page`)
+      }
+    })
+
+    const requiredSitemapPaths = [
+      ...visibleAirportData.map((airport) => normalizeRoute(airport.path)),
+      ...requiredDataSitemapPaths,
+    ]
+
+    requiredSitemapPaths.forEach((path) => {
+      if (!sitemapPathnames.has(path)) {
+        errors.push(`docs/.vuepress/dist/sitemap.xml: missing important URL ${hostname}${path}`)
+      }
+    })
+
+    blockedDataResourcePaths.forEach((path) => {
+      if (sitemapPathnames.has(path)) {
+        errors.push(`docs/.vuepress/dist/sitemap.xml: blocked data resource should not be listed ${hostname}${path}`)
       }
     })
   }

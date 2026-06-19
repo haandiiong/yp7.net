@@ -107,11 +107,11 @@ const walkGeneratedHtml = (dir: string, visit: (file: string) => void) => {
 
 const generatedHtmlPatches = [
   ['index.html', '2026机场推荐与科学上网教程：稳定机场榜单、Clash配置与风险监测', defaultRobots],
-  ['blog/index.html', 'yp7.net 全部文章：机场推荐、机场评测、Clash教程与科学上网指南', defaultRobots],
-  ['blog/tags/index.html', 'yp7.net 标签索引：机场推荐、VPN教程、Clash节点与流媒体解锁', defaultRobots],
-  ['blog/categories/index.html', 'yp7.net 分类索引：机场榜单、机场评测、工具教程与风险监测', defaultRobots],
-  ['blog/archives/index.html', 'yp7.net 时间归档：2026机场测评、科学上网教程与节点更新记录', defaultRobots],
-  ['friends/index.html', 'yp7.net 友情链接：科学上网、机场测评与网络工具资源站点', defaultRobots],
+  ['blog/index.html', 'yp7.net 全部文章索引：2026机场推荐、机场评测、科学上网教程、Clash配置与风险监测合集导航', defaultRobots],
+  ['blog/tags/index.html', 'yp7.net 标签索引：机场推荐、VPN教程、Clash节点、ChatGPT机场与流媒体解锁主题分类导航', defaultRobots],
+  ['blog/categories/index.html', 'yp7.net 分类索引：2026机场榜单、机场评测、工具教程、科学上网指南、风险监测与购买避坑导航', defaultRobots],
+  ['blog/archives/index.html', 'yp7.net 时间归档：2026机场测评、VPN教程、Clash配置、科学上网文章更新记录与站内入口', defaultRobots],
+  ['friends/index.html', 'yp7.net 友情链接：科学上网、机场测评、VPN教程、网络工具、内容合作、友情链接交换与资源站点导航', defaultRobots],
   ['404.html', '页面未找到：yp7.net 机场推荐与科学上网教程', 'noindex, follow'],
 ] as const
 
@@ -375,7 +375,7 @@ const dataPageConfigs = {
   riskMonitor: {
     file: 'risk-monitor.html',
     slug: 'risk-monitor',
-    title: 'yp7.net 机场风险监测数据：跑路风险、官网异常、客服失联与购买提示',
+    title: 'yp7.net 机场风险监测数据：跑路风险、官网异常、客服失联、套餐变化、节点波动与购买避坑提示汇总',
     description: 'yp7.net 机场风险监测 HTML 页面，整理已淘汰机场、客服失联、官网异常、节点波动和购买前风险提示。',
     keywords: '机场风险,跑路机场,机场跑路,机场监测,机场避坑',
     schemaName: 'yp7.net 机场风险监测数据',
