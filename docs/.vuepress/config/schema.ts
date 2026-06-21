@@ -1,4 +1,4 @@
-import { airportData } from './airports'
+import { airportData, visibleAirportData } from './airports'
 import {
   getArticleSection,
   getCanonicalUrl,
@@ -51,7 +51,7 @@ const getAirportServiceSchemas = (page: any) => {
       description: airport.summary,
       url: canonicalUrl,
       image: getPageImage(page),
-      provider: { '@id': `${hostname}/#organization` },
+      subjectOf: { '@id': `${canonicalUrl}#webpage` },
       areaServed: [
         { '@type': 'Country', name: '中国' },
         { '@type': 'Country', name: '台湾' },
@@ -74,6 +74,19 @@ const getAirportServiceSchemas = (page: any) => {
         { '@type': 'PropertyValue', name: '通用订阅', value: airport.universalSubscription ? '支持' : '不支持' },
         { '@type': 'PropertyValue', name: '观察状态', value: airport.status },
         { '@type': 'PropertyValue', name: '风险提示', value: airport.risk },
+        ...(airport.performance ? [
+          { '@type': 'PropertyValue', name: '证据等级', value: airport.performance.evidenceLevel },
+          { '@type': 'PropertyValue', name: '最后测试时间', value: airport.performance.lastTestedAt },
+          { '@type': 'PropertyValue', name: '测试时段', value: airport.performance.testWindow },
+          { '@type': 'PropertyValue', name: '测试地区', value: airport.performance.testRegion },
+          { '@type': 'PropertyValue', name: '测试网络', value: airport.performance.testNetwork },
+          { '@type': 'PropertyValue', name: '测试设备', value: airport.performance.testDevice },
+          { '@type': 'PropertyValue', name: '晚高峰延迟', value: `${airport.performance.latencyMs}ms` },
+          { '@type': 'PropertyValue', name: '晚高峰速度区间', value: airport.performance.downloadMbpsRange },
+          { '@type': 'PropertyValue', name: 'ChatGPT表现', value: airport.performance.chatgptResult },
+          { '@type': 'PropertyValue', name: 'YouTube 4K表现', value: airport.performance.youtube4kResult },
+          { '@type': 'PropertyValue', name: '稳定性判断', value: airport.performance.stability },
+        ] : []),
       ],
     },
   ]
@@ -179,8 +192,59 @@ const getPageExtraSchemas = (page: any) => {
 
   if (!schema) return []
   const schemas = Array.isArray(schema) ? schema : [schema]
+  const generatedItemList = getGeneratedItemListSchema(page)
 
-  return schemas.map(normalizeExtraSchema)
+  return schemas
+    .map(normalizeExtraSchema)
+    .filter((item) => !(generatedItemList && isSchemaObject(item) && hasSchemaType(item['@type'], 'ItemList')))
+}
+
+const getAirportListItem = (airport: typeof airportData[number], index: number) => ({
+  '@type': 'ListItem',
+  position: index + 1,
+  item: {
+    '@type': 'Thing',
+    name: airport.name,
+    url: getCanonicalUrl(airport.path),
+  },
+})
+
+const getGeneratedItemListSchema = (page: any) => {
+  const hasSalesSample = (airport: typeof airportData[number]) => typeof airport.salesSample === 'number'
+  const byScenario = (scenario: string) => visibleAirportData.filter((airport) => airport.scenarios.includes(scenario))
+  const rankingMap: Record<string, { name: string, items: typeof airportData }> = {
+    '/rankings/all/': { name: '2026全量机场榜单', items: visibleAirportData },
+    '/rankings/sales/': {
+      name: '2026机场销量榜',
+      items: visibleAirportData.filter(hasSalesSample).sort((a, b) => b.salesSample! - a.salesSample!),
+    },
+    '/rankings/stable/': { name: '2026稳定机场榜', items: byScenario('stable') },
+    '/rankings/cheap/': {
+      name: '2026低价机场榜',
+      items: visibleAirportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap')),
+    },
+    '/rankings/trial/': { name: '2026免费试用机场榜', items: visibleAirportData.filter((airport) => airport.trial) },
+    '/rankings/no-expiry/': { name: '2026不限时机场榜', items: visibleAirportData.filter((airport) => airport.noExpiry) },
+    '/rankings/dedicated-client/': { name: '2026专属客户端机场榜', items: visibleAirportData.filter((airport) => airport.dedicatedClient) },
+    '/rankings/clash/': {
+      name: '2026 Clash机场榜',
+      items: visibleAirportData.filter((airport) => airport.universalSubscription || airport.scenarios.includes('clash')),
+    },
+    '/rankings/chatgpt/': { name: '2026 ChatGPT机场榜', items: byScenario('chatgpt') },
+    '/rankings/streaming/': { name: '2026流媒体机场榜', items: byScenario('streaming') },
+  }
+  const ranking = rankingMap[page.path]
+
+  if (!ranking) return undefined
+
+  return {
+    '@type': 'ItemList',
+    '@id': `${getCanonicalUrl(page.path)}#ranking`,
+    name: ranking.name,
+    numberOfItems: ranking.items.length,
+    itemListOrder: 'https://schema.org/ItemListOrderAscending',
+    itemListElement: ranking.items.map(getAirportListItem),
+  }
 }
 
 const getBreadcrumbItems = (page: any) => {
@@ -220,6 +284,7 @@ export const getPageSchema = (page: any) => {
   const description = getPageDescription(page)
   const faqItems = getFaqItems(page.content)
   const extraSchemas = getPageExtraSchemas(page)
+  const generatedItemListSchema = getGeneratedItemListSchema(page)
   const image = getPageImage(page)
   const datePublished = getPageDatePublished(page)
   const dateModified = getPageDateModified(page)
@@ -314,6 +379,7 @@ export const getPageSchema = (page: any) => {
         itemListElement: getBreadcrumbItems(page),
       },
       ...getAirportServiceSchemas(page),
+      ...(generatedItemListSchema ? [generatedItemListSchema] : []),
       ...extraSchemas,
       ...(faqItems.length
         ? [{

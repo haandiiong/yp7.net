@@ -13,17 +13,51 @@ export interface AirportData {
   status: string
   risk: string
   summary: string
+  performance?: AirportPerformanceSnapshot
   salesSample?: number
 }
 
+export interface AirportMetrics {
+  count: number
+  trialCount: number
+  noExpiryCount: number
+  dedicatedClientCount: number
+  universalSubscriptionCount: number
+  cheapUnderTenCount: number
+  averagePrice: number
+  performanceCount: number
+  salesSampleCount: number
+}
+
+export interface AirportSalesSampleMeta {
+  observedAt: string
+  source: string
+  caveat: string
+}
+
+export interface AirportPerformanceSnapshot {
+  evidenceLevel: 'A' | 'B' | 'C'
+  lastTestedAt: string
+  testWindow: string
+  testRegion: string
+  testNetwork: string
+  testDevice: string
+  latencyMs: number
+  downloadMbpsRange: string
+  chatgptResult: string
+  youtube4kResult: string
+  stability: string
+  evidenceSummary: string
+}
+
 export const airportData: AirportData[] = [
-  { name: '全球云', path: '/posts/quanqiuyun/', image: '/qqy.png', price: 20, priceText: '20元/月', traffic: '120GB/月', trial: false, noExpiry: false, dedicatedClient: true, universalSubscription: false, scenarios: ['stable', 'chatgpt', 'streaming', 'newbie'], status: '主推观察', risk: '先月付测试', summary: '新手友好，专属客户端上手成本低，适合先测试日常网页、ChatGPT 和流媒体。', salesSample: 1048 },
-  { name: '光年梯', path: '/posts/guangnianti-review-2026/', image: '/gnt.png', price: 18, priceText: '18元/月', traffic: '110GB/月', trial: false, noExpiry: false, dedicatedClient: true, universalSubscription: false, scenarios: ['stable', 'streaming', 'newbie'], status: '主推观察', risk: '先月付测试', summary: '偏长期主力测试，适合重视稳定性和专属客户端体验的用户。', salesSample: 832 },
-  { name: '网际快车', path: '/posts/wangji-kuaiche-review/', image: '/kuaiche.png', price: 16, priceText: '16元/月', traffic: '100GB/月', trial: true, noExpiry: true, dedicatedClient: true, universalSubscription: true, scenarios: ['stable', 'clash', 'chatgpt', 'trial'], status: '重点观察', risk: '需复核官网与试用', summary: '支持试用和通用订阅，适合 Clash 用户和想先短期测试的人。', salesSample: 849 },
-  { name: '光速云', path: '/posts/guangsuyun/', image: '/guangsuyun.png', price: 17, priceText: '17元/月', traffic: '110GB/月', trial: false, noExpiry: true, dedicatedClient: false, universalSubscription: true, scenarios: ['stable', 'clash', 'streaming'], status: '备用观察', risk: '晚高峰复测', summary: '适合作为备用机场或 Clash 通用订阅测试，需关注晚高峰表现。', salesSample: 346 },
-  { name: 'xxyun', path: '/posts/xxyun-review-2026/', image: '/xxyun.png', price: 9.99, priceText: '9.99元/月', traffic: '100GB/月', trial: false, noExpiry: true, dedicatedClient: true, universalSubscription: true, scenarios: ['cheap', 'streaming', 'clash'], status: '流媒体观察', risk: '解锁能力会变化', summary: '低价且偏流媒体场景，适合 Netflix、Disney+、YouTube 用户短期测试。', salesSample: 942 },
-  { name: 'Flybit', path: '/posts/flybit-review-2026/', image: '/flybit.jpg', price: 15, priceText: '15元/月', traffic: '128GB/月', trial: true, noExpiry: true, dedicatedClient: false, universalSubscription: true, scenarios: ['clash', 'trial'], status: 'Clash观察', risk: '长期稳定需复测', summary: '通用订阅兼容性更突出，适合 Clash Verge、Clash Meta、Shadowrocket 用户。', salesSample: 744 },
-  { name: '阿达西', path: '/posts/adaxi-review-2026/', image: '/adaxi.png', price: 3, priceText: '3元/月', traffic: '20GB/月', trial: false, noExpiry: false, dedicatedClient: false, universalSubscription: true, scenarios: ['cheap', 'clash'], status: '低价观察', risk: '不建议直接长期付费', summary: '价格门槛低，更适合轻量测试和备用，不适合高强度主力依赖。', salesSample: 462 },
+  { name: '全球云', path: '/posts/quanqiuyun/', image: '/qqy.png', price: 20, priceText: '20元/月', traffic: '120GB/月', trial: false, noExpiry: false, dedicatedClient: true, universalSubscription: false, scenarios: ['stable', 'chatgpt', 'streaming', 'newbie'], status: '主推观察', risk: '先月付测试', summary: '新手友好，专属客户端上手成本低，适合先测试日常网页、ChatGPT 和流媒体。', performance: { evidenceLevel: 'A', lastTestedAt: '2026-05-30', testWindow: '20:00-23:00', testRegion: '日本东京', testNetwork: 'SoftBank / 1000Mbps', testDevice: '苹果电脑', latencyMs: 65, downloadMbpsRange: '580-760Mbps', chatgptResult: '稳定', youtube4kResult: '流畅', stability: '中上', evidenceSummary: '有专属客户端延迟、YouTube 4K 和 Speedtest 截图，适合优先复核。' }, salesSample: 1048 },
+  { name: '光年梯', path: '/posts/guangnianti-review-2026/', image: '/gnt.png', price: 18, priceText: '18元/月', traffic: '110GB/月', trial: false, noExpiry: false, dedicatedClient: true, universalSubscription: false, scenarios: ['stable', 'streaming', 'newbie'], status: '主推观察', risk: '先月付测试', summary: '偏长期主力测试，适合重视稳定性和专属客户端体验的用户。', performance: { evidenceLevel: 'A', lastTestedAt: '2026-06-03', testWindow: '20:00-23:00', testRegion: '日本东京', testNetwork: 'SoftBank / 1000Mbps', testDevice: '安卓手机', latencyMs: 58, downloadMbpsRange: '850-920Mbps', chatgptResult: '稳定', youtube4kResult: '秒开', stability: '极强', evidenceSummary: '有多张专属客户端延迟截图和 Speedtest 截图，适合长期主力优先复测。' }, salesSample: 832 },
+  { name: '网际快车', path: '/posts/wangji-kuaiche-review/', image: '/kuaiche.png', price: 16, priceText: '16元/月', traffic: '100GB/月', trial: true, noExpiry: true, dedicatedClient: true, universalSubscription: true, scenarios: ['stable', 'clash', 'chatgpt', 'trial'], status: '重点观察', risk: '需复核官网与试用', summary: '支持试用和通用订阅，适合 Clash 用户和想先短期测试的人。', performance: { evidenceLevel: 'A', lastTestedAt: '2026-06-03', testWindow: '20:00-23:00', testRegion: '日本东京', testNetwork: 'SoftBank / 1000Mbps', testDevice: 'Windows 电脑', latencyMs: 61, downloadMbpsRange: '780-880Mbps', chatgptResult: '很稳定', youtube4kResult: '流畅', stability: '很强', evidenceSummary: '有专属客户端延迟和 Speedtest 截图，办公与 ChatGPT 场景证据较完整。' }, salesSample: 849 },
+  { name: '光速云', path: '/posts/guangsuyun/', image: '/guangsuyun.png', price: 17, priceText: '17元/月', traffic: '110GB/月', trial: false, noExpiry: true, dedicatedClient: false, universalSubscription: true, scenarios: ['stable', 'clash', 'streaming'], status: '备用观察', risk: '晚高峰复测', summary: '适合作为备用机场或 Clash 通用订阅测试，需关注晚高峰表现。', performance: { evidenceLevel: 'B', lastTestedAt: '2026-06-18', testWindow: '20:00-23:00', testRegion: '亚洲网络环境', testNetwork: '多端日常观察', testDevice: '多端日常观察', latencyMs: 70, downloadMbpsRange: '700-820Mbps', chatgptResult: '稳定', youtube4kResult: '流畅', stability: '中等', evidenceSummary: '已有榜单和日常观察结论，仍需补充截图、失败样本和连续复测记录。' }, salesSample: 346 },
+  { name: 'xxyun', path: '/posts/xxyun-review-2026/', image: '/xxyun.png', price: 9.99, priceText: '9.99元/月', traffic: '100GB/月', trial: false, noExpiry: true, dedicatedClient: true, universalSubscription: true, scenarios: ['cheap', 'streaming', 'clash'], status: '流媒体观察', risk: '解锁能力会变化', summary: '低价且偏流媒体场景，适合 Netflix、Disney+、YouTube 用户短期测试。', performance: { evidenceLevel: 'B', lastTestedAt: '2026-06-18', testWindow: '20:00-23:00', testRegion: '亚洲网络环境', testNetwork: '多端日常观察', testDevice: '多端日常观察', latencyMs: 72, downloadMbpsRange: '620-790Mbps', chatgptResult: '稳定', youtube4kResult: '优秀', stability: '中上', evidenceSummary: '已有流媒体场景观察，需补充平台解锁变化、节点地区和失败记录。' }, salesSample: 942 },
+  { name: 'Flybit', path: '/posts/flybit-review-2026/', image: '/flybit.jpg', price: 15, priceText: '15元/月', traffic: '128GB/月', trial: true, noExpiry: true, dedicatedClient: false, universalSubscription: true, scenarios: ['clash', 'trial'], status: 'Clash观察', risk: '长期稳定需复测', summary: '通用订阅兼容性更突出，适合 Clash Verge、Clash Meta、Shadowrocket 用户。', performance: { evidenceLevel: 'B', lastTestedAt: '2026-06-18', testWindow: '20:00-23:00', testRegion: '亚洲网络环境', testNetwork: 'Clash 客户端观察', testDevice: 'Clash 客户端', latencyMs: 88, downloadMbpsRange: '450-680Mbps', chatgptResult: '稳定', youtube4kResult: '良好', stability: '中等', evidenceSummary: '已有 Clash 订阅兼容和节点切换观察，需补充连续晚高峰测速记录。' }, salesSample: 744 },
+  { name: '阿达西', path: '/posts/adaxi-review-2026/', image: '/adaxi.png', price: 3, priceText: '3元/月', traffic: '20GB/月', trial: false, noExpiry: false, dedicatedClient: false, universalSubscription: true, scenarios: ['cheap', 'clash'], status: '低价观察', risk: '不建议直接长期付费', summary: '价格门槛低，更适合轻量测试和备用，不适合高强度主力依赖。', performance: { evidenceLevel: 'B', lastTestedAt: '2026-06-18', testWindow: '20:00-23:00', testRegion: '亚洲网络环境', testNetwork: '通用订阅客户端观察', testDevice: '通用订阅客户端', latencyMs: 120, downloadMbpsRange: '200-420Mbps', chatgptResult: '一般', youtube4kResult: '偶尔缓冲', stability: '较弱', evidenceSummary: '已有低价场景观察，定位轻量备用，不建议直接作为长期主力。' }, salesSample: 462 },
   { name: 'runway', path: '/posts/runway-review-2026/', image: '/runway.png', price: 9.9, priceText: '9.9元/月', traffic: '80GB/月', trial: true, noExpiry: true, dedicatedClient: true, universalSubscription: false, scenarios: ['cheap', 'trial', 'newbie'], status: '新手观察', risk: '先试用再续费', summary: '支持免费试用和专属客户端，适合新手先体验连接流程。', salesSample: 445 },
   { name: '唯兔云', path: '/posts/weituyun/', image: '/weituyun.png', price: 14.9, priceText: '14.9元/月', traffic: '100GB/月', trial: false, noExpiry: true, dedicatedClient: true, universalSubscription: false, scenarios: ['streaming'], status: '流媒体观察', risk: '解锁能力会变化', summary: '偏流媒体体验，适合短期测试视频平台和节点稳定性。', salesSample: 221 },
   { name: '99吧', path: '/posts/99ba-review-2026/', image: '/99ba.png', price: 12.99, priceText: '12.99元/月', traffic: '99GB/月', trial: true, noExpiry: true, dedicatedClient: false, universalSubscription: true, scenarios: ['trial', 'clash'], status: '试用观察', risk: '先测试订阅可用性', summary: '支持试用与通用订阅，适合购买前验证 Clash 导入和节点延迟。', salesSample: 413 },
@@ -56,3 +90,33 @@ const hiddenAirportStatuses = new Set(['已淘汰', '停止推荐', '下架'])
 export const isVisibleAirport = (airport: AirportData) => !hiddenAirportStatuses.has(airport.status)
 
 export const visibleAirportData = airportData.filter(isVisibleAirport)
+
+const getLatestIsoDate = (dates: string[]) => dates
+  .filter((date) => /^\d{4}-\d{2}-\d{2}$/.test(date))
+  .sort()
+  .at(-1)
+
+export const airportDataLastReviewed = getLatestIsoDate([
+  '2026-06-21',
+  ...airportData.flatMap((airport) => [
+    airport.performance?.lastTestedAt,
+  ].filter(Boolean) as string[]),
+]) || '2026-06-21'
+
+export const airportMetrics: AirportMetrics = {
+  count: visibleAirportData.length,
+  trialCount: visibleAirportData.filter((airport) => airport.trial).length,
+  noExpiryCount: visibleAirportData.filter((airport) => airport.noExpiry).length,
+  dedicatedClientCount: visibleAirportData.filter((airport) => airport.dedicatedClient).length,
+  universalSubscriptionCount: visibleAirportData.filter((airport) => airport.universalSubscription).length,
+  cheapUnderTenCount: visibleAirportData.filter((airport) => airport.price < 10).length,
+  averagePrice: Number((visibleAirportData.reduce((total, airport) => total + airport.price, 0) / visibleAirportData.length).toFixed(1)),
+  performanceCount: visibleAirportData.filter((airport) => airport.performance).length,
+  salesSampleCount: visibleAirportData.filter((airport) => typeof airport.salesSample === 'number').length,
+}
+
+export const airportSalesSampleMeta: AirportSalesSampleMeta = {
+  observedAt: '2026-06-18',
+  source: 'yp7.net 当前可见销量样本',
+  caveat: '销量样本只用于观察本站读者购买热度，不等同于全网销量、服务商真实总销量或长期稳定性排名。',
+}

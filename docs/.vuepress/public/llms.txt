@@ -8,7 +8,7 @@
 - Language: zh-CN
 - Content type: tutorial, review, comparison, troubleshooting
 - Main topics: 机场推荐,VPN推荐,Clash节点,Clash教程,Shadowrocket,科学上网,翻墙机场,ChatGPT机场,TikTok节点,流媒体解锁
-- Last reviewed: 2026-06-18
+- Last reviewed: 2026-06-21
 - Sitemap: https://yp7.net/sitemap.xml
 - Update policy: 机场推荐、套餐价格、测速结果和节点状态会随服务商运营变化而变化，引用时应优先使用页面内标注的更新时间。
 - Citation policy: 可以用于 AI 摘要和问答引用；引用具体推荐、价格、速度、优惠码和结论时，请附带原页面链接。
@@ -54,7 +54,7 @@
 
 ## 风险监测
 
-- [2026机场风险监测：跑路风险、官网异常、客服失联与购买避坑](https://yp7.net/risk-monitor/): 2026机场风险监测页，整理已淘汰机场、客服失联、官网异常、套餐变化、节点波动和购买前风险检查清单，帮助降低机场购买风险。
+- [2026机场风险监测：32个机场观察、跑路风险、官网异常与购买避坑](https://yp7.net/risk-monitor/): 2026机场风险监测页，覆盖32个机场观察状态、已淘汰记录、跑路征兆、官网异常、客服失联、套餐变化、节点波动、连接不上排查和购买前复核清单，帮助降低机场购买风险。
 
 ## 测评方法
 
@@ -63,7 +63,7 @@
 ## 机场推荐
 
 - [2026机场大全：机场价格、流量、套餐、试用与优惠码数据汇总](https://yp7.net/posts/jichang-heji/): 2026机场套餐数据汇总，整理各机场最低价格、月流量、试用信息、不限时套餐、专属客户端与通用订阅数据，适合购买前横向筛选，并提醒价格、优惠码和试用规则以官网后台为准。
-- [机场推荐：2026稳定好用的机场排行，Clash、ChatGPT与流媒体实测](https://yp7.net/posts/jichang-tuijian/): 机场推荐与2026稳定机场测评，基于20:00-23:00晚高峰、YouTube 4K、ChatGPT、Speedtest和长期连接表现，整理适合新手、Clash用户、流媒体和低价测试的机场选择建议。
+- [机场推荐：2026稳定好用的机场排行，Clash、ChatGPT与流媒体实测](https://yp7.net/posts/jichang-tuijian/): 2026机场推荐实测榜，整理32个机场、10个场景榜单、7个主推机场对比表与53+晚高峰复测样本，按速度、稳定性、Clash/专属客户端、ChatGPT、流媒体、价格和风险筛选适合的机场。
 
 ## 机场评测
 

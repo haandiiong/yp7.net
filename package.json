@@ -15,10 +15,12 @@
     "docs:sync-data": "node scripts/sync-generated-data.mjs",
     "docs:check-data": "node scripts/check-generated-data.mjs",
     "docs:check-content": "node scripts/check-content-health.mjs",
+    "docs:typecheck": "tsc --noEmit",
     "docs:preview": "http-server docs/.vuepress/dist",
     "vp-update": "pnpm dlx vp-update"
   },
   "devDependencies": {
+    "@types/node": "24.3.1",
     "@vuepress/bundler-vite": "2.0.0-rc.24",
     "@vuepress/plugin-medium-zoom": "^1.9.10",
     "http-server": "^14.1.1",

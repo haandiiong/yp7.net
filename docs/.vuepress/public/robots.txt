@@ -1,10 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /data/airports.json
-Disallow: /data/airports.md
-Disallow: /data/rankings.json
-Disallow: /data/rankings.md
-Disallow: /data/risk-monitor.json
-Disallow: /data/risk-monitor.md
 
 Sitemap: https://yp7.net/sitemap.xml

@@ -43,6 +43,72 @@ const normalizeRoute = (path) => {
 
 const countMatches = (content, pattern) => content.match(pattern)?.length || 0
 
+const collectSchemaObjects = (value, visit) => {
+  if (Array.isArray(value)) {
+    value.forEach((item) => collectSchemaObjects(item, visit))
+    return
+  }
+
+  if (!value || typeof value !== 'object') return
+
+  visit(value)
+  Object.values(value).forEach((item) => collectSchemaObjects(item, visit))
+}
+
+const hasSchemaType = (schema, type) => (
+  Array.isArray(schema?.['@type']) ? schema['@type'].includes(type) : schema?.['@type'] === type
+)
+
+const getJsonLdSchemas = (html, projectPath) => {
+  const schemas = []
+  const scriptPattern = /<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi
+  let match
+
+  while ((match = scriptPattern.exec(html))) {
+    try {
+      schemas.push(JSON.parse(match[1]))
+    } catch (error) {
+      errors.push(`${projectPath}: invalid JSON-LD (${error.message})`)
+    }
+  }
+
+  return schemas
+}
+
+const validateJsonLd = (html, projectPath) => {
+  getJsonLdSchemas(html, projectPath).forEach((schema) => {
+    collectSchemaObjects(schema, (item) => {
+      if (!hasSchemaType(item, 'ItemList') || !Array.isArray(item.itemListElement)) return
+
+      if (
+        typeof item.numberOfItems === 'number'
+        && item.numberOfItems !== item.itemListElement.length
+      ) {
+        errors.push(`${projectPath}: ItemList numberOfItems is ${item.numberOfItems}, expected ${item.itemListElement.length}`)
+      }
+    })
+  })
+}
+
+const validateExternalAnchorRel = (html, projectPath) => {
+  const anchorPattern = /<a\b([^>]*?)>/gi
+  let match
+
+  while ((match = anchorPattern.exec(html))) {
+    const attrs = match[1]
+    const href = attrs.match(/\bhref=(["'])(.*?)\1/i)?.[2]
+    if (!href || !/^https?:\/\//.test(href)) continue
+
+    const rel = attrs.match(/\srel=(["'])(.*?)\1/i)?.[2] || ''
+    if (!/\bnoopener\b/.test(rel) || !/\bnoreferrer\b/.test(rel)) {
+      errors.push(`${projectPath}: external link ${href} missing noopener/noreferrer`)
+    }
+    if (/(\?|&|#)(code|aff|r|c|from)=/i.test(href) && !/\bsponsored\b/.test(rel)) {
+      errors.push(`${projectPath}: sponsored-looking link ${href} missing sponsored rel`)
+    }
+  }
+}
+
 const redirectSourcePaths = new Set()
 const redirectsPath = join(publicDir, '_redirects')
 if (existsSync(redirectsPath)) {
@@ -100,6 +166,7 @@ const loadAirportConfig = (filePath) => {
   return {
     airportData: context.exports.airportData || [],
     visibleAirportData: context.exports.visibleAirportData || context.exports.airportData || [],
+    airportMetrics: context.exports.airportMetrics,
   }
 }
 
@@ -254,19 +321,19 @@ const generatedRoutes = new Set([
   '/blog/tags/',
   '/blog/categories/',
   '/blog/archives/',
+  '/data/airports/',
+  '/data/rankings/',
+  '/data/risk-monitor/',
 ])
 const requiredDataSitemapPaths = [
   '/data/airports',
   '/data/rankings',
   '/data/risk-monitor',
 ]
-const blockedDataResourcePaths = [
+const crawlerReadableDataResourcePaths = [
   '/data/airports.json',
-  '/data/airports.md',
   '/data/rankings.json',
-  '/data/rankings.md',
   '/data/risk-monitor.json',
-  '/data/risk-monitor.md',
 ]
 const minTitleLengthByGeneratedHtml = new Map([
   ['docs/.vuepress/dist/blog/index.html', 50],
@@ -346,11 +413,21 @@ const airportsPath = join(root, 'docs/.vuepress/config/airports.ts')
 let airportData = []
 let visibleAirportData = []
 let airportByPath = new Map()
+let airportMetrics
 
 if (existsSync(airportsPath)) {
   const airportConfig = loadAirportConfig(airportsPath)
   airportData = airportConfig.airportData
   visibleAirportData = airportConfig.visibleAirportData
+  airportMetrics = airportConfig.airportMetrics || {
+    count: visibleAirportData.length,
+    trialCount: visibleAirportData.filter((airport) => airport.trial).length,
+    noExpiryCount: visibleAirportData.filter((airport) => airport.noExpiry).length,
+    dedicatedClientCount: visibleAirportData.filter((airport) => airport.dedicatedClient).length,
+    universalSubscriptionCount: visibleAirportData.filter((airport) => airport.universalSubscription).length,
+    cheapUnderTenCount: visibleAirportData.filter((airport) => airport.price < 10).length,
+    averagePrice: Number((visibleAirportData.reduce((total, airport) => total + airport.price, 0) / visibleAirportData.length).toFixed(1)),
+  }
   airportByPath = new Map(airportData.map((airport) => [normalizeRoute(airport.path), airport]))
   const missingAirportPages = airportData
     .map((airport) => normalizeRoute(airport.path))
@@ -373,9 +450,38 @@ if (existsSync(airportsPath)) {
     ) {
       errors.push(`airports.ts: ${airport.name} salesSample must be a non-negative number`)
     }
+
+    if (
+      airport.performance?.lastTestedAt
+      && !/^\d{4}-\d{2}-\d{2}$/.test(airport.performance.lastTestedAt)
+    ) {
+      errors.push(`airports.ts: ${airport.name} performance.lastTestedAt must use YYYY-MM-DD`)
+    }
   })
 } else {
   errors.push('docs/.vuepress/config/airports.ts: missing airport data config')
+}
+
+if (airportMetrics) {
+  const hejiPath = 'docs/机场推荐/机场合集.md'
+  const hejiContent = existsSync(join(root, hejiPath))
+    ? readFileSync(join(root, hejiPath), 'utf8')
+    : ''
+  const expectedStats = [
+    `当前收录机场数量：${airportMetrics.count}`,
+    `- 支持试用：${airportMetrics.trialCount}家`,
+    `- 支持不限时套餐：${airportMetrics.noExpiryCount}家`,
+    `- 支持专属客户端：${airportMetrics.dedicatedClientCount}家`,
+    `- 支持通用订阅：${airportMetrics.universalSubscriptionCount}家`,
+    `- 最低价格低于10元：${airportMetrics.cheapUnderTenCount}家`,
+    `- 平均最低价格：${airportMetrics.averagePrice}元/月`,
+  ]
+
+  expectedStats.forEach((text) => {
+    if (!hejiContent.includes(text)) {
+      errors.push(`${hejiPath}: missing current generated statistic "${text}"`)
+    }
+  })
 }
 
 const siteConfigPath = join(root, 'docs/.vuepress/config/site.ts')
@@ -398,9 +504,9 @@ if (existsSync(siteConfigPath)) {
 const robotsPath = join(publicDir, 'robots.txt')
 if (existsSync(robotsPath)) {
   const robots = readFileSync(robotsPath, 'utf8')
-  blockedDataResourcePaths.forEach((path) => {
-    if (!new RegExp(`^Disallow:\\s*${path.replace(/\./g, '\\.')}$`, 'm').test(robots)) {
-      errors.push(`docs/.vuepress/public/robots.txt: missing Disallow for ${path}`)
+  crawlerReadableDataResourcePaths.forEach((path) => {
+    if (new RegExp(`^Disallow:\\s*${path.replace(/\./g, '\\.')}$`, 'm').test(robots)) {
+      errors.push(`docs/.vuepress/public/robots.txt: should not disallow machine-readable data ${path}`)
     }
   })
 } else {
@@ -595,6 +701,8 @@ if (!existsSync(distDir)) {
     if (countMatches(html, /<h1\b/g) < 1) htmlIssues.push('missing H1')
 
     htmlIssues.forEach((issue) => errors.push(`${projectPath}: ${issue}`))
+    validateJsonLd(html, projectPath)
+    validateExternalAnchorRel(html, projectPath)
 
     const minTitleLength = minTitleLengthByGeneratedHtml.get(projectPath)
     const title = html.match(/<title>(.*?)<\/title>/s)?.[1] || ''
@@ -645,6 +753,7 @@ if (!existsSync(distDir)) {
     const requiredSitemapPaths = [
       ...visibleAirportData.map((airport) => normalizeRoute(airport.path)),
       ...requiredDataSitemapPaths,
+      ...crawlerReadableDataResourcePaths,
     ]
 
     requiredSitemapPaths.forEach((path) => {
@@ -653,9 +762,9 @@ if (!existsSync(distDir)) {
       }
     })
 
-    blockedDataResourcePaths.forEach((path) => {
-      if (sitemapPathnames.has(path)) {
-        errors.push(`docs/.vuepress/dist/sitemap.xml: blocked data resource should not be listed ${hostname}${path}`)
+    crawlerReadableDataResourcePaths.forEach((path) => {
+      if (!existsSync(join(publicDir, path))) {
+        errors.push(`docs/.vuepress/public: missing machine-readable data ${path}`)
       }
     })
   }

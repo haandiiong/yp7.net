@@ -1,7 +1,7 @@
 ---
 title: 2026 ChatGPT机场榜：AI工具、办公访问与稳定节点筛选
 createTime: 2026/06/04
-dateModified: 2026/06/18
+dateModified: 2026/06/21
 permalink: /rankings/chatgpt/
 tags:
   - ChatGPT机场
@@ -10,26 +10,9 @@ tags:
   - 科学上网
   - 机场推荐
 description: 2026 ChatGPT机场榜，筛选适合 ChatGPT、Claude、Gemini 等 AI 工具访问的机场，重点关注连接稳定性、节点地区和晚高峰表现。
-schema:
-  - "@type": ItemList
-    "@id": "https://yp7.net/rankings/chatgpt/#ranking"
-    name: 2026 ChatGPT机场榜
-    itemListElement:
-      - "@type": ListItem
-        position: 1
-        name: 全球云
-        url: "https://yp7.net/posts/quanqiuyun/"
-      - "@type": ListItem
-        position: 2
-        name: 网际快车
-        url: "https://yp7.net/posts/wangji-kuaiche-review/"
-      - "@type": ListItem
-        position: 3
-        name: 迅达
-        url: "https://yp7.net/posts/xunda-review-2026/"
 ---
 
-更新时间：2026年6月18日
+更新时间：2026年6月21日
 
 ## 筛选口径
 

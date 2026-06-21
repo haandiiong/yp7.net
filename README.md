@@ -16,6 +16,7 @@ pnpm run docs:build
 pnpm run docs:sync-data
 pnpm run docs:check-data
 pnpm run docs:check-content
+pnpm run docs:typecheck
 pnpm run docs:preview
 ```
 
@@ -53,6 +54,7 @@ pnpm run docs:build
 pnpm run docs:sync-data
 pnpm run docs:check-data
 pnpm run docs:check-content
+pnpm run docs:typecheck
 ```
 
 ## 内容更新 Checklist

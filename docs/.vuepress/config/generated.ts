@@ -1,5 +1,5 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { airportData, visibleAirportData } from './airports'
+import { airportData, airportMetrics, airportSalesSampleMeta, visibleAirportData } from './airports'
 import { defaultImage, defaultRobots, hostname, siteDescription, siteKeywords, siteLastReviewed, siteName } from './site'
 
 interface LlmsOptions {
@@ -178,7 +178,7 @@ const getAirportDataFiles = () => {
   }
 }
 
-const getAirportMarkdownTable = (airports: typeof airportData, columns: string[] = ['机场', '最低价格', '月流量', '试用', '不限时', '专属客户端', '通用订阅', '状态']) => {
+const getAirportMarkdownTable = (airports: typeof airportData, columns: string[] = ['机场', '最低价格', '月流量', '试用', '不限时', '专属客户端', '通用订阅', '证据', '最后测试', '延迟', '速度区间', '状态']) => {
   const header = `| ${columns.join(' | ')} |`
   const divider = `| ${columns.map(() => '---').join(' | ')} |`
   const rows = airports.map((airport) => [
@@ -189,6 +189,10 @@ const getAirportMarkdownTable = (airports: typeof airportData, columns: string[]
     airport.noExpiry ? '支持' : '不支持',
     airport.dedicatedClient ? '支持' : '不支持',
     airport.universalSubscription ? '支持' : '不支持',
+    airport.performance?.evidenceLevel || 'C',
+    airport.performance?.lastTestedAt || '待复测',
+    airport.performance ? `${airport.performance.latencyMs}ms` : '待复测',
+    airport.performance?.downloadMbpsRange || '待复测',
     airport.status,
   ])
 
@@ -285,12 +289,16 @@ const getAirportHtmlTable = (airports = visibleAirportData) => {
         <td>${airport.noExpiry ? '支持' : '不支持'}</td>
         <td>${airport.dedicatedClient ? '支持' : '不支持'}</td>
         <td>${airport.universalSubscription ? '支持' : '不支持'}</td>
+        <td>${escapeHtml(airport.performance?.evidenceLevel || 'C')}</td>
+        <td>${escapeHtml(airport.performance?.lastTestedAt || '待复测')}</td>
+        <td>${airport.performance ? `${airport.performance.latencyMs}ms` : '待复测'}</td>
+        <td>${escapeHtml(airport.performance?.downloadMbpsRange || '待复测')}</td>
         <td>${escapeHtml(airport.status)}</td>
       </tr>`).join('\n')
 
   return `<table>
         <thead>
-          <tr><th>机场</th><th>最低价格</th><th>月流量</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>状态</th></tr>
+          <tr><th>机场</th><th>最低价格</th><th>月流量</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>证据</th><th>最后测试</th><th>延迟</th><th>速度区间</th><th>状态</th></tr>
         </thead>
         <tbody>
 ${rows}
@@ -346,6 +354,18 @@ ${riskRows.map((item) => `<tr>
       </table>`
 }
 
+const rankingSections = [
+  { title: '销量机场', key: 'sales', renderHtml: getSalesHtmlTable, renderMarkdown: getSalesMarkdownTable },
+  { title: '稳定机场', key: 'stable', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
+  { title: '低价机场', key: 'cheap', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
+  { title: '免费试用机场', key: 'trial', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
+  { title: '不限时套餐机场', key: 'noExpiry', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
+  { title: '专属客户端机场', key: 'dedicatedClient', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
+  { title: 'Clash 机场', key: 'clash', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
+  { title: 'ChatGPT 机场', key: 'chatgpt', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
+  { title: '流媒体机场', key: 'streaming', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
+] as const
+
 const datasetCreator = {
   '@type': 'Organization',
   '@id': `${hostname}/#organization`,
@@ -357,20 +377,20 @@ const dataPageConfigs = {
   airports: {
     file: 'airports.html',
     slug: 'airports',
-    title: 'yp7.net 全量机场数据：价格、流量、试用、客户端与风险状态',
-    description: 'yp7.net 全量机场数据 HTML 页面，汇总机场价格、流量、试用、不限时套餐、专属客户端、通用订阅和状态。',
-    keywords: '机场数据,机场榜单,机场价格,机场推荐,机场风险',
+    title: 'yp7.net 全量机场数据：价格、流量、试用、客户端、证据与风险状态',
+    description: 'yp7.net 全量机场数据 HTML 页面，汇总机场价格、流量、试用、不限时套餐、专属客户端、通用订阅、证据等级、最后测试时间和风险状态。',
+    keywords: '机场数据,机场榜单,机场价格,机场推荐,机场风险,机场实测数据',
     schemaName: 'yp7.net 全量机场数据',
-    schemaDescription: 'yp7.net 全量机场数据集汇总机场名称、页面链接、最低价格、月流量、试用状态、不限时套餐、专属客户端、通用订阅、适合场景、观察状态和购买风险提示，方便用户和机器读取机场推荐基础数据。',
+    schemaDescription: 'yp7.net 全量机场数据集汇总机场名称、页面链接、最低价格、月流量、试用状态、不限时套餐、专属客户端、通用订阅、证据等级、最后测试时间、延迟、速度区间、适合场景、观察状态和购买风险提示，方便用户和机器读取机场推荐基础数据。',
   },
   rankings: {
     file: 'rankings.html',
     slug: 'rankings',
-    title: 'yp7.net 机场榜单数据：销量、稳定、低价、Clash、ChatGPT与流媒体场景',
-    description: 'yp7.net 机场榜单 HTML 页面，按销量样本、稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT和流媒体场景整理机场数据。',
+    title: 'yp7.net 机场榜单数据：销量、稳定、低价、Clash、ChatGPT、流媒体与证据快照',
+    description: 'yp7.net 机场榜单 HTML 页面，按销量样本、稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT和流媒体场景整理机场数据，并展示证据等级、最后测试时间和速度区间。',
     keywords: '机场榜单,机场排行榜,销量机场,稳定机场,低价机场,Clash机场,ChatGPT机场,流媒体机场',
     schemaName: 'yp7.net 机场榜单数据',
-    schemaDescription: 'yp7.net 机场榜单数据集按销量样本、稳定机场、低价机场、免费试用机场、不限时套餐机场、专属客户端机场、Clash 机场、ChatGPT 机场和流媒体机场等场景整理机场条目，包含价格、流量、客户端类型、订阅支持、适合场景和风险提示等可对比字段。',
+    schemaDescription: 'yp7.net 机场榜单数据集按销量样本、稳定机场、低价机场、免费试用机场、不限时套餐机场、专属客户端机场、Clash 机场、ChatGPT 机场和流媒体机场等场景整理机场条目，包含价格、流量、客户端类型、订阅支持、证据等级、最后测试时间、速度区间、适合场景和风险提示等可对比字段。',
   },
   riskMonitor: {
     file: 'risk-monitor.html',
@@ -404,18 +424,22 @@ export const generateAirportDataFiles = (app: any) => {
     site: siteName,
     url: hostname,
     lastReviewed: siteLastReviewed,
+    metrics: airportMetrics,
     airports: data.airports,
   }, null, 2))
   writeFileSync(`${dataDir}/rankings.json`, JSON.stringify({
     site: siteName,
     url: hostname,
     lastReviewed: siteLastReviewed,
+    metrics: airportMetrics,
+    salesSampleMeta: airportSalesSampleMeta,
     rankings: data.rankings,
   }, null, 2))
   writeFileSync(`${dataDir}/risk-monitor.json`, JSON.stringify({
     site: siteName,
     url: hostname,
     lastReviewed: siteLastReviewed,
+    metrics: airportMetrics,
     risks: data.riskMonitor,
   }, null, 2))
   writeFileSync(`${dataDir}/airports.md`, [
@@ -431,42 +455,12 @@ export const generateAirportDataFiles = (app: any) => {
     '',
     `Last reviewed: ${siteLastReviewed}`,
     '',
-    '## 销量机场',
-    '',
-    getSalesMarkdownTable(data.rankings.sales),
-    '',
-    '## 稳定机场',
-    '',
-    getAirportMarkdownTable(data.rankings.stable),
-    '',
-    '## 低价机场',
-    '',
-    getAirportMarkdownTable(data.rankings.cheap),
-    '',
-    '## 免费试用机场',
-    '',
-    getAirportMarkdownTable(data.rankings.trial),
-    '',
-    '## 不限时套餐机场',
-    '',
-    getAirportMarkdownTable(data.rankings.noExpiry),
-    '',
-    '## 专属客户端机场',
-    '',
-    getAirportMarkdownTable(data.rankings.dedicatedClient),
-    '',
-    '## Clash 机场',
-    '',
-    getAirportMarkdownTable(data.rankings.clash),
-    '',
-    '## ChatGPT 机场',
-    '',
-    getAirportMarkdownTable(data.rankings.chatgpt),
-    '',
-    '## 流媒体机场',
-    '',
-    getAirportMarkdownTable(data.rankings.streaming),
-    '',
+    ...rankingSections.flatMap((section) => [
+      `## ${section.title}`,
+      '',
+      section.renderMarkdown(data.rankings[section.key]),
+      '',
+    ]),
   ].join('\n'))
   writeFileSync(`${dataDir}/risk-monitor.md`, [
     '# yp7.net 机场风险监测',
@@ -519,26 +513,8 @@ export const generateAirportDataFiles = (app: any) => {
         <a href="/rankings/chatgpt/">ChatGPT机场</a>
         <a href="/rankings/streaming/">流媒体机场</a>
       </div>
-      <h2>销量机场</h2>
-      <div class="card">${getSalesHtmlTable(data.rankings.sales)}</div>
-      <h2>稳定机场</h2>
-      <div class="card">${getAirportHtmlTable(data.rankings.stable)}</div>
-      <h2>低价机场</h2>
-      <div class="card">${getAirportHtmlTable(data.rankings.cheap)}</div>
-      <h2>免费试用机场</h2>
-      <div class="card">${getAirportHtmlTable(data.rankings.trial)}</div>
-      <h2>不限时套餐机场</h2>
-      <div class="card">${getAirportHtmlTable(data.rankings.noExpiry)}</div>
-      <h2>专属客户端机场</h2>
-      <div class="card">${getAirportHtmlTable(data.rankings.dedicatedClient)}</div>
-      <h2>Clash机场</h2>
-      <div class="card">${getAirportHtmlTable(data.rankings.clash)}</div>
-      <h2>ChatGPT机场</h2>
-      <div class="card">${getAirportHtmlTable(data.rankings.chatgpt)}</div>
-      <h2>流媒体机场</h2>
-      <div class="card">${getAirportHtmlTable(data.rankings.streaming)}</div>
-      <h2>试用机场</h2>
-      <div class="card">${getAirportHtmlTable(data.rankings.trial)}</div>`,
+      ${rankingSections.map((section) => `<h2>${section.title}</h2>
+      <div class="card">${section.renderHtml(data.rankings[section.key])}</div>`).join('\n')}`,
   }))
   writeFileSync(`${dataDir}/${riskMonitor.file}`, renderDataHtmlPage({
     title: riskMonitor.title,

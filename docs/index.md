@@ -2,7 +2,7 @@
 home: true
 title: 2026机场推荐与科学上网教程：稳定机场榜单、Clash配置与风险监测
 description: 2026最新科学上网教程，精选稳定VPN与机场推荐，支持ChatGPT、TikTok、Netflix解锁，提供Clash与Shadowrocket详细配置指南。
-dateModified: 2026/06/18
+dateModified: 2026/06/21
 config:
   - type: hero
     hero:
@@ -23,7 +23,7 @@ config:
           text: "全量机场榜单 →"
           link: "/rankings/all/"
   - type: features
-    title: "2026年6月18日数据看板"
+    title: "2026年6月21日数据看板"
     description: "当前站内结构化收录32个机场，覆盖销量、稳定、低价、免费试用、不限时、专属客户端、Clash、ChatGPT、流媒体和风险监测等筛选入口。"
     features:
       - title: "32个机场"

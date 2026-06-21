@@ -1,7 +1,7 @@
 ---
 title: 2026 Clash机场榜：Clash Verge、Clash Meta 与 Shadowrocket 通用订阅机场
 createTime: 2026/06/04
-dateModified: 2026/06/13
+dateModified: 2026/06/21
 permalink: /rankings/clash/
 tags:
   - Clash机场
@@ -10,26 +10,9 @@ tags:
   - Shadowrocket
   - 通用订阅
 description: 2026 Clash机场榜，筛选支持通用订阅、Clash Verge、Clash Meta、Shadowrocket 和 Mihomo 的机场，适合需要灵活分流的用户。
-schema:
-  - "@type": ItemList
-    "@id": "https://yp7.net/rankings/clash/#ranking"
-    name: 2026 Clash机场榜
-    itemListElement:
-      - "@type": ListItem
-        position: 1
-        name: Flybit
-        url: "https://yp7.net/posts/flybit-review-2026/"
-      - "@type": ListItem
-        position: 2
-        name: 网际快车
-        url: "https://yp7.net/posts/wangji-kuaiche-review/"
-      - "@type": ListItem
-        position: 3
-        name: 99吧
-        url: "https://yp7.net/posts/99ba-review-2026/"
 ---
 
-更新时间：2026年6月13日
+更新时间：2026年6月21日
 
 ## 筛选口径
 

@@ -10,6 +10,13 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   indexnow:
     runs-on: ubuntu-latest

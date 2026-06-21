@@ -9,7 +9,7 @@ import {
   isArticlePage,
 } from './page-utils'
 import { getPageSchema, hasJsonLdHead } from './schema'
-import { pageImages, siteName } from './site'
+import { defaultRobots, pageImages, siteName } from './site'
 
 const getSocialHead = (page: any) => {
   const canonicalUrl = getCanonicalUrl(page.path)
@@ -52,10 +52,10 @@ const getSocialHead = (page: any) => {
 const getBasicPageHead = (page: any) => {
   const keywords = getPageMetaKeywords(page)
   const robots = page.path.startsWith('/rankings/')
-    ? 'index, follow, max-snippet:160, max-image-preview:large'
+    ? 'index, follow, max-snippet:320, max-image-preview:large'
     : page.path.startsWith('/posts/') && page.path.includes('-review')
     ? 'index, follow, max-snippet:320, max-image-preview:large'
-    : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
+    : defaultRobots
 
   return [
     ['meta', { name: 'robots', content: robots }],

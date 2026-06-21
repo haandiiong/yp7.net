@@ -82,8 +82,11 @@ export const theme = plumeTheme({
       },
       extraUrls: [
         '/data/airports',
+        '/data/airports.json',
         '/data/rankings',
+        '/data/rankings.json',
         '/data/risk-monitor',
+        '/data/risk-monitor.json',
       ],
     },
     seo: false,
