@@ -1,0 +1,216 @@
+{
+  "site": "yp7.net",
+  "url": "https://yp7.net",
+  "lastReviewed": "2026-06-24",
+  "metrics": {
+    "count": 32,
+    "trialCount": 10,
+    "noExpiryCount": 19,
+    "dedicatedClientCount": 25,
+    "universalSubscriptionCount": 19,
+    "cheapUnderTenCount": 5,
+    "averagePrice": 16.3,
+    "performanceCount": 7,
+    "salesSampleCount": 18
+  },
+  "risks": [
+    {
+      "name": "echo",
+      "status": "已淘汰",
+      "risk": "客服失联，谨慎使用",
+      "source": "https://yp7.net/posts/jichang-heji/"
+    },
+    {
+      "name": "全球云",
+      "status": "主推观察",
+      "risk": "先月付测试",
+      "url": "https://yp7.net/posts/quanqiuyun/"
+    },
+    {
+      "name": "光年梯",
+      "status": "主推观察",
+      "risk": "先月付测试",
+      "url": "https://yp7.net/posts/guangnianti-review-2026/"
+    },
+    {
+      "name": "网际快车",
+      "status": "重点观察",
+      "risk": "需复核官网与试用",
+      "url": "https://yp7.net/posts/wangji-kuaiche-review/"
+    },
+    {
+      "name": "光速云",
+      "status": "备用观察",
+      "risk": "晚高峰复测",
+      "url": "https://yp7.net/posts/guangsuyun/"
+    },
+    {
+      "name": "xxyun",
+      "status": "流媒体观察",
+      "risk": "解锁能力会变化",
+      "url": "https://yp7.net/posts/xxyun-review-2026/"
+    },
+    {
+      "name": "Flybit",
+      "status": "Clash观察",
+      "risk": "长期稳定需复测",
+      "url": "https://yp7.net/posts/flybit-review-2026/"
+    },
+    {
+      "name": "阿达西",
+      "status": "低价观察",
+      "risk": "不建议直接长期付费",
+      "url": "https://yp7.net/posts/adaxi-review-2026/"
+    },
+    {
+      "name": "runway",
+      "status": "新手观察",
+      "risk": "先试用再续费",
+      "url": "https://yp7.net/posts/runway-review-2026/"
+    },
+    {
+      "name": "唯兔云",
+      "status": "流媒体观察",
+      "risk": "解锁能力会变化",
+      "url": "https://yp7.net/posts/weituyun/"
+    },
+    {
+      "name": "99吧",
+      "status": "试用观察",
+      "risk": "先测试订阅可用性",
+      "url": "https://yp7.net/posts/99ba-review-2026/"
+    },
+    {
+      "name": "迅达",
+      "status": "办公观察",
+      "risk": "ChatGPT可用性需复测",
+      "url": "https://yp7.net/posts/xunda-review-2026/"
+    },
+    {
+      "name": "ccyz",
+      "status": "流媒体观察",
+      "risk": "节点状态需复核",
+      "url": "https://yp7.net/posts/ccyz-review-2026/"
+    },
+    {
+      "name": "uuone",
+      "status": "性价比观察",
+      "risk": "长期稳定需复测",
+      "url": "https://yp7.net/posts/uuone-review-2026/"
+    },
+    {
+      "name": "冲上云霄",
+      "status": "低价观察",
+      "risk": "晚高峰复测",
+      "url": "https://yp7.net/posts/chongshangyunxiao/"
+    },
+    {
+      "name": "SSONE",
+      "status": "订阅观察",
+      "risk": "套餐变化需复核",
+      "url": "https://yp7.net/posts/ssone/"
+    },
+    {
+      "name": "U1S1",
+      "status": "办公观察",
+      "risk": "晚高峰复测",
+      "url": "https://yp7.net/posts/u1s1-review-2026/"
+    },
+    {
+      "name": "奈云",
+      "status": "老牌观察",
+      "risk": "价格较高需试用",
+      "url": "https://yp7.net/posts/naiyun-review-2026/"
+    },
+    {
+      "name": "隐云",
+      "status": "备用观察",
+      "risk": "不限流量需实测",
+      "url": "https://yp7.net/posts/yinyun-review-2026/"
+    },
+    {
+      "name": "cocoduck",
+      "status": "小众观察",
+      "risk": "小众服务需谨慎",
+      "url": "https://yp7.net/posts/cocoduck-review/"
+    },
+    {
+      "name": "XSUS",
+      "status": "性价比观察",
+      "risk": "需复核稳定性",
+      "url": "https://yp7.net/posts/xsus-review-2026/"
+    },
+    {
+      "name": "坦克加速",
+      "status": "新手观察",
+      "risk": "先试用再购买",
+      "url": "https://yp7.net/posts/tank-review-2026/"
+    },
+    {
+      "name": "瞬云",
+      "status": "备用观察",
+      "risk": "晚高峰复测",
+      "url": "https://yp7.net/posts/shunyun-review-2026/"
+    },
+    {
+      "name": "极连云",
+      "status": "稳定观察",
+      "risk": "节点维护需复核",
+      "url": "https://yp7.net/posts/jilianyun-review-2026/"
+    },
+    {
+      "name": "二猫云",
+      "status": "性价比观察",
+      "risk": "长期稳定需复测",
+      "url": "https://yp7.net/posts/ermiao-vpn-review/"
+    },
+    {
+      "name": "寰宇云",
+      "status": "备用观察",
+      "risk": "售后需复核",
+      "url": "https://yp7.net/posts/huanyuyun-review-2026/"
+    },
+    {
+      "name": "sogo",
+      "status": "新手观察",
+      "risk": "价格较高需复测",
+      "url": "https://yp7.net/posts/sogo-review-2026/"
+    },
+    {
+      "name": "速界",
+      "status": "专线观察",
+      "risk": "新站需复核，通用订阅临时300分钟",
+      "url": "https://yp7.net/posts/sujie-review-2026/"
+    },
+    {
+      "name": "边缘节点",
+      "status": "专线观察",
+      "risk": "通用订阅临时一次性，先月付复测",
+      "url": "https://yp7.net/posts/bianyuan-review-2026/"
+    },
+    {
+      "name": "宇宙云",
+      "status": "低价观察",
+      "risk": "流量较小",
+      "url": "https://yp7.net/posts/yuzhoucloud-review-2026/"
+    },
+    {
+      "name": "快狸",
+      "status": "客户端观察",
+      "risk": "流量较小",
+      "url": "https://yp7.net/posts/kuaili-review-2026/"
+    },
+    {
+      "name": "可信云",
+      "status": "稳定备用",
+      "risk": "流量较小",
+      "url": "https://yp7.net/posts/kexinyun-review-2026/"
+    },
+    {
+      "name": "星岛梦",
+      "status": "视频观察",
+      "risk": "晚高峰复测",
+      "url": "https://yp7.net/posts/xingdaomeng-review-2026/"
+    }
+  ]
+}
