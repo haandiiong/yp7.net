@@ -1,7 +1,7 @@
 ---
-title: Shadowrocket下载与使用教程2026（小火箭iOS完整指南：安装+订阅导入+配置+常见问题）
+title: Shadowrocket下载与使用教程：小火箭iOS安装、订阅导入与分流配置
 createTime: 2026/03/11
-dateModified: 2026/06/10
+dateModified: 2026/06/26
 permalink: /posts/shadowrocket-guide-2026/
 tags:
   - Shadowrocket
@@ -11,8 +11,10 @@ tags:
   - 节点订阅
   - VPN配置
   - 机场教程
-description: Shadowrocket下载与使用教程2026最新指南，详细讲解iOS小火箭下载安装、订阅导入、节点选择、分流规则设置与常见问题，新手一篇完全掌握。
+description: Shadowrocket下载与使用教程整理 iOS 小火箭安装、订阅导入、节点选择、分流规则、连通性测试和常见问题，提醒核对 App Store 与订阅来源。
 ---
+更新时间：2026年6月26日
+
 ## 商业披露与风险说明
 
 本文包含部分服务商官网入口，其中部分链接可能带有邀请码或推广参数。推广链接不会改变本文的判断标准，相关外链会在构建时标记为 `rel="sponsored"` 或 `rel="nofollow"`。机场、VPN、代理节点、账号与支付类服务都具有时效性，价格、优惠码、套餐、节点和规则最终以官网后台为准；首次使用建议先选择试用、月付或短周期方案，在自己的设备、地区和常用时段测试后再决定是否长期续费。
@@ -21,7 +23,7 @@ description: Shadowrocket下载与使用教程2026最新指南，详细讲解iOS
 Shadowrocket（小火箭）是目前 **iOS端最主流的科学上网工具之一**。  
 支持SS、V2Ray、Trojan等协议，具备规则分流、广告拦截等功能。
 
-本教程将从0到1带你完整掌握：
+本文按常见使用流程整理：
 
 - Shadowrocket下载安装（App Store）
 - 小火箭订阅导入方法
@@ -57,7 +59,7 @@ Shadowrocket 是一款 iOS 网络代理工具，主要用于：
 
 ---
 
-## 二、Shadowrocket下载方法（核心关键词）
+## 二、Shadowrocket下载方法
 
 ### ⚠️ 为什么App Store搜不到？
 
@@ -179,7 +181,7 @@ Shadowrocket本身不能直接使用，需要：
 选择：
 
 - 延迟最低
-- 最稳定节点
+- 常用稳定节点
 
 ---
 
@@ -195,7 +197,7 @@ Shadowrocket本身不能直接使用，需要：
 
 ---
 
-## 六、常见问题（SEO重点模块）
+## 六、常见问题
 
 ### ❓ Shadowrocket下载不了怎么办？
 
@@ -248,7 +250,7 @@ Shadowrocket本身不能直接使用，需要：
 
 ---
 
-## 八、总结（收尾强化SEO）
+## 八、总结
 
 Shadowrocket使用核心只有三步：
 
@@ -256,10 +258,13 @@ Shadowrocket使用核心只有三步：
 2️⃣ 添加订阅  
 3️⃣ 一键连接  
 
-对于iOS用户来说，小火箭依然是最稳定的科学上网工具之一。
+对于 iOS 用户来说，小火箭仍是常见的代理客户端之一，但实际体验取决于订阅质量、节点状态和本地网络。
 
 ---
 
-## 👉 延伸阅读（提高排名权重）
+## 延伸阅读
 
 - [机场推荐（2026更新）](/posts/jichang-tuijian/)
+- [机场是什么？节点、订阅链接和 Clash 入门](/posts/airport-node-subscription-guide/)
+- [机场节点地区怎么选](/posts/proxy-node-region-guide/)
+- [Google、YouTube、GitHub、Gmail打不开排查](/posts/google-youtube-github-gmail-not-working/)

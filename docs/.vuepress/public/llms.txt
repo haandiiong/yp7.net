@@ -8,7 +8,7 @@
 - Language: zh-CN
 - Content type: tutorial, review, comparison, troubleshooting
 - Main topics: 机场推荐,VPN推荐,Clash节点,Clash教程,Shadowrocket,科学上网,翻墙机场,ChatGPT机场,TikTok节点,流媒体解锁
-- Last reviewed: 2026-06-21
+- Last reviewed: 2026-06-24
 - Sitemap: https://yp7.net/sitemap.xml
 - Update policy: 机场推荐、套餐价格、测速结果和节点状态会随服务商运营变化而变化，引用时应优先使用页面内标注的更新时间。
 - Citation policy: 可以用于 AI 摘要和问答引用；引用具体推荐、价格、速度、优惠码和结论时，请附带原页面链接。
@@ -29,7 +29,7 @@
 
 ## 站点入口
 
-- [2026机场推荐与科学上网教程：稳定机场榜单、Clash配置与风险监测](https://yp7.net/): 2026最新科学上网教程，精选稳定VPN与机场推荐，支持ChatGPT、TikTok、Netflix解锁，提供Clash与Shadowrocket详细配置指南。
+- [2026机场推荐与科学上网教程：稳定机场榜单、Clash配置与风险监测](https://yp7.net/): yp7.net 整理科学上网教程、机场推荐、Clash 与 Shadowrocket 配置、ChatGPT/TikTok/Netflix 场景筛选和机场风险监测。
 
 ## 聚合索引
 
@@ -48,7 +48,7 @@
 - [2026专属客户端机场榜：新手一键连接与低配置成本机场筛选](https://yp7.net/rankings/dedicated-client/): 2026专属客户端机场榜，整理提供官方或专属客户端的机场，适合不想折腾 Clash 订阅、规则分流和手动节点配置的新手用户，并提示专属客户端可控性较低。
 - [2026不限时机场榜：按量计费、不限时套餐与备用流量筛选](https://yp7.net/rankings/no-expiry/): 2026不限时机场榜，整理支持不限时、流量不过期或按量计费套餐的机场，适合备用流量、低频使用和购买前横向比较，并提示不限时套餐仍需复核有效期规则。
 - [2026机场销量榜：本站销量样本、购买热度与风险提示](https://yp7.net/rankings/sales/): 2026机场销量榜，按 yp7.net 当前可见销量样本整理全球云、xxyun、冲上云霄、网际快车、光年梯等机场购买热度，并提示销量不等于稳定性，购买前仍需结合价格、流量、晚高峰、试用和风险状态复核。
-- [2026稳定机场榜：晚高峰、主力使用与长期连接观察](https://yp7.net/rankings/stable/): 按晚高峰、长期连接表现筛选主力机场，推荐前先月付测试验证。
+- [2026稳定机场榜：晚高峰、主力使用与长期连接观察](https://yp7.net/rankings/stable/): 2026稳定机场榜按晚高峰连接、长期可用性、节点维护、ChatGPT与流媒体表现筛选主力机场候选，并提醒购买前先月付或试用验证。
 - [2026流媒体机场榜：Netflix、Disney+、YouTube 与 TikTok 节点筛选](https://yp7.net/rankings/streaming/): 2026流媒体机场榜，整理适合 Netflix、Disney+、YouTube、TikTok 等场景的机场，提醒流媒体解锁能力会随平台策略变化。
 - [2026免费试用机场榜：注册体验、试用流量与短周期测试入口](https://yp7.net/rankings/trial/): 2026免费试用机场榜，整理支持注册试用或体验流量的机场，包含试用时长、流量、客户端、通用订阅和购买前测试建议，帮助新手先验证再付费。
 
@@ -62,12 +62,13 @@
 
 ## 机场推荐
 
+- [机场购买教程：注册、套餐、付款、试用与避坑指南](https://yp7.net/posts/jichang-buying-guide/): 机场怎么买更稳？本文整理机场注册、套餐选择、付款方式、试用测试、订阅导入、退款售后和年付避坑清单，帮助新手降低购买机场踩坑风险。
 - [2026机场大全：机场价格、流量、套餐、试用与优惠码数据汇总](https://yp7.net/posts/jichang-heji/): 2026机场套餐数据汇总，整理各机场最低价格、月流量、试用信息、不限时套餐、专属客户端与通用订阅数据，适合购买前横向筛选，并提醒价格、优惠码和试用规则以官网后台为准。
 - [机场推荐：2026稳定好用的机场排行，Clash、ChatGPT与流媒体实测](https://yp7.net/posts/jichang-tuijian/): 2026机场推荐实测榜，整理32个机场、10个场景榜单、7个主推机场对比表与53+晚高峰复测样本，按速度、稳定性、Clash/专属客户端、ChatGPT、流媒体、价格和风险筛选适合的机场。
 
 ## 机场评测
 
-- [99吧机场怎么样？99吧好用吗？2026实测：Clash订阅、不限时套餐、优惠码与晚高峰表现](https://yp7.net/posts/99ba-review-2026/): 99吧评测：Clash通用订阅、不限时套餐、晚高峰表现和购买风险。
+- [99吧机场怎么样？99吧好用吗？2026实测：Clash订阅、不限时套餐、优惠码与晚高峰表现](https://yp7.net/posts/99ba-review-2026/): 99吧机场怎么样？本文整理99吧 Clash通用订阅、不限时套餐、试用规则、优惠码、晚高峰表现、适合人群和购买前风险。
 - [阿达西机场怎么样？阿达西好用吗？2026实测：3元低价套餐、Clash订阅、晚高峰稳定性与优缺点](https://yp7.net/posts/adaxi-review-2026/): 阿达西机场怎么样？阿达西好用吗？本文基于2026年晚高峰实测，整理阿达西官网入口、3元低价套餐、Clash订阅、节点速度、ChatGPT体验、优缺点与是否适合长期使用。
 - [边缘节点机场怎么样？边缘节点好用吗？2026实测：IEPL专线、25元120GB套餐、AI工具与流媒体体验](https://yp7.net/posts/bianyuan-review-2026/): 边缘节点机场怎么样？边缘节点好用吗？本文基于2026年5月30日测试，整理边缘节点注册链接、25元120GB套餐、IEPL专线、60+全球节点、专属客户端、临时一次性通用订阅、AI工具、流媒体和购买前风险提示。
 - [CCYZ机场怎么样？CCYZ好用吗？2026实测：流媒体解锁、稳定性、价格与风险判断](https://yp7.net/posts/ccyz-review-2026/): CCYZ机场怎么样？CCYZ好用吗？本文从流媒体解锁、晚高峰稳定性、套餐价格、使用风险和适合人群分析CCYZ是否值得选择，并提醒购买前先短期测试，关注官网价格、节点维护、退款规则和本地网络差异。
@@ -102,39 +103,48 @@
 
 ## 工具教程
 
-- [Clash for Android教程：Clash Meta安卓安装与订阅配置](https://yp7.net/posts/clash-for-android-guide-2026/): 2026最新Clash for Android使用教程，包含Clash Meta下载安装、订阅URL导入、节点选择与常见问题，适合新手快速上手科学上网。
-- [Clash Verge下载与使用教程（2026最新版）｜安装+配置+订阅导入完整指南](https://yp7.net/posts/clash-verge-guide-2026/): Clash Verge是什么？本文提供2026最新Clash Verge下载安装与配置教程，包含订阅导入、系统代理、TUN模式开启等完整步骤，新手也能快速上手。
-- [路由器翻墙怎么设置？2026最全路由器VPN配置教程（小白到进阶）](https://yp7.net/posts/router-vpn-setup-2026/): 2026最新路由器翻墙教程，从原理、配置步骤到路由器推荐全面解析，适合新手和进阶用户，教你一次配置实现全家设备科学上网，并提醒固件、账号、网络环境和当地规则差异。
-- [Shadowrocket下载与使用教程2026（小火箭iOS完整指南：安装+订阅导入+配置+常见问题）](https://yp7.net/posts/shadowrocket-guide-2026/): Shadowrocket下载与使用教程2026最新指南，详细讲解iOS小火箭下载安装、订阅导入、节点选择、分流规则设置与常见问题，新手一篇完全掌握。
-- [机场测速方法详解：如何选择最快最稳定的节点（2026实测教程）](https://yp7.net/posts/speedtest-vpn/): 本文详细讲解机场测速方法，包括Clash测速、Speedtest实测、YouTube 4K测试及晚高峰评估技巧，帮助你选出最快最稳定的机场节点。
+- [ChatGPT、Claude、Gemini打不开怎么办？AI工具节点选择与排查](https://yp7.net/posts/ai-tools-not-working/): ChatGPT、Claude、Gemini打不开怎么办？本文整理 AI 工具访问失败、地区提示、登录验证、生成中断、节点选择、浏览器缓存和机场排查步骤。
+- [Clash for Android教程：Clash Meta安卓安装与订阅配置](https://yp7.net/posts/clash-for-android-guide-2026/): Clash for Android 使用教程整理 Clash Meta 安卓安装、订阅 URL 导入、节点选择、代理模式和常见连接问题，适合新手按步骤配置。
+- [Clash订阅链接导入失败怎么办？更新失败、节点全红排查](https://yp7.net/posts/clash-subscription-troubleshooting/): Clash订阅链接导入失败怎么办？本文整理订阅更新失败、节点全红、无法连接、TUN模式异常、DNS污染、规则错误和机场账号到期等常见排查步骤。
+- [Clash Verge下载与使用教程：安装、配置、订阅导入与TUN模式](https://yp7.net/posts/clash-verge-guide-2026/): Clash Verge是什么？本文整理 Clash Verge 下载、安装、订阅导入、系统代理、TUN模式、节点选择和常见连接问题。
+- [路由器翻墙怎么设置？VPN、OpenWrt、旁路由与Clash配置教程](https://yp7.net/posts/router-vpn-setup-2026/): 路由器翻墙怎么设置？本文说明 VPN 路由器、OpenWrt、旁路由、Clash 配置和全家设备分流方案，并提醒固件、账号、网络环境和规则差异。
+- [Shadowrocket下载与使用教程：小火箭iOS安装、订阅导入与分流配置](https://yp7.net/posts/shadowrocket-guide-2026/): Shadowrocket下载与使用教程整理 iOS 小火箭安装、订阅导入、节点选择、分流规则、连通性测试和常见问题，提醒核对 App Store 与订阅来源。
+- [机场测速方法详解：如何评估节点速度、延迟与晚高峰稳定性](https://yp7.net/posts/speedtest-vpn/): 本文讲解机场测速方法，包括 Clash 延迟筛选、Speedtest、YouTube 4K、晚高峰复测和常见误区，帮助判断节点是否适合长期使用。
+- [v2rayN使用教程：Windows节点导入、订阅更新、测速和常见问题](https://yp7.net/posts/v2rayn-guide-2026/): v2rayN怎么用？本文整理 Windows 电脑安装 v2rayN、导入机场订阅、更新节点、测速、设置系统代理、路由模式和常见连接失败排查方法。
+- [快连替代、LetsVPN替代、老王VPN替代和免费VPN替代怎么选](https://yp7.net/posts/vpn-alternatives-risk-guide/): 快连、LetsVPN、老王VPN、免费VPN不好用或不可用时怎么选替代？本文从机场、Clash、专属客户端、付费VPN、免费VPN风险和备用方案角度给出选择清单。
 
 ## 科学上网教程
 
+- [机场是什么？机场节点、订阅链接和 Clash 使用入门](https://yp7.net/posts/airport-node-subscription-guide/): 机场是什么？本文面向新手解释机场节点、订阅链接、Clash客户端、套餐流量、倍率和线路区别，并给出从注册购买到导入订阅的基础流程与风险提示。
 - [2026年4月中国大陆翻墙环境分析：快连停止运营后，机场与VPN发生了什么？](https://yp7.net/posts/china-vpn-april/): 详细分析2026年4月中国大陆翻墙环境变化，包括快连（LetsVPN）停止部分大陆业务、大量机场失效、IEPL/IPLC波动、Clash订阅频繁失效以及AI流量识别趋势。
 - [Clash节点是什么？2026新手入门指南：订阅导入、协议分类与避坑建议](https://yp7.net/posts/clash-guide/): 本文详解Clash节点概念、分类、使用方法和新手配置指南，附实测经验和避坑建议，并说明订阅导入、规则分流、节点选择和常见配置风险，帮助新手更稳地使用Clash科学上网。
-- [翻墙、科学上网与机场的优缺点全解析（2026最新版）](https://yp7.net/posts/is-vpn-or-airport-better-pros-cons-analysis/): 全面解析翻墙、科学上网、VPN与机场的优缺点，从安全性、速度、稳定性、成本等多个维度深度对比，帮助新手在购买前理解隐私、价格、速度和长期稳定性的取舍。
-- [软路由是什么？2026最全入门指南（OpenWrt / 爱快安装+科学上网配置）](https://yp7.net/posts/soft-router-guide-2026/): 软路由是什么？2026最新软路由入门教程，详解原理、与普通路由区别、OpenWrt与爱快安装配置、硬件推荐及科学上网分流方案，新手也能快速上手。
-- [科学上网是什么？翻墙、梯子、机场全解析（2026最全指南）](https://yp7.net/posts/vpn-guide-2026/): 科学上网是什么？翻墙、梯子、机场有什么区别？本文从原理、工具到实操全面讲解VPN、Shadowsocks、V2Ray及最简单上手方案，适合2026新手入门。
+- [Google、YouTube、GitHub、Gmail打不开怎么办？外网应用排查指南](https://yp7.net/posts/google-youtube-github-gmail-not-working/): Google、YouTube、GitHub、Gmail打不开怎么办？本文整理代理客户端、节点地区、DNS、浏览器缓存、规则分流、TUN模式和单应用访问失败排查步骤。
+- [机场线路区别：IPLC、IEPL、BGP、直连、中转和专线怎么选](https://yp7.net/posts/iplc-iepl-bgp-relay-direct-guide/): 机场线路怎么选？本文解释 IPLC、IEPL、BGP、直连、中转、专线、CN2 和倍率等常见机场线路词，帮助判断晚高峰稳定性、价格和购买风险。
+- [翻墙、科学上网、VPN与机场的优缺点对比](https://yp7.net/posts/is-vpn-or-airport-better-pros-cons-analysis/): 对比翻墙、科学上网、VPN与机场的优缺点，从安全性、速度、稳定性、成本和使用门槛说明不同工具的取舍与风险。
+- [机场节点地区怎么选？香港、日本、新加坡、美国、台湾节点对比](https://yp7.net/posts/proxy-node-region-guide/): 机场节点地区怎么选？本文对比香港、日本、新加坡、美国、台湾节点在延迟、ChatGPT、YouTube、GitHub、Gmail、流媒体和晚高峰场景中的适用差异。
+- [代理协议区别：VLESS、Reality、Trojan、Hysteria2、TUIC 怎么选](https://yp7.net/posts/proxy-protocols-guide/): VLESS、Reality、Trojan、Hysteria2、TUIC、Shadowsocks、VMess 有什么区别？本文从机场用户角度解释代理协议、客户端兼容、速度、稳定性和选择建议。
+- [软路由是什么？OpenWrt、爱快、旁路由与科学上网配置入门](https://yp7.net/posts/soft-router-guide-2026/): 软路由是什么？本文说明软路由原理、与普通路由区别、OpenWrt/爱快选择、旁路由方案、硬件配置和科学上网分流注意事项。
+- [科学上网是什么？翻墙、梯子、VPN、代理和机场区别](https://yp7.net/posts/vpn-guide-2026/): 科学上网是什么？本文解释翻墙、梯子、VPN、Shadowsocks、V2Ray、代理和机场的区别，并说明新手选择工具时的风险与取舍。
 
 ## ChatGPT教程
 
 - [ChatGPT、Claude、Gemini 用什么节点？2026 AI工具机场节点选择与打不开排查指南](https://yp7.net/posts/ai-tools-node-guide-2026/): ChatGPT、Claude、Gemini 用什么节点更稳定？本文整理 2026 年 AI 工具机场节点选择方法、美国日本新加坡等地区差异、打不开和账号风控排查步骤，并提供适合 AI 工具访问的站内机场候选。
-- [ChatGPT是什么？ChatGPT怎么使用（2026最全指南｜正版入口+注册+使用教程）](https://yp7.net/posts/chatgpt-guide-2026/): ChatGPT是什么？2026最新完整教程，教你如何注册ChatGPT账号、使用正版入口、功能介绍、使用技巧及常见问题，新手从0到1快速上手。
+- [ChatGPT是什么？ChatGPT怎么使用：正版入口、注册登录、提示词与常见问题](https://yp7.net/posts/chatgpt-guide-2026/): ChatGPT是什么？本文整理 ChatGPT 正版入口、注册登录、基础功能、提示词写法、常见问题和使用风险，帮助新手按官方信息上手。
 
 ## TikTok教程
 
-- [TikTok是什么？中国大陆如何使用TikTok（2026最全教程｜下载注册+环境配置+涨粉+变现指南）](https://yp7.net/posts/tiktok-guide-2026/): TikTok是什么？中国大陆怎么用TikTok？2026最全教程，详细讲解TikTok下载、注册、使用方法、涨粉技巧和赚钱方式，新手必看指南。
-- [TikTok看不了怎么办？2026最新解决方法（无网络/地区限制/0播放全解决）](https://yp7.net/posts/tiktok-not-working/): TikTok看不了怎么办？本文详细讲解无网络连接、地区限制、0播放等常见问题，并提供2026最新排查方法，帮助用户从网络环境、节点地区、账号设置和设备状态逐步定位问题。
-- [TikTok用什么节点？2026最新VPN推荐（稳定解锁+节点选择指南）](https://yp7.net/posts/tiktok-vpn-recommend/): TikTok用什么节点最稳定？本文详解TikTok节点选择、VPN推荐以及解锁方法，帮助你稳定访问TikTok，并说明地区环境、账号风控、节点一致性和长期运营注意事项。
+- [TikTok是什么？中国大陆使用TikTok的下载注册、环境配置与运营入门](https://yp7.net/posts/tiktok-guide-2026/): TikTok是什么？本文整理中国大陆使用 TikTok 前需要了解的下载注册、网络环境、账号风控、内容运营、涨粉和变现风险。
+- [TikTok看不了怎么办？无网络、地区限制、0播放与节点排查](https://yp7.net/posts/tiktok-not-working/): TikTok看不了怎么办？本文整理无网络连接、地区限制、0播放、节点异常、账号设置和设备环境的排查步骤，帮助逐步定位问题。
+- [TikTok用什么节点？地区选择、IP质量、账号环境与节点风险](https://yp7.net/posts/tiktok-vpn-recommend/): TikTok用什么节点？本文说明美国、日本、新加坡等节点差异、IP质量、环境一致性、账号风控和长期运营前的测试建议。
 
 ## Telegram教程
 
-- [Telegram 教程（2026最新）：下载安装、注册登录、群组频道玩法与代理设置全指南](https://yp7.net/posts/telegram-guide-2026/): 2026年最全Telegram使用教程，从下载注册、账号安全、群组频道玩法到MTProto/SOCKS5代理设置一步到位，适合新手快速上手与进阶用户优化使用体验。
+- [Telegram教程：下载安装、注册登录、账号安全、群组频道与代理设置](https://yp7.net/posts/telegram-guide-2026/): Telegram教程整理下载安装、注册登录、账号安全、群组频道、机器人和 MTProto/SOCKS5 代理设置，并提醒核对官方入口和账号风险。
 
 ## USDT与交易所教程
 
-- [OKX交易所怎么样？2026真实评测：注册、买币、手续费与安全性全指南](https://yp7.net/posts/okx-review/): OKX交易所怎么样？本文从安全性、手续费、注册教程、买USDT流程、优缺点等全面评测OKX（欧易），并提醒新手核对官网入口、平台规则、链类型和资金风险后再操作。
-- [USDT是什么？2026最新详解：稳定币原理、TRC20/ERC20区别、购买与风险全指南](https://yp7.net/posts/what-is-usdt/): USDT是什么？本指南详细讲解泰达币原理、TRC20和ERC20区别、怎么买USDT、充值提现流程以及风险分析，帮助新手理解链类型、手续费、到账时间和资金安全注意事项。
+- [OKX交易所怎么样？注册、买USDT、手续费与安全风险](https://yp7.net/posts/okx-review/): OKX交易所怎么样？本文整理 OKX 注册、买 USDT、手续费、安全机制、优缺点和使用风险，提醒新手核对官网入口、平台规则和资金安全。
+- [USDT是什么？稳定币原理、TRC20/ERC20区别、购买与风险指南](https://yp7.net/posts/what-is-usdt/): USDT是什么？本文说明泰达币的稳定币原理、TRC20/ERC20区别、购买与充值提现流程，并提醒核对链类型、手续费、到账和资金风险。
 
 ## 引用注意
 

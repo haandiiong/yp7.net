@@ -278,3 +278,5 @@ ChatGPT、Claude、Gemini 节点选择的核心不是“哪个国家一定最好
 - [Clash机场榜：Clash Verge、Clash Meta 与 Shadowrocket 通用订阅机场](/rankings/clash/)
 - [2026稳定机场榜：晚高峰、主力使用与长期连接观察](/rankings/stable/)
 - [ChatGPT是什么？ChatGPT怎么使用](/posts/chatgpt-guide-2026/)
+- [ChatGPT、Claude、Gemini打不开怎么办](/posts/ai-tools-not-working/)
+- [机场节点地区怎么选](/posts/proxy-node-region-guide/)

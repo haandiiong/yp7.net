@@ -1,6 +1,6 @@
 # yp7.net 机场榜单数据
 
-Last reviewed: 2026-06-21
+Last reviewed: 2026-06-24
 
 ## 销量机场
 

@@ -1,7 +1,7 @@
 {
   "site": "yp7.net",
   "url": "https://yp7.net",
-  "lastReviewed": "2026-06-21",
+  "lastReviewed": "2026-06-24",
   "metrics": {
     "count": 32,
     "trialCount": 10,
@@ -39,7 +39,7 @@
         ],
         "status": "主推观察",
         "risk": "先月付测试",
-        "summary": "新手友好，专属客户端上手成本低，适合先测试日常网页、ChatGPT 和流媒体。",
+        "summary": "专属客户端上手成本低，结合 IPLC/IEPL 与智能负载定位，适合先测试日常网页、ChatGPT、TikTok 和流媒体。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-05-30",
@@ -75,7 +75,7 @@
         ],
         "status": "主推观察",
         "risk": "先月付测试",
-        "summary": "偏长期主力测试，适合重视稳定性和专属客户端体验的用户。",
+        "summary": "新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -112,7 +112,7 @@
         ],
         "status": "重点观察",
         "risk": "需复核官网与试用",
-        "summary": "支持试用和通用订阅，适合 Clash 用户和想先短期测试的人。",
+        "summary": "专属客户端和通用订阅并行，家宽/原生节点、AI 与流媒体场景更突出，适合先用试用流量短期验证。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -148,7 +148,7 @@
         ],
         "status": "备用观察",
         "risk": "晚高峰复测",
-        "summary": "适合作为备用机场或 Clash 通用订阅测试，需关注晚高峰表现。",
+        "summary": "隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案复测。",
         "performance": {
           "evidenceLevel": "B",
           "lastTestedAt": "2026-06-18",
@@ -290,7 +290,7 @@
         ],
         "status": "新手观察",
         "risk": "先试用再续费",
-        "summary": "支持免费试用和专属客户端，适合新手先体验连接流程。",
+        "summary": "BGP 专线试用型机场，适合新手先验证延迟、稳定性和专属客户端连接流程。",
         "salesSample": 445,
         "url": "https://yp7.net/posts/runway-review-2026/"
       },
@@ -310,7 +310,7 @@
         ],
         "status": "流媒体观察",
         "risk": "解锁能力会变化",
-        "summary": "偏流媒体体验，适合短期测试视频平台和节点稳定性。",
+        "summary": "高性价比 IPLC 与新 SS 协议定位，不限设备、无倍率卖点更突出，适合短期测试流媒体和备用场景。",
         "salesSample": 221,
         "url": "https://yp7.net/posts/weituyun/"
       },
@@ -454,7 +454,7 @@
         ],
         "status": "办公观察",
         "risk": "晚高峰复测",
-        "summary": "偏办公与稳定场景，适合重视 ChatGPT、网页访问和视频体验的用户。",
+        "summary": "偏多设备办公、ChatGPT 与流媒体解锁场景，适合重视节点数量、设备灵活性和晚高峰表现的人复测。",
         "salesSample": 82,
         "url": "https://yp7.net/posts/u1s1-review-2026/"
       },
@@ -583,7 +583,7 @@
         ],
         "status": "备用观察",
         "risk": "晚高峰复测",
-        "summary": "轻量备用定位，适合 Clash 通用订阅用户持续观察。",
+        "summary": "直连加专线与 Anycast 架构定位，三网入口优化和流媒体/AI 解锁更突出，适合 Clash 通用订阅用户持续观察。",
         "salesSample": 128,
         "url": "https://yp7.net/posts/shunyun-review-2026/"
       },
@@ -603,7 +603,7 @@
         ],
         "status": "稳定观察",
         "risk": "节点维护需复核",
-        "summary": "偏连接速度和稳定性观察，适合作为备选测试。",
+        "summary": "IPLC/IEPL 专线和三网入口优化定位，原生 IP 与 ChatGPT、Netflix 场景更突出，适合作为稳定备选测试。",
         "url": "https://yp7.net/posts/jilianyun-review-2026/"
       },
       {
@@ -622,7 +622,7 @@
         ],
         "status": "性价比观察",
         "risk": "长期稳定需复测",
-        "summary": "偏专属客户端和性价比方向，适合轻中度用户短期测试。",
+        "summary": "IEPL/IPLC 专线加自研专属客户端定位，主打不限速、不限设备和流媒体/AI 场景，适合轻中度用户短期测试。",
         "salesSample": 191,
         "url": "https://yp7.net/posts/ermiao-vpn-review/"
       },
@@ -643,7 +643,7 @@
         ],
         "status": "备用观察",
         "risk": "售后需复核",
-        "summary": "通用订阅备选，适合结合晚高峰稳定性做横向对比。",
+        "summary": "直连加 IPLC 混合架构、x1 倍率和通用订阅兼容更突出，适合 Clash、FlClash、Singbox 用户横向对比。",
         "url": "https://yp7.net/posts/huanyuyun-review-2026/"
       },
       {
@@ -662,7 +662,7 @@
         ],
         "status": "新手观察",
         "risk": "价格较高需复测",
-        "summary": "专属客户端新手体验较好，适合不想折腾配置的人短期测试。",
+        "summary": "VLESS 与 IEPL 专线定位，偏稳定省心和专属客户端体验，适合不想折腾配置的新手测试流媒体与 AI 场景。",
         "salesSample": 419,
         "url": "https://yp7.net/posts/sogo-review-2026/"
       },
@@ -686,7 +686,7 @@
         ],
         "status": "专线观察",
         "risk": "新站需复核，通用订阅临时300分钟",
-        "summary": "2026年2月开始运营的 IEPL 专线机场，支持 24 小时试用、专属客户端和临时 300 分钟通用订阅，适合流媒体、远程办公和低延迟场景先测。",
+        "summary": "2026年2月开始运营的 IEPL 专线机场，主打低延迟、高峰视频和 24 小时试用，通用订阅临时 300 分钟规则需复核。",
         "url": "https://yp7.net/posts/sujie-review-2026/"
       },
       {
@@ -728,7 +728,7 @@
         ],
         "status": "低价观察",
         "risk": "流量较小",
-        "summary": "价格较低但流量较小，适合轻量使用或备用。",
+        "summary": "VLESS 加 IEPL 专线和自研客户端定位，偏低价轻量包与视频场景，适合小流量用户先短期测试。",
         "url": "https://yp7.net/posts/yuzhoucloud-review-2026/"
       },
       {
@@ -748,7 +748,7 @@
         ],
         "status": "客户端观察",
         "risk": "流量较小",
-        "summary": "专属客户端体验清晰，适合轻量办公和新手连接测试。",
+        "summary": "VLESS 与企业级 IEPL 接入定位，目前更偏自研客户端一键连接，适合轻量办公、ChatGPT 和新手连接测试。",
         "url": "https://yp7.net/posts/kuaili-review-2026/"
       },
       {
@@ -786,7 +786,7 @@
         ],
         "status": "视频观察",
         "risk": "晚高峰复测",
-        "summary": "偏视频体验和专属客户端，适合流媒体场景短期测试。",
+        "summary": "IEPL 专线、无倍率和不限设备定位更突出，兼顾不限时流量包，适合流媒体主力或备用场景短期测试。",
         "url": "https://yp7.net/posts/xingdaomeng-review-2026/"
       }
     ],
@@ -810,7 +810,7 @@
         ],
         "status": "主推观察",
         "risk": "先月付测试",
-        "summary": "新手友好，专属客户端上手成本低，适合先测试日常网页、ChatGPT 和流媒体。",
+        "summary": "专属客户端上手成本低，结合 IPLC/IEPL 与智能负载定位，适合先测试日常网页、ChatGPT、TikTok 和流媒体。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-05-30",
@@ -905,7 +905,7 @@
         ],
         "status": "重点观察",
         "risk": "需复核官网与试用",
-        "summary": "支持试用和通用订阅，适合 Clash 用户和想先短期测试的人。",
+        "summary": "专属客户端和通用订阅并行，家宽/原生节点、AI 与流媒体场景更突出，适合先用试用流量短期验证。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -941,7 +941,7 @@
         ],
         "status": "主推观察",
         "risk": "先月付测试",
-        "summary": "偏长期主力测试，适合重视稳定性和专属客户端体验的用户。",
+        "summary": "新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -1069,7 +1069,7 @@
         ],
         "status": "新手观察",
         "risk": "先试用再续费",
-        "summary": "支持免费试用和专属客户端，适合新手先体验连接流程。",
+        "summary": "BGP 专线试用型机场，适合新手先验证延迟、稳定性和专属客户端连接流程。",
         "salesSample": 445,
         "url": "https://yp7.net/posts/runway-review-2026/"
       },
@@ -1089,7 +1089,7 @@
         ],
         "status": "新手观察",
         "risk": "价格较高需复测",
-        "summary": "专属客户端新手体验较好，适合不想折腾配置的人短期测试。",
+        "summary": "VLESS 与 IEPL 专线定位，偏稳定省心和专属客户端体验，适合不想折腾配置的新手测试流媒体与 AI 场景。",
         "salesSample": 419,
         "url": "https://yp7.net/posts/sogo-review-2026/"
       },
@@ -1132,7 +1132,7 @@
         ],
         "status": "备用观察",
         "risk": "晚高峰复测",
-        "summary": "适合作为备用机场或 Clash 通用订阅测试，需关注晚高峰表现。",
+        "summary": "隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案复测。",
         "performance": {
           "evidenceLevel": "B",
           "lastTestedAt": "2026-06-18",
@@ -1188,7 +1188,7 @@
         ],
         "status": "流媒体观察",
         "risk": "解锁能力会变化",
-        "summary": "偏流媒体体验，适合短期测试视频平台和节点稳定性。",
+        "summary": "高性价比 IPLC 与新 SS 协议定位，不限设备、无倍率卖点更突出，适合短期测试流媒体和备用场景。",
         "salesSample": 221,
         "url": "https://yp7.net/posts/weituyun/"
       },
@@ -1230,7 +1230,7 @@
         ],
         "status": "性价比观察",
         "risk": "长期稳定需复测",
-        "summary": "偏专属客户端和性价比方向，适合轻中度用户短期测试。",
+        "summary": "IEPL/IPLC 专线加自研专属客户端定位，主打不限速、不限设备和流媒体/AI 场景，适合轻中度用户短期测试。",
         "salesSample": 191,
         "url": "https://yp7.net/posts/ermiao-vpn-review/"
       },
@@ -1251,7 +1251,7 @@
         ],
         "status": "备用观察",
         "risk": "晚高峰复测",
-        "summary": "轻量备用定位，适合 Clash 通用订阅用户持续观察。",
+        "summary": "直连加专线与 Anycast 架构定位，三网入口优化和流媒体/AI 解锁更突出，适合 Clash 通用订阅用户持续观察。",
         "salesSample": 128,
         "url": "https://yp7.net/posts/shunyun-review-2026/"
       },
@@ -1273,7 +1273,7 @@
         ],
         "status": "办公观察",
         "risk": "晚高峰复测",
-        "summary": "偏办公与稳定场景，适合重视 ChatGPT、网页访问和视频体验的用户。",
+        "summary": "偏多设备办公、ChatGPT 与流媒体解锁场景，适合重视节点数量、设备灵活性和晚高峰表现的人复测。",
         "salesSample": 82,
         "url": "https://yp7.net/posts/u1s1-review-2026/"
       }
@@ -1298,7 +1298,7 @@
         ],
         "status": "主推观察",
         "risk": "先月付测试",
-        "summary": "新手友好，专属客户端上手成本低，适合先测试日常网页、ChatGPT 和流媒体。",
+        "summary": "专属客户端上手成本低，结合 IPLC/IEPL 与智能负载定位，适合先测试日常网页、ChatGPT、TikTok 和流媒体。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-05-30",
@@ -1334,7 +1334,7 @@
         ],
         "status": "主推观察",
         "risk": "先月付测试",
-        "summary": "偏长期主力测试，适合重视稳定性和专属客户端体验的用户。",
+        "summary": "新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -1371,7 +1371,7 @@
         ],
         "status": "重点观察",
         "risk": "需复核官网与试用",
-        "summary": "支持试用和通用订阅，适合 Clash 用户和想先短期测试的人。",
+        "summary": "专属客户端和通用订阅并行，家宽/原生节点、AI 与流媒体场景更突出，适合先用试用流量短期验证。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -1407,7 +1407,7 @@
         ],
         "status": "备用观察",
         "risk": "晚高峰复测",
-        "summary": "适合作为备用机场或 Clash 通用订阅测试，需关注晚高峰表现。",
+        "summary": "隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案复测。",
         "performance": {
           "evidenceLevel": "B",
           "lastTestedAt": "2026-06-18",
@@ -1443,7 +1443,7 @@
         ],
         "status": "办公观察",
         "risk": "晚高峰复测",
-        "summary": "偏办公与稳定场景，适合重视 ChatGPT、网页访问和视频体验的用户。",
+        "summary": "偏多设备办公、ChatGPT 与流媒体解锁场景，适合重视节点数量、设备灵活性和晚高峰表现的人复测。",
         "salesSample": 82,
         "url": "https://yp7.net/posts/u1s1-review-2026/"
       },
@@ -1507,7 +1507,7 @@
         ],
         "status": "备用观察",
         "risk": "晚高峰复测",
-        "summary": "轻量备用定位，适合 Clash 通用订阅用户持续观察。",
+        "summary": "直连加专线与 Anycast 架构定位，三网入口优化和流媒体/AI 解锁更突出，适合 Clash 通用订阅用户持续观察。",
         "salesSample": 128,
         "url": "https://yp7.net/posts/shunyun-review-2026/"
       },
@@ -1527,7 +1527,7 @@
         ],
         "status": "稳定观察",
         "risk": "节点维护需复核",
-        "summary": "偏连接速度和稳定性观察，适合作为备选测试。",
+        "summary": "IPLC/IEPL 专线和三网入口优化定位，原生 IP 与 ChatGPT、Netflix 场景更突出，适合作为稳定备选测试。",
         "url": "https://yp7.net/posts/jilianyun-review-2026/"
       },
       {
@@ -1547,7 +1547,7 @@
         ],
         "status": "备用观察",
         "risk": "售后需复核",
-        "summary": "通用订阅备选，适合结合晚高峰稳定性做横向对比。",
+        "summary": "直连加 IPLC 混合架构、x1 倍率和通用订阅兼容更突出，适合 Clash、FlClash、Singbox 用户横向对比。",
         "url": "https://yp7.net/posts/huanyuyun-review-2026/"
       },
       {
@@ -1570,7 +1570,7 @@
         ],
         "status": "专线观察",
         "risk": "新站需复核，通用订阅临时300分钟",
-        "summary": "2026年2月开始运营的 IEPL 专线机场，支持 24 小时试用、专属客户端和临时 300 分钟通用订阅，适合流媒体、远程办公和低延迟场景先测。",
+        "summary": "2026年2月开始运营的 IEPL 专线机场，主打低延迟、高峰视频和 24 小时试用，通用订阅临时 300 分钟规则需复核。",
         "url": "https://yp7.net/posts/sujie-review-2026/"
       },
       {
@@ -1706,7 +1706,7 @@
         ],
         "status": "新手观察",
         "risk": "先试用再续费",
-        "summary": "支持免费试用和专属客户端，适合新手先体验连接流程。",
+        "summary": "BGP 专线试用型机场，适合新手先验证延迟、稳定性和专属客户端连接流程。",
         "salesSample": 445,
         "url": "https://yp7.net/posts/runway-review-2026/"
       },
@@ -1811,7 +1811,7 @@
         ],
         "status": "低价观察",
         "risk": "流量较小",
-        "summary": "价格较低但流量较小，适合轻量使用或备用。",
+        "summary": "VLESS 加 IEPL 专线和自研客户端定位，偏低价轻量包与视频场景，适合小流量用户先短期测试。",
         "url": "https://yp7.net/posts/yuzhoucloud-review-2026/"
       }
     ],
@@ -1835,7 +1835,7 @@
         ],
         "status": "重点观察",
         "risk": "需复核官网与试用",
-        "summary": "支持试用和通用订阅，适合 Clash 用户和想先短期测试的人。",
+        "summary": "专属客户端和通用订阅并行，家宽/原生节点、AI 与流媒体场景更突出，适合先用试用流量短期验证。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -1871,7 +1871,7 @@
         ],
         "status": "备用观察",
         "risk": "晚高峰复测",
-        "summary": "适合作为备用机场或 Clash 通用订阅测试，需关注晚高峰表现。",
+        "summary": "隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案复测。",
         "performance": {
           "evidenceLevel": "B",
           "lastTestedAt": "2026-06-18",
@@ -2096,7 +2096,7 @@
         ],
         "status": "办公观察",
         "risk": "晚高峰复测",
-        "summary": "偏办公与稳定场景，适合重视 ChatGPT、网页访问和视频体验的用户。",
+        "summary": "偏多设备办公、ChatGPT 与流媒体解锁场景，适合重视节点数量、设备灵活性和晚高峰表现的人复测。",
         "salesSample": 82,
         "url": "https://yp7.net/posts/u1s1-review-2026/"
       },
@@ -2225,7 +2225,7 @@
         ],
         "status": "备用观察",
         "risk": "晚高峰复测",
-        "summary": "轻量备用定位，适合 Clash 通用订阅用户持续观察。",
+        "summary": "直连加专线与 Anycast 架构定位，三网入口优化和流媒体/AI 解锁更突出，适合 Clash 通用订阅用户持续观察。",
         "salesSample": 128,
         "url": "https://yp7.net/posts/shunyun-review-2026/"
       },
@@ -2246,7 +2246,7 @@
         ],
         "status": "备用观察",
         "risk": "售后需复核",
-        "summary": "通用订阅备选，适合结合晚高峰稳定性做横向对比。",
+        "summary": "直连加 IPLC 混合架构、x1 倍率和通用订阅兼容更突出，适合 Clash、FlClash、Singbox 用户横向对比。",
         "url": "https://yp7.net/posts/huanyuyun-review-2026/"
       },
       {
@@ -2269,7 +2269,7 @@
         ],
         "status": "专线观察",
         "risk": "新站需复核，通用订阅临时300分钟",
-        "summary": "2026年2月开始运营的 IEPL 专线机场，支持 24 小时试用、专属客户端和临时 300 分钟通用订阅，适合流媒体、远程办公和低延迟场景先测。",
+        "summary": "2026年2月开始运营的 IEPL 专线机场，主打低延迟、高峰视频和 24 小时试用，通用订阅临时 300 分钟规则需复核。",
         "url": "https://yp7.net/posts/sujie-review-2026/"
       },
       {
@@ -2316,7 +2316,7 @@
         ],
         "status": "主推观察",
         "risk": "先月付测试",
-        "summary": "新手友好，专属客户端上手成本低，适合先测试日常网页、ChatGPT 和流媒体。",
+        "summary": "专属客户端上手成本低，结合 IPLC/IEPL 与智能负载定位，适合先测试日常网页、ChatGPT、TikTok 和流媒体。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-05-30",
@@ -2353,7 +2353,7 @@
         ],
         "status": "重点观察",
         "risk": "需复核官网与试用",
-        "summary": "支持试用和通用订阅，适合 Clash 用户和想先短期测试的人。",
+        "summary": "专属客户端和通用订阅并行，家宽/原生节点、AI 与流媒体场景更突出，适合先用试用流量短期验证。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -2410,7 +2410,7 @@
         ],
         "status": "办公观察",
         "risk": "晚高峰复测",
-        "summary": "偏办公与稳定场景，适合重视 ChatGPT、网页访问和视频体验的用户。",
+        "summary": "偏多设备办公、ChatGPT 与流媒体解锁场景，适合重视节点数量、设备灵活性和晚高峰表现的人复测。",
         "salesSample": 82,
         "url": "https://yp7.net/posts/u1s1-review-2026/"
       },
@@ -2454,7 +2454,7 @@
         ],
         "status": "客户端观察",
         "risk": "流量较小",
-        "summary": "专属客户端体验清晰，适合轻量办公和新手连接测试。",
+        "summary": "VLESS 与企业级 IEPL 接入定位，目前更偏自研客户端一键连接，适合轻量办公、ChatGPT 和新手连接测试。",
         "url": "https://yp7.net/posts/kuaili-review-2026/"
       }
     ],
@@ -2478,7 +2478,7 @@
         ],
         "status": "主推观察",
         "risk": "先月付测试",
-        "summary": "新手友好，专属客户端上手成本低，适合先测试日常网页、ChatGPT 和流媒体。",
+        "summary": "专属客户端上手成本低，结合 IPLC/IEPL 与智能负载定位，适合先测试日常网页、ChatGPT、TikTok 和流媒体。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-05-30",
@@ -2514,7 +2514,7 @@
         ],
         "status": "主推观察",
         "risk": "先月付测试",
-        "summary": "偏长期主力测试，适合重视稳定性和专属客户端体验的用户。",
+        "summary": "新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -2550,7 +2550,7 @@
         ],
         "status": "备用观察",
         "risk": "晚高峰复测",
-        "summary": "适合作为备用机场或 Clash 通用订阅测试，需关注晚高峰表现。",
+        "summary": "隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案复测。",
         "performance": {
           "evidenceLevel": "B",
           "lastTestedAt": "2026-06-18",
@@ -2620,7 +2620,7 @@
         ],
         "status": "流媒体观察",
         "risk": "解锁能力会变化",
-        "summary": "偏流媒体体验，适合短期测试视频平台和节点稳定性。",
+        "summary": "高性价比 IPLC 与新 SS 协议定位，不限设备、无倍率卖点更突出，适合短期测试流媒体和备用场景。",
         "salesSample": 221,
         "url": "https://yp7.net/posts/weituyun/"
       },
@@ -2748,7 +2748,7 @@
         ],
         "status": "专线观察",
         "risk": "新站需复核，通用订阅临时300分钟",
-        "summary": "2026年2月开始运营的 IEPL 专线机场，支持 24 小时试用、专属客户端和临时 300 分钟通用订阅，适合流媒体、远程办公和低延迟场景先测。",
+        "summary": "2026年2月开始运营的 IEPL 专线机场，主打低延迟、高峰视频和 24 小时试用，通用订阅临时 300 分钟规则需复核。",
         "url": "https://yp7.net/posts/sujie-review-2026/"
       },
       {
@@ -2790,7 +2790,7 @@
         ],
         "status": "视频观察",
         "risk": "晚高峰复测",
-        "summary": "偏视频体验和专属客户端，适合流媒体场景短期测试。",
+        "summary": "IEPL 专线、无倍率和不限设备定位更突出，兼顾不限时流量包，适合流媒体主力或备用场景短期测试。",
         "url": "https://yp7.net/posts/xingdaomeng-review-2026/"
       }
     ],
@@ -2814,7 +2814,7 @@
         ],
         "status": "重点观察",
         "risk": "需复核官网与试用",
-        "summary": "支持试用和通用订阅，适合 Clash 用户和想先短期测试的人。",
+        "summary": "专属客户端和通用订阅并行，家宽/原生节点、AI 与流媒体场景更突出，适合先用试用流量短期验证。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -2885,7 +2885,7 @@
         ],
         "status": "新手观察",
         "risk": "先试用再续费",
-        "summary": "支持免费试用和专属客户端，适合新手先体验连接流程。",
+        "summary": "BGP 专线试用型机场，适合新手先验证延迟、稳定性和专属客户端连接流程。",
         "salesSample": 445,
         "url": "https://yp7.net/posts/runway-review-2026/"
       },
@@ -3038,7 +3038,7 @@
         ],
         "status": "专线观察",
         "risk": "新站需复核，通用订阅临时300分钟",
-        "summary": "2026年2月开始运营的 IEPL 专线机场，支持 24 小时试用、专属客户端和临时 300 分钟通用订阅，适合流媒体、远程办公和低延迟场景先测。",
+        "summary": "2026年2月开始运营的 IEPL 专线机场，主打低延迟、高峰视频和 24 小时试用，通用订阅临时 300 分钟规则需复核。",
         "url": "https://yp7.net/posts/sujie-review-2026/"
       }
     ],
@@ -3062,7 +3062,7 @@
         ],
         "status": "重点观察",
         "risk": "需复核官网与试用",
-        "summary": "支持试用和通用订阅，适合 Clash 用户和想先短期测试的人。",
+        "summary": "专属客户端和通用订阅并行，家宽/原生节点、AI 与流媒体场景更突出，适合先用试用流量短期验证。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -3098,7 +3098,7 @@
         ],
         "status": "备用观察",
         "risk": "晚高峰复测",
-        "summary": "适合作为备用机场或 Clash 通用订阅测试，需关注晚高峰表现。",
+        "summary": "隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案复测。",
         "performance": {
           "evidenceLevel": "B",
           "lastTestedAt": "2026-06-18",
@@ -3205,7 +3205,7 @@
         ],
         "status": "新手观察",
         "risk": "先试用再续费",
-        "summary": "支持免费试用和专属客户端，适合新手先体验连接流程。",
+        "summary": "BGP 专线试用型机场，适合新手先验证延迟、稳定性和专属客户端连接流程。",
         "salesSample": 445,
         "url": "https://yp7.net/posts/runway-review-2026/"
       },
@@ -3225,7 +3225,7 @@
         ],
         "status": "流媒体观察",
         "risk": "解锁能力会变化",
-        "summary": "偏流媒体体验，适合短期测试视频平台和节点稳定性。",
+        "summary": "高性价比 IPLC 与新 SS 协议定位，不限设备、无倍率卖点更突出，适合短期测试流媒体和备用场景。",
         "salesSample": 221,
         "url": "https://yp7.net/posts/weituyun/"
       },
@@ -3414,7 +3414,7 @@
         ],
         "status": "备用观察",
         "risk": "晚高峰复测",
-        "summary": "轻量备用定位，适合 Clash 通用订阅用户持续观察。",
+        "summary": "直连加专线与 Anycast 架构定位，三网入口优化和流媒体/AI 解锁更突出，适合 Clash 通用订阅用户持续观察。",
         "salesSample": 128,
         "url": "https://yp7.net/posts/shunyun-review-2026/"
       },
@@ -3434,7 +3434,7 @@
         ],
         "status": "稳定观察",
         "risk": "节点维护需复核",
-        "summary": "偏连接速度和稳定性观察，适合作为备选测试。",
+        "summary": "IPLC/IEPL 专线和三网入口优化定位，原生 IP 与 ChatGPT、Netflix 场景更突出，适合作为稳定备选测试。",
         "url": "https://yp7.net/posts/jilianyun-review-2026/"
       },
       {
@@ -3454,7 +3454,7 @@
         ],
         "status": "备用观察",
         "risk": "售后需复核",
-        "summary": "通用订阅备选，适合结合晚高峰稳定性做横向对比。",
+        "summary": "直连加 IPLC 混合架构、x1 倍率和通用订阅兼容更突出，适合 Clash、FlClash、Singbox 用户横向对比。",
         "url": "https://yp7.net/posts/huanyuyun-review-2026/"
       },
       {
@@ -3473,7 +3473,7 @@
         ],
         "status": "新手观察",
         "risk": "价格较高需复测",
-        "summary": "专属客户端新手体验较好，适合不想折腾配置的人短期测试。",
+        "summary": "VLESS 与 IEPL 专线定位，偏稳定省心和专属客户端体验，适合不想折腾配置的新手测试流媒体与 AI 场景。",
         "salesSample": 419,
         "url": "https://yp7.net/posts/sogo-review-2026/"
       },
@@ -3493,7 +3493,7 @@
         ],
         "status": "视频观察",
         "risk": "晚高峰复测",
-        "summary": "偏视频体验和专属客户端，适合流媒体场景短期测试。",
+        "summary": "IEPL 专线、无倍率和不限设备定位更突出，兼顾不限时流量包，适合流媒体主力或备用场景短期测试。",
         "url": "https://yp7.net/posts/xingdaomeng-review-2026/"
       }
     ],
@@ -3517,7 +3517,7 @@
         ],
         "status": "主推观察",
         "risk": "先月付测试",
-        "summary": "新手友好，专属客户端上手成本低，适合先测试日常网页、ChatGPT 和流媒体。",
+        "summary": "专属客户端上手成本低，结合 IPLC/IEPL 与智能负载定位，适合先测试日常网页、ChatGPT、TikTok 和流媒体。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-05-30",
@@ -3553,7 +3553,7 @@
         ],
         "status": "主推观察",
         "risk": "先月付测试",
-        "summary": "偏长期主力测试，适合重视稳定性和专属客户端体验的用户。",
+        "summary": "新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -3590,7 +3590,7 @@
         ],
         "status": "重点观察",
         "risk": "需复核官网与试用",
-        "summary": "支持试用和通用订阅，适合 Clash 用户和想先短期测试的人。",
+        "summary": "专属客户端和通用订阅并行，家宽/原生节点、AI 与流媒体场景更突出，适合先用试用流量短期验证。",
         "performance": {
           "evidenceLevel": "A",
           "lastTestedAt": "2026-06-03",
@@ -3662,7 +3662,7 @@
         ],
         "status": "新手观察",
         "risk": "先试用再续费",
-        "summary": "支持免费试用和专属客户端，适合新手先体验连接流程。",
+        "summary": "BGP 专线试用型机场，适合新手先验证延迟、稳定性和专属客户端连接流程。",
         "salesSample": 445,
         "url": "https://yp7.net/posts/runway-review-2026/"
       },
@@ -3682,7 +3682,7 @@
         ],
         "status": "流媒体观察",
         "risk": "解锁能力会变化",
-        "summary": "偏流媒体体验，适合短期测试视频平台和节点稳定性。",
+        "summary": "高性价比 IPLC 与新 SS 协议定位，不限设备、无倍率卖点更突出，适合短期测试流媒体和备用场景。",
         "salesSample": 221,
         "url": "https://yp7.net/posts/weituyun/"
       },
@@ -3783,7 +3783,7 @@
         ],
         "status": "办公观察",
         "risk": "晚高峰复测",
-        "summary": "偏办公与稳定场景，适合重视 ChatGPT、网页访问和视频体验的用户。",
+        "summary": "偏多设备办公、ChatGPT 与流媒体解锁场景，适合重视节点数量、设备灵活性和晚高峰表现的人复测。",
         "salesSample": 82,
         "url": "https://yp7.net/posts/u1s1-review-2026/"
       },
@@ -3911,7 +3911,7 @@
         ],
         "status": "稳定观察",
         "risk": "节点维护需复核",
-        "summary": "偏连接速度和稳定性观察，适合作为备选测试。",
+        "summary": "IPLC/IEPL 专线和三网入口优化定位，原生 IP 与 ChatGPT、Netflix 场景更突出，适合作为稳定备选测试。",
         "url": "https://yp7.net/posts/jilianyun-review-2026/"
       },
       {
@@ -3930,7 +3930,7 @@
         ],
         "status": "性价比观察",
         "risk": "长期稳定需复测",
-        "summary": "偏专属客户端和性价比方向，适合轻中度用户短期测试。",
+        "summary": "IEPL/IPLC 专线加自研专属客户端定位，主打不限速、不限设备和流媒体/AI 场景，适合轻中度用户短期测试。",
         "salesSample": 191,
         "url": "https://yp7.net/posts/ermiao-vpn-review/"
       },
@@ -3950,7 +3950,7 @@
         ],
         "status": "新手观察",
         "risk": "价格较高需复测",
-        "summary": "专属客户端新手体验较好，适合不想折腾配置的人短期测试。",
+        "summary": "VLESS 与 IEPL 专线定位，偏稳定省心和专属客户端体验，适合不想折腾配置的新手测试流媒体与 AI 场景。",
         "salesSample": 419,
         "url": "https://yp7.net/posts/sogo-review-2026/"
       },
@@ -3974,7 +3974,7 @@
         ],
         "status": "专线观察",
         "risk": "新站需复核，通用订阅临时300分钟",
-        "summary": "2026年2月开始运营的 IEPL 专线机场，支持 24 小时试用、专属客户端和临时 300 分钟通用订阅，适合流媒体、远程办公和低延迟场景先测。",
+        "summary": "2026年2月开始运营的 IEPL 专线机场，主打低延迟、高峰视频和 24 小时试用，通用订阅临时 300 分钟规则需复核。",
         "url": "https://yp7.net/posts/sujie-review-2026/"
       },
       {
@@ -4016,7 +4016,7 @@
         ],
         "status": "低价观察",
         "risk": "流量较小",
-        "summary": "价格较低但流量较小，适合轻量使用或备用。",
+        "summary": "VLESS 加 IEPL 专线和自研客户端定位，偏低价轻量包与视频场景，适合小流量用户先短期测试。",
         "url": "https://yp7.net/posts/yuzhoucloud-review-2026/"
       },
       {
@@ -4036,7 +4036,7 @@
         ],
         "status": "客户端观察",
         "risk": "流量较小",
-        "summary": "专属客户端体验清晰，适合轻量办公和新手连接测试。",
+        "summary": "VLESS 与企业级 IEPL 接入定位，目前更偏自研客户端一键连接，适合轻量办公、ChatGPT 和新手连接测试。",
         "url": "https://yp7.net/posts/kuaili-review-2026/"
       },
       {
@@ -4074,7 +4074,7 @@
         ],
         "status": "视频观察",
         "risk": "晚高峰复测",
-        "summary": "偏视频体验和专属客户端，适合流媒体场景短期测试。",
+        "summary": "IEPL 专线、无倍率和不限设备定位更突出，兼顾不限时流量包，适合流媒体主力或备用场景短期测试。",
         "url": "https://yp7.net/posts/xingdaomeng-review-2026/"
       }
     ]
