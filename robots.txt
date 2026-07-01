@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yp7.net/sitemap.xml
+
