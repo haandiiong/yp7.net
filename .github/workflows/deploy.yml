@@ -46,6 +46,12 @@ jobs:
       - name: Typecheck VuePress config
         run: pnpm run docs:typecheck
 
+      - name: Check airport tables
+        run: pnpm run docs:check-tables
+
+      - name: Check airport review sections
+        run: pnpm run docs:check-review-sections
+
       - name: Create IndexNow key file
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}

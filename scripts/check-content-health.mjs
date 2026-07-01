@@ -180,10 +180,6 @@ const clientSummary = (airport) => {
   return '无专属客户端'
 }
 
-const dedicatedClientSummary = (airport) => (
-  airport.dedicatedClient ? '专属客户端' : '无专属客户端'
-)
-
 const getMarkdownTableAfterHeading = (filePath, heading) => {
   const content = readFileSync(join(root, filePath), 'utf8')
   const lines = content.split('\n')
@@ -365,6 +361,27 @@ for (const filePath of markdownFiles) {
     dateModified: getFrontmatterValue(frontmatter, 'dateModified'),
   })
 }
+
+const duplicateBy = (items, getKey) => {
+  const grouped = new Map()
+
+  items.forEach((item) => {
+    const key = getKey(item)
+    if (!key) return
+
+    grouped.set(key, [...(grouped.get(key) || []), item.projectPath])
+  })
+
+  return [...grouped.entries()].filter(([, owners]) => owners.length > 1)
+}
+
+duplicateBy(pages, (page) => page.title).forEach(([title, owners]) => {
+  errors.push(`duplicate frontmatter title "${title}" in ${owners.join(', ')}`)
+})
+
+duplicateBy(pages, (page) => page.permalink && normalizeRoute(page.permalink)).forEach(([route, owners]) => {
+  errors.push(`duplicate permalink ${route} in ${owners.join(', ')}`)
+})
 
 for (const page of pages) {
   if (!page.title) errors.push(`${page.projectPath}: missing frontmatter title`)
@@ -644,7 +661,7 @@ if (airportData.length) {
     fields: [
       ['最低价格', (airport) => airport.priceText],
       ['月流量', (airport) => airport.traffic],
-      ['客户端', dedicatedClientSummary],
+      ['客户端', clientSummary],
       ['通用订阅', (airport) => booleanText(airport.universalSubscription)],
     ],
   })
@@ -660,7 +677,7 @@ if (airportData.length) {
       ['不限时状态', (airport) => booleanText(airport.noExpiry)],
       ['最低价格', (airport) => airport.priceText],
       ['月流量', (airport) => airport.traffic],
-      ['客户端', dedicatedClientSummary],
+      ['客户端', clientSummary],
       ['通用订阅', (airport) => booleanText(airport.universalSubscription)],
     ],
   })

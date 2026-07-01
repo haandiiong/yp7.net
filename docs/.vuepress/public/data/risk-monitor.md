@@ -1,6 +1,6 @@
 # yp7.net 机场风险监测
 
-Last reviewed: 2026-06-24
+Last reviewed: 2026-07-01
 
 | 机场 | 状态 | 风险提示 | 链接 |
 | --- | --- | --- | --- |
@@ -12,7 +12,7 @@ Last reviewed: 2026-06-24
 | xxyun | 流媒体观察 | 解锁能力会变化 | [查看](https://yp7.net/posts/xxyun-review-2026/) |
 | Flybit | Clash观察 | 长期稳定需复测 | [查看](https://yp7.net/posts/flybit-review-2026/) |
 | 阿达西 | 低价观察 | 不建议直接长期付费 | [查看](https://yp7.net/posts/adaxi-review-2026/) |
-| runway | 新手观察 | 先试用再续费 | [查看](https://yp7.net/posts/runway-review-2026/) |
+| 拼好连 | 新手观察 | 先试用再续费 | [查看](https://yp7.net/posts/runway-review-2026/) |
 | 唯兔云 | 流媒体观察 | 解锁能力会变化 | [查看](https://yp7.net/posts/weituyun/) |
 | 99吧 | 试用观察 | 先测试订阅可用性 | [查看](https://yp7.net/posts/99ba-review-2026/) |
 | 迅达 | 办公观察 | ChatGPT可用性需复测 | [查看](https://yp7.net/posts/xunda-review-2026/) |
@@ -30,6 +30,7 @@ Last reviewed: 2026-06-24
 | 极连云 | 稳定观察 | 节点维护需复核 | [查看](https://yp7.net/posts/jilianyun-review-2026/) |
 | 二猫云 | 性价比观察 | 长期稳定需复测 | [查看](https://yp7.net/posts/ermiao-vpn-review/) |
 | 寰宇云 | 备用观察 | 售后需复核 | [查看](https://yp7.net/posts/huanyuyun-review-2026/) |
+| 一翻云 | 日常观察 | 晚高峰和不限时规则需复核 | [查看](https://yp7.net/posts/yifanyun-review-2026/) |
 | sogo | 新手观察 | 价格较高需复测 | [查看](https://yp7.net/posts/sogo-review-2026/) |
 | 速界 | 专线观察 | 新站需复核，通用订阅临时300分钟 | [查看](https://yp7.net/posts/sujie-review-2026/) |
 | 边缘节点 | 专线观察 | 通用订阅临时一次性，先月付复测 | [查看](https://yp7.net/posts/bianyuan-review-2026/) |

@@ -1,3 +1,6 @@
+allowBuilds:
+  esbuild: true
+  highlight.js: true
 # pnpm-workspace.yaml
 onlyBuiltDependencies:
   - '@parcel/watcher'

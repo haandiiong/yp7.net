@@ -1,15 +1,15 @@
 {
   "site": "yp7.net",
   "url": "https://yp7.net",
-  "lastReviewed": "2026-06-24",
+  "lastReviewed": "2026-07-01",
   "metrics": {
-    "count": 32,
+    "count": 33,
     "trialCount": 10,
-    "noExpiryCount": 19,
-    "dedicatedClientCount": 25,
-    "universalSubscriptionCount": 19,
+    "noExpiryCount": 20,
+    "dedicatedClientCount": 26,
+    "universalSubscriptionCount": 20,
     "cheapUnderTenCount": 5,
-    "averagePrice": 16.3,
+    "averagePrice": 16.4,
     "performanceCount": 7,
     "salesSampleCount": 18
   },
@@ -267,7 +267,7 @@
       "url": "https://yp7.net/posts/adaxi-review-2026/"
     },
     {
-      "name": "runway",
+      "name": "拼好连",
       "path": "/posts/runway-review-2026/",
       "image": "/runway.png",
       "price": 9.9,
@@ -639,6 +639,26 @@
       "risk": "售后需复核",
       "summary": "直连加 IPLC 混合架构、x1 倍率和通用订阅兼容更突出，适合 Clash、FlClash、Singbox 用户横向对比。",
       "url": "https://yp7.net/posts/huanyuyun-review-2026/"
+    },
+    {
+      "name": "一翻云",
+      "path": "/posts/yifanyun-review-2026/",
+      "image": "/yifanyun.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash",
+        "newbie"
+      ],
+      "status": "日常观察",
+      "risk": "晚高峰和不限时规则需复核",
+      "summary": "支持专属客户端和通用订阅，20元/月 150GB 主档加 100元/100GB 不限时包，适合日常使用先月付测试。",
+      "url": "https://yp7.net/posts/yifanyun-review-2026/"
     },
     {
       "name": "sogo",

@@ -1,7 +1,7 @@
 ---
-title: 2026 Clash机场榜：Clash Verge、Clash Meta 与 Shadowrocket 通用订阅机场
+title: Clash机场推荐：2026支持通用订阅的机场节点对比
 createTime: 2026/06/04
-dateModified: 2026/06/21
+dateModified: 2026/07/01
 permalink: /rankings/clash/
 tags:
   - Clash机场
@@ -9,10 +9,19 @@ tags:
   - Clash Verge
   - Shadowrocket
   - 通用订阅
-description: 2026 Clash机场榜，筛选支持通用订阅、Clash Verge、Clash Meta、Shadowrocket 和 Mihomo 的机场，适合需要灵活分流的用户。
+description: Clash机场推荐筛选页，整理2026支持通用订阅、Clash Verge、Clash Meta、Shadowrocket、Mihomo 和 sing-box 的机场节点对比。
 ---
 
-更新时间：2026年6月21日
+更新时间：2026年7月1日
+
+本页是 Clash 通用订阅筛选工具，重点看订阅导入、节点切换、规则兼容和晚高峰表现。不会配置 Clash 的新手，可以先看 [Clash Verge教程](/posts/clash-verge-guide-2026/) 或优先选择专属客户端机场。
+
+| 页面定位 | 当前口径 |
+|---|---|
+| 收录范围 | 支持通用订阅或明确适合 Clash 场景的机场 |
+| 判断重点 | Clash Verge、Clash Meta、Shadowrocket、Mihomo、sing-box 导入 |
+| 不建议 | 没测试订阅格式就直接长期购买 |
+| 下一步 | 先导入客户端，再测晚高峰常用节点 |
 
 ## 筛选口径
 
@@ -31,6 +40,7 @@ Clash机场榜优先看是否支持通用订阅、是否适合 Clash Verge、Cla
 | [边缘节点](/posts/bianyuan-review-2026/) | 25元/月 | 120GB/月 | 不支持 | 支持 | IEPL、AI工具、临时一次性订阅验证 |
 | [奈云](/posts/naiyun-review-2026/) | 28元/月 | 388GB/月 | 支持 | 支持 | 大流量和通用订阅 |
 | [坦克加速](/posts/tank-review-2026/) | 8.8元/月 | 80GB/月 | 支持 | 支持 | 低价试用 |
+| [一翻云](/posts/yifanyun-review-2026/) | 20元/月 | 150GB/月 | 不支持 | 支持 | 日常使用、通用订阅 |
 
 ## 配置建议
 
@@ -50,7 +60,7 @@ Clash机场更灵活，适合规则分流和多客户端；专属客户端更省
 
 | 场景 | 排名 | 查看 |
 |------|------|------|
-| 🏆 全部选项 | 全量榜单 | [32个机场对比](/rankings/all/) |
+| 🏆 全部选项 | 全量榜单 | [33个机场对比](/rankings/all/) |
 | ⭐ 主力方案 | 稳定机场榜 | [晚高峰体验](/rankings/stable/) |
 | 💰 预算有限 | 低价机场榜 | [便宜方案](/rankings/cheap/) |
 | ⏰ 先体验 | 免费试用机场榜 | [注册体验](/rankings/trial/) |

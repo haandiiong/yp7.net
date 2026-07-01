@@ -12,8 +12,12 @@ pnpm run docs:dev
 常用脚本：
 
 ```bash
+pnpm run docs:sync-tables
+pnpm run docs:sync-review-sections
 pnpm run docs:build
 pnpm run docs:sync-data
+pnpm run docs:check-tables
+pnpm run docs:check-review-sections
 pnpm run docs:check-data
 pnpm run docs:check-content
 pnpm run docs:typecheck
@@ -50,8 +54,12 @@ pnpm run docs:sync-data
 提交前至少运行：
 
 ```bash
+pnpm run docs:sync-tables
+pnpm run docs:sync-review-sections
 pnpm run docs:build
 pnpm run docs:sync-data
+pnpm run docs:check-tables
+pnpm run docs:check-review-sections
 pnpm run docs:check-data
 pnpm run docs:check-content
 pnpm run docs:typecheck
@@ -63,9 +71,10 @@ pnpm run docs:typecheck
 
 - frontmatter 必须包含 `title`、`description`、`createTime`、`dateModified`、`permalink`。
 - 新增机场评测页时，同步检查 `docs/.vuepress/config/airports.ts` 里的结构化字段、页面图片和销量样本。
+- 修改 `docs/.vuepress/config/airports.ts` 的价格、流量、试用、客户端、通用订阅、销量样本或风险字段后，运行 `pnpm run docs:sync-tables` 同步榜单和风险监测表格，避免多处数据漂移。
+- 修改单机场页或机场结构化数据后，运行 `pnpm run docs:sync-review-sections` 同步“测评证据区”“本文属于”和“相关阅读”，避免证据页内链断层。
 - 本地图片放在 `docs/.vuepress/public/`，正文使用 `/image-name.png` 这种绝对路径。
 - 推广链接可以正常写入正文，构建时会自动补充 `rel="sponsored nofollow noopener noreferrer"`。
-- 修改机场价格、流量、试用、客户端、通用订阅等字段时，优先同步结构化数据和相关榜单，避免多处数据漂移。
 - 优化既有机场文章前，先按目标关键词检查 Google 和 Bing 的实际排名；排名前 5 的文章只做必要的数据、价格、日期、链接修正，不调整正文结构。
 - 结构性改写优先用于排名靠后的文章，避免破坏已经稳定获得搜索流量的页面。例如“全球云机场”相关关键词如果已在前 5，不改动文章结构。
 

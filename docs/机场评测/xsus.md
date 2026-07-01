@@ -47,6 +47,29 @@ XSUS 的标签是低价大流量和多客户端兼容。它适合预算敏感、
 
 看四件事：官网是否稳定、套餐是否清晰、节点是否维护、工单是否响应。速度只是其中一项，不能代替信任判断。
 
+## XSUS测评证据区
+
+| 项目 | 当前记录 |
+|---|---|
+| 测试时间 | 待补充连续实测；结构化资料最后复核：2026年7月1日 |
+| 测试时段 | 20:00-23:00 晚高峰待连续复测 |
+| 测试地区 | 待补充常用节点地区 |
+| 测试网络 | 待补充家庭宽带 / 移动网络环境 |
+| 测试设备 | 待补充 Mac / Windows / Android / iOS |
+| 测试客户端 | 专属客户端、通用订阅 |
+| 套餐价格 | 10元/月，168GB/月 |
+| 免费试用 | 不支持 |
+| 不限时套餐 | 支持 |
+| 通用订阅 | 支持 |
+| 适合场景 | 低价、流媒体、Clash |
+| ChatGPT 表现 | 待复测，不直接承诺长期可用 |
+| YouTube 4K 表现 | 待复测，需结合晚高峰连续播放观察 |
+| 下载速度参考 | 待补充 Speedtest / 实际下载样本 |
+| 稳定性判断 | 性价比观察 |
+| 证据等级 | C级，当前以资料整理和后续复测计划为主 |
+| 风险记录 | 需复核稳定性 |
+| 证据摘要 | 低价大流量方向，适合预算敏感用户先短期测试。 |
+
 ## FAQ：XSUS机场常见问题
 
 ### XSUS机场怎么样？
@@ -69,10 +92,24 @@ XSUS 适合从速度、流媒体和日常稳定性角度短期测试。
 
 XSUS 的独立结构是“是否靠谱 + 稳定性”。用户不是只想看参数，而是想降低购买风险。
 
+## 本文属于
+
+- [机场推荐](/posts/jichang-tuijian/)
+- [全量机场榜单](/rankings/all/)
+- [低价机场榜](/rankings/cheap/)
+- [流媒体机场榜](/rankings/streaming/)
+- [Clash机场榜](/rankings/clash/)
+- [不限时套餐榜](/rankings/no-expiry/)
+- [专属客户端机场榜](/rankings/dedicated-client/)
+- [机场风险监测](/risk-monitor/)
+
 ## 相关阅读
 
-- [全球云机场怎么样？全球云好用吗？](/posts/quanqiuyun/)
-- [xxyun机场怎么样？xxyun好用吗？](/posts/xxyun-review-2026/)
-- [奈云机场怎么样？奈云好用吗？](/posts/naiyun-review-2026/)
-- [CCYZ机场怎么样？CCYZ好用吗？](/posts/ccyz-review-2026/)
-- [机场推荐：稳定好用的机场测评](/posts/jichang-tuijian/)
+- [机场推荐：2026稳定机场节点排行与晚高峰实测](/posts/jichang-tuijian/)
+- [低价机场榜](/rankings/cheap/)
+- [全量机场榜单：价格、流量、试用与风险状态](/rankings/all/)
+- [机场风险监测](/risk-monitor/)
+- [机场测评方法](/methodology/)
+- [全球云机场怎么样？](/posts/quanqiuyun/)
+- [光年梯机场怎么样？](/posts/guangnianti-review-2026/)
+- [网际快车机场怎么样？](/posts/wangji-kuaiche-review/)

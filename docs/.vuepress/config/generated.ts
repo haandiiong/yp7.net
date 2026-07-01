@@ -106,7 +106,7 @@ const walkGeneratedHtml = (dir: string, visit: (file: string) => void) => {
 }
 
 const generatedHtmlPatches = [
-  ['index.html', '2026机场推荐与科学上网教程：稳定机场榜单、Clash配置与风险监测', defaultRobots],
+  ['index.html', '2026机场推荐、机场风险监测与科学上网教程', defaultRobots],
   ['blog/index.html', 'yp7.net 全部文章索引：2026机场推荐、机场评测、科学上网教程、Clash配置与风险监测合集导航', defaultRobots],
   ['blog/tags/index.html', 'yp7.net 标签索引：机场推荐、VPN教程、Clash节点、ChatGPT机场与流媒体解锁主题分类导航', defaultRobots],
   ['blog/categories/index.html', 'yp7.net 分类索引：2026机场榜单、机场评测、工具教程、科学上网指南、风险监测与购买避坑导航', defaultRobots],
