@@ -59,6 +59,7 @@ const loadAirportConfig = (filePath) => {
     airportData: context.exports.airportData || [],
     visibleAirportData: context.exports.visibleAirportData || context.exports.airportData || [],
     airportDataLastReviewed: context.exports.airportDataLastReviewed || '2026-07-01',
+    hiddenAirportStatuses: context.exports.hiddenAirportStatuses || new Set(['已淘汰', '停止推荐', '下架']),
   }
 }
 
@@ -126,7 +127,28 @@ const getDisplayNameFromTitle = (title, fallback) => {
   return match?.[1] || fallback
 }
 
-const renderEvidenceSection = (airport, airportDataLastReviewed, displayName) => {
+const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hiddenAirportStatuses) => {
+  if (hiddenAirportStatuses.has(airport.status)) {
+    const rows = [
+      ['风险复核时间', formatDate(airportDataLastReviewed)],
+      ['当前状态', airport.status],
+      ['购买建议', '不建议新购或续费'],
+      ['历史套餐价格', `${airport.priceText}，${airport.traffic}`],
+      ['客户端与订阅', '历史资料仅供识别，当前不建议注册、导入订阅或加购套餐'],
+      ['稳定性判断', airport.status],
+      ['风险记录', airport.risk],
+      ['证据摘要', airport.summary],
+    ]
+
+    return [
+      `## ${displayName}测评证据区`,
+      '',
+      '| 项目 | 当前记录 |',
+      '|---|---|',
+      ...rows.map(([label, value]) => `| ${escapeTableCell(label)} | ${escapeTableCell(value)} |`),
+    ].join('\n')
+  }
+
   const performance = airport.performance
   const hasPerformance = Boolean(performance)
   const rows = [
@@ -159,7 +181,15 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName) =>
   ].join('\n')
 }
 
-const renderMembershipSection = (airport) => {
+const renderMembershipSection = (airport, hiddenAirportStatuses) => {
+  if (hiddenAirportStatuses.has(airport.status)) {
+    return [
+      '## 本文属于',
+      '',
+      '- [机场风险监测](/risk-monitor/)',
+    ].join('\n')
+  }
+
   const links = [
     { label: '机场推荐', link: '/posts/jichang-tuijian/' },
     { label: '全量机场榜单', link: '/rankings/all/' },
@@ -176,7 +206,20 @@ const renderMembershipSection = (airport) => {
   ].join('\n')
 }
 
-const renderRelatedSection = (airport, visibleAirportData, displayNameByPath) => {
+const renderRelatedSection = (airport, visibleAirportData, displayNameByPath, hiddenAirportStatuses) => {
+  if (hiddenAirportStatuses.has(airport.status)) {
+    return [
+      '## 相关阅读',
+      '',
+      renderMarkdownLinks([
+        { label: '机场风险监测', link: '/risk-monitor/' },
+        { label: '机场测评方法', link: '/methodology/' },
+        { label: '机场推荐：2026稳定机场节点排行与晚高峰实测', link: '/posts/jichang-tuijian/' },
+        { label: '全量机场榜单：价格、流量、试用与风险状态', link: '/rankings/all/' },
+      ]),
+    ].join('\n')
+  }
+
   const peerAirports = visibleAirportData
     .filter((item) => item.path !== airport.path)
     .filter((item) => item.scenarios.some((scenario) => airport.scenarios.includes(scenario)))
@@ -234,7 +277,7 @@ const upsertEvidenceSection = (content, evidenceSection) => {
 
 if (!existsSync(airportsPath)) fail('Missing docs/.vuepress/config/airports.ts')
 
-const { airportData, visibleAirportData, airportDataLastReviewed } = loadAirportConfig(airportsPath)
+const { airportData, visibleAirportData, airportDataLastReviewed, hiddenAirportStatuses } = loadAirportConfig(airportsPath)
 const airportReviewFiles = walkFiles(airportReviewDir).filter((filePath) => filePath.endsWith('.md'))
 const pageByRoute = new Map()
 
@@ -270,9 +313,9 @@ airportData.forEach((airport) => {
   }
 
   const displayName = displayNameByPath.get(normalizeRoute(airport.path)) || airport.name
-  const evidenceSection = renderEvidenceSection(airport, airportDataLastReviewed, displayName)
-  const membershipSection = renderMembershipSection(airport)
-  const relatedSection = renderRelatedSection(airport, visibleAirportData, displayNameByPath)
+  const evidenceSection = renderEvidenceSection(airport, airportDataLastReviewed, displayName, hiddenAirportStatuses)
+  const membershipSection = renderMembershipSection(airport, hiddenAirportStatuses)
+  const relatedSection = renderRelatedSection(airport, visibleAirportData, displayNameByPath, hiddenAirportStatuses)
   const withoutManagedBottom = stripManagedBottomSections(page.content)
   const withEvidence = upsertEvidenceSection(withoutManagedBottom, evidenceSection)
   const next = `${withEvidence.trimEnd()}\n\n${membershipSection}\n\n${relatedSection}\n`

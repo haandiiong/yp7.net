@@ -80,7 +80,7 @@ config:
     description: "风险页记录官网异常、客服失联、套餐变化、已淘汰记录和续费前检查流程。"
     features:
       - title: "近期观察"
-        details: "查看站内 33 个机场当前状态、风险提示和最近变更。"
+        details: "查看站内 32 个当前可见候选机场和高风险记录。"
         link: "/risk-monitor/"
         linkText: "近期观察"
       - title: "已淘汰"

@@ -1,17 +1,17 @@
 {
   "site": "yp7.net",
   "url": "https://yp7.net",
-  "lastReviewed": "2026-07-01",
+  "lastReviewed": "2026-07-02",
   "metrics": {
-    "count": 33,
-    "trialCount": 10,
+    "count": 32,
+    "trialCount": 9,
     "noExpiryCount": 20,
     "dedicatedClientCount": 26,
     "universalSubscriptionCount": 20,
     "cheapUnderTenCount": 5,
-    "averagePrice": 16.4,
-    "performanceCount": 7,
-    "salesSampleCount": 18
+    "averagePrice": 16,
+    "performanceCount": 10,
+    "salesSampleCount": 17
   },
   "airports": [
     {
@@ -438,41 +438,36 @@
       "priceText": "20元/月",
       "traffic": "120GB/月",
       "trial": false,
-      "noExpiry": false,
-      "dedicatedClient": true,
-      "universalSubscription": true,
-      "scenarios": [
-        "stable",
-        "chatgpt",
-        "clash"
-      ],
-      "status": "办公观察",
-      "risk": "晚高峰复测",
-      "summary": "偏多设备办公、ChatGPT 与流媒体解锁场景，适合重视节点数量、设备灵活性和晚高峰表现的人复测。",
-      "salesSample": 82,
-      "url": "https://yp7.net/posts/u1s1-review-2026/"
-    },
-    {
-      "name": "奈云",
-      "path": "/posts/naiyun-review-2026/",
-      "image": "/naiyun.png",
-      "price": 28,
-      "priceText": "28元/月",
-      "traffic": "388GB/月",
-      "trial": true,
       "noExpiry": true,
       "dedicatedClient": true,
       "universalSubscription": true,
       "scenarios": [
         "stable",
-        "trial",
-        "clash"
+        "streaming",
+        "chatgpt",
+        "clash",
+        "直播",
+        "电商"
       ],
-      "status": "老牌观察",
-      "risk": "价格较高需试用",
-      "summary": "老牌机场定位，流量较高，适合愿意先试用再判断长期稳定性的用户。",
-      "salesSample": 774,
-      "url": "https://yp7.net/posts/naiyun-review-2026/"
+      "status": "专线观察",
+      "risk": "晚高峰、直播和电商场景需复测",
+      "summary": "U1S1 主打 IPLC 专线、TikTok/ChatGPT/Netflix/Disney+/HBO 解锁、最高 2000Mbps 带宽、不限制 IP 与连接设备数量，并可面向跨境电商、TikTok 运营和海外直播提供定制化网络方案。",
+      "performance": {
+        "evidenceLevel": "A",
+        "lastTestedAt": "2026-04-04",
+        "testWindow": "12:55 CST（非晚高峰）",
+        "testRegion": "香港、美国、日本、新加坡、马来西亚、台湾、俄罗斯等多节点",
+        "testNetwork": "珠海联通 / 9Gbps / 32线程订阅测速",
+        "testDevice": "MiaoKo 自定义测试",
+        "latencyMs": 222,
+        "downloadMbpsRange": "主流节点约82-430Mbps，截图最高约780Mbps（原值 10.22-53.75MB/s，个别低速或0速节点另见截图）",
+        "chatgptResult": "待复测，宣传支持 ChatGPT 解锁",
+        "youtube4kResult": "待复测，宣传支持 Netflix / Disney+ / HBO 等流媒体",
+        "stability": "专线观察",
+        "evidenceSummary": "已补充 2026-04-04 MiaoKo 订阅测速截图，概要 61/61；该截图为非晚高峰单次测试，仍需补充连续晚高峰、直播和跨境电商业务场景复测。"
+      },
+      "salesSample": 82,
+      "url": "https://yp7.net/posts/u1s1-review-2026/"
     },
     {
       "name": "隐云",
@@ -569,15 +564,28 @@
       "traffic": "150GB/月",
       "trial": false,
       "noExpiry": true,
-      "dedicatedClient": false,
+      "dedicatedClient": true,
       "universalSubscription": true,
       "scenarios": [
-        "stable",
-        "clash"
+        "streaming"
       ],
-      "status": "备用观察",
-      "risk": "晚高峰复测",
-      "summary": "直连加专线与 Anycast 架构定位，三网入口优化和流媒体/AI 解锁更突出，适合 Clash 通用订阅用户持续观察。",
+      "status": "流媒体观察",
+      "risk": "晚高峰和流媒体解锁需复测",
+      "summary": "瞬云主打高速连接、稳定在线、原生出口、自有 ASN 广播、流媒体解锁和独享带宽体验，支持 2000G / 5000G 不限时流量包。",
+      "performance": {
+        "evidenceLevel": "A",
+        "lastTestedAt": "2026-05-09",
+        "testWindow": "16:58 CST（非晚高峰）",
+        "testRegion": "香港、台湾、美国、日本、新加坡等多节点",
+        "testNetwork": "广东佛山联通 / 2Gbps / 8线程订阅测速",
+        "testDevice": "MiaoKo 自定义测试",
+        "latencyMs": 69,
+        "downloadMbpsRange": "约144-2096Mbps（截图原值 17.96-262.06MB/s，低速节点另见截图）",
+        "chatgptResult": "待复测",
+        "youtube4kResult": "待复测",
+        "stability": "流媒体观察",
+        "evidenceSummary": "已补充 2026-05-09 MiaoKo 订阅测速截图；该截图为非晚高峰单次测试，仍需补充连续晚高峰和流媒体平台实测。"
+      },
       "salesSample": 128,
       "url": "https://yp7.net/posts/shunyun-review-2026/"
     },
@@ -610,13 +618,31 @@
       "trial": false,
       "noExpiry": false,
       "dedicatedClient": true,
-      "universalSubscription": false,
+      "universalSubscription": true,
       "scenarios": [
+        "stable",
+        "clash",
+        "chatgpt",
+        "streaming",
         "newbie"
       ],
-      "status": "性价比观察",
+      "status": "专线观察",
       "risk": "长期稳定需复测",
-      "summary": "IEPL/IPLC 专线加自研专属客户端定位，主打不限速、不限设备和流媒体/AI 场景，适合轻中度用户短期测试。",
+      "summary": "二猫云主打 IEPL 专线、独家定制客户端和通用订阅，不限设备，多端连接，覆盖网页、流媒体、ChatGPT 和跨境办公等长期使用场景。",
+      "performance": {
+        "evidenceLevel": "A",
+        "lastTestedAt": "2026-06-30",
+        "testWindow": "14:58 CST（非晚高峰）",
+        "testRegion": "香港、台湾、日本、新加坡、美国多节点",
+        "testNetwork": "珠海联通 / 9Gbps / 32线程订阅测速",
+        "testDevice": "MiaoKo 自定义测试",
+        "latencyMs": 209,
+        "downloadMbpsRange": "约273-2130Mbps（截图原值 34.10-266.19MB/s）",
+        "chatgptResult": "待复测",
+        "youtube4kResult": "待复测",
+        "stability": "专线观察",
+        "evidenceSummary": "已补充 2026-06-30 MiaoKo 订阅测速截图；该截图为非晚高峰单次测试，仍需补充连续晚高峰、ChatGPT 和流媒体复测。"
+      },
       "salesSample": 191,
       "url": "https://yp7.net/posts/ermiao-vpn-review/"
     },
