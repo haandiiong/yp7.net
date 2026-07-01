@@ -137,7 +137,7 @@ config:
         linkText: "查看方法"
       - title: "数据来源"
         details: "机场数据同步到全量榜单、结构化数据、JSON、Markdown 和风险监测页。"
-        link: "/data/airports/"
+        link: "/data/airports"
         linkText: "查看数据"
       - title: "商业链接说明"
         details: "带推广参数的入口会标记 sponsored / nofollow，不作为自然推荐信号。"

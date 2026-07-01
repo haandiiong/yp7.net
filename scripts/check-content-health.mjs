@@ -321,6 +321,11 @@ const generatedRoutes = new Set([
   '/data/rankings/',
   '/data/risk-monitor/',
 ])
+const generatedCleanHtmlResourcePaths = new Set([
+  '/data/airports',
+  '/data/rankings',
+  '/data/risk-monitor',
+])
 const requiredDataSitemapPaths = [
   '/data/airports',
   '/data/rankings',
@@ -383,6 +388,30 @@ duplicateBy(pages, (page) => page.permalink && normalizeRoute(page.permalink)).f
   errors.push(`duplicate permalink ${route} in ${owners.join(', ')}`)
 })
 
+const validateLocalHref = (projectPath, href) => {
+  if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return
+  if (/^https?:\/\//.test(href)) return
+  if (!href.startsWith('/')) return
+
+  const path = href.split(/[?#]/)[0]
+  const cleanGeneratedPath = path.endsWith('/') ? path.slice(0, -1) : path
+  if (path.endsWith('/') && generatedCleanHtmlResourcePaths.has(cleanGeneratedPath)) {
+    errors.push(`${projectPath}: generated data page link ${href} should omit trailing slash`)
+  }
+
+  if (extname(path)) {
+    if (!existsSync(join(publicDir, path))) {
+      errors.push(`${projectPath}: missing public asset ${href}`)
+    }
+    return
+  }
+
+  const route = normalizeRoute(path)
+  if (!routeMap.has(route) && !generatedRoutes.has(route)) {
+    errors.push(`${projectPath}: missing internal route ${href}`)
+  }
+}
+
 for (const page of pages) {
   if (!page.title) errors.push(`${page.projectPath}: missing frontmatter title`)
   if (!page.description) errors.push(`${page.projectPath}: missing frontmatter description`)
@@ -406,23 +435,12 @@ for (const page of pages) {
   let match
 
   while ((match = linkPattern.exec(page.content))) {
-    const href = match[1] || match[2]
-    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) continue
-    if (/^https?:\/\//.test(href)) continue
-    if (!href.startsWith('/')) continue
+    validateLocalHref(page.projectPath, match[1] || match[2])
+  }
 
-    const path = href.split(/[?#]/)[0]
-    if (extname(path)) {
-      if (!existsSync(join(publicDir, path))) {
-        errors.push(`${page.projectPath}: missing public asset ${href}`)
-      }
-      continue
-    }
-
-    const route = normalizeRoute(path)
-    if (!routeMap.has(route) && !generatedRoutes.has(route)) {
-      errors.push(`${page.projectPath}: missing internal route ${href}`)
-    }
+  const frontmatterLinkPattern = /^\s+link:\s*["']?([^"'\s]+)["']?/gm
+  while ((match = frontmatterLinkPattern.exec(page.frontmatter))) {
+    validateLocalHref(page.projectPath, match[1])
   }
 }
 
