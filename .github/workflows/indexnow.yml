@@ -20,17 +20,53 @@ concurrency:
 jobs:
   indexnow:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
 
     steps:
-      - name: Wait for deployed sitemap propagation
-        run: sleep 30
-
-      - name: Get URLs from sitemap
+      - name: Wait for matching deployment and get sitemap URLs
+        env:
+          EXPECTED_SHA: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || '' }}
         run: |
-          curl --fail --silent --show-error --location https://yp7.net/sitemap.xml \
-            | grep -oP '(?<=<loc>)[^<]+' > urls.txt
-          test -s urls.txt
+          : > urls.txt
+          for attempt in $(seq 1 18); do
+            cache_bust="${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${attempt}"
+            deployed_sha=""
+
+            if [ -n "$EXPECTED_SHA" ]; then
+              deployed_sha=$(curl --fail --silent --show-error --location \
+                --connect-timeout 5 --max-time 20 \
+                -H 'Cache-Control: no-cache' \
+                "https://yp7.net/deploy-sha.txt?cb=${cache_bust}" || true)
+            fi
+
+            if [ -z "$EXPECTED_SHA" ] || [ "$deployed_sha" = "$EXPECTED_SHA" ]; then
+              if curl --fail --silent --show-error --location \
+                --connect-timeout 5 --max-time 20 \
+                -H 'Cache-Control: no-cache' \
+                "https://yp7.net/sitemap.xml?cb=${cache_bust}" \
+                --output sitemap.xml; then
+                if ! grep -oE '<loc>[^<]+</loc>' sitemap.xml \
+                  | sed -E 's#</?loc>##g' > urls.txt; then
+                  : > urls.txt
+                fi
+
+                if test -s urls.txt \
+                  && awk '$0 !~ /^https:\/\/yp7\.net\// { exit 1 }' urls.txt; then
+                  sort -u urls.txt -o urls.txt
+                  echo "Verified deployment ${deployed_sha:-manual-dispatch}; found $(wc -l < urls.txt) URLs."
+                  break
+                fi
+              fi
+            fi
+
+            if [ "$attempt" -eq 18 ]; then
+              echo "The deployed version or sitemap did not match the expected deployment after 18 attempts."
+              exit 1
+            fi
+
+            sleep 10
+          done
 
       - name: Submit to IndexNow
         env:
@@ -49,6 +85,6 @@ jobs:
             --arg keyLocation "https://yp7.net/${INDEXNOW_KEY}.txt" \
             --argjson urlList "$urls" \
             '{ host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList }' \
-            | curl --fail --silent --show-error --location -X POST "https://api.indexnow.org/indexnow" \
+            | curl --fail --silent --show-error --connect-timeout 5 --max-time 30 -X POST "https://api.indexnow.org/indexnow" \
               -H "Content-Type: application/json" \
               --data-binary @-

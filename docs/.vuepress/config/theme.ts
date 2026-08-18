@@ -9,18 +9,13 @@ export const theme = plumeTheme({
     { text: '首页', link: '/', icon: 'material-symbols:home-rounded' },
     { text: '机场推荐', link: '/posts/jichang-tuijian/', icon: 'material-symbols:flight-takeoff' },
     {
-      text: '机场榜单',
+      text: '场景筛选',
       icon: 'material-symbols:leaderboard',
       items: [
-        { text: '全量榜单', link: '/rankings/all/', icon: 'material-symbols:format-list-numbered' },
-        { text: '稳定机场', link: '/rankings/stable/', icon: 'material-symbols:verified-rounded' },
         { text: '低价机场', link: '/rankings/cheap/', icon: 'material-symbols:sell-outline' },
-        { text: '免费试用', link: '/rankings/trial/', icon: 'material-symbols:redeem-outline' },
         { text: '不限时套餐', link: '/rankings/no-expiry/', icon: 'material-symbols:all-inclusive' },
         { text: 'Clash机场', link: '/rankings/clash/', icon: 'material-symbols:hive-outline' },
         { text: 'ChatGPT机场', link: '/rankings/chatgpt/', icon: 'material-symbols:smart-toy-outline' },
-        { text: '流媒体机场', link: '/rankings/streaming/', icon: 'material-symbols:live-tv-outline' },
-        { text: '机场优惠码', link: '/rankings/coupons/', icon: 'material-symbols:confirmation-number-outline' },
       ],
     },
     {

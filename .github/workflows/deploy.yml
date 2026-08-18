@@ -19,19 +19,21 @@ concurrency:
 jobs:
   docs:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           # "Last updated time" and other git log-related information require fetching all commit records.
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           # 选择要使用的 node 版本
           node-version: 22
@@ -75,10 +77,13 @@ jobs:
       - name: Check content health
         run: pnpm run docs:check-content
 
+      - name: Write deployment version marker
+        run: printf '%s' "$GITHUB_SHA" > docs/.vuepress/dist/deploy-sha.txt
+
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4
         with:
           # 部署到 gh-pages 分支
           target_branch: gh-pages
