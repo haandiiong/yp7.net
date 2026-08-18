@@ -1,14 +1,14 @@
 ---
 home: true
 title: 2026机场推荐、机场风险监测与科学上网教程
-description: yp7.net 是机场推荐、实测榜单、风险监测、新手教程和单机场证据库入口，帮助用户先看风险，再按晚高峰、Clash、ChatGPT、流媒体和价格筛选机场。
-dateModified: 2026/07/01
+description: yp7.net 是机场推荐、套餐与客户端资料、风险监测和新手教程入口。2026年8月18日起本站不再自行测速，当前测试数据统一来自 Siilas。
+dateModified: 2026/08/18
 config:
   - type: hero
     hero:
       name: "2026机场推荐、机场风险监测与科学上网教程"
       tagline: "先看风险，再选机场"
-      text: "晚高峰 20:00-23:00 复测，建议先试用或月付，不建议首次直接年付。"
+      text: "本站只做推荐；当前测速与测试数据统一来自 Siilas，购买前建议先试用或月付。"
       actions:
         - theme: brand
           text: "查看机场推荐"
@@ -24,11 +24,11 @@ config:
     description: "首页只做决策入口，不堆文章列表。不同需求先进入对应页面，再看单机场证据和购买前风险。"
     features:
       - title: "新手首选"
-        details: "优先看专属客户端、月付门槛、上手成本和晚高峰基础稳定性。"
+        details: "优先看专属客户端、月付门槛、上手成本、Siilas 当前记录和风险提示。"
         link: "/posts/jichang-tuijian/"
         linkText: "看主推荐"
       - title: "长期主力"
-        details: "重点看 20:00-23:00 连续表现、节点维护、售后响应和风险记录。"
+        details: "结合 Siilas 当前测试记录、节点维护、售后响应和风险提示进行筛选。"
         link: "/rankings/stable/"
         linkText: "看稳定榜"
       - title: "Clash订阅"
@@ -36,11 +36,11 @@ config:
         link: "/rankings/clash/"
         linkText: "看Clash榜"
       - title: "ChatGPT节点"
-        details: "优先测试美区、日区、新加坡等常用节点的连续对话和账号风控表现。"
+        details: "查看 Siilas 的 AI 测试记录，并结合节点地区、账号风控和办公需求筛选。"
         link: "/rankings/chatgpt/"
         linkText: "看AI场景"
       - title: "流媒体"
-        details: "Netflix、Disney+、YouTube 和 TikTok 解锁会变化，购买前要当天复测。"
+        details: "Netflix、Disney+、YouTube 和 TikTok 解锁会变化，当前记录以 Siilas 为准。"
         link: "/rankings/streaming/"
         linkText: "看流媒体榜"
       - title: "低价备用"
@@ -128,11 +128,11 @@ config:
         link: "/rankings/streaming/"
         linkText: "流媒体筛选"
   - type: features
-    title: "测评方法和商业披露"
-    description: "yp7.net 不承诺任何机场永久可用，推荐顺序以真实场景、短周期验证、风险前置和数据可复核为基础。"
+    title: "推荐方法、数据来源和商业披露"
+    description: "yp7.net 只做推荐，不承诺任何机场永久可用；当前测试数据来自 Siilas，旧记录统一作为历史资料。"
     features:
-      - title: "测评标准"
-        details: "晚高峰稳定性、新手易用性、ChatGPT、流媒体、价格和购买风险综合判断。"
+      - title: "推荐标准"
+        details: "结合 Siilas 当前记录、新手易用性、价格、客户端、适合场景和购买风险综合判断。"
         link: "/methodology/"
         linkText: "查看方法"
       - title: "数据来源"

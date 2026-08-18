@@ -1,6 +1,15 @@
 # yp7.net
 
-yp7.net 是一个基于 VuePress 2 和 vuepress-theme-plume 的中文内容站，主要维护机场推荐、机场评测、科学上网教程、工具教程、风险监测和结构化机场数据。
+yp7.net 是一个基于 VuePress 2 和 vuepress-theme-plume 的中文机场推荐站，主要维护机场推荐、套餐与客户端资料、科学上网教程、风险监测和结构化推荐数据。
+
+## 测试数据政策
+
+自 2026-08-18 起，yp7.net 不再自行开展或发布新的测速、实测、流媒体测试或 AI 可用性测试：
+
+- 当前测试数据统一来自 [Siilas 测速中心](https://siilas.com/test/)。
+- 2026-08-18 前的 yp7.net 测速截图和测试记录保留为历史资料，不代表当前表现。
+- yp7.net 从此只负责推荐、套餐与客户端信息整理、风险提示、商业披露和教程。
+- 用户测速教程可以保留，但不得把用户自行验证描述为 yp7.net 的项目测试。
 
 ## 本地开发
 
@@ -26,7 +35,7 @@ pnpm run docs:preview
 
 ## 内容结构
 
-- `docs/机场评测/`：单个机场测评文章。
+- `docs/机场评测/`：单个机场推荐资料与历史测试记录。
 - `docs/机场榜单/`：按稳定、低价、试用、不限时、客户端、Clash、ChatGPT、流媒体等场景整理的榜单页。
 - `docs/机场推荐/`：机场推荐主文和机场大全。
 - `docs/风险监测/`：机场风险监测页。
@@ -41,7 +50,6 @@ pnpm run docs:preview
 - `/data/rankings.json`
 - `/data/risk-monitor.json`
 - 对应的 Markdown 和 HTML 数据页
-- `/llms.txt`
 
 构建后运行：
 
@@ -49,7 +57,7 @@ pnpm run docs:preview
 pnpm run docs:sync-data
 ```
 
-这会把 `docs/.vuepress/dist/data` 和 `docs/.vuepress/dist/llms.txt` 同步回 `docs/.vuepress/public`，用于提交到仓库。
+这会把 `docs/.vuepress/dist/data` 同步回 `docs/.vuepress/public`，用于提交到仓库。
 
 提交前至少运行：
 
@@ -72,7 +80,7 @@ pnpm run docs:typecheck
 - frontmatter 必须包含 `title`、`description`、`createTime`、`dateModified`、`permalink`。
 - 新增机场评测页时，同步检查 `docs/.vuepress/config/airports.ts` 里的结构化字段、页面图片和销量样本。
 - 修改 `docs/.vuepress/config/airports.ts` 的价格、流量、试用、客户端、通用订阅、销量样本或风险字段后，运行 `pnpm run docs:sync-tables` 同步榜单和风险监测表格，避免多处数据漂移。
-- 修改单机场页或机场结构化数据后，运行 `pnpm run docs:sync-review-sections` 同步“测评证据区”“本文属于”和“相关阅读”，避免证据页内链断层。
+- 修改单机场页或机场结构化数据后，运行 `pnpm run docs:sync-review-sections` 同步“推荐依据与历史测试记录”“本文属于”和“相关阅读”，避免页面内链断层。
 - 本地图片放在 `docs/.vuepress/public/`，正文使用 `/image-name.png` 这种绝对路径。
 - 推广链接可以正常写入正文，构建时会自动补充 `rel="sponsored nofollow noopener noreferrer"`。
 - 优化既有机场文章前，先按目标关键词检查 Google 和 Bing 的实际排名；排名前 5 的文章只做必要的数据、价格、日期、链接修正，不调整正文结构。

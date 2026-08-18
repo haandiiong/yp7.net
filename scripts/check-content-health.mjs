@@ -10,6 +10,9 @@ const distDir = join(root, 'docs/.vuepress/dist')
 const hostname = 'https://yp7.net'
 
 const errors = []
+if (existsSync(join(publicDir, 'llms.txt'))) {
+  errors.push('docs/.vuepress/public/llms.txt: retired file must not be published')
+}
 const toProjectPath = (filePath) => relative(root, filePath).replace(/\\/g, '/')
 
 const walkFiles = (dir, shouldSkip = () => false) => {
@@ -78,6 +81,33 @@ const getJsonLdSchemas = (html, projectPath) => {
 const validateJsonLd = (html, projectPath) => {
   getJsonLdSchemas(html, projectPath).forEach((schema) => {
     collectSchemaObjects(schema, (item) => {
+      if (hasSchemaType(item, 'Service')) {
+        const properties = Array.isArray(item.additionalProperty) ? item.additionalProperty : []
+        const propertyNames = new Set(properties.map((property) => property?.name).filter(Boolean))
+        const retiredPerformanceProperties = [
+          '证据等级',
+          '最后测试时间',
+          '测试时段',
+          '测试地区',
+          '测试网络',
+          '测试设备',
+          '晚高峰延迟',
+          '晚高峰速度区间',
+          'ChatGPT表现',
+          'YouTube 4K表现',
+          '稳定性判断',
+        ]
+
+        retiredPerformanceProperties.forEach((name) => {
+          if (propertyNames.has(name)) {
+            errors.push(`${projectPath}: Service schema restored unsupported performance property “${name}”`)
+          }
+        })
+        if (!propertyNames.has('测试数据政策')) {
+          errors.push(`${projectPath}: Service schema missing current testing data policy`)
+        }
+      }
+
       if (!hasSchemaType(item, 'ItemList') || !Array.isArray(item.itemListElement)) return
 
       if (
@@ -110,6 +140,8 @@ const validateExternalAnchorRel = (html, projectPath) => {
 }
 
 const redirectSourcePaths = new Set()
+const redirectTargetPaths = new Set()
+const redirectRules = new Map()
 const redirectsPath = join(publicDir, '_redirects')
 if (existsSync(redirectsPath)) {
   const redirectLines = readFileSync(redirectsPath, 'utf8').split('\n')
@@ -118,17 +150,90 @@ if (existsSync(redirectsPath)) {
     const trimmedLine = line.trim()
     if (!trimmedLine || trimmedLine.startsWith('#')) return
 
-    const [source, target] = trimmedLine.split(/\s+/)
-    if (!source || !target) return
-    if (source.startsWith('/') && !source.includes('*')) {
-      redirectSourcePaths.add(source)
-      redirectSourcePaths.add(normalizeRoute(source))
+    const [source, target, status, ...extra] = trimmedLine.split(/\s+/)
+    if (!source || !target || !status || extra.length) {
+      errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: expected source, target and status`)
+      return
     }
+
+    if (!source.startsWith('/') || !target.startsWith('/') || source.includes('*') || target.includes('*')) {
+      errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: IndexNow redirect validation requires local absolute paths without wildcards`)
+      return
+    }
+
+    if (!['301', '308'].includes(status)) {
+      errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: redirect must use permanent status 301 or 308`)
+    }
+
+    const normalizedSource = normalizeRoute(source)
+    const normalizedTarget = normalizeRoute(target)
+    if (normalizedSource === normalizedTarget) {
+      errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: redirect source and target are identical`)
+    }
+    if (redirectSourcePaths.has(normalizedSource)) {
+      errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: duplicate redirect source ${source}`)
+    }
+    redirectSourcePaths.add(source)
+    redirectSourcePaths.add(normalizedSource)
+    redirectTargetPaths.add(target)
+    redirectRules.set(source, { target, status })
 
     if (!extname(source) && target.endsWith('.html')) {
       errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: extensionless redirect to .html can loop on clean-url hosts`)
     }
   })
+}
+
+const requiredCanonicalRedirects = new Map([
+  ['/data/airports.html', { target: '/data/airports', status: '308' }],
+  ['/data/rankings.html', { target: '/data/rankings', status: '308' }],
+  ['/data/risk-monitor.html', { target: '/data/risk-monitor', status: '308' }],
+])
+
+requiredCanonicalRedirects.forEach((expected, source) => {
+  const actual = redirectRules.get(source)
+  if (!actual || actual.target !== expected.target || actual.status !== expected.status) {
+    errors.push(`${toProjectPath(redirectsPath)}: ${source} must redirect to ${expected.target} with ${expected.status}`)
+  }
+})
+
+const deletedUrlPaths = new Set()
+const deletedUrlsPath = join(root, '.github/indexnow-deleted-urls.txt')
+if (existsSync(deletedUrlsPath)) {
+  const deletedUrlLines = readFileSync(deletedUrlsPath, 'utf8').split('\n')
+
+  deletedUrlLines.forEach((line, index) => {
+    const deletedUrl = line.trim()
+    if (!deletedUrl || deletedUrl.startsWith('#')) return
+
+    let url
+    try {
+      url = new URL(deletedUrl)
+    } catch {
+      errors.push(`${toProjectPath(deletedUrlsPath)}:${index + 1}: invalid URL ${deletedUrl}`)
+      return
+    }
+
+    if (url.origin !== hostname || url.search || url.hash) {
+      errors.push(`${toProjectPath(deletedUrlsPath)}:${index + 1}: deleted URL must be a canonical ${hostname} URL without query or hash`)
+      return
+    }
+
+    const pathname = normalizeRoute(url.pathname)
+    if (deletedUrlPaths.has(pathname)) {
+      errors.push(`${toProjectPath(deletedUrlsPath)}:${index + 1}: duplicate deleted URL ${deletedUrl}`)
+    }
+    if (redirectSourcePaths.has(pathname)) {
+      errors.push(`${toProjectPath(deletedUrlsPath)}:${index + 1}: deleted URL is also a redirect source ${deletedUrl}`)
+    }
+    deletedUrlPaths.add(pathname)
+  })
+} else {
+  errors.push(`${toProjectPath(deletedUrlsPath)}: missing deleted URL list for IndexNow`)
+}
+
+if (!deletedUrlPaths.has(normalizeRoute('/llms.txt'))) {
+  errors.push(`${toProjectPath(deletedUrlsPath)}: missing retired URL ${hostname}/llms.txt`)
 }
 
 const getSitemapHtmlPath = (pathname) => {
@@ -326,15 +431,22 @@ const generatedCleanHtmlResourcePaths = new Set([
   '/data/rankings',
   '/data/risk-monitor',
 ])
-const requiredDataSitemapPaths = [
+const requiredSeoSitemapPaths = [
+  '/rankings/sales/',
   '/data/airports',
   '/data/rankings',
   '/data/risk-monitor',
 ]
-const crawlerReadableDataResourcePaths = [
+const sitemapDataResourcePaths = [
   '/data/airports.json',
   '/data/rankings.json',
   '/data/risk-monitor.json',
+]
+const crawlerReadableDataResourcePaths = [
+  ...sitemapDataResourcePaths,
+  '/data/airports.md',
+  '/data/rankings.md',
+  '/data/risk-monitor.md',
 ]
 const minTitleLengthByGeneratedHtml = new Map([
   ['docs/.vuepress/dist/blog/index.html', 50],
@@ -366,6 +478,28 @@ for (const filePath of markdownFiles) {
     dateModified: getFrontmatterValue(frontmatter, 'dateModified'),
   })
 }
+
+const assertNaturalSearchTerms = (page, terms) => {
+  if (!page) return
+
+  terms.forEach((term) => {
+    if (!page.content.includes(term)) {
+      errors.push(`${page.projectPath}: missing natural search expression “${term}”`)
+    }
+  })
+}
+
+const commonRecommendationTerms = ['机场推荐', '价格', '节点', '客户端']
+assertNaturalSearchTerms(
+  pages.find((page) => page.projectPath === 'docs/index.md'),
+  commonRecommendationTerms,
+)
+pages
+  .filter((page) => page.projectPath.startsWith('docs/机场榜单/'))
+  .forEach((page) => assertNaturalSearchTerms(page, commonRecommendationTerms))
+pages
+  .filter((page) => page.projectPath.startsWith('docs/机场评测/'))
+  .forEach((page) => assertNaturalSearchTerms(page, [...commonRecommendationTerms, '怎么样']))
 
 const duplicateBy = (items, getKey) => {
   const grouped = new Map()
@@ -720,6 +854,10 @@ if (airportData.length) {
 if (!existsSync(distDir)) {
   errors.push('docs/.vuepress/dist: missing build output. Run pnpm run docs:build first.')
 } else {
+  if (existsSync(join(distDir, 'llms.txt'))) {
+    errors.push('docs/.vuepress/dist/llms.txt: retired file must not be generated')
+  }
+
   const htmlFiles = walkFiles(distDir).filter((filePath) => filePath.endsWith('.html'))
   const sitemapPath = join(distDir, 'sitemap.xml')
 
@@ -741,6 +879,15 @@ if (!existsSync(distDir)) {
 
     const minTitleLength = minTitleLengthByGeneratedHtml.get(projectPath)
     const title = html.match(/<title>(.*?)<\/title>/s)?.[1] || ''
+    if (title.includes('全部文章')) {
+      errors.push(`${projectPath}: title must not contain “全部文章”`)
+    }
+    if (html.includes('全部文章')) {
+      errors.push(`${projectPath}: rendered HTML must not contain “全部文章”`)
+    }
+    if (title.includes('\uFFFD')) {
+      errors.push(`${projectPath}: title contains a Unicode replacement character`)
+    }
     if (minTitleLength && title.length < minTitleLength) {
       errors.push(`${projectPath}: title is ${title.length} characters, expected at least ${minTitleLength}`)
     }
@@ -772,6 +919,9 @@ if (!existsSync(distDir)) {
       if (redirectSourcePaths.has(pathname) || redirectSourcePaths.has(normalizeRoute(pathname))) {
         errors.push(`docs/.vuepress/dist/sitemap.xml: ${loc} points to a redirect source`)
       }
+      if (deletedUrlPaths.has(normalizeRoute(pathname))) {
+        errors.push(`docs/.vuepress/dist/sitemap.xml: ${loc} points to a deleted URL`)
+      }
 
       const htmlPath = getSitemapHtmlPath(pathname)
       if (!existsSync(htmlPath)) {
@@ -787,13 +937,19 @@ if (!existsSync(distDir)) {
 
     const requiredSitemapPaths = [
       ...visibleAirportData.map((airport) => normalizeRoute(airport.path)),
-      ...requiredDataSitemapPaths,
-      ...crawlerReadableDataResourcePaths,
+      ...requiredSeoSitemapPaths,
+      ...sitemapDataResourcePaths,
     ]
 
     requiredSitemapPaths.forEach((path) => {
       if (!sitemapPathnames.has(path)) {
         errors.push(`docs/.vuepress/dist/sitemap.xml: missing important URL ${hostname}${path}`)
+      }
+    })
+
+    redirectTargetPaths.forEach((path) => {
+      if (!sitemapPathnames.has(path)) {
+        errors.push(`docs/.vuepress/dist/sitemap.xml: missing redirect target ${hostname}${path}`)
       }
     })
 

@@ -1,7 +1,14 @@
 {
   "site": "yp7.net",
   "url": "https://yp7.net",
-  "lastReviewed": "2026-07-02",
+  "lastReviewed": "2026-08-18",
+  "testingPolicy": {
+    "effectiveDate": "2026-08-18",
+    "yp7ConductsCurrentTests": false,
+    "currentSource": "Siilas",
+    "currentSourceUrl": "https://siilas.com/test/",
+    "historicalRecordsNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+  },
   "metrics": {
     "count": 32,
     "trialCount": 9,
@@ -10,8 +17,8 @@
     "universalSubscriptionCount": 20,
     "cheapUnderTenCount": 5,
     "averagePrice": 16,
-    "performanceCount": 10,
-    "salesSampleCount": 17
+    "salesSampleCount": 17,
+    "historicalPerformanceRecordCount": 10
   },
   "airports": [
     {
@@ -46,7 +53,9 @@
         "chatgptResult": "稳定",
         "youtube4kResult": "流畅",
         "stability": "中上",
-        "evidenceSummary": "有专属客户端延迟、YouTube 4K 和 Speedtest 截图，适合优先复核。"
+        "evidenceSummary": "有专属客户端延迟、YouTube 4K 和 Speedtest 截图，适合优先复核。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "salesSample": 1048,
       "url": "https://yp7.net/posts/quanqiuyun/"
@@ -82,7 +91,9 @@
         "chatgptResult": "稳定",
         "youtube4kResult": "秒开",
         "stability": "极强",
-        "evidenceSummary": "有多张专属客户端延迟截图和 Speedtest 截图，适合长期主力优先复测。"
+        "evidenceSummary": "有多张专属客户端延迟截图和 Speedtest 截图，适合长期主力优先复测。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "salesSample": 832,
       "url": "https://yp7.net/posts/guangnianti-review-2026/"
@@ -119,7 +130,9 @@
         "chatgptResult": "很稳定",
         "youtube4kResult": "流畅",
         "stability": "很强",
-        "evidenceSummary": "有专属客户端延迟和 Speedtest 截图，办公与 ChatGPT 场景证据较完整。"
+        "evidenceSummary": "有专属客户端延迟和 Speedtest 截图，办公与 ChatGPT 场景证据较完整。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "salesSample": 849,
       "url": "https://yp7.net/posts/wangji-kuaiche-review/"
@@ -155,7 +168,9 @@
         "chatgptResult": "稳定",
         "youtube4kResult": "流畅",
         "stability": "中等",
-        "evidenceSummary": "已有榜单和日常观察结论，仍需补充截图、失败样本和连续复测记录。"
+        "evidenceSummary": "已有榜单和日常观察结论，仍需补充截图、失败样本和连续复测记录。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "salesSample": 346,
       "url": "https://yp7.net/posts/guangsuyun/"
@@ -191,7 +206,9 @@
         "chatgptResult": "稳定",
         "youtube4kResult": "优秀",
         "stability": "中上",
-        "evidenceSummary": "已有流媒体场景观察，需补充平台解锁变化、节点地区和失败记录。"
+        "evidenceSummary": "已有流媒体场景观察，需补充平台解锁变化、节点地区和失败记录。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "salesSample": 942,
       "url": "https://yp7.net/posts/xxyun-review-2026/"
@@ -226,7 +243,9 @@
         "chatgptResult": "稳定",
         "youtube4kResult": "良好",
         "stability": "中等",
-        "evidenceSummary": "已有 Clash 订阅兼容和节点切换观察，需补充连续晚高峰测速记录。"
+        "evidenceSummary": "已有 Clash 订阅兼容和节点切换观察，需补充连续晚高峰测速记录。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "salesSample": 744,
       "url": "https://yp7.net/posts/flybit-review-2026/"
@@ -261,7 +280,9 @@
         "chatgptResult": "一般",
         "youtube4kResult": "偶尔缓冲",
         "stability": "较弱",
-        "evidenceSummary": "已有低价场景观察，定位轻量备用，不建议直接作为长期主力。"
+        "evidenceSummary": "已有低价场景观察，定位轻量备用，不建议直接作为长期主力。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "salesSample": 462,
       "url": "https://yp7.net/posts/adaxi-review-2026/"
@@ -464,7 +485,9 @@
         "chatgptResult": "待复测，宣传支持 ChatGPT 解锁",
         "youtube4kResult": "待复测，宣传支持 Netflix / Disney+ / HBO 等流媒体",
         "stability": "专线观察",
-        "evidenceSummary": "已补充 2026-04-04 MiaoKo 订阅测速截图，概要 61/61；该截图为非晚高峰单次测试，仍需补充连续晚高峰、直播和跨境电商业务场景复测。"
+        "evidenceSummary": "已补充 2026-04-04 MiaoKo 订阅测速截图，概要 61/61；该截图为非晚高峰单次测试，仍需补充连续晚高峰、直播和跨境电商业务场景复测。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "salesSample": 82,
       "url": "https://yp7.net/posts/u1s1-review-2026/"
@@ -584,7 +607,9 @@
         "chatgptResult": "待复测",
         "youtube4kResult": "待复测",
         "stability": "流媒体观察",
-        "evidenceSummary": "已补充 2026-05-09 MiaoKo 订阅测速截图；该截图为非晚高峰单次测试，仍需补充连续晚高峰和流媒体平台实测。"
+        "evidenceSummary": "已补充 2026-05-09 MiaoKo 订阅测速截图；该截图为非晚高峰单次测试，仍需补充连续晚高峰和流媒体平台实测。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "salesSample": 128,
       "url": "https://yp7.net/posts/shunyun-review-2026/"
@@ -641,7 +666,9 @@
         "chatgptResult": "待复测",
         "youtube4kResult": "待复测",
         "stability": "专线观察",
-        "evidenceSummary": "已补充 2026-06-30 MiaoKo 订阅测速截图；该截图为非晚高峰单次测试，仍需补充连续晚高峰、ChatGPT 和流媒体复测。"
+        "evidenceSummary": "已补充 2026-06-30 MiaoKo 订阅测速截图；该截图为非晚高峰单次测试，仍需补充连续晚高峰、ChatGPT 和流媒体复测。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "salesSample": 191,
       "url": "https://yp7.net/posts/ermiao-vpn-review/"

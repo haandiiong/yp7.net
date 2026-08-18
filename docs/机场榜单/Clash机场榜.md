@@ -1,7 +1,7 @@
 ---
 title: Clash机场推荐：2026支持通用订阅的机场节点对比
 createTime: 2026/06/04
-dateModified: 2026/07/02
+dateModified: 2026/08/18
 permalink: /rankings/clash/
 tags:
   - Clash机场
@@ -12,7 +12,9 @@ tags:
 description: Clash机场推荐筛选页，整理2026支持通用订阅、Clash Verge、Clash Meta、Shadowrocket、Mihomo 和 sing-box 的机场节点对比。
 ---
 
-更新时间：2026年7月2日
+> **测试数据来源变更：** 自 2026年8月18日起，yp7.net 不再自行测速或发布新的实测；此前记录均为历史资料，不代表当前表现。当前速度、稳定性、ChatGPT 和流媒体测试数据统一来自 [Siilas 测速中心](https://siilas.com/test/)，本站只负责推荐、资料整理与风险提示。
+
+更新时间：2026年8月18日
 
 本页是 Clash 通用订阅筛选工具，重点看订阅导入、节点切换、规则兼容和晚高峰表现。不会配置 Clash 的新手，可以先看 [Clash Verge教程](/posts/clash-verge-guide-2026/) 或优先选择专属客户端机场。
 

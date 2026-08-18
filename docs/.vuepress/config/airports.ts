@@ -50,6 +50,11 @@ export interface AirportPerformanceSnapshot {
   evidenceSummary: string
 }
 
+export const testingPolicyEffectiveDate = '2026-08-18'
+export const currentTestingSourceName = 'Siilas'
+export const currentTestingSourceUrl = 'https://siilas.com/test/'
+export const historicalTestingNotice = '2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现'
+
 export const airportData: AirportData[] = [
   { name: '全球云', path: '/posts/quanqiuyun/', image: '/qqy.png', price: 20, priceText: '20元/月', traffic: '120GB/月', trial: false, noExpiry: false, dedicatedClient: true, universalSubscription: false, scenarios: ['stable', 'chatgpt', 'streaming', 'newbie'], status: '主推观察', risk: '先月付测试', summary: '专属客户端上手成本低，结合 IPLC/IEPL 与智能负载定位，适合先测试日常网页、ChatGPT、TikTok 和流媒体。', performance: { evidenceLevel: 'A', lastTestedAt: '2026-05-30', testWindow: '20:00-23:00', testRegion: '日本东京', testNetwork: 'SoftBank / 1000Mbps', testDevice: '苹果电脑', latencyMs: 65, downloadMbpsRange: '580-760Mbps', chatgptResult: '稳定', youtube4kResult: '流畅', stability: '中上', evidenceSummary: '有专属客户端延迟、YouTube 4K 和 Speedtest 截图，适合优先复核。' }, salesSample: 1048 },
   { name: '光年梯', path: '/posts/guangnianti-review-2026/', image: '/gnt.png', price: 18, priceText: '18元/月', traffic: '110GB/月', trial: false, noExpiry: false, dedicatedClient: true, universalSubscription: false, scenarios: ['stable', 'streaming', 'newbie'], status: '主推观察', risk: '先月付测试', summary: '新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。', performance: { evidenceLevel: 'A', lastTestedAt: '2026-06-03', testWindow: '20:00-23:00', testRegion: '日本东京', testNetwork: 'SoftBank / 1000Mbps', testDevice: '安卓手机', latencyMs: 58, downloadMbpsRange: '850-920Mbps', chatgptResult: '稳定', youtube4kResult: '秒开', stability: '极强', evidenceSummary: '有多张专属客户端延迟截图和 Speedtest 截图，适合长期主力优先复测。' }, salesSample: 832 },
@@ -98,6 +103,7 @@ const getLatestIsoDate = (dates: string[]) => dates
   .at(-1)
 
 export const airportDataLastReviewed = getLatestIsoDate([
+  testingPolicyEffectiveDate,
   '2026-07-02',
   ...airportData.flatMap((airport) => [
     airport.performance?.lastTestedAt,

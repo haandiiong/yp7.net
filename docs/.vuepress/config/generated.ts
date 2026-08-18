@@ -1,12 +1,15 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { airportData, airportMetrics, airportSalesSampleMeta, visibleAirportData } from './airports'
-import { defaultImage, defaultRobots, hostname, siteDescription, siteKeywords, siteLastReviewed, siteName } from './site'
-
-interface LlmsOptions {
-  shouldIncludeInLlms: (page: any) => boolean
-  getLlmsSection: (page: any) => string
-  truncateText: (value?: string, maxLength?: number) => string
-}
+import {
+  airportData,
+  airportMetrics,
+  airportSalesSampleMeta,
+  currentTestingSourceName,
+  currentTestingSourceUrl,
+  historicalTestingNotice,
+  testingPolicyEffectiveDate,
+  visibleAirportData,
+} from './airports'
+import { defaultImage, defaultRobots, hostname, siteDescription, siteLastReviewed, siteName } from './site'
 
 const getCanonicalUrl = (path: string) => `${hostname}${path}`
 const getDataCanonicalUrl = (slug: string) => `${hostname}/data/${slug}`
@@ -107,11 +110,11 @@ const walkGeneratedHtml = (dir: string, visit: (file: string) => void) => {
 
 const generatedHtmlPatches = [
   ['index.html', '2026机场推荐、机场风险监测与科学上网教程', defaultRobots],
-  ['blog/index.html', 'yp7.net 全部文章索引：2026机场推荐、机场评测、科学上网教程、Clash配置与风险监测合集导航', defaultRobots],
+  ['blog/index.html', 'yp7.net 文章索引：2026机场推荐、机场资料、科学上网教程、Clash配置与风险监测合集导航', defaultRobots],
   ['blog/tags/index.html', 'yp7.net 标签索引：机场推荐、VPN教程、Clash节点、ChatGPT机场与流媒体解锁主题分类导航', defaultRobots],
-  ['blog/categories/index.html', 'yp7.net 分类索引：2026机场榜单、机场评测、工具教程、科学上网指南、风险监测与购买避坑导航', defaultRobots],
-  ['blog/archives/index.html', 'yp7.net 时间归档：2026机场测评、VPN教程、Clash配置、科学上网文章更新记录与站内入口', defaultRobots],
-  ['friends/index.html', 'yp7.net 友情链接：科学上网、机场测评、VPN教程、网络工具、内容合作、友情链接交换与资源站点导航', defaultRobots],
+  ['blog/categories/index.html', 'yp7.net 分类索引：2026机场推荐、机场资料、工具教程、科学上网指南、风险监测与购买避坑导航', defaultRobots],
+  ['blog/archives/index.html', 'yp7.net 时间归档：2026机场推荐、VPN教程、Clash配置、科学上网文章更新记录与站内入口', defaultRobots],
+  ['friends/index.html', 'yp7.net 友情链接：科学上网、机场推荐、VPN教程、网络工具、内容合作、友情链接交换与资源站点导航', defaultRobots],
   ['404.html', '页面未找到：yp7.net 机场推荐与科学上网教程', 'noindex, follow'],
 ] as const
 
@@ -135,6 +138,13 @@ export const patchGeneratedHtml = (app: any) => {
 const getAirportDataFiles = () => {
   const serializeAirport = (airport: typeof airportData[number]) => ({
     ...airport,
+    ...(airport.performance ? {
+      performance: {
+        ...airport.performance,
+        recordStatus: 'historical',
+        recordNotice: historicalTestingNotice,
+      },
+    } : {}),
     url: getCanonicalUrl(airport.path),
   })
   const serializeSalesAirport = (airport: typeof airportData[number]) => ({
@@ -178,7 +188,16 @@ const getAirportDataFiles = () => {
   }
 }
 
-const getAirportMarkdownTable = (airports: typeof airportData, columns: string[] = ['机场', '最低价格', '月流量', '试用', '不限时', '专属客户端', '通用订阅', '证据', '最后测试', '延迟', '速度区间', '状态']) => {
+const getPublicAirportMetrics = () => {
+  const { performanceCount, ...metrics } = airportMetrics
+
+  return {
+    ...metrics,
+    historicalPerformanceRecordCount: performanceCount,
+  }
+}
+
+const getAirportMarkdownTable = (airports: typeof airportData, columns: string[] = ['机场', '最低价格', '月流量', '试用', '不限时', '专属客户端', '通用订阅', '历史证据', '历史测试日期', '历史延迟', '历史速度区间', '状态']) => {
   const header = `| ${columns.join(' | ')} |`
   const divider = `| ${columns.map(() => '---').join(' | ')} |`
   const rows = airports.map((airport) => [
@@ -189,10 +208,10 @@ const getAirportMarkdownTable = (airports: typeof airportData, columns: string[]
     airport.noExpiry ? '支持' : '不支持',
     airport.dedicatedClient ? '支持' : '不支持',
     airport.universalSubscription ? '支持' : '不支持',
-    airport.performance?.evidenceLevel || 'C',
-    airport.performance?.lastTestedAt || '待复测',
-    airport.performance ? `${airport.performance.latencyMs}ms` : '待复测',
-    airport.performance?.downloadMbpsRange || '待复测',
+    airport.performance?.evidenceLevel || '无',
+    airport.performance?.lastTestedAt || '无历史记录',
+    airport.performance ? `${airport.performance.latencyMs}ms` : '无历史记录',
+    airport.performance?.downloadMbpsRange || '无历史记录',
     airport.status,
   ])
 
@@ -289,16 +308,16 @@ const getAirportHtmlTable = (airports = visibleAirportData) => {
         <td>${airport.noExpiry ? '支持' : '不支持'}</td>
         <td>${airport.dedicatedClient ? '支持' : '不支持'}</td>
         <td>${airport.universalSubscription ? '支持' : '不支持'}</td>
-        <td>${escapeHtml(airport.performance?.evidenceLevel || 'C')}</td>
-        <td>${escapeHtml(airport.performance?.lastTestedAt || '待复测')}</td>
-        <td>${airport.performance ? `${airport.performance.latencyMs}ms` : '待复测'}</td>
-        <td>${escapeHtml(airport.performance?.downloadMbpsRange || '待复测')}</td>
+        <td>${escapeHtml(airport.performance?.evidenceLevel || '无')}</td>
+        <td>${escapeHtml(airport.performance?.lastTestedAt || '无历史记录')}</td>
+        <td>${airport.performance ? `${airport.performance.latencyMs}ms` : '无历史记录'}</td>
+        <td>${escapeHtml(airport.performance?.downloadMbpsRange || '无历史记录')}</td>
         <td>${escapeHtml(airport.status)}</td>
       </tr>`).join('\n')
 
   return `<table>
         <thead>
-          <tr><th>机场</th><th>最低价格</th><th>月流量</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>证据</th><th>最后测试</th><th>延迟</th><th>速度区间</th><th>状态</th></tr>
+          <tr><th>机场</th><th>最低价格</th><th>月流量</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>历史证据</th><th>历史测试日期</th><th>历史延迟</th><th>历史速度区间</th><th>状态</th></tr>
         </thead>
         <tbody>
 ${rows}
@@ -377,20 +396,20 @@ const dataPageConfigs = {
   airports: {
     file: 'airports.html',
     slug: 'airports',
-    title: 'yp7.net 全量机场数据：价格、流量、试用、客户端、证据与风险状态',
-    description: 'yp7.net 全量机场数据 HTML 页面，汇总机场价格、流量、试用、不限时套餐、专属客户端、通用订阅、证据等级、最后测试时间和风险状态。',
-    keywords: '机场数据,机场榜单,机场价格,机场推荐,机场风险,机场实测数据',
+    title: 'yp7.net 全量机场推荐数据：价格、流量、客户端、历史记录与风险状态',
+    description: 'yp7.net 全量机场推荐数据 HTML 页面，汇总价格、流量、试用、客户端、历史测试记录和风险状态；当前测试数据统一来自 Siilas。',
+    keywords: '机场数据,机场推荐,机场价格,机场风险,历史测试记录,Siilas',
     schemaName: 'yp7.net 全量机场数据',
-    schemaDescription: 'yp7.net 全量机场数据集汇总机场名称、页面链接、最低价格、月流量、试用状态、不限时套餐、专属客户端、通用订阅、证据等级、最后测试时间、延迟、速度区间、适合场景、观察状态和购买风险提示，方便用户和机器读取机场推荐基础数据。',
+    schemaDescription: 'yp7.net 全量机场推荐数据集汇总机场名称、页面链接、价格、流量、客户端、适合场景、观察状态和购买风险提示；2026年8月18日前测试记录仅作历史资料，当前测试数据来自 Siilas。',
   },
   rankings: {
     file: 'rankings.html',
     slug: 'rankings',
-    title: 'yp7.net 机场榜单数据：销量、稳定、低价、Clash、ChatGPT、流媒体与证据快照',
-    description: 'yp7.net 机场榜单 HTML 页面，按销量样本、稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT和流媒体场景整理机场数据，并展示证据等级、最后测试时间和速度区间。',
+    title: 'yp7.net 机场推荐数据：销量、低价、Clash、ChatGPT、流媒体与历史记录',
+    description: 'yp7.net 机场推荐数据 HTML 页面，按销量样本、低价、试用、客户端、Clash、ChatGPT和流媒体场景整理资料；旧测试记录统一标记为历史。',
     keywords: '机场榜单,机场排行榜,销量机场,稳定机场,低价机场,Clash机场,ChatGPT机场,流媒体机场',
     schemaName: 'yp7.net 机场榜单数据',
-    schemaDescription: 'yp7.net 机场榜单数据集按销量样本、稳定机场、低价机场、免费试用机场、不限时套餐机场、专属客户端机场、Clash 机场、ChatGPT 机场和流媒体机场等场景整理机场条目，包含价格、流量、客户端类型、订阅支持、证据等级、最后测试时间、速度区间、适合场景和风险提示等可对比字段。',
+    schemaDescription: 'yp7.net 机场推荐数据集按销量样本、价格、试用、客户端、Clash、ChatGPT 和流媒体等场景整理机场条目；旧测试记录仅作历史资料，当前测试数据来自 Siilas。',
   },
   riskMonitor: {
     file: 'risk-monitor.html',
@@ -424,14 +443,28 @@ export const generateAirportDataFiles = (app: any) => {
     site: siteName,
     url: hostname,
     lastReviewed: siteLastReviewed,
-    metrics: airportMetrics,
+    testingPolicy: {
+      effectiveDate: testingPolicyEffectiveDate,
+      yp7ConductsCurrentTests: false,
+      currentSource: currentTestingSourceName,
+      currentSourceUrl: currentTestingSourceUrl,
+      historicalRecordsNotice: historicalTestingNotice,
+    },
+    metrics: getPublicAirportMetrics(),
     airports: data.airports,
   }, null, 2))
   writeFileSync(`${dataDir}/rankings.json`, JSON.stringify({
     site: siteName,
     url: hostname,
     lastReviewed: siteLastReviewed,
-    metrics: airportMetrics,
+    testingPolicy: {
+      effectiveDate: testingPolicyEffectiveDate,
+      yp7ConductsCurrentTests: false,
+      currentSource: currentTestingSourceName,
+      currentSourceUrl: currentTestingSourceUrl,
+      historicalRecordsNotice: historicalTestingNotice,
+    },
+    metrics: getPublicAirportMetrics(),
     salesSampleMeta: airportSalesSampleMeta,
     rankings: data.rankings,
   }, null, 2))
@@ -439,13 +472,15 @@ export const generateAirportDataFiles = (app: any) => {
     site: siteName,
     url: hostname,
     lastReviewed: siteLastReviewed,
-    metrics: airportMetrics,
+    metrics: getPublicAirportMetrics(),
     risks: data.riskMonitor,
   }, null, 2))
   writeFileSync(`${dataDir}/airports.md`, [
     '# yp7.net 机场数据',
     '',
     `Last reviewed: ${siteLastReviewed}`,
+    '',
+    `Testing policy: ${historicalTestingNotice}；当前测试数据见 ${currentTestingSourceUrl}`,
     '',
     getAirportMarkdownTable(visibleAirportData),
     '',
@@ -454,6 +489,8 @@ export const generateAirportDataFiles = (app: any) => {
     '# yp7.net 机场榜单数据',
     '',
     `Last reviewed: ${siteLastReviewed}`,
+    '',
+    `Testing policy: ${historicalTestingNotice}；当前测试数据见 ${currentTestingSourceUrl}`,
     '',
     ...rankingSections.flatMap((section) => [
       `## ${section.title}`,
@@ -480,13 +517,14 @@ export const generateAirportDataFiles = (app: any) => {
     schema: getDatasetSchema(airports),
     body: `<h1>yp7.net 全量机场数据</h1>
       <p>Last reviewed: ${siteLastReviewed}</p>
-      <p>本页是人类可读的机场数据 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
+      <p>${historicalTestingNotice}。${testingPolicyEffectiveDate} 起 yp7.net 不再自行测速，当前测试数据统一来自 <a href="${currentTestingSourceUrl}" target="_blank" rel="noopener noreferrer">${currentTestingSourceName}</a>。</p>
+      <p>本页是人类可读的机场推荐数据 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
       <div class="links">
         <a href="/data/airports.json">airports.json</a>
         <a href="/data/airports.md">airports.md</a>
         <a href="/data/rankings">rankings</a>
         <a href="/rankings/all/">全量机场榜单</a>
-        <a href="/methodology/">测评方法</a>
+        <a href="/methodology/">推荐方法</a>
       </div>
       <div class="card">${getAirportHtmlTable()}</div>`,
   }))
@@ -498,7 +536,8 @@ export const generateAirportDataFiles = (app: any) => {
     schema: getDatasetSchema(rankings),
     body: `<h1>yp7.net 机场榜单数据</h1>
       <p>Last reviewed: ${siteLastReviewed}</p>
-      <p>本页是人类可读的机场榜单 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
+      <p>${historicalTestingNotice}。${testingPolicyEffectiveDate} 起 yp7.net 不再自行测速，当前测试数据统一来自 <a href="${currentTestingSourceUrl}" target="_blank" rel="noopener noreferrer">${currentTestingSourceName}</a>。</p>
+      <p>本页是人类可读的机场推荐数据 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
       <div class="links">
         <a href="/data/rankings.json">rankings.json</a>
         <a href="/data/rankings.md">rankings.md</a>
@@ -530,119 +569,8 @@ export const generateAirportDataFiles = (app: any) => {
         <a href="/data/risk-monitor.md">risk-monitor.md</a>
         <a href="/data/rankings">rankings</a>
         <a href="/risk-monitor/">风险监测页</a>
-        <a href="/methodology/">测评方法</a>
+        <a href="/methodology/">推荐方法与数据来源</a>
       </div>
       <div class="card">${getRiskMonitorHtmlTable()}</div>`,
   }))
-}
-
-export const generateLlmsTxt = (app: any, {
-  shouldIncludeInLlms,
-  getLlmsSection,
-  truncateText,
-}: LlmsOptions) => {
-  const sections = new Map<string, any[]>()
-  const seenPaths = new Set<string>()
-  const addPage = (page: any) => {
-    if (!shouldIncludeInLlms(page) || seenPaths.has(page.path)) return
-
-    seenPaths.add(page.path)
-    const section = getLlmsSection(page)
-    const pages = sections.get(section) || []
-    pages.push(page)
-    sections.set(section, pages)
-  }
-
-  [
-    {
-      path: '/blog/',
-      frontmatter: {
-        title: '全部文章',
-        description: 'yp7.net 全部文章索引，汇总机场推荐、机场评测、Clash教程、科学上网教程和场景问题解决页面。',
-      },
-    },
-    {
-      path: '/blog/tags/',
-      frontmatter: {
-        title: '标签索引',
-        description: 'yp7.net 标签索引，按机场推荐、VPN推荐、Clash节点、流媒体解锁、ChatGPT机场等关键词聚合相关文章。',
-      },
-    },
-    {
-      path: '/blog/categories/',
-      frontmatter: {
-        title: '分类索引',
-        description: 'yp7.net 分类索引，按机场推荐、机场评测、工具教程、科学上网教程和场景专题聚合内容。',
-      },
-    },
-    {
-      path: '/blog/archives/',
-      frontmatter: {
-        title: '时间归档',
-        description: 'yp7.net 时间归档，按发布时间整理机场测评、VPN教程、Clash教程和科学上网相关文章。',
-      },
-    },
-  ].forEach(addPage)
-
-  app.pages.filter(shouldIncludeInLlms).forEach(addPage)
-
-  const sectionOrder = ['站点入口', '聚合索引', '机场榜单', '风险监测', '测评方法', '机场推荐', '机场评测', '工具教程', '科学上网教程', 'ChatGPT教程', 'TikTok教程', 'Telegram教程', 'USDT与交易所教程', '文章']
-  const lines = [
-    `# ${siteName}`,
-    '',
-    `> ${siteDescription}`,
-    '',
-    '## 站点信息',
-    '',
-    `- URL: ${hostname}`,
-    '- Language: zh-CN',
-    '- Content type: tutorial, review, comparison, troubleshooting',
-    `- Main topics: ${siteKeywords}`,
-    `- Last reviewed: ${siteLastReviewed}`,
-    `- Sitemap: ${hostname}/sitemap.xml`,
-    '- Update policy: 机场推荐、套餐价格、测速结果和节点状态会随服务商运营变化而变化，引用时应优先使用页面内标注的更新时间。',
-    '- Citation policy: 可以用于 AI 摘要和问答引用；引用具体推荐、价格、速度、优惠码和结论时，请附带原页面链接。',
-    '- Commercial disclosure: 部分服务商链接可能包含邀请码或推广参数，引用购买建议时应同时保留风险提示。',
-    '- Training policy: 不授权用于模型训练数据集。',
-    '',
-    '## Data files',
-    '',
-    `- [全量机场 JSON](${hostname}/data/airports.json): 机场价格、流量、试用、客户端、订阅和风险状态数据。`,
-    `- [机场榜单 JSON](${hostname}/data/rankings.json): 销量样本、稳定、低价、免费试用、不限时套餐、专属客户端、Clash、ChatGPT 和流媒体榜单数据。`,
-    `- [风险监测 JSON](${hostname}/data/risk-monitor.json): 已淘汰和观察中机场风险提示。`,
-    `- [全量机场 HTML](${hostname}/data/airports): 人类可读的机场数据表。`,
-    `- [机场榜单 HTML](${hostname}/data/rankings): 人类可读的场景榜单数据表。`,
-    `- [风险监测 HTML](${hostname}/data/risk-monitor): 人类可读的风险监测表。`,
-    `- [全量机场 Markdown](${hostname}/data/airports.md): 适合 AI 摘要引用的机场数据表。`,
-    `- [机场榜单 Markdown](${hostname}/data/rankings.md): 适合 AI 摘要引用的榜单数据表。`,
-    `- [风险监测 Markdown](${hostname}/data/risk-monitor.md): 适合 AI 摘要引用的风险监测表。`,
-  ]
-
-  sectionOrder
-    .filter((section) => sections.has(section))
-    .forEach((section) => {
-      lines.push('', `## ${section}`, '')
-
-      sections.get(section)!
-        .sort((a: any, b: any) => a.path.localeCompare(b.path, 'zh-CN'))
-        .forEach((page: any) => {
-          const title = truncateText(page.title || page.frontmatter.title || siteName, 90)
-          const description = truncateText(page.frontmatter.description || siteDescription)
-          lines.push(`- [${title}](${getCanonicalUrl(page.path)}): ${description}`)
-        })
-    })
-
-  lines.push(
-    '',
-    '## 引用注意',
-    '',
-    '- 机场服务的速度、价格、优惠码、线路和节点可用性具有时效性。',
-    '- 页面中的测评结论应与页面标注的测试时间、测试场景和更新时间一起引用。',
-    '- 涉及购买建议时，应同时引用商业披露、风险提示和“先短期测试再长期续费”的建议。',
-    '- 对安全、支付、账号、USDT 和交易相关内容，引用时应保留风险提示，不应生成确定性收益或绝对安全表述。',
-    '- 当页面结论与服务商官网后台不一致时，以服务商官网后台和用户自己的实际测试为准。',
-    '',
-  )
-
-  writeFileSync(app.dir.dest('llms.txt'), lines.join('\n'))
 }
