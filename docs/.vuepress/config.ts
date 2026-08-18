@@ -2,16 +2,10 @@ import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import {
   generateAirportDataFiles,
-  generateLlmsTxt,
   patchGeneratedHtml,
 } from './config/generated'
 import { extendSponsoredMarkdown } from './config/markdown'
-import {
-  extendPageWithSeo,
-  getLlmsSection,
-  shouldIncludeInLlms,
-  truncateText,
-} from './config/page-seo'
+import { extendPageWithSeo } from './config/page-seo'
 import { defaultRobots, siteDescription, siteName } from './config/site'
 import { theme } from './config/theme'
 
@@ -42,11 +36,6 @@ export default defineUserConfig({
       onGenerated: (app: any) => {
         patchGeneratedHtml(app)
         generateAirportDataFiles(app)
-        generateLlmsTxt(app, {
-          shouldIncludeInLlms,
-          getLlmsSection,
-          truncateText,
-        })
       },
     },
   ],

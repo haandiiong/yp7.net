@@ -2,5 +2,6 @@
 # 发布流程会确认这些 URL 返回 404/410，再与 Sitemap URL 一起提交 IndexNow。
 https://yp7.net/article/gqs2dway/
 https://yp7.net/article/tj38tso3/
+https://yp7.net/llms.txt
 https://yp7.net/posts/lesu/
 https://yp7.net/posts/vpnres/

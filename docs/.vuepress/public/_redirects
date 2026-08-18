@@ -45,3 +45,8 @@
 /posts/vpn2/ /posts/jichang-tuijian/ 301
 /posts/vpn5/ /posts/ssone/ 301
 /posts/vpnsum/ /posts/jichang-tuijian/ 301
+
+# 数据页的旧 .html 形式统一到无扩展名 canonical
+/data/airports.html /data/airports 308
+/data/rankings.html /data/rankings 308
+/data/risk-monitor.html /data/risk-monitor 308

@@ -50,7 +50,6 @@ pnpm run docs:preview
 - `/data/rankings.json`
 - `/data/risk-monitor.json`
 - 对应的 Markdown 和 HTML 数据页
-- `/llms.txt`
 
 构建后运行：
 
@@ -58,7 +57,7 @@ pnpm run docs:preview
 pnpm run docs:sync-data
 ```
 
-这会把 `docs/.vuepress/dist/data` 和 `docs/.vuepress/dist/llms.txt` 同步回 `docs/.vuepress/public`，用于提交到仓库。
+这会把 `docs/.vuepress/dist/data` 同步回 `docs/.vuepress/public`，用于提交到仓库。
 
 提交前至少运行：
 
