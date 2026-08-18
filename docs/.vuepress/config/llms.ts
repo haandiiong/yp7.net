@@ -6,7 +6,7 @@ export const getLlmsSection = (page: any) => {
   if (page.path === '/about/') return '站点说明'
   if (page.path.startsWith('/rankings/')) return '机场榜单'
   if (page.path === '/risk-monitor/') return '风险监测'
-  if (page.path === '/methodology/') return '测评方法'
+  if (page.path === '/methodology/') return '推荐方法与数据来源'
 
   return getArticleSection(page)
 }

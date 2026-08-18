@@ -7,6 +7,9 @@ const root = process.cwd()
 const airportReviewDir = join(root, 'docs/机场评测')
 const airportsPath = join(root, 'docs/.vuepress/config/airports.ts')
 const checkOnly = process.argv.includes('--check')
+const testingPolicyEffectiveDate = '2026-08-18'
+const currentTestingSourceName = 'Siilas 测速中心'
+const currentTestingSourceUrl = 'https://siilas.com/test/'
 
 const fail = (message) => {
   console.error(message)
@@ -131,6 +134,7 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hi
   if (hiddenAirportStatuses.has(airport.status)) {
     const rows = [
       ['风险复核时间', formatDate(airportDataLastReviewed)],
+      ['当前测试数据来源', `[${currentTestingSourceName}](${currentTestingSourceUrl})（yp7.net 不再自行测试）`],
       ['当前状态', airport.status],
       ['购买建议', '不建议新购或续费'],
       ['历史套餐价格', `${airport.priceText}，${airport.traffic}`],
@@ -141,7 +145,7 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hi
     ]
 
     return [
-      `## ${displayName}测评证据区`,
+      `## ${displayName}推荐依据与历史测试记录`,
       '',
       '| 项目 | 当前记录 |',
       '|---|---|',
@@ -152,28 +156,30 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hi
   const performance = airport.performance
   const hasPerformance = Boolean(performance)
   const rows = [
-    ['测试时间', hasPerformance ? formatDate(performance.lastTestedAt) : `待补充连续实测；结构化资料最后复核：${formatDate(airportDataLastReviewed)}`],
-    ['测试时段', performance?.testWindow || '20:00-23:00 晚高峰待连续复测'],
-    ['测试地区', performance?.testRegion || '待补充常用节点地区'],
-    ['测试网络', performance?.testNetwork || '待补充家庭宽带 / 移动网络环境'],
-    ['测试设备', performance?.testDevice || '待补充 Mac / Windows / Android / iOS'],
-    ['测试客户端', clientSummary(airport)],
+    ['当前测试数据来源', `[${currentTestingSourceName}](${currentTestingSourceUrl})；${testingPolicyEffectiveDate} 起 yp7.net 不再自行测试`],
+    ['历史记录状态', hasPerformance ? 'yp7.net 历史资料，不代表当前表现' : '无 yp7.net 历史测试记录'],
+    ['历史测试时间', hasPerformance ? formatDate(performance.lastTestedAt) : '无历史记录'],
+    ['历史测试时段', performance?.testWindow || '无历史记录'],
+    ['历史测试地区', performance?.testRegion || '无历史记录'],
+    ['历史测试网络', performance?.testNetwork || '无历史记录'],
+    ['历史测试设备', performance?.testDevice || '无历史记录'],
+    ['客户端资料', clientSummary(airport)],
     ['套餐价格', `${airport.priceText}，${airport.traffic}`],
     ['免费试用', booleanText(airport.trial)],
     ['不限时套餐', booleanText(airport.noExpiry)],
     ['通用订阅', booleanText(airport.universalSubscription)],
     ['适合场景', scenarioSummary(airport)],
-    ['ChatGPT 表现', performance?.chatgptResult || '待复测，不直接承诺长期可用'],
-    ['YouTube 4K 表现', performance?.youtube4kResult || '待复测，需结合晚高峰连续播放观察'],
-    ['下载速度参考', performance?.downloadMbpsRange || '待补充 Speedtest / 实际下载样本'],
-    ['稳定性判断', performance?.stability || airport.status],
-    ['证据等级', performance?.evidenceLevel ? `${performance.evidenceLevel}级` : 'C级，当前以资料整理和后续复测计划为主'],
+    ['历史 ChatGPT 表现', performance?.chatgptResult || '无历史记录；请查看 Siilas 最新记录'],
+    ['历史 YouTube 4K 表现', performance?.youtube4kResult || '无历史记录；请查看 Siilas 最新记录'],
+    ['历史下载速度', performance?.downloadMbpsRange || '无历史记录；请查看 Siilas 最新记录'],
+    ['历史稳定性判断', performance?.stability || '无历史测试判断'],
+    ['历史证据等级', performance?.evidenceLevel ? `${performance.evidenceLevel}级` : '无历史测试证据'],
     ['风险记录', airport.risk],
-    ['证据摘要', performance?.evidenceSummary || airport.summary],
+    ['历史证据摘要', performance?.evidenceSummary || '无 yp7.net 历史测试记录；当前页面只整理推荐资料与风险提示'],
   ]
 
   return [
-    `## ${displayName}测评证据区`,
+    `## ${displayName}推荐依据与历史测试记录`,
     '',
     '| 项目 | 当前记录 |',
     '|---|---|',
@@ -213,8 +219,8 @@ const renderRelatedSection = (airport, visibleAirportData, displayNameByPath, hi
       '',
       renderMarkdownLinks([
         { label: '机场风险监测', link: '/risk-monitor/' },
-        { label: '机场测评方法', link: '/methodology/' },
-        { label: '机场推荐：2026稳定机场节点排行与晚高峰实测', link: '/posts/jichang-tuijian/' },
+        { label: '机场推荐方法与测试数据来源', link: '/methodology/' },
+        { label: '机场推荐：2026场景筛选与风险提示', link: '/posts/jichang-tuijian/' },
         { label: '全量机场榜单：价格、流量、试用与风险状态', link: '/rankings/all/' },
       ]),
     ].join('\n')
@@ -230,11 +236,11 @@ const renderRelatedSection = (airport, visibleAirportData, displayNameByPath, hi
     .find(Boolean)
 
   const links = uniqueLinks([
-    { label: '机场推荐：2026稳定机场节点排行与晚高峰实测', link: '/posts/jichang-tuijian/' },
+    { label: '机场推荐：2026场景筛选与风险提示', link: '/posts/jichang-tuijian/' },
     primaryScenarioLink,
     { label: '全量机场榜单：价格、流量、试用与风险状态', link: '/rankings/all/' },
     { label: '机场风险监测', link: '/risk-monitor/' },
-    { label: '机场测评方法', link: '/methodology/' },
+    { label: '机场推荐方法与测试数据来源', link: '/methodology/' },
     ...peerAirports.map((item) => ({
       label: `${displayNameByPath.get(normalizeRoute(item.path)) || item.name}机场怎么样？`,
       link: item.path,
@@ -259,7 +265,7 @@ const stripManagedBottomSections = (content) => {
 }
 
 const upsertEvidenceSection = (content, evidenceSection) => {
-  const existingEvidencePattern = /\n## [^\n]*测评证据区\n[\s\S]*?(?=\n## |\n$)/
+  const existingEvidencePattern = /\n## [^\n]*(?:测评证据区|推荐依据与历史测试记录)\n[\s\S]*?(?=\n## |\n$)/
 
   if (existingEvidencePattern.test(content)) {
     return content.replace(existingEvidencePattern, `\n${evidenceSection}\n`)

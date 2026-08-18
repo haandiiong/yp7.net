@@ -6,8 +6,8 @@ const defaultMetaDescriptionSuffix = '页面补充核心结论、适合人群、
 const metaDescriptionSuffixes: Record<string, string> = {
   机场榜单: '按价格、稳定性、试用、客户端兼容、通用订阅和风险状态筛选适合的机场服务。',
   风险监测: '持续记录官网异常、客服失联、套餐变化、节点波动和购买风险，帮助降低机场服务时效性风险。',
-  机场评测: '基于晚高峰实测、长期连接表现、客户端兼容性和风险提示，帮助选择合适机场。',
-  机场推荐: '按晚高峰体验、长期稳定性、适合人群和购买风险，推荐适合的机场服务。',
+  机场推荐资料: '整理套餐、客户端、适合人群、历史测试记录和风险提示；当前测试数据统一来自 Siilas。',
+  机场推荐: '结合 Siilas 当前记录、客户端、价格、适合人群和购买风险，推荐合适的机场服务。',
   工具教程: '包含安装步骤、订阅导入、节点选择和常见问题，帮助完成客户端配置。',
   科学上网教程: '解释核心概念、工具选择、配置方法和常见误区，帮助按需求选择方案。',
   TikTok教程: '补充节点地区、设备环境、账号风控和网络排查，帮助稳定处理访问问题。',
@@ -88,7 +88,7 @@ export const getArticleSection = (page: any) => {
 
   if (filePath.includes('机场榜单')) return '机场榜单'
   if (filePath.includes('风险监测')) return '风险监测'
-  if (filePath.includes('机场评测')) return '机场评测'
+  if (filePath.includes('机场评测')) return '机场推荐资料'
   if (filePath.includes('机场推荐')) return '机场推荐'
   if (filePath.includes('工具')) return '工具教程'
   if (filePath.includes('科学上网专区')) return '科学上网教程'
@@ -117,7 +117,7 @@ const getExpandedDescription = (description = '', suffix = defaultMetaDescriptio
 
 const getMetaDescriptionSuffix = (page: any) => {
   if (page.path === '/') {
-    return '同时提供机场榜单、风险监测、测评方法、Clash 与 Shadowrocket 教程，帮助新手按预算、设备和使用场景快速筛选。'
+    return '同时提供推荐数据、风险监测、数据来源说明、Clash 与 Shadowrocket 教程，帮助新手按预算、设备和使用场景快速筛选。'
   }
 
   if (page.path === '/friends/') {

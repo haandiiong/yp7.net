@@ -28,7 +28,7 @@ export const theme = plumeTheme({
         { text: 'Shadowrocket教程', link: '/posts/shadowrocket-guide-2026/', icon: 'ic:baseline-rocket-launch' },
         { text: 'ChatGPT打不开', link: '/posts/ai-tools-not-working/', icon: 'material-symbols:smart-toy-outline' },
         { text: 'Telegram教程', link: '/posts/telegram-guide-2026/', icon: 'material-symbols:send-outline' },
-        { text: '测评方法', link: '/methodology/', icon: 'material-symbols:science-outline' },
+        { text: '推荐方法与数据来源', link: '/methodology/', icon: 'material-symbols:science-outline' },
       ],
     },
     { text: '风险监测', link: '/risk-monitor/', icon: 'material-symbols:warning-outline' },
@@ -36,7 +36,7 @@ export const theme = plumeTheme({
   ],
   profile: {
     name: 'yp7.net',
-    description: 'yp7.net 专注于机场推荐、VPN推荐、Clash节点使用教程和科学上网问题解决，帮助用户选择稳定高速的网络加速方案。',
+    description: 'yp7.net 专注机场推荐、套餐与客户端资料、风险提示和科学上网教程；当前测试数据统一来自 Siilas。',
   },
   social: [
     { icon: 'github', link: 'https://github.com/haandiiong' },

@@ -1,7 +1,7 @@
 ---
 title: 2026 ChatGPT机场榜：AI工具、办公访问与稳定节点筛选
 createTime: 2026/06/04
-dateModified: 2026/07/02
+dateModified: 2026/08/18
 permalink: /rankings/chatgpt/
 tags:
   - ChatGPT机场
@@ -12,7 +12,9 @@ tags:
 description: 2026 ChatGPT机场榜，筛选适合 ChatGPT、Claude、Gemini 等 AI 工具访问的机场，重点关注连接稳定性、节点地区和晚高峰表现。
 ---
 
-更新时间：2026年7月2日
+> **测试数据来源变更：** 自 2026年8月18日起，yp7.net 不再自行测速或发布新的实测；此前记录均为历史资料，不代表当前表现。当前速度、稳定性、ChatGPT 和流媒体测试数据统一来自 [Siilas 测速中心](https://siilas.com/test/)，本站只负责推荐、资料整理与风险提示。
+
+更新时间：2026年8月18日
 
 ## 筛选口径
 

@@ -1,4 +1,10 @@
-import { airportData, visibleAirportData } from './airports'
+import {
+  airportData,
+  currentTestingSourceName,
+  currentTestingSourceUrl,
+  testingPolicyEffectiveDate,
+  visibleAirportData,
+} from './airports'
 import {
   getArticleSection,
   getCanonicalUrl,
@@ -74,19 +80,12 @@ const getAirportServiceSchemas = (page: any) => {
         { '@type': 'PropertyValue', name: '通用订阅', value: airport.universalSubscription ? '支持' : '不支持' },
         { '@type': 'PropertyValue', name: '观察状态', value: airport.status },
         { '@type': 'PropertyValue', name: '风险提示', value: airport.risk },
-        ...(airport.performance ? [
-          { '@type': 'PropertyValue', name: '证据等级', value: airport.performance.evidenceLevel },
-          { '@type': 'PropertyValue', name: '最后测试时间', value: airport.performance.lastTestedAt },
-          { '@type': 'PropertyValue', name: '测试时段', value: airport.performance.testWindow },
-          { '@type': 'PropertyValue', name: '测试地区', value: airport.performance.testRegion },
-          { '@type': 'PropertyValue', name: '测试网络', value: airport.performance.testNetwork },
-          { '@type': 'PropertyValue', name: '测试设备', value: airport.performance.testDevice },
-          { '@type': 'PropertyValue', name: '晚高峰延迟', value: `${airport.performance.latencyMs}ms` },
-          { '@type': 'PropertyValue', name: '晚高峰速度区间', value: airport.performance.downloadMbpsRange },
-          { '@type': 'PropertyValue', name: 'ChatGPT表现', value: airport.performance.chatgptResult },
-          { '@type': 'PropertyValue', name: 'YouTube 4K表现', value: airport.performance.youtube4kResult },
-          { '@type': 'PropertyValue', name: '稳定性判断', value: airport.performance.stability },
-        ] : []),
+        {
+          '@type': 'PropertyValue',
+          name: '测试数据政策',
+          value: `${testingPolicyEffectiveDate} 起 yp7.net 不再自行测试，当前测试数据来自 ${currentTestingSourceName}`,
+          url: currentTestingSourceUrl,
+        },
       ],
     },
   ]
