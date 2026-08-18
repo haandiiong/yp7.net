@@ -437,13 +437,10 @@ const requiredSeoSitemapPaths = [
   '/data/rankings',
   '/data/risk-monitor',
 ]
-const sitemapDataResourcePaths = [
+const crawlerReadableDataResourcePaths = [
   '/data/airports.json',
   '/data/rankings.json',
   '/data/risk-monitor.json',
-]
-const crawlerReadableDataResourcePaths = [
-  ...sitemapDataResourcePaths,
   '/data/airports.md',
   '/data/rankings.md',
   '/data/risk-monitor.md',
@@ -938,7 +935,6 @@ if (!existsSync(distDir)) {
     const requiredSitemapPaths = [
       ...visibleAirportData.map((airport) => normalizeRoute(airport.path)),
       ...requiredSeoSitemapPaths,
-      ...sitemapDataResourcePaths,
     ]
 
     requiredSitemapPaths.forEach((path) => {

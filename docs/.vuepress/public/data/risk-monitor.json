@@ -29,7 +29,7 @@
     {
       "name": "光年梯",
       "status": "主推观察",
-      "risk": "先月付测试",
+      "risk": "先月付验证",
       "url": "https://yp7.net/posts/guangnianti-review-2026/"
     },
     {
@@ -41,7 +41,7 @@
     {
       "name": "光速云",
       "status": "备用观察",
-      "risk": "晚高峰复测",
+      "risk": "查看 Siilas 晚高峰记录",
       "url": "https://yp7.net/posts/guangsuyun/"
     },
     {
@@ -53,7 +53,7 @@
     {
       "name": "Flybit",
       "status": "Clash观察",
-      "risk": "长期稳定需复测",
+      "risk": "查看 Siilas 长期记录",
       "url": "https://yp7.net/posts/flybit-review-2026/"
     },
     {
@@ -83,7 +83,7 @@
     {
       "name": "迅达",
       "status": "办公观察",
-      "risk": "ChatGPT可用性需复测",
+      "risk": "查看 Siilas AI 记录",
       "url": "https://yp7.net/posts/xunda-review-2026/"
     },
     {
@@ -95,13 +95,13 @@
     {
       "name": "uuone",
       "status": "性价比观察",
-      "risk": "长期稳定需复测",
+      "risk": "查看 Siilas 长期记录",
       "url": "https://yp7.net/posts/uuone-review-2026/"
     },
     {
       "name": "冲上云霄",
       "status": "低价观察",
-      "risk": "晚高峰复测",
+      "risk": "查看 Siilas 晚高峰记录",
       "url": "https://yp7.net/posts/chongshangyunxiao/"
     },
     {
@@ -113,7 +113,7 @@
     {
       "name": "U1S1",
       "status": "专线观察",
-      "risk": "晚高峰、直播和电商场景需复测",
+      "risk": "查看 Siilas 相关场景记录",
       "url": "https://yp7.net/posts/u1s1-review-2026/"
     },
     {
@@ -125,7 +125,7 @@
     {
       "name": "隐云",
       "status": "备用观察",
-      "risk": "不限流量需实测",
+      "risk": "不限流量规则需自行验证",
       "url": "https://yp7.net/posts/yinyun-review-2026/"
     },
     {
@@ -149,7 +149,7 @@
     {
       "name": "瞬云",
       "status": "流媒体观察",
-      "risk": "晚高峰和流媒体解锁需复测",
+      "risk": "查看 Siilas 晚高峰和流媒体记录",
       "url": "https://yp7.net/posts/shunyun-review-2026/"
     },
     {
@@ -161,7 +161,7 @@
     {
       "name": "二猫云",
       "status": "专线观察",
-      "risk": "长期稳定需复测",
+      "risk": "查看 Siilas 长期记录",
       "url": "https://yp7.net/posts/ermiao-vpn-review/"
     },
     {
@@ -179,7 +179,7 @@
     {
       "name": "sogo",
       "status": "新手观察",
-      "risk": "价格较高需复测",
+      "risk": "价格较高，建议短期验证",
       "url": "https://yp7.net/posts/sogo-review-2026/"
     },
     {
@@ -191,7 +191,7 @@
     {
       "name": "边缘节点",
       "status": "专线观察",
-      "risk": "通用订阅临时一次性，先月付复测",
+      "risk": "通用订阅临时一次性，先月付验证",
       "url": "https://yp7.net/posts/bianyuan-review-2026/"
     },
     {
@@ -215,7 +215,7 @@
     {
       "name": "星岛梦",
       "status": "视频观察",
-      "risk": "晚高峰复测",
+      "risk": "查看 Siilas 晚高峰记录",
       "url": "https://yp7.net/posts/xingdaomeng-review-2026/"
     }
   ]
