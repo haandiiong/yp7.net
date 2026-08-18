@@ -262,7 +262,7 @@ const getBreadcrumbItems = (page: any) => {
     items.push({
       '@type': 'ListItem',
       position: 2,
-      name: '全部文章',
+      name: '文章索引',
       item: `${hostname}/blog/`,
     })
   }

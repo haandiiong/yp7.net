@@ -24,11 +24,18 @@ jobs:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
 
     steps:
+      - name: Check out the deployed revision
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+
       - name: Wait for matching deployment and get sitemap URLs
         env:
           EXPECTED_SHA: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || '' }}
         run: |
-          : > urls.txt
+          : > sitemap-urls.txt
           for attempt in $(seq 1 18); do
             cache_bust="${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${attempt}"
             deployed_sha=""
@@ -47,14 +54,14 @@ jobs:
                 "https://yp7.net/sitemap.xml?cb=${cache_bust}" \
                 --output sitemap.xml; then
                 if ! grep -oE '<loc>[^<]+</loc>' sitemap.xml \
-                  | sed -E 's#</?loc>##g' > urls.txt; then
-                  : > urls.txt
+                  | sed -E 's#</?loc>##g' > sitemap-urls.txt; then
+                  : > sitemap-urls.txt
                 fi
 
-                if test -s urls.txt \
-                  && awk '$0 !~ /^https:\/\/yp7\.net\// { exit 1 }' urls.txt; then
-                  sort -u urls.txt -o urls.txt
-                  echo "Verified deployment ${deployed_sha:-manual-dispatch}; found $(wc -l < urls.txt) URLs."
+                if test -s sitemap-urls.txt \
+                  && awk '$0 !~ /^https:\/\/yp7\.net\// { exit 1 }' sitemap-urls.txt; then
+                  sort -u sitemap-urls.txt -o sitemap-urls.txt
+                  echo "Verified deployment ${deployed_sha:-manual-dispatch}; found $(wc -l < sitemap-urls.txt) Sitemap URLs."
                   break
                 fi
               fi
@@ -67,6 +74,81 @@ jobs:
 
             sleep 10
           done
+
+      - name: Validate moved and deleted URLs
+        run: |
+          : > extra-urls.txt
+
+          while read -r source target status extra; do
+            if [ -z "$source" ] || [ "${source#\#}" != "$source" ]; then
+              continue
+            fi
+
+            if [ -n "$extra" ] || { [ "$status" != "301" ] && [ "$status" != "308" ]; }; then
+              echo "Invalid redirect rule: $source $target $status $extra"
+              exit 1
+            fi
+
+            case "$source:$target" in
+              /*:/*) ;;
+              *)
+                echo "Redirect source and target must be local absolute paths: $source $target"
+                exit 1
+                ;;
+            esac
+
+            if ! grep -Fxq "https://yp7.net${target}" sitemap-urls.txt; then
+              echo "Redirect target is missing from the deployed Sitemap: $target"
+              exit 1
+            fi
+
+            redirect_headers=$(mktemp)
+            actual_status=$(curl --silent --show-error \
+              --dump-header "$redirect_headers" --output /dev/null \
+              --connect-timeout 5 --max-time 20 --max-redirs 0 \
+              --write-out '%{http_code}' "https://yp7.net${source}")
+            actual_location=$(awk 'tolower($1) == "location:" { gsub(/\r/, "", $2); print $2; exit }' "$redirect_headers")
+            rm -f "$redirect_headers"
+
+            if [ "$actual_status" != "$status" ]; then
+              echo "Expected $source to return $status, received $actual_status."
+              exit 1
+            fi
+
+            if [ "$actual_location" != "$target" ] && [ "$actual_location" != "https://yp7.net${target}" ]; then
+              echo "Expected $source to redirect to $target, received ${actual_location:-no Location header}."
+              exit 1
+            fi
+
+            printf 'https://yp7.net%s\n' "$source" >> extra-urls.txt
+          done < docs/.vuepress/public/_redirects
+
+          while IFS= read -r deleted_url; do
+            if [ -z "$deleted_url" ] || [ "${deleted_url#\#}" != "$deleted_url" ]; then
+              continue
+            fi
+
+            case "$deleted_url" in
+              https://yp7.net/*) ;;
+              *)
+                echo "Deleted URL must belong to https://yp7.net/: $deleted_url"
+                exit 1
+                ;;
+            esac
+
+            deleted_status=$(curl --silent --show-error --output /dev/null \
+              --connect-timeout 5 --max-time 20 \
+              --write-out '%{http_code}' "$deleted_url")
+            if [ "$deleted_status" != "404" ] && [ "$deleted_status" != "410" ]; then
+              echo "Expected deleted URL $deleted_url to return 404 or 410, received $deleted_status."
+              exit 1
+            fi
+
+            printf '%s\n' "$deleted_url" >> extra-urls.txt
+          done < .github/indexnow-deleted-urls.txt
+
+          sort -u sitemap-urls.txt extra-urls.txt -o urls.txt
+          echo "Prepared $(wc -l < urls.txt) IndexNow URLs, including $(wc -l < extra-urls.txt) moved/deleted URLs."
 
       - name: Submit to IndexNow
         env:

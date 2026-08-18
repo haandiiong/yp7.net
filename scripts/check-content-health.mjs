@@ -110,6 +110,7 @@ const validateExternalAnchorRel = (html, projectPath) => {
 }
 
 const redirectSourcePaths = new Set()
+const redirectTargetPaths = new Set()
 const redirectsPath = join(publicDir, '_redirects')
 if (existsSync(redirectsPath)) {
   const redirectLines = readFileSync(redirectsPath, 'utf8').split('\n')
@@ -118,17 +119,72 @@ if (existsSync(redirectsPath)) {
     const trimmedLine = line.trim()
     if (!trimmedLine || trimmedLine.startsWith('#')) return
 
-    const [source, target] = trimmedLine.split(/\s+/)
-    if (!source || !target) return
-    if (source.startsWith('/') && !source.includes('*')) {
-      redirectSourcePaths.add(source)
-      redirectSourcePaths.add(normalizeRoute(source))
+    const [source, target, status, ...extra] = trimmedLine.split(/\s+/)
+    if (!source || !target || !status || extra.length) {
+      errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: expected source, target and status`)
+      return
     }
+
+    if (!source.startsWith('/') || !target.startsWith('/') || source.includes('*') || target.includes('*')) {
+      errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: IndexNow redirect validation requires local absolute paths without wildcards`)
+      return
+    }
+
+    if (!['301', '308'].includes(status)) {
+      errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: redirect must use permanent status 301 or 308`)
+    }
+
+    const normalizedSource = normalizeRoute(source)
+    const normalizedTarget = normalizeRoute(target)
+    if (normalizedSource === normalizedTarget) {
+      errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: redirect source and target are identical`)
+    }
+    if (redirectSourcePaths.has(normalizedSource)) {
+      errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: duplicate redirect source ${source}`)
+    }
+    redirectSourcePaths.add(source)
+    redirectSourcePaths.add(normalizedSource)
+    redirectTargetPaths.add(normalizedTarget)
 
     if (!extname(source) && target.endsWith('.html')) {
       errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: extensionless redirect to .html can loop on clean-url hosts`)
     }
   })
+}
+
+const deletedUrlPaths = new Set()
+const deletedUrlsPath = join(root, '.github/indexnow-deleted-urls.txt')
+if (existsSync(deletedUrlsPath)) {
+  const deletedUrlLines = readFileSync(deletedUrlsPath, 'utf8').split('\n')
+
+  deletedUrlLines.forEach((line, index) => {
+    const deletedUrl = line.trim()
+    if (!deletedUrl || deletedUrl.startsWith('#')) return
+
+    let url
+    try {
+      url = new URL(deletedUrl)
+    } catch {
+      errors.push(`${toProjectPath(deletedUrlsPath)}:${index + 1}: invalid URL ${deletedUrl}`)
+      return
+    }
+
+    if (url.origin !== hostname || url.search || url.hash) {
+      errors.push(`${toProjectPath(deletedUrlsPath)}:${index + 1}: deleted URL must be a canonical ${hostname} URL without query or hash`)
+      return
+    }
+
+    const pathname = normalizeRoute(url.pathname)
+    if (deletedUrlPaths.has(pathname)) {
+      errors.push(`${toProjectPath(deletedUrlsPath)}:${index + 1}: duplicate deleted URL ${deletedUrl}`)
+    }
+    if (redirectSourcePaths.has(pathname)) {
+      errors.push(`${toProjectPath(deletedUrlsPath)}:${index + 1}: deleted URL is also a redirect source ${deletedUrl}`)
+    }
+    deletedUrlPaths.add(pathname)
+  })
+} else {
+  errors.push(`${toProjectPath(deletedUrlsPath)}: missing deleted URL list for IndexNow`)
 }
 
 const getSitemapHtmlPath = (pathname) => {
@@ -741,6 +797,12 @@ if (!existsSync(distDir)) {
 
     const minTitleLength = minTitleLengthByGeneratedHtml.get(projectPath)
     const title = html.match(/<title>(.*?)<\/title>/s)?.[1] || ''
+    if (title.includes('全部文章')) {
+      errors.push(`${projectPath}: title must not contain “全部文章”`)
+    }
+    if (title.includes('\uFFFD')) {
+      errors.push(`${projectPath}: title contains a Unicode replacement character`)
+    }
     if (minTitleLength && title.length < minTitleLength) {
       errors.push(`${projectPath}: title is ${title.length} characters, expected at least ${minTitleLength}`)
     }
@@ -772,6 +834,9 @@ if (!existsSync(distDir)) {
       if (redirectSourcePaths.has(pathname) || redirectSourcePaths.has(normalizeRoute(pathname))) {
         errors.push(`docs/.vuepress/dist/sitemap.xml: ${loc} points to a redirect source`)
       }
+      if (deletedUrlPaths.has(normalizeRoute(pathname))) {
+        errors.push(`docs/.vuepress/dist/sitemap.xml: ${loc} points to a deleted URL`)
+      }
 
       const htmlPath = getSitemapHtmlPath(pathname)
       if (!existsSync(htmlPath)) {
@@ -794,6 +859,12 @@ if (!existsSync(distDir)) {
     requiredSitemapPaths.forEach((path) => {
       if (!sitemapPathnames.has(path)) {
         errors.push(`docs/.vuepress/dist/sitemap.xml: missing important URL ${hostname}${path}`)
+      }
+    })
+
+    redirectTargetPaths.forEach((path) => {
+      if (!sitemapPathnames.has(path)) {
+        errors.push(`docs/.vuepress/dist/sitemap.xml: missing redirect target ${hostname}${path}`)
       }
     })
 
