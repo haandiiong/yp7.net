@@ -2,6 +2,7 @@ import {
   airportData,
   currentTestingSourceName,
   currentTestingSourceUrl,
+  mainRecommendationData,
   testingPolicyEffectiveDate,
   visibleAirportData,
 } from './airports'
@@ -16,7 +17,6 @@ import {
   getPageTopics,
   getWordCount,
   isArticlePage,
-  stripMarkdown,
 } from './page-utils'
 import {
   hostname,
@@ -58,19 +58,6 @@ const getAirportServiceSchemas = (page: any) => {
       url: canonicalUrl,
       image: getPageImage(page),
       subjectOf: { '@id': `${canonicalUrl}#webpage` },
-      areaServed: [
-        { '@type': 'Country', name: '中国' },
-        { '@type': 'Country', name: '台湾' },
-        { '@type': 'Country', name: '香港' },
-        { '@type': 'Country', name: '新加坡' },
-        { '@type': 'Country', name: '日本' },
-        { '@type': 'Country', name: '美国' },
-        { '@type': 'Country', name: '韩国' },
-      ],
-      audience: {
-        '@type': 'Audience',
-        audienceType: airport.scenarios.join(', '),
-      },
       additionalProperty: [
         { '@type': 'PropertyValue', name: '最低价格', value: airport.priceText },
         { '@type': 'PropertyValue', name: '月流量', value: airport.traffic },
@@ -89,46 +76,6 @@ const getAirportServiceSchemas = (page: any) => {
       ],
     },
   ]
-}
-
-const getFaqItems = (content = '') => {
-  const lines = content.split('\n')
-  const faqItems = []
-  let inFaqSection = false
-
-  for (let index = 0; index < lines.length; index += 1) {
-    const line = lines[index].trim()
-
-    if (line.startsWith('## ')) {
-      inFaqSection = /FAQ|常见问题/.test(line)
-      continue
-    }
-
-    if (!inFaqSection || !line.startsWith('### ')) continue
-
-    const question = stripMarkdown(line.replace(/^###\s+/, ''))
-    const answerLines = []
-
-    for (let nextIndex = index + 1; nextIndex < lines.length; nextIndex += 1) {
-      const nextLine = lines[nextIndex].trim()
-      if (nextLine.startsWith('## ') || nextLine.startsWith('### ')) break
-      if (nextLine && !nextLine.startsWith('---')) answerLines.push(nextLine)
-    }
-
-    const answer = stripMarkdown(answerLines.join(' '))
-    if (question && answer) {
-      faqItems.push({
-        '@type': 'Question',
-        name: question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: answer,
-        },
-      })
-    }
-  }
-
-  return faqItems.slice(0, 8)
 }
 
 const isSchemaObject = (value: unknown): value is Record<string, any> => (
@@ -211,26 +158,35 @@ const getAirportListItem = (airport: typeof airportData[number], index: number) 
 const getGeneratedItemListSchema = (page: any) => {
   const hasSalesSample = (airport: typeof airportData[number]) => typeof airport.salesSample === 'number'
   const byScenario = (scenario: string) => visibleAirportData.filter((airport) => airport.scenarios.includes(scenario))
-  const rankingMap: Record<string, { name: string, items: typeof airportData }> = {
-    '/rankings/all/': { name: '2026全量机场榜单', items: visibleAirportData },
+  const unordered = 'https://schema.org/ItemListUnordered'
+  const rankingMap: Record<string, { name: string, items: typeof airportData, itemListOrder: string }> = {
+    '/posts/jichang-tuijian/': {
+      name: '2026机场综合推荐顺序',
+      items: mainRecommendationData,
+      itemListOrder: 'https://schema.org/ItemListOrderAscending',
+    },
+    '/rankings/all/': { name: '2026全量机场筛选', items: visibleAirportData, itemListOrder: unordered },
     '/rankings/sales/': {
       name: '2026机场销量榜',
       items: visibleAirportData.filter(hasSalesSample).sort((a, b) => b.salesSample! - a.salesSample!),
+      itemListOrder: 'https://schema.org/ItemListOrderDescending',
     },
-    '/rankings/stable/': { name: '2026稳定机场榜', items: byScenario('stable') },
+    '/rankings/stable/': { name: '2026稳定机场筛选', items: byScenario('stable'), itemListOrder: unordered },
     '/rankings/cheap/': {
-      name: '2026低价机场榜',
+      name: '2026低价机场筛选',
       items: visibleAirportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap')),
+      itemListOrder: unordered,
     },
-    '/rankings/trial/': { name: '2026免费试用机场榜', items: visibleAirportData.filter((airport) => airport.trial) },
-    '/rankings/no-expiry/': { name: '2026不限时机场榜', items: visibleAirportData.filter((airport) => airport.noExpiry) },
-    '/rankings/dedicated-client/': { name: '2026专属客户端机场榜', items: visibleAirportData.filter((airport) => airport.dedicatedClient) },
+    '/rankings/trial/': { name: '2026免费试用机场筛选', items: visibleAirportData.filter((airport) => airport.trial), itemListOrder: unordered },
+    '/rankings/no-expiry/': { name: '2026不限时机场筛选', items: visibleAirportData.filter((airport) => airport.noExpiry), itemListOrder: unordered },
+    '/rankings/dedicated-client/': { name: '2026专属客户端机场筛选', items: visibleAirportData.filter((airport) => airport.dedicatedClient), itemListOrder: unordered },
     '/rankings/clash/': {
-      name: '2026 Clash机场榜',
+      name: '2026 Clash机场筛选',
       items: visibleAirportData.filter((airport) => airport.universalSubscription || airport.scenarios.includes('clash')),
+      itemListOrder: unordered,
     },
-    '/rankings/chatgpt/': { name: '2026 ChatGPT机场榜', items: byScenario('chatgpt') },
-    '/rankings/streaming/': { name: '2026流媒体机场榜', items: byScenario('streaming') },
+    '/rankings/chatgpt/': { name: '2026 ChatGPT机场筛选', items: byScenario('chatgpt'), itemListOrder: unordered },
+    '/rankings/streaming/': { name: '2026流媒体机场筛选', items: byScenario('streaming'), itemListOrder: unordered },
   }
   const ranking = rankingMap[page.path]
 
@@ -241,7 +197,7 @@ const getGeneratedItemListSchema = (page: any) => {
     '@id': `${getCanonicalUrl(page.path)}#ranking`,
     name: ranking.name,
     numberOfItems: ranking.items.length,
-    itemListOrder: 'https://schema.org/ItemListOrderAscending',
+    itemListOrder: ranking.itemListOrder,
     itemListElement: ranking.items.map(getAirportListItem),
   }
 }
@@ -281,7 +237,6 @@ export const getPageSchema = (page: any) => {
   const canonicalUrl = getCanonicalUrl(page.path)
   const title = page.title || siteName
   const description = getPageDescription(page)
-  const faqItems = getFaqItems(page.content)
   const extraSchemas = getPageExtraSchemas(page)
   const generatedItemListSchema = getGeneratedItemListSchema(page)
   const image = getPageImage(page)
@@ -380,13 +335,6 @@ export const getPageSchema = (page: any) => {
       ...getAirportServiceSchemas(page),
       ...(generatedItemListSchema ? [generatedItemListSchema] : []),
       ...extraSchemas,
-      ...(faqItems.length
-        ? [{
-            '@type': 'FAQPage',
-            '@id': `${canonicalUrl}#faq`,
-            mainEntity: faqItems,
-          }]
-        : []),
     ],
   }
 }

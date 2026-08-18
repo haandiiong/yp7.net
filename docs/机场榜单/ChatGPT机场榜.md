@@ -1,7 +1,7 @@
 ---
 title: 2026 ChatGPT机场榜：AI工具、办公访问与稳定节点筛选
 createTime: 2026/06/04
-dateModified: 2026/08/18
+dateModified: 2026/08/19
 permalink: /rankings/chatgpt/
 tags:
   - ChatGPT机场
@@ -14,7 +14,7 @@ description: 2026 ChatGPT机场榜，筛选适合 ChatGPT、Claude、Gemini 等 
 
 > **测试数据来源变更：** 自 2026年8月18日起，yp7.net 不再自行测速或发布新的实测；此前记录均为历史资料，不代表当前表现。当前速度、稳定性、ChatGPT 和流媒体测试数据统一来自 [Siilas 测速中心](https://siilas.com/test/)，本站只负责推荐、资料整理与风险提示。
 
-更新时间：2026年8月18日
+更新时间：2026年8月19日
 
 ## 筛选口径
 
@@ -28,10 +28,10 @@ ChatGPT机场榜重点看网页访问、登录稳定性、AI 工具连续对话�
 |---|---:|---|---|---|---|
 | [全球云](/posts/quanqiuyun/) | 20元/月 | 120GB/月 | 专属客户端 | 新手、ChatGPT、日常网页 | 先月付测试 |
 | [网际快车](/posts/wangji-kuaiche-review/) | 16元/月 | 100GB/月 | 专属客户端、通用订阅 | ChatGPT、Clash、办公 | 需复核官网与试用 |
-| [迅达](/posts/xunda-review-2026/) | 15元/月 | 150GB/月 | 专属客户端、通用订阅 | ChatGPT办公 | ChatGPT可用性需复测 |
-| [U1S1](/posts/u1s1-review-2026/) | 20元/月 | 120GB/月 | 专属客户端、通用订阅 | ChatGPT、直播、电商业务 | 晚高峰、直播和电商场景需复测 |
-| [二猫云](/posts/ermiao-vpn-review/) | 20元/月 | 100GB/月 | 专属客户端、通用订阅 | ChatGPT、跨境办公、多端 | 长期稳定需复测 |
-| [边缘节点](/posts/bianyuan-review-2026/) | 25元/月 | 120GB/月 | 专属客户端、通用订阅 | AI工具、跨境办公 | 通用订阅临时一次性，先月付复测 |
+| [迅达](/posts/xunda-review-2026/) | 15元/月 | 150GB/月 | 专属客户端、通用订阅 | ChatGPT办公 | 查看 Siilas AI 记录 |
+| [U1S1](/posts/u1s1-review-2026/) | 20元/月 | 120GB/月 | 专属客户端、通用订阅 | ChatGPT、直播、电商业务 | 查看 Siilas 相关场景记录 |
+| [二猫云](/posts/ermiao-vpn-review/) | 20元/月 | 100GB/月 | 专属客户端、通用订阅 | ChatGPT、跨境办公、多端 | 查看 Siilas 长期记录 |
+| [边缘节点](/posts/bianyuan-review-2026/) | 25元/月 | 120GB/月 | 专属客户端、通用订阅 | AI工具、跨境办公 | 通用订阅临时一次性，先月付验证 |
 | [快狸](/posts/kuaili-review-2026/) | 15元/月 | 50GB/月 | 专属客户端 | 轻量办公 | 流量较小 |
 
 ## 选择建议

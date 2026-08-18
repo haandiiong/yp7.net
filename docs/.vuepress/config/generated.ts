@@ -6,6 +6,7 @@ import {
   currentTestingSourceName,
   currentTestingSourceUrl,
   historicalTestingNotice,
+  mainRecommendationData,
   testingPolicyEffectiveDate,
   visibleAirportData,
 } from './airports'
@@ -136,17 +137,29 @@ export const patchGeneratedHtml = (app: any) => {
 }
 
 const getAirportDataFiles = () => {
-  const serializeAirport = (airport: typeof airportData[number]) => ({
-    ...airport,
-    ...(airport.performance ? {
-      performance: {
-        ...airport.performance,
-        recordStatus: 'historical',
-        recordNotice: historicalTestingNotice,
-      },
-    } : {}),
-    url: getCanonicalUrl(airport.path),
-  })
+  const serializeAirport = (airport: typeof airportData[number]) => {
+    const { performance, ...publicAirport } = airport
+
+    return {
+      ...publicAirport,
+      ...(performance ? {
+        historicalEvidence: {
+          evidenceLevel: performance.evidenceLevel,
+          lastTestedAt: performance.lastTestedAt,
+          testWindow: performance.testWindow,
+          testRegion: performance.testRegion,
+          testNetwork: performance.testNetwork,
+          testDevice: performance.testDevice,
+          latencyMs: performance.latencyMs,
+          downloadMbpsRange: performance.downloadMbpsRange,
+          evidenceSummary: performance.evidenceSummary,
+          recordStatus: 'historical',
+          recordNotice: historicalTestingNotice,
+        },
+      } : {}),
+      url: getCanonicalUrl(airport.path),
+    }
+  }
   const serializeSalesAirport = (airport: typeof airportData[number]) => ({
     ...serializeAirport(airport),
     salesSample: airport.salesSample,
@@ -160,6 +173,7 @@ const getAirportDataFiles = () => {
   return {
     airports: visibleAirportData.map(serializeAirport),
     rankings: {
+      mainRecommendation: mainRecommendationData.map(serializeAirport),
       all: visibleAirportData.map(serializeAirport),
       sales: salesRanking.map(serializeSalesAirport),
       stable: byScenario('stable').map(serializeAirport),
@@ -374,6 +388,7 @@ ${riskRows.map((item) => `<tr>
 }
 
 const rankingSections = [
+  { title: '综合推荐顺序', key: 'mainRecommendation', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
   { title: '销量机场', key: 'sales', renderHtml: getSalesHtmlTable, renderMarkdown: getSalesMarkdownTable },
   { title: '稳定机场', key: 'stable', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
   { title: '低价机场', key: 'cheap', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },

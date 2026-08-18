@@ -21,10 +21,6 @@ const getSocialHead = (page: any) => {
   const dateModified = getPageDateModified(page)
 
   return [
-    ['meta', { name: 'geo.position', content: '22.3193;114.1694' }],
-    ['meta', { name: 'ICBM', content: '22.3193, 114.1694' }],
-    ['meta', { name: 'geo.placename', content: 'Hong Kong' }],
-    ['meta', { name: 'geo.region', content: 'HK' }],
     ['meta', { property: 'og:url', content: canonicalUrl }],
     ['meta', { property: 'og:site_name', content: siteName }],
     ['meta', { property: 'og:title', content: title }],
