@@ -45,9 +45,19 @@ const getSocialHead = (page: any) => {
   ]
 }
 
+const noindexPaths = new Set([
+  '/blog/',
+  '/blog/tags/',
+  '/blog/categories/',
+  '/blog/archives/',
+  '/friends/',
+])
+
 const getBasicPageHead = (page: any) => {
   const keywords = getPageMetaKeywords(page)
-  const robots = page.path.startsWith('/rankings/')
+  const robots = noindexPaths.has(page.path)
+    ? 'noindex, follow'
+    : page.path.startsWith('/rankings/')
     ? 'index, follow, max-snippet:320, max-image-preview:large'
     : page.path.startsWith('/posts/') && page.path.includes('-review')
     ? 'index, follow, max-snippet:320, max-image-preview:large'

@@ -31,8 +31,15 @@ export const theme = plumeTheme({
         { text: '推荐方法与数据来源', link: '/methodology/', icon: 'material-symbols:science-outline' },
       ],
     },
-    { text: '风险监测', link: '/risk-monitor/', icon: 'material-symbols:warning-outline' },
-    { text: '关于本站', link: '/about/', icon: 'material-symbols:info-outline' },
+    {
+      text: '站点信息',
+      icon: 'material-symbols:info-outline',
+      items: [
+        { text: '风险监测', link: '/risk-monitor/', icon: 'material-symbols:warning-outline' },
+        { text: '友情链接', link: '/friends/', icon: 'material-symbols:link' },
+        { text: '关于本站', link: '/about/', icon: 'material-symbols:info-outline' },
+      ],
+    },
   ],
   profile: {
     name: 'yp7.net',
@@ -59,17 +66,20 @@ export const theme = plumeTheme({
   },
   plugins: {
     sitemap: {
+      excludePaths: [
+        '/404.html',
+        '/blog/',
+        '/blog/tags/',
+        '/blog/categories/',
+        '/blog/archives/',
+        '/friends/',
+      ],
       modifyTimeGetter: (page: any) => {
         const explicitDate = normalizeDate(page.frontmatter.dateModified || page.frontmatter.updateTime || page.frontmatter.lastUpdated || page.frontmatter.createTime || page.frontmatter.date)
         if (explicitDate) return explicitDate
 
         return page.data.git?.updatedTime ? new Date(page.data.git.updatedTime).toISOString() : ''
       },
-      extraUrls: [
-        '/data/airports',
-        '/data/rankings',
-        '/data/risk-monitor',
-      ],
     },
     seo: false,
   },

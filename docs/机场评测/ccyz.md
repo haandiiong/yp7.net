@@ -109,7 +109,7 @@ CCYZ 的独立结构应围绕“流媒体、稳定性、风险判断”展开。
 ## 本文属于
 
 - [机场推荐](/posts/jichang-tuijian/)
-- [全量机场榜单](/rankings/all/)
+- [机场大全](/posts/jichang-heji/)
 - [流媒体机场榜](/rankings/streaming/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [专属客户端机场榜](/rankings/dedicated-client/)
@@ -119,7 +119,7 @@ CCYZ 的独立结构应围绕“流媒体、稳定性、风险判断”展开。
 
 - [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
 - [流媒体机场榜](/rankings/streaming/)
-- [全量机场榜单：价格、流量、试用与风险状态](/rankings/all/)
+- [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [全球云机场怎么样？](/posts/quanqiuyun/)

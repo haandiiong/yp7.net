@@ -87,7 +87,7 @@ const scenarioLabels = {
 }
 
 const scenarioRankingLinks = {
-  stable: { label: '稳定机场榜', link: '/rankings/stable/' },
+  stable: { label: '机场推荐', link: '/posts/jichang-tuijian/' },
   cheap: { label: '低价机场榜', link: '/rankings/cheap/' },
   clash: { label: 'Clash机场榜', link: '/rankings/clash/' },
   chatgpt: { label: 'ChatGPT机场榜', link: '/rankings/chatgpt/' },
@@ -198,7 +198,7 @@ const renderMembershipSection = (airport, hiddenAirportStatuses) => {
 
   const links = [
     { label: '机场推荐', link: '/posts/jichang-tuijian/' },
-    { label: '全量机场榜单', link: '/rankings/all/' },
+    { label: '机场大全', link: '/posts/jichang-heji/' },
     ...airport.scenarios.map((scenario) => scenarioRankingLinks[scenario]).filter(Boolean),
     airport.noExpiry ? { label: '不限时套餐榜', link: '/rankings/no-expiry/' } : undefined,
     airport.dedicatedClient ? { label: '专属客户端机场榜', link: '/rankings/dedicated-client/' } : undefined,
@@ -221,7 +221,7 @@ const renderRelatedSection = (airport, visibleAirportData, displayNameByPath, hi
         { label: '机场风险监测', link: '/risk-monitor/' },
         { label: '机场推荐方法与测试数据来源', link: '/methodology/' },
         { label: '机场推荐：2026场景筛选与风险提示', link: '/posts/jichang-tuijian/' },
-        { label: '全量机场榜单：价格、流量、试用与风险状态', link: '/rankings/all/' },
+        { label: '机场大全：价格、流量、试用与风险状态', link: '/posts/jichang-heji/' },
       ]),
     ].join('\n')
   }
@@ -238,7 +238,7 @@ const renderRelatedSection = (airport, visibleAirportData, displayNameByPath, hi
   const links = uniqueLinks([
     { label: '机场推荐：2026场景筛选与风险提示', link: '/posts/jichang-tuijian/' },
     primaryScenarioLink,
-    { label: '全量机场榜单：价格、流量、试用与风险状态', link: '/rankings/all/' },
+    { label: '机场大全：价格、流量、试用与风险状态', link: '/posts/jichang-heji/' },
     { label: '机场风险监测', link: '/risk-monitor/' },
     { label: '机场推荐方法与测试数据来源', link: '/methodology/' },
     ...peerAirports.map((item) => ({

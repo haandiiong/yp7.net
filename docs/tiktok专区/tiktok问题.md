@@ -213,7 +213,7 @@ TikTok只允许**特定地区IP访问**
 - 不限速
 - 支持流媒体解锁
 
-推荐查看 [稳定机场榜](/rankings/stable/) 和 [机场推荐](/posts/jichang-tuijian/)，先用月付或试用验证 TikTok 加载、播放和发布表现。
+推荐查看 [机场推荐主页面](/posts/jichang-tuijian/)，先用月付或试用验证 TikTok 加载、播放和发布表现。
 
 ---
 

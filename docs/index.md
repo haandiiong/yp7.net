@@ -1,12 +1,12 @@
 ---
 home: true
-title: 2026机场推荐、机场风险监测与科学上网教程
-description: yp7.net 是机场推荐、套餐与客户端资料、风险监测和新手教程入口。2026年8月18日起本站不再自行测速，当前测试数据统一来自 Siilas。
-dateModified: 2026/08/18
+title: yp7.net｜机场资料、风险监测与科学上网教程
+description: yp7.net 是机场套餐与客户端资料、风险监测和科学上网教程入口。2026年8月18日起本站不再自行测速，当前测试数据统一来自 Siilas。
+dateModified: 2026/08/19
 config:
   - type: hero
     hero:
-      name: "2026机场推荐、机场风险监测与科学上网教程"
+      name: "yp7.net｜机场资料、风险监测与科学上网教程"
       tagline: "先看风险，再选机场"
       text: "本站只做推荐；当前测速与测试数据统一来自 Siilas，购买前建议先试用或月付。"
       actions:
@@ -29,8 +29,8 @@ config:
         linkText: "看主推荐"
       - title: "长期主力"
         details: "结合 Siilas 当前测试记录、节点维护、售后响应和风险提示进行筛选。"
-        link: "/rankings/stable/"
-        linkText: "看稳定榜"
+        link: "/posts/jichang-tuijian/#再按使用场景选择"
+        linkText: "看场景选择"
       - title: "Clash订阅"
         details: "筛选支持通用订阅、Clash Verge、Clash Meta、Shadowrocket 和 Mihomo 的机场。"
         link: "/rankings/clash/"
@@ -51,10 +51,10 @@ config:
     title: "机场榜单入口"
     description: "榜单页是筛选工具，用来横向查看价格、流量、试用、客户端、通用订阅和风险状态。"
     features:
-      - title: "稳定机场榜"
-        details: "按晚高峰、长期连接和主力使用场景筛选。"
-        link: "/rankings/stable/"
-        linkText: "稳定机场"
+      - title: "机场大全"
+        details: "汇总机场价格、流量、试用、客户端、通用订阅和风险状态。"
+        link: "/posts/jichang-heji/"
+        linkText: "查看全部机场"
       - title: "低价机场榜"
         details: "整理 10 元左右、轻量、试用和备用机场。"
         link: "/rankings/cheap/"
@@ -136,9 +136,9 @@ config:
         link: "/methodology/"
         linkText: "查看方法"
       - title: "数据来源"
-        details: "机场数据同步到全量榜单、结构化数据、JSON、Markdown 和风险监测页。"
-        link: "/data/airports"
-        linkText: "查看数据"
+        details: "套餐与客户端资料汇总到机场大全；当前测试数据来自 Siilas，本站不生产新的测速结论。"
+        link: "/methodology/#数据来源与职责边界"
+        linkText: "查看来源边界"
       - title: "商业链接说明"
         details: "带推广参数的入口会标记 sponsored / nofollow，不作为自然推荐信号。"
         link: "/about/"

@@ -97,7 +97,6 @@ const scenarioSummary = (airport) => airport.scenarios
 
 const airportLink = (airport) => `[${airport.name}](${airport.path})`
 
-const hasSalesSample = (airport) => typeof airport.salesSample === 'number'
 const byScenario = (scenario) => (airport) => airport.scenarios.includes(scenario)
 const cheapFilter = (airport) => airport.price <= 10 || airport.scenarios.includes('cheap')
 const clashFilter = (airport) => airport.universalSubscription || airport.scenarios.includes('clash')
@@ -124,26 +123,9 @@ const columnGetters = {
 
 const tableConfigs = [
   {
-    filePath: 'docs/机场榜单/全量机场榜单.md',
-    heading: '## 全量机场数据',
-    getAirports: ({ visibleAirportData }) => visibleAirportData,
-  },
-  {
     filePath: 'docs/风险监测/机场风险监测.md',
     heading: '## 站内观察状态',
     getAirports: ({ visibleAirportData }) => visibleAirportData,
-  },
-  {
-    filePath: 'docs/机场榜单/销量机场榜.md',
-    heading: '## 销量榜单',
-    getAirports: ({ visibleAirportData }) => visibleAirportData
-      .filter(hasSalesSample)
-      .sort((a, b) => b.salesSample - a.salesSample),
-  },
-  {
-    filePath: 'docs/机场榜单/稳定机场榜.md',
-    heading: '## 稳定机场候选',
-    rowFilter: byScenario('stable'),
   },
   {
     filePath: 'docs/机场榜单/低价机场榜.md',

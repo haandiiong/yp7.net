@@ -110,13 +110,8 @@ const walkGeneratedHtml = (dir: string, visit: (file: string) => void) => {
 }
 
 const generatedHtmlPatches = [
-  ['index.html', '2026机场推荐、机场风险监测与科学上网教程', defaultRobots],
-  ['blog/index.html', 'yp7.net 文章索引：2026机场推荐、机场资料、科学上网教程、Clash配置与风险监测合集导航', defaultRobots],
-  ['blog/tags/index.html', 'yp7.net 标签索引：机场推荐、VPN教程、Clash节点、ChatGPT机场与流媒体解锁主题分类导航', defaultRobots],
-  ['blog/categories/index.html', 'yp7.net 分类索引：2026机场推荐、机场资料、工具教程、科学上网指南、风险监测与购买避坑导航', defaultRobots],
-  ['blog/archives/index.html', 'yp7.net 时间归档：2026机场推荐、VPN教程、Clash配置、科学上网文章更新记录与站内入口', defaultRobots],
-  ['friends/index.html', 'yp7.net 友情链接：科学上网、机场推荐、VPN教程、网络工具、内容合作、友情链接交换与资源站点导航', defaultRobots],
-  ['404.html', '页面未找到：yp7.net 机场推荐与科学上网教程', 'noindex, follow'],
+  ['index.html', 'yp7.net｜机场资料、风险监测与科学上网教程', defaultRobots],
+  ['404.html', '页面未找到｜yp7.net', 'noindex, follow'],
 ] as const
 
 export const patchGeneratedHtml = (app: any) => {
@@ -271,7 +266,7 @@ const renderDataHtmlPage = ({
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="${defaultRobots}">
+    <meta name="robots" content="noindex, follow">
     <meta name="description" content="${escapeHtml(metaDescription)}">
     <meta name="keywords" content="${escapeHtml(keywords)}">
     <link rel="canonical" href="${canonical}">
@@ -538,7 +533,7 @@ export const generateAirportDataFiles = (app: any) => {
         <a href="/data/airports.json">airports.json</a>
         <a href="/data/airports.md">airports.md</a>
         <a href="/data/rankings">rankings</a>
-        <a href="/rankings/all/">全量机场榜单</a>
+        <a href="/posts/jichang-heji/">机场大全</a>
         <a href="/methodology/">推荐方法</a>
       </div>
       <div class="card">${getAirportHtmlTable()}</div>`,
@@ -556,9 +551,8 @@ export const generateAirportDataFiles = (app: any) => {
       <div class="links">
         <a href="/data/rankings.json">rankings.json</a>
         <a href="/data/rankings.md">rankings.md</a>
-        <a href="/rankings/all/">全量榜单</a>
-        <a href="/rankings/sales/">销量机场</a>
-        <a href="/rankings/stable/">稳定机场</a>
+        <a href="/posts/jichang-heji/">机场大全</a>
+        <a href="/posts/jichang-tuijian/">机场推荐</a>
         <a href="/rankings/cheap/">低价机场</a>
         <a href="/rankings/trial/">免费试用</a>
         <a href="/rankings/no-expiry/">不限时套餐</a>

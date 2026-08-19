@@ -124,7 +124,7 @@ sogo 值得作为新手客户端型机场测试。它的优势是上手简单，
 ## 本文属于
 
 - [机场推荐](/posts/jichang-tuijian/)
-- [全量机场榜单](/rankings/all/)
+- [机场大全](/posts/jichang-heji/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [专属客户端机场榜](/rankings/dedicated-client/)
 - [机场风险监测](/risk-monitor/)
@@ -132,7 +132,7 @@ sogo 值得作为新手客户端型机场测试。它的优势是上手简单，
 ## 相关阅读
 
 - [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
-- [全量机场榜单：价格、流量、试用与风险状态](/rankings/all/)
+- [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [全球云机场怎么样？](/posts/quanqiuyun/)

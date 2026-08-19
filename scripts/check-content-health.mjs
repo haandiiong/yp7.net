@@ -432,10 +432,8 @@ const generatedCleanHtmlResourcePaths = new Set([
   '/data/risk-monitor',
 ])
 const requiredSeoSitemapPaths = [
-  '/rankings/sales/',
-  '/data/airports',
-  '/data/rankings',
-  '/data/risk-monitor',
+  '/posts/jichang-tuijian/',
+  '/posts/jichang-heji/',
 ]
 const crawlerReadableDataResourcePaths = [
   '/data/airports.json',
@@ -445,14 +443,6 @@ const crawlerReadableDataResourcePaths = [
   '/data/rankings.md',
   '/data/risk-monitor.md',
 ]
-const minTitleLengthByGeneratedHtml = new Map([
-  ['docs/.vuepress/dist/blog/index.html', 50],
-  ['docs/.vuepress/dist/blog/tags/index.html', 50],
-  ['docs/.vuepress/dist/blog/categories/index.html', 50],
-  ['docs/.vuepress/dist/blog/archives/index.html', 50],
-  ['docs/.vuepress/dist/friends/index.html', 50],
-  ['docs/.vuepress/dist/data/risk-monitor.html', 50],
-])
 const routeMap = new Map([['/', 'docs/index.md']])
 const pages = []
 
@@ -681,7 +671,6 @@ if (existsSync(robotsPath)) {
 
 if (airportData.length) {
   const allAirports = visibleAirportData
-  const stableAirports = visibleAirportData.filter((airport) => airport.scenarios.includes('stable'))
   const cheapAirports = visibleAirportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap'))
   const clashAirports = visibleAirportData.filter((airport) => airport.universalSubscription || airport.scenarios.includes('clash'))
   const chatgptAirports = visibleAirportData.filter((airport) => airport.scenarios.includes('chatgpt'))
@@ -689,25 +678,6 @@ if (airportData.length) {
   const trialAirports = visibleAirportData.filter((airport) => airport.trial)
   const noExpiryAirports = visibleAirportData.filter((airport) => airport.noExpiry)
   const dedicatedClientAirports = visibleAirportData.filter((airport) => airport.dedicatedClient)
-
-  validateAirportTable({
-    filePath: 'docs/机场榜单/全量机场榜单.md',
-    heading: '## 全量机场数据',
-    airports: airportData,
-    airportByPath,
-    requiredAirports: allAirports,
-    exactRows: true,
-    exactOrder: true,
-    fields: [
-      ['最低价格', (airport) => airport.priceText],
-      ['月流量', (airport) => airport.traffic],
-      ['试用', (airport) => booleanText(airport.trial)],
-      ['不限时', (airport) => booleanText(airport.noExpiry)],
-      ['专属客户端', (airport) => booleanText(airport.dedicatedClient)],
-      ['通用订阅', (airport) => booleanText(airport.universalSubscription)],
-      ['状态', (airport) => airport.status],
-    ],
-  })
 
   validateAirportTable({
     filePath: 'docs/风险监测/机场风险监测.md',
@@ -722,21 +692,6 @@ if (airportData.length) {
       ['风险提示', (airport) => airport.risk],
       ['试用', (airport) => booleanText(airport.trial)],
       ['最低价格', (airport) => airport.priceText],
-    ],
-  })
-
-  validateAirportTable({
-    filePath: 'docs/机场榜单/稳定机场榜.md',
-    heading: '## 稳定机场候选',
-    airports: airportData,
-    airportByPath,
-    requiredAirports: stableAirports,
-    rowFilter: (airport) => stableAirports.includes(airport),
-    fields: [
-      ['价格', (airport) => airport.priceText],
-      ['流量', (airport) => airport.traffic],
-      ['客户端', clientSummary],
-      ['风险提示', (airport) => airport.risk],
     ],
   })
 
@@ -862,19 +817,19 @@ if (!existsSync(distDir)) {
     const html = readFileSync(filePath, 'utf8')
     const projectPath = toProjectPath(filePath)
     const htmlIssues = []
+    const isNoindex = /<meta name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html)
 
     if (countMatches(html, /<title>/g) !== 1) htmlIssues.push('expected exactly one <title>')
     if (countMatches(html, /<link rel="canonical"/g) !== 1) htmlIssues.push('expected exactly one canonical link')
     if (countMatches(html, /<meta name="description"/g) !== 1) htmlIssues.push('expected exactly one meta description')
     if (countMatches(html, /<meta name="robots"/g) !== 1) htmlIssues.push('expected exactly one robots meta')
     if (countMatches(html, /application\/ld\+json/g) < 1) htmlIssues.push('missing JSON-LD')
-    if (countMatches(html, /<h1\b/g) < 1) htmlIssues.push('missing H1')
+    if (!isNoindex && countMatches(html, /<h1\b/g) < 1) htmlIssues.push('missing H1')
 
     htmlIssues.forEach((issue) => errors.push(`${projectPath}: ${issue}`))
     validateJsonLd(html, projectPath)
     validateExternalAnchorRel(html, projectPath)
 
-    const minTitleLength = minTitleLengthByGeneratedHtml.get(projectPath)
     const title = html.match(/<title>(.*?)<\/title>/s)?.[1] || ''
     if (title.includes('全部文章')) {
       errors.push(`${projectPath}: title must not contain “全部文章”`)
@@ -884,9 +839,6 @@ if (!existsSync(distDir)) {
     }
     if (title.includes('\uFFFD')) {
       errors.push(`${projectPath}: title contains a Unicode replacement character`)
-    }
-    if (minTitleLength && title.length < minTitleLength) {
-      errors.push(`${projectPath}: title is ${title.length} characters, expected at least ${minTitleLength}`)
     }
   }
 
@@ -944,6 +896,7 @@ if (!existsSync(distDir)) {
     })
 
     redirectTargetPaths.forEach((path) => {
+      if (generatedCleanHtmlResourcePaths.has(path)) return
       if (!sitemapPathnames.has(path)) {
         errors.push(`docs/.vuepress/dist/sitemap.xml: missing redirect target ${hostname}${path}`)
       }

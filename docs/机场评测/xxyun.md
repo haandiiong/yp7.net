@@ -275,7 +275,7 @@ xxyun 日常可用，但晚高峰、热门节点和特殊时期可能波动。�
 ## 本文属于
 
 - [机场推荐](/posts/jichang-tuijian/)
-- [全量机场榜单](/rankings/all/)
+- [机场大全](/posts/jichang-heji/)
 - [低价机场榜](/rankings/cheap/)
 - [流媒体机场榜](/rankings/streaming/)
 - [Clash机场榜](/rankings/clash/)
@@ -287,7 +287,7 @@ xxyun 日常可用，但晚高峰、热门节点和特殊时期可能波动。�
 
 - [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
 - [低价机场榜](/rankings/cheap/)
-- [全量机场榜单：价格、流量、试用与风险状态](/rankings/all/)
+- [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [全球云机场怎么样？](/posts/quanqiuyun/)

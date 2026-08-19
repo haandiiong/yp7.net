@@ -16,6 +16,8 @@ description: 2026 ChatGPT机场榜，筛选适合 ChatGPT、Claude、Gemini 等 
 
 更新时间：2026年8月19日
 
+> **页面层级：** 本页只承接 ChatGPT、Claude、Gemini 等 AI 场景筛选；如果还没有综合候选，请先查看 [2026机场推荐主页面](/posts/jichang-tuijian/)。
+
 ## 筛选口径
 
 ChatGPT机场榜重点看网页访问、登录稳定性、AI 工具连续对话、晚高峰可用性和节点切换成本。AI 平台策略会变化，任何机场都需要以实际测试为准。
@@ -55,17 +57,8 @@ ChatGPT机场榜重点看网页访问、登录稳定性、AI 工具连续对话�
 
 优先选择官方支持地区中稳定、低丢包、晚高峰不断线的节点。具体地区差异和排查流程见 [AI工具节点选择指南](/posts/ai-tools-node-guide-2026/)。
 
-## 相关排名推荐
+## 继续筛选
 
-| 场景 | 排名 | 查看 |
-|------|------|------|
-| 🏆 全部选项 | 全量榜单 | [32个机场对比](/rankings/all/) |
-| ⭐ 主力方案 | 稳定机场榜 | [晚高峰体验](/rankings/stable/) |
-| 💰 预算有限 | 低价机场榜 | [便宜方案](/rankings/cheap/) |
-| ⏰ 先体验 | 免费试用机场榜 | [注册体验](/rankings/trial/) |
-| 📦 长期 | 不限时套餐榜 | [备用方案](/rankings/no-expiry/) |
-| 🎬 流媒体 | 流媒体机场榜 | [Netflix等解锁](/rankings/streaming/) |
-| ⚙️ Clash | Clash机场榜 | [通用订阅](/rankings/clash/) |
-| 👤 新手 | 专属客户端榜 | [一键连接](/rankings/dedicated-client/) |
-| 🏷️ 优惠 | 机场优惠码汇总 | [折扣信息](/rankings/coupons/) |
-| 📊 热销 | 销量机场榜 | [排行榜](/rankings/sales/) |
+- [2026机场推荐主页面](/posts/jichang-tuijian/)
+- [AI工具节点选择指南](/posts/ai-tools-node-guide-2026/)
+- [机场风险监测](/risk-monitor/)

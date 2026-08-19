@@ -30,6 +30,9 @@
 /posts/what-is-vpn/ /posts/vpn-guide-2026/ 301
 
 # 旧机场内容与榜单页
+/rankings/stable/ /posts/jichang-tuijian/ 301
+/rankings/sales/ /posts/jichang-heji/ 301
+/rankings/all/ /posts/jichang-heji/ 301
 /posts/airport-recommend-2026/ /posts/jichang-tuijian/ 301
 /posts/airport-recommend-2026-best/ /posts/guangnianti-review-2026/ 301
 /posts/airport-list-2026/ /posts/jichang-heji/ 301

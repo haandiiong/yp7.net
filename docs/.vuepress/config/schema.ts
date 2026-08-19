@@ -156,7 +156,6 @@ const getAirportListItem = (airport: typeof airportData[number], index: number) 
 })
 
 const getGeneratedItemListSchema = (page: any) => {
-  const hasSalesSample = (airport: typeof airportData[number]) => typeof airport.salesSample === 'number'
   const byScenario = (scenario: string) => visibleAirportData.filter((airport) => airport.scenarios.includes(scenario))
   const unordered = 'https://schema.org/ItemListUnordered'
   const rankingMap: Record<string, { name: string, items: typeof airportData, itemListOrder: string }> = {
@@ -165,13 +164,7 @@ const getGeneratedItemListSchema = (page: any) => {
       items: mainRecommendationData,
       itemListOrder: 'https://schema.org/ItemListOrderAscending',
     },
-    '/rankings/all/': { name: '2026全量机场筛选', items: visibleAirportData, itemListOrder: unordered },
-    '/rankings/sales/': {
-      name: '2026机场销量榜',
-      items: visibleAirportData.filter(hasSalesSample).sort((a, b) => b.salesSample! - a.salesSample!),
-      itemListOrder: 'https://schema.org/ItemListOrderDescending',
-    },
-    '/rankings/stable/': { name: '2026稳定机场筛选', items: byScenario('stable'), itemListOrder: unordered },
+    '/posts/jichang-heji/': { name: '2026机场大全', items: visibleAirportData, itemListOrder: unordered },
     '/rankings/cheap/': {
       name: '2026低价机场筛选',
       items: visibleAirportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap')),

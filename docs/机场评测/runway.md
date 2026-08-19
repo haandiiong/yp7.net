@@ -240,7 +240,7 @@ description: 拼好连机场怎么样？拼好连好用吗？本文保留2026年
 ## 本文属于
 
 - [机场推荐](/posts/jichang-tuijian/)
-- [全量机场榜单](/rankings/all/)
+- [机场大全](/posts/jichang-heji/)
 - [低价机场榜](/rankings/cheap/)
 - [免费试用机场榜](/rankings/trial/)
 - [不限时套餐榜](/rankings/no-expiry/)
@@ -251,7 +251,7 @@ description: 拼好连机场怎么样？拼好连好用吗？本文保留2026年
 
 - [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
 - [低价机场榜](/rankings/cheap/)
-- [全量机场榜单：价格、流量、试用与风险状态](/rankings/all/)
+- [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [全球云机场怎么样？](/posts/quanqiuyun/)
