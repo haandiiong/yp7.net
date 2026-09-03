@@ -97,9 +97,25 @@ jobs:
                 ;;
             esac
 
+            submit_redirect=true
             if ! grep -Fxq "https://yp7.net${target}" sitemap-urls.txt; then
-              echo "Redirect target is missing from the deployed Sitemap: $target"
-              exit 1
+              target_html=$(mktemp)
+              if ! curl --fail --silent --show-error --location \
+                --connect-timeout 5 --max-time 20 \
+                "https://yp7.net${target}" --output "$target_html"; then
+                rm -f "$target_html"
+                echo "Redirect target is neither in the Sitemap nor reachable: $target"
+                exit 1
+              fi
+
+              if ! grep -Eiq "<meta[^>]+name=['\"]robots['\"][^>]+content=['\"][^'\"]*noindex" "$target_html"; then
+                rm -f "$target_html"
+                echo "Redirect target is missing from the deployed Sitemap without a noindex directive: $target"
+                exit 1
+              fi
+
+              rm -f "$target_html"
+              submit_redirect=false
             fi
 
             redirect_headers=$(mktemp)
@@ -120,7 +136,11 @@ jobs:
               exit 1
             fi
 
-            printf 'https://yp7.net%s\n' "$source" >> extra-urls.txt
+            if [ "$submit_redirect" = true ]; then
+              printf 'https://yp7.net%s\n' "$source" >> extra-urls.txt
+            else
+              echo "Validated redirect to noindex target outside Sitemap: $source -> $target"
+            fi
           done < docs/.vuepress/public/_redirects
 
           while IFS= read -r deleted_url; do
