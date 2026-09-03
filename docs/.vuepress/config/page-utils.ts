@@ -35,7 +35,23 @@ export const stripMarkdown = (content = '') => content
   .replace(/\s+/g, ' ')
   .trim()
 
-export const isArticlePage = (page: any) => Boolean(page.filePathRelative && page.path !== '/' && page.path !== '/friends/' && !page.frontmatter.home)
+const collectionPagePaths = new Set([
+  '/posts/jichang-tuijian/',
+  '/posts/jichang-heji/',
+  '/risk-monitor/',
+])
+
+export const isCollectionPage = (page: any) => (
+  collectionPagePaths.has(page.path)
+  || page.path.startsWith('/rankings/')
+)
+
+export const isArticlePage = (page: any) => Boolean(
+  page.filePathRelative
+  && page.path.startsWith('/posts/')
+  && !isCollectionPage(page)
+  && !page.frontmatter.home,
+)
 
 export const getPageDatePublished = (page: any) => normalizeDate(page.frontmatter.createTime || page.frontmatter.date)
 

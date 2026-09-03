@@ -80,6 +80,7 @@ pnpm run docs:typecheck
 - frontmatter 必须包含 `title`、`description`、`createTime`、`dateModified`、`permalink`。
 - 新增机场评测页时，同步检查 `docs/.vuepress/config/airports.ts` 里的结构化字段、页面图片和销量样本。
 - 修改 `docs/.vuepress/config/airports.ts` 的价格、流量、试用、客户端、通用订阅、销量样本或风险字段后，运行 `pnpm run docs:sync-tables` 同步榜单和风险监测表格，避免多处数据漂移。
+- 完成价格、服务状态、能力和风险的实际复核后，手动更新 `airportDataLastReviewed`；仅补录历史测速或调整测试口径时不要推进该日期。
 - 修改单机场页或机场结构化数据后，运行 `pnpm run docs:sync-review-sections` 同步“推荐依据与历史测试记录”“本文属于”和“相关阅读”，避免页面内链断层。
 - 本地图片放在 `docs/.vuepress/public/`，正文使用 `/image-name.png` 这种绝对路径。
 - 推广链接可以正常写入正文，构建时会自动补充 `rel="sponsored nofollow noopener noreferrer"`。

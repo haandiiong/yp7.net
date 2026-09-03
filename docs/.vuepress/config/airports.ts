@@ -104,18 +104,9 @@ export const mainRecommendationData = mainRecommendationNames.map((name) => {
   return airport
 })
 
-const getLatestIsoDate = (dates: string[]) => dates
-  .filter((date) => /^\d{4}-\d{2}-\d{2}$/.test(date))
-  .sort()
-  .at(-1)
-
-export const airportDataLastReviewed = getLatestIsoDate([
-  testingPolicyEffectiveDate,
-  '2026-07-02',
-  ...airportData.flatMap((airport) => [
-    airport.performance?.lastTestedAt,
-  ].filter(Boolean) as string[]),
-]) || '2026-06-21'
+// Update this date whenever current airport prices, capabilities, status, or risks are reviewed.
+// Historical performance dates and testing-policy dates must not advance current-data freshness.
+export const airportDataLastReviewed = '2026-08-19'
 
 export const airportMetrics: AirportMetrics = {
   count: visibleAirportData.length,

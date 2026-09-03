@@ -17,6 +17,7 @@ import {
   getPageTopics,
   getWordCount,
   isArticlePage,
+  isCollectionPage,
 } from './page-utils'
 import {
   hostname,
@@ -133,7 +134,15 @@ function normalizeExtraSchema(schema: Record<string, any>) {
   return normalized
 }
 
-const getPageExtraSchemas = (page: any) => {
+const getPrimaryPageSchemaType = (page: any) => {
+  if (isCollectionPage(page)) return 'CollectionPage'
+  if (isArticlePage(page)) return 'BlogPosting'
+  if (page.path === '/about/') return 'AboutPage'
+
+  return 'WebPage'
+}
+
+const getPageExtraSchemas = (page: any, primaryPageSchemaType: string) => {
   const schema = page.frontmatter.schema || page.frontmatter.schemas || page.frontmatter.jsonLd
 
   if (!schema) return []
@@ -143,6 +152,7 @@ const getPageExtraSchemas = (page: any) => {
   return schemas
     .map(normalizeExtraSchema)
     .filter((item) => !(generatedItemList && isSchemaObject(item) && hasSchemaType(item['@type'], 'ItemList')))
+    .filter((item) => !(isSchemaObject(item) && hasSchemaType(item['@type'], primaryPageSchemaType)))
 }
 
 const getAirportListItem = (airport: typeof airportData[number], index: number) => ({
@@ -207,12 +217,20 @@ const getBreadcrumbItems = (page: any) => {
 
   if (page.path === '/') return items
 
-  if (isArticlePage(page)) {
+  const filePath = page.filePathRelative || ''
+  const parent = filePath.includes('机场评测')
+    ? { name: '机场大全', item: `${hostname}/posts/jichang-heji/` }
+    : filePath.includes('机场榜单')
+      ? { name: '机场推荐', item: `${hostname}/posts/jichang-tuijian/` }
+      : filePath.includes('机场推荐') && page.path !== '/posts/jichang-tuijian/'
+        ? { name: '机场推荐', item: `${hostname}/posts/jichang-tuijian/` }
+        : undefined
+
+  if (parent && parent.item !== canonicalUrl) {
     items.push({
       '@type': 'ListItem',
       position: 2,
-      name: '文章索引',
-      item: `${hostname}/blog/`,
+      ...parent,
     })
   }
 
@@ -230,7 +248,8 @@ export const getPageSchema = (page: any) => {
   const canonicalUrl = getCanonicalUrl(page.path)
   const title = page.title || siteName
   const description = getPageDescription(page)
-  const extraSchemas = getPageExtraSchemas(page)
+  const primaryPageSchemaType = getPrimaryPageSchemaType(page)
+  const extraSchemas = getPageExtraSchemas(page, primaryPageSchemaType)
   const generatedItemListSchema = getGeneratedItemListSchema(page)
   const image = getPageImage(page)
   const datePublished = getPageDatePublished(page)
@@ -293,7 +312,7 @@ export const getPageSchema = (page: any) => {
         publishingPrinciples: sitePublishingPrinciplesUrl,
       },
       {
-        '@type': articlePage ? 'BlogPosting' : 'WebPage',
+        '@type': primaryPageSchemaType,
         '@id': `${canonicalUrl}#webpage`,
         url: canonicalUrl,
         name: title,
@@ -303,12 +322,12 @@ export const getPageSchema = (page: any) => {
         publisher: { '@id': `${hostname}/#organization` },
         mainEntityOfPage: canonicalUrl,
         image,
+        ...(datePublished ? { datePublished } : {}),
+        ...(dateModified ? { dateModified } : {}),
         ...(articlePage
           ? {
               headline: title,
               author: { '@id': `${hostname}/#author` },
-              datePublished,
-              dateModified,
               mainEntityOfPage: {
                 '@type': 'WebPage',
                 '@id': canonicalUrl,

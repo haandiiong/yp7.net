@@ -79,8 +79,12 @@ const getJsonLdSchemas = (html, projectPath) => {
 }
 
 const validateJsonLd = (html, projectPath) => {
+  const schemaObjects = []
+
   getJsonLdSchemas(html, projectPath).forEach((schema) => {
     collectSchemaObjects(schema, (item) => {
+      schemaObjects.push(item)
+
       if (hasSchemaType(item, 'Service')) {
         const properties = Array.isArray(item.additionalProperty) ? item.additionalProperty : []
         const propertyNames = new Set(properties.map((property) => property?.name).filter(Boolean))
@@ -118,6 +122,41 @@ const validateJsonLd = (html, projectPath) => {
       }
     })
   })
+
+  const requiresCollectionPage = (
+    projectPath.startsWith('docs/.vuepress/dist/rankings/')
+    || projectPath === 'docs/.vuepress/dist/risk-monitor/index.html'
+    || projectPath === 'docs/.vuepress/dist/posts/jichang-tuijian/index.html'
+    || projectPath === 'docs/.vuepress/dist/posts/jichang-heji/index.html'
+  )
+
+  if (requiresCollectionPage) {
+    if (!schemaObjects.some((item) => hasSchemaType(item, 'CollectionPage'))) {
+      errors.push(`${projectPath}: expected CollectionPage schema`)
+    }
+    if (schemaObjects.some((item) => hasSchemaType(item, 'BlogPosting'))) {
+      errors.push(`${projectPath}: collection page must not use BlogPosting schema`)
+    }
+  }
+
+  schemaObjects
+    .filter((item) => hasSchemaType(item, 'BreadcrumbList'))
+    .forEach((breadcrumb) => {
+      const breadcrumbItems = Array.isArray(breadcrumb.itemListElement)
+        ? breadcrumb.itemListElement
+        : []
+      const pageUrl = schemaObjects.find((item) => (
+        typeof item?.['@id'] === 'string'
+        && item['@id'].endsWith('#webpage')
+      ))?.url
+
+      if (
+        pageUrl !== `${hostname}/blog/`
+        && breadcrumbItems.some((item) => item?.item === `${hostname}/blog/`)
+      ) {
+        errors.push(`${projectPath}: breadcrumb must not point to noindex blog index`)
+      }
+    })
 }
 
 const validateExternalAnchorRel = (html, projectPath) => {
@@ -272,6 +311,7 @@ const loadAirportConfig = (filePath) => {
     airportData: context.exports.airportData || [],
     visibleAirportData: context.exports.visibleAirportData || context.exports.airportData || [],
     airportMetrics: context.exports.airportMetrics,
+    airportDataLastReviewed: context.exports.airportDataLastReviewed,
   }
 }
 
@@ -570,11 +610,13 @@ let airportData = []
 let visibleAirportData = []
 let airportByPath = new Map()
 let airportMetrics
+let airportDataLastReviewed
 
 if (existsSync(airportsPath)) {
   const airportConfig = loadAirportConfig(airportsPath)
   airportData = airportConfig.airportData
   visibleAirportData = airportConfig.visibleAirportData
+  airportDataLastReviewed = airportConfig.airportDataLastReviewed
   airportMetrics = airportConfig.airportMetrics || {
     count: visibleAirportData.length,
     trialCount: visibleAirportData.filter((airport) => airport.trial).length,
@@ -616,6 +658,50 @@ if (existsSync(airportsPath)) {
   })
 } else {
   errors.push('docs/.vuepress/config/airports.ts: missing airport data config')
+}
+
+if (!/^\d{4}-\d{2}-\d{2}$/.test(airportDataLastReviewed || '')) {
+  errors.push('airports.ts: airportDataLastReviewed must use YYYY-MM-DD')
+} else {
+  const reviewDisplayDate = getDisplayDate(airportDataLastReviewed)
+  const riskMonitorPath = 'docs/风险监测/机场风险监测.md'
+  const riskMonitorPage = pages.find((page) => page.projectPath === riskMonitorPath)
+  const riskReviewDate = riskMonitorPage?.content.match(/^\|\s*最近复核\s*\|\s*([^|]+?)\s*\|$/m)?.[1]
+
+  if (riskReviewDate !== reviewDisplayDate?.full) {
+    errors.push(`${riskMonitorPath}: 最近复核 is "${riskReviewDate || 'missing'}", expected "${reviewDisplayDate?.full}"`)
+  }
+
+  const freshnessPages = [
+    riskMonitorPage,
+    pages.find((page) => page.projectPath === 'docs/机场推荐/机场合集.md'),
+  ].filter(Boolean)
+
+  freshnessPages.forEach((page) => {
+    const dateModified = page.dateModified?.replace(/\//g, '-')
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(dateModified || '') || dateModified < airportDataLastReviewed) {
+      errors.push(`${page.projectPath}: dateModified must be on or after airportDataLastReviewed ${airportDataLastReviewed}`)
+    }
+  })
+
+  ;['airports.json', 'rankings.json', 'risk-monitor.json'].forEach((file) => {
+    const filePath = join(publicDir, 'data', file)
+    const projectPath = toProjectPath(filePath)
+
+    if (!existsSync(filePath)) {
+      errors.push(`${projectPath}: missing generated data file`)
+      return
+    }
+
+    try {
+      const data = JSON.parse(readFileSync(filePath, 'utf8'))
+      if (data.lastReviewed !== airportDataLastReviewed) {
+        errors.push(`${projectPath}: lastReviewed is "${data.lastReviewed || 'missing'}", expected "${airportDataLastReviewed}"`)
+      }
+    } catch (error) {
+      errors.push(`${projectPath}: invalid JSON (${error.message})`)
+    }
+  })
 }
 
 if (airportMetrics) {
