@@ -1,7 +1,6 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { extname, join, relative } from 'node:path'
-import vm from 'node:vm'
-import ts from 'typescript'
+import { loadConfig } from './lib/load-config.mjs'
 
 const root = process.cwd()
 const docsDir = join(root, 'docs')
@@ -295,27 +294,9 @@ const getDisplayDate = (value = '') => {
   }
 }
 
-const loadAirportConfig = (filePath) => {
-  const source = readFileSync(filePath, 'utf8')
-  const output = ts.transpileModule(source, {
-    compilerOptions: {
-      module: ts.ModuleKind.CommonJS,
-      target: ts.ScriptTarget.ES2022,
-    },
-  }).outputText
-  const context = { exports: {} }
+const loadAirportConfig = (filePath) => loadConfig(filePath)
 
-  vm.runInNewContext(output, context)
-
-  return {
-    airportData: context.exports.airportData || [],
-    visibleAirportData: context.exports.visibleAirportData || context.exports.airportData || [],
-    airportMetrics: context.exports.airportMetrics,
-    airportDataLastReviewed: context.exports.airportDataLastReviewed,
-  }
-}
-
-const booleanText = (value) => (value ? '支持' : '不支持')
+const booleanText = (value) => (value === null ? '待核实' : value ? '支持' : '不支持')
 
 const clientSummary = (airport) => {
   if (airport.dedicatedClient && airport.universalSubscription) return '专属客户端、通用订阅'
@@ -429,7 +410,8 @@ const validateAirportTable = ({
 
     rowAirports.push(airport)
 
-    fields.forEach(([column, getter]) => {
+    fields.forEach(([field, getter]) => {
+      const column = field === '月流量' && '流量额度' in row ? '流量额度' : field
       if (!(column in row)) {
         errors.push(`${filePath} ${heading}: missing column ${column}`)
         return
@@ -619,10 +601,10 @@ if (existsSync(airportsPath)) {
   airportDataLastReviewed = airportConfig.airportDataLastReviewed
   airportMetrics = airportConfig.airportMetrics || {
     count: visibleAirportData.length,
-    trialCount: visibleAirportData.filter((airport) => airport.trial).length,
+    trialCount: visibleAirportData.filter((airport) => airport.trial === true).length,
     noExpiryCount: visibleAirportData.filter((airport) => airport.noExpiry).length,
     dedicatedClientCount: visibleAirportData.filter((airport) => airport.dedicatedClient).length,
-    universalSubscriptionCount: visibleAirportData.filter((airport) => airport.universalSubscription).length,
+    universalSubscriptionCount: visibleAirportData.filter((airport) => airport.universalSubscription === true).length,
     cheapUnderTenCount: visibleAirportData.filter((airport) => airport.price < 10).length,
     averagePrice: Number((visibleAirportData.reduce((total, airport) => total + airport.price, 0) / visibleAirportData.length).toFixed(1)),
   }
@@ -672,9 +654,18 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(airportDataLastReviewed || '')) {
     errors.push(`${riskMonitorPath}: 最近复核 is "${riskReviewDate || 'missing'}", expected "${reviewDisplayDate?.full}"`)
   }
 
+  const recommendationPath = 'docs/机场推荐/机场推荐.md'
+  const recommendationPage = pages.find((page) => page.projectPath === recommendationPath)
+  const recommendationReviewDate = recommendationPage?.content.match(/^资料复核日期：([^（；]+?)(?:（|；)/m)?.[1]
+
+  if (recommendationReviewDate !== reviewDisplayDate?.full) {
+    errors.push(`${recommendationPath}: 资料复核日期 is "${recommendationReviewDate || 'missing'}", expected "${reviewDisplayDate?.full}"`)
+  }
+
   const freshnessPages = [
     riskMonitorPage,
     pages.find((page) => page.projectPath === 'docs/机场推荐/机场合集.md'),
+    recommendationPage,
   ].filter(Boolean)
 
   freshnessPages.forEach((page) => {
@@ -709,14 +700,19 @@ if (airportMetrics) {
   const hejiContent = existsSync(join(root, hejiPath))
     ? readFileSync(join(root, hejiPath), 'utf8')
     : ''
+  const percentage = (count) => airportMetrics.count ? Math.round(count / airportMetrics.count * 100) : 0
   const expectedStats = [
     `当前收录机场数量：${airportMetrics.count}`,
     `- 支持试用：${airportMetrics.trialCount}家`,
     `- 支持不限时套餐：${airportMetrics.noExpiryCount}家`,
     `- 支持专属客户端：${airportMetrics.dedicatedClientCount}家`,
     `- 支持通用订阅：${airportMetrics.universalSubscriptionCount}家`,
-    `- 最低价格低于10元：${airportMetrics.cheapUnderTenCount}家`,
-    `- 平均最低价格：${airportMetrics.averagePrice}元/月`,
+    `- 周期套餐参考价低于10元：${airportMetrics.cheapUnderTenCount}家`,
+    `- 平均周期套餐参考价：${airportMetrics.averagePrice}元`,
+    `- 支持试用比例：${percentage(airportMetrics.trialCount)}%`,
+    `- 支持不限时比例：${percentage(airportMetrics.noExpiryCount)}%`,
+    `- 支持专属客户端比例：${percentage(airportMetrics.dedicatedClientCount)}%`,
+    `- 支持通用订阅比例：${percentage(airportMetrics.universalSubscriptionCount)}%`,
   ]
 
   expectedStats.forEach((text) => {
@@ -757,13 +753,14 @@ if (existsSync(robotsPath)) {
 
 if (airportData.length) {
   const allAirports = visibleAirportData
-  const cheapAirports = visibleAirportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap'))
-  const clashAirports = visibleAirportData.filter((airport) => airport.universalSubscription || airport.scenarios.includes('clash'))
-  const chatgptAirports = visibleAirportData.filter((airport) => airport.scenarios.includes('chatgpt'))
-  const streamingAirports = visibleAirportData.filter((airport) => airport.scenarios.includes('streaming'))
-  const trialAirports = visibleAirportData.filter((airport) => airport.trial)
-  const noExpiryAirports = visibleAirportData.filter((airport) => airport.noExpiry)
-  const dedicatedClientAirports = visibleAirportData.filter((airport) => airport.dedicatedClient)
+  const { airportCollections } = loadConfig('airport-collections.ts')
+  const cheapAirports = airportCollections.cheap.items
+  const clashAirports = airportCollections.clash.items
+  const chatgptAirports = airportCollections.chatgpt.items
+  const streamingAirports = airportCollections.streaming.items
+  const trialAirports = airportCollections.trial.items
+  const noExpiryAirports = airportCollections.noExpiry.items
+  const dedicatedClientAirports = airportCollections.dedicatedClient.items
 
   validateAirportTable({
     filePath: 'docs/风险监测/机场风险监测.md',
@@ -788,6 +785,8 @@ if (airportData.length) {
     airportByPath,
     requiredAirports: cheapAirports,
     rowFilter: (airport) => cheapAirports.includes(airport),
+    exactRows: true,
+    exactOrder: true,
     fields: [
       ['最低价格', (airport) => airport.priceText],
       ['月流量', (airport) => airport.traffic],
@@ -803,6 +802,8 @@ if (airportData.length) {
     airportByPath,
     requiredAirports: clashAirports,
     rowFilter: (airport) => clashAirports.includes(airport),
+    exactRows: true,
+    exactOrder: true,
     fields: [
       ['价格', (airport) => airport.priceText],
       ['流量', (airport) => airport.traffic],
@@ -818,6 +819,7 @@ if (airportData.length) {
     airportByPath,
     requiredAirports: chatgptAirports,
     exactRows: true,
+    exactOrder: true,
     fields: [
       ['价格', (airport) => airport.priceText],
       ['流量', (airport) => airport.traffic],
@@ -833,6 +835,8 @@ if (airportData.length) {
     airportByPath,
     requiredAirports: streamingAirports,
     rowFilter: (airport) => streamingAirports.includes(airport),
+    exactRows: true,
+    exactOrder: true,
     fields: [
       ['价格', (airport) => airport.priceText],
       ['流量', (airport) => airport.traffic],
@@ -848,6 +852,7 @@ if (airportData.length) {
     airportByPath,
     requiredAirports: trialAirports,
     exactRows: true,
+    exactOrder: true,
     fields: [
       ['最低价格', (airport) => airport.priceText],
       ['月流量', (airport) => airport.traffic],
@@ -863,6 +868,7 @@ if (airportData.length) {
     airportByPath,
     requiredAirports: noExpiryAirports,
     exactRows: true,
+    exactOrder: true,
     fields: [
       ['不限时状态', (airport) => booleanText(airport.noExpiry)],
       ['最低价格', (airport) => airport.priceText],
@@ -879,6 +885,7 @@ if (airportData.length) {
     airportByPath,
     requiredAirports: dedicatedClientAirports,
     exactRows: true,
+    exactOrder: true,
     fields: [
       ['最低价格', (airport) => airport.priceText],
       ['月流量', (airport) => airport.traffic],
@@ -911,6 +918,9 @@ if (!existsSync(distDir)) {
     if (countMatches(html, /<meta name="robots"/g) !== 1) htmlIssues.push('expected exactly one robots meta')
     if (countMatches(html, /application\/ld\+json/g) < 1) htmlIssues.push('missing JSON-LD')
     if (!isNoindex && countMatches(html, /<h1\b/g) < 1) htmlIssues.push('missing H1')
+    if (projectPath === 'docs/.vuepress/dist/index.html' && countMatches(html, /<h2\b/g) > 8) {
+      htmlIssues.push('homepage feature cards must not inflate the H2 hierarchy')
+    }
 
     htmlIssues.forEach((issue) => errors.push(`${projectPath}: ${issue}`))
     validateJsonLd(html, projectPath)

@@ -48,6 +48,12 @@ jobs:
       - name: Typecheck VuePress config
         run: pnpm run docs:typecheck
 
+      - name: Test page head consistency
+        run: pnpm run docs:test-head
+
+      - name: Test airport data contracts
+        run: pnpm run docs:test-data
+
       - name: Check airport tables
         run: pnpm run docs:check-tables
 
@@ -73,6 +79,9 @@ jobs:
 
       - name: Check generated data
         run: pnpm run docs:check-data
+
+      - name: Check rendered airport data consistency
+        run: pnpm run docs:check-consistency
 
       - name: Check content health
         run: pnpm run docs:check-content

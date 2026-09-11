@@ -18,8 +18,11 @@
     "docs:check-review-sections": "node scripts/sync-airport-review-sections.mjs --check",
     "docs:sync-data": "node scripts/sync-generated-data.mjs",
     "docs:check-data": "node scripts/check-generated-data.mjs",
+    "docs:check-consistency": "node scripts/check-airport-consistency.mjs",
     "docs:check-content": "node scripts/check-content-health.mjs",
     "docs:typecheck": "tsc --noEmit",
+    "docs:test-head": "node --test scripts/page-head.test.mjs",
+    "docs:test-data": "node --test scripts/airport-data.test.mjs",
     "docs:preview": "http-server docs/.vuepress/dist",
     "vp-update": "pnpm dlx vp-update"
   },

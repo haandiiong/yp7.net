@@ -1,7 +1,7 @@
 ---
 title: 机场测速方法详解：如何评估节点速度、延迟与晚高峰稳定性
 createTime: 2026/03/27
-dateModified: 2026/08/18
+dateModified: 2026/09/09
 permalink: /posts/speedtest-vpn/
 tags:
   - 机场测速
@@ -200,5 +200,6 @@ description: 本文讲解机场测速方法，包括 Clash 延迟筛选、Speedt
 - [机场推荐（2026更新）](/posts/jichang-tuijian/)  
 - [Clash节点是什么？新手入门指南](/posts/clash-guide/)  
 - [Clash客户端安装与配置教程](/posts/clash-verge-guide-2026/)
+- [FlClash安装、订阅导入与节点选择](/posts/flclash-guide-2026/)
 
 ---

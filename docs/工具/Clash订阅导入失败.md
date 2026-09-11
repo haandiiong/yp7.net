@@ -1,7 +1,7 @@
 ---
 title: Clash订阅链接导入失败怎么办？更新失败、节点全红排查
 createTime: 2026/06/26
-dateModified: 2026/06/26
+dateModified: 2026/09/09
 permalink: /posts/clash-subscription-troubleshooting/
 tags:
   - Clash订阅失败
@@ -12,7 +12,7 @@ tags:
 description: Clash订阅链接导入失败怎么办？本文整理订阅更新失败、节点全红、无法连接、TUN模式异常、DNS污染、规则错误和机场账号到期等常见排查步骤。
 ---
 
-更新时间：2026年6月26日
+更新时间：2026年9月9日（本次补充 FlClash 教程入口）
 
 ## 使用风险提示
 
@@ -68,7 +68,7 @@ Clash 客户端、内核、订阅格式、机场面板和节点规则都会变�
 3. 如果机场提供专属客户端，先用专属客户端测试账号是否可用。
 4. 如果 Clash 始终导入失败，可以用 v2rayN 或 Shadowrocket 交叉测试订阅。
 
-电脑用户可以参考 [Clash Verge 使用教程](/posts/clash-verge-guide-2026/)，Android 用户可以参考 [Clash for Android 教程](/posts/clash-for-android-guide-2026/)。
+电脑用户可以并列参考 [Clash Verge Rev 使用教程](/posts/clash-verge-guide-2026/) 和 [FlClash 使用教程](/posts/flclash-guide-2026/)；FlClash 同时支持 Android，安卓用户也可参考 [Clash Meta 教程](/posts/clash-for-android-guide-2026/)。
 
 ## 第四步：节点全红怎么排查
 

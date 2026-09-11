@@ -1,20 +1,6 @@
 import { defaultImage, hostname, pageImages, siteDescription, siteKeywords } from './site'
 
-const minMetaDescriptionLength = 120
 const maxMetaDescriptionLength = 158
-const defaultMetaDescriptionSuffix = '页面补充核心结论、适合人群、配置步骤、常见问题、相关阅读和风险提示，帮助读者结合设备、地区、网络环境与常用场景做判断。'
-const metaDescriptionSuffixes: Record<string, string> = {
-  机场榜单: '按价格、稳定性、试用、客户端兼容、通用订阅和风险状态筛选适合的机场服务。',
-  风险监测: '持续记录官网异常、客服失联、套餐变化、节点波动和购买风险，帮助降低机场服务时效性风险。',
-  机场推荐资料: '整理套餐、客户端、适合人群、历史测试记录和风险提示；当前测试数据统一来自 Siilas。',
-  机场推荐: '结合 Siilas 当前记录、客户端、价格、适合人群和购买风险，推荐合适的机场服务。',
-  工具教程: '包含安装步骤、订阅导入、节点选择和常见问题，帮助完成客户端配置。',
-  科学上网教程: '解释核心概念、工具选择、配置方法和常见误区，帮助按需求选择方案。',
-  TikTok教程: '补充节点地区、设备环境、账号风控和网络排查，帮助稳定处理访问问题。',
-  ChatGPT教程: '补充账号注册、使用技巧、网络访问和常见问题，帮助稳定使用 AI 工具。',
-  Telegram教程: '补充下载安装、注册登录、账号安全和代理设置，帮助完成基础配置。',
-  USDT与交易所教程: '补充注册流程、链类型、手续费、充值提现和资金风险，帮助安全操作。',
-}
 
 export const getCanonicalUrl = (path: string) => `${hostname}${path}`
 
@@ -122,28 +108,6 @@ const truncateMetaDescription = (description = '') => {
   return `${description.slice(0, maxMetaDescriptionLength - 1)}…`
 }
 
-const getExpandedDescription = (description = '', suffix = defaultMetaDescriptionSuffix) => {
-  const normalizedDescription = stripMarkdown(description || siteDescription)
-  if (normalizedDescription.length >= minMetaDescriptionLength) return truncateMetaDescription(normalizedDescription)
-
-  const separator = /[。.!！？?]$/.test(normalizedDescription) ? '' : '。'
-  const expandedDescription = `${normalizedDescription}${separator}${suffix}`
-  return truncateMetaDescription(expandedDescription)
-}
-
-const getMetaDescriptionSuffix = (page: any) => {
-  if (page.path === '/') {
-    return '同时提供推荐数据、风险监测、数据来源说明、Clash 与 Shadowrocket 教程，帮助新手按预算、设备和使用场景快速筛选。'
-  }
-
-  if (page.path === '/friends/') {
-    return '页面说明友链交换方向、联系入口和相关站点类型，方便科学上网、机场测评、VPN 教程和网络工具站点互相发现与长期维护。'
-  }
-
-  return metaDescriptionSuffixes[getArticleSection(page)] || defaultMetaDescriptionSuffix
-}
-
-export const getPageDescription = (page: any) => getExpandedDescription(
-  page.frontmatter.description || siteDescription,
-  getMetaDescriptionSuffix(page),
+export const getPageDescription = (page: any) => truncateMetaDescription(
+  stripMarkdown(page.frontmatter.description || siteDescription),
 )

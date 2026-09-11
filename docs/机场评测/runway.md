@@ -256,4 +256,4 @@ description: 拼好连机场怎么样？拼好连好用吗？本文保留2026年
 - [机场推荐方法与测试数据来源](/methodology/)
 - [全球云机场怎么样？](/posts/quanqiuyun/)
 - [光年梯机场怎么样？](/posts/guangnianti-review-2026/)
-- [网际快车机场怎么样？](/posts/wangji-kuaiche-review/)
+- [xxyun机场怎么样？](/posts/xxyun-review-2026/)

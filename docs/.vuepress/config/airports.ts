@@ -5,14 +5,18 @@ export interface AirportData {
   price: number
   priceText: string
   traffic: string
-  trial: boolean
+  // null means current free-trial availability has not been verified.
+  trial: boolean | null
   noExpiry: boolean
   dedicatedClient: boolean
-  universalSubscription: boolean
+  // null means the current subscription method or conditions are not verified.
+  universalSubscription: boolean | null
   scenarios: string[]
   status: string
   risk: string
   summary: string
+  subscriptionClients?: string[]
+  informationSources?: { name: string; url: string; checkedAt: string }[]
   performance?: AirportPerformanceSnapshot
   salesSample?: number
 }
@@ -57,16 +61,53 @@ export const historicalTestingNotice = '2026-08-18 前的 yp7.net 测速与测�
 export const mainRecommendationNames = ['Flybit', 'xxyun', '网际快车', '全球云', '光年梯', '光速云', '阿达西'] as const
 
 export const airportData: AirportData[] = [
-  { name: '全球云', path: '/posts/quanqiuyun/', image: '/qqy.png', price: 20, priceText: '20元/月', traffic: '120GB/月', trial: false, noExpiry: false, dedicatedClient: true, universalSubscription: false, scenarios: ['stable', 'chatgpt', 'streaming', 'newbie'], status: '主推观察', risk: '先月付测试', summary: '专属客户端上手成本低，结合 IPLC/IEPL 与智能负载定位，适合先测试日常网页、ChatGPT、TikTok 和流媒体。', performance: { evidenceLevel: 'A', lastTestedAt: '2026-05-30', testWindow: '20:00-23:00', testRegion: '日本东京', testNetwork: 'SoftBank / 1000Mbps', testDevice: '苹果电脑', latencyMs: 65, downloadMbpsRange: '580-760Mbps', chatgptResult: '稳定', youtube4kResult: '流畅', stability: '中上', evidenceSummary: '有专属客户端延迟、YouTube 4K 和 Speedtest 截图，适合优先复核。' }, salesSample: 1048 },
+  {
+    name: '全球云', path: '/posts/quanqiuyun/', image: '/qqy.png',
+    price: 20, priceText: '20元/月', traffic: '120GB/月',
+    trial: null, noExpiry: true, dedicatedClient: true, universalSubscription: null,
+    scenarios: ['stable', 'chatgpt', 'streaming', 'newbie'], status: '主推观察',
+    risk: '通用订阅、免费试用与旧优惠码待核实；先短周期验证',
+    summary: '20元/月120GB起，另有99元/年59GB/月轻量版及100元100GB起的不限时包。知识库提供 Windows、Android、Mac、Linux 自研客户端说明，iOS 使用 Nextin；BGP、1倍流量和解锁能力为套餐标注，实际连接需自行验证。',
+    informationSources: [{ name: '全球云官网', url: 'https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf', checkedAt: '2026-09-11' }],
+    performance: { evidenceLevel: 'A', lastTestedAt: '2026-05-30', testWindow: '21:22-21:25（UTC+8）', testRegion: '截图未标注本地地区', testNetwork: '截图未标注本地运营商与接入带宽', testDevice: '旧文记载苹果电脑，截图未独立标注设备型号', latencyMs: 82, downloadMbpsRange: '778.79Mbps（Speedtest 单次历史结果）', chatgptResult: '本组历史截图未覆盖', youtube4kResult: '3840×2160@30，连接速率44052Kbps（历史画面）', stability: '单次历史记录，不代表持续稳定性', evidenceSummary: '2026-05-30既有客户端、YouTube及Speedtest配图；Speedtest使用M1 Limited Singapore服务器，图中下载778.79Mbps、上传52.09Mbps、Ping82ms。本地地区与运营商未由截图证实。' },
+    salesSample: 1048,
+  },
   { name: '光年梯', path: '/posts/guangnianti-review-2026/', image: '/gnt.png', price: 18, priceText: '18元/月', traffic: '110GB/月', trial: false, noExpiry: false, dedicatedClient: true, universalSubscription: false, scenarios: ['stable', 'streaming', 'newbie'], status: '主推观察', risk: '先月付验证', summary: '新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。', performance: { evidenceLevel: 'A', lastTestedAt: '2026-06-03', testWindow: '20:00-23:00', testRegion: '日本东京', testNetwork: 'SoftBank / 1000Mbps', testDevice: '安卓手机', latencyMs: 58, downloadMbpsRange: '850-920Mbps', chatgptResult: '稳定', youtube4kResult: '秒开', stability: '极强', evidenceSummary: '有多张专属客户端延迟截图和 Speedtest 截图；当前表现请查看 Siilas 最新记录。' }, salesSample: 832 },
-  { name: '网际快车', path: '/posts/wangji-kuaiche-review/', image: '/kuaiche.png', price: 16, priceText: '16元/月', traffic: '100GB/月', trial: true, noExpiry: true, dedicatedClient: true, universalSubscription: true, scenarios: ['stable', 'clash', 'chatgpt', 'trial'], status: '重点观察', risk: '需复核官网与试用', summary: '专属客户端和通用订阅并行，家宽/原生节点、AI 与流媒体场景更突出，适合先用试用流量短期验证。', performance: { evidenceLevel: 'A', lastTestedAt: '2026-06-03', testWindow: '20:00-23:00', testRegion: '日本东京', testNetwork: 'SoftBank / 1000Mbps', testDevice: 'Windows 电脑', latencyMs: 61, downloadMbpsRange: '780-880Mbps', chatgptResult: '很稳定', youtube4kResult: '流畅', stability: '很强', evidenceSummary: '有专属客户端延迟和 Speedtest 截图，办公与 ChatGPT 场景证据较完整。' }, salesSample: 849 },
+  {
+    name: '网际快车', path: '/posts/wangji-kuaiche-review/', image: '/kuaiche.png',
+    // Cycle-plan reference price; the separate 6.8 CNY / 20GB package is a one-off purchase.
+    price: 28, priceText: '28元/30天', traffic: '60GB/日（每日重置）',
+    trial: null, noExpiry: true, dedicatedClient: false, universalSubscription: true,
+    scenarios: ['stable', 'clash', 'chatgpt'], status: '重点观察',
+    risk: '日享限60GB/日；免费体验券与优惠码待核实',
+    summary: '不限时流量包6.8元20GB起；日享包28元30天，每天60GB、凌晨重置。首页提供 FlClash 等第三方客户端订阅，软路由另有 OpenClash 插件；免费体验券条件待核实。',
+    subscriptionClients: ['FlClash', 'Hiddify', 'SingBox', 'Karing', 'v2ray', 'v2rayNG', 'Clash Meta', 'NekoBox', 'Egern', 'Shadowrocket', 'QuantumultX', 'Clash', 'Loon', 'Surge', 'Surfboard'],
+    informationSources: [{ name: '网际快车官网', url: 'https://wjkc66.vip/?c=GDIHMU', checkedAt: '2026-09-10' }],
+    performance: { evidenceLevel: 'A', lastTestedAt: '2026-06-03', testWindow: '20:00-23:00', testRegion: '日本东京', testNetwork: 'SoftBank / 1000Mbps', testDevice: 'Windows 电脑', latencyMs: 61, downloadMbpsRange: '780-880Mbps', chatgptResult: '很稳定', youtube4kResult: '流畅', stability: '很强', evidenceSummary: '既有办公与 ChatGPT 历史记录，本次只核对套餐和客户端资料；当前表现需另行验证。' },
+    salesSample: 849,
+  },
   { name: '光速云', path: '/posts/guangsuyun/', image: '/guangsuyun.png', price: 17, priceText: '17元/月', traffic: '110GB/月', trial: false, noExpiry: true, dedicatedClient: false, universalSubscription: true, scenarios: ['stable', 'clash', 'streaming'], status: '备用观察', risk: '查看 Siilas 晚高峰记录', summary: '隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案比较。', performance: { evidenceLevel: 'B', lastTestedAt: '2026-06-18', testWindow: '20:00-23:00', testRegion: '亚洲网络环境', testNetwork: '多端日常观察', testDevice: '多端日常观察', latencyMs: 70, downloadMbpsRange: '700-820Mbps', chatgptResult: '稳定', youtube4kResult: '流畅', stability: '中等', evidenceSummary: '仅有历史榜单和日常观察记录；当前表现请查看 Siilas 最新记录。' }, salesSample: 346 },
-  { name: 'xxyun', path: '/posts/xxyun-review-2026/', image: '/xxyun.png', price: 9.99, priceText: '9.99元/月', traffic: '100GB/月', trial: false, noExpiry: true, dedicatedClient: true, universalSubscription: true, scenarios: ['cheap', 'streaming', 'clash'], status: '流媒体观察', risk: '解锁能力会变化', summary: '低价且偏流媒体场景，适合 Netflix、Disney+、YouTube 用户短期测试。', performance: { evidenceLevel: 'B', lastTestedAt: '2026-06-18', testWindow: '20:00-23:00', testRegion: '亚洲网络环境', testNetwork: '多端日常观察', testDevice: '多端日常观察', latencyMs: 72, downloadMbpsRange: '620-790Mbps', chatgptResult: '稳定', youtube4kResult: '优秀', stability: '中上', evidenceSummary: '仅有历史流媒体场景观察；当前解锁情况请查看 Siilas 最新记录。' }, salesSample: 942 },
-  { name: 'Flybit', path: '/posts/flybit-review-2026/', image: '/flybit.jpg', price: 15, priceText: '15元/月', traffic: '128GB/月', trial: true, noExpiry: true, dedicatedClient: false, universalSubscription: true, scenarios: ['clash', 'trial'], status: 'Clash观察', risk: '查看 Siilas 长期记录', summary: '通用订阅兼容性更突出，适合 Clash Verge、Clash Meta、Shadowrocket 用户。', performance: { evidenceLevel: 'B', lastTestedAt: '2026-06-18', testWindow: '20:00-23:00', testRegion: '亚洲网络环境', testNetwork: 'Clash 客户端观察', testDevice: 'Clash 客户端', latencyMs: 88, downloadMbpsRange: '450-680Mbps', chatgptResult: '稳定', youtube4kResult: '良好', stability: '中等', evidenceSummary: '仅有历史 Clash 订阅兼容和节点切换观察；当前表现请查看 Siilas 最新记录。' }, salesSample: 744 },
+  { name: 'xxyun', path: '/posts/xxyun-review-2026/', image: '/xxyun.png', price: 9.99, priceText: '9.99元/月', traffic: '100GB/月', trial: false, noExpiry: true, dedicatedClient: true, universalSubscription: false, scenarios: ['cheap', 'streaming'], status: '流媒体观察', risk: '仅官方客户端，解锁需按节点复核', summary: '9.99元/月起、100GB/月，提供 Android、iOS、Windows 和 Mac 官方客户端；不支持 Clash、FlClash 或 Shadowrocket，适合接受官方客户端的低预算用户短期比较。', informationSources: [{ name: 'xxyun 官网', url: 'https://xxyun.at/?code=3AYVsSKY', checkedAt: '2026-09-10' }], performance: { evidenceLevel: 'B', lastTestedAt: '2026-06-18', testWindow: '20:00-23:00', testRegion: '亚洲网络环境', testNetwork: '多端日常观察', testDevice: '多端日常观察', latencyMs: 72, downloadMbpsRange: '620-790Mbps', chatgptResult: '稳定', youtube4kResult: '优秀', stability: '中上', evidenceSummary: '仅有历史流媒体场景观察；当前解锁情况请查看 Siilas 最新记录。' }, salesSample: 942 },
+  {
+    name: 'Flybit', path: '/posts/flybit-review-2026/', image: '/flybit.jpg',
+    price: 15, priceText: '15元/月', traffic: '128GB/月',
+    trial: true, noExpiry: true, dedicatedClient: false, universalSubscription: true,
+    scenarios: ['clash', 'trial'], status: 'Clash观察',
+    risk: '套餐不支持退款；购买前核实并短期测试',
+    summary: '月付 15 元含 128GB，官方说明提供注册 1 天 2GB 免费试用；仪表盘列出 7 款第三方客户端一键导入，另有不限时流量包。套餐不支持退款，建议先试用。',
+    subscriptionClients: ['Clash Meta', 'Hiddify', 'SingBox', 'Shadowrocket', 'QuantumultX', 'Surge', 'Stash'],
+    // Public references use one official referral entry. Verification: /#/plan (2026-09-08),
+    // /#/dashboard, goflybit.com and github.com/FlyBitVIP/FlyBit-Airport-Address (2026-09-09).
+    informationSources: [
+      { name: 'Flybit 官网', url: 'https://www.fastfastfast.buzz/#/register?code=p3DOcgzt', checkedAt: '2026-09-09' },
+    ],
+    salesSample: 744,
+  },
   { name: '阿达西', path: '/posts/adaxi-review-2026/', image: '/adaxi.png', price: 3, priceText: '3元/月', traffic: '20GB/月', trial: false, noExpiry: false, dedicatedClient: false, universalSubscription: true, scenarios: ['cheap', 'clash'], status: '低价观察', risk: '不建议直接长期付费', summary: '价格门槛低，更适合轻量测试和备用，不适合高强度主力依赖。', performance: { evidenceLevel: 'B', lastTestedAt: '2026-06-18', testWindow: '20:00-23:00', testRegion: '亚洲网络环境', testNetwork: '通用订阅客户端观察', testDevice: '通用订阅客户端', latencyMs: 120, downloadMbpsRange: '200-420Mbps', chatgptResult: '一般', youtube4kResult: '偶尔缓冲', stability: '较弱', evidenceSummary: '已有低价场景观察，定位轻量备用，不建议直接作为长期主力。' }, salesSample: 462 },
   { name: '拼好连', path: '/posts/runway-review-2026/', image: '/runway.png', price: 9.9, priceText: '9.9元/月', traffic: '80GB/月', trial: true, noExpiry: true, dedicatedClient: true, universalSubscription: false, scenarios: ['cheap', 'trial', 'newbie'], status: '新手观察', risk: '先试用再续费', summary: 'BGP 专线试用型机场，适合新手先验证延迟、稳定性和专属客户端连接流程。', salesSample: 445 },
   { name: '唯兔云', path: '/posts/weituyun/', image: '/weituyun.png', price: 14.9, priceText: '14.9元/月', traffic: '100GB/月', trial: false, noExpiry: true, dedicatedClient: true, universalSubscription: false, scenarios: ['streaming'], status: '流媒体观察', risk: '解锁能力会变化', summary: '高性价比 IPLC 与新 SS 协议定位，不限设备、无倍率卖点更突出，适合短期测试流媒体和备用场景。', salesSample: 221 },
-  { name: '99吧', path: '/posts/99ba-review-2026/', image: '/99ba.png', price: 12.99, priceText: '12.99元/月', traffic: '99GB/月', trial: true, noExpiry: true, dedicatedClient: false, universalSubscription: true, scenarios: ['trial', 'clash'], status: '试用观察', risk: '先测试订阅可用性', summary: '支持试用与通用订阅，适合购买前验证 Clash 导入和节点延迟。', salesSample: 413 },
+  // 2026-09-07: checked 99吧 plan cards, dashboard import menu and trial documentation; other airports were not re-reviewed.
+  { name: '99吧', path: '/posts/99ba-review-2026/', image: '/99ba.png', price: 9.9, priceText: '9.9元/月', traffic: '70GB/月', trial: true, noExpiry: true, dedicatedClient: false, universalSubscription: true, scenarios: ['cheap', 'trial', 'clash'], status: '试用观察', risk: '套餐仅限内地使用，暂不支持退款，先试用', summary: '9.9元月付70GB，支持1天1GB试用、不限时流量包和多客户端一键订阅导入；实际节点表现需另行验证。', salesSample: 413 },
   { name: '迅达', path: '/posts/xunda-review-2026/', image: '/xunda.png', price: 15, priceText: '15元/月', traffic: '150GB/月', trial: true, noExpiry: true, dedicatedClient: true, universalSubscription: true, scenarios: ['chatgpt', 'trial', 'clash'], status: '办公观察', risk: '查看 Siilas AI 记录', summary: '偏 ChatGPT 办公场景，支持试用和通用订阅，适合先做工作流测试。' },
   { name: 'ccyz', path: '/posts/ccyz-review-2026/', image: '/ccyz.png', price: 19.9, priceText: '19.9元/月', traffic: '150GB/月', trial: false, noExpiry: true, dedicatedClient: true, universalSubscription: false, scenarios: ['streaming'], status: '流媒体观察', risk: '节点状态需复核', summary: '偏流媒体和节点体验，购买前应确认常用地区节点可用。' },
   { name: 'uuone', path: '/posts/uuone-review-2026/', image: '/uuone.png', price: 12, priceText: '12元/月', traffic: '150GB/月', trial: false, noExpiry: true, dedicatedClient: true, universalSubscription: false, scenarios: ['streaming', 'cheap'], status: '性价比观察', risk: '查看 Siilas 长期记录', summary: '价格与流量较均衡，可作为性价比和流媒体方向的备选。' },
@@ -110,10 +151,10 @@ export const airportDataLastReviewed = '2026-08-19'
 
 export const airportMetrics: AirportMetrics = {
   count: visibleAirportData.length,
-  trialCount: visibleAirportData.filter((airport) => airport.trial).length,
+  trialCount: visibleAirportData.filter((airport) => airport.trial === true).length,
   noExpiryCount: visibleAirportData.filter((airport) => airport.noExpiry).length,
   dedicatedClientCount: visibleAirportData.filter((airport) => airport.dedicatedClient).length,
-  universalSubscriptionCount: visibleAirportData.filter((airport) => airport.universalSubscription).length,
+  universalSubscriptionCount: visibleAirportData.filter((airport) => airport.universalSubscription === true).length,
   cheapUnderTenCount: visibleAirportData.filter((airport) => airport.price < 10).length,
   averagePrice: Number((visibleAirportData.reduce((total, airport) => total + airport.price, 0) / visibleAirportData.length).toFixed(1)),
   performanceCount: visibleAirportData.filter((airport) => airport.performance).length,

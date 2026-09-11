@@ -1,7 +1,7 @@
 ---
 title: 2026 ChatGPT机场榜：AI工具、办公访问与稳定节点筛选
 createTime: 2026/06/04
-dateModified: 2026/08/19
+dateModified: 2026/09/11
 permalink: /rankings/chatgpt/
 tags:
   - ChatGPT机场
@@ -14,7 +14,7 @@ description: 2026 ChatGPT机场榜，筛选适合 ChatGPT、Claude、Gemini 等 
 
 > **测试数据来源变更：** 自 2026年8月18日起，yp7.net 不再自行测速或发布新的实测；此前记录均为历史资料，不代表当前表现。当前速度、稳定性、ChatGPT 和流媒体测试数据统一来自 [Siilas 测速中心](https://siilas.com/test/)，本站只负责推荐、资料整理与风险提示。
 
-更新时间：2026年8月19日
+更新时间：2026年9月11日（本次同步全球云不限时套餐、客户端及待核实条件；网际快车资料核对于9月10日，其余条目沿用既有复核资料）
 
 > **页面层级：** 本页只承接 ChatGPT、Claude、Gemini 等 AI 场景筛选；如果还没有综合候选，请先查看 [2026机场推荐主页面](/posts/jichang-tuijian/)。
 
@@ -28,8 +28,8 @@ ChatGPT机场榜重点看网页访问、登录稳定性、AI 工具连续对话�
 
 | 机场 | 价格 | 流量 | 客户端 | 适合场景 | 风险提示 |
 |---|---:|---|---|---|---|
-| [全球云](/posts/quanqiuyun/) | 20元/月 | 120GB/月 | 专属客户端 | 新手、ChatGPT、日常网页 | 先月付测试 |
-| [网际快车](/posts/wangji-kuaiche-review/) | 16元/月 | 100GB/月 | 专属客户端、通用订阅 | ChatGPT、Clash、办公 | 需复核官网与试用 |
+| [全球云](/posts/quanqiuyun/) | 20元/月 | 120GB/月 | 专属客户端 | 新手、ChatGPT、日常网页 | 通用订阅、免费试用与旧优惠码待核实；先短周期验证 |
+| [网际快车](/posts/wangji-kuaiche-review/) | 28元/30天 | 60GB/日（每日重置） | 通用订阅 | ChatGPT、Clash、办公 | 日享限60GB/日；免费体验券与优惠码待核实 |
 | [迅达](/posts/xunda-review-2026/) | 15元/月 | 150GB/月 | 专属客户端、通用订阅 | ChatGPT办公 | 查看 Siilas AI 记录 |
 | [U1S1](/posts/u1s1-review-2026/) | 20元/月 | 120GB/月 | 专属客户端、通用订阅 | ChatGPT、直播、电商业务 | 查看 Siilas 相关场景记录 |
 | [二猫云](/posts/ermiao-vpn-review/) | 20元/月 | 100GB/月 | 专属客户端、通用订阅 | ChatGPT、跨境办公、多端 | 查看 Siilas 长期记录 |

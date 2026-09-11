@@ -1,7 +1,7 @@
 ---
 title: v2rayN使用教程：Windows节点导入、订阅更新、测速和常见问题
 createTime: 2026/06/26
-dateModified: 2026/06/26
+dateModified: 2026/09/09
 permalink: /posts/v2rayn-guide-2026/
 tags:
   - v2rayN
@@ -12,7 +12,7 @@ tags:
 description: v2rayN怎么用？本文整理 Windows 电脑安装 v2rayN、导入机场订阅、更新节点、测速、设置系统代理、路由模式和常见连接失败排查方法。
 ---
 
-更新时间：2026年6月26日
+更新时间：2026年9月9日（本次补充 FlClash 教程入口）
 
 ## 使用风险提示
 
@@ -33,7 +33,7 @@ v2rayN 是 Windows 用户常见的代理客户端，也支持 Linux 和 macOS。
 - 想用订阅链接统一管理节点的用户。
 - Clash 导入失败时做交叉测试的用户。
 
-如果你更习惯 Clash，可以先看 [Clash Verge 教程](/posts/clash-verge-guide-2026/)。
+如果你更习惯 Clash 配置，可以并列参考 [Clash Verge Rev 教程](/posts/clash-verge-guide-2026/) 和 [FlClash 教程](/posts/flclash-guide-2026/)，按设备和操作习惯选择。
 
 ## 下载与安装
 

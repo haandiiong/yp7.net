@@ -1,8 +1,8 @@
 ---
 home: true
 title: yp7.net｜机场资料、风险监测与科学上网教程
-description: yp7.net 是机场套餐与客户端资料、风险监测和科学上网教程入口。2026年8月18日起本站不再自行测速，当前测试数据统一来自 Siilas。
-dateModified: 2026/08/19
+description: yp7.net 提供2026机场推荐、机场套餐与客户端资料、风险监测，以及 Clash Verge Rev、FlClash、Shadowrocket 等科学上网教程；当前测试数据来自 Siilas。
+dateModified: 2026/09/09
 config:
   - type: hero
     hero:
@@ -11,14 +11,17 @@ config:
       text: "本站只做推荐；当前测速与测试数据统一来自 Siilas，购买前建议先试用或月付。"
       actions:
         - theme: brand
-          text: "查看机场推荐"
+          text: "2026机场推荐"
           link: "/posts/jichang-tuijian/"
         - theme: alt
           text: "查看风险监测"
           link: "/risk-monitor/"
         - theme: alt
-          text: "查看Clash教程"
+          text: "Clash Verge教程"
           link: "/posts/clash-verge-guide-2026/"
+        - theme: alt
+          text: "FlClash教程"
+          link: "/posts/flclash-guide-2026/"
   - type: features
     title: "本月推荐"
     description: "首页只做决策入口，不堆文章列表。不同需求先进入对应页面，再看单机场证据和购买前风险。"
@@ -32,7 +35,7 @@ config:
         link: "/posts/jichang-tuijian/#再按使用场景选择"
         linkText: "看场景选择"
       - title: "Clash订阅"
-        details: "筛选支持通用订阅、Clash Verge、Clash Meta、Shadowrocket 和 Mihomo 的机场。"
+        details: "筛选通用订阅机场，按 Clash Verge Rev、FlClash 等客户端核对格式与导入方式。"
         link: "/rankings/clash/"
         linkText: "看Clash榜"
       - title: "ChatGPT节点"
@@ -107,6 +110,10 @@ config:
         details: "Windows、macOS、Linux 订阅导入、规则分流和 TUN 模式入门。"
         link: "/posts/clash-verge-guide-2026/"
         linkText: "电脑端教程"
+      - title: "FlClash教程"
+        details: "安卓、Windows、macOS、Linux 安装、订阅导入、节点选择与常见问题。"
+        link: "/posts/flclash-guide-2026/"
+        linkText: "安卓与电脑教程"
       - title: "Clash for Android教程"
         details: "Android 手机安装、订阅导入、节点切换和常见错误排查。"
         link: "/posts/clash-for-android-guide-2026/"

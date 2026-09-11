@@ -66,7 +66,7 @@ const loadAirportConfig = (filePath) => {
   }
 }
 
-const booleanText = (value) => (value ? '支持' : '不支持')
+const booleanText = (value) => (value === null ? '待核实' : value ? '支持' : '不支持')
 
 const clientSummary = (airport) => {
   if (airport.dedicatedClient && airport.universalSubscription) return '专属客户端、通用订阅'
@@ -156,6 +156,10 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hi
   const performance = airport.performance
   const hasPerformance = Boolean(performance)
   const rows = [
+    ...(airport.informationSources?.length ? [
+      ['资料来源', airport.informationSources.map((source) => `[${source.name}](${source.url})`).join('；')],
+      ['资料复核日期', airport.informationSources.map((source) => `${source.name}：${source.checkedAt}`).join('；')],
+    ] : []),
     ['当前测试数据来源', `[${currentTestingSourceName}](${currentTestingSourceUrl})；${testingPolicyEffectiveDate} 起 yp7.net 不再自行测试`],
     ['历史记录状态', hasPerformance ? 'yp7.net 历史资料，不代表当前表现' : '无 yp7.net 历史测试记录'],
     ['历史测试时间', hasPerformance ? formatDate(performance.lastTestedAt) : '无历史记录'],
@@ -164,6 +168,7 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hi
     ['历史测试网络', performance?.testNetwork || '无历史记录'],
     ['历史测试设备', performance?.testDevice || '无历史记录'],
     ['客户端资料', clientSummary(airport)],
+    ...(airport.subscriptionClients?.length ? [['一键订阅客户端', airport.subscriptionClients.join('、')]] : []),
     ['套餐价格', `${airport.priceText}，${airport.traffic}`],
     ['免费试用', booleanText(airport.trial)],
     ['不限时套餐', booleanText(airport.noExpiry)],

@@ -46,12 +46,25 @@ const getSocialHead = (page: any) => {
 }
 
 const noindexPaths = new Set([
+  '/404.html',
   '/blog/',
   '/blog/tags/',
   '/blog/categories/',
   '/blog/archives/',
   '/friends/',
 ])
+
+const getPageTitleHead = (page: any) => {
+  const title = page.path === '/'
+    ? page.title || siteName
+    : page.path === '/404.html'
+      ? `页面未找到｜${siteName}`
+      : undefined
+
+  // VuePress gives frontmatter head priority over its default "page | site" title.
+  // Keeping the override in page data lets SSR and client navigation share it.
+  return title ? [['title', {}, title]] : []
+}
 
 const getBasicPageHead = (page: any) => {
   const keywords = getPageMetaKeywords(page)
@@ -81,6 +94,7 @@ export const extendPageWithSeo = (page: any) => {
 
   page.frontmatter.head = [
     ...(page.frontmatter.head || []),
+    ...getPageTitleHead(page),
     ['link', { rel: 'canonical', href: getCanonicalUrl(page.path) }],
     ...getBasicPageHead(page),
     ...getSocialHead(page),

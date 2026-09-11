@@ -2,10 +2,9 @@ import {
   airportData,
   currentTestingSourceName,
   currentTestingSourceUrl,
-  mainRecommendationData,
   testingPolicyEffectiveDate,
-  visibleAirportData,
 } from './airports'
+import { getAirportCollectionForPage } from './airport-collections'
 import {
   getArticleSection,
   getCanonicalUrl,
@@ -61,11 +60,18 @@ const getAirportServiceSchemas = (page: any) => {
       subjectOf: { '@id': `${canonicalUrl}#webpage` },
       additionalProperty: [
         { '@type': 'PropertyValue', name: '最低价格', value: airport.priceText },
-        { '@type': 'PropertyValue', name: '月流量', value: airport.traffic },
-        { '@type': 'PropertyValue', name: '免费试用', value: airport.trial ? '支持' : '不支持' },
+        { '@type': 'PropertyValue', name: '流量额度', value: airport.traffic },
+        { '@type': 'PropertyValue', name: '免费试用', value: airport.trial === null ? '待核实' : airport.trial ? '支持' : '不支持' },
         { '@type': 'PropertyValue', name: '不限时套餐', value: airport.noExpiry ? '支持' : '不支持' },
         { '@type': 'PropertyValue', name: '专属客户端', value: airport.dedicatedClient ? '支持' : '不支持' },
-        { '@type': 'PropertyValue', name: '通用订阅', value: airport.universalSubscription ? '支持' : '不支持' },
+        { '@type': 'PropertyValue', name: '通用订阅', value: airport.universalSubscription === null ? '待核实' : airport.universalSubscription ? '支持' : '不支持' },
+        ...(airport.subscriptionClients?.length ? [{
+          '@type': 'PropertyValue', name: '一键订阅客户端', value: airport.subscriptionClients.join('、'),
+        }] : []),
+        ...(airport.informationSources || []).map((source) => ({
+          '@type': 'PropertyValue', name: '资料来源', value: source.name,
+          url: source.url, description: `复核日期：${source.checkedAt}`,
+        })),
         { '@type': 'PropertyValue', name: '观察状态', value: airport.status },
         { '@type': 'PropertyValue', name: '风险提示', value: airport.risk },
         {
@@ -166,32 +172,7 @@ const getAirportListItem = (airport: typeof airportData[number], index: number) 
 })
 
 const getGeneratedItemListSchema = (page: any) => {
-  const byScenario = (scenario: string) => visibleAirportData.filter((airport) => airport.scenarios.includes(scenario))
-  const unordered = 'https://schema.org/ItemListUnordered'
-  const rankingMap: Record<string, { name: string, items: typeof airportData, itemListOrder: string }> = {
-    '/posts/jichang-tuijian/': {
-      name: '2026机场综合推荐顺序',
-      items: mainRecommendationData,
-      itemListOrder: 'https://schema.org/ItemListOrderAscending',
-    },
-    '/posts/jichang-heji/': { name: '2026机场大全', items: visibleAirportData, itemListOrder: unordered },
-    '/rankings/cheap/': {
-      name: '2026低价机场筛选',
-      items: visibleAirportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap')),
-      itemListOrder: unordered,
-    },
-    '/rankings/trial/': { name: '2026免费试用机场筛选', items: visibleAirportData.filter((airport) => airport.trial), itemListOrder: unordered },
-    '/rankings/no-expiry/': { name: '2026不限时机场筛选', items: visibleAirportData.filter((airport) => airport.noExpiry), itemListOrder: unordered },
-    '/rankings/dedicated-client/': { name: '2026专属客户端机场筛选', items: visibleAirportData.filter((airport) => airport.dedicatedClient), itemListOrder: unordered },
-    '/rankings/clash/': {
-      name: '2026 Clash机场筛选',
-      items: visibleAirportData.filter((airport) => airport.universalSubscription || airport.scenarios.includes('clash')),
-      itemListOrder: unordered,
-    },
-    '/rankings/chatgpt/': { name: '2026 ChatGPT机场筛选', items: byScenario('chatgpt'), itemListOrder: unordered },
-    '/rankings/streaming/': { name: '2026流媒体机场筛选', items: byScenario('streaming'), itemListOrder: unordered },
-  }
-  const ranking = rankingMap[page.path]
+  const ranking = getAirportCollectionForPage(page.path)
 
   if (!ranking) return undefined
 
@@ -200,7 +181,9 @@ const getGeneratedItemListSchema = (page: any) => {
     '@id': `${getCanonicalUrl(page.path)}#ranking`,
     name: ranking.name,
     numberOfItems: ranking.items.length,
-    itemListOrder: ranking.itemListOrder,
+    itemListOrder: ranking.ordered
+      ? 'https://schema.org/ItemListOrderAscending'
+      : 'https://schema.org/ItemListUnordered',
     itemListElement: ranking.items.map(getAirportListItem),
   }
 }

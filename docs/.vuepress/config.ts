@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import {
@@ -8,6 +9,9 @@ import { extendSponsoredMarkdown } from './config/markdown'
 import { extendPageWithSeo } from './config/page-seo'
 import { defaultRobots, siteDescription, siteName } from './config/site'
 import { theme } from './config/theme'
+
+// Plume uses H2 for every feature card; keep H2 for homepage sections and H3 for cards.
+const homeFeatureComponent = fileURLToPath(new URL('./theme/components/VPHomeFeature.vue', import.meta.url))
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -45,6 +49,11 @@ export default defineUserConfig({
   theme,
   bundler: viteBundler({
     viteOptions: {
+      resolve: {
+        alias: {
+          '@theme/Home/VPHomeFeature.vue': homeFeatureComponent,
+        },
+      },
       build: {
         modulePreload: false,
       },

@@ -5,16 +5,16 @@ Last reviewed: 2026-08-19
 | 机场 | 状态 | 风险提示 | 链接 |
 | --- | --- | --- | --- |
 | echo | 已淘汰 | 客服失联，谨慎使用 | [来源](https://yp7.net/posts/jichang-heji/) |
-| 全球云 | 主推观察 | 先月付测试 | [查看](https://yp7.net/posts/quanqiuyun/) |
+| 全球云 | 主推观察 | 通用订阅、免费试用与旧优惠码待核实；先短周期验证 | [查看](https://yp7.net/posts/quanqiuyun/) |
 | 光年梯 | 主推观察 | 先月付验证 | [查看](https://yp7.net/posts/guangnianti-review-2026/) |
-| 网际快车 | 重点观察 | 需复核官网与试用 | [查看](https://yp7.net/posts/wangji-kuaiche-review/) |
+| 网际快车 | 重点观察 | 日享限60GB/日；免费体验券与优惠码待核实 | [查看](https://yp7.net/posts/wangji-kuaiche-review/) |
 | 光速云 | 备用观察 | 查看 Siilas 晚高峰记录 | [查看](https://yp7.net/posts/guangsuyun/) |
-| xxyun | 流媒体观察 | 解锁能力会变化 | [查看](https://yp7.net/posts/xxyun-review-2026/) |
-| Flybit | Clash观察 | 查看 Siilas 长期记录 | [查看](https://yp7.net/posts/flybit-review-2026/) |
+| xxyun | 流媒体观察 | 仅官方客户端，解锁需按节点复核 | [查看](https://yp7.net/posts/xxyun-review-2026/) |
+| Flybit | Clash观察 | 套餐不支持退款；购买前核实并短期测试 | [查看](https://yp7.net/posts/flybit-review-2026/) |
 | 阿达西 | 低价观察 | 不建议直接长期付费 | [查看](https://yp7.net/posts/adaxi-review-2026/) |
 | 拼好连 | 新手观察 | 先试用再续费 | [查看](https://yp7.net/posts/runway-review-2026/) |
 | 唯兔云 | 流媒体观察 | 解锁能力会变化 | [查看](https://yp7.net/posts/weituyun/) |
-| 99吧 | 试用观察 | 先测试订阅可用性 | [查看](https://yp7.net/posts/99ba-review-2026/) |
+| 99吧 | 试用观察 | 套餐仅限内地使用，暂不支持退款，先试用 | [查看](https://yp7.net/posts/99ba-review-2026/) |
 | 迅达 | 办公观察 | 查看 Siilas AI 记录 | [查看](https://yp7.net/posts/xunda-review-2026/) |
 | ccyz | 流媒体观察 | 节点状态需复核 | [查看](https://yp7.net/posts/ccyz-review-2026/) |
 | uuone | 性价比观察 | 查看 Siilas 长期记录 | [查看](https://yp7.net/posts/uuone-review-2026/) |

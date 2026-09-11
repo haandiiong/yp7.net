@@ -1,7 +1,7 @@
 ---
 title: Clash Verge下载与使用教程：安装、配置、订阅导入与TUN模式
 createTime: 2026/05/02
-dateModified: 2026/06/26
+dateModified: 2026/09/09
 permalink: /posts/clash-verge-guide-2026/
 tags:
   - Clash Verge
@@ -12,13 +12,15 @@ tags:
 description: Clash Verge是什么？本文整理 Clash Verge 下载、安装、订阅导入、系统代理、TUN模式、节点选择和常见连接问题。
 ---
 
-更新时间：2026年6月26日
+更新时间：2026年9月9日（本次补充 FlClash 教程入口）
 
 ## 使用风险提示
 
 本文内容具有时效性，软件下载入口、账号规则、节点可用性、支付方式和平台政策都可能变化。涉及下载、注册、支付、账号交易或跨境网络访问时，请优先核对官方信息和当地规则；本文只提供教程与经验参考，不承诺任何工具、节点或账号长期可用。
 
 很多人在搜索 Clash Verge 下载、Clash Verge 怎么用、Clash Verge 如何配置。本文从下载、安装、订阅导入和常见连接设置说明基础使用方法，适合 Windows、macOS 和 Linux 用户参考。
+
+本文下载入口对应 Clash Verge Rev。希望在安卓和电脑上使用同一款客户端，可并列参考 [FlClash 下载与使用教程](/posts/flclash-guide-2026/)。
 
 <!-- more -->
 
@@ -190,6 +192,7 @@ Clash Verge 使用流程：
 
 ## 相关阅读
 
+- [FlClash下载与使用教程：安卓与电脑订阅配置](/posts/flclash-guide-2026/)
 - [机场推荐（2026更新）](/posts/jichang-tuijian/)
 - [什么是Clash](/posts/clash-guide/)
 - [Clash订阅链接导入失败怎么办](/posts/clash-subscription-troubleshooting/)

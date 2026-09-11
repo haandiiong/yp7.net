@@ -1,7 +1,7 @@
 ---
 title: Clash节点是什么？2026新手入门指南：订阅导入、协议分类与避坑建议
 createTime: 2026/03/27
-dateModified: 2026/06/10
+dateModified: 2026/09/11
 permalink: /posts/clash-guide/
 tags:
   - Clash节点
@@ -56,13 +56,13 @@ description: 本文详解Clash节点概念、分类、使用方法和新手配�
 
 ### 1️⃣ 下载Clash客户端
 
-- **Windows / Mac**：Clash for Windows / ClashX  
-- **Android**：Clash for Android  
+- **Windows / macOS / Linux**：[Clash Verge Rev 教程](/posts/clash-verge-guide-2026/) / [FlClash 教程](/posts/flclash-guide-2026/)
+- **Android**：FlClash / [Clash Meta 教程](/posts/clash-for-android-guide-2026/)
 - **iOS**：Shadowrocket / Kitsunebi（支持Clash配置）
 
 ### 2️⃣ 获取节点订阅
 
-- 机场订阅链接（例如：[全球云](https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf) / [网际快车](https://wjkc66.vip/?c=GDIHMU) / [xxyun](https://xxyun.at/?code=3AYVsSKY)）
+- 提供兼容订阅的机场（例如：[Flybit](/posts/flybit-review-2026/) / [网际快车](/posts/wangji-kuaiche-review/) / [99吧](/posts/99ba-review-2026/)）。xxyun 仅支持官方客户端，不能用于本节的订阅导入流程。
 
 ### 3️⃣ 导入节点
 
@@ -88,9 +88,9 @@ description: 本文详解Clash节点概念、分类、使用方法和新手配�
 
 ### 6️⃣ 使用流媒体（Netflix / YouTube / Disney+）
 
-- 选择支持流媒体的节点（如SSONE / 全球云部分节点）  
+- 选择已确认支持当前客户端订阅格式的节点，并验证目标平台能否播放
 - 开启 **Rule + 流媒体策略**  
-- 可稳定观看外区内容
+- 实际能否播放取决于节点、账号与平台规则
 
 ---
 
@@ -120,8 +120,8 @@ description: 本文详解Clash节点概念、分类、使用方法和新手配�
 |------|----------|------|
 | 日常科学上网 | Vmess / SS | 稳定即可 |
 | 流媒体解锁 | 流媒体专用节点 | Netflix / Disney+ |
-| 预算有限 | xxyun / Flybit | 价格低，轻度使用 |
-| 长期稳定 | 全球云 / 光年梯 | 高稳定性首选 |
+| 预算有限 | 99吧 / Flybit | 先比较短周期价格、流量和试用条件 |
+| 长期使用 | 先筛选通用订阅，再验证常用节点 | 全球云通用订阅待核实；专属客户端不能直接套用本教程 |
 
 ---
 

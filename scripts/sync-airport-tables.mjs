@@ -1,7 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import vm from 'node:vm'
-import ts from 'typescript'
+import { loadConfig } from './lib/load-config.mjs'
 
 const root = process.cwd()
 const airportsPath = join(root, 'docs/.vuepress/config/airports.ts')
@@ -15,24 +14,6 @@ const fail = (message) => {
 const normalizeRoute = (path) => {
   if (path === '/') return '/'
   return path.endsWith('/') ? path : `${path}/`
-}
-
-const loadAirportConfig = (filePath) => {
-  const source = readFileSync(filePath, 'utf8')
-  const output = ts.transpileModule(source, {
-    compilerOptions: {
-      module: ts.ModuleKind.CommonJS,
-      target: ts.ScriptTarget.ES2022,
-    },
-  }).outputText
-  const context = { exports: {} }
-
-  vm.runInNewContext(output, context)
-
-  return {
-    airportData: context.exports.airportData || [],
-    visibleAirportData: context.exports.visibleAirportData || context.exports.airportData || [],
-  }
 }
 
 const parseMarkdownTable = (lines, tableStart) => {
@@ -67,11 +48,11 @@ const parseAirportCell = (value = '') => {
 
   return {
     name: match[1],
-    path: normalizeRoute(match[2]),
+    path: match[2].startsWith('#') ? match[2] : normalizeRoute(match[2]),
   }
 }
 
-const booleanText = (value) => (value ? '支持' : '不支持')
+const booleanText = (value) => (value === null ? '待核实' : value ? '支持' : '不支持')
 
 const clientSummary = (airport) => {
   if (airport.dedicatedClient && airport.universalSubscription) return '专属客户端、通用订阅'
@@ -95,11 +76,20 @@ const scenarioSummary = (airport) => airport.scenarios
   .map((scenario) => scenarioLabels[scenario] || scenario)
   .join('、')
 
-const airportLink = (airport) => `[${airport.name}](${airport.path})`
+const airportLink = (airport, _index, row, config) => {
+  const existingLink = parseAirportCell(row['机场'])
+  const link = config.sectionLinks && existingLink?.path.startsWith('#') ? existingLink.path : airport.path
+  return `[${airport.name}](${link})`
+}
 
-const byScenario = (scenario) => (airport) => airport.scenarios.includes(scenario)
-const cheapFilter = (airport) => airport.price <= 10 || airport.scenarios.includes('cheap')
-const clashFilter = (airport) => airport.universalSubscription || airport.scenarios.includes('clash')
+const capabilityCell = (field, header) => (airport, _index, row, config) => {
+  if (!config.sectionLinks) return booleanText(airport[field])
+  if (airport[field] === null) return '待核实'
+  // The catalogue keeps its existing trial/temporary-subscription qualifications.
+  // Only the boolean comes from the shared record; false must clear a stale checkmark.
+  if (!airport[field]) return '❌'
+  return row[header]?.startsWith('✔') ? row[header] : '✔'
+}
 
 const columnGetters = {
   机场: airportLink,
@@ -107,13 +97,17 @@ const columnGetters = {
   客户端: clientSummary,
   价格: (airport) => airport.priceText,
   最低价格: (airport) => airport.priceText,
-  月流量: (airport) => airport.traffic,
+  价格与试用: (airport) => `${airport.priceText}，${airport.trial === null ? '试用待核实' : airport.trial ? '支持试用' : '无试用'}`,
+  月流量: (airport, _index, _row, config) => config.sectionLinks ? airport.traffic.replace(/\/月$/, '') : airport.traffic,
+  流量额度: (airport) => airport.traffic,
   流量: (airport) => airport.traffic,
-  试用: (airport) => booleanText(airport.trial),
-  不限时: (airport) => booleanText(airport.noExpiry),
-  不限时状态: (airport) => booleanText(airport.noExpiry),
-  专属客户端: (airport) => booleanText(airport.dedicatedClient),
-  通用订阅: (airport) => booleanText(airport.universalSubscription),
+  试用: capabilityCell('trial', '试用'),
+  免费试用: capabilityCell('trial', '免费试用'),
+  不限时: capabilityCell('noExpiry', '不限时'),
+  不限时套餐: capabilityCell('noExpiry', '不限时套餐'),
+  不限时状态: capabilityCell('noExpiry', '不限时状态'),
+  专属客户端: capabilityCell('dedicatedClient', '专属客户端'),
+  通用订阅: capabilityCell('universalSubscription', '通用订阅'),
   '订阅/客户端': clientSummary,
   风险提示: (airport) => airport.risk,
   状态: (airport) => airport.status,
@@ -121,68 +115,46 @@ const columnGetters = {
   销量样本: (airport) => String(airport.salesSample),
 }
 
+const { visibleAirportData } = loadConfig('airports.ts')
+const { airportCollections } = loadConfig('airport-collections.ts')
 const tableConfigs = [
+  ...Object.values(airportCollections).filter((collection) => collection.sourceFile).map((collection) => ({
+    filePath: collection.sourceFile,
+    heading: collection.heading,
+    sectionLinks: collection.sectionLinks,
+    items: collection.items,
+  })),
   {
     filePath: 'docs/风险监测/机场风险监测.md',
     heading: '## 站内观察状态',
-    getAirports: ({ visibleAirportData }) => visibleAirportData,
-  },
-  {
-    filePath: 'docs/机场榜单/低价机场榜.md',
-    heading: '## 低价机场候选',
-    rowFilter: cheapFilter,
-  },
-  {
-    filePath: 'docs/机场榜单/Clash机场榜.md',
-    heading: '## Clash机场候选',
-    rowFilter: clashFilter,
-  },
-  {
-    filePath: 'docs/机场榜单/ChatGPT机场榜.md',
-    heading: '## ChatGPT机场候选',
-    getAirports: ({ visibleAirportData }) => visibleAirportData.filter(byScenario('chatgpt')),
-  },
-  {
-    filePath: 'docs/机场榜单/流媒体机场榜.md',
-    heading: '## 流媒体机场候选',
-    rowFilter: byScenario('streaming'),
-  },
-  {
-    filePath: 'docs/机场榜单/免费试用机场榜.md',
-    heading: '## 免费试用机场候选',
-    getAirports: ({ visibleAirportData }) => visibleAirportData.filter((airport) => airport.trial),
-  },
-  {
-    filePath: 'docs/机场榜单/不限时机场榜.md',
-    heading: '## 不限时与按量套餐候选',
-    getAirports: ({ visibleAirportData }) => visibleAirportData.filter((airport) => airport.noExpiry),
-  },
-  {
-    filePath: 'docs/机场榜单/专属客户端机场榜.md',
-    heading: '## 专属客户端机场候选',
-    getAirports: ({ visibleAirportData }) => visibleAirportData.filter((airport) => airport.dedicatedClient),
+    items: visibleAirportData,
   },
 ]
 
-const renderTable = ({ headers, divider, rows }, airports, filePath) => [
+const renderTable = ({ headers, divider, rows }, airports, config) => [
   `| ${headers.join(' | ')} |`,
   divider,
   ...airports.map((airport, index) => {
-    const existingRow = rows.find((row) => parseAirportCell(row['机场'])?.path === normalizeRoute(airport.path)) || {}
+    const existingRow = rows.find((row) => {
+      const link = parseAirportCell(row['机场'])
+      return config.sectionLinks
+        ? link?.name.toLowerCase() === airport.name.toLowerCase()
+        : link?.path === normalizeRoute(airport.path)
+    }) || {}
     const cells = headers.map((header) => {
       const getter = columnGetters[header]
-      if (getter) return getter(airport, index)
+      if (getter) return getter(airport, index, existingRow, config)
       if (existingRow[header]) return existingRow[header]
       if (header === '适合场景') return scenarioSummary(airport)
 
-      fail(`${filePath}: missing manual value for ${airport.name} ${header}`)
+      fail(`${config.filePath}: missing manual value for ${airport.name} ${header}`)
     })
 
     return `| ${cells.join(' | ')} |`
   }),
 ].join('\n')
 
-const syncTable = (config, airportContext, airportByPath) => {
+const syncTable = (config) => {
   const absolutePath = join(root, config.filePath)
   if (!existsSync(absolutePath)) fail(`Missing ${config.filePath}`)
 
@@ -197,22 +169,7 @@ const syncTable = (config, airportContext, airportByPath) => {
   if (tableStart === -1) fail(`${config.filePath}: missing table after ${config.heading}`)
 
   const table = parseMarkdownTable(lines, tableStart)
-  const airports = config.getAirports
-    ? config.getAirports(airportContext)
-    : table.rows.map((row) => {
-        const airportCell = parseAirportCell(row['机场'])
-        if (!airportCell) fail(`${config.filePath}: invalid airport cell "${row['机场']}"`)
-
-        const airport = airportByPath.get(airportCell.path)
-        if (!airport) fail(`${config.filePath}: unknown airport path ${airportCell.path}`)
-        if (config.rowFilter && !config.rowFilter(airport)) {
-          fail(`${config.filePath}: ${airport.name} does not match ${config.heading}`)
-        }
-
-        return airport
-      })
-
-  const renderedTable = renderTable(table, airports, config.filePath)
+  const renderedTable = renderTable(table, config.items, config)
   const next = [
     ...lines.slice(0, tableStart),
     ...renderedTable.split('\n'),
@@ -228,13 +185,8 @@ const syncTable = (config, airportContext, airportByPath) => {
 
 if (!existsSync(airportsPath)) fail(`Missing ${airportsPath}`)
 
-const airportContext = loadAirportConfig(airportsPath)
-const airportByPath = new Map(airportContext.airportData.map((airport) => [
-  normalizeRoute(airport.path),
-  airport,
-]))
 const changedFiles = tableConfigs
-  .filter((config) => syncTable(config, airportContext, airportByPath))
+  .filter((config) => syncTable(config))
   .map((config) => config.filePath)
 
 if (checkOnly && changedFiles.length) {

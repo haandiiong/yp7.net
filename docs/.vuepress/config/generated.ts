@@ -6,14 +6,19 @@ import {
   currentTestingSourceName,
   currentTestingSourceUrl,
   historicalTestingNotice,
-  mainRecommendationData,
   testingPolicyEffectiveDate,
-  visibleAirportData,
 } from './airports'
-import { defaultImage, defaultRobots, hostname, siteDescription, siteLastReviewed, siteName } from './site'
+import { airportCollections, airportRankingKeys } from './airport-collections'
+import type { AirportCollectionKey } from './airport-collections'
+import { serializeAirport } from './airport-public'
+import type { PublicAirportData } from './airport-public'
+import { defaultImage, hostname, siteDescription, siteLastReviewed, siteName } from './site'
+
+const booleanText = (value: boolean | null) => value === null ? '待核实' : value ? '支持' : '不支持'
 
 const getCanonicalUrl = (path: string) => `${hostname}${path}`
 const getDataCanonicalUrl = (slug: string) => `${hostname}/data/${slug}`
+const getSitePath = (url: string) => url.startsWith(`${hostname}/`) ? url.slice(hostname.length) : url
 
 const escapeHtml = (value = '') => value
   .replace(/&/g, '&amp;')
@@ -69,18 +74,6 @@ const injectGeneratedH1 = (html = '', title = '') => {
   return html.replace(/(<div id="VPContent"[^>]*>)/, `$1<h1 class="visually-hidden">${escapeHtml(title)}</h1>`)
 }
 
-const replaceGeneratedTitle = (html = '', title = '') => (
-  html.replace(/<title>.*?<\/title>/s, `<title>${escapeHtml(title)}</title>`)
-)
-
-const replaceRobotsMeta = (html = '', content = defaultRobots) => {
-  if (/<meta name="robots"/i.test(html)) {
-    return html.replace(/<meta name="robots"[^>]*>/i, `<meta name="robots" content="${escapeHtml(content)}">`)
-  }
-
-  return html.replace(/(<head[^>]*>)/i, `$1<meta name="robots" content="${escapeHtml(content)}">`)
-}
-
 const mergeRel = (current = '', additions: string[]) => Array.from(new Set([
   ...current.split(/\s+/).filter(Boolean),
   ...additions,
@@ -109,18 +102,18 @@ const walkGeneratedHtml = (dir: string, visit: (file: string) => void) => {
   })
 }
 
-const generatedHtmlPatches = [
-  ['index.html', 'yp7.net｜机场资料、风险监测与科学上网教程', defaultRobots],
-  ['404.html', '页面未找到｜yp7.net', 'noindex, follow'],
+const generatedH1Fallbacks = [
+  ['index.html', 'yp7.net｜机场资料、风险监测与科学上网教程'],
+  ['404.html', '页面未找到｜yp7.net'],
 ] as const
 
 export const patchGeneratedHtml = (app: any) => {
-  generatedHtmlPatches.forEach(([file, title, robots]) => {
+  generatedH1Fallbacks.forEach(([file, title]) => {
     const htmlPath = app.dir.dest(file)
     if (!existsSync(htmlPath)) return
 
     const html = readFileSync(htmlPath, 'utf-8')
-    const patched = replaceRobotsMeta(injectGeneratedH1(replaceGeneratedTitle(html, title), title), robots)
+    const patched = injectGeneratedH1(html, title)
     if (patched !== html) writeFileSync(htmlPath, patched)
   })
 
@@ -132,54 +125,14 @@ export const patchGeneratedHtml = (app: any) => {
 }
 
 const getAirportDataFiles = () => {
-  const serializeAirport = (airport: typeof airportData[number]) => {
-    const { performance, ...publicAirport } = airport
-
-    return {
-      ...publicAirport,
-      ...(performance ? {
-        historicalEvidence: {
-          evidenceLevel: performance.evidenceLevel,
-          lastTestedAt: performance.lastTestedAt,
-          testWindow: performance.testWindow,
-          testRegion: performance.testRegion,
-          testNetwork: performance.testNetwork,
-          testDevice: performance.testDevice,
-          latencyMs: performance.latencyMs,
-          downloadMbpsRange: performance.downloadMbpsRange,
-          evidenceSummary: performance.evidenceSummary,
-          recordStatus: 'historical',
-          recordNotice: historicalTestingNotice,
-        },
-      } : {}),
-      url: getCanonicalUrl(airport.path),
-    }
-  }
-  const serializeSalesAirport = (airport: typeof airportData[number]) => ({
-    ...serializeAirport(airport),
-    salesSample: airport.salesSample,
-  })
-  const hasSalesSample = (airport: typeof airportData[number]) => typeof airport.salesSample === 'number'
-  const byScenario = (scenario: string) => visibleAirportData.filter((airport) => airport.scenarios.includes(scenario))
-  const salesRanking = visibleAirportData
-    .filter(hasSalesSample)
-    .sort((a, b) => b.salesSample! - a.salesSample!)
+  const publicAirports = new Map(airportData.map((airport) => [airport.path, serializeAirport(airport)]))
+  const rankings = Object.fromEntries(Object.entries(airportCollections).map(([key, collection]) => [
+    key, collection.items.map((airport) => publicAirports.get(airport.path)!),
+  ])) as Record<AirportCollectionKey, PublicAirportData[]>
 
   return {
-    airports: visibleAirportData.map(serializeAirport),
-    rankings: {
-      mainRecommendation: mainRecommendationData.map(serializeAirport),
-      all: visibleAirportData.map(serializeAirport),
-      sales: salesRanking.map(serializeSalesAirport),
-      stable: byScenario('stable').map(serializeAirport),
-      cheap: visibleAirportData.filter((airport) => airport.price <= 10 || airport.scenarios.includes('cheap')).map(serializeAirport),
-      clash: visibleAirportData.filter((airport) => airport.universalSubscription || airport.scenarios.includes('clash')).map(serializeAirport),
-      chatgpt: byScenario('chatgpt').map(serializeAirport),
-      streaming: byScenario('streaming').map(serializeAirport),
-      trial: visibleAirportData.filter((airport) => airport.trial).map(serializeAirport),
-      noExpiry: visibleAirportData.filter((airport) => airport.noExpiry).map(serializeAirport),
-      dedicatedClient: visibleAirportData.filter((airport) => airport.dedicatedClient).map(serializeAirport),
-    },
+    airports: rankings.all,
+    rankings,
     riskMonitor: [
       {
         name: 'echo',
@@ -206,38 +159,38 @@ const getPublicAirportMetrics = () => {
   }
 }
 
-const getAirportMarkdownTable = (airports: typeof airportData, columns: string[] = ['机场', '最低价格', '月流量', '试用', '不限时', '专属客户端', '通用订阅', '历史证据', '历史测试日期', '历史延迟', '历史速度区间', '状态']) => {
+const getAirportMarkdownTable = (airports: PublicAirportData[], columns: string[] = ['机场', '最低价格', '流量额度', '试用', '不限时', '专属客户端', '通用订阅', '历史证据', '历史测试日期', '历史延迟', '历史速度区间', '状态']) => {
   const header = `| ${columns.join(' | ')} |`
   const divider = `| ${columns.map(() => '---').join(' | ')} |`
   const rows = airports.map((airport) => [
     `[${airport.name}](${getCanonicalUrl(airport.path)})`,
     airport.priceText,
     airport.traffic,
-    airport.trial ? '支持' : '不支持',
+    booleanText(airport.trial),
     airport.noExpiry ? '支持' : '不支持',
     airport.dedicatedClient ? '支持' : '不支持',
-    airport.universalSubscription ? '支持' : '不支持',
-    airport.performance?.evidenceLevel || '无',
-    airport.performance?.lastTestedAt || '无历史记录',
-    airport.performance ? `${airport.performance.latencyMs}ms` : '无历史记录',
-    airport.performance?.downloadMbpsRange || '无历史记录',
+    booleanText(airport.universalSubscription),
+    airport.historicalEvidence?.evidenceLevel || '无',
+    airport.historicalEvidence?.lastTestedAt || '无历史记录',
+    airport.historicalEvidence ? `${airport.historicalEvidence.latencyMs}ms` : '无历史记录',
+    airport.historicalEvidence?.downloadMbpsRange || '无历史记录',
     airport.status,
   ])
 
   return [header, divider, ...rows.map((row) => `| ${row.join(' | ')} |`)].join('\n')
 }
 
-const getSalesMarkdownTable = (airports: Array<any>) => {
-  const header = '| 机场 | 销量样本 | 最低价格 | 月流量 | 试用 | 专属客户端 | 通用订阅 | 状态 |'
+const getSalesMarkdownTable = (airports: PublicAirportData[]) => {
+  const header = '| 机场 | 销量样本 | 最低价格 | 流量额度 | 试用 | 专属客户端 | 通用订阅 | 状态 |'
   const divider = '| --- | ---: | --- | --- | --- | --- | --- | --- |'
   const rows = airports.map((airport) => [
     `[${airport.name}](${getCanonicalUrl(airport.path)})`,
     airport.salesSample,
     airport.priceText,
     airport.traffic,
-    airport.trial ? '支持' : '不支持',
+    booleanText(airport.trial),
     airport.dedicatedClient ? '支持' : '不支持',
-    airport.universalSubscription ? '支持' : '不支持',
+    booleanText(airport.universalSubscription),
     airport.status,
   ])
 
@@ -308,25 +261,25 @@ const renderDataHtmlPage = ({
 `
 }
 
-const getAirportHtmlTable = (airports = visibleAirportData) => {
+const getAirportHtmlTable = (airports: PublicAirportData[]) => {
   const rows = airports.map((airport) => `<tr>
         <td><a href="${airport.path}">${escapeHtml(airport.name)}</a></td>
         <td>${escapeHtml(airport.priceText)}</td>
         <td>${escapeHtml(airport.traffic)}</td>
-        <td>${airport.trial ? '支持' : '不支持'}</td>
+        <td>${booleanText(airport.trial)}</td>
         <td>${airport.noExpiry ? '支持' : '不支持'}</td>
         <td>${airport.dedicatedClient ? '支持' : '不支持'}</td>
-        <td>${airport.universalSubscription ? '支持' : '不支持'}</td>
-        <td>${escapeHtml(airport.performance?.evidenceLevel || '无')}</td>
-        <td>${escapeHtml(airport.performance?.lastTestedAt || '无历史记录')}</td>
-        <td>${airport.performance ? `${airport.performance.latencyMs}ms` : '无历史记录'}</td>
-        <td>${escapeHtml(airport.performance?.downloadMbpsRange || '无历史记录')}</td>
+        <td>${booleanText(airport.universalSubscription)}</td>
+        <td>${escapeHtml(airport.historicalEvidence?.evidenceLevel || '无')}</td>
+        <td>${escapeHtml(airport.historicalEvidence?.lastTestedAt || '无历史记录')}</td>
+        <td>${airport.historicalEvidence ? `${airport.historicalEvidence.latencyMs}ms` : '无历史记录'}</td>
+        <td>${escapeHtml(airport.historicalEvidence?.downloadMbpsRange || '无历史记录')}</td>
         <td>${escapeHtml(airport.status)}</td>
       </tr>`).join('\n')
 
   return `<table>
         <thead>
-          <tr><th>机场</th><th>最低价格</th><th>月流量</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>历史证据</th><th>历史测试日期</th><th>历史延迟</th><th>历史速度区间</th><th>状态</th></tr>
+          <tr><th>机场</th><th>最低价格</th><th>流量额度</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>历史证据</th><th>历史测试日期</th><th>历史延迟</th><th>历史速度区间</th><th>状态</th></tr>
         </thead>
         <tbody>
 ${rows}
@@ -334,21 +287,21 @@ ${rows}
       </table>`
 }
 
-const getSalesHtmlTable = (airports: Array<any>) => {
+const getSalesHtmlTable = (airports: PublicAirportData[]) => {
   const rows = airports.map((airport) => `<tr>
         <td><a href="${airport.path}">${escapeHtml(airport.name)}</a></td>
         <td>${airport.salesSample}</td>
         <td>${escapeHtml(airport.priceText)}</td>
         <td>${escapeHtml(airport.traffic)}</td>
-        <td>${airport.trial ? '支持' : '不支持'}</td>
+        <td>${booleanText(airport.trial)}</td>
         <td>${airport.dedicatedClient ? '支持' : '不支持'}</td>
-        <td>${airport.universalSubscription ? '支持' : '不支持'}</td>
+        <td>${booleanText(airport.universalSubscription)}</td>
         <td>${escapeHtml(airport.status)}</td>
       </tr>`).join('\n')
 
   return `<table>
         <thead>
-          <tr><th>机场</th><th>销量样本</th><th>最低价格</th><th>月流量</th><th>试用</th><th>专属客户端</th><th>通用订阅</th><th>状态</th></tr>
+          <tr><th>机场</th><th>销量样本</th><th>最低价格</th><th>流量额度</th><th>试用</th><th>专属客户端</th><th>通用订阅</th><th>状态</th></tr>
         </thead>
         <tbody>
 ${rows}
@@ -356,17 +309,7 @@ ${rows}
       </table>`
 }
 
-const getRiskMonitorHtmlTable = () => {
-  const riskRows = [
-    { name: 'echo', status: '已淘汰', risk: '客服失联，谨慎使用', url: '/posts/jichang-heji/' },
-    ...airportData.map((airport) => ({
-      name: airport.name,
-      status: airport.status,
-      risk: airport.risk,
-      url: airport.path,
-    })),
-  ]
-
+const getRiskMonitorHtmlTable = (riskRows: ReturnType<typeof getAirportDataFiles>['riskMonitor']) => {
   return `<table>
         <thead>
           <tr><th>机场</th><th>状态</th><th>风险提示</th><th>链接</th></tr>
@@ -376,24 +319,18 @@ ${riskRows.map((item) => `<tr>
         <td>${escapeHtml(item.name)}</td>
         <td>${escapeHtml(item.status)}</td>
         <td>${escapeHtml(item.risk)}</td>
-        <td><a href="${item.url}">查看</a></td>
+        <td><a href="${escapeHtml(getSitePath('url' in item ? item.url : item.source))}" rel="noopener noreferrer">查看</a></td>
       </tr>`).join('\n')}
         </tbody>
       </table>`
 }
 
-const rankingSections = [
-  { title: '综合推荐顺序', key: 'mainRecommendation', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
-  { title: '销量机场', key: 'sales', renderHtml: getSalesHtmlTable, renderMarkdown: getSalesMarkdownTable },
-  { title: '稳定机场', key: 'stable', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
-  { title: '低价机场', key: 'cheap', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
-  { title: '免费试用机场', key: 'trial', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
-  { title: '不限时套餐机场', key: 'noExpiry', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
-  { title: '专属客户端机场', key: 'dedicatedClient', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
-  { title: 'Clash 机场', key: 'clash', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
-  { title: 'ChatGPT 机场', key: 'chatgpt', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
-  { title: '流媒体机场', key: 'streaming', renderHtml: getAirportHtmlTable, renderMarkdown: getAirportMarkdownTable },
-] as const
+const rankingSections = airportRankingKeys.map((key) => ({
+  key,
+  title: airportCollections[key].dataTitle,
+  renderHtml: key === 'sales' ? getSalesHtmlTable : getAirportHtmlTable,
+  renderMarkdown: key === 'sales' ? getSalesMarkdownTable : getAirportMarkdownTable,
+}))
 
 const datasetCreator = {
   '@type': 'Organization',
@@ -492,7 +429,7 @@ export const generateAirportDataFiles = (app: any) => {
     '',
     `Testing policy: ${historicalTestingNotice}；当前测试数据见 ${currentTestingSourceUrl}`,
     '',
-    getAirportMarkdownTable(visibleAirportData),
+    getAirportMarkdownTable(data.airports),
     '',
   ].join('\n'))
   writeFileSync(`${dataDir}/rankings.md`, [
@@ -536,7 +473,7 @@ export const generateAirportDataFiles = (app: any) => {
         <a href="/posts/jichang-heji/">机场大全</a>
         <a href="/methodology/">推荐方法</a>
       </div>
-      <div class="card">${getAirportHtmlTable()}</div>`,
+      <div class="card">${getAirportHtmlTable(data.airports)}</div>`,
   }))
   writeFileSync(`${dataDir}/${rankings.file}`, renderDataHtmlPage({
     title: rankings.title,
@@ -580,6 +517,6 @@ export const generateAirportDataFiles = (app: any) => {
         <a href="/risk-monitor/">风险监测页</a>
         <a href="/methodology/">推荐方法与数据来源</a>
       </div>
-      <div class="card">${getRiskMonitorHtmlTable()}</div>`,
+      <div class="card">${getRiskMonitorHtmlTable(data.riskMonitor)}</div>`,
   }))
 }

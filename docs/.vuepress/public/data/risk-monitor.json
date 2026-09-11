@@ -4,14 +4,14 @@
   "lastReviewed": "2026-08-19",
   "metrics": {
     "count": 32,
-    "trialCount": 9,
-    "noExpiryCount": 20,
-    "dedicatedClientCount": 26,
-    "universalSubscriptionCount": 20,
-    "cheapUnderTenCount": 5,
-    "averagePrice": 16,
+    "trialCount": 8,
+    "noExpiryCount": 21,
+    "dedicatedClientCount": 25,
+    "universalSubscriptionCount": 19,
+    "cheapUnderTenCount": 6,
+    "averagePrice": 16.3,
     "salesSampleCount": 17,
-    "historicalPerformanceRecordCount": 10
+    "historicalPerformanceRecordCount": 9
   },
   "risks": [
     {
@@ -23,7 +23,7 @@
     {
       "name": "全球云",
       "status": "主推观察",
-      "risk": "先月付测试",
+      "risk": "通用订阅、免费试用与旧优惠码待核实；先短周期验证",
       "url": "https://yp7.net/posts/quanqiuyun/"
     },
     {
@@ -35,7 +35,7 @@
     {
       "name": "网际快车",
       "status": "重点观察",
-      "risk": "需复核官网与试用",
+      "risk": "日享限60GB/日；免费体验券与优惠码待核实",
       "url": "https://yp7.net/posts/wangji-kuaiche-review/"
     },
     {
@@ -47,13 +47,13 @@
     {
       "name": "xxyun",
       "status": "流媒体观察",
-      "risk": "解锁能力会变化",
+      "risk": "仅官方客户端，解锁需按节点复核",
       "url": "https://yp7.net/posts/xxyun-review-2026/"
     },
     {
       "name": "Flybit",
       "status": "Clash观察",
-      "risk": "查看 Siilas 长期记录",
+      "risk": "套餐不支持退款；购买前核实并短期测试",
       "url": "https://yp7.net/posts/flybit-review-2026/"
     },
     {
@@ -77,7 +77,7 @@
     {
       "name": "99吧",
       "status": "试用观察",
-      "risk": "先测试订阅可用性",
+      "risk": "套餐仅限内地使用，暂不支持退款，先试用",
       "url": "https://yp7.net/posts/99ba-review-2026/"
     },
     {

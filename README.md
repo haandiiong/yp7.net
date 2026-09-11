@@ -28,8 +28,11 @@ pnpm run docs:sync-data
 pnpm run docs:check-tables
 pnpm run docs:check-review-sections
 pnpm run docs:check-data
+pnpm run docs:check-consistency
 pnpm run docs:check-content
 pnpm run docs:typecheck
+pnpm run docs:test-head
+pnpm run docs:test-data
 pnpm run docs:preview
 ```
 
@@ -40,7 +43,9 @@ pnpm run docs:preview
 - `docs/机场推荐/`：机场推荐主文和机场大全。
 - `docs/风险监测/`：机场风险监测页。
 - `docs/科学上网专区/`、`docs/工具/`、`docs/tiktok专区/` 等：教程型内容。
-- `docs/.vuepress/config/airports.ts`：结构化机场数据源，用于生成数据文件和部分结构化信息。
+- `docs/.vuepress/config/airports.ts`：机场价格、流量、客户端能力、历史记录及风险的基础数据源。
+- `docs/.vuepress/config/airport-collections.ts`：各页面候选名单、顺序和筛选规则，供正文表格、JSON 与 ItemList Schema 共用。
+- `docs/.vuepress/config/airport-public.ts`：公开数据对象，供 JSON、Markdown 和 HTML 数据页共同使用。
 
 ## 数据生成流程
 
@@ -50,6 +55,12 @@ pnpm run docs:preview
 - `/data/rankings.json`
 - `/data/risk-monitor.json`
 - 对应的 Markdown 和 HTML 数据页
+
+`airport-collections.ts` 保留低价、Clash、流媒体页面的编辑筛选名单及顺序；`rankings.json` 中的对应集合与正文候选表、页面 ItemList 完全对应。全量数据仍可从 `airports.json` 或 `rankings.all` 获取。新增编辑候选应修改集合配置，再运行 `docs:sync-tables`；下架或失去对应能力的服务会从相关集合中排除。
+
+`trial`（免费试用）和 `universalSubscription`（通用订阅）使用三种状态：`true` 为确认支持，`false` 为不支持，`null` 为待核实。待核实条目不进入对应的免费试用榜或 Clash 榜，正文、公开数据与 Schema 均保留该状态。价格按 `priceText` 标明的套餐周期比较，`traffic` 保留每日或每月重置说明；一次性流量包价格在详情中单列，不能写成月付价格。
+
+`docs:sync-tables` 同步主推荐对比表、机场大全价格总表、各场景候选表及风险观察表的基础字段，保留表内编辑说明和已有页内链接。详细套餐、优惠条件和正文叙述仍需编辑维护。`docs:check-consistency` 在构建后交叉核对正文表格、公开 JSON/Markdown/HTML、单机场 Service 和集合 ItemList，检查名单、顺序、链接、价格、能力与历史证据。
 
 构建后运行：
 
@@ -69,8 +80,11 @@ pnpm run docs:sync-data
 pnpm run docs:check-tables
 pnpm run docs:check-review-sections
 pnpm run docs:check-data
+pnpm run docs:check-consistency
 pnpm run docs:check-content
 pnpm run docs:typecheck
+pnpm run docs:test-head
+pnpm run docs:test-data
 ```
 
 ## 内容更新 Checklist

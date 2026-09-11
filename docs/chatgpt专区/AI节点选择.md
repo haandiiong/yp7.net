@@ -1,7 +1,7 @@
 ---
 title: ChatGPT、Claude、Gemini 用什么节点？2026 AI工具机场节点选择与打不开排查指南
 createTime: 2026/06/18
-dateModified: 2026/08/19
+dateModified: 2026/09/09
 permalink: /posts/ai-tools-node-guide-2026/
 tags:
   - ChatGPT节点
@@ -30,7 +30,7 @@ schema:
         text: 如果仍然打不开，再检查账号地区、浏览器缓存、DNS、代理模式和平台状态。
 ---
 
-更新时间：2026年8月19日
+更新时间：2026年9月9日（本次补充 FlClash 教程入口）
 
 ## 使用风险提示
 
@@ -233,7 +233,7 @@ AI 工具更像办公基础设施，稳定比便宜更重要。预算有限时�
 6. 记录是否出现验证码、登录异常、生成中断、上传失败。
 7. 再决定是否续费或换备用机场。
 
-如果你是 Clash 用户，可以配合 [Clash Verge 教程](/posts/clash-verge-guide-2026/) 和 [Clash机场榜](/rankings/clash/) 使用。如果你是新手，更适合先看 [专属客户端机场榜](/rankings/dedicated-client/)。
+如果你是 Clash 用户，可以从 [Clash Verge Rev 教程](/posts/clash-verge-guide-2026/) 或 [FlClash 教程](/posts/flclash-guide-2026/) 了解配置，再结合 [Clash机场榜](/rankings/clash/) 筛选。如果你是新手，也可以先看 [专属客户端机场榜](/rankings/dedicated-client/)。
 
 ## 常见问题
 
