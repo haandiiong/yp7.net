@@ -6,12 +6,12 @@ Last reviewed: 2026-08-19
 | --- | --- | --- | --- |
 | echo | 已淘汰 | 客服失联，谨慎使用 | [来源](https://yp7.net/posts/jichang-heji/) |
 | 全球云 | 主推观察 | 通用订阅、免费试用与旧优惠码待核实；先短周期验证 | [查看](https://yp7.net/posts/quanqiuyun/) |
-| 光年梯 | 主推观察 | 先月付验证 | [查看](https://yp7.net/posts/guangnianti-review-2026/) |
+| 光年梯 | 主推观察 | 套餐不退款；普通套餐不支持通用订阅，免费试用待核实，先确认设备兼容 | [查看](https://yp7.net/posts/guangnianti-review-2026/) |
 | 网际快车 | 重点观察 | 日享限60GB/日；免费体验券与优惠码待核实 | [查看](https://yp7.net/posts/wangji-kuaiche-review/) |
-| 光速云 | 备用观察 | 查看 Siilas 晚高峰记录 | [查看](https://yp7.net/posts/guangsuyun/) |
+| 光速云 | 备用观察 | 套餐不退款；价格或流量文案有冲突，通用订阅与免费试用待核实 | [查看](https://yp7.net/posts/guangsuyun/) |
 | xxyun | 流媒体观察 | 仅官方客户端，解锁需按节点复核 | [查看](https://yp7.net/posts/xxyun-review-2026/) |
 | Flybit | Clash观察 | 套餐不支持退款；购买前核实并短期测试 | [查看](https://yp7.net/posts/flybit-review-2026/) |
-| 阿达西 | 低价观察 | 不建议直接长期付费 | [查看](https://yp7.net/posts/adaxi-review-2026/) |
+| 阿达西 | 低价观察 | 入门档限速100Mbps、不支持专线；试用与退款待核实，独享节点默认自动续费 | [查看](https://yp7.net/posts/adaxi-review-2026/) |
 | 拼好连 | 新手观察 | 先试用再续费 | [查看](https://yp7.net/posts/runway-review-2026/) |
 | 唯兔云 | 流媒体观察 | 解锁能力会变化 | [查看](https://yp7.net/posts/weituyun/) |
 | 99吧 | 试用观察 | 套餐仅限内地使用，暂不支持退款，先试用 | [查看](https://yp7.net/posts/99ba-review-2026/) |

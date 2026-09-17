@@ -112,5 +112,5 @@ ssone 的独立定位是“低价套餐评测”。重点是便宜是否够用�
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [网际快车机场怎么样？](/posts/wangji-kuaiche-review/)
-- [光速云机场怎么样？](/posts/guangsuyun/)
 - [Flybit机场怎么样？](/posts/flybit-review-2026/)
+- [阿达西机场怎么样？](/posts/adaxi-review-2026/)

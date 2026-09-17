@@ -5,11 +5,11 @@
   "metrics": {
     "count": 32,
     "trialCount": 8,
-    "noExpiryCount": 21,
-    "dedicatedClientCount": 25,
-    "universalSubscriptionCount": 19,
+    "noExpiryCount": 22,
+    "dedicatedClientCount": 26,
+    "universalSubscriptionCount": 18,
     "cheapUnderTenCount": 6,
-    "averagePrice": 16.3,
+    "averagePrice": 16.5,
     "salesSampleCount": 17,
     "historicalPerformanceRecordCount": 9
   },
@@ -29,7 +29,7 @@
     {
       "name": "光年梯",
       "status": "主推观察",
-      "risk": "先月付验证",
+      "risk": "套餐不退款；普通套餐不支持通用订阅，免费试用待核实，先确认设备兼容",
       "url": "https://yp7.net/posts/guangnianti-review-2026/"
     },
     {
@@ -41,7 +41,7 @@
     {
       "name": "光速云",
       "status": "备用观察",
-      "risk": "查看 Siilas 晚高峰记录",
+      "risk": "套餐不退款；价格或流量文案有冲突，通用订阅与免费试用待核实",
       "url": "https://yp7.net/posts/guangsuyun/"
     },
     {
@@ -59,7 +59,7 @@
     {
       "name": "阿达西",
       "status": "低价观察",
-      "risk": "不建议直接长期付费",
+      "risk": "入门档限速100Mbps、不支持专线；试用与退款待核实，独享节点默认自动续费",
       "url": "https://yp7.net/posts/adaxi-review-2026/"
     },
     {

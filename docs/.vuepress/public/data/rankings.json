@@ -12,11 +12,11 @@
   "metrics": {
     "count": 32,
     "trialCount": 8,
-    "noExpiryCount": 21,
-    "dedicatedClientCount": 25,
-    "universalSubscriptionCount": 19,
+    "noExpiryCount": 22,
+    "dedicatedClientCount": 26,
+    "universalSubscriptionCount": 18,
     "cheapUnderTenCount": 6,
-    "averagePrice": 16.3,
+    "averagePrice": 16.5,
     "salesSampleCount": 17,
     "historicalPerformanceRecordCount": 9
   },
@@ -57,7 +57,7 @@
         "informationSources": [
           {
             "name": "Flybit 官网",
-            "url": "https://www.fastfastfast.buzz/#/register?code=p3DOcgzt",
+            "url": "https://goflybit.com/#/register?code=p3DOcgzt",
             "checkedAt": "2026-09-09"
           }
         ],
@@ -214,7 +214,7 @@
         "price": 18,
         "priceText": "18元/月",
         "traffic": "110GB/月",
-        "trial": false,
+        "trial": null,
         "noExpiry": false,
         "dedicatedClient": true,
         "universalSubscription": false,
@@ -224,8 +224,25 @@
           "newbie"
         ],
         "status": "主推观察",
-        "risk": "先月付验证",
-        "summary": "新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。",
+        "risk": "套餐不退款；普通套餐不支持通用订阅，免费试用待核实，先确认设备兼容",
+        "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，免费试用待核实。",
+        "informationSources": [
+          {
+            "name": "光年梯套餐页",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯客户端知识库",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯仪表盘",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 832,
         "historicalEvidence": {
           "evidenceLevel": "A",
@@ -246,21 +263,37 @@
         "name": "光速云",
         "path": "/posts/guangsuyun/",
         "image": "/guangsuyun.png",
-        "price": 17,
-        "priceText": "17元/月",
-        "traffic": "110GB/月",
-        "trial": false,
+        "price": 23,
+        "priceText": "23元/月",
+        "traffic": "卡片148GB/月，说明138GB/月（待核实）",
+        "trial": null,
         "noExpiry": true,
-        "dedicatedClient": false,
-        "universalSubscription": true,
+        "dedicatedClient": true,
+        "universalSubscription": null,
         "scenarios": [
           "stable",
-          "clash",
           "streaming"
         ],
         "status": "备用观察",
-        "risk": "查看 Siilas 晚高峰记录",
-        "summary": "隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案比较。",
+        "risk": "套餐不退款；价格或流量文案有冲突，通用订阅与免费试用待核实",
+        "summary": "月付入口23元，极速版卡片148GB/月与说明138GB/月冲突；另有99元年付59GB/月及680元一次性1000GB不限时包。官网提供多平台客户端，iOS使用Nextin、专属码gsy；不限时包不自动重置，手动重置612元。套餐不退款，通用订阅待核实。",
+        "informationSources": [
+          {
+            "name": "光速云套餐页",
+            "url": "https://fdgfds.guangsut.sbs/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云客户端知识库",
+            "url": "https://fdgfds.guangsut.sbs/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云仪表盘",
+            "url": "https://fdgfds.guangsut.sbs/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 346,
         "historicalEvidence": {
           "evidenceLevel": "B",
@@ -282,10 +315,10 @@
         "path": "/posts/adaxi-review-2026/",
         "image": "/adaxi.png",
         "price": 3,
-        "priceText": "3元/月",
-        "traffic": "20GB/月",
-        "trial": false,
-        "noExpiry": false,
+        "priceText": "3元/30天",
+        "traffic": "20GB/30天",
+        "trial": null,
+        "noExpiry": true,
         "dedicatedClient": false,
         "universalSubscription": true,
         "scenarios": [
@@ -293,8 +326,45 @@
           "clash"
         ],
         "status": "低价观察",
-        "risk": "不建议直接长期付费",
-        "summary": "价格门槛低，更适合轻量测试和备用，不适合高强度主力依赖。",
+        "risk": "入门档限速100Mbps、不支持专线；试用与退款待核实，独享节点默认自动续费",
+        "summary": "3元20GB/30天、10元80GB/30天，另有50元300GB不限时包；三档分别限速100/500/600Mbps，均不支持专线、设备数不限。官网提供v2rayN、Shadowrocket和Flyer订阅教程。日本独享节点20元/月，共用套餐流量且默认自动续费。",
+        "informationSources": [
+          {
+            "name": "阿达西套餐页",
+            "url": "https://adaxi.net/plan",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西Windows教程",
+            "url": "https://adaxi.net/doc",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西macOS教程",
+            "url": "https://adaxi.net/doc/macos",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西iOS教程",
+            "url": "https://adaxi.net/doc/ios",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西Android教程",
+            "url": "https://adaxi.net/doc/android",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西常见问题",
+            "url": "https://adaxi.net/doc/faq",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西独享节点",
+            "url": "https://adaxi.net/dedicated",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 462,
         "historicalEvidence": {
           "evidenceLevel": "B",
@@ -402,7 +472,7 @@
         "informationSources": [
           {
             "name": "Flybit 官网",
-            "url": "https://www.fastfastfast.buzz/#/register?code=p3DOcgzt",
+            "url": "https://goflybit.com/#/register?code=p3DOcgzt",
             "checkedAt": "2026-09-09"
           }
         ],
@@ -498,10 +568,10 @@
         "path": "/posts/adaxi-review-2026/",
         "image": "/adaxi.png",
         "price": 3,
-        "priceText": "3元/月",
-        "traffic": "20GB/月",
-        "trial": false,
-        "noExpiry": false,
+        "priceText": "3元/30天",
+        "traffic": "20GB/30天",
+        "trial": null,
+        "noExpiry": true,
         "dedicatedClient": false,
         "universalSubscription": true,
         "scenarios": [
@@ -509,8 +579,45 @@
           "clash"
         ],
         "status": "低价观察",
-        "risk": "不建议直接长期付费",
-        "summary": "价格门槛低，更适合轻量测试和备用，不适合高强度主力依赖。",
+        "risk": "入门档限速100Mbps、不支持专线；试用与退款待核实，独享节点默认自动续费",
+        "summary": "3元20GB/30天、10元80GB/30天，另有50元300GB不限时包；三档分别限速100/500/600Mbps，均不支持专线、设备数不限。官网提供v2rayN、Shadowrocket和Flyer订阅教程。日本独享节点20元/月，共用套餐流量且默认自动续费。",
+        "informationSources": [
+          {
+            "name": "阿达西套餐页",
+            "url": "https://adaxi.net/plan",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西Windows教程",
+            "url": "https://adaxi.net/doc",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西macOS教程",
+            "url": "https://adaxi.net/doc/macos",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西iOS教程",
+            "url": "https://adaxi.net/doc/ios",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西Android教程",
+            "url": "https://adaxi.net/doc/android",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西常见问题",
+            "url": "https://adaxi.net/doc/faq",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西独享节点",
+            "url": "https://adaxi.net/dedicated",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 462,
         "historicalEvidence": {
           "evidenceLevel": "B",
@@ -598,7 +705,7 @@
         "price": 18,
         "priceText": "18元/月",
         "traffic": "110GB/月",
-        "trial": false,
+        "trial": null,
         "noExpiry": false,
         "dedicatedClient": true,
         "universalSubscription": false,
@@ -608,8 +715,25 @@
           "newbie"
         ],
         "status": "主推观察",
-        "risk": "先月付验证",
-        "summary": "新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。",
+        "risk": "套餐不退款；普通套餐不支持通用订阅，免费试用待核实，先确认设备兼容",
+        "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，免费试用待核实。",
+        "informationSources": [
+          {
+            "name": "光年梯套餐页",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯客户端知识库",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯仪表盘",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 832,
         "historicalEvidence": {
           "evidenceLevel": "A",
@@ -964,21 +1088,37 @@
         "name": "光速云",
         "path": "/posts/guangsuyun/",
         "image": "/guangsuyun.png",
-        "price": 17,
-        "priceText": "17元/月",
-        "traffic": "110GB/月",
-        "trial": false,
+        "price": 23,
+        "priceText": "23元/月",
+        "traffic": "卡片148GB/月，说明138GB/月（待核实）",
+        "trial": null,
         "noExpiry": true,
-        "dedicatedClient": false,
-        "universalSubscription": true,
+        "dedicatedClient": true,
+        "universalSubscription": null,
         "scenarios": [
           "stable",
-          "clash",
           "streaming"
         ],
         "status": "备用观察",
-        "risk": "查看 Siilas 晚高峰记录",
-        "summary": "隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案比较。",
+        "risk": "套餐不退款；价格或流量文案有冲突，通用订阅与免费试用待核实",
+        "summary": "月付入口23元，极速版卡片148GB/月与说明138GB/月冲突；另有99元年付59GB/月及680元一次性1000GB不限时包。官网提供多平台客户端，iOS使用Nextin、专属码gsy；不限时包不自动重置，手动重置612元。套餐不退款，通用订阅待核实。",
+        "informationSources": [
+          {
+            "name": "光速云套餐页",
+            "url": "https://fdgfds.guangsut.sbs/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云客户端知识库",
+            "url": "https://fdgfds.guangsut.sbs/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云仪表盘",
+            "url": "https://fdgfds.guangsut.sbs/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 346,
         "historicalEvidence": {
           "evidenceLevel": "B",
@@ -1332,7 +1472,7 @@
         "price": 18,
         "priceText": "18元/月",
         "traffic": "110GB/月",
-        "trial": false,
+        "trial": null,
         "noExpiry": false,
         "dedicatedClient": true,
         "universalSubscription": false,
@@ -1342,8 +1482,25 @@
           "newbie"
         ],
         "status": "主推观察",
-        "risk": "先月付验证",
-        "summary": "新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。",
+        "risk": "套餐不退款；普通套餐不支持通用订阅，免费试用待核实，先确认设备兼容",
+        "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，免费试用待核实。",
+        "informationSources": [
+          {
+            "name": "光年梯套餐页",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯客户端知识库",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯仪表盘",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 832,
         "historicalEvidence": {
           "evidenceLevel": "A",
@@ -1390,7 +1547,7 @@
         "informationSources": [
           {
             "name": "Flybit 官网",
-            "url": "https://www.fastfastfast.buzz/#/register?code=p3DOcgzt",
+            "url": "https://goflybit.com/#/register?code=p3DOcgzt",
             "checkedAt": "2026-09-09"
           }
         ],
@@ -1402,10 +1559,10 @@
         "path": "/posts/adaxi-review-2026/",
         "image": "/adaxi.png",
         "price": 3,
-        "priceText": "3元/月",
-        "traffic": "20GB/月",
-        "trial": false,
-        "noExpiry": false,
+        "priceText": "3元/30天",
+        "traffic": "20GB/30天",
+        "trial": null,
+        "noExpiry": true,
         "dedicatedClient": false,
         "universalSubscription": true,
         "scenarios": [
@@ -1413,8 +1570,45 @@
           "clash"
         ],
         "status": "低价观察",
-        "risk": "不建议直接长期付费",
-        "summary": "价格门槛低，更适合轻量测试和备用，不适合高强度主力依赖。",
+        "risk": "入门档限速100Mbps、不支持专线；试用与退款待核实，独享节点默认自动续费",
+        "summary": "3元20GB/30天、10元80GB/30天，另有50元300GB不限时包；三档分别限速100/500/600Mbps，均不支持专线、设备数不限。官网提供v2rayN、Shadowrocket和Flyer订阅教程。日本独享节点20元/月，共用套餐流量且默认自动续费。",
+        "informationSources": [
+          {
+            "name": "阿达西套餐页",
+            "url": "https://adaxi.net/plan",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西Windows教程",
+            "url": "https://adaxi.net/doc",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西macOS教程",
+            "url": "https://adaxi.net/doc/macos",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西iOS教程",
+            "url": "https://adaxi.net/doc/ios",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西Android教程",
+            "url": "https://adaxi.net/doc/android",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西常见问题",
+            "url": "https://adaxi.net/doc/faq",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西独享节点",
+            "url": "https://adaxi.net/dedicated",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 462,
         "historicalEvidence": {
           "evidenceLevel": "B",
@@ -1499,21 +1693,37 @@
         "name": "光速云",
         "path": "/posts/guangsuyun/",
         "image": "/guangsuyun.png",
-        "price": 17,
-        "priceText": "17元/月",
-        "traffic": "110GB/月",
-        "trial": false,
+        "price": 23,
+        "priceText": "23元/月",
+        "traffic": "卡片148GB/月，说明138GB/月（待核实）",
+        "trial": null,
         "noExpiry": true,
-        "dedicatedClient": false,
-        "universalSubscription": true,
+        "dedicatedClient": true,
+        "universalSubscription": null,
         "scenarios": [
           "stable",
-          "clash",
           "streaming"
         ],
         "status": "备用观察",
-        "risk": "查看 Siilas 晚高峰记录",
-        "summary": "隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案比较。",
+        "risk": "套餐不退款；价格或流量文案有冲突，通用订阅与免费试用待核实",
+        "summary": "月付入口23元，极速版卡片148GB/月与说明138GB/月冲突；另有99元年付59GB/月及680元一次性1000GB不限时包。官网提供多平台客户端，iOS使用Nextin、专属码gsy；不限时包不自动重置，手动重置612元。套餐不退款，通用订阅待核实。",
+        "informationSources": [
+          {
+            "name": "光速云套餐页",
+            "url": "https://fdgfds.guangsut.sbs/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云客户端知识库",
+            "url": "https://fdgfds.guangsut.sbs/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云仪表盘",
+            "url": "https://fdgfds.guangsut.sbs/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 346,
         "historicalEvidence": {
           "evidenceLevel": "B",
@@ -1754,7 +1964,7 @@
         "price": 18,
         "priceText": "18元/月",
         "traffic": "110GB/月",
-        "trial": false,
+        "trial": null,
         "noExpiry": false,
         "dedicatedClient": true,
         "universalSubscription": false,
@@ -1764,8 +1974,25 @@
           "newbie"
         ],
         "status": "主推观察",
-        "risk": "先月付验证",
-        "summary": "新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。",
+        "risk": "套餐不退款；普通套餐不支持通用订阅，免费试用待核实，先确认设备兼容",
+        "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，免费试用待核实。",
+        "informationSources": [
+          {
+            "name": "光年梯套餐页",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯客户端知识库",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯仪表盘",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 832,
         "historicalEvidence": {
           "evidenceLevel": "A",
@@ -1845,21 +2072,37 @@
         "name": "光速云",
         "path": "/posts/guangsuyun/",
         "image": "/guangsuyun.png",
-        "price": 17,
-        "priceText": "17元/月",
-        "traffic": "110GB/月",
-        "trial": false,
+        "price": 23,
+        "priceText": "23元/月",
+        "traffic": "卡片148GB/月，说明138GB/月（待核实）",
+        "trial": null,
         "noExpiry": true,
-        "dedicatedClient": false,
-        "universalSubscription": true,
+        "dedicatedClient": true,
+        "universalSubscription": null,
         "scenarios": [
           "stable",
-          "clash",
           "streaming"
         ],
         "status": "备用观察",
-        "risk": "查看 Siilas 晚高峰记录",
-        "summary": "隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案比较。",
+        "risk": "套餐不退款；价格或流量文案有冲突，通用订阅与免费试用待核实",
+        "summary": "月付入口23元，极速版卡片148GB/月与说明138GB/月冲突；另有99元年付59GB/月及680元一次性1000GB不限时包。官网提供多平台客户端，iOS使用Nextin、专属码gsy；不限时包不自动重置，手动重置612元。套餐不退款，通用订阅待核实。",
+        "informationSources": [
+          {
+            "name": "光速云套餐页",
+            "url": "https://fdgfds.guangsut.sbs/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云客户端知识库",
+            "url": "https://fdgfds.guangsut.sbs/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云仪表盘",
+            "url": "https://fdgfds.guangsut.sbs/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 346,
         "historicalEvidence": {
           "evidenceLevel": "B",
@@ -2083,10 +2326,10 @@
         "path": "/posts/adaxi-review-2026/",
         "image": "/adaxi.png",
         "price": 3,
-        "priceText": "3元/月",
-        "traffic": "20GB/月",
-        "trial": false,
-        "noExpiry": false,
+        "priceText": "3元/30天",
+        "traffic": "20GB/30天",
+        "trial": null,
+        "noExpiry": true,
         "dedicatedClient": false,
         "universalSubscription": true,
         "scenarios": [
@@ -2094,8 +2337,45 @@
           "clash"
         ],
         "status": "低价观察",
-        "risk": "不建议直接长期付费",
-        "summary": "价格门槛低，更适合轻量测试和备用，不适合高强度主力依赖。",
+        "risk": "入门档限速100Mbps、不支持专线；试用与退款待核实，独享节点默认自动续费",
+        "summary": "3元20GB/30天、10元80GB/30天，另有50元300GB不限时包；三档分别限速100/500/600Mbps，均不支持专线、设备数不限。官网提供v2rayN、Shadowrocket和Flyer订阅教程。日本独享节点20元/月，共用套餐流量且默认自动续费。",
+        "informationSources": [
+          {
+            "name": "阿达西套餐页",
+            "url": "https://adaxi.net/plan",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西Windows教程",
+            "url": "https://adaxi.net/doc",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西macOS教程",
+            "url": "https://adaxi.net/doc/macos",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西iOS教程",
+            "url": "https://adaxi.net/doc/ios",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西Android教程",
+            "url": "https://adaxi.net/doc/android",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西常见问题",
+            "url": "https://adaxi.net/doc/faq",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西独享节点",
+            "url": "https://adaxi.net/dedicated",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 462,
         "historicalEvidence": {
           "evidenceLevel": "B",
@@ -2314,7 +2594,7 @@
         "informationSources": [
           {
             "name": "Flybit 官网",
-            "url": "https://www.fastfastfast.buzz/#/register?code=p3DOcgzt",
+            "url": "https://goflybit.com/#/register?code=p3DOcgzt",
             "checkedAt": "2026-09-09"
           }
         ],
@@ -2899,7 +3179,7 @@
         "price": 18,
         "priceText": "18元/月",
         "traffic": "110GB/月",
-        "trial": false,
+        "trial": null,
         "noExpiry": false,
         "dedicatedClient": true,
         "universalSubscription": false,
@@ -2909,8 +3189,25 @@
           "newbie"
         ],
         "status": "主推观察",
-        "risk": "先月付验证",
-        "summary": "新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。",
+        "risk": "套餐不退款；普通套餐不支持通用订阅，免费试用待核实，先确认设备兼容",
+        "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，免费试用待核实。",
+        "informationSources": [
+          {
+            "name": "光年梯套餐页",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯客户端知识库",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯仪表盘",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 832,
         "historicalEvidence": {
           "evidenceLevel": "A",
@@ -3216,7 +3513,7 @@
         "informationSources": [
           {
             "name": "Flybit 官网",
-            "url": "https://www.fastfastfast.buzz/#/register?code=p3DOcgzt",
+            "url": "https://goflybit.com/#/register?code=p3DOcgzt",
             "checkedAt": "2026-09-09"
           }
         ],
@@ -3484,21 +3781,37 @@
         "name": "光速云",
         "path": "/posts/guangsuyun/",
         "image": "/guangsuyun.png",
-        "price": 17,
-        "priceText": "17元/月",
-        "traffic": "110GB/月",
-        "trial": false,
+        "price": 23,
+        "priceText": "23元/月",
+        "traffic": "卡片148GB/月，说明138GB/月（待核实）",
+        "trial": null,
         "noExpiry": true,
-        "dedicatedClient": false,
-        "universalSubscription": true,
+        "dedicatedClient": true,
+        "universalSubscription": null,
         "scenarios": [
           "stable",
-          "clash",
           "streaming"
         ],
         "status": "备用观察",
-        "risk": "查看 Siilas 晚高峰记录",
-        "summary": "隧道中转与 IPLC 专线混合定位，原生 IP 和流媒体场景更突出，适合作为 Clash 通用订阅备用方案比较。",
+        "risk": "套餐不退款；价格或流量文案有冲突，通用订阅与免费试用待核实",
+        "summary": "月付入口23元，极速版卡片148GB/月与说明138GB/月冲突；另有99元年付59GB/月及680元一次性1000GB不限时包。官网提供多平台客户端，iOS使用Nextin、专属码gsy；不限时包不自动重置，手动重置612元。套餐不退款，通用订阅待核实。",
+        "informationSources": [
+          {
+            "name": "光速云套餐页",
+            "url": "https://fdgfds.guangsut.sbs/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云客户端知识库",
+            "url": "https://fdgfds.guangsut.sbs/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云仪表盘",
+            "url": "https://fdgfds.guangsut.sbs/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 346,
         "historicalEvidence": {
           "evidenceLevel": "B",
@@ -3586,12 +3899,83 @@
         "informationSources": [
           {
             "name": "Flybit 官网",
-            "url": "https://www.fastfastfast.buzz/#/register?code=p3DOcgzt",
+            "url": "https://goflybit.com/#/register?code=p3DOcgzt",
             "checkedAt": "2026-09-09"
           }
         ],
         "salesSample": 744,
         "url": "https://yp7.net/posts/flybit-review-2026/"
+      },
+      {
+        "name": "阿达西",
+        "path": "/posts/adaxi-review-2026/",
+        "image": "/adaxi.png",
+        "price": 3,
+        "priceText": "3元/30天",
+        "traffic": "20GB/30天",
+        "trial": null,
+        "noExpiry": true,
+        "dedicatedClient": false,
+        "universalSubscription": true,
+        "scenarios": [
+          "cheap",
+          "clash"
+        ],
+        "status": "低价观察",
+        "risk": "入门档限速100Mbps、不支持专线；试用与退款待核实，独享节点默认自动续费",
+        "summary": "3元20GB/30天、10元80GB/30天，另有50元300GB不限时包；三档分别限速100/500/600Mbps，均不支持专线、设备数不限。官网提供v2rayN、Shadowrocket和Flyer订阅教程。日本独享节点20元/月，共用套餐流量且默认自动续费。",
+        "informationSources": [
+          {
+            "name": "阿达西套餐页",
+            "url": "https://adaxi.net/plan",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西Windows教程",
+            "url": "https://adaxi.net/doc",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西macOS教程",
+            "url": "https://adaxi.net/doc/macos",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西iOS教程",
+            "url": "https://adaxi.net/doc/ios",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西Android教程",
+            "url": "https://adaxi.net/doc/android",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西常见问题",
+            "url": "https://adaxi.net/doc/faq",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "阿达西独享节点",
+            "url": "https://adaxi.net/dedicated",
+            "checkedAt": "2026-09-16"
+          }
+        ],
+        "salesSample": 462,
+        "historicalEvidence": {
+          "evidenceLevel": "B",
+          "lastTestedAt": "2026-06-18",
+          "testWindow": "20:00-23:00",
+          "testRegion": "亚洲网络环境",
+          "testNetwork": "通用订阅客户端观察",
+          "testDevice": "通用订阅客户端",
+          "latencyMs": 120,
+          "downloadMbpsRange": "200-420Mbps",
+          "evidenceSummary": "已有低价场景观察，定位轻量备用，不建议直接作为长期主力。",
+          "recordStatus": "historical",
+          "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+        },
+        "url": "https://yp7.net/posts/adaxi-review-2026/"
       },
       {
         "name": "拼好连",
@@ -4003,7 +4387,7 @@
         "price": 18,
         "priceText": "18元/月",
         "traffic": "110GB/月",
-        "trial": false,
+        "trial": null,
         "noExpiry": false,
         "dedicatedClient": true,
         "universalSubscription": false,
@@ -4013,8 +4397,25 @@
           "newbie"
         ],
         "status": "主推观察",
-        "risk": "先月付验证",
-        "summary": "新加坡团队运营的 IEPL SS 专线定位，偏长期主力测试，适合重视 1 倍率节点、ChatGPT 和流媒体稳定性的用户。",
+        "risk": "套餐不退款；普通套餐不支持通用订阅，免费试用待核实，先确认设备兼容",
+        "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，免费试用待核实。",
+        "informationSources": [
+          {
+            "name": "光年梯套餐页",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯客户端知识库",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光年梯仪表盘",
+            "url": "https://bk1dvc.guangnianertt1.homes/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
         "salesSample": 832,
         "historicalEvidence": {
           "evidenceLevel": "A",
@@ -4030,6 +4431,57 @@
           "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
         },
         "url": "https://yp7.net/posts/guangnianti-review-2026/"
+      },
+      {
+        "name": "光速云",
+        "path": "/posts/guangsuyun/",
+        "image": "/guangsuyun.png",
+        "price": 23,
+        "priceText": "23元/月",
+        "traffic": "卡片148GB/月，说明138GB/月（待核实）",
+        "trial": null,
+        "noExpiry": true,
+        "dedicatedClient": true,
+        "universalSubscription": null,
+        "scenarios": [
+          "stable",
+          "streaming"
+        ],
+        "status": "备用观察",
+        "risk": "套餐不退款；价格或流量文案有冲突，通用订阅与免费试用待核实",
+        "summary": "月付入口23元，极速版卡片148GB/月与说明138GB/月冲突；另有99元年付59GB/月及680元一次性1000GB不限时包。官网提供多平台客户端，iOS使用Nextin、专属码gsy；不限时包不自动重置，手动重置612元。套餐不退款，通用订阅待核实。",
+        "informationSources": [
+          {
+            "name": "光速云套餐页",
+            "url": "https://fdgfds.guangsut.sbs/#/plans",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云客户端知识库",
+            "url": "https://fdgfds.guangsut.sbs/#/knowledge",
+            "checkedAt": "2026-09-16"
+          },
+          {
+            "name": "光速云仪表盘",
+            "url": "https://fdgfds.guangsut.sbs/#/dashboard",
+            "checkedAt": "2026-09-16"
+          }
+        ],
+        "salesSample": 346,
+        "historicalEvidence": {
+          "evidenceLevel": "B",
+          "lastTestedAt": "2026-06-18",
+          "testWindow": "20:00-23:00",
+          "testRegion": "亚洲网络环境",
+          "testNetwork": "多端日常观察",
+          "testDevice": "多端日常观察",
+          "latencyMs": 70,
+          "downloadMbpsRange": "700-820Mbps",
+          "evidenceSummary": "仅有历史榜单和日常观察记录；当前表现请查看 Siilas 最新记录。",
+          "recordStatus": "historical",
+          "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+        },
+        "url": "https://yp7.net/posts/guangsuyun/"
       },
       {
         "name": "xxyun",

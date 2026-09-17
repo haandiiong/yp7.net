@@ -50,7 +50,7 @@ Flybit 提供月付和不限时流量包，后台有 **7 个第三方客户端�
 
 ## Flybit机场官网入口
 
-[Flybit 官网入口](https://www.fastfastfast.buzz/#/register?code=p3DOcgzt)（含邀请码）。
+[Flybit 官网入口](https://goflybit.com/#/register?code=p3DOcgzt)（含邀请码）。
 
 官方公开说明列出的 **9折优惠码：`flybit`**。未注明到期日、是否仅限首购或适用套餐，本次未提交订单验证；请以结算页显示的折扣与实付金额为准。
 
@@ -258,7 +258,7 @@ Flybit 提供通用订阅和 Clash Meta 导入入口，方便已有客户端的�
 
 | 项目 | 当前记录 |
 |---|---|
-| 资料来源 | [Flybit 官网](https://www.fastfastfast.buzz/#/register?code=p3DOcgzt) |
+| 资料来源 | [Flybit 官网](https://goflybit.com/#/register?code=p3DOcgzt) |
 | 资料复核日期 | Flybit 官网：2026-09-09 |
 | 当前测试数据来源 | [Siilas 测速中心](https://siilas.com/test/)；2026-08-18 起 yp7.net 不再自行测试 |
 | 历史记录状态 | 无 yp7.net 历史测试记录 |
@@ -349,5 +349,5 @@ Flybit 提供多种付费周期、不限时流量包及7个客户端导入入口
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [网际快车机场怎么样？](/posts/wangji-kuaiche-review/)
-- [光速云机场怎么样？](/posts/guangsuyun/)
 - [阿达西机场怎么样？](/posts/adaxi-review-2026/)
+- [拼好连机场怎么样？](/posts/runway-review-2026/)

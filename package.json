@@ -29,6 +29,7 @@
   "devDependencies": {
     "@types/node": "24.3.1",
     "@vuepress/bundler-vite": "2.0.0-rc.24",
+    "@vuepress/helper": "2.0.0-rc.112",
     "@vuepress/plugin-medium-zoom": "^1.9.10",
     "http-server": "^14.1.1",
     "typescript": "^5.9.2",

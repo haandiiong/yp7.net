@@ -18,6 +18,9 @@ importers:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.24
         version: 2.0.0-rc.24(@types/node@24.3.1)(typescript@5.9.2)
+      '@vuepress/helper':
+        specifier: 2.0.0-rc.112
+        version: 2.0.0-rc.112(typescript@5.9.2)(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.3.1)(typescript@5.9.2))(typescript@5.9.2)(vue@3.5.21(typescript@5.9.2)))
       '@vuepress/plugin-medium-zoom':
         specifier: ^1.9.10
         version: 1.9.10
@@ -2286,6 +2289,7 @@ packages:
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-mimetype@4.0.0:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
