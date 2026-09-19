@@ -192,6 +192,8 @@ Clash Verge 使用流程：
 
 ## 相关阅读
 
+- [机场工具推荐与官方下载指南](/posts/airport-tools/)
+
 - [FlClash下载与使用教程：安卓与电脑订阅配置](/posts/flclash-guide-2026/)
 - [机场推荐（2026更新）](/posts/jichang-tuijian/)
 - [什么是Clash](/posts/clash-guide/)

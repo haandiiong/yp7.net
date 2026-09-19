@@ -115,6 +115,8 @@ v2rayN 的核心流程是：下载官方客户端、导入机场订阅、更新�
 
 ## 相关阅读
 
+- [机场工具推荐与官方下载指南](/posts/airport-tools/)
+
 - [机场是什么？节点、订阅链接和 Clash 入门](/posts/airport-node-subscription-guide/)
 - [Clash订阅链接导入失败怎么办](/posts/clash-subscription-troubleshooting/)
 - [Clash Verge 使用教程](/posts/clash-verge-guide-2026/)

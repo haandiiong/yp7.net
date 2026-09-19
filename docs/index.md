@@ -106,6 +106,10 @@ config:
     title: "新手教程"
     description: "教程页承接长尾问题，帮助用户在购买前先理解客户端、节点、订阅和常见故障。"
     features:
+      - title: "机场工具与客户端下载"
+        details: "按电脑、安卓和iOS选择工具，查看官方下载、订阅导入与故障排查入口。"
+        link: "/posts/airport-tools/"
+        linkText: "选择客户端"
       - title: "Clash Verge教程"
         details: "Windows、macOS、Linux 订阅导入、规则分流和 TUN 模式入门。"
         link: "/posts/clash-verge-guide-2026/"

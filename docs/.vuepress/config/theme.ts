@@ -22,6 +22,7 @@ export const theme = plumeTheme({
       text: '科学上网教程',
       icon: 'ic:baseline-construction',
       items: [
+        { text: '机场工具与下载', link: '/posts/airport-tools/', icon: 'material-symbols:devices-outline' },
         { text: '科学上网入门', link: '/posts/vpn-guide-2026/', icon: 'material-symbols:school-outline' },
         { text: 'Clash Verge教程', link: '/posts/clash-verge-guide-2026/', icon: 'ic:baseline-personal-video' },
         { text: 'FlClash教程', link: '/posts/flclash-guide-2026/', icon: 'material-symbols:devices-outline' },
