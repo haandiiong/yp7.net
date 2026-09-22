@@ -1,4 +1,9 @@
+import HomeStart from './components/HomeStart.vue'
+
 export default {
+  enhance({ app }) {
+    app.component('HomeStart', HomeStart)
+  },
   mounted() {
     const getImageAlt = (img) => {
       const src = img.getAttribute('src') || ''
