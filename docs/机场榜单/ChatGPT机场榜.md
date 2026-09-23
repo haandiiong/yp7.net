@@ -32,7 +32,7 @@ ChatGPT机场榜重点看网页访问、登录稳定性、AI 工具连续对话�
 | [网际快车](/posts/wangji-kuaiche-review/) | 28元/30天 | 60GB/日（每日重置） | 通用订阅 | ChatGPT、Clash、办公 | 日享限60GB/日；免费体验券与优惠码待核实 |
 | [迅达](/posts/xunda-review-2026/) | 15元/月 | 150GB/月 | 专属客户端、通用订阅 | ChatGPT办公 | 查看 Siilas AI 记录 |
 | [U1S1](/posts/u1s1-review-2026/) | 20元/月 | 120GB/月 | 专属客户端、通用订阅 | ChatGPT、直播、电商业务 | 查看 Siilas 相关场景记录 |
-| [二猫云](/posts/ermiao-vpn-review/) | 20元/月 | 100GB/月 | 专属客户端、通用订阅 | ChatGPT、跨境办公、多端 | 查看 Siilas 长期记录 |
+| [二猫云](/posts/ermiao-vpn-review/) | 20元/月 | 130GB/月 | 专属客户端、通用订阅 | ChatGPT、跨境办公、多端 | 部分套餐价格文案与卡片不一致；试用、退款及旧优惠码待核实 |
 | [边缘节点](/posts/bianyuan-review-2026/) | 25元/月 | 120GB/月 | 专属客户端、通用订阅 | AI工具、跨境办公 | 通用订阅临时一次性，先月付验证 |
 | [快狸](/posts/kuaili-review-2026/) | 15元/月 | 50GB/月 | 专属客户端 | 轻量办公 | 流量较小 |
 

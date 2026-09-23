@@ -37,12 +37,13 @@ Clash机场榜优先看是否支持通用订阅、是否适合 Clash Verge、Cla
 |---|---:|---|---|---|---|
 | [Flybit](/posts/flybit-review-2026/) | 15元/月 | 128GB/月 | 支持 | 支持 | Clash 和 Shadowrocket 用户 |
 | [网际快车](/posts/wangji-kuaiche-review/) | 28元/30天 | 60GB/日（每日重置） | 待核实 | 支持 | Clash、办公、备用 |
+| [九云](/posts/jiuyun-review-2026/) | 6元/月 | 150GB/月 | 不支持 | 支持 | 低预算、第三方客户端用户 |
 | [99吧](/posts/99ba-review-2026/) | 9.9元/月 | 70GB/月 | 支持 | 支持 | 先试用再导入 |
 | [迅达](/posts/xunda-review-2026/) | 15元/月 | 150GB/月 | 支持 | 支持 | ChatGPT办公 |
 | [速界](/posts/sujie-review-2026/) | 25元/月 | 120GB/月 | 支持 | 支持 | IEPL、流媒体、临时300分钟订阅验证 |
 | [边缘节点](/posts/bianyuan-review-2026/) | 25元/月 | 120GB/月 | 不支持 | 支持 | IEPL、AI工具、临时一次性订阅验证 |
-| [坦克加速](/posts/tank-review-2026/) | 8.8元/月 | 80GB/月 | 支持 | 支持 | 低价试用 |
-| [二猫云](/posts/ermiao-vpn-review/) | 20元/月 | 100GB/月 | 不支持 | 支持 | IEPL、通用订阅、多端 |
+| [坦克云（原坦克加速）](/posts/tank-review-2026/) | 9.9元/月 | 80GB/月 | 待核实 | 支持 | 低价试用 |
+| [二猫云](/posts/ermiao-vpn-review/) | 20元/月 | 130GB/月 | 待核实 | 支持 | IEPL、通用订阅、多端 |
 | [U1S1](/posts/u1s1-review-2026/) | 20元/月 | 120GB/月 | 不支持 | 支持 | Shadowrocket、直播电商、通用订阅 |
 | [一翻云](/posts/yifanyun-review-2026/) | 20元/月 | 150GB/月 | 不支持 | 支持 | 日常使用、通用订阅 |
 

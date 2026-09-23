@@ -135,7 +135,7 @@ export const validateServiceSchema = (schema, airport, context) => {
   if (!airport.subscriptionClients?.length && '一键订阅客户端' in properties) errors.push(`${context}: Service unexpected 一键订阅客户端`)
   const sources = (schema.additionalProperty || []).filter((item) => item.name === '资料来源')
     .map((item) => ({ name: item.value, url: item.url, checkedAt: item.description?.replace(/^复核日期：/, '') }))
-  if (JSON.stringify(sources) !== JSON.stringify(airport.informationSources || [])) {
+  if (JSON.stringify(sources) !== JSON.stringify((airport.informationSources || []).map(({ name, url, checkedAt }) => ({ name, url, checkedAt })))) {
     errors.push(`${context}: Service information sources/URLs/review dates differ from airport data`)
   }
   return errors
@@ -157,7 +157,7 @@ export const validateReviewEvidence = (rows, airport, context) => {
   for (const label of ['一键订阅客户端', '资料来源', '资料复核日期']) {
     if (!(label in expected) && byLabel.has(label)) errors.push(`${context}: review unexpected ${label}`)
   }
-  if (airport.informationSources?.length && JSON.stringify(byLabel.get('资料来源')?.hrefs) !== JSON.stringify(airport.informationSources.map((source) => source.url))) {
+  if (airport.informationSources?.length && JSON.stringify(byLabel.get('资料来源')?.hrefs) !== JSON.stringify(airport.informationSources.filter((source) => source.link !== false).map((source) => source.url))) {
     errors.push(`${context}: review information source URLs differ from airport data`)
   }
   return errors

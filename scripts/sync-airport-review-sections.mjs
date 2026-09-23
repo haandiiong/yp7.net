@@ -157,7 +157,7 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hi
   const hasPerformance = Boolean(performance)
   const rows = [
     ...(airport.informationSources?.length ? [
-      ['资料来源', airport.informationSources.map((source) => `[${source.name}](${source.url})`).join('；')],
+      ['资料来源', airport.informationSources.map((source) => source.link === false ? source.name : `[${source.name}](${source.url})`).join('；')],
       ['资料复核日期', airport.informationSources.map((source) => `${source.name}：${source.checkedAt}`).join('；')],
     ] : []),
     ['当前测试数据来源', `[${currentTestingSourceName}](${currentTestingSourceUrl})；${testingPolicyEffectiveDate} 起 yp7.net 不再自行测试`],
@@ -188,7 +188,10 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hi
     '',
     '| 项目 | 当前记录 |',
     '|---|---|',
-    ...rows.map(([label, value]) => `| ${escapeTableCell(label)} | ${escapeTableCell(value)} |`),
+    ...rows
+      .filter(([label]) => hasPerformance || !label.startsWith('历史'))
+      .filter(([label, value]) => !label.startsWith('历史') || !/未覆盖|无历史记录|无历史测试/.test(value))
+      .map(([label, value]) => `| ${escapeTableCell(label)} | ${escapeTableCell(value)} |`),
   ].join('\n')
 }
 
@@ -270,7 +273,7 @@ const stripManagedBottomSections = (content) => {
 }
 
 const upsertEvidenceSection = (content, evidenceSection) => {
-  const existingEvidencePattern = /\n## [^\n]*(?:测评证据区|推荐依据与历史测试记录)\n[\s\S]*?(?=\n## |\n$)/
+  const existingEvidencePattern = /\n## [^\n]*(?:测评证据区|推荐依据与历史测试记录)\n[\s\S]*?(?=\n## |$)/
 
   if (existingEvidencePattern.test(content)) {
     return content.replace(existingEvidencePattern, `\n${evidenceSection}\n`)

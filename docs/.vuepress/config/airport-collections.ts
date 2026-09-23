@@ -51,7 +51,7 @@ const definitions = {
     select: (airports) => selectNames(airports, [
       '网际快车', 'Flybit', '全球云', 'xxyun', '阿达西', '拼好连', '唯兔云', '99吧',
       '光年梯', '迅达', 'ccyz', 'uuone', '冲上云霄', 'SSONE', 'U1S1', '隐云',
-      'cocoduck', 'XSUS', '坦克加速', '瞬云', '极连云', '二猫云', '寰宇云', '光速云',
+      'cocoduck', 'XSUS', '坦克云（原坦克加速）', '瞬云', '极连云', '二猫云', '寰宇云', '光速云',
       'sogo', '速界', '边缘节点', '宇宙云', '快狸', '可信云', '星岛梦', '一翻云',
     ], () => true, true),
   },
@@ -69,7 +69,7 @@ const definitions = {
     pagePath: '/rankings/cheap/', sourceFile: 'docs/机场榜单/低价机场榜.md',
     heading: '## 低价机场候选',
     select: (airports) => selectNames(airports, [
-      '阿达西', '冲上云霄', '坦克加速', '拼好连', '99吧', 'xxyun', 'XSUS', 'uuone',
+      '阿达西', '冲上云霄', '九云', '坦克云（原坦克加速）', '拼好连', '99吧', 'xxyun', 'XSUS', 'uuone',
     ], (airport) => airport.price <= 10 || airport.scenarios.includes('cheap')),
   },
   clash: {
@@ -77,7 +77,7 @@ const definitions = {
     pagePath: '/rankings/clash/', sourceFile: 'docs/机场榜单/Clash机场榜.md',
     heading: '## Clash机场候选',
     select: (airports) => selectNames(airports, [
-      'Flybit', '网际快车', '99吧', 'xxyun', '迅达', '速界', '边缘节点', '坦克加速',
+      'Flybit', '网际快车', '九云', '99吧', 'xxyun', '迅达', '速界', '边缘节点', '坦克云（原坦克加速）',
       '二猫云', 'U1S1', '一翻云',
     ], (airport) => airport.universalSubscription === true),
   },
