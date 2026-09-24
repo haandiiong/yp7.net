@@ -1,0 +1,1167 @@
+{
+  "site": "yp7.net",
+  "url": "https://yp7.net",
+  "lastReviewed": "2026-08-19",
+  "testingPolicy": {
+    "effectiveDate": "2026-08-18",
+    "yp7ConductsCurrentTests": false,
+    "currentSource": "Siilas",
+    "currentSourceUrl": "https://siilas.com/test/",
+    "historicalRecordsNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+  },
+  "metrics": {
+    "count": 33,
+    "trialCount": 7,
+    "noExpiryCount": 24,
+    "dedicatedClientCount": 25,
+    "universalSubscriptionCount": 20,
+    "cheapUnderTenCount": 7,
+    "averagePrice": 16.8,
+    "salesSampleCount": 17,
+    "historicalPerformanceRecordCount": 9
+  },
+  "airports": [
+    {
+      "name": "网际快车",
+      "path": "/posts/wangji-kuaiche-review/",
+      "image": "/kuaiche.png",
+      "price": 28,
+      "priceText": "28元/30天",
+      "traffic": "60GB/日（每日重置）",
+      "trial": null,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "clash",
+        "chatgpt"
+      ],
+      "status": "重点观察",
+      "risk": "日享限60GB/日；免费体验券与优惠码待核实",
+      "summary": "不限时流量包6.8元20GB起；日享包28元30天，每天60GB、凌晨重置。首页提供 FlClash 等第三方客户端订阅，软路由另有 OpenClash 插件；免费体验券条件待核实。",
+      "subscriptionClients": [
+        "FlClash",
+        "Hiddify",
+        "SingBox",
+        "Karing",
+        "v2ray",
+        "v2rayNG",
+        "Clash Meta",
+        "NekoBox",
+        "Egern",
+        "Shadowrocket",
+        "QuantumultX",
+        "Clash",
+        "Loon",
+        "Surge",
+        "Surfboard"
+      ],
+      "informationSources": [
+        {
+          "name": "网际快车官网",
+          "url": "https://wjkc66.vip/?c=GDIHMU",
+          "checkedAt": "2026-09-10"
+        }
+      ],
+      "salesSample": 849,
+      "historicalEvidence": {
+        "evidenceLevel": "A",
+        "lastTestedAt": "2026-06-03",
+        "testWindow": "20:00-23:00",
+        "testRegion": "日本东京",
+        "testNetwork": "SoftBank / 1000Mbps",
+        "testDevice": "Windows 电脑",
+        "latencyMs": 61,
+        "downloadMbpsRange": "780-880Mbps",
+        "evidenceSummary": "既有办公与 ChatGPT 历史记录，本次只核对套餐和客户端资料；当前表现需另行验证。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/wangji-kuaiche-review/"
+    },
+    {
+      "name": "Flybit",
+      "path": "/posts/flybit-review-2026/",
+      "image": "/flybit.jpg",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "128GB/月",
+      "trial": true,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash",
+        "trial"
+      ],
+      "status": "Clash观察",
+      "risk": "套餐不支持退款；购买前核实并短期测试",
+      "summary": "月付 15 元含 128GB，官方说明提供注册 1 天 2GB 免费试用；仪表盘列出 7 款第三方客户端一键导入，另有不限时流量包。套餐不支持退款，建议先试用。",
+      "subscriptionClients": [
+        "Clash Meta",
+        "Hiddify",
+        "SingBox",
+        "Shadowrocket",
+        "QuantumultX",
+        "Surge",
+        "Stash"
+      ],
+      "informationSources": [
+        {
+          "name": "Flybit 官网",
+          "url": "https://goflybit.com/#/register?code=p3DOcgzt",
+          "checkedAt": "2026-09-09"
+        }
+      ],
+      "salesSample": 744,
+      "url": "https://yp7.net/posts/flybit-review-2026/"
+    },
+    {
+      "name": "全球云",
+      "path": "/posts/quanqiuyun/",
+      "image": "/qqy.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "120GB/月",
+      "trial": null,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": null,
+      "scenarios": [
+        "stable",
+        "chatgpt",
+        "streaming",
+        "newbie"
+      ],
+      "status": "主推观察",
+      "risk": "通用订阅、免费试用与旧优惠码待核实；先短周期验证",
+      "summary": "20元/月120GB起，另有99元/年59GB/月轻量版及100元100GB起的不限时包。知识库提供 Windows、Android、Mac、Linux 自研客户端说明，iOS 使用 Nextin；BGP、1倍流量和解锁能力为套餐标注，实际连接需自行验证。",
+      "informationSources": [
+        {
+          "name": "全球云官网",
+          "url": "https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf",
+          "checkedAt": "2026-09-11"
+        }
+      ],
+      "salesSample": 1048,
+      "historicalEvidence": {
+        "evidenceLevel": "A",
+        "lastTestedAt": "2026-05-30",
+        "testWindow": "21:22-21:25（UTC+8）",
+        "testRegion": "截图未标注本地地区",
+        "testNetwork": "截图未标注本地运营商与接入带宽",
+        "testDevice": "旧文记载苹果电脑，截图未独立标注设备型号",
+        "latencyMs": 82,
+        "downloadMbpsRange": "778.79Mbps（Speedtest 单次历史结果）",
+        "evidenceSummary": "2026-05-30既有客户端、YouTube及Speedtest配图；Speedtest使用M1 Limited Singapore服务器，图中下载778.79Mbps、上传52.09Mbps、Ping82ms。本地地区与运营商未由截图证实。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/quanqiuyun/"
+    },
+    {
+      "name": "xxyun",
+      "path": "/posts/xxyun-review-2026/",
+      "image": "/xxyun.png",
+      "price": 9.99,
+      "priceText": "9.99元/月",
+      "traffic": "100GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "cheap",
+        "streaming"
+      ],
+      "status": "流媒体观察",
+      "risk": "仅官方客户端，解锁需按节点复核",
+      "summary": "9.99元/月起、100GB/月，提供 Android、iOS、Windows 和 Mac 官方客户端；不支持 Clash、FlClash 或 Shadowrocket，适合接受官方客户端的低预算用户短期比较。",
+      "informationSources": [
+        {
+          "name": "xxyun 官网",
+          "url": "https://xxyun.at/?code=3AYVsSKY",
+          "checkedAt": "2026-09-10"
+        }
+      ],
+      "salesSample": 942,
+      "historicalEvidence": {
+        "evidenceLevel": "B",
+        "lastTestedAt": "2026-06-18",
+        "testWindow": "20:00-23:00",
+        "testRegion": "亚洲网络环境",
+        "testNetwork": "多端日常观察",
+        "testDevice": "多端日常观察",
+        "latencyMs": 72,
+        "downloadMbpsRange": "620-790Mbps",
+        "evidenceSummary": "仅有历史流媒体场景观察；当前解锁情况请查看 Siilas 最新记录。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/xxyun-review-2026/"
+    },
+    {
+      "name": "阿达西",
+      "path": "/posts/adaxi-review-2026/",
+      "image": "/adaxi.png",
+      "price": 3,
+      "priceText": "3元/30天",
+      "traffic": "20GB/30天",
+      "trial": null,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash"
+      ],
+      "status": "低价观察",
+      "risk": "入门档限速100Mbps、不支持专线；试用与退款待核实，独享节点默认自动续费",
+      "summary": "3元20GB/30天、10元80GB/30天，另有50元300GB不限时包；三档分别限速100/500/600Mbps，均不支持专线、设备数不限。官网提供v2rayN、Shadowrocket和Flyer订阅教程。日本独享节点20元/月，共用套餐流量且默认自动续费。",
+      "informationSources": [
+        {
+          "name": "阿达西套餐页",
+          "url": "https://adaxi.net/plan",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西Windows教程",
+          "url": "https://adaxi.net/doc",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西macOS教程",
+          "url": "https://adaxi.net/doc/macos",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西iOS教程",
+          "url": "https://adaxi.net/doc/ios",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西Android教程",
+          "url": "https://adaxi.net/doc/android",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西常见问题",
+          "url": "https://adaxi.net/doc/faq",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西独享节点",
+          "url": "https://adaxi.net/dedicated",
+          "checkedAt": "2026-09-16",
+          "link": false
+        }
+      ],
+      "salesSample": 462,
+      "historicalEvidence": {
+        "evidenceLevel": "B",
+        "lastTestedAt": "2026-06-18",
+        "testWindow": "20:00-23:00",
+        "testRegion": "亚洲网络环境",
+        "testNetwork": "通用订阅客户端观察",
+        "testDevice": "通用订阅客户端",
+        "latencyMs": 120,
+        "downloadMbpsRange": "200-420Mbps",
+        "evidenceSummary": "已有低价场景观察，定位轻量备用，不建议直接作为长期主力。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/adaxi-review-2026/"
+    },
+    {
+      "name": "拼好连",
+      "path": "/posts/runway-review-2026/",
+      "image": "/runway.png",
+      "price": 9.9,
+      "priceText": "9.9元/月",
+      "traffic": "80GB/月",
+      "trial": true,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "cheap",
+        "trial",
+        "newbie"
+      ],
+      "status": "新手观察",
+      "risk": "先试用再续费",
+      "summary": "BGP 专线试用型机场，适合新手先验证延迟、稳定性和专属客户端连接流程。",
+      "salesSample": 445,
+      "url": "https://yp7.net/posts/runway-review-2026/"
+    },
+    {
+      "name": "唯兔云",
+      "path": "/posts/weituyun/",
+      "image": "/weituyun.png",
+      "price": 19.9,
+      "priceText": "19.9元/月",
+      "traffic": "150GB/月",
+      "trial": null,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": null,
+      "scenarios": [
+        "streaming"
+      ],
+      "status": "流媒体观察",
+      "risk": "14.9元节假日套餐暂无定价；通用订阅领取、试用及退款待核实",
+      "summary": "当前月付19.9元150GB起，79.9元/年45GB每月、120元/年75GB每月；不限时100元100GB、160元200GB、340元500GB。提供自有客户端及Shadowrocket教程，但通用订阅领取条件待核实。",
+      "informationSources": [
+        {
+          "name": "唯兔云套餐页",
+          "url": "https://hjusedi.v2saat.club/#/plans",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "唯兔云知识库",
+          "url": "https://hjusedi.v2saat.club/#/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "唯兔云仪表盘",
+          "url": "https://hjusedi.v2saat.club/#/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "salesSample": 221,
+      "url": "https://yp7.net/posts/weituyun/"
+    },
+    {
+      "name": "99吧",
+      "path": "/posts/99ba-review-2026/",
+      "image": "/99ba.png",
+      "price": 9.9,
+      "priceText": "9.9元/月",
+      "traffic": "70GB/月",
+      "trial": true,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "trial",
+        "clash"
+      ],
+      "status": "试用观察",
+      "risk": "套餐仅限内地使用，暂不支持退款，先试用",
+      "summary": "9.9元月付70GB，支持1天1GB试用、不限时流量包和多客户端一键订阅导入；实际节点表现需另行验证。",
+      "salesSample": 413,
+      "url": "https://yp7.net/posts/99ba-review-2026/"
+    },
+    {
+      "name": "光年梯",
+      "path": "/posts/guangnianti-review-2026/",
+      "image": "/gnt.png",
+      "price": 18,
+      "priceText": "18元/月",
+      "traffic": "110GB/月",
+      "trial": null,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "stable",
+        "streaming",
+        "newbie"
+      ],
+      "status": "主推观察",
+      "risk": "套餐不退款；普通套餐不支持通用订阅，免费试用待核实，先确认设备兼容",
+      "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，免费试用待核实。",
+      "informationSources": [
+        {
+          "name": "光年梯套餐页",
+          "url": "https://bk1dvc.guangnianertt1.homes/#/plans",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "光年梯客户端知识库",
+          "url": "https://bk1dvc.guangnianertt1.homes/#/knowledge",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "光年梯仪表盘",
+          "url": "https://bk1dvc.guangnianertt1.homes/#/dashboard",
+          "checkedAt": "2026-09-16",
+          "link": false
+        }
+      ],
+      "salesSample": 832,
+      "historicalEvidence": {
+        "evidenceLevel": "A",
+        "lastTestedAt": "2026-06-03",
+        "testWindow": "20:00-23:00",
+        "testRegion": "日本东京",
+        "testNetwork": "SoftBank / 1000Mbps",
+        "testDevice": "安卓手机",
+        "latencyMs": 58,
+        "downloadMbpsRange": "850-920Mbps",
+        "evidenceSummary": "有多张专属客户端延迟截图和 Speedtest 截图；当前表现请查看 Siilas 最新记录。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/guangnianti-review-2026/"
+    },
+    {
+      "name": "迅达",
+      "path": "/posts/xunda-review-2026/",
+      "image": "/xunda.png",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "150GB/月",
+      "trial": true,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "chatgpt",
+        "trial",
+        "clash"
+      ],
+      "status": "办公观察",
+      "risk": "查看 Siilas AI 记录",
+      "summary": "偏 ChatGPT 办公场景，支持试用和通用订阅，适合先做工作流测试。",
+      "url": "https://yp7.net/posts/xunda-review-2026/"
+    },
+    {
+      "name": "ccyz",
+      "path": "/posts/ccyz-review-2026/",
+      "image": "/ccyz.png",
+      "price": 19.9,
+      "priceText": "19.9元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "streaming"
+      ],
+      "status": "流媒体观察",
+      "risk": "节点状态需复核",
+      "summary": "偏流媒体和节点体验，购买前应确认常用地区节点可用。",
+      "url": "https://yp7.net/posts/ccyz-review-2026/"
+    },
+    {
+      "name": "uuone",
+      "path": "/posts/uuone-review-2026/",
+      "image": "/uuone.png",
+      "price": 19,
+      "priceText": "19元/月",
+      "traffic": "150GB/月",
+      "trial": null,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "streaming",
+        "clash"
+      ],
+      "status": "性价比观察",
+      "risk": "试用、退款与旧优惠码待核实；设备数量和速率因套餐不同",
+      "summary": "19元/月150GB起，29元300GB、49元800GB；99元450GB不限时。BGP套餐标注300至800Mbps、10至20台设备。教程使用Clash Verge、Clash Meta和Nextin，支持通用订阅，未见自有客户端说明。",
+      "informationSources": [
+        {
+          "name": "UUONE套餐页",
+          "url": "https://uu-1.v1ppone.de/plan",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "UUONE使用文档",
+          "url": "https://uu-1.v1ppone.de/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "UUONE iOS教程",
+          "url": "https://uu-1.v1ppone.de/knowledge/9",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/uuone-review-2026/"
+    },
+    {
+      "name": "冲上云霄",
+      "path": "/posts/chongshangyunxiao/",
+      "image": "/csyx.png",
+      "price": 7,
+      "priceText": "7元/30天",
+      "traffic": "50GB/30天",
+      "trial": null,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash",
+        "streaming"
+      ],
+      "status": "低价观察",
+      "risk": "入门限速200Mbps且无专线；免费额度、退款和长周期流量重置待核实",
+      "summary": "7元/30天50GB起，30元500GB起支持IEPL；365元800GB及800元5120GB不限时。套餐不限设备，Windows与Mac教程使用v2rayN，Android使用Flyer；默认1倍率，特殊倍率按节点标注。",
+      "informationSources": [
+        {
+          "name": "冲上云霄套餐页",
+          "url": "https://678.999865.xyz/plan",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "冲上云霄使用文档",
+          "url": "https://678.999865.xyz/doc",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "冲上云霄常见问题",
+          "url": "https://678.999865.xyz/doc/faq",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "salesSample": 929,
+      "url": "https://yp7.net/posts/chongshangyunxiao/"
+    },
+    {
+      "name": "SSONE",
+      "path": "/posts/ssone/",
+      "image": "/ssone.png",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "60GB/月",
+      "trial": true,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash",
+        "trial"
+      ],
+      "status": "订阅观察",
+      "risk": "购买后不退款，新套餐覆盖旧套餐；年付超值无忧按年重置流量",
+      "summary": "15元/月60GB起，新注册账号免费体验1小时；另有80元/季300GB每月、200元/年5000GB每年。自有Windows、Mac和Android客户端，支持第三方订阅；套餐不限在线数量，峰值速率因档位不同。",
+      "informationSources": [
+        {
+          "name": "SSONE套餐与购买说明",
+          "url": "https://m.ssone.io/shop",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "SSONE使用文档",
+          "url": "https://m.ssone.io/docs",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/ssone/"
+    },
+    {
+      "name": "U1S1",
+      "path": "/posts/u1s1-review-2026/",
+      "image": "/u1s1.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "120GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "streaming",
+        "chatgpt",
+        "clash",
+        "直播",
+        "电商"
+      ],
+      "status": "专线观察",
+      "risk": "查看 Siilas 相关场景记录",
+      "summary": "U1S1 主打 IPLC 专线、TikTok/ChatGPT/Netflix/Disney+/HBO 解锁、最高 2000Mbps 带宽、不限制 IP 与连接设备数量，并可面向跨境电商、TikTok 运营和海外直播提供定制化网络方案。",
+      "salesSample": 82,
+      "historicalEvidence": {
+        "evidenceLevel": "A",
+        "lastTestedAt": "2026-04-04",
+        "testWindow": "12:55 CST（非晚高峰）",
+        "testRegion": "香港、美国、日本、新加坡、马来西亚、台湾、俄罗斯等多节点",
+        "testNetwork": "珠海联通 / 9Gbps / 32线程订阅测速",
+        "testDevice": "MiaoKo 自定义测试",
+        "latencyMs": 222,
+        "downloadMbpsRange": "主流节点约82-430Mbps，截图最高约780Mbps（原值 10.22-53.75MB/s，个别低速或0速节点另见截图）",
+        "evidenceSummary": "已补充 2026-04-04 MiaoKo 订阅测速截图，概要 61/61；该截图为非晚高峰单次历史记录，当前表现请查看 Siilas。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/u1s1-review-2026/"
+    },
+    {
+      "name": "隐云",
+      "path": "/posts/yinyun-review-2026/",
+      "image": "/yinyun.png",
+      "price": 29,
+      "priceText": "29元/月参考价（首购季付起）",
+      "traffic": "专属模式不限流量；通用模式150GB/月",
+      "trial": null,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "clash"
+      ],
+      "status": "备用观察",
+      "risk": "轻量版首购季付起；两种模式限制不同，试用当前稳定性及退款待核实",
+      "summary": "轻量、标准、高级版月价参考29/49/99元。专属模式不限流量，分别限2/5/10台设备；通用模式不限设备，分别150/400/1024GB每月。专属模式标注不可降级，轻量首次需季付。",
+      "informationSources": [
+        {
+          "name": "隐云购买页",
+          "url": "https://103.238.130.44:2026/purchase",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "隐云仪表盘",
+          "url": "https://103.238.130.44:2026/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/yinyun-review-2026/"
+    },
+    {
+      "name": "cocoduck",
+      "path": "/posts/cocoduck-review/",
+      "image": "/cocoduck.png",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "100GB/月",
+      "trial": true,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "streaming",
+        "trial",
+        "clash"
+      ],
+      "status": "小众观察",
+      "risk": "小众服务需谨慎",
+      "summary": "小众机场定位，适合短期测试流媒体和通用订阅体验。",
+      "salesSample": 280,
+      "url": "https://yp7.net/posts/cocoduck-review/"
+    },
+    {
+      "name": "XSUS",
+      "path": "/posts/xsus-review-2026/",
+      "image": "/xsus.png",
+      "price": 12,
+      "priceText": "12元/月",
+      "traffic": "168GB/月",
+      "trial": null,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "streaming",
+        "clash"
+      ],
+      "status": "性价比观察",
+      "risk": "无法原路退款；流量不叠加，续费不立即重置；试用待核实",
+      "summary": "12元/月168GB起，65元188GB起不限时包，另有52元/季50GB每月的IEPL套餐。最多5个IP，同网络多设备算1个IP；支持专用客户端及第三方订阅。",
+      "subscriptionClients": [
+        "Clash",
+        "sing-box",
+        "Shadowrocket",
+        "Loon"
+      ],
+      "informationSources": [
+        {
+          "name": "XSUS套餐与购买须知",
+          "url": "https://xsus.cloud/plan",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "XSUS帮助中心",
+          "url": "https://xsus.cloud/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "XSUS仪表盘",
+          "url": "https://xsus.cloud/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/xsus-review-2026/"
+    },
+    {
+      "name": "坦克云（原坦克加速）",
+      "path": "/posts/tank-review-2026/",
+      "image": "/tankejiasu.png",
+      "price": 9.9,
+      "priceText": "9.9元/月",
+      "traffic": "80GB/月",
+      "trial": null,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash"
+      ],
+      "status": "新手观察",
+      "risk": "入门限1台设备与IP；免费试用、退款与旧优惠码待核实",
+      "summary": "9.9元/月80GB起；另有49元/月不限流量、50元100GB及199元500GB不限时。官方客户端支持Windows、Android、Mac、Linux，iOS使用第三方客户端。",
+      "subscriptionClients": [
+        "Clash",
+        "Surge",
+        "Shadowrocket",
+        "Surfboard",
+        "Quantumult X"
+      ],
+      "informationSources": [
+        {
+          "name": "坦克云套餐页",
+          "url": "https://aa.tankejiasu.com/#/stage/buysubs",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "坦克云使用文档",
+          "url": "https://aa.tankejiasu.com/#/stage/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "坦克云仪表盘",
+          "url": "https://aa.tankejiasu.com/#/stage/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "salesSample": 219,
+      "url": "https://yp7.net/posts/tank-review-2026/"
+    },
+    {
+      "name": "瞬云",
+      "path": "/posts/shunyun-review-2026/",
+      "image": "/shunyun.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "streaming"
+      ],
+      "status": "流媒体观察",
+      "risk": "查看 Siilas 晚高峰和流媒体记录",
+      "summary": "瞬云主打高速连接、稳定在线、原生出口、自有 ASN 广播、流媒体解锁和独享带宽体验，支持 2000G / 5000G 不限时流量包。",
+      "salesSample": 128,
+      "historicalEvidence": {
+        "evidenceLevel": "A",
+        "lastTestedAt": "2026-05-09",
+        "testWindow": "16:58 CST（非晚高峰）",
+        "testRegion": "香港、台湾、美国、日本、新加坡等多节点",
+        "testNetwork": "广东佛山联通 / 2Gbps / 8线程订阅测速",
+        "testDevice": "MiaoKo 自定义测试",
+        "latencyMs": 69,
+        "downloadMbpsRange": "约144-2096Mbps（截图原值 17.96-262.06MB/s，低速节点另见截图）",
+        "evidenceSummary": "已补充 2026-05-09 MiaoKo 订阅测速截图；该截图为非晚高峰单次历史记录，当前表现请查看 Siilas。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/shunyun-review-2026/"
+    },
+    {
+      "name": "极连云",
+      "path": "/posts/jilianyun-review-2026/",
+      "image": "/jilianyun.png",
+      "price": 18,
+      "priceText": "18元/月",
+      "traffic": "100GB/月",
+      "trial": null,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": null,
+      "scenarios": [
+        "stable"
+      ],
+      "status": "稳定观察",
+      "risk": "不退款；不限时售价及重置费用文案冲突，通用订阅与试用待核实",
+      "summary": "18元/月100GB起，96元/年60GB每月；不限时卡片399元600GB，正文售价680元与重置612元冲突。提供自有客户端，通用订阅领取方式未确认；套餐标注IPLC、1倍率及不限客户端数量。",
+      "informationSources": [
+        {
+          "name": "极连云套餐页",
+          "url": "https://roasa.jilianat.homes/#/plans",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "极连云知识库",
+          "url": "https://roasa.jilianat.homes/#/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/jilianyun-review-2026/"
+    },
+    {
+      "name": "二猫云",
+      "path": "/posts/ermiao-vpn-review/",
+      "image": "/ermaoyun.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "130GB/月",
+      "trial": null,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "clash",
+        "chatgpt",
+        "streaming",
+        "newbie"
+      ],
+      "status": "专线观察",
+      "risk": "部分套餐价格文案与卡片不一致；试用、退款及旧优惠码待核实",
+      "summary": "20元/月130GB起，每30天刷新；另有89元/年60GB/月及99元100GB、199元200GB不限时包。提供四平台官方客户端，教程支持Clash Mi、Clash Verge Rev、Clash Meta与Shadowrocket；IEPL、解锁及不限速为商家说明。",
+      "informationSources": [
+        {
+          "name": "二猫云套餐页",
+          "url": "https://network.ermaotztz3.homes/#/plans",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "二猫云帮助中心",
+          "url": "https://network.ermaotztz3.homes/#/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "二猫云客户端下载",
+          "url": "https://network.ermaotztz3.homes/#/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "salesSample": 191,
+      "historicalEvidence": {
+        "evidenceLevel": "A",
+        "lastTestedAt": "2026-06-30",
+        "testWindow": "14:58 CST（非晚高峰）",
+        "testRegion": "香港、台湾、日本、新加坡、美国多节点",
+        "testNetwork": "珠海联通 / 9Gbps / 32线程订阅测速",
+        "testDevice": "MiaoKo 自定义测试",
+        "latencyMs": 209,
+        "downloadMbpsRange": "约273-2130Mbps（截图原值 34.10-266.19MB/s）",
+        "evidenceSummary": "已补充 2026-06-30 MiaoKo 订阅测速截图；该截图为非晚高峰单次历史记录，当前表现请查看 Siilas。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/ermiao-vpn-review/"
+    },
+    {
+      "name": "寰宇云",
+      "path": "/posts/huanyuyun-review-2026/",
+      "image": "/huanyuyun.png",
+      "price": 18,
+      "priceText": "18元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "clash"
+      ],
+      "status": "备用观察",
+      "risk": "售后需复核",
+      "summary": "直连加 IPLC 混合架构、x1 倍率和通用订阅兼容更突出，适合 Clash、FlClash、Singbox 用户横向对比。",
+      "url": "https://yp7.net/posts/huanyuyun-review-2026/"
+    },
+    {
+      "name": "光速云",
+      "path": "/posts/guangsuyun/",
+      "image": "/guangsuyun.png",
+      "price": 23,
+      "priceText": "23元/月",
+      "traffic": "卡片148GB/月，说明138GB/月（待核实）",
+      "trial": null,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": null,
+      "scenarios": [
+        "stable",
+        "streaming"
+      ],
+      "status": "备用观察",
+      "risk": "套餐不退款；价格或流量文案有冲突，通用订阅与免费试用待核实",
+      "summary": "月付入口23元，极速版卡片148GB/月与说明138GB/月冲突；另有99元年付59GB/月及680元一次性1000GB不限时包。官网提供多平台客户端，iOS使用Nextin、专属码gsy；不限时包不自动重置，手动重置612元。套餐不退款，通用订阅待核实。",
+      "informationSources": [
+        {
+          "name": "光速云套餐页",
+          "url": "https://fdgfds.guangsut.sbs/#/plans",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "光速云客户端知识库",
+          "url": "https://fdgfds.guangsut.sbs/#/knowledge",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "光速云仪表盘",
+          "url": "https://fdgfds.guangsut.sbs/#/dashboard",
+          "checkedAt": "2026-09-16",
+          "link": false
+        }
+      ],
+      "salesSample": 346,
+      "historicalEvidence": {
+        "evidenceLevel": "B",
+        "lastTestedAt": "2026-06-18",
+        "testWindow": "20:00-23:00",
+        "testRegion": "亚洲网络环境",
+        "testNetwork": "多端日常观察",
+        "testDevice": "多端日常观察",
+        "latencyMs": 70,
+        "downloadMbpsRange": "700-820Mbps",
+        "evidenceSummary": "仅有历史榜单和日常观察记录；当前表现请查看 Siilas 最新记录。",
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/guangsuyun/"
+    },
+    {
+      "name": "sogo",
+      "path": "/posts/sogo-review-2026/",
+      "image": "/sogo.png",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "120GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "newbie"
+      ],
+      "status": "新手观察",
+      "risk": "价格较高，建议短期验证",
+      "summary": "VLESS 与 IEPL 专线定位，偏稳定省心和专属客户端体验，适合不想折腾配置的新手测试流媒体与 AI 场景。",
+      "salesSample": 419,
+      "url": "https://yp7.net/posts/sogo-review-2026/"
+    },
+    {
+      "name": "速界",
+      "path": "/posts/sujie-review-2026/",
+      "image": "/sujie.png",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "120GB/月",
+      "trial": true,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "streaming",
+        "newbie",
+        "trial",
+        "clash"
+      ],
+      "status": "专线观察",
+      "risk": "新站需复核，通用订阅临时300分钟",
+      "summary": "2026年2月开始运营的 IEPL 专线机场，主打低延迟、高峰视频和 24 小时试用，通用订阅临时 300 分钟规则需复核。",
+      "url": "https://yp7.net/posts/sujie-review-2026/"
+    },
+    {
+      "name": "边缘节点",
+      "path": "/posts/bianyuan-review-2026/",
+      "image": "/bianyuan.png",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "120GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "streaming",
+        "chatgpt",
+        "newbie",
+        "clash"
+      ],
+      "status": "专线观察",
+      "risk": "通用订阅临时一次性，先月付验证",
+      "summary": "EdgeNode/边缘节点定位全球网络加速与 IEPL 专线，提供 60+ 全球节点、专属客户端和临时一次性通用订阅，适合流媒体、AI 工具和跨境办公先月付测试。",
+      "url": "https://yp7.net/posts/bianyuan-review-2026/"
+    },
+    {
+      "name": "宇宙云",
+      "path": "/posts/yuzhoucloud-review-2026/",
+      "image": "/yuzhouyun.png",
+      "price": 12.5,
+      "priceText": "12.5元/月",
+      "traffic": "50GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "cheap"
+      ],
+      "status": "低价观察",
+      "risk": "流量较小",
+      "summary": "VLESS 加 IEPL 专线和自研客户端定位，偏低价轻量包与视频场景，适合小流量用户先短期测试。",
+      "url": "https://yp7.net/posts/yuzhoucloud-review-2026/"
+    },
+    {
+      "name": "快狸",
+      "path": "/posts/kuaili-review-2026/",
+      "image": "/kuaili.png",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "50GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "newbie",
+        "chatgpt"
+      ],
+      "status": "客户端观察",
+      "risk": "流量较小",
+      "summary": "VLESS 与企业级 IEPL 接入定位，目前更偏自研客户端一键连接，适合轻量办公、ChatGPT 和新手连接测试。",
+      "url": "https://yp7.net/posts/kuaili-review-2026/"
+    },
+    {
+      "name": "可信云",
+      "path": "/posts/kexinyun-review-2026/",
+      "image": "/kexinyun.png",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "60GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "stable"
+      ],
+      "status": "稳定备用",
+      "risk": "流量较小",
+      "summary": "稳定备用定位，适合轻量使用和风险分散。",
+      "url": "https://yp7.net/posts/kexinyun-review-2026/"
+    },
+    {
+      "name": "星岛梦",
+      "path": "/posts/xingdaomeng-review-2026/",
+      "image": "/xingdaomeng.png",
+      "price": 16,
+      "priceText": "16元/月",
+      "traffic": "100GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "streaming"
+      ],
+      "status": "视频观察",
+      "risk": "查看 Siilas 晚高峰记录",
+      "summary": "IEPL 专线、无倍率和不限设备定位更突出，兼顾不限时流量包，适合流媒体主力或备用场景短期测试。",
+      "url": "https://yp7.net/posts/xingdaomeng-review-2026/"
+    },
+    {
+      "name": "一翻云",
+      "path": "/posts/yifanyun-review-2026/",
+      "image": "/yifanyun.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash",
+        "newbie"
+      ],
+      "status": "日常观察",
+      "risk": "晚高峰和不限时规则需复核",
+      "summary": "支持专属客户端和通用订阅，20元/月 150GB 主档加 100元/100GB 不限时包，适合日常使用先月付测试。",
+      "url": "https://yp7.net/posts/yifanyun-review-2026/"
+    },
+    {
+      "name": "九云",
+      "path": "/posts/jiuyun-review-2026/",
+      "image": "/shouye.png",
+      "price": 6,
+      "priceText": "6元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持试用，不支持退款；并发设备数因套餐而异",
+      "summary": "月付6元150GB起，每30天重置；不限时36元100GB、99元300GB，流量用完作废。教程提供Clash Verge、Clash Meta、Karing和Shadowrocket，海外中转及解锁能力为商家说明，未新增实测。",
+      "subscriptionClients": [
+        "Clash Verge",
+        "Clash Meta",
+        "Karing",
+        "Shadowrocket"
+      ],
+      "informationSources": [
+        {
+          "name": "九云套餐商店",
+          "url": "https://888.jiuyundl.com/#/shop",
+          "checkedAt": "2026-09-22",
+          "link": false
+        },
+        {
+          "name": "九云客户端教程",
+          "url": "https://888.jiuyundl.com/#/docs",
+          "checkedAt": "2026-09-22",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/jiuyun-review-2026/"
+    }
+  ]
+}

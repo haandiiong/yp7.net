@@ -1,0 +1,228 @@
+{
+  "site": "yp7.net",
+  "url": "https://yp7.net",
+  "lastReviewed": "2026-08-19",
+  "metrics": {
+    "count": 33,
+    "trialCount": 7,
+    "noExpiryCount": 24,
+    "dedicatedClientCount": 25,
+    "universalSubscriptionCount": 20,
+    "cheapUnderTenCount": 7,
+    "averagePrice": 16.8,
+    "salesSampleCount": 17,
+    "historicalPerformanceRecordCount": 9
+  },
+  "risks": [
+    {
+      "name": "echo",
+      "status": "已淘汰",
+      "risk": "客服失联，谨慎使用",
+      "source": "https://yp7.net/posts/jichang-heji/"
+    },
+    {
+      "name": "九云",
+      "status": "资料已核对",
+      "risk": "不支持试用，不支持退款；并发设备数因套餐而异",
+      "url": "https://yp7.net/posts/jiuyun-review-2026/"
+    },
+    {
+      "name": "全球云",
+      "status": "主推观察",
+      "risk": "通用订阅、免费试用与旧优惠码待核实；先短周期验证",
+      "url": "https://yp7.net/posts/quanqiuyun/"
+    },
+    {
+      "name": "光年梯",
+      "status": "主推观察",
+      "risk": "套餐不退款；普通套餐不支持通用订阅，免费试用待核实，先确认设备兼容",
+      "url": "https://yp7.net/posts/guangnianti-review-2026/"
+    },
+    {
+      "name": "网际快车",
+      "status": "重点观察",
+      "risk": "日享限60GB/日；免费体验券与优惠码待核实",
+      "url": "https://yp7.net/posts/wangji-kuaiche-review/"
+    },
+    {
+      "name": "光速云",
+      "status": "备用观察",
+      "risk": "套餐不退款；价格或流量文案有冲突，通用订阅与免费试用待核实",
+      "url": "https://yp7.net/posts/guangsuyun/"
+    },
+    {
+      "name": "xxyun",
+      "status": "流媒体观察",
+      "risk": "仅官方客户端，解锁需按节点复核",
+      "url": "https://yp7.net/posts/xxyun-review-2026/"
+    },
+    {
+      "name": "Flybit",
+      "status": "Clash观察",
+      "risk": "套餐不支持退款；购买前核实并短期测试",
+      "url": "https://yp7.net/posts/flybit-review-2026/"
+    },
+    {
+      "name": "阿达西",
+      "status": "低价观察",
+      "risk": "入门档限速100Mbps、不支持专线；试用与退款待核实，独享节点默认自动续费",
+      "url": "https://yp7.net/posts/adaxi-review-2026/"
+    },
+    {
+      "name": "拼好连",
+      "status": "新手观察",
+      "risk": "先试用再续费",
+      "url": "https://yp7.net/posts/runway-review-2026/"
+    },
+    {
+      "name": "唯兔云",
+      "status": "流媒体观察",
+      "risk": "14.9元节假日套餐暂无定价；通用订阅领取、试用及退款待核实",
+      "url": "https://yp7.net/posts/weituyun/"
+    },
+    {
+      "name": "99吧",
+      "status": "试用观察",
+      "risk": "套餐仅限内地使用，暂不支持退款，先试用",
+      "url": "https://yp7.net/posts/99ba-review-2026/"
+    },
+    {
+      "name": "迅达",
+      "status": "办公观察",
+      "risk": "查看 Siilas AI 记录",
+      "url": "https://yp7.net/posts/xunda-review-2026/"
+    },
+    {
+      "name": "ccyz",
+      "status": "流媒体观察",
+      "risk": "节点状态需复核",
+      "url": "https://yp7.net/posts/ccyz-review-2026/"
+    },
+    {
+      "name": "uuone",
+      "status": "性价比观察",
+      "risk": "试用、退款与旧优惠码待核实；设备数量和速率因套餐不同",
+      "url": "https://yp7.net/posts/uuone-review-2026/"
+    },
+    {
+      "name": "冲上云霄",
+      "status": "低价观察",
+      "risk": "入门限速200Mbps且无专线；免费额度、退款和长周期流量重置待核实",
+      "url": "https://yp7.net/posts/chongshangyunxiao/"
+    },
+    {
+      "name": "SSONE",
+      "status": "订阅观察",
+      "risk": "购买后不退款，新套餐覆盖旧套餐；年付超值无忧按年重置流量",
+      "url": "https://yp7.net/posts/ssone/"
+    },
+    {
+      "name": "U1S1",
+      "status": "专线观察",
+      "risk": "查看 Siilas 相关场景记录",
+      "url": "https://yp7.net/posts/u1s1-review-2026/"
+    },
+    {
+      "name": "奈云",
+      "status": "停止推荐",
+      "risk": "2026年6月下旬外部预警显示官网异常、客服失联、节点不可用和订阅失效，暂停新购续费",
+      "url": "https://yp7.net/posts/naiyun-review-2026/"
+    },
+    {
+      "name": "隐云",
+      "status": "备用观察",
+      "risk": "轻量版首购季付起；两种模式限制不同，试用当前稳定性及退款待核实",
+      "url": "https://yp7.net/posts/yinyun-review-2026/"
+    },
+    {
+      "name": "cocoduck",
+      "status": "小众观察",
+      "risk": "小众服务需谨慎",
+      "url": "https://yp7.net/posts/cocoduck-review/"
+    },
+    {
+      "name": "XSUS",
+      "status": "性价比观察",
+      "risk": "无法原路退款；流量不叠加，续费不立即重置；试用待核实",
+      "url": "https://yp7.net/posts/xsus-review-2026/"
+    },
+    {
+      "name": "坦克云（原坦克加速）",
+      "status": "新手观察",
+      "risk": "入门限1台设备与IP；免费试用、退款与旧优惠码待核实",
+      "url": "https://yp7.net/posts/tank-review-2026/"
+    },
+    {
+      "name": "瞬云",
+      "status": "流媒体观察",
+      "risk": "查看 Siilas 晚高峰和流媒体记录",
+      "url": "https://yp7.net/posts/shunyun-review-2026/"
+    },
+    {
+      "name": "极连云",
+      "status": "稳定观察",
+      "risk": "不退款；不限时售价及重置费用文案冲突，通用订阅与试用待核实",
+      "url": "https://yp7.net/posts/jilianyun-review-2026/"
+    },
+    {
+      "name": "二猫云",
+      "status": "专线观察",
+      "risk": "部分套餐价格文案与卡片不一致；试用、退款及旧优惠码待核实",
+      "url": "https://yp7.net/posts/ermiao-vpn-review/"
+    },
+    {
+      "name": "寰宇云",
+      "status": "备用观察",
+      "risk": "售后需复核",
+      "url": "https://yp7.net/posts/huanyuyun-review-2026/"
+    },
+    {
+      "name": "一翻云",
+      "status": "日常观察",
+      "risk": "晚高峰和不限时规则需复核",
+      "url": "https://yp7.net/posts/yifanyun-review-2026/"
+    },
+    {
+      "name": "sogo",
+      "status": "新手观察",
+      "risk": "价格较高，建议短期验证",
+      "url": "https://yp7.net/posts/sogo-review-2026/"
+    },
+    {
+      "name": "速界",
+      "status": "专线观察",
+      "risk": "新站需复核，通用订阅临时300分钟",
+      "url": "https://yp7.net/posts/sujie-review-2026/"
+    },
+    {
+      "name": "边缘节点",
+      "status": "专线观察",
+      "risk": "通用订阅临时一次性，先月付验证",
+      "url": "https://yp7.net/posts/bianyuan-review-2026/"
+    },
+    {
+      "name": "宇宙云",
+      "status": "低价观察",
+      "risk": "流量较小",
+      "url": "https://yp7.net/posts/yuzhoucloud-review-2026/"
+    },
+    {
+      "name": "快狸",
+      "status": "客户端观察",
+      "risk": "流量较小",
+      "url": "https://yp7.net/posts/kuaili-review-2026/"
+    },
+    {
+      "name": "可信云",
+      "status": "稳定备用",
+      "risk": "流量较小",
+      "url": "https://yp7.net/posts/kexinyun-review-2026/"
+    },
+    {
+      "name": "星岛梦",
+      "status": "视频观察",
+      "risk": "查看 Siilas 晚高峰记录",
+      "url": "https://yp7.net/posts/xingdaomeng-review-2026/"
+    }
+  ]
+}
