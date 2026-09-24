@@ -10,18 +10,18 @@
 </div><p class="note">GitHub 下载较慢时，可尝试第三方镜像。镜像版本可能滞后，请核对版本和设备架构；本站未核验镜像安装包与国内下载速度。</p></section>
 <div class="connector" aria-hidden="true"></div>
 <section aria-labelledby="subscribe"><div class="stephead"><span class="number">2</span><h2 id="subscribe">获取 Flybit 订阅，导入客户端</h2><span class="more-airports">Flybit为本站最佳机场，更多机场选择访问<a href="/posts/jichang-tuijian/">机场推荐 →</a>，本站所有机场见<a href="/posts/jichang-heji/">机场合集 →</a></span></div>
-<div class="flybit"><div><h3>Flybit</h3><p><strong>填写邀请码，可享受 2 小时免费使用体验。</strong></p><p>通过官网导航注册账号，获取订阅后导入客户端。</p></div><div><a class="cta" target="_blank" rel="sponsored nofollow noopener" href="https://goflybit.com/#/register?code=p3DOcgzt">前往 Flybit 官网导航 ↗</a><span class="invite">邀请码：p3DOcgzt · 链接已携带</span></div></div>
-<ol class="workflow"><li><strong>注册账号</strong><p>从导航页进入可用官网，注册时填写邀请码 p3DOcgzt，享受 2 小时免费体验。</p></li><li><strong>获取订阅</strong><p>在后台查看体验套餐，复制 Clash / Mihomo 格式订阅。</p></li><li><strong>导入配置</strong><p>回到客户端，在配置或订阅管理中添加链接，更新并启用配置。</p></li><li><strong>连接节点</strong><p>选择节点并启动代理，按提示授权，打开常用网站验证连接。</p></li></ol>
+<div class="flybit"><div><h3>Flybit</h3><p><strong>注册可试用 1 天 2GB。</strong></p><p>通过官网导航注册账号，获取订阅后导入客户端。</p></div><div><a class="cta" target="_blank" rel="sponsored nofollow noopener" href="https://goflybit.com/#/register?code=p3DOcgzt">前往 Flybit 官网导航 ↗</a><span class="invite">邀请码：p3DOcgzt · 链接已携带</span></div></div>
+<ol class="workflow"><li><strong>注册账号</strong><p>从导航页进入官网并注册，核对 1 天 2GB 试用是否到账及有效期。</p></li><li><strong>获取订阅</strong><p>在后台查看体验套餐，复制 Clash / Mihomo 格式订阅。</p></li><li><strong>导入配置</strong><p>回到客户端，在配置或订阅管理中添加链接，更新并启用配置。</p></li><li><strong>连接节点</strong><p>选择节点并启动代理，按提示授权，打开常用网站验证连接。</p></li></ol>
 <p class="note">下载客户端不附送节点。Clash Mi 与 Flybit 的具体配置兼容性需实际验证；若导入失败，先核对订阅格式。<a href="/posts/clash-subscription-troubleshooting/">查看导入排错</a> · <a href="/posts/flybit-review-2026/">Flybit 套餐与使用说明</a><br>推广披露：通过上述链接注册或购买，本站可能获得佣金；试用、价格与套餐规则以服务后台为准。</p>
 </section>
 <section class="more-info" aria-labelledby="home-help">
 <h2 id="home-help">机场订阅与客户端使用说明</h2>
 <p>客户端用于导入配置和连接节点，机场提供订阅与流量套餐。Flybit是本站编辑首选，适合愿意使用通用订阅、先体验再决定的用户；“最佳选择”是本站推荐判断，不是持续速度或稳定性的保证。</p>
-<details><summary>Flybit价格和免费体验怎么选？</summary><p>此前套餐复核为15元/月128GB、不限时36元128GB起（2026年9月8日）。本次邀请码体验说明为填写p3DOcgzt可体验2小时，具体流量、领取条件与结算价格以后台为准。<a href="/posts/flybit-review-2026/">查看Flybit套餐与使用说明</a>。</p></details>
+<details><summary>Flybit价格和免费体验怎么选？</summary><p>此前套餐复核为15元/月128GB、不限时36元128GB起（2026年9月8日）。注册试用为1天2GB，实际到账与有效期以后台为准；本站导航链接已携带邀请码p3DOcgzt。<a href="/posts/flybit-review-2026/">查看Flybit套餐与使用说明</a>。</p></details>
 <details><summary>Clash客户端安装后为什么没有节点？</summary><p>安装软件不会自动获得节点。需先取得匹配的订阅地址，再导入并启用配置。连接异常可看<a href="/posts/clash-subscription-troubleshooting/">订阅导入失败排查</a>，基本概念见<a href="/posts/airport-node-subscription-guide/">机场与订阅入门</a>。</p></details>
 <p>按需求比较：<a href="/rankings/cheap/">低价机场</a> · <a href="/rankings/trial/">免费试用</a> · <a href="/rankings/no-expiry/">不限时套餐</a> · <a href="/rankings/clash/">Clash订阅</a> · <a href="/rankings/chatgpt/">AI工具</a> · <a href="/rankings/streaming/">流媒体</a></p>
 <p>使用指南：<a href="/posts/airport-tools/">全部客户端工具</a> · <a href="/posts/vpn-guide-2026/">科学上网入门</a> · <a href="/posts/ai-tools-not-working/">AI工具排错</a></p>
-<p class="note">当前测试资料来自同一站长运营的<a href="https://siilas.com/test/">Siilas测速中心</a>；套餐整理与测试日期分别记录。<a href="/methodology/">推荐方法与资料来源</a> · <a href="/risk-monitor/">机场风险监测</a> · <a href="/about/">关于本站与商业披露</a>。本页更新：2026年9月21日。</p>
+<p class="note">当前测试资料来自同一站长运营的<a href="https://siilas.com/test/">Siilas测速中心</a>；套餐整理与测试日期分别记录。<a href="/methodology/">推荐方法与资料来源</a> · <a href="/risk-monitor/">机场风险监测</a> · <a href="/about/">关于本站与商业披露</a>。本页更新：2026年9月24日。</p>
 </section></main>
 </template>
 <style scoped>
