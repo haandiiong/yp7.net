@@ -1,3 +1,4 @@
+import './theme/styles/custom.css'
 import HomeStart from './components/HomeStart.vue'
 
 export default {

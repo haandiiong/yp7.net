@@ -122,7 +122,11 @@ export const validateItemList = (schema, airports, context, hostname = 'https://
 
 export const validateServiceSchema = (schema, airport, context) => {
   if (!schema) return [`${context}: missing Service schema`]
-  const properties = Object.fromEntries((schema.additionalProperty || []).map((item) => [item.name, item.value]))
+  const descriptionLines = typeof schema.description === 'string' ? schema.description.split('\n') : []
+  const properties = Object.fromEntries(descriptionLines.slice(1).map((line) => {
+    const separator = line.indexOf('：')
+    return [line.slice(0, separator), line.slice(separator + 1)]
+  }))
   const expected = {
     最低价格: airport.priceText, 流量额度: airport.traffic,
     免费试用: yesNo(airport.trial), 不限时套餐: yesNo(airport.noExpiry),
@@ -132,10 +136,19 @@ export const validateServiceSchema = (schema, airport, context) => {
   }
   const errors = Object.entries(expected).filter(([key, value]) => properties[key] !== value)
     .map(([key]) => `${context}: Service ${key} differs from airport data`)
+  if (schema['@type'] !== 'Service') errors.push(`${context}: expected Service type`)
+  if ('additionalProperty' in schema) errors.push(`${context}: additionalProperty is not valid on Service`)
+  if (descriptionLines[0] !== airport.summary) errors.push(`${context}: Service summary differs from airport data`)
   if (!airport.subscriptionClients?.length && '一键订阅客户端' in properties) errors.push(`${context}: Service unexpected 一键订阅客户端`)
-  const sources = (schema.additionalProperty || []).filter((item) => item.name === '资料来源')
-    .map((item) => ({ name: item.value, url: item.url, checkedAt: item.description?.replace(/^复核日期：/, '') }))
-  if (JSON.stringify(sources) !== JSON.stringify((airport.informationSources || []).map(({ name, url, checkedAt }) => ({ name, url, checkedAt })))) {
+  const subjectOf = Array.isArray(schema.subjectOf) ? schema.subjectOf : []
+  if (subjectOf[0]?.['@id'] !== `${schema.url}#webpage`) errors.push(`${context}: Service missing review page reference`)
+  const sources = subjectOf.slice(1)
+  const expectedSources = (airport.informationSources || []).map(({ name, url, checkedAt, link }) => ({
+    '@type': 'CreativeWork', name,
+    ...(link !== false ? { url } : {}),
+    description: `资料复核日期：${checkedAt}`,
+  }))
+  if (JSON.stringify(sources) !== JSON.stringify(expectedSources)) {
     errors.push(`${context}: Service information sources/URLs/review dates differ from airport data`)
   }
   return errors

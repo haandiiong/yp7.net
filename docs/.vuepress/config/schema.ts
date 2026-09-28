@@ -1,9 +1,4 @@
-import {
-  airportData,
-  currentTestingSourceName,
-  currentTestingSourceUrl,
-  testingPolicyEffectiveDate,
-} from './airports'
+import { airportData } from './airports'
 import { getAirportCollectionForPage } from './airport-collections'
 import {
   getArticleSection,
@@ -41,6 +36,21 @@ export const hasJsonLdHead = (head: unknown) => Array.isArray(head) && head.some
 
 const getAirportPageData = (page: any) => airportData.find((airport) => airport.path === page.path)
 
+const supportText = (value: boolean | null) => value === null ? '待核实' : value ? '支持' : '不支持'
+
+const getAirportServiceDescription = (airport: typeof airportData[number]) => [
+  airport.summary,
+  `最低价格：${airport.priceText}`,
+  `流量额度：${airport.traffic}`,
+  `免费试用：${supportText(airport.trial)}`,
+  `不限时套餐：${supportText(airport.noExpiry)}`,
+  `专属客户端：${supportText(airport.dedicatedClient)}`,
+  `通用订阅：${supportText(airport.universalSubscription)}`,
+  ...(airport.subscriptionClients?.length ? [`一键订阅客户端：${airport.subscriptionClients.join('、')}`] : []),
+  `观察状态：${airport.status}`,
+  `风险提示：${airport.risk}`,
+].join('\n')
+
 const getAirportServiceSchemas = (page: any) => {
   const airport = getAirportPageData(page)
   if (!airport) return []
@@ -54,32 +64,20 @@ const getAirportServiceSchemas = (page: any) => {
       name: `${airport.name}机场`,
       serviceType: '机场 VPN 服务',
       category: '机场 VPN 服务',
-      description: airport.summary,
+      // Service does not support additionalProperty. Keep these source facts as
+      // text without guessing a numeric Offer price, currency or billing period.
+      description: getAirportServiceDescription(airport),
       url: canonicalUrl,
       image: getPageImage(page),
-      subjectOf: { '@id': `${canonicalUrl}#webpage` },
-      additionalProperty: [
-        { '@type': 'PropertyValue', name: '最低价格', value: airport.priceText },
-        { '@type': 'PropertyValue', name: '流量额度', value: airport.traffic },
-        { '@type': 'PropertyValue', name: '免费试用', value: airport.trial === null ? '待核实' : airport.trial ? '支持' : '不支持' },
-        { '@type': 'PropertyValue', name: '不限时套餐', value: airport.noExpiry ? '支持' : '不支持' },
-        { '@type': 'PropertyValue', name: '专属客户端', value: airport.dedicatedClient ? '支持' : '不支持' },
-        { '@type': 'PropertyValue', name: '通用订阅', value: airport.universalSubscription === null ? '待核实' : airport.universalSubscription ? '支持' : '不支持' },
-        ...(airport.subscriptionClients?.length ? [{
-          '@type': 'PropertyValue', name: '一键订阅客户端', value: airport.subscriptionClients.join('、'),
-        }] : []),
+      subjectOf: [
+        { '@id': `${canonicalUrl}#webpage` },
         ...(airport.informationSources || []).map((source) => ({
-          '@type': 'PropertyValue', name: '资料来源', value: source.name,
-          url: source.url, description: `复核日期：${source.checkedAt}`,
+          '@type': 'CreativeWork',
+          name: source.name,
+          ...(source.link !== false ? { url: source.url } : {}),
+          // A fact-check date is not the source document's publication date.
+          description: `资料复核日期：${source.checkedAt}`,
         })),
-        { '@type': 'PropertyValue', name: '观察状态', value: airport.status },
-        { '@type': 'PropertyValue', name: '风险提示', value: airport.risk },
-        {
-          '@type': 'PropertyValue',
-          name: '测试数据政策',
-          value: `${testingPolicyEffectiveDate} 起 yp7.net 不再自行测试，当前测试数据来自 ${currentTestingSourceName}`,
-          url: currentTestingSourceUrl,
-        },
       ],
     },
   ]

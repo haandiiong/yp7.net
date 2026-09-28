@@ -85,8 +85,11 @@ const validateJsonLd = (html, projectPath) => {
       schemaObjects.push(item)
 
       if (hasSchemaType(item, 'Service')) {
-        const properties = Array.isArray(item.additionalProperty) ? item.additionalProperty : []
-        const propertyNames = new Set(properties.map((property) => property?.name).filter(Boolean))
+        if ('additionalProperty' in item) {
+          errors.push(`${projectPath}: additionalProperty is not valid on Service`)
+        }
+        const descriptionFields = new Set((item.description || '').split('\n')
+          .map((line) => line.split('：')[0]))
         const retiredPerformanceProperties = [
           '证据等级',
           '最后测试时间',
@@ -102,12 +105,14 @@ const validateJsonLd = (html, projectPath) => {
         ]
 
         retiredPerformanceProperties.forEach((name) => {
-          if (propertyNames.has(name)) {
+          if (descriptionFields.has(name) || name in item) {
             errors.push(`${projectPath}: Service schema restored unsupported performance property “${name}”`)
           }
         })
-        if (!propertyNames.has('测试数据政策')) {
-          errors.push(`${projectPath}: Service schema missing current testing data policy`)
+        // Editorial policy is explained on the page and methodology, not a
+        // property of the service being reviewed. Keep its review reference.
+        if (!Array.isArray(item.subjectOf) || !item.subjectOf.some((source) => source['@id'] === `${item.url}#webpage`)) {
+          errors.push(`${projectPath}: Service schema missing review page reference`)
         }
       }
 
@@ -593,20 +598,25 @@ let visibleAirportData = []
 let airportByPath = new Map()
 let airportMetrics
 let airportDataLastReviewed
+let airportDataLastModified
 
 if (existsSync(airportsPath)) {
   const airportConfig = loadAirportConfig(airportsPath)
   airportData = airportConfig.airportData
   visibleAirportData = airportConfig.visibleAirportData
   airportDataLastReviewed = airportConfig.airportDataLastReviewed
+  airportDataLastModified = airportConfig.airportDataLastModified
   airportMetrics = airportConfig.airportMetrics || {
     count: visibleAirportData.length,
     trialCount: visibleAirportData.filter((airport) => airport.trial === true).length,
-    noExpiryCount: visibleAirportData.filter((airport) => airport.noExpiry).length,
+    noExpiryCount: visibleAirportData.filter((airport) => airport.noExpiry === true).length,
+    noExpiryUnverifiedCount: visibleAirportData.filter((airport) => airport.noExpiry === null).length,
     dedicatedClientCount: visibleAirportData.filter((airport) => airport.dedicatedClient).length,
     universalSubscriptionCount: visibleAirportData.filter((airport) => airport.universalSubscription === true).length,
     cheapUnderTenCount: visibleAirportData.filter((airport) => airport.price < 10).length,
     averagePrice: Number((visibleAirportData.reduce((total, airport) => total + airport.price, 0) / visibleAirportData.length).toFixed(1)),
+    regularCheapUnderTenCount: visibleAirportData.filter((airport) => (airport.regularPrice ?? airport.price) < 10).length,
+    regularAveragePrice: Number((visibleAirportData.reduce((total, airport) => total + (airport.regularPrice ?? airport.price), 0) / visibleAirportData.length).toFixed(1)),
   }
   airportByPath = new Map(airportData.map((airport) => [normalizeRoute(airport.path), airport]))
   const missingAirportPages = airportData
@@ -686,6 +696,9 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(airportDataLastReviewed || '')) {
 
     try {
       const data = JSON.parse(readFileSync(filePath, 'utf8'))
+      if (data.lastModified !== airportDataLastModified) {
+        errors.push(`${projectPath}: lastModified differs from airportDataLastModified ${airportDataLastModified}`)
+      }
       if (data.lastReviewed !== airportDataLastReviewed) {
         errors.push(`${projectPath}: lastReviewed is "${data.lastReviewed || 'missing'}", expected "${airportDataLastReviewed}"`)
       }
@@ -705,10 +718,13 @@ if (airportMetrics) {
     `当前收录机场数量：${airportMetrics.count}`,
     `- 支持试用：${airportMetrics.trialCount}家`,
     `- 支持不限时套餐：${airportMetrics.noExpiryCount}家`,
+    `- 不限时有效期待核实：${airportMetrics.noExpiryUnverifiedCount}家`,
     `- 支持专属客户端：${airportMetrics.dedicatedClientCount}家`,
     `- 支持通用订阅：${airportMetrics.universalSubscriptionCount}家`,
-    `- 周期套餐参考价低于10元：${airportMetrics.cheapUnderTenCount}家`,
-    `- 平均周期套餐参考价：${airportMetrics.averagePrice}元`,
+    `- 首次入门参考价低于10元：${airportMetrics.cheapUnderTenCount}家`,
+    `- 平均首次入门参考价：${airportMetrics.averagePrice}元`,
+    `- 常规持续套餐参考价低于10元：${airportMetrics.regularCheapUnderTenCount}家`,
+    `- 平均常规持续套餐参考价：${airportMetrics.regularAveragePrice}元`,
     `- 支持试用比例：${percentage(airportMetrics.trialCount)}%`,
     `- 支持不限时比例：${percentage(airportMetrics.noExpiryCount)}%`,
     `- 支持专属客户端比例：${percentage(airportMetrics.dedicatedClientCount)}%`,
@@ -754,6 +770,7 @@ if (existsSync(robotsPath)) {
 if (airportData.length) {
   const allAirports = visibleAirportData
   const { airportCollections } = loadConfig('airport-collections.ts')
+  const { noExpiryColumns, getNoExpiryCells } = loadConfig('no-expiry-packages.ts')
   const cheapAirports = airportCollections.cheap.items
   const clashAirports = airportCollections.clash.items
   const chatgptAirports = airportCollections.chatgpt.items
@@ -869,13 +886,9 @@ if (airportData.length) {
     requiredAirports: noExpiryAirports,
     exactRows: true,
     exactOrder: true,
-    fields: [
-      ['不限时状态', (airport) => booleanText(airport.noExpiry)],
-      ['最低价格', (airport) => airport.priceText],
-      ['月流量', (airport) => airport.traffic],
-      ['客户端', clientSummary],
-      ['通用订阅', (airport) => booleanText(airport.universalSubscription)],
-    ],
+    fields: noExpiryColumns.slice(1).map((column, index) => [
+      column, (airport) => getNoExpiryCells(airport.path)[index],
+    ]),
   })
 
   validateAirportTable({

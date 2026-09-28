@@ -215,7 +215,7 @@ xxyun 套餐页宣传 Netflix、Disney+、ChatGPT 等解锁能力，这属于服
 
 远程办公、频繁使用 AI、视频会议和低延迟游戏需要额外验证连续连接与延迟，本次套餐核对不能得出适合或不适合这些场景的性能结论。
 
-## xxyun推荐依据与历史测试记录
+## xxyun套餐资料与历史记录
 
 | 项目 | 当前记录 |
 |---|---|
@@ -301,6 +301,6 @@ xxyun 月付9.99元起、100GB，需使用官方客户端。预算有限且接�
 - [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
-- [九云机场怎么样？](/posts/jiuyun-review-2026/)
-- [全球云机场怎么样？](/posts/quanqiuyun/)
-- [光年梯机场怎么样？](/posts/guangnianti-review-2026/)
+- [光速云机场怎么样？](/posts/guangsuyun/)
+- [唯兔云机场怎么样？](/posts/weituyun/)
+- [星岛梦机场怎么样？](/posts/xingdaomeng-review-2026/)

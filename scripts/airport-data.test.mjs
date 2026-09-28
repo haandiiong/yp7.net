@@ -13,6 +13,11 @@ const { airportData } = loadConfig('airports.ts')
 const { airportCollections, createAirportCollections } = loadConfig('airport-collections.ts')
 const { generateAirportDataFiles } = loadConfig('generated.ts')
 const { getPageSchema } = loadConfig('schema.ts')
+const replaceServiceFact = (service, name, value) => {
+  service.description = service.description.split('\n').map((line) => (
+    line.startsWith(`${name}：`) ? `${name}：${value}` : line
+  )).join('\n')
+}
 
 test('page candidates, public collections and Schema preserve the editorial names and order', () => {
   for (const collection of Object.values(airportCollections).filter((item) => item.sourceFile)) {
@@ -84,16 +89,16 @@ test('unverified trials stay unknown in public tables and Service schema and lea
   const recommendation = markdownTables(`| 机场 | 价格与试用 | 免费试用 |\n|---|---|---|\n| [${airport.name}](${airport.path}) | ${airport.priceText}，试用待核实 | 待核实 |\n`)[0]
   assert.deepEqual(validateAirportRows(recommendation, [airport], 'recommendation'), [])
   const evidence = markdownTables(`| 项目 | 当前记录 |\n|---|---|\n| 套餐价格 | ${airport.priceText}，${airport.traffic} |\n| 免费试用 | 待核实 |\n`)[0]
-  assert.deepEqual(validateReviewEvidence(evidence, airport, 'review'), [])
+  const evidenceAirport = { priceText: airport.priceText, traffic: airport.traffic, trial: airport.trial }
+  assert.deepEqual(validateReviewEvidence(evidence, evidenceAirport, 'review'), [])
   evidence.find((row) => row.cells['项目'] === '免费试用').cells['当前记录'] = '不支持'
-  assert.ok(validateReviewEvidence(evidence, airport, 'stale review').some((error) => error.includes('免费试用')))
+  assert.ok(validateReviewEvidence(evidence, evidenceAirport, 'stale review').some((error) => error.includes('免费试用')))
   const service = getPageSchema({ path: airport.path, frontmatter: {}, data: {}, content: '' })['@graph']
     .find((item) => item['@type'] === 'Service')
-  const trialProperty = service.additionalProperty.find((item) => item.name === '免费试用')
-  assert.equal(trialProperty.value, '待核实')
-  assert.equal(service.additionalProperty.find((item) => item.name === '流量额度').value, airport.traffic)
+  assert.ok(service.description.includes('\n免费试用：待核实\n'))
+  assert.ok(service.description.includes(`\n流量额度：${airport.traffic}\n`))
   assert.deepEqual(validateServiceSchema(service, airport, 'unknown trial'), [])
-  trialProperty.value = '不支持'
+  replaceServiceFact(service, '免费试用', '不支持')
   assert.ok(validateServiceSchema(service, airport, 'stale Service').some((error) => error.includes('免费试用')))
 })
 
@@ -125,10 +130,9 @@ test('unverified universal subscriptions stay unknown and are excluded from Clas
   }
   const service = getPageSchema({ path: airport.path, frontmatter: {}, data: {}, content: '' })['@graph']
     .find((item) => item['@type'] === 'Service')
-  const property = service.additionalProperty.find((item) => item.name === '通用订阅')
-  assert.equal(property.value, '待核实')
+  assert.ok(service.description.includes('\n通用订阅：待核实\n'))
   assert.deepEqual(validateServiceSchema(service, airport, 'unverified subscription'), [])
-  property.value = '支持'
+  replaceServiceFact(service, '通用订阅', '支持')
   assert.ok(validateServiceSchema(service, airport, 'unverified subscription').some((error) => error.includes('通用订阅')))
 })
 
@@ -183,8 +187,8 @@ test('Service validation detects a capability or price contradiction', () => {
   const service = getPageSchema({ path: airport.path, frontmatter: {}, data: {}, content: '' })['@graph']
     .find((item) => item['@type'] === 'Service')
   assert.deepEqual(validateServiceSchema(service, airport, 'fixture'), [])
-  service.additionalProperty.find((item) => item.name === '最低价格').value = '12.99元/月'
-  service.additionalProperty.find((item) => item.name === '专属客户端').value = '支持'
+  replaceServiceFact(service, '最低价格', '12.99元/月')
+  replaceServiceFact(service, '专属客户端', '支持')
   assert.equal(validateServiceSchema(service, airport, 'fixture').length, 2)
 })
 
@@ -193,14 +197,36 @@ test('Service validation detects missing clients and stale information source UR
   const service = getPageSchema({ path: airport.path, frontmatter: {}, data: {}, content: '' })['@graph']
     .find((item) => item['@type'] === 'Service')
   assert.deepEqual(validateServiceSchema(service, airport, 'fixture'), [])
-  service.additionalProperty.find((item) => item.name === '一键订阅客户端').value = 'Clash Meta'
+  replaceServiceFact(service, '一键订阅客户端', 'Clash Meta')
   assert.ok(validateServiceSchema(service, airport, 'fixture').some((error) => error.includes('一键订阅客户端')))
-  const source = service.additionalProperty.find((item) => item.name === '资料来源')
+  const source = service.subjectOf[1]
   source.url = 'https://example.com/stale'
   assert.ok(validateServiceSchema(service, airport, 'fixture').some((error) => error.includes('sources/URLs/review dates')))
-  source.url = airport.informationSources[0].url
-  source.description = '复核日期：2020-01-01'
+  if (airport.informationSources[0].link === false) delete source.url
+  else source.url = airport.informationSources[0].url
+  source.description = '资料复核日期：2020-01-01'
   assert.ok(validateServiceSchema(service, airport, 'fixture').some((error) => error.includes('sources/URLs/review dates')))
+})
+
+test('Service uses valid properties, preserves billing text and does not expose disabled source links', () => {
+  const serviceProperties = new Set(['@type', '@id', 'name', 'serviceType', 'category', 'description', 'url', 'image', 'subjectOf'])
+  for (const airport of airportData) {
+    const service = getPageSchema({ path: airport.path, frontmatter: {}, data: {}, content: '' })['@graph']
+      .find((item) => item['@type'] === 'Service')
+    assert.ok(Object.keys(service).every((key) => serviceProperties.has(key)), `${airport.name}: unsupported Service property`)
+    assert.deepEqual(validateServiceSchema(service, airport, airport.name), [])
+    assert.ok(service.description.includes(`\n最低价格：${airport.priceText}\n`))
+    assert.ok(!('offers' in service), 'a monthly equivalent must not become an advertised payable price')
+    for (const [index, source] of (airport.informationSources || []).entries()) {
+      const work = service.subjectOf[index + 1]
+      assert.equal(work['@type'], 'CreativeWork')
+      if (source.link === false) assert.ok(!('url' in work), `${airport.name}: disabled source link exposed`)
+      else assert.equal(work.url, source.url)
+      assert.ok(!('datePublished' in work) && !('dateModified' in work), 'a check date must not become a source publication date')
+    }
+    service.additionalProperty = []
+    assert.ok(validateServiceSchema(service, airport, airport.name).some((error) => error.includes('not valid on Service')))
+  }
 })
 
 test('review evidence checks verify every source link, review date and client in Markdown and HTML', () => {

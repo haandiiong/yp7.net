@@ -1,7 +1,7 @@
 ---
 title: v2rayN使用教程：Windows节点导入、订阅更新、测速和常见问题
 createTime: 2026/06/26
-dateModified: 2026/09/09
+dateModified: 2026/09/28
 permalink: /posts/v2rayn-guide-2026/
 tags:
   - v2rayN
@@ -12,13 +12,13 @@ tags:
 description: v2rayN怎么用？本文整理 Windows 电脑安装 v2rayN、导入机场订阅、更新节点、测速、设置系统代理、路由模式和常见连接失败排查方法。
 ---
 
-更新时间：2026年9月9日（本次补充 FlClash 教程入口）
+文档更新：2026年9月28日。本次整理下载、订阅导入与排查说明；该日期不代表机场节点的实测或套餐核验日期。
 
 ## 使用风险提示
 
 v2rayN、Xray、sing-box、机场订阅格式和代理协议都会更新。本文只提供基础使用流程，下载软件时请优先核对官方仓库和发布页，不要从来路不明的网盘或镜像安装可执行文件。
 
-Bing 搜索“v2rayN 使用教程 Windows 节点导入 测速”时，官方 GitHub 仓库和 release 页面通常会出现在前排；这说明用户同时关心“哪里下载”和“怎么导入机场订阅”。本文按这个搜索意图组织。
+开始前准备三项：与你的 Windows 系统及处理器架构匹配的客户端、服务商后台提供的完整订阅链接，以及一个用来验证连接的常用网站。按下文完成安装、导入、选择节点与开启系统代理，再检查实际访问是否正常。
 
 <!-- more -->
 
@@ -122,3 +122,7 @@ v2rayN 的核心流程是：下载官方客户端、导入机场订阅、更新�
 - [Clash Verge 使用教程](/posts/clash-verge-guide-2026/)
 - [机场节点地区怎么选](/posts/proxy-node-region-guide/)
 - [代理协议区别：VLESS、Reality、Trojan、Hysteria2、TUIC](/posts/proxy-protocols-guide/)
+
+## 资料来源
+
+2026年9月28日核对了 [v2rayN 官方仓库](https://github.com/2dust/v2rayN)的项目说明与发布入口。客户端下载以官方发布页为准；本文没有新增节点速度或平台可用性的实测结果。

@@ -117,11 +117,13 @@ const columnGetters = {
 
 const { visibleAirportData } = loadConfig('airports.ts')
 const { airportCollections } = loadConfig('airport-collections.ts')
+const { noExpiryColumns, getNoExpiryCells } = loadConfig('no-expiry-packages.ts')
 const tableConfigs = [
   ...Object.values(airportCollections).filter((collection) => collection.sourceFile).map((collection) => ({
     filePath: collection.sourceFile,
     heading: collection.heading,
     sectionLinks: collection.sectionLinks,
+    noExpiryComparison: collection.pagePath === '/rankings/no-expiry/',
     items: collection.items,
   })),
   {
@@ -131,7 +133,11 @@ const tableConfigs = [
   },
 ]
 
-const renderTable = ({ headers, divider, rows }, airports, config) => [
+const renderTable = ({ headers, divider, rows }, airports, config) => config.noExpiryComparison ? [
+  `| ${noExpiryColumns.join(' | ')} |`,
+  `| ${noExpiryColumns.map(() => '---').join(' | ')} |`,
+  ...airports.map((airport) => `| [${airport.name}](${airport.path}) | ${getNoExpiryCells(airport.path).join(' | ')} |`),
+].join('\n') : [
   `| ${headers.join(' | ')} |`,
   divider,
   ...airports.map((airport, index) => {

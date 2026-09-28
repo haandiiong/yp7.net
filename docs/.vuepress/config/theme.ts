@@ -4,6 +4,8 @@ import { hostname } from './site'
 
 export const theme = plumeTheme({
   hostname,
+  // Our maintained dates are calendar days; do not imply an exact edit time.
+  lastUpdated: { formatOptions: { year: 'numeric', month: 'numeric', day: 'numeric', timeZone: 'UTC', forceLocale: true } },
   footer: { message: "yp7.net © 2026 CFF 版权所有" },
   navbar: [
     { text: '首页', link: '/', icon: 'material-symbols:home-rounded' },
@@ -56,6 +58,7 @@ export const theme = plumeTheme({
   ],
   markdown: {
     collapse: true,
+    imageSize: 'local',
   },
   blog: {
     tags: true,

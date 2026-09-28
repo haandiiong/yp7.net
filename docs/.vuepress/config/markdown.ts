@@ -1,6 +1,8 @@
 import { isSponsoredLink, qualifySponsoredAnchors } from './generated'
+import { extendContentImageLoading } from './image-loading'
 
 export const extendSponsoredMarkdown = (md: any) => {
+  extendContentImageLoading(md)
   const defaultLinkOpen = md.renderer.rules.link_open || ((tokens: any, idx: number, options: any, _env: any, self: any) => self.renderToken(tokens, idx, options))
   const defaultHtmlBlock = md.renderer.rules.html_block || ((tokens: any, idx: number) => tokens[idx].content)
   const defaultHtmlInline = md.renderer.rules.html_inline || ((tokens: any, idx: number) => tokens[idx].content)

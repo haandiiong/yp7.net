@@ -1,7 +1,7 @@
 ---
 title: SSONE机场怎么样？15元60GB套餐、1小时试用与客户端教程
 createTime: 2026/04/23
-dateModified: 2026/09/23
+dateModified: 2026/09/28
 permalink: /posts/ssone/
 tags:
   - SSONE机场
@@ -11,7 +11,7 @@ tags:
 description: SSONE最新套餐资料：15元60GB月付、80元季付300GB每月、200元年付5000GB每年；新用户1小时试用，整理客户端、套餐覆盖与不退款规则。
 ---
 
-更新时间：2026年9月23日
+更新时间：2026年9月28日
 
 **SSONE月付15元60GB起，新注册账号可免费体验1小时。** 官网提供自有客户端和第三方订阅教程，套餐分Lite与Pro。以下整理本次商店与使用文档所见资料。
 
@@ -103,7 +103,7 @@ iOS教程目录未在本次核对中确认具体Clash应用名称；鸿蒙兼容
 
 2026年9月23日核对SSONE商店的6款套餐、各周期价格、试用与购买规则，以及Windows、macOS、iOS、Android、Linux文档目录。来源名称保留为普通文字。
 
-## SSONE推荐依据与历史测试记录
+## SSONE套餐与使用资料汇总
 
 | 项目 | 当前记录 |
 |---|---|
@@ -120,9 +120,7 @@ iOS教程目录未在本次核对中确认具体Clash应用名称；鸿蒙兼容
 
 ## 本文属于
 
-- [机场推荐](/posts/jichang-tuijian/)
 - [机场大全](/posts/jichang-heji/)
-- [Clash机场榜](/rankings/clash/)
 - [免费试用机场榜](/rankings/trial/)
 - [专属客户端机场榜](/rankings/dedicated-client/)
 - [机场风险监测](/risk-monitor/)
@@ -134,6 +132,6 @@ iOS教程目录未在本次核对中确认具体Clash应用名称；鸿蒙兼容
 - [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
-- [九云机场怎么样？](/posts/jiuyun-review-2026/)
-- [网际快车机场怎么样？](/posts/wangji-kuaiche-review/)
 - [Flybit机场怎么样？](/posts/flybit-review-2026/)
+- [cocoduck机场怎么样？](/posts/cocoduck-review/)
+- [坦克云（原坦克加速）机场怎么样？](/posts/tank-review-2026/)

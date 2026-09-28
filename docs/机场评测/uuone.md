@@ -1,17 +1,17 @@
 ---
 title: UUONE机场怎么样？19元150GB月付、99元不限时与订阅教程
 createTime: 2026/04/23
-dateModified: 2026/09/23
+dateModified: 2026/09/28
 permalink: /posts/uuone-review-2026/
 tags:
   - UUONE机场
   - 机场推荐
   - 不限时套餐
   - 通用订阅
-description: UUONE套餐更新：19元150GB月付起、99元450GB不限时，整理4款套餐、300至800Mbps标注带宽、10至20台设备限制及Clash Verge、Clash Meta、Nextin订阅使用说明。
+description: UUONE套餐更新：19元150GB月付起、99元450GB不限时，不支持免费试用。整理4款套餐、300至800Mbps标注带宽、10至20台设备限制及Clash Verge、Clash Meta、Nextin订阅使用说明。
 ---
 
-更新时间：2026年9月23日
+更新时间：2026年9月28日（免费试用状态补充确认）；套餐与客户端资料核对：2026年9月23日。
 
 **UUONE当前月付19元150GB起，另有99元450GB不限时包。** 官网提供第三方客户端教程与订阅导入，本文依据套餐列表、使用文档和仪表盘整理。
 
@@ -63,9 +63,15 @@ description: UUONE套餐更新：19元150GB月付起、99元450GB不限时，整
 
 ## 试用、退款与优惠码
 
-本次所读套餐和教程未明确免费试用、退款规则；旧资料中的首购9折码 `uuone` 也未验证，暂列待核实。付款前确认适用条件及订单金额。
+2026年9月27日站长补充确认：UUONE不支持免费试用。
+
+退款规则仍待核实；旧资料中的首购9折码 `uuone` 也未验证，暂列待核实。付款前确认适用条件及订单金额。
 
 ## 常见问题
+
+### UUONE支持免费试用吗？
+
+不支持。根据2026年9月27日站长补充确认，UUONE目前不提供免费试用。
 
 ### UUONE最低还是12元吗？
 
@@ -85,29 +91,26 @@ description: UUONE套餐更新：19元150GB月付起、99元450GB不限时，整
 
 ## 资料来源与更新
 
-2026年9月23日核对UUONE四款套餐、使用文档目录、iOS Nextin教程及仪表盘订阅入口。资料来源名称保留为普通文字。
+2026年9月23日核对UUONE四款套餐、使用文档目录、iOS Nextin教程及仪表盘订阅入口。2026年9月27日站长补充确认：UUONE不支持免费试用。资料来源名称保留为普通文字。
 
-## UUONE推荐依据与历史测试记录
+## UUONE套餐与使用资料汇总
 
 | 项目 | 当前记录 |
 |---|---|
-| 资料来源 | UUONE套餐页；UUONE使用文档；UUONE iOS教程 |
-| 资料复核日期 | UUONE套餐页：2026-09-23；UUONE使用文档：2026-09-23；UUONE iOS教程：2026-09-23 |
+| 资料来源 | uuone试用规则（站长补充）；UUONE套餐页；UUONE使用文档；UUONE iOS教程 |
+| 资料复核日期 | uuone试用规则（站长补充）：2026-09-27；UUONE套餐页：2026-09-23；UUONE使用文档：2026-09-23；UUONE iOS教程：2026-09-23 |
 | 当前测试数据来源 | [Siilas 测速中心](https://siilas.com/test/)；2026-08-18 起 yp7.net 不再自行测试 |
 | 客户端资料 | 通用订阅 |
 | 套餐价格 | 19元/月，150GB/月 |
-| 免费试用 | 待核实 |
+| 免费试用 | 不支持 |
 | 不限时套餐 | 支持 |
 | 通用订阅 | 支持 |
 | 适合场景 | 流媒体、Clash |
-| 风险记录 | 试用、退款与旧优惠码待核实；设备数量和速率因套餐不同 |
+| 风险记录 | 不支持免费试用；退款与旧优惠码待核实；设备数量和速率因套餐不同 |
 
 ## 本文属于
 
-- [机场推荐](/posts/jichang-tuijian/)
 - [机场大全](/posts/jichang-heji/)
-- [流媒体机场榜](/rankings/streaming/)
-- [Clash机场榜](/rankings/clash/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [机场风险监测](/risk-monitor/)
 
@@ -118,6 +121,6 @@ description: UUONE套餐更新：19元150GB月付起、99元450GB不限时，整
 - [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
-- [九云机场怎么样？](/posts/jiuyun-review-2026/)
-- [全球云机场怎么样？](/posts/quanqiuyun/)
-- [光年梯机场怎么样？](/posts/guangnianti-review-2026/)
+- [冲上云霄机场怎么样？](/posts/chongshangyunxiao/)
+- [CCYZ机场怎么样？](/posts/ccyz-review-2026/)
+- [山水云机场怎么样？](/posts/shanshuiyun-review-2026/)

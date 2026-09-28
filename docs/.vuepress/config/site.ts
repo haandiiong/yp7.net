@@ -1,10 +1,11 @@
-import { airportData, airportDataLastReviewed, airportMetrics } from './airports'
+import { airportData, airportDataLastModified, airportDataLastReviewed, airportMetrics } from './airports'
 
 export const hostname = 'https://yp7.net'
 export const siteName = 'yp7.net'
 export const siteDescription = 'yp7.net 专注2026机场推荐、套餐与客户端信息整理、风险提示和科学上网教程；2026年8月18日起不再自行测速，相关测试数据统一来自 Siilas。'
 export const siteKeywords = '机场推荐,VPN推荐,Clash节点,Clash教程,Shadowrocket,科学上网,翻墙机场,ChatGPT机场,TikTok节点,流媒体解锁'
 export const siteLastReviewed = airportDataLastReviewed
+export const siteLastModified = airportDataLastModified
 export const siteAuthorName = 'yp7'
 export const siteAuthorDescription = 'yp7.net 推荐内容维护者，长期整理机场推荐、套餐与客户端资料、Clash 配置、科学上网教程和购买风险提示。'
 export const siteAuthorUrl = `${hostname}/about/`

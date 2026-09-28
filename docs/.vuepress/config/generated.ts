@@ -12,7 +12,8 @@ import { airportCollections, airportRankingKeys } from './airport-collections'
 import type { AirportCollectionKey } from './airport-collections'
 import { serializeAirport } from './airport-public'
 import type { PublicAirportData } from './airport-public'
-import { defaultImage, hostname, siteDescription, siteLastReviewed, siteName } from './site'
+import { getNoExpiryCells, noExpiryColumns, noExpiryComparisonNotice } from './no-expiry-packages'
+import { defaultImage, hostname, siteDescription, siteLastModified, siteLastReviewed, siteName } from './site'
 
 const booleanText = (value: boolean | null) => value === null ? '待核实' : value ? '支持' : '不支持'
 
@@ -156,6 +157,10 @@ const getPublicAirportMetrics = () => {
   return {
     ...metrics,
     historicalPerformanceRecordCount: performanceCount,
+    priceBasis: {
+      entry: '首次入门周期参考价，包含不可续费的新人优惠；不是所有机场的实际首购结算价',
+      regular: '常规持续套餐周期参考价，仅极速Cloud改用30元，其余沿用已记录价格；不是逐家验证的续费成交价',
+    },
   }
 }
 
@@ -167,7 +172,7 @@ const getAirportMarkdownTable = (airports: PublicAirportData[], columns: string[
     airport.priceText,
     airport.traffic,
     booleanText(airport.trial),
-    airport.noExpiry ? '支持' : '不支持',
+    booleanText(airport.noExpiry),
     airport.dedicatedClient ? '支持' : '不支持',
     booleanText(airport.universalSubscription),
     airport.historicalEvidence?.evidenceLevel || '无',
@@ -196,6 +201,14 @@ const getSalesMarkdownTable = (airports: PublicAirportData[]) => {
 
   return [header, divider, ...rows.map((row) => `| ${row.join(' | ')} |`)].join('\n')
 }
+
+const getNoExpiryMarkdownTable = (airports: PublicAirportData[]) => [
+  noExpiryComparisonNotice,
+  '',
+  `| ${noExpiryColumns.join(' | ')} |`,
+  `| ${noExpiryColumns.map(() => '---').join(' | ')} |`,
+  ...airports.map((airport) => `| [${airport.name}](${getCanonicalUrl(airport.path)}) | ${getNoExpiryCells(airport.path).join(' | ')} |`),
+].join('\n')
 
 const renderDataHtmlPage = ({
   title,
@@ -267,7 +280,7 @@ const getAirportHtmlTable = (airports: PublicAirportData[]) => {
         <td>${escapeHtml(airport.priceText)}</td>
         <td>${escapeHtml(airport.traffic)}</td>
         <td>${booleanText(airport.trial)}</td>
-        <td>${airport.noExpiry ? '支持' : '不支持'}</td>
+        <td>${booleanText(airport.noExpiry)}</td>
         <td>${airport.dedicatedClient ? '支持' : '不支持'}</td>
         <td>${booleanText(airport.universalSubscription)}</td>
         <td>${escapeHtml(airport.historicalEvidence?.evidenceLevel || '无')}</td>
@@ -309,6 +322,10 @@ ${rows}
       </table>`
 }
 
+const getNoExpiryHtmlTable = (airports: PublicAirportData[]) => `<p>${escapeHtml(noExpiryComparisonNotice)}</p>
+  <table><thead><tr>${noExpiryColumns.map((column) => `<th>${escapeHtml(column)}</th>`).join('')}</tr></thead>
+  <tbody>${airports.map((airport) => `<tr><td><a href="${airport.path}">${escapeHtml(airport.name)}</a></td>${getNoExpiryCells(airport.path).map((cell) => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`).join('\n')}</tbody></table>`
+
 const getRiskMonitorHtmlTable = (riskRows: ReturnType<typeof getAirportDataFiles>['riskMonitor']) => {
   return `<table>
         <thead>
@@ -328,8 +345,8 @@ ${riskRows.map((item) => `<tr>
 const rankingSections = airportRankingKeys.map((key) => ({
   key,
   title: airportCollections[key].dataTitle,
-  renderHtml: key === 'sales' ? getSalesHtmlTable : getAirportHtmlTable,
-  renderMarkdown: key === 'sales' ? getSalesMarkdownTable : getAirportMarkdownTable,
+  renderHtml: key === 'noExpiry' ? getNoExpiryHtmlTable : key === 'sales' ? getSalesHtmlTable : getAirportHtmlTable,
+  renderMarkdown: key === 'noExpiry' ? getNoExpiryMarkdownTable : key === 'sales' ? getSalesMarkdownTable : getAirportMarkdownTable,
 }))
 
 const datasetCreator = {
@@ -375,7 +392,7 @@ const getDatasetSchema = (config: typeof dataPageConfigs[keyof typeof dataPageCo
   name: config.schemaName,
   description: config.schemaDescription,
   url: getDataCanonicalUrl(config.slug),
-  dateModified: siteLastReviewed,
+  dateModified: siteLastModified,
   license: `${hostname}/methodology/`,
   creator: datasetCreator,
 })
@@ -390,12 +407,14 @@ export const generateAirportDataFiles = (app: any) => {
     site: siteName,
     url: hostname,
     lastReviewed: siteLastReviewed,
+    lastModified: siteLastModified,
     testingPolicy: {
       effectiveDate: testingPolicyEffectiveDate,
       yp7ConductsCurrentTests: false,
       currentSource: currentTestingSourceName,
       currentSourceUrl: currentTestingSourceUrl,
       historicalRecordsNotice: historicalTestingNotice,
+      contributedRecordsNotice: '用户投稿单列来源、测试日期和环境，不代表 yp7.net 自行测试或全部节点的当前表现',
     },
     metrics: getPublicAirportMetrics(),
     airports: data.airports,
@@ -404,12 +423,14 @@ export const generateAirportDataFiles = (app: any) => {
     site: siteName,
     url: hostname,
     lastReviewed: siteLastReviewed,
+    lastModified: siteLastModified,
     testingPolicy: {
       effectiveDate: testingPolicyEffectiveDate,
       yp7ConductsCurrentTests: false,
       currentSource: currentTestingSourceName,
       currentSourceUrl: currentTestingSourceUrl,
       historicalRecordsNotice: historicalTestingNotice,
+      contributedRecordsNotice: '用户投稿单列来源、测试日期和环境，不代表 yp7.net 自行测试或全部节点的当前表现',
     },
     metrics: getPublicAirportMetrics(),
     salesSampleMeta: airportSalesSampleMeta,
@@ -419,13 +440,14 @@ export const generateAirportDataFiles = (app: any) => {
     site: siteName,
     url: hostname,
     lastReviewed: siteLastReviewed,
+    lastModified: siteLastModified,
     metrics: getPublicAirportMetrics(),
     risks: data.riskMonitor,
   }, null, 2))
   writeFileSync(`${dataDir}/airports.md`, [
     '# yp7.net 机场数据',
     '',
-    `Last reviewed: ${siteLastReviewed}`,
+    `Data updated: ${siteLastModified}; last full review: ${siteLastReviewed}`,
     '',
     `Testing policy: ${historicalTestingNotice}；当前测试数据见 ${currentTestingSourceUrl}`,
     '',
@@ -435,7 +457,7 @@ export const generateAirportDataFiles = (app: any) => {
   writeFileSync(`${dataDir}/rankings.md`, [
     '# yp7.net 机场榜单数据',
     '',
-    `Last reviewed: ${siteLastReviewed}`,
+    `Data updated: ${siteLastModified}; last full review: ${siteLastReviewed}`,
     '',
     `Testing policy: ${historicalTestingNotice}；当前测试数据见 ${currentTestingSourceUrl}`,
     '',
@@ -449,7 +471,7 @@ export const generateAirportDataFiles = (app: any) => {
   writeFileSync(`${dataDir}/risk-monitor.md`, [
     '# yp7.net 机场风险监测',
     '',
-    `Last reviewed: ${siteLastReviewed}`,
+    `Data updated: ${siteLastModified}; last full review: ${siteLastReviewed}`,
     '',
     '| 机场 | 状态 | 风险提示 | 链接 |',
     '| --- | --- | --- | --- |',
@@ -463,8 +485,8 @@ export const generateAirportDataFiles = (app: any) => {
     canonical: getDataCanonicalUrl(airports.slug),
     schema: getDatasetSchema(airports),
     body: `<h1>yp7.net 全量机场数据</h1>
-      <p>Last reviewed: ${siteLastReviewed}</p>
-      <p>${historicalTestingNotice}。${testingPolicyEffectiveDate} 起 yp7.net 不再自行测速，当前测试数据统一来自 <a href="${currentTestingSourceUrl}" target="_blank" rel="noopener noreferrer">${currentTestingSourceName}</a>。</p>
+      <p>数据更新：${siteLastModified}；上次全面复核：${siteLastReviewed}。各条目资料日期见来源记录。</p>
+      <p>${historicalTestingNotice}。${testingPolicyEffectiveDate} 起 yp7.net 不再自行测速，当前测试主要引用 <a href="${currentTestingSourceUrl}" target="_blank" rel="noopener noreferrer">${currentTestingSourceName}</a> 对应记录；用户投稿另列来源、测试时间和环境。</p>
       <p>本页是人类可读的机场推荐数据 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
       <div class="links">
         <a href="/data/airports.json">airports.json</a>
@@ -482,8 +504,8 @@ export const generateAirportDataFiles = (app: any) => {
     canonical: getDataCanonicalUrl(rankings.slug),
     schema: getDatasetSchema(rankings),
     body: `<h1>yp7.net 机场榜单数据</h1>
-      <p>Last reviewed: ${siteLastReviewed}</p>
-      <p>${historicalTestingNotice}。${testingPolicyEffectiveDate} 起 yp7.net 不再自行测速，当前测试数据统一来自 <a href="${currentTestingSourceUrl}" target="_blank" rel="noopener noreferrer">${currentTestingSourceName}</a>。</p>
+      <p>数据更新：${siteLastModified}；上次全面复核：${siteLastReviewed}。各条目资料日期见来源记录。</p>
+      <p>${historicalTestingNotice}。${testingPolicyEffectiveDate} 起 yp7.net 不再自行测速，当前测试主要引用 <a href="${currentTestingSourceUrl}" target="_blank" rel="noopener noreferrer">${currentTestingSourceName}</a> 对应记录；用户投稿另列来源、测试时间和环境。</p>
       <p>本页是人类可读的机场推荐数据 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
       <div class="links">
         <a href="/data/rankings.json">rankings.json</a>
@@ -508,7 +530,7 @@ export const generateAirportDataFiles = (app: any) => {
     canonical: getDataCanonicalUrl(riskMonitor.slug),
     schema: getDatasetSchema(riskMonitor),
     body: `<h1>yp7.net 机场风险监测数据</h1>
-      <p>Last reviewed: ${siteLastReviewed}</p>
+      <p>数据更新：${siteLastModified}；上次全面复核：${siteLastReviewed}。各条目资料日期见来源记录。</p>
       <p>本页是人类可读的机场风险监测 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
       <div class="links">
         <a href="/data/risk-monitor.json">risk-monitor.json</a>

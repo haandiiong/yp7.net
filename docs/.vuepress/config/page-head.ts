@@ -7,6 +7,7 @@ import {
   getPageImage,
   getPageMetaKeywords,
   isArticlePage,
+  normalizeDate,
 } from './page-utils'
 import { getPageSchema, hasJsonLdHead } from './schema'
 import { defaultRobots, pageImages, siteName } from './site'
@@ -85,6 +86,14 @@ const getBasicPageHead = (page: any) => {
 }
 
 export const extendPageWithSeo = (page: any) => {
+  const explicitModified = normalizeDate(page.frontmatter.dateModified || page.frontmatter.updateTime || page.frontmatter.lastUpdated)
+  if (explicitModified) {
+    // Plume's footer reads this field. The user-config hook runs after its Git
+    // hook; prefer the same explicit content date used by Schema and sitemap.
+    page.data.git ||= {}
+    page.data.git.updatedTime = Date.parse(explicitModified)
+  }
+
   const knownPageImage = pageImages[page.path]
   if (knownPageImage) {
     page.frontmatter.image ||= knownPageImage

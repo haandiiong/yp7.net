@@ -48,3 +48,18 @@
   --vp-c-text-3: rgba(235, 235, 245, 0.38);
   */
 }
+
+/* 机场大全优先展示价格总表，标签与创建日期仍保留在页面元数据中。 */
+.airport-catalogue .vp-doc-meta {
+  display: none;
+}
+
+.airport-catalogue .vp-doc #机场价格总表 {
+  padding-top: 0;
+  margin-top: 16px;
+  border-top: 0;
+}
+
+.airport-catalogue .vp-doc #机场价格总表 ~ table:first-of-type th {
+  white-space: nowrap;
+}

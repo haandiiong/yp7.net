@@ -71,6 +71,26 @@ test('article titles retain the VuePress site suffix and normal indexing policy'
   assert.deepEqual(getRobots(resolveHead(page)), [defaultRobots])
 })
 
+test('the explicit content date drives the footer and metadata without losing Git contributors', () => {
+  const contributors = [{ name: 'yp7', commits: 3 }]
+  const gitTime = Date.parse('2026-09-23T13:59:00Z')
+  const page = {
+    filePathRelative: 'example.md',
+    path: '/posts/example/', title: '文章标题', frontmatter: { createTime: '2026/09/16', dateModified: '2026/09/28' },
+    data: { git: { updatedTime: gitTime, createdTime: 123, contributors } }, content: '', contentRendered: '',
+  }
+  extendPageWithSeo(page)
+  assert.equal(page.data.git.updatedTime, Date.parse('2026-09-28T00:00:00Z'))
+  assert.equal(page.data.git.createdTime, 123)
+  assert.equal(page.data.git.contributors, contributors)
+  const meta = page.frontmatter.head.find(([tag, attrs]) => tag === 'meta' && attrs.property === 'article:modified_time')
+  assert.equal(Date.parse(meta[1].content), page.data.git.updatedTime)
+
+  const fallback = { ...page, frontmatter: {}, data: { git: { updatedTime: gitTime, contributors } } }
+  extendPageWithSeo(fallback)
+  assert.equal(fallback.data.git.updatedTime, gitTime)
+})
+
 test('post-generation cleanup preserves the head that the client will take over', (t) => {
   const dest = mkdtempSync(join(tmpdir(), 'yp7-page-head-'))
   t.after(() => rmSync(dest, { recursive: true, force: true }))

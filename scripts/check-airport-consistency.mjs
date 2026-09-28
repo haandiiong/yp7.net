@@ -13,9 +13,20 @@ const read = (path) => readFileSync(path, 'utf8')
 const { airportData, visibleAirportData } = loadConfig('airports.ts')
 const { airportCollections, airportRankingKeys } = loadConfig('airport-collections.ts')
 const { hostname } = loadConfig('site.ts')
+const { getNoExpiryPackage, getNoExpiryCells, noExpiryColumns } = loadConfig('no-expiry-packages.ts')
 const errors = []
 const dataColumns = ['机场', '最低价格', '流量额度', '试用', '不限时', '专属客户端', '通用订阅', '历史证据', '历史测试日期', '历史延迟', '历史速度区间', '状态']
 const salesColumns = ['机场', '销量样本', '最低价格', '流量额度', '试用', '专属客户端', '通用订阅', '状态']
+const validateNoExpiryRows = (rows, airports, context) => {
+  const found = validateAirportRows(rows, airports, context, { requiredColumns: noExpiryColumns })
+  airports.forEach((airport, index) => {
+    const expected = getNoExpiryCells(airport.path)
+    noExpiryColumns.slice(1).forEach((column, columnIndex) => {
+      if (rows[index]?.cells[column] !== expected[columnIndex]) found.push(`${context}: ${airport.name} ${column} differs`)
+    })
+  })
+  return found
+}
 
 try {
   const airportJson = JSON.parse(read(join(dist, 'data/airports.json')))
@@ -33,6 +44,7 @@ try {
       if (!isDeepStrictEqual(record[field], airport[field])) errors.push(`airports.json: ${airport.name} ${field} differs`)
     }
     if (record.url !== `${hostname}${airport.path}` || 'performance' in record) errors.push(`airports.json: ${airport.name} invalid public record`)
+    if (airport.noExpiry && !isDeepStrictEqual(record.noExpiryPackage, getNoExpiryPackage(airport.path))) errors.push(`airports.json: ${airport.name} no-expiry package differs`)
     if (airport.performance) {
       if (record.historicalEvidence?.recordStatus !== 'historical') errors.push(`airports.json: ${airport.name} missing historical status`)
       for (const field of ['evidenceLevel', 'lastTestedAt', 'testWindow', 'testRegion', 'testNetwork', 'testDevice', 'latencyMs', 'downloadMbpsRange', 'evidenceSummary']) {
@@ -60,9 +72,14 @@ try {
     if (!isDeepStrictEqual(records, expectedRecords)) errors.push(`rankings.json ${key}: records/order differ from shared airport data`)
     if (airportRankingKeys.includes(key)) {
       const heading = `## ${collection.dataTitle}`
-      const options = { requiredColumns: key === 'sales' ? salesColumns : dataColumns }
-      errors.push(...validateAirportRows(htmlTableAfterHeading(rankingHtml, heading), collection.items, `rankings.html ${key}`, options))
-      errors.push(...validateAirportRows(markdownTableAfterHeading(rankingMd, heading), collection.items, `rankings.md ${key}`, options))
+      if (key === 'noExpiry') {
+        errors.push(...validateNoExpiryRows(htmlTableAfterHeading(rankingHtml, heading), collection.items, `rankings.html ${key}`))
+        errors.push(...validateNoExpiryRows(markdownTableAfterHeading(rankingMd, heading), collection.items, `rankings.md ${key}`))
+      } else {
+        const options = { requiredColumns: key === 'sales' ? salesColumns : dataColumns }
+        errors.push(...validateAirportRows(htmlTableAfterHeading(rankingHtml, heading), collection.items, `rankings.html ${key}`, options))
+        errors.push(...validateAirportRows(markdownTableAfterHeading(rankingMd, heading), collection.items, `rankings.md ${key}`, options))
+      }
     }
     if (!collection.pagePath) continue
     const context = collection.pagePath
@@ -71,6 +88,10 @@ try {
     const options = { sectionLinks: collection.sectionLinks, hostname }
     errors.push(...validateAirportRows(markdownTableAfterHeading(source, collection.heading), collection.items, `${context} Markdown`, options))
     errors.push(...validateAirportRows(htmlTableAfterHeading(pageHtml, collection.heading), collection.items, `${context} HTML`, options))
+    if (key === 'noExpiry') {
+      errors.push(...validateNoExpiryRows(markdownTableAfterHeading(source, collection.heading), collection.items, `${context} Markdown`))
+      errors.push(...validateNoExpiryRows(htmlTableAfterHeading(pageHtml, collection.heading), collection.items, `${context} HTML`))
+    }
     const lists = jsonLdGraph(pageHtml).filter((schema) => schema['@type'] === 'ItemList')
     if (lists.length !== 1) errors.push(`${context}: expected exactly one ItemList`)
     errors.push(...validateItemList(lists[0], records || [], context, hostname, collection.ordered))

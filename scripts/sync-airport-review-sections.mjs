@@ -1,7 +1,8 @@
 import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
-import { join, relative } from 'node:path'
-import vm from 'node:vm'
-import ts from 'typescript'
+import { join, relative, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
+import { buildRelatedAirports } from './lib/related-airports.mjs'
+import { loadConfig } from './lib/load-config.mjs'
 
 const root = process.cwd()
 const airportReviewDir = join(root, 'docs/机场评测')
@@ -44,26 +45,6 @@ const parseFrontmatter = (content = '') => {
 const getFrontmatterValue = (frontmatter, key) => {
   const match = frontmatter.match(new RegExp(`^${key}:\\s*(.+)$`, 'm'))
   return match?.[1]?.trim().replace(/^['"]|['"]$/g, '')
-}
-
-const loadAirportConfig = (filePath) => {
-  const source = readFileSync(filePath, 'utf8')
-  const output = ts.transpileModule(source, {
-    compilerOptions: {
-      module: ts.ModuleKind.CommonJS,
-      target: ts.ScriptTarget.ES2022,
-    },
-  }).outputText
-  const context = { exports: {} }
-
-  vm.runInNewContext(output, context)
-
-  return {
-    airportData: context.exports.airportData || [],
-    visibleAirportData: context.exports.visibleAirportData || context.exports.airportData || [],
-    airportDataLastReviewed: context.exports.airportDataLastReviewed || '2026-07-01',
-    hiddenAirportStatuses: context.exports.hiddenAirportStatuses || new Set(['已淘汰', '停止推荐', '下架']),
-  }
 }
 
 const booleanText = (value) => (value === null ? '待核实' : value ? '支持' : '不支持')
@@ -145,7 +126,7 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hi
     ]
 
     return [
-      `## ${displayName}推荐依据与历史测试记录`,
+      `## ${displayName}风险依据与资料记录`,
       '',
       '| 项目 | 当前记录 |',
       '|---|---|',
@@ -184,7 +165,7 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hi
   ]
 
   return [
-    `## ${displayName}推荐依据与历史测试记录`,
+    `## ${displayName}${hasPerformance ? '套餐资料与历史记录' : '套餐与使用资料汇总'}`,
     '',
     '| 项目 | 当前记录 |',
     '|---|---|',
@@ -195,7 +176,29 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hi
   ].join('\n')
 }
 
-const renderMembershipSection = (airport, hiddenAirportStatuses) => {
+const membershipLabels = {
+  mainRecommendation: '机场推荐',
+  all: '机场大全',
+  cheap: '低价机场榜',
+  clash: 'Clash机场榜',
+  chatgpt: 'ChatGPT机场榜',
+  streaming: '流媒体机场榜',
+  trial: '免费试用机场榜',
+  noExpiry: '不限时套餐榜',
+  dedicatedClient: '专属客户端机场榜',
+}
+
+export const getAirportMembershipLinks = (airport, collections, hiddenAirportStatuses) => {
+  if (hiddenAirportStatuses.has(airport.status)) return [{ label: '机场风险监测', link: '/risk-monitor/' }]
+  return [
+    ...Object.entries(collections)
+      .filter(([_key, collection]) => collection.pagePath && collection.items.some((item) => normalizeRoute(item.path) === normalizeRoute(airport.path)))
+      .map(([key, collection]) => ({ label: membershipLabels[key] || collection.dataTitle, link: collection.pagePath })),
+    { label: '机场风险监测', link: '/risk-monitor/' },
+  ]
+}
+
+const renderMembershipSection = (airport, hiddenAirportStatuses, collections) => {
   if (hiddenAirportStatuses.has(airport.status)) {
     return [
       '## 本文属于',
@@ -204,14 +207,7 @@ const renderMembershipSection = (airport, hiddenAirportStatuses) => {
     ].join('\n')
   }
 
-  const links = [
-    { label: '机场推荐', link: '/posts/jichang-tuijian/' },
-    { label: '机场大全', link: '/posts/jichang-heji/' },
-    ...airport.scenarios.map((scenario) => scenarioRankingLinks[scenario]).filter(Boolean),
-    airport.noExpiry ? { label: '不限时套餐榜', link: '/rankings/no-expiry/' } : undefined,
-    airport.dedicatedClient ? { label: '专属客户端机场榜', link: '/rankings/dedicated-client/' } : undefined,
-    { label: '机场风险监测', link: '/risk-monitor/' },
-  ]
+  const links = getAirportMembershipLinks(airport, collections, hiddenAirportStatuses)
 
   return [
     '## 本文属于',
@@ -220,7 +216,7 @@ const renderMembershipSection = (airport, hiddenAirportStatuses) => {
   ].join('\n')
 }
 
-const renderRelatedSection = (airport, visibleAirportData, displayNameByPath, hiddenAirportStatuses) => {
+const renderRelatedSection = (airport, relatedAirportsByPath, displayNameByPath, hiddenAirportStatuses) => {
   if (hiddenAirportStatuses.has(airport.status)) {
     return [
       '## 相关阅读',
@@ -234,10 +230,7 @@ const renderRelatedSection = (airport, visibleAirportData, displayNameByPath, hi
     ].join('\n')
   }
 
-  const peerAirports = visibleAirportData
-    .filter((item) => item.path !== airport.path)
-    .filter((item) => item.scenarios.some((scenario) => airport.scenarios.includes(scenario)))
-    .slice(0, 3)
+  const peerAirports = relatedAirportsByPath.get(airport.path) || []
 
   const primaryScenarioLink = airport.scenarios
     .map((scenario) => scenarioRankingLinks[scenario])
@@ -273,7 +266,7 @@ const stripManagedBottomSections = (content) => {
 }
 
 const upsertEvidenceSection = (content, evidenceSection) => {
-  const existingEvidencePattern = /\n## [^\n]*(?:测评证据区|推荐依据与历史测试记录)\n[\s\S]*?(?=\n## |$)/
+  const existingEvidencePattern = /\n## [^\n]*(?:测评证据区|推荐依据与历史测试记录|套餐资料与历史记录|套餐与使用资料汇总|风险依据与资料记录)\n[\s\S]*?(?=\n## |$)/
 
   if (existingEvidencePattern.test(content)) {
     return content.replace(existingEvidencePattern, `\n${evidenceSection}\n`)
@@ -289,71 +282,81 @@ const upsertEvidenceSection = (content, evidenceSection) => {
   return `${content.trimEnd()}\n\n${evidenceSection}`
 }
 
-if (!existsSync(airportsPath)) fail('Missing docs/.vuepress/config/airports.ts')
+const syncReviewSections = () => {
+  if (!existsSync(airportsPath)) fail('Missing docs/.vuepress/config/airports.ts')
 
-const { airportData, visibleAirportData, airportDataLastReviewed, hiddenAirportStatuses } = loadAirportConfig(airportsPath)
-const airportReviewFiles = walkFiles(airportReviewDir).filter((filePath) => filePath.endsWith('.md'))
-const pageByRoute = new Map()
+  const { airportData, visibleAirportData, airportDataLastReviewed, airportDataLastModified, hiddenAirportStatuses } = loadConfig('airports.ts')
+  const { airportCollections } = loadConfig('airport-collections.ts')
+  const relatedAirportsByPath = buildRelatedAirports(visibleAirportData)
+  const airportReviewFiles = walkFiles(airportReviewDir).filter((filePath) => filePath.endsWith('.md'))
+  const pageByRoute = new Map()
 
-airportReviewFiles.forEach((filePath) => {
-  const content = readFileSync(filePath, 'utf8')
-  const frontmatter = parseFrontmatter(content)
-  const permalink = getFrontmatterValue(frontmatter, 'permalink')
-  const title = getFrontmatterValue(frontmatter, 'title')
+  airportReviewFiles.forEach((filePath) => {
+    const content = readFileSync(filePath, 'utf8')
+    const frontmatter = parseFrontmatter(content)
+    const permalink = getFrontmatterValue(frontmatter, 'permalink')
+    const title = getFrontmatterValue(frontmatter, 'title')
 
-  if (permalink) {
-    pageByRoute.set(normalizeRoute(permalink), {
-      filePath,
-      content,
-      displayName: getDisplayNameFromTitle(title, undefined),
-    })
+    if (permalink) {
+      pageByRoute.set(normalizeRoute(permalink), {
+        filePath,
+        content,
+        displayName: getDisplayNameFromTitle(title, undefined),
+      })
+    }
+  })
+
+  const changedFiles = []
+  const errors = []
+  const displayNameByPath = new Map(airportData.map((airport) => {
+    const page = pageByRoute.get(normalizeRoute(airport.path))
+
+    return [normalizeRoute(airport.path), page?.displayName || airport.name]
+  }))
+
+  airportData.forEach((airport) => {
+    const page = pageByRoute.get(normalizeRoute(airport.path))
+
+    if (!page) {
+      errors.push(`Missing review page for ${airport.name} ${airport.path}`)
+      return
+    }
+
+    const displayName = displayNameByPath.get(normalizeRoute(airport.path)) || airport.name
+    const evidenceSection = renderEvidenceSection(airport, airportDataLastReviewed, displayName, hiddenAirportStatuses)
+    const membershipSection = renderMembershipSection(airport, hiddenAirportStatuses, airportCollections)
+    const relatedSection = renderRelatedSection(airport, relatedAirportsByPath, displayNameByPath, hiddenAirportStatuses)
+    const withoutManagedBottom = stripManagedBottomSections(page.content)
+    const withEvidence = upsertEvidenceSection(withoutManagedBottom, evidenceSection)
+    let next = `${withEvidence.trimEnd()}\n\n${membershipSection}\n\n${relatedSection}\n`
+
+    if (next !== page.content) {
+      // A generated content change is a page edit, not a fresh test or source check.
+      const date = airportDataLastModified.replace(/-/g, '/')
+      next = next.replace(/^dateModified: .+$/m, `dateModified: ${date}`)
+      next = next.replace(/^更新时间：(?:\*\*)?\d{4}年\d{1,2}月\d{1,2}日(?:\*\*)?/gm, `更新时间：${formatDate(airportDataLastModified)}`)
+      if (!checkOnly) writeFileSync(page.filePath, next)
+      changedFiles.push(toProjectPath(page.filePath))
+    }
+  })
+
+  if (errors.length) {
+    console.error('Airport review section sync failed:')
+    errors.forEach((error) => console.error(`- ${error}`))
+    process.exit(1)
   }
-})
 
-const changedFiles = []
-const errors = []
-const displayNameByPath = new Map(airportData.map((airport) => {
-  const page = pageByRoute.get(normalizeRoute(airport.path))
-
-  return [normalizeRoute(airport.path), page?.displayName || airport.name]
-}))
-
-airportData.forEach((airport) => {
-  const page = pageByRoute.get(normalizeRoute(airport.path))
-
-  if (!page) {
-    errors.push(`Missing review page for ${airport.name} ${airport.path}`)
-    return
+  if (changedFiles.length && checkOnly) {
+    console.error('Airport review sections are out of sync:')
+    changedFiles.forEach((filePath) => console.error(`- ${filePath}`))
+    process.exit(1)
   }
 
-  const displayName = displayNameByPath.get(normalizeRoute(airport.path)) || airport.name
-  const evidenceSection = renderEvidenceSection(airport, airportDataLastReviewed, displayName, hiddenAirportStatuses)
-  const membershipSection = renderMembershipSection(airport, hiddenAirportStatuses)
-  const relatedSection = renderRelatedSection(airport, visibleAirportData, displayNameByPath, hiddenAirportStatuses)
-  const withoutManagedBottom = stripManagedBottomSections(page.content)
-  const withEvidence = upsertEvidenceSection(withoutManagedBottom, evidenceSection)
-  const next = `${withEvidence.trimEnd()}\n\n${membershipSection}\n\n${relatedSection}\n`
-
-  if (next !== page.content) {
-    if (!checkOnly) writeFileSync(page.filePath, next)
-    changedFiles.push(toProjectPath(page.filePath))
+  if (changedFiles.length) {
+    console.log(`Synced airport review sections in ${changedFiles.length} files.`)
+  } else {
+    console.log('Airport review sections are in sync.')
   }
-})
-
-if (errors.length) {
-  console.error('Airport review section sync failed:')
-  errors.forEach((error) => console.error(`- ${error}`))
-  process.exit(1)
 }
 
-if (changedFiles.length && checkOnly) {
-  console.error('Airport review sections are out of sync:')
-  changedFiles.forEach((filePath) => console.error(`- ${filePath}`))
-  process.exit(1)
-}
-
-if (changedFiles.length) {
-  console.log(`Synced airport review sections in ${changedFiles.length} files.`)
-} else {
-  console.log('Airport review sections are in sync.')
-}
+if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) syncReviewSections()
