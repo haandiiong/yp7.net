@@ -133,6 +133,20 @@ const tableConfigs = [
   },
 ]
 
+const syncRiskOverview = (content) => {
+  const count = visibleAirportData.length
+  const replacements = [
+    [/^\| 站内观察状态 \| 查看 \d+ 个当前可见候选机场的状态和主要风险提示 \|$/m, `| 站内观察状态 | 查看 ${count} 个当前可见候选机场的状态和主要风险提示 |`],
+    [/^\| 站内观察机场 \| \d+个 \|$/m, `| 站内观察机场 | ${count}个 |`],
+    [/^\| (?:重点观察状态|观察状态记录) \| \d+条 \|$/m, `| 观察状态记录 | ${count}条 |`],
+  ]
+
+  return replacements.reduce((current, [pattern, value]) => {
+    if (!pattern.test(current)) fail('docs/风险监测/机场风险监测.md: missing risk overview row')
+    return current.replace(pattern, value)
+  }, content)
+}
+
 const renderTable = ({ headers, divider, rows }, airports, config) => config.noExpiryComparison ? [
   `| ${noExpiryColumns.join(' | ')} |`,
   `| ${noExpiryColumns.map(() => '---').join(' | ')} |`,
@@ -165,7 +179,10 @@ const syncTable = (config) => {
   if (!existsSync(absolutePath)) fail(`Missing ${config.filePath}`)
 
   const original = readFileSync(absolutePath, 'utf8')
-  const lines = original.split('\n')
+  const source = config.filePath === 'docs/风险监测/机场风险监测.md'
+    ? syncRiskOverview(original)
+    : original
+  const lines = source.split('\n')
   const headingIndex = lines.findIndex((line) => line.trim() === config.heading)
   if (headingIndex === -1) fail(`${config.filePath}: missing heading ${config.heading}`)
 
