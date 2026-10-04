@@ -1,6 +1,6 @@
 # yp7.net 机场数据
 
-Data updated: 2026-09-28; last full review: 2026-08-19
+Data updated: 2026-10-04; last full review: 2026-08-19
 
 Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现；当前测试数据见 https://siilas.com/test/
 
@@ -14,7 +14,7 @@ Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史�
 | [拼好连](https://yp7.net/posts/runway-review-2026/) | 9.9元/月 | 100GB/月 | 支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [唯兔云](https://yp7.net/posts/weituyun/) | 19.9元/月 | 150GB/月 | 不支持 | 支持 | 支持 | 不支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 流媒体观察 |
 | [99吧](https://yp7.net/posts/99ba-review-2026/) | 9.9元/月 | 70GB/月 | 支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 试用观察 |
-| [光年梯](https://yp7.net/posts/guangnianti-review-2026/) | 18元/月 | 110GB/月 | 不支持 | 不支持 | 支持 | 不支持 | A | 2026-06-03 | 58ms | 850-920Mbps | 主推观察 |
+| [光年梯](https://yp7.net/posts/guangnianti-review-2026/) | 18元/月 | 110GB/月 | 不支持 | 不支持 | 支持 | 不支持 | A | 2026-06-03 | 58ms | 850-920Mbps | 资料已核对 |
 | [迅达](https://yp7.net/posts/xunda-review-2026/) | 15元/月 | 150GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [ccyz](https://yp7.net/posts/ccyz-review-2026/) | 49.9元/季（约16.63元/月） | 150GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [uuone](https://yp7.net/posts/uuone-review-2026/) | 19元/月 | 150GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 性价比观察 |

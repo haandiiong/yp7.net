@@ -331,10 +331,11 @@ const syncReviewSections = () => {
     let next = `${withEvidence.trimEnd()}\n\n${membershipSection}\n\n${relatedSection}\n`
 
     if (next !== page.content) {
-      // A generated content change is a page edit, not a fresh test or source check.
-      const date = airportDataLastModified.replace(/-/g, '/')
-      next = next.replace(/^dateModified: .+$/m, `dateModified: ${date}`)
-      next = next.replace(/^更新时间：(?:\*\*)?\d{4}年\d{1,2}月\d{1,2}日(?:\*\*)?/gm, `更新时间：${formatDate(airportDataLastModified)}`)
+      // Generated links may change after a newer editorial edit. Never regress its date.
+      const currentDate = getFrontmatterValue(parseFrontmatter(page.content), 'dateModified')?.replace(/\//g, '-')
+      if (!currentDate || currentDate < airportDataLastModified) {
+        next = next.replace(/^dateModified: .+$/m, `dateModified: ${airportDataLastModified.replace(/-/g, '/')}`)
+      }
       if (!checkOnly) writeFileSync(page.filePath, next)
       changedFiles.push(toProjectPath(page.filePath))
     }

@@ -2,7 +2,7 @@
   "site": "yp7.net",
   "url": "https://yp7.net",
   "lastReviewed": "2026-08-19",
-  "lastModified": "2026-09-28",
+  "lastModified": "2026-10-04",
   "testingPolicy": {
     "effectiveDate": "2026-08-18",
     "yp7ConductsCurrentTests": false,
@@ -292,71 +292,73 @@
         "url": "https://yp7.net/posts/quanqiuyun/"
       },
       {
-        "name": "光年梯",
-        "path": "/posts/guangnianti-review-2026/",
-        "image": "/gnt.png",
-        "price": 18,
-        "priceText": "18元/月",
-        "traffic": "110GB/月",
-        "trial": false,
-        "noExpiry": false,
+        "name": "拼好连",
+        "path": "/posts/runway-review-2026/",
+        "image": "/runway.png",
+        "price": 9.9,
+        "priceText": "9.9元/月",
+        "traffic": "100GB/月",
+        "trial": true,
+        "noExpiry": true,
         "dedicatedClient": true,
-        "universalSubscription": false,
+        "universalSubscription": true,
         "scenarios": [
-          "stable",
-          "streaming",
-          "newbie"
+          "cheap",
+          "trial",
+          "newbie",
+          "clash"
         ],
-        "status": "主推观察",
-        "risk": "套餐不退款；普通套餐不支持通用订阅，不支持免费试用，先确认设备兼容",
-        "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，不支持免费试用。2026年9月27日站长补充8折优惠码GNT80，适用套餐、期限、次数及叠加条件未说明，结算金额未验证。",
+        "status": "资料已核对",
+        "risk": "退款待核实；专属客户端限3台，入门限200Mbps",
+        "summary": "9.9元/月100GB起，另有19.9元200GB、50元600GB和79元1024GB；45元150GB不限时。官方四端客户端支持账号登录，后台可复制通用订阅，Windows教程使用FlClash。免费试用1天6GB。",
         "informationSources": [
           {
-            "name": "光年梯试用规则（站长补充）",
-            "url": "/posts/guangnianti-review-2026/",
+            "name": "拼好连套餐商店",
+            "url": "https://new.runwayhz.com/#/shop",
             "checkedAt": "2026-09-27",
             "link": false
           },
           {
-            "name": "光年梯优惠码（站长补充）",
-            "url": "/posts/guangnianti-review-2026/",
+            "name": "拼好连客户端与试用公告",
+            "url": "https://new.runwayhz.com/#/dashboard",
             "checkedAt": "2026-09-27",
             "link": false
           },
           {
-            "name": "光年梯套餐页",
-            "url": "https://bk1dvc.guangnianertt1.homes/#/plans",
-            "checkedAt": "2026-09-16",
+            "name": "拼好连试用规则（站长补充）",
+            "url": "/posts/runway-review-2026/",
+            "checkedAt": "2026-09-27",
             "link": false
           },
           {
-            "name": "光年梯客户端知识库",
-            "url": "https://bk1dvc.guangnianertt1.homes/#/knowledge",
-            "checkedAt": "2026-09-16",
+            "name": "拼好连使用规则",
+            "url": "https://new.runwayhz.com/#/docs/5",
+            "checkedAt": "2026-09-27",
             "link": false
           },
           {
-            "name": "光年梯仪表盘",
-            "url": "https://bk1dvc.guangnianertt1.homes/#/dashboard",
-            "checkedAt": "2026-09-16",
+            "name": "拼好连FlClash订阅教程",
+            "url": "https://new.runwayhz.com/#/docs/2",
+            "checkedAt": "2026-09-27",
             "link": false
           }
         ],
-        "salesSample": 832,
-        "historicalEvidence": {
-          "evidenceLevel": "A",
-          "lastTestedAt": "2026-06-03",
-          "testWindow": "20:00-23:00",
-          "testRegion": "日本东京",
-          "testNetwork": "SoftBank / 1000Mbps",
-          "testDevice": "安卓手机",
-          "latencyMs": 58,
-          "downloadMbpsRange": "850-920Mbps",
-          "evidenceSummary": "有多张专属客户端延迟截图和 Speedtest 截图；当前表现请查看 Siilas 最新记录。",
-          "recordStatus": "historical",
-          "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+        "salesSample": 445,
+        "noExpiryPackage": {
+          "priceCny": 45,
+          "trafficGb": 150,
+          "priceText": "45元",
+          "trafficText": "150GB",
+          "status": "listed",
+          "deviceLimit": "专属客户端3台；第三方不限连接",
+          "validity": "不限时；手动重置45元",
+          "checkedAt": "2026-09-27",
+          "unitPriceCnyPerGb": 0.3,
+          "sourcePage": "/posts/runway-review-2026/",
+          "currency": "CNY",
+          "billing": "one-off"
         },
-        "url": "https://yp7.net/posts/guangnianti-review-2026/"
+        "url": "https://yp7.net/posts/runway-review-2026/"
       },
       {
         "name": "九云",
@@ -1054,7 +1056,7 @@
           "streaming",
           "newbie"
         ],
-        "status": "主推观察",
+        "status": "资料已核对",
         "risk": "套餐不退款；普通套餐不支持通用订阅，不支持免费试用，先确认设备兼容",
         "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，不支持免费试用。2026年9月27日站长补充8折优惠码GNT80，适用套餐、期限、次数及叠加条件未说明，结算金额未验证。",
         "informationSources": [
@@ -3918,7 +3920,7 @@
           "streaming",
           "newbie"
         ],
-        "status": "主推观察",
+        "status": "资料已核对",
         "risk": "套餐不退款；普通套餐不支持通用订阅，不支持免费试用，先确认设备兼容",
         "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，不支持免费试用。2026年9月27日站长补充8折优惠码GNT80，适用套餐、期限、次数及叠加条件未说明，结算金额未验证。",
         "informationSources": [
@@ -4839,7 +4841,7 @@
           "streaming",
           "newbie"
         ],
-        "status": "主推观察",
+        "status": "资料已核对",
         "risk": "套餐不退款；普通套餐不支持通用订阅，不支持免费试用，先确认设备兼容",
         "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，不支持免费试用。2026年9月27日站长补充8折优惠码GNT80，适用套餐、期限、次数及叠加条件未说明，结算金额未验证。",
         "informationSources": [
@@ -9749,7 +9751,7 @@
           "streaming",
           "newbie"
         ],
-        "status": "主推观察",
+        "status": "资料已核对",
         "risk": "套餐不退款；普通套餐不支持通用订阅，不支持免费试用，先确认设备兼容",
         "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，不支持免费试用。2026年9月27日站长补充8折优惠码GNT80，适用套餐、期限、次数及叠加条件未说明，结算金额未验证。",
         "informationSources": [
@@ -14630,7 +14632,7 @@
           "streaming",
           "newbie"
         ],
-        "status": "主推观察",
+        "status": "资料已核对",
         "risk": "套餐不退款；普通套餐不支持通用订阅，不支持免费试用，先确认设备兼容",
         "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，不支持免费试用。2026年9月27日站长补充8折优惠码GNT80，适用套餐、期限、次数及叠加条件未说明，结算金额未验证。",
         "informationSources": [

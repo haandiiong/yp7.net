@@ -1,13 +1,13 @@
 # yp7.net 机场风险监测
 
-Data updated: 2026-09-28; last full review: 2026-08-19
+Data updated: 2026-10-04; last full review: 2026-08-19
 
 | 机场 | 状态 | 风险提示 | 链接 |
 | --- | --- | --- | --- |
 | echo | 已淘汰 | 客服失联，谨慎使用 | [来源](https://yp7.net/posts/jichang-heji/) |
 | 九云 | 资料已核对 | 不支持试用，不支持退款；并发设备数因套餐而异 | [查看](https://yp7.net/posts/jiuyun-review-2026/) |
 | 全球云 | 主推观察 | 不支持免费试用和通用订阅；旧优惠码与退款待核实 | [查看](https://yp7.net/posts/quanqiuyun/) |
-| 光年梯 | 主推观察 | 套餐不退款；普通套餐不支持通用订阅，不支持免费试用，先确认设备兼容 | [查看](https://yp7.net/posts/guangnianti-review-2026/) |
+| 光年梯 | 资料已核对 | 套餐不退款；普通套餐不支持通用订阅，不支持免费试用，先确认设备兼容 | [查看](https://yp7.net/posts/guangnianti-review-2026/) |
 | 网际快车 | 重点观察 | 日享限60GB/日；免费试用需填写体验券yp7net，旧优惠码与退款待核实 | [查看](https://yp7.net/posts/wangji-kuaiche-review/) |
 | 光速云 | 备用观察 | 不支持免费试用和通用订阅；套餐不退款；流光版238GB与220GB文案冲突待核实 | [查看](https://yp7.net/posts/guangsuyun/) |
 | xxyun | 流媒体观察 | 仅官方客户端，解锁需按节点复核 | [查看](https://yp7.net/posts/xxyun-review-2026/) |

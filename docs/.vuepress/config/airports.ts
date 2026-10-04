@@ -65,7 +65,7 @@ export const testingPolicyEffectiveDate = '2026-08-18'
 export const currentTestingSourceName = 'Siilas'
 export const currentTestingSourceUrl = 'https://siilas.com/test/'
 export const historicalTestingNotice = '2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现'
-export const mainRecommendationNames = ['Flybit', 'xxyun', '网际快车', '全球云', '光年梯', '九云', '阿达西'] as const
+export const mainRecommendationNames = ['Flybit', 'xxyun', '网际快车', '全球云', '拼好连', '九云', '阿达西'] as const
 
 export const airportData: AirportData[] = [
   {
@@ -92,7 +92,7 @@ export const airportData: AirportData[] = [
     performance: { evidenceLevel: 'A', lastTestedAt: '2026-05-30', testWindow: '21:22-21:25（UTC+8）', testRegion: '截图未标注本地地区', testNetwork: '截图未标注本地运营商与接入带宽', testDevice: '旧文记载苹果电脑，截图未独立标注设备型号', latencyMs: 82, downloadMbpsRange: '778.79Mbps（Speedtest 单次历史结果）', chatgptResult: '本组历史截图未覆盖', youtube4kResult: '3840×2160@30，连接速率44052Kbps（历史画面）', stability: '单次历史记录，不代表持续稳定性', evidenceSummary: '2026-05-30既有客户端、YouTube及Speedtest配图；Speedtest使用M1 Limited Singapore服务器，图中下载778.79Mbps、上传52.09Mbps、Ping82ms。本地地区与运营商未由截图证实。' },
     salesSample: 1048,
   },
-  { name: '光年梯', path: '/posts/guangnianti-review-2026/', image: '/gnt.png', price: 18, priceText: '18元/月', traffic: '110GB/月', trial: false, noExpiry: false, dedicatedClient: true, universalSubscription: false, scenarios: ['stable', 'streaming', 'newbie'], status: '主推观察', risk: '套餐不退款；普通套餐不支持通用订阅，不支持免费试用，先确认设备兼容', summary: '18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，不支持免费试用。2026年9月27日站长补充8折优惠码GNT80，适用套餐、期限、次数及叠加条件未说明，结算金额未验证。', informationSources: [{ name: '光年梯试用规则（站长补充）', url: '/posts/guangnianti-review-2026/', checkedAt: '2026-09-27', link: false }, { name: '光年梯优惠码（站长补充）', url: '/posts/guangnianti-review-2026/', checkedAt: '2026-09-27', link: false }, { name: '光年梯套餐页', url: 'https://bk1dvc.guangnianertt1.homes/#/plans', checkedAt: '2026-09-16', link: false }, { name: '光年梯客户端知识库', url: 'https://bk1dvc.guangnianertt1.homes/#/knowledge', checkedAt: '2026-09-16', link: false }, { name: '光年梯仪表盘', url: 'https://bk1dvc.guangnianertt1.homes/#/dashboard', checkedAt: '2026-09-16', link: false }], performance: { evidenceLevel: 'A', lastTestedAt: '2026-06-03', testWindow: '20:00-23:00', testRegion: '日本东京', testNetwork: 'SoftBank / 1000Mbps', testDevice: '安卓手机', latencyMs: 58, downloadMbpsRange: '850-920Mbps', chatgptResult: '稳定', youtube4kResult: '秒开', stability: '极强', evidenceSummary: '有多张专属客户端延迟截图和 Speedtest 截图；当前表现请查看 Siilas 最新记录。' }, salesSample: 832 },
+  { name: '光年梯', path: '/posts/guangnianti-review-2026/', image: '/gnt.png', price: 18, priceText: '18元/月', traffic: '110GB/月', trial: false, noExpiry: false, dedicatedClient: true, universalSubscription: false, scenarios: ['stable', 'streaming', 'newbie'], status: '资料已核对', risk: '套餐不退款；普通套餐不支持通用订阅，不支持免费试用，先确认设备兼容', summary: '18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，不支持免费试用。2026年9月27日站长补充8折优惠码GNT80，适用套餐、期限、次数及叠加条件未说明，结算金额未验证。', informationSources: [{ name: '光年梯试用规则（站长补充）', url: '/posts/guangnianti-review-2026/', checkedAt: '2026-09-27', link: false }, { name: '光年梯优惠码（站长补充）', url: '/posts/guangnianti-review-2026/', checkedAt: '2026-09-27', link: false }, { name: '光年梯套餐页', url: 'https://bk1dvc.guangnianertt1.homes/#/plans', checkedAt: '2026-09-16', link: false }, { name: '光年梯客户端知识库', url: 'https://bk1dvc.guangnianertt1.homes/#/knowledge', checkedAt: '2026-09-16', link: false }, { name: '光年梯仪表盘', url: 'https://bk1dvc.guangnianertt1.homes/#/dashboard', checkedAt: '2026-09-16', link: false }], performance: { evidenceLevel: 'A', lastTestedAt: '2026-06-03', testWindow: '20:00-23:00', testRegion: '日本东京', testNetwork: 'SoftBank / 1000Mbps', testDevice: '安卓手机', latencyMs: 58, downloadMbpsRange: '850-920Mbps', chatgptResult: '稳定', youtube4kResult: '秒开', stability: '极强', evidenceSummary: '有多张专属客户端延迟截图和 Speedtest 截图；当前表现请查看 Siilas 最新记录。' }, salesSample: 832 },
   {
     name: '网际快车', path: '/posts/wangji-kuaiche-review/', image: '/kuaiche.png',
     // Cycle-plan reference price; the separate 6.8 CNY / 20GB package is a one-off purchase.
@@ -791,7 +791,7 @@ export const mainRecommendationData = mainRecommendationNames.map((name) => {
 // Date of the last full review; partial updates retain their per-source checkedAt dates.
 export const airportDataLastReviewed = '2026-08-19'
 // Advance for actual changes to current data or its classification, not historical test dates.
-export const airportDataLastModified = '2026-09-28'
+export const airportDataLastModified = '2026-10-04'
 
 export const getAirportPriceMetrics = (airports: readonly AirportData[]) => {
   const visible = airports.filter(isVisibleAirport)

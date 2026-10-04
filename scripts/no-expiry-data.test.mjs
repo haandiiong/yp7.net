@@ -115,7 +115,7 @@ test('contradictory validity stays unknown across the summary, exports and Servi
   }
   assert.equal(data.lastModified, airportDataLastModified)
   assert.equal(data.lastReviewed, airportDataLastReviewed)
-  assert.equal(airportDataLastModified, '2026-09-28')
+  assert.equal(airportDataLastModified, '2026-10-04')
   assert.equal(airportDataLastReviewed, '2026-08-19')
   const dataset = JSON.parse(read('airports.html').match(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)[1])
   assert.equal(dataset.dateModified, airportDataLastModified)
