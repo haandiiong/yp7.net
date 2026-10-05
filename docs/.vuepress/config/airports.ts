@@ -129,7 +129,7 @@ export const airportData: AirportData[] = [
     name: '拼好连', path: '/posts/runway-review-2026/', image: '/runway.png',
     price: 9.9, priceText: '9.9元/月', traffic: '100GB/月',
     trial: true, noExpiry: true, dedicatedClient: true, universalSubscription: true,
-    scenarios: ['cheap', 'trial', 'newbie', 'clash'], status: '资料已核对',
+    scenarios: ['cheap', 'trial', 'newbie', 'clash', 'chatgpt', 'streaming'], status: '资料已核对',
     risk: '退款待核实；专属客户端限3台，入门限200Mbps',
     summary: '9.9元/月100GB起，另有19.9元200GB、50元600GB和79元1024GB；45元150GB不限时。官方四端客户端支持账号登录，后台可复制通用订阅，Windows教程使用FlClash。免费试用1天6GB。',
     informationSources: [
@@ -382,11 +382,12 @@ export const airportData: AirportData[] = [
     price: 24, priceText: '24元/月', traffic: '150GB/月',
     trial: false, noExpiry: true, dedicatedClient: true, universalSubscription: true,
     scenarios: ['newbie', 'clash', 'chatgpt', 'streaming'], status: '资料已核对',
-    risk: '不支持免费试用；Clash订阅链接需联系客服获取；退款待核实；订单确认页固定额度显示0GB，与套餐页不一致，付款前需核实',
-    summary: '24元月付150GB起，另有44元300GB、84元600GB、134元1000GB月付；96元年付60GB/月、180元年付120GB/月，重置费分别15元、30元。不限时150元100GB、288元200GB，长期不过期，重置费分别130元、268元。提供四端客户端教程，iOS需外区Apple ID下载Nextin，输入识别码sywl后使用官网账号登录。常规套餐标注不限制同时使用客户端数量，IPLC、1倍率、晚高峰不限速、原生IP、ChatGPT/TikTok与流媒体支持均为商家说明，未新增实测。不支持免费试用；客服可提供Clash订阅链接，退款待核实；订单确认页0GB额度字段与套餐页不一致，付款前需核实。',
+    risk: '不支持免费试用；Clash订阅链接需联系客服获取；退款待核实；两档不限时包订单确认页流量额度均显示0GB，与列表100GB／200GB冲突，付款前需核实',
+    summary: '24元月付150GB起，另有44元300GB、84元600GB、134元1000GB月付；96元年付60GB/月、180元年付120GB/月，重置费分别15元、30元。不限时包列表标150元100GB、288元200GB，长期不过期；2026年10月5日对应订单确认页均显示流量额度0GB，并提供130元、268元的重置流量选项，未提交订单或付款，实际交付额度待核实。提供四端客户端教程，iOS需外区Apple ID下载Nextin，输入识别码sywl后使用官网账号登录。常规套餐标注不限制同时使用客户端数量，IPLC、1倍率、晚高峰不限速、原生IP、ChatGPT/TikTok与流媒体支持均为商家说明，未新增实测。不支持免费试用；客服可提供Clash订阅链接，退款待核实。',
     informationSources: [
       { name: '闪跃试用与Clash订阅规则（站长补充）', url: '/posts/shanyue-review-2026/', checkedAt: '2026-09-27', link: false },
       { name: '闪跃套餐页', url: 'https://kkj.flashleaptt.xyz/#/plans', checkedAt: '2026-09-27', link: false },
+      { name: '闪跃两档不限时包列表与订单确认页（未付款）', url: 'https://kkj.flashleaptt.xyz/?code=msdAwmER#/plans', checkedAt: '2026-10-05', link: false },
       { name: '闪跃四端客户端知识库', url: 'https://kkj.flashleaptt.xyz/#/knowledge', checkedAt: '2026-09-27', link: false },
       { name: '闪跃官方客户端下载', url: 'https://kkj.flashleaptt.xyz/#/dashboard', checkedAt: '2026-09-27', link: false },
     ],
@@ -422,10 +423,10 @@ export const airportData: AirportData[] = [
   {
     name: "鲤云", path: "/posts/liyun-review-2026/", image: '/shouye.png',
     price: 5, priceText: '5元/月', traffic: '100GB/月',
-    trial: null, noExpiry: null, dedicatedClient: false, universalSubscription: true,
+    trial: null, noExpiry: false, dedicatedClient: false, universalSubscription: true,
     scenarios: ['cheap', 'clash', 'chatgpt', 'streaming'], status: '资料已核对',
-    risk: "免费试用待核实；周期套餐不退款；59元200GB包永久与限时1年文案冲突",
-    summary: "月付5元100GB、8元200GB、15元400GB；16元季付128GB/月、88元年付256GB/月。59元一次性200GB包同时写永久与限时1年，有效期需确认。提供Clash Verge、Clash Meta及Shadowrocket教程；liyun888八折码未核对结算，周期套餐明确不退款。",
+    risk: "免费试用待核实；周期套餐不退款；59元200GB包客服确认有效期1年（站长2026-10-05提供），此前官网含永久文案",
+    summary: "月付5元100GB、8元200GB、15元400GB；16元季付128GB/月、88元年付256GB/月。59元一次性200GB包经站长2026-10-05转述客服确认有效期1年，不计为不限时；此前官网同时写永久与限时1年。提供Clash Verge、Clash Meta及Shadowrocket教程；liyun888八折码未核对结算，周期套餐明确不退款。",
     subscriptionClients: ['Clash Verge', 'Clash Meta', 'Shadowrocket'],
     informationSources: [
       { name: '鲤云套餐页', url: 'https://ly888.liydl.com:8888/#/plan', checkedAt: '2026-09-28', link: false },
@@ -452,11 +453,11 @@ export const airportData: AirportData[] = [
     price: 9, priceText: '9元/月', traffic: '128GB/月',
     trial: null, noExpiry: true, dedicatedClient: false, universalSubscription: true,
     scenarios: ['cheap', 'clash', 'chatgpt', 'streaming'], status: '资料已核对',
-    risk: "免费试用及普通套餐退款待核实；不限时额度单位、365天包刷新和特惠计费周期文案冲突",
-    summary: "月付9元128GB、15元256GB、29元512GB；18元季付64GB/月、88元年付100GB/月。59元100GB不限时包同时写100G/月，49.9元365天200GB包又写每30天刷新；39元及99元特惠卡片半年付与正文年付冲突。提供Clash Verge、Clash Meta和Shadowrocket教程；特惠明确不退款。",
+    risk: "免费试用及普通套餐退款待核实；59元不限时包额度单位、49.9元365天包刷新量不清楚；特惠说明仅支持年付与订单页可选半年和一年冲突",
+    summary: "月付9元128GB、15元256GB、29元512GB；18元季付64GB/月、88元年付100GB/月。10月5日订单页确认：59元一次性不限时包仍写100G/月，49.9元365天200GB包仍写每30天刷新；64G特惠半年39元/一年79元，200G特惠半年99元/一年198元，说明文字却仍写仅支持年付。提供Clash Verge、Clash Meta和Shadowrocket教程；特惠明确不退款。",
     subscriptionClients: ['Clash Verge', 'Clash Meta', 'Shadowrocket'],
     informationSources: [
-      { name: '秒秒云套餐页', url: 'https://m3.mouhiojl.com/#/shop', checkedAt: '2026-09-27', link: false },
+      { name: '秒秒云套餐与订单确认页', url: 'https://m1.mmycnm.com/#/shop', checkedAt: '2026-10-05', link: false },
       { name: '秒秒云客户端教程', url: 'https://m3.mouhiojl.com/#/docs', checkedAt: '2026-09-27', link: false },
       { name: '秒秒云官网邀请入口', url: 'https://m3.mouhiojl.com/#/register?code=kRQzsnp3', checkedAt: '2026-09-27' },
     ],
@@ -478,10 +479,10 @@ export const airportData: AirportData[] = [
   {
     name: "熊猫cloud", path: "/posts/xiongmaocloud-review-2026/", image: '/shouye.png',
     price: 6, priceText: '6元/月', traffic: '300GB/月',
-    trial: null, noExpiry: null, dedicatedClient: false, universalSubscription: true,
+    trial: null, noExpiry: false, dedicatedClient: false, universalSubscription: true,
     scenarios: ['cheap', 'clash', 'chatgpt', 'streaming'], status: '资料已核对',
-    risk: "免费试用待核实；套餐不退款；66元600GB不限时名称与365天正文冲突",
-    summary: "月付6元300GB、10元600GB、15元1200GB；24元季付500GB/月，限3至5台设备。25.9元500GB总量包365天有效；66元600GB商品名称写不限时，正文写限时365天。支持Clash、Clash Verge、Clash Meta及Shadowrocket订阅；套餐不退款，流媒体与AI支持为商家说明。",
+    risk: "免费试用待核实；套餐不退款；66元600GB包客服确认有效期1年（站长2026-10-05提供），此前官网商品名写不限时",
+    summary: "月付6元300GB、10元600GB、15元1200GB；24元季付500GB/月，限3至5台设备。25.9元500GB总量包365天有效；66元600GB包经站长2026-10-05转述客服确认有效期1年，不计为不限时；此前官网商品名称写不限时，正文写限时365天。支持Clash、Clash Verge、Clash Meta及Shadowrocket订阅；套餐不退款，流媒体与AI支持为商家说明。",
     subscriptionClients: ['Clash Verge', 'Clash Meta', 'Shadowrocket'],
     informationSources: [
       { name: '熊猫cloud套餐页', url: 'https://cl888.cailudl.com:9999/#/shop', checkedAt: '2026-09-27', link: false },
@@ -497,7 +498,7 @@ export const airportData: AirportData[] = [
       "priceText": "20元/月",
       "traffic": "150GB/月",
       "trial": false,
-      "noExpiry": true,
+      "noExpiry": null,
       "dedicatedClient": false,
       "universalSubscription": true,
       "scenarios": [
@@ -506,8 +507,8 @@ export const airportData: AirportData[] = [
           "streaming"
       ],
       "status": "资料已核对",
-      "risk": "不支持免费试用；套餐不退款；仅限5台个人设备；不限时商品标题与每月额度正文冲突",
-      "summary": "月付20元150GB、40元300GB、79元600GB，1倍率、5台设备，购买日重置且不累积。78元50GB与119元100GB不限时商品正文又写每月流量，单位和刷新待核实，暂不计算单价。Windows教程提供Clash Verge Rev及AnyTLS；ChatGPT和流媒体支持为官网声明，未新增实测。2026年9月28日站长补充确认不支持免费试用。",
+      "risk": "不支持免费试用；套餐不退款；仅限5台个人设备；标注不限时的商品与每月额度正文冲突，购后有效期待核实；新购套餐会替换当前有效套餐",
+      "summary": "月付20元150GB、40元300GB、79元600GB，1倍率、5台设备，三款周期套餐购买日重置且不累积。2026年10月5日复核78元50GB与119元100GB商品卡片及订单页：均一次性付款，名称写不限时，权益却写每月流量；【限时套餐】销售窗口、购后有效期、一次总量或按月补充规则均待核实，暂不计算单价。两档订单页提示新购套餐替换当前有效套餐。Windows教程提供Clash Verge Rev及AnyTLS；ChatGPT和流媒体支持为官网声明，未新增实测。2026年9月28日站长补充确认不支持免费试用。",
       "subscriptionClients": [
           "Clash Verge Rev"
       ],
@@ -516,6 +517,12 @@ export const airportData: AirportData[] = [
               "name": "云图套餐页",
               "url": "https://ytjcok.com/#/shop",
               "checkedAt": "2026-09-28",
+              "link": false
+          },
+          {
+              "name": "云图78元与119元商品卡片及订单确认页（站长复核）",
+              "url": "https://ytjcok.com/#/shop",
+              "checkedAt": "2026-10-05",
               "link": false
           },
           {
@@ -791,7 +798,7 @@ export const mainRecommendationData = mainRecommendationNames.map((name) => {
 // Date of the last full review; partial updates retain their per-source checkedAt dates.
 export const airportDataLastReviewed = '2026-08-19'
 // Advance for actual changes to current data or its classification, not historical test dates.
-export const airportDataLastModified = '2026-10-04'
+export const airportDataLastModified = '2026-10-05'
 
 export const getAirportPriceMetrics = (airports: readonly AirportData[]) => {
   const visible = airports.filter(isVisibleAirport)

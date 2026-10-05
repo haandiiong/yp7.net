@@ -19,6 +19,17 @@ const replaceServiceFact = (service, name, value) => {
   )).join('\n')
 }
 
+test('ChatGPT and streaming lists contain only airports with Siilas original records', () => {
+  const recordedNames = [
+    'Flybit', '拼好连', '光年梯', 'cocoduck', '网际快车',
+    '全球云', 'XSUS', 'xxyun', '边缘节点',
+  ]
+  for (const key of ['chatgpt', 'streaming']) {
+    assert.deepEqual(airportCollections[key].items.map((airport) => airport.name), recordedNames)
+    assert.ok(!airportCollections[key].items.some((airport) => airport.name === 'U1S1'))
+  }
+})
+
 test('page candidates, public collections and Schema preserve the editorial names and order', () => {
   for (const collection of Object.values(airportCollections).filter((item) => item.sourceFile)) {
     const source = readFileSync(collection.sourceFile, 'utf8')

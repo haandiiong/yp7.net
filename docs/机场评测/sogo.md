@@ -1,7 +1,7 @@
 ---
 title: sogo机场套餐与客户端下载：25元150GB、98元年付与不限时流量
 createTime: 2026/05/12
-dateModified: 2026/09/28
+dateModified: 2026/10/05
 permalink: /posts/sogo-review-2026/
 tags:
   - sogo机场
@@ -15,7 +15,7 @@ description: sogo机场月付25元150GB起，另有98元年付60GB/月与120元1
 
 > **测试资料来源：** 自2026年8月18日起，yp7.net 不再自行测试。当前表现可参考 [Siilas 测速中心](https://siilas.com/test/) 对应日期的记录；本站旧记录仅作历史资料。用户投稿另标来源、测试时间与环境，不代表本站复测。
 
-更新时间：2026年9月28日
+更新时间：2026年10月5日（仅同步相关阅读；套餐与客户端资料未重新核验）
 
 sogo机场目前提供 **5款周期套餐和4款不限时套餐**。最低月付为25元150GB，年付小包为98元、每月60GB；不限时套餐从120元120GB起。后台提供Android、Windows、macOS和iOS客户端入口，教程以客户端内登录官网账号为主。
 
@@ -153,4 +153,4 @@ sogo不支持免费试用，站长于2026年9月27日补充确认。退款规则
 - [机场推荐方法与测试数据来源](/methodology/)
 - [一翻云机场怎么样？](/posts/yifanyun-review-2026/)
 - [宇宙云机场怎么样？](/posts/yuzhoucloud-review-2026/)
-- [环球梯机场怎么样？](/posts/huanqiuti-review-2026/)
+- [光年梯机场怎么样？](/posts/guangnianti-review-2026/)

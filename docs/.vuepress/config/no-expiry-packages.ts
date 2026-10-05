@@ -20,7 +20,7 @@ const listed = (priceCny: number, trafficGb: number, deviceLimit: string, validi
 export const noExpiryPackages: Record<string, NoExpiryPackage> = {
   '/posts/yuntu-review-2026/': {
     priceCny: 78, trafficGb: null, priceText: '78元', trafficText: '标题50GB／正文每月50GB（冲突）', status: 'conflicting',
-    deviceLimit: '5台', validity: '商品名不限时【限时套餐】；流量周期冲突，使用期限待确认', checkedAt: '2026-09-28',
+    deviceLimit: '5台', validity: '两档订单页均写每月流量且提示新购替换现有套餐；销售窗口、购后有效期与刷新规则未明', checkedAt: '2026-10-05',
   },
   '/posts/lingmaowangluo-review-2026/': listed(100, 100, '不限客户端数量', '不限时，用完为止；手动重置9折，基数待核实', '2026-09-28'),
   '/posts/firefly-review-2026/': listed(100, 100, '不限时档未注明', '永久不过期，用完为止；续购规则待核实', '2026-09-28'),
@@ -29,20 +29,12 @@ export const noExpiryPackages: Record<string, NoExpiryPackage> = {
     trafficText: '标称1000GB／10倍计费折合100GB',
   },
   '/posts/wuyoulianjie-review-2026/': listed(98, 100, '待核实', '标注永久不限时；重置与续购规则待核实', '2026-09-28'),
-  '/posts/liyun-review-2026/': {
-    priceCny: 59, trafficGb: 200, priceText: '59元', trafficText: '200GB', status: 'conflicting',
-    deviceLimit: '3台同时在线', validity: '永久与限时1年文案冲突；用完作废', checkedAt: '2026-09-28',
-  },
   '/posts/shanshuiyun-review-2026/': listed(99, 100, '3台同时在线', '不限时；用完为止，续购规则待核实', '2026-09-27'),
   '/posts/miaomiaoyun-review-2026/': {
     priceCny: 59, trafficGb: null, priceText: '59元', trafficText: '商品100GB／正文100GB每月（冲突）', status: 'conflicting',
-    deviceLimit: '3台同时在线', validity: '标注不限时；流量单位与刷新规则需确认', checkedAt: '2026-09-27',
+    deviceLimit: '3台同时在线', validity: '10月5日订单页标注不限时但也写100G/月；总量及刷新规则待确认', checkedAt: '2026-10-05',
   },
   '/posts/jinyun-review-2026/': listed(99, 100, '3台同时在线', '不限时；用完作废，不重置', '2026-09-27'),
-  '/posts/xiongmaocloud-review-2026/': {
-    priceCny: 66, trafficGb: 600, priceText: '66元', trafficText: '600GB', status: 'conflicting',
-    deviceLimit: '3台同时在线', validity: '商品名称不限时／正文365天（冲突）；用完作废', checkedAt: '2026-09-27',
-  },
   '/posts/jiuyun-review-2026/': listed(36, 100, '3台同时在线', '不限时；不重置，用完作废', '2026-09-22'),
   '/posts/quanqiuyun/': listed(100, 100, '不限时档待核实', '无到期日；不自动重置', '2026-09-11'),
   '/posts/wangji-kuaiche-review/': listed(6.8, 20, '不限设备数', '不限时；不按月清零，用完为止', '2026-09-10'),
@@ -81,8 +73,8 @@ export const noExpiryPackages: Record<string, NoExpiryPackage> = {
   '/posts/yinxingren-review-2026/': listed(229, 160, '详情1台／卡片不限（冲突）', '无时间限制；设备规则需先确认', '2026-09-26'),
   '/posts/kuajieyun-review-2026/': listed(200, 300, '不限设备登录数', '长期有效；不自动刷新，重置180元', '2026-09-27'),
   '/posts/shanyue-review-2026/': {
-    priceCny: 150, trafficGb: null, priceText: '150元', trafficText: '列表100GB／订单0GB（冲突）', status: 'conflicting',
-    deviceLimit: '不限时档未注明', validity: '标注不限时；重置130元，先确认实际额度', checkedAt: '2026-09-27',
+    priceCny: 150, trafficGb: null, priceText: '150元', trafficText: '列表100GB／订单确认页0GB（冲突）', status: 'conflicting',
+    deviceLimit: '不限时档未注明', validity: '标注不限时；订单确认页重置选项130元，交付额度待核实', checkedAt: '2026-10-05',
   },
 }
 

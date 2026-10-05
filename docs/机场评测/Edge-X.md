@@ -1,7 +1,7 @@
 ---
 title: Edge-X机场套餐与客户端指南：22.8元200GB、全年总量包与退款规则
 createTime: 2026/09/27
-dateModified: 2026/09/28
+dateModified: 2026/10/05
 permalink: /posts/edge-x-review-2026/
 tags:
   - Edge-X机场
@@ -11,7 +11,7 @@ tags:
 description: Edge-X机场月付22.8元200GB起，全年800GB包168元起。整理6款套餐、月度与年度流量重置区别、限条件退款、双节优惠，以及Windows、Android、Mac、iOS Nextin和Clash等通用订阅使用方法。
 ---
 
-更新时间：2026年9月28日。套餐、公告与客户端资料于同日核对；不支持免费试用由站长同日补充确认。
+更新时间：2026年10月5日（仅同步榜单归属）。套餐、公告与客户端资料于9月28日核对；不支持免费试用由站长于9月28日补充确认。
 
 **Edge-X机场循环套餐22.8元/月、200GB/月起；全年总量包168元/年、800GB起。** 循环套餐每月订单日重置流量，全年包每年订单日重置，全年800GB是年度总量，有年度有效期。官网提供专属客户端和通用订阅，不支持免费试用。
 
@@ -179,8 +179,6 @@ Nextin识别码 `edgex` 用于选择服务；注册入口中的邀请码用于�
 
 - [机场大全](/posts/jichang-heji/)
 - [Clash机场榜](/rankings/clash/)
-- [ChatGPT机场榜](/rankings/chatgpt/)
-- [流媒体机场榜](/rankings/streaming/)
 - [专属客户端机场榜](/rankings/dedicated-client/)
 - [机场风险监测](/risk-monitor/)
 

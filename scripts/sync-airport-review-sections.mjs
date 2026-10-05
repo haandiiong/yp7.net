@@ -216,7 +216,7 @@ const renderMembershipSection = (airport, hiddenAirportStatuses, collections) =>
   ].join('\n')
 }
 
-const renderRelatedSection = (airport, relatedAirportsByPath, displayNameByPath, hiddenAirportStatuses) => {
+const renderRelatedSection = (airport, relatedAirportsByPath, displayNameByPath, hiddenAirportStatuses, collections) => {
   if (hiddenAirportStatuses.has(airport.status)) {
     return [
       '## 相关阅读',
@@ -231,10 +231,14 @@ const renderRelatedSection = (airport, relatedAirportsByPath, displayNameByPath,
   }
 
   const peerAirports = relatedAirportsByPath.get(airport.path) || []
+  const membershipPaths = new Set(getAirportMembershipLinks(airport, collections, hiddenAirportStatuses).map((item) => item.link))
 
   const primaryScenarioLink = airport.scenarios
     .map((scenario) => scenarioRankingLinks[scenario])
-    .find(Boolean)
+    .find((link) => link && (
+      !['/rankings/chatgpt/', '/rankings/streaming/'].includes(link.link)
+      || membershipPaths.has(link.link)
+    ))
 
   const links = uniqueLinks([
     { label: '机场推荐：2026场景筛选与风险提示', link: '/posts/jichang-tuijian/' },
@@ -325,7 +329,7 @@ const syncReviewSections = () => {
     const displayName = displayNameByPath.get(normalizeRoute(airport.path)) || airport.name
     const evidenceSection = renderEvidenceSection(airport, airportDataLastReviewed, displayName, hiddenAirportStatuses)
     const membershipSection = renderMembershipSection(airport, hiddenAirportStatuses, airportCollections)
-    const relatedSection = renderRelatedSection(airport, relatedAirportsByPath, displayNameByPath, hiddenAirportStatuses)
+    const relatedSection = renderRelatedSection(airport, relatedAirportsByPath, displayNameByPath, hiddenAirportStatuses, airportCollections)
     const withoutManagedBottom = stripManagedBottomSections(page.content)
     const withEvidence = upsertEvidenceSection(withoutManagedBottom, evidenceSection)
     let next = `${withEvidence.trimEnd()}\n\n${membershipSection}\n\n${relatedSection}\n`

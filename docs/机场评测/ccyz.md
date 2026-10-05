@@ -1,7 +1,7 @@
 ---
 title: CCYZ机场套餐与使用指南：49.9元季付、设备限制与Clash订阅
 createTime: 2026/04/23
-dateModified: 2026/09/28
+dateModified: 2026/10/05
 permalink: /posts/ccyz-review-2026/
 tags:
   - CCYZ机场
@@ -12,7 +12,7 @@ tags:
 description: CCYZ机场常规套餐49.9元季付起，Lite提供150GB月流量、5台设备；另有永久550GB套餐。整理季度与年度价格、设备限制、第三方客户端、Clash通用订阅和适合人群。
 ---
 
-更新时间：2026年9月28日
+更新时间：2026年10月5日（仅同步榜单归属；套餐资料沿用原复核日期）
 
 ## CCYZ机场怎么样？先看付款周期与客户端
 
@@ -112,14 +112,13 @@ Lite 的150GB流量按每月订单日重置，当月未使用的额度不累计�
 
 - [机场大全](/posts/jichang-heji/)
 - [Clash机场榜](/rankings/clash/)
-- [流媒体机场榜](/rankings/streaming/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [机场风险监测](/risk-monitor/)
 
 ## 相关阅读
 
 - [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
-- [流媒体机场榜](/rankings/streaming/)
+- [Clash机场榜](/rankings/clash/)
 - [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)

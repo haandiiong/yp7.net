@@ -1,7 +1,7 @@
 ---
 title: Firefly机场套餐与客户端指南：25元150GB月付、96元年付与不限时
 createTime: 2026/09/28
-dateModified: 2026/09/28
+dateModified: 2026/10/05
 permalink: /posts/firefly-review-2026/
 tags:
   - Firefly机场
@@ -173,8 +173,6 @@ Nextin识别码为 `firefly`。按教程使用外区Apple ID下载，填写识�
 
 - [机场大全](/posts/jichang-heji/)
 - [Clash机场榜](/rankings/clash/)
-- [ChatGPT机场榜](/rankings/chatgpt/)
-- [流媒体机场榜](/rankings/streaming/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [专属客户端机场榜](/rankings/dedicated-client/)
 - [机场风险监测](/risk-monitor/)
@@ -182,7 +180,7 @@ Nextin识别码为 `firefly`。按教程使用外区Apple ID下载，填写识�
 ## 相关阅读
 
 - [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
-- [ChatGPT机场榜](/rankings/chatgpt/)
+- [Clash机场榜](/rankings/clash/)
 - [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)

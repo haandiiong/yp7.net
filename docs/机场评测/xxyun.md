@@ -1,7 +1,7 @@
 ---
 title: xxyun机场怎么样？2026套餐价格、官方客户端与使用限制
 createTime: 2026/04/23
-dateModified: 2026/10/03
+dateModified: 2026/10/05
 permalink: /posts/xxyun-review-2026/
 tags:
   - xxyun机场
@@ -289,6 +289,7 @@ xxyun 月付9.99元起、100GB，需使用官方客户端。预算有限且接�
 - [机场推荐](/posts/jichang-tuijian/)
 - [机场大全](/posts/jichang-heji/)
 - [低价机场榜](/rankings/cheap/)
+- [ChatGPT机场榜](/rankings/chatgpt/)
 - [流媒体机场榜](/rankings/streaming/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [专属客户端机场榜](/rankings/dedicated-client/)

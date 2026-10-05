@@ -1,7 +1,7 @@
 ---
 title: 极速Cloud机场套餐与订阅指南：新人8.9元、长期30元起及10倍流量
 createTime: 2026/09/28
-dateModified: 2026/09/28
+dateModified: 2026/10/05
 permalink: /posts/jisucloud-review-2026/
 tags:
   - 极速Cloud机场
@@ -193,8 +193,6 @@ description: 极速Cloud机场全部套餐标注10倍倍率，新人8.9元100G�
 - [机场大全](/posts/jichang-heji/)
 - [低价机场榜](/rankings/cheap/)
 - [Clash机场榜](/rankings/clash/)
-- [ChatGPT机场榜](/rankings/chatgpt/)
-- [流媒体机场榜](/rankings/streaming/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [机场风险监测](/risk-monitor/)
 

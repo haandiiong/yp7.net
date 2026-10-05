@@ -76,7 +76,7 @@ test('a conflicting package must never acquire a computed unit price', () => {
   }
 })
 
-test('contradictory validity stays unknown across the summary, exports and Service schema', (t) => {
+test('one-year validity and unresolved no-expiry claims stay consistent across summaries and exports', (t) => {
   const dest = mkdtempSync(join(tmpdir(), 'yp7-conflicting-validity-'))
   t.after(() => rmSync(dest, { recursive: true, force: true }))
   generateAirportDataFiles({ dir: { dest: (file = '') => join(dest, file) } })
@@ -89,20 +89,19 @@ test('contradictory validity stays unknown across the summary, exports and Servi
     markdownTables(read('airports.md'))[0],
     htmlTables(read('airports.html'))[0],
   ]
-  assert.equal(airportMetrics.noExpiryCount, 37)
-  assert.equal(airportMetrics.noExpiryUnverifiedCount, 2)
-  assert.equal(airportCollections.noExpiry.items.length, 39)
+  assert.equal(airportMetrics.noExpiryCount, 36)
+  assert.equal(airportMetrics.noExpiryUnverifiedCount, 1)
+  assert.equal(airportCollections.noExpiry.items.length, 37)
   for (const name of ['鲤云', '熊猫cloud']) {
     const airport = airportData.find((item) => item.name === name)
-    assert.equal(airport.noExpiry, null)
-    assert.equal(getNoExpiryPackage(airport.path).status, 'conflicting')
-    assert.equal(getNoExpiryPackage(airport.path).unitPriceCnyPerGb, null)
-    assert.equal(data.airports.find((item) => item.name === name).noExpiry, null)
-    assert.equal(rankings.rankings.noExpiry.find((item) => item.name === name).noExpiry, null)
+    assert.equal(airport.noExpiry, false)
+    assert.equal(noExpiryPackages[airport.path], undefined)
+    assert.equal(data.airports.find((item) => item.name === name).noExpiry, false)
+    assert.equal(rankings.rankings.noExpiry.some((item) => item.name === name), false)
     for (const rows of tables) {
       const row = rows.find((item) => item.cells['机场'] === name)
       const column = '不限时' in row.cells ? '不限时' : '不限时套餐'
-      assert.equal(row.cells[column], '待核实')
+      assert.ok(['❌', '不支持'].includes(row.cells[column]))
       assert.deepEqual(validateAirportRows([row], [airport], 'validity', { sectionLinks: true }), [])
       const stale = structuredClone(row)
       stale.cells[column] = '支持'
@@ -110,12 +109,28 @@ test('contradictory validity stays unknown across the summary, exports and Servi
     }
     const schema = getPageSchema({ path: airport.path, title: name, frontmatter: {}, data: {}, content: '' })
     const service = schema['@graph'].find((item) => item['@type'] === 'Service')
-    assert.match(service.description, /不限时套餐：待核实/)
+    assert.match(service.description, /不限时套餐：不支持/)
     assert.deepEqual(validateServiceSchema(service, airport, 'validity'), [])
   }
+  const yunTu = airportData.find((item) => item.name === '云图')
+  assert.equal(yunTu.noExpiry, null)
+  assert.equal(getNoExpiryPackage(yunTu.path).status, 'conflicting')
+  assert.equal(getNoExpiryPackage(yunTu.path).unitPriceCnyPerGb, null)
+  assert.equal(data.airports.find((item) => item.name === '云图').noExpiry, null)
+  assert.equal(rankings.rankings.noExpiry.find((item) => item.name === '云图').noExpiry, null)
+  for (const rows of tables) {
+    const row = rows.find((item) => item.cells['机场'] === '云图')
+    const column = '不限时' in row.cells ? '不限时' : '不限时套餐'
+    assert.equal(row.cells[column], '待核实')
+    assert.deepEqual(validateAirportRows([row], [yunTu], 'validity', { sectionLinks: true }), [])
+  }
+  const yunTuSchema = getPageSchema({ path: yunTu.path, title: '云图', frontmatter: {}, data: {}, content: '' })
+  const yunTuService = yunTuSchema['@graph'].find((item) => item['@type'] === 'Service')
+  assert.match(yunTuService.description, /不限时套餐：待核实/)
+  assert.deepEqual(validateServiceSchema(yunTuService, yunTu, 'validity'), [])
   assert.equal(data.lastModified, airportDataLastModified)
   assert.equal(data.lastReviewed, airportDataLastReviewed)
-  assert.equal(airportDataLastModified, '2026-10-04')
+  assert.equal(airportDataLastModified, '2026-10-05')
   assert.equal(airportDataLastReviewed, '2026-08-19')
   const dataset = JSON.parse(read('airports.html').match(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)[1])
   assert.equal(dataset.dateModified, airportDataLastModified)

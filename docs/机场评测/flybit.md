@@ -1,7 +1,7 @@
 ---
 title: Flybit机场怎么样？套餐价格、Clash订阅与客户端支持
 createTime: 2026/05/12
-dateModified: 2026/10/03
+dateModified: 2026/10/05
 lastUpdated: false
 permalink: /posts/flybit-review-2026/
 tags:
@@ -17,7 +17,7 @@ description: Flybit机场怎么样？整理15元起128GB月付、季付年付与
 
 > **测试资料来源：** 自2026年8月18日起，yp7.net 不再自行测试。当前表现可参考 [Siilas 测速中心](https://siilas.com/test/) 对应日期的记录；本站旧记录仅作历史资料。用户投稿另标来源、测试时间与环境，不代表本站复测。
 
-更新时间：2026年10月3日（补充横向比较入口；1天2GB试用由站长于9月27日补充，套餐标价核对于9月8日，客户端入口与公开说明核对于9月9日）
+更新时间：2026年10月5日（仅同步榜单归属；10月3日补充横向比较入口；1天2GB试用由站长于9月27日补充，套餐标价核对于9月8日，客户端入口与公开说明核对于9月9日）
 
 ## 使用与购买说明
 
@@ -327,6 +327,8 @@ Flybit 提供多种付费周期、不限时流量包及7个客户端导入入口
 - [机场推荐](/posts/jichang-tuijian/)
 - [机场大全](/posts/jichang-heji/)
 - [Clash机场榜](/rankings/clash/)
+- [ChatGPT机场榜](/rankings/chatgpt/)
+- [流媒体机场榜](/rankings/streaming/)
 - [免费试用机场榜](/rankings/trial/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [机场风险监测](/risk-monitor/)

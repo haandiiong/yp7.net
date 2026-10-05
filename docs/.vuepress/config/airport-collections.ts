@@ -37,6 +37,14 @@ const visibleWhere = (predicate: (airport: AirportData) => boolean) => (airports
   airports.filter((airport) => isVisibleAirport(airport) && predicate(airport))
 )
 
+// https://siilas.com/airport/ "本站实测" (checked 2026-10-05).
+// Both scenario pages use the same nine services with dated original records;
+// a Siilas source-only profile or yp7.net historical performance is not enough.
+const siilasRecordedNames = [
+  'Flybit', '拼好连', '光年梯', 'cocoduck', '网际快车',
+  '全球云', 'XSUS', 'xxyun', '边缘节点',
+] as const
+
 const definitions = {
   mainRecommendation: {
     name: '2026机场综合推荐顺序', dataTitle: '综合推荐顺序', ordered: true,
@@ -87,18 +95,13 @@ const definitions = {
     name: '2026 ChatGPT机场筛选', dataTitle: 'ChatGPT 机场',
     pagePath: '/rankings/chatgpt/', sourceFile: 'docs/机场榜单/ChatGPT机场榜.md',
     heading: '## ChatGPT机场候选',
-    select: visibleWhere((airport) => airport.scenarios.includes('chatgpt')),
+    select: (airports) => selectNames(airports, siilasRecordedNames),
   },
   streaming: {
     name: '2026流媒体机场筛选', dataTitle: '流媒体机场',
     pagePath: '/rankings/streaming/', sourceFile: 'docs/机场榜单/流媒体机场榜.md',
     heading: '## 流媒体机场候选',
-    select: (airports) => selectNames(airports, [
-      'xxyun', '唯兔云', '光年梯', '全球云', 'ccyz', '速界', '边缘节点', '二猫云', '隐形人',
-      'U1S1', '瞬云', '星岛梦', 'cocoduck', '快狸', '闪电鼠', '环球梯', '跨界云', 'Edge-X', '闪跃',
-      '无忧链接', '榴莲云', '鲤云', '山水云', '秒秒云', '锦云', '熊猫cloud',
-      '云图', '灵猫网络', 'Firefly', '神行加速', '极速Cloud', '杏花云',
-    ], (airport) => airport.scenarios.includes('streaming')),
+    select: (airports) => selectNames(airports, siilasRecordedNames),
   },
   trial: {
     name: '2026免费试用机场筛选', dataTitle: '免费试用机场',

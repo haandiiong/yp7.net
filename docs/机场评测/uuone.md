@@ -1,7 +1,7 @@
 ---
 title: UUONE机场怎么样？19元150GB月付、99元不限时与订阅教程
 createTime: 2026/04/23
-dateModified: 2026/09/28
+dateModified: 2026/10/05
 permalink: /posts/uuone-review-2026/
 tags:
   - UUONE机场
@@ -11,7 +11,7 @@ tags:
 description: UUONE套餐更新：19元150GB月付起、99元450GB不限时，不支持免费试用。整理4款套餐、300至800Mbps标注带宽、10至20台设备限制及Clash Verge、Clash Meta、Nextin订阅使用说明。
 ---
 
-更新时间：2026年9月28日（免费试用状态补充确认）；套餐与客户端资料核对：2026年9月23日。
+更新时间：2026年10月5日（仅同步榜单归属；免费试用状态于9月28日补充确认）；套餐与客户端资料核对：2026年9月23日。
 
 **UUONE当前月付19元150GB起，另有99元450GB不限时包。** 官网提供第三方客户端教程与订阅导入，本文依据套餐列表、使用文档和仪表盘整理。
 
@@ -117,7 +117,7 @@ description: UUONE套餐更新：19元150GB月付起、99元450GB不限时，不
 ## 相关阅读
 
 - [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
-- [流媒体机场榜](/rankings/streaming/)
+- [Clash机场榜](/rankings/clash/)
 - [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)

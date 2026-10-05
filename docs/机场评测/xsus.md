@@ -1,7 +1,7 @@
 ---
 title: XSUS机场怎么样？12元168GB月付、不限时与IEPL套餐说明
 createTime: 2026/04/23
-dateModified: 2026/09/28
+dateModified: 2026/10/05
 permalink: /posts/xsus-review-2026/
 tags:
   - XSUS机场
@@ -11,7 +11,7 @@ tags:
 description: XSUS套餐更新：12元168GB月付起、65元188GB不限时起，另有IEPL季付套餐。整理10款套餐、5个IP限制、客户端、流量重置和无法原路退款规则。
 ---
 
-更新时间：2026年9月28日。套餐与客户端资料核对于9月23日；9月27日站长补充确认XSUS不支持免费试用。
+更新时间：2026年10月5日（仅同步相关阅读）。套餐与客户端资料仍按9月23日的核对记录；9月27日站长补充确认XSUS不支持免费试用，未重新核价或测速。
 
 **XSUS当前月付12元168GB起，另有不限时流量包和IEPL企业专线套餐。** 本文按官网套餐、购买须知、帮助中心及仪表盘整理，适合比较月度流量、备用流量包与第三方订阅的用户。
 
@@ -114,6 +114,8 @@ description: XSUS套餐更新：12元168GB月付起、65元188GB不限时起，�
 
 - [机场大全](/posts/jichang-heji/)
 - [低价机场榜](/rankings/cheap/)
+- [ChatGPT机场榜](/rankings/chatgpt/)
+- [流媒体机场榜](/rankings/streaming/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [专属客户端机场榜](/rankings/dedicated-client/)
 - [机场风险监测](/risk-monitor/)
@@ -126,5 +128,5 @@ description: XSUS套餐更新：12元168GB月付起、65元188GB不限时起，�
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [xxyun机场怎么样？](/posts/xxyun-review-2026/)
-- [U1S1机场怎么样？](/posts/u1s1-review-2026/)
-- [唯兔云机场怎么样？](/posts/weituyun/)
+- [坦克云（原坦克加速）机场怎么样？](/posts/tank-review-2026/)
+- [99吧机场怎么样？](/posts/99ba-review-2026/)
