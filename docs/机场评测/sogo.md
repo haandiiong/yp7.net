@@ -152,5 +152,5 @@ sogo不支持免费试用，站长于2026年9月27日补充确认。退款规则
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [一翻云机场怎么样？](/posts/yifanyun-review-2026/)
-- [宇宙云机场怎么样？](/posts/yuzhoucloud-review-2026/)
-- [光年梯机场怎么样？](/posts/guangnianti-review-2026/)
+- [云界线机场怎么样？](/posts/yunjiexian-review-2026/)
+- [Tidal潮汐加速机场怎么样？](/posts/tidal-review-2026/)

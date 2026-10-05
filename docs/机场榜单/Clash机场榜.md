@@ -1,7 +1,7 @@
 ---
 title: Clash机场推荐：2026支持通用订阅的机场节点对比
 createTime: 2026/06/04
-dateModified: 2026/09/28
+dateModified: 2026/10/06
 permalink: /rankings/clash/
 tags:
   - Clash机场
@@ -14,7 +14,7 @@ description: 2026 Clash与通用订阅机场筛选，比较价格、流量、试
 
 > **测试资料来源：** 自2026年8月18日起，yp7.net 不再自行测试。当前表现可参考 [Siilas 测速中心](https://siilas.com/test/) 对应日期的记录；本站旧记录仅作历史资料。用户投稿另标来源、测试时间与环境，不代表本站复测。
 
-更新时间：2026年9月28日（站长确认榴莲云不支持试用、通用订阅需购买后向客服领取，加入候选且具体格式待确认；站长确认神行加速不支持免费试用，通用订阅需购买订阅后联系客服领取，加入候选；站长确认无忧链接通用订阅需向客服索取，加入候选；云图、无忧链接均不支持试用；此前同日确认灵猫网络、Firefly通用订阅，加入候选；Firefly需向客服索取，两家不支持试用；新增云图、极速Cloud、杏花云对应分类资料；此前9月27日更新：新增闪跃，Clash订阅链接由客服提供且不支持免费试用；新增Edge-X通用订阅与专用配置要求；新增跨界云：注册后联系客服领20GB试用，通用订阅需购买后联系客服领取；新增宇宙云Clash Mi订阅教程；速界和边缘节点均经站长补充确认不支持通用订阅，不列入候选；新增拼好连通用订阅与FlClash教程，核对迅达导入入口；一翻云经站长补充确认不支持通用订阅，不列入候选；同日新增瞬云、寰宇云与CCYZ资料；其他机场沿用各自复核记录）
+更新时间：2026年10月6日（按站长补充确认AnDy Cloud、Tidal潮汐加速、云界线与极速123不支持免费试用；新增云界线客服领取通用订阅候选，具体格式与客户端兼容先确认。套餐资料沿用10月5日及各机场既有官网核验日期）
 
 > **页面层级：** 本页只承接 Clash 与通用订阅筛选；如果还没有综合候选，请先查看 [2026机场推荐主页面](/posts/jichang-tuijian/)。
 
@@ -27,11 +27,13 @@ description: 2026 Clash与通用订阅机场筛选，比较价格、流量、试
 | 不建议 | 没测试订阅格式就直接长期购买 |
 | 下一步 | 先导入客户端，再测晚高峰常用节点 |
 
-9月27日至28日新增本轮符合条件的机场套餐与客户端资料，免费试用未明确的条目标为待核实。
+10月5日新增的AnDy Cloud、Tidal潮汐加速均提供购买后通用订阅；10月6日站长补充确认两家均不支持免费试用。鲤云、山水云、秒秒云、锦云、熊猫cloud、极速Cloud及杏花云已由站长确认不支持免费试用。
+
+10月5日新增[极速123](/posts/jisu123-review-2026/)，官网第三方客户端教程说明复制订阅地址导入Clash Verge、v2rayN或FlClash；10月6日站长补充确认不支持免费试用。15.99元月付标称1200GB，按6倍计费折合约200GB，入门档限3台；年付118元折合约9.83元/月，但必须全年付款。极速123与已有极速Cloud分别记录，不能混用两家的价格、倍率或设备规则。
 
 ## 筛选口径
 
-候选表按已记录的订阅支持情况整理，顺序不代表速度或兼容性排名。明确有对应教程的客户端列在“适合用户”中；灵猫网络、Firefly、无忧链接、神行加速与榴莲云目前只有通用订阅支持信息，具体格式须先向客服确认。购买后领取、客服索取等条件按每家资料保留。节点访问与晚高峰表现应另查注明日期、地区和测试条件的记录。
+候选表按已记录的订阅支持情况整理，顺序不代表速度或兼容性排名。AnDy Cloud与Tidal潮汐加速都要求购买后取得订阅；云界线经10月6日站长补充确认通用订阅可向客服领取，加入通用订阅候选，具体格式与客户端兼容先确认。明确有对应教程的客户端列在“适合用户”中；云界线、灵猫网络、Firefly、无忧链接、神行加速与榴莲云目前只有通用订阅支持信息，具体格式须先向客服确认。购买后领取、客服索取等条件按每家资料保留。节点访问与晚高峰表现应另查注明日期、地区和测试条件的记录。
 
 ## Clash机场候选
 
@@ -54,19 +56,23 @@ description: 2026 Clash与通用订阅机场筛选，比较价格、流量、试
 | [跨界云](/posts/kuajieyun-review-2026/) | 20元/月 | 120GB/月 | 支持 | 支持 | 购买订阅后联系客服领取通用订阅 |
 | [Edge-X](/posts/edge-x-review-2026/) | 22.8元/月 | 200GB/月 | 不支持 | 支持 | Clash、Surge、Surfboard和Stash用户；按教程关闭DNS覆写 |
 | [闪跃](/posts/shanyue-review-2026/) | 24元/月 | 150GB/月 | 不支持 | 支持 | Clash用户，联系客服获取订阅链接 |
-| [鲤云](/posts/liyun-review-2026/) | 5元/月 | 100GB/月 | 待核实 | 支持 | Clash Verge、Clash Meta及iOS订阅用户；按套餐设备限制 |
-| [山水云](/posts/shanshuiyun-review-2026/) | 12元/月 | 100GB/月 | 待核实 | 支持 | Clash Verge、Clash Meta及iOS订阅用户；按套餐设备限制 |
-| [秒秒云](/posts/miaomiaoyun-review-2026/) | 9元/月 | 128GB/月 | 待核实 | 支持 | Clash Verge、Clash Meta及iOS订阅用户；按套餐设备限制 |
-| [锦云](/posts/jinyun-review-2026/) | 6元/月 | 50GB/月 | 待核实 | 支持 | Clash Verge、Clash Meta及iOS订阅用户；按套餐设备限制 |
-| [熊猫cloud](/posts/xiongmaocloud-review-2026/) | 6元/月 | 300GB/月 | 待核实 | 支持 | Clash Verge、Clash Meta及iOS订阅用户；按套餐设备限制 |
+| [鲤云](/posts/liyun-review-2026/) | 5元/月 | 100GB/月 | 不支持 | 支持 | Clash Verge、Clash Meta及iOS订阅用户；按套餐设备限制 |
+| [山水云](/posts/shanshuiyun-review-2026/) | 12元/月 | 100GB/月 | 不支持 | 支持 | Clash Verge、Clash Meta及iOS订阅用户；按套餐设备限制 |
+| [秒秒云](/posts/miaomiaoyun-review-2026/) | 9元/月 | 128GB/月 | 不支持 | 支持 | Clash Verge、Clash Meta及iOS订阅用户；按套餐设备限制 |
+| [锦云](/posts/jinyun-review-2026/) | 6元/月 | 50GB/月 | 不支持 | 支持 | Clash Verge、Clash Meta及iOS订阅用户；按套餐设备限制 |
+| [熊猫cloud](/posts/xiongmaocloud-review-2026/) | 6元/月 | 300GB/月 | 不支持 | 支持 | Clash Verge、Clash Meta及iOS订阅用户；按套餐设备限制 |
 | [云图](/posts/yuntu-review-2026/) | 20元/月 | 150GB/月 | 不支持 | 支持 | Windows Clash Verge Rev与AnyTLS订阅用户；需确认客户端内核兼容 |
-| [极速Cloud](/posts/jisucloud-review-2026/) | 新人8.9元/月（不可续费）；常规30元/月起 | 新人标称100GB/月，10倍折合10GB；常规折合100GB/月起 | 待核实 | 支持 | Clash Verge用户；先看10倍倍率和新人档不可续费 |
-| [杏花云](/posts/xinghuayun-review-2026/) | 3元/月 | 200GB/月 | 待核实 | 支持 | 低预算Clash Verge用户；留意设备上限与一年总量包 |
+| [极速Cloud](/posts/jisucloud-review-2026/) | 新人15元/月（不可续费）；常规30元/月起 | 新人标称200GB/月，10倍折合20GB；常规折合100GB/月起 | 不支持 | 支持 | Clash Verge用户；先看10倍倍率和新人档不可续费 |
+| [杏花云](/posts/xinghuayun-review-2026/) | 3元/月 | 200GB/月 | 不支持 | 支持 | 低预算Clash Verge用户；留意设备上限与一年总量包 |
 | [灵猫网络](/posts/lingmaowangluo-review-2026/) | 25元/月 | 150GB/月 | 不支持 | 支持 | 通用订阅用户；具体格式与客户端兼容先确认 |
 | [Firefly](/posts/firefly-review-2026/) | 25元/月 | 150GB/月 | 不支持 | 支持 | 通用订阅需向客服索取；具体客户端格式先确认 |
 | [无忧链接](/posts/wuyoulianjie-review-2026/) | 19元/月 | 100GB/月 | 不支持 | 支持 | 通用订阅需向客服索取；具体客户端格式先确认 |
 | [神行加速](/posts/shenxingjiasu-review-2026/) | 23元/月 | 120GB/月 | 不支持 | 支持 | 购买订阅后联系客服领取通用订阅；具体客户端格式先确认 |
 | [榴莲云](/posts/liulianyun-review-2026/) | 24元/月 | 140GB/月 | 不支持 | 支持 | 购买后向客服领取通用订阅；具体格式与客户端兼容先确认 |
+| [AnDy Cloud](/posts/andycloud-review-2026/) | 5元/月 | 100GB/月 | 不支持 | 支持 | 购买后取得订阅；Clash Verge、Android Clash及iOS Clash Mi教程，入门限2台 |
+| [Tidal潮汐加速](/posts/tidal-review-2026/) | 25元/月 | 100GB/月 | 不支持 | 支持 | 购买后用户中心取得订阅；Clash Verge Rev、Clash Meta、Clash Mi及Shadowrocket等用户 |
+| [极速123](/posts/jisu123-review-2026/) | 15.99元/月 | 标称1200GB/月，6倍折合200GB/月 | 不支持 | 支持 | Clash Verge、FlClash等订阅用户；先看6倍扣量与3台入门上限 |
+| [云界线](/posts/yunjiexian-review-2026/) | 卡片22元/月（正文25元，结算待核实） | 150GB/月 | 不支持 | 支持 | 向客服领取通用订阅；具体客户端格式先确认 |
 
 一翻云提供官方客户端及iOS Nextin教程，但经站长补充确认不支持通用订阅，不列入本页候选。拼好连提供1天6GB免费试用，后台支持通用订阅和FlClash导入教程。
 

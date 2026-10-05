@@ -78,7 +78,8 @@ const definitions = {
     heading: '## 低价机场候选',
     select: (airports) => selectNames(airports, [
       '阿达西', '冲上云霄', '九云', '坦克云（原坦克加速）', '拼好连', '99吧', 'xxyun', 'XSUS', 'uuone',
-      '鲤云', '秒秒云', '锦云', '熊猫cloud', '极速Cloud', '杏花云',
+      '鲤云', '秒秒云', '锦云', '熊猫cloud', '杏花云',
+      'AnDy Cloud',
     ], (airport) => airport.price <= 10 || airport.scenarios.includes('cheap')),
   },
   clash: {
@@ -89,6 +90,7 @@ const definitions = {
       'Flybit', '网际快车', '九云', '99吧', '拼好连', 'xxyun', '迅达', '速界', '边缘节点', '坦克云（原坦克加速）',
       '二猫云', 'U1S1', '一翻云', '快狸', 'ccyz', '瞬云', '寰宇云', '宇宙云', '跨界云', 'Edge-X', '闪跃',
       '鲤云', '山水云', '秒秒云', '锦云', '熊猫cloud', '云图', '极速Cloud', '杏花云', '灵猫网络', 'Firefly', '无忧链接', '神行加速', '榴莲云',
+      'AnDy Cloud', 'Tidal潮汐加速', '极速123', '云界线',
     ], (airport) => airport.universalSubscription === true),
   },
   chatgpt: {

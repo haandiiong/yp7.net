@@ -2,17 +2,17 @@
   "site": "yp7.net",
   "url": "https://yp7.net",
   "lastReviewed": "2026-08-19",
-  "lastModified": "2026-10-05",
+  "lastModified": "2026-10-06",
   "metrics": {
-    "count": 52,
+    "count": 56,
     "trialCount": 10,
-    "noExpiryCount": 36,
+    "noExpiryCount": 40,
     "noExpiryUnverifiedCount": 1,
-    "dedicatedClientCount": 36,
-    "universalSubscriptionCount": 37,
+    "dedicatedClientCount": 38,
+    "universalSubscriptionCount": 41,
     "cheapUnderTenCount": 13,
-    "averagePrice": 16.8,
-    "regularCheapUnderTenCount": 12,
+    "averagePrice": 16.9,
+    "regularCheapUnderTenCount": 13,
     "regularAveragePrice": 17.2,
     "salesSampleCount": 17,
     "historicalPerformanceRecordCount": 9,
@@ -283,31 +283,31 @@
     {
       "name": "鲤云",
       "status": "资料已核对",
-      "risk": "免费试用待核实；周期套餐不退款；59元200GB包客服确认有效期1年（站长2026-10-05提供），此前官网含永久文案",
+      "risk": "不支持免费试用；周期套餐不退款；59元200GB包客服确认有效期1年（站长2026-10-05提供），此前官网含永久文案",
       "url": "https://yp7.net/posts/liyun-review-2026/"
     },
     {
       "name": "山水云",
       "status": "资料已核对",
-      "risk": "免费试用及退款待核实；同时在线3台；365天包有到期时间",
+      "risk": "不支持免费试用；退款待核实；同时在线3台；365天包有到期时间",
       "url": "https://yp7.net/posts/shanshuiyun-review-2026/"
     },
     {
       "name": "秒秒云",
       "status": "资料已核对",
-      "risk": "免费试用及普通套餐退款待核实；59元不限时包额度单位、49.9元365天包刷新量不清楚；特惠说明仅支持年付与订单页可选半年和一年冲突",
+      "risk": "不支持免费试用；普通套餐退款待核实；59元不限时包额度单位、49.9元365天包刷新量不清楚；特惠说明仅支持年付与订单页可选半年和一年冲突",
       "url": "https://yp7.net/posts/miaomiaoyun-review-2026/"
     },
     {
       "name": "锦云",
       "status": "资料已核对",
-      "risk": "免费试用待核实；套餐不退款；按套餐限3至5台设备，365天包不等于不限时",
+      "risk": "不支持免费试用；套餐不退款；按套餐限3至5台设备，365天包不等于不限时",
       "url": "https://yp7.net/posts/jinyun-review-2026/"
     },
     {
       "name": "熊猫cloud",
       "status": "资料已核对",
-      "risk": "免费试用待核实；套餐不退款；66元600GB包客服确认有效期1年（站长2026-10-05提供），此前官网商品名写不限时",
+      "risk": "不支持免费试用；套餐不退款；66元600GB包客服确认有效期1年（站长2026-10-05提供），此前官网商品名写不限时",
       "url": "https://yp7.net/posts/xiongmaocloud-review-2026/"
     },
     {
@@ -337,14 +337,38 @@
     {
       "name": "极速Cloud",
       "status": "资料已核对",
-      "risk": "全套餐10倍倍率；新人档不能续费；设备数与知识库通用文案冲突；免费试用待核实",
+      "risk": "全套餐10倍倍率；新人档不能续费；设备数与知识库通用文案冲突；不支持免费试用",
       "url": "https://yp7.net/posts/jisucloud-review-2026/"
     },
     {
       "name": "杏花云",
       "status": "资料已核对",
-      "risk": "免费试用、退款、倍率与月额度重置日期待核实；20元总量包只有一年有效期",
+      "risk": "不支持免费试用；退款、倍率与月额度重置日期待核实；20元总量包只有一年有效期",
       "url": "https://yp7.net/posts/xinghuayun-review-2026/"
+    },
+    {
+      "name": "AnDy Cloud",
+      "status": "资料已核对",
+      "risk": "不支持免费试用；退款、计费倍率与重置费用待核实；订阅导入需先购买；一次性重购覆盖额度，不叠加余量",
+      "url": "https://yp7.net/posts/andycloud-review-2026/"
+    },
+    {
+      "name": "Tidal潮汐加速",
+      "status": "资料已核对",
+      "risk": "不支持免费试用；取消套餐按使用比例退回账户余额，不等于原路退款；年付优惠期限、叠加与结算未验证",
+      "url": "https://yp7.net/posts/tidal-review-2026/"
+    },
+    {
+      "name": "云界线",
+      "status": "资料已核对",
+      "risk": "月付卡片22/40/66元与正文25/45/75元冲突；99元不限时包卡片80GB与正文300GB冲突；不支持免费试用；通用订阅向客服领取，具体格式先确认；退款及优惠结算待核实",
+      "url": "https://yp7.net/posts/yunjiexian-review-2026/"
+    },
+    {
+      "name": "极速123",
+      "status": "资料已核对",
+      "risk": "商品标注6倍扣量；文档与卡片设备数、一次性有效期存在差异；不支持免费试用；月付退款与重置费待核实",
+      "url": "https://yp7.net/posts/jisu123-review-2026/"
     }
   ]
 }

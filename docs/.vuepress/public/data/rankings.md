@@ -1,6 +1,6 @@
 # yp7.net 机场榜单数据
 
-Data updated: 2026-10-05; last full review: 2026-08-19
+Data updated: 2026-10-06; last full review: 2026-08-19
 
 Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现；当前测试数据见 https://siilas.com/test/
 
@@ -65,12 +65,12 @@ Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史�
 | [99吧](https://yp7.net/posts/99ba-review-2026/) | 9.9元/月 | 70GB/月 | 支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 试用观察 |
 | [xxyun](https://yp7.net/posts/xxyun-review-2026/) | 9.99元/月 | 100GB/月 | 不支持 | 支持 | 支持 | 不支持 | B | 2026-06-18 | 72ms | 620-790Mbps | 流媒体观察 |
 | [XSUS](https://yp7.net/posts/xsus-review-2026/) | 12元/月 | 168GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 性价比观察 |
-| [鲤云](https://yp7.net/posts/liyun-review-2026/) | 5元/月 | 100GB/月 | 待核实 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [秒秒云](https://yp7.net/posts/miaomiaoyun-review-2026/) | 9元/月 | 128GB/月 | 待核实 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [锦云](https://yp7.net/posts/jinyun-review-2026/) | 6元/月 | 50GB/月 | 待核实 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [熊猫cloud](https://yp7.net/posts/xiongmaocloud-review-2026/) | 6元/月 | 300GB/月 | 待核实 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [极速Cloud](https://yp7.net/posts/jisucloud-review-2026/) | 新人8.9元/月（不可续费）；常规30元/月起 | 新人标称100GB/月，10倍折合10GB；常规折合100GB/月起 | 待核实 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [杏花云](https://yp7.net/posts/xinghuayun-review-2026/) | 3元/月 | 200GB/月 | 待核实 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [鲤云](https://yp7.net/posts/liyun-review-2026/) | 5元/月 | 100GB/月 | 不支持 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [秒秒云](https://yp7.net/posts/miaomiaoyun-review-2026/) | 9元/月 | 128GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [锦云](https://yp7.net/posts/jinyun-review-2026/) | 6元/月 | 50GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [熊猫cloud](https://yp7.net/posts/xiongmaocloud-review-2026/) | 6元/月 | 300GB/月 | 不支持 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [杏花云](https://yp7.net/posts/xinghuayun-review-2026/) | 3元/月 | 200GB/月 | 不支持 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [AnDy Cloud](https://yp7.net/posts/andycloud-review-2026/) | 5元/月 | 100GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 
 ## 免费试用机场
 
@@ -129,7 +129,11 @@ Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史�
 | [云图](https://yp7.net/posts/yuntu-review-2026/) | 78元 | 标题50GB／正文每月50GB（冲突） | 待核实，不计算 | 5台 | 两档订单页均写每月流量且提示新购替换现有套餐；销售窗口、购后有效期与刷新规则未明 | 2026-10-05 |
 | [灵猫网络](https://yp7.net/posts/lingmaowangluo-review-2026/) | 100元 | 100GB | 1.000元/GB | 不限客户端数量 | 不限时，用完为止；手动重置9折，基数待核实 | 2026-09-28 |
 | [Firefly](https://yp7.net/posts/firefly-review-2026/) | 100元 | 100GB | 1.000元/GB | 不限时档未注明 | 永久不过期，用完为止；续购规则待核实 | 2026-09-28 |
-| [极速Cloud](https://yp7.net/posts/jisucloud-review-2026/) | 329元 | 标称1000GB／10倍计费折合100GB | 3.290元/GB | 3台 | 不限时间，用完为止；10倍计费，单价按折合100GB计算 | 2026-09-28 |
+| [极速Cloud](https://yp7.net/posts/jisucloud-review-2026/) | 329元 | 标称1000GB／10倍计费折合100GB | 3.290元/GB | 3台 | 不限时间，用完为止；10倍计费，单价按折合100GB计算 | 2026-10-05 |
+| [AnDy Cloud](https://yp7.net/posts/andycloud-review-2026/) | 100元 | 1000GB | 0.100元/GB | 10台 | 无过期日，用完即止；重购覆盖新额度，不叠加剩余流量 | 2026-10-05 |
+| [Tidal潮汐加速](https://yp7.net/posts/tidal-review-2026/) | 59元 | 128GB | 0.461元/GB | 不限同时在线设备 | 永久有效，用完为止；续购叠加及退款适用范围待核实 | 2026-10-05 |
+| [云界线](https://yp7.net/posts/yunjiexian-review-2026/) | 99元 | 卡片80GB／正文300GB（冲突） | 待核实，不计算 | 不限客户端数量 | 标注不限时，不按月刷新、用完重购；交付额度待核实；另有199元200GB包 | 2026-10-05 |
+| [极速123](https://yp7.net/posts/jisu123-review-2026/) | 128元 | 标称1000GB／6倍计费折合约166.7GB | 0.768元/GB | 3台 | 不限时间，用完为止；6倍扣量，重购覆盖而不叠加；不支持退款 | 2026-10-05 |
 
 ## 专属客户端机场
 
@@ -171,6 +175,8 @@ Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史�
 | [灵猫网络](https://yp7.net/posts/lingmaowangluo-review-2026/) | 25元/月 | 150GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [Firefly](https://yp7.net/posts/firefly-review-2026/) | 25元/月 | 150GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [神行加速](https://yp7.net/posts/shenxingjiasu-review-2026/) | 23元/月 | 120GB/月 | 不支持 | 不支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [Tidal潮汐加速](https://yp7.net/posts/tidal-review-2026/) | 25元/月 | 100GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [云界线](https://yp7.net/posts/yunjiexian-review-2026/) | 卡片22元/月（正文25元，结算待核实） | 150GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 
 ## Clash 机场
 
@@ -193,19 +199,23 @@ Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史�
 | [跨界云](https://yp7.net/posts/kuajieyun-review-2026/) | 20元/月 | 120GB/月 | 支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [Edge-X](https://yp7.net/posts/edge-x-review-2026/) | 22.8元/月 | 200GB/月 | 不支持 | 不支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [闪跃](https://yp7.net/posts/shanyue-review-2026/) | 24元/月 | 150GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [鲤云](https://yp7.net/posts/liyun-review-2026/) | 5元/月 | 100GB/月 | 待核实 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [山水云](https://yp7.net/posts/shanshuiyun-review-2026/) | 12元/月 | 100GB/月 | 待核实 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [秒秒云](https://yp7.net/posts/miaomiaoyun-review-2026/) | 9元/月 | 128GB/月 | 待核实 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [锦云](https://yp7.net/posts/jinyun-review-2026/) | 6元/月 | 50GB/月 | 待核实 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [熊猫cloud](https://yp7.net/posts/xiongmaocloud-review-2026/) | 6元/月 | 300GB/月 | 待核实 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [鲤云](https://yp7.net/posts/liyun-review-2026/) | 5元/月 | 100GB/月 | 不支持 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [山水云](https://yp7.net/posts/shanshuiyun-review-2026/) | 12元/月 | 100GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [秒秒云](https://yp7.net/posts/miaomiaoyun-review-2026/) | 9元/月 | 128GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [锦云](https://yp7.net/posts/jinyun-review-2026/) | 6元/月 | 50GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [熊猫cloud](https://yp7.net/posts/xiongmaocloud-review-2026/) | 6元/月 | 300GB/月 | 不支持 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [云图](https://yp7.net/posts/yuntu-review-2026/) | 20元/月 | 150GB/月 | 不支持 | 待核实 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [极速Cloud](https://yp7.net/posts/jisucloud-review-2026/) | 新人8.9元/月（不可续费）；常规30元/月起 | 新人标称100GB/月，10倍折合10GB；常规折合100GB/月起 | 待核实 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [杏花云](https://yp7.net/posts/xinghuayun-review-2026/) | 3元/月 | 200GB/月 | 待核实 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [极速Cloud](https://yp7.net/posts/jisucloud-review-2026/) | 新人15元/月（不可续费）；常规30元/月起 | 新人标称200GB/月，10倍折合20GB；常规折合100GB/月起 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [杏花云](https://yp7.net/posts/xinghuayun-review-2026/) | 3元/月 | 200GB/月 | 不支持 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [灵猫网络](https://yp7.net/posts/lingmaowangluo-review-2026/) | 25元/月 | 150GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [Firefly](https://yp7.net/posts/firefly-review-2026/) | 25元/月 | 150GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [无忧链接](https://yp7.net/posts/wuyoulianjie-review-2026/) | 19元/月 | 100GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [神行加速](https://yp7.net/posts/shenxingjiasu-review-2026/) | 23元/月 | 120GB/月 | 不支持 | 不支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [榴莲云](https://yp7.net/posts/liulianyun-review-2026/) | 24元/月 | 140GB/月 | 不支持 | 不支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [AnDy Cloud](https://yp7.net/posts/andycloud-review-2026/) | 5元/月 | 100GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [Tidal潮汐加速](https://yp7.net/posts/tidal-review-2026/) | 25元/月 | 100GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [极速123](https://yp7.net/posts/jisu123-review-2026/) | 15.99元/月 | 标称1200GB/月，6倍折合200GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [云界线](https://yp7.net/posts/yunjiexian-review-2026/) | 卡片22元/月（正文25元，结算待核实） | 150GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 
 ## ChatGPT 机场
 

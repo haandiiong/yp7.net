@@ -129,4 +129,4 @@ description: XSUS套餐更新：12元168GB月付起、65元188GB不限时起，�
 - [机场推荐方法与测试数据来源](/methodology/)
 - [xxyun机场怎么样？](/posts/xxyun-review-2026/)
 - [坦克云（原坦克加速）机场怎么样？](/posts/tank-review-2026/)
-- [99吧机场怎么样？](/posts/99ba-review-2026/)
+- [U1S1机场怎么样？](/posts/u1s1-review-2026/)

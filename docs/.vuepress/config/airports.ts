@@ -423,13 +423,14 @@ export const airportData: AirportData[] = [
   {
     name: "鲤云", path: "/posts/liyun-review-2026/", image: '/shouye.png',
     price: 5, priceText: '5元/月', traffic: '100GB/月',
-    trial: null, noExpiry: false, dedicatedClient: false, universalSubscription: true,
+    trial: false, noExpiry: false, dedicatedClient: false, universalSubscription: true,
     scenarios: ['cheap', 'clash', 'chatgpt', 'streaming'], status: '资料已核对',
-    risk: "免费试用待核实；周期套餐不退款；59元200GB包客服确认有效期1年（站长2026-10-05提供），此前官网含永久文案",
+    risk: "不支持免费试用；周期套餐不退款；59元200GB包客服确认有效期1年（站长2026-10-05提供），此前官网含永久文案",
     summary: "月付5元100GB、8元200GB、15元400GB；16元季付128GB/月、88元年付256GB/月。59元一次性200GB包经站长2026-10-05转述客服确认有效期1年，不计为不限时；此前官网同时写永久与限时1年。提供Clash Verge、Clash Meta及Shadowrocket教程；liyun888八折码未核对结算，周期套餐明确不退款。",
     subscriptionClients: ['Clash Verge', 'Clash Meta', 'Shadowrocket'],
     informationSources: [
       { name: '鲤云套餐页', url: 'https://ly888.liydl.com:8888/#/plan', checkedAt: '2026-09-28', link: false },
+      { name: '鲤云试用规则（站长补充）', url: '/posts/liyun-review-2026/', checkedAt: '2026-10-05', link: false },
       { name: '鲤云客户端教程', url: 'https://ly888.liydl.com:8888/#/knowledge-base', checkedAt: '2026-09-28', link: false },
       { name: '鲤云官网邀请入口', url: 'https://ly888.liydl.com:8888/#/register?code=5cHFZJPd', checkedAt: '2026-09-28' },
     ],
@@ -437,13 +438,14 @@ export const airportData: AirportData[] = [
   {
     name: "山水云", path: "/posts/shanshuiyun-review-2026/", image: '/shouye.png',
     price: 12, priceText: '12元/月', traffic: '100GB/月',
-    trial: null, noExpiry: true, dedicatedClient: false, universalSubscription: true,
+    trial: false, noExpiry: true, dedicatedClient: false, universalSubscription: true,
     scenarios: ['clash', 'chatgpt', 'streaming'], status: '资料已核对',
-    risk: "免费试用及退款待核实；同时在线3台；365天包有到期时间",
+    risk: "不支持免费试用；退款待核实；同时在线3台；365天包有到期时间",
     summary: "月付12元100GB、20元200GB、39元500GB；33元季付128GB/月、77元年付64GB/月。39.9元128GB、59.9元256GB总量包365天有效且不重置；99元100GB不限时，均限3台设备。支持Clash Verge、Clash Meta及Shadowrocket；线路带宽和解锁为商家说明。",
     subscriptionClients: ['Clash Verge', 'Clash Meta', 'Shadowrocket'],
     informationSources: [
       { name: '山水云套餐页', url: 'https://sldm1.ssyylf.com/#/shop', checkedAt: '2026-09-27', link: false },
+      { name: '山水云试用规则（站长补充）', url: '/posts/shanshuiyun-review-2026/', checkedAt: '2026-10-05', link: false },
       { name: '山水云客户端教程', url: 'https://sldm1.ssyylf.com/#/docs', checkedAt: '2026-09-27', link: false },
       { name: '山水云官网邀请入口', url: 'https://sldm1.ssyylf.com/#/register?code=nhEZN9EI', checkedAt: '2026-09-27' },
     ],
@@ -451,13 +453,14 @@ export const airportData: AirportData[] = [
   {
     name: "秒秒云", path: "/posts/miaomiaoyun-review-2026/", image: '/shouye.png',
     price: 9, priceText: '9元/月', traffic: '128GB/月',
-    trial: null, noExpiry: true, dedicatedClient: false, universalSubscription: true,
+    trial: false, noExpiry: true, dedicatedClient: false, universalSubscription: true,
     scenarios: ['cheap', 'clash', 'chatgpt', 'streaming'], status: '资料已核对',
-    risk: "免费试用及普通套餐退款待核实；59元不限时包额度单位、49.9元365天包刷新量不清楚；特惠说明仅支持年付与订单页可选半年和一年冲突",
+    risk: "不支持免费试用；普通套餐退款待核实；59元不限时包额度单位、49.9元365天包刷新量不清楚；特惠说明仅支持年付与订单页可选半年和一年冲突",
     summary: "月付9元128GB、15元256GB、29元512GB；18元季付64GB/月、88元年付100GB/月。10月5日订单页确认：59元一次性不限时包仍写100G/月，49.9元365天200GB包仍写每30天刷新；64G特惠半年39元/一年79元，200G特惠半年99元/一年198元，说明文字却仍写仅支持年付。提供Clash Verge、Clash Meta和Shadowrocket教程；特惠明确不退款。",
     subscriptionClients: ['Clash Verge', 'Clash Meta', 'Shadowrocket'],
     informationSources: [
       { name: '秒秒云套餐与订单确认页', url: 'https://m1.mmycnm.com/#/shop', checkedAt: '2026-10-05', link: false },
+      { name: '秒秒云试用规则（站长补充）', url: '/posts/miaomiaoyun-review-2026/', checkedAt: '2026-10-05', link: false },
       { name: '秒秒云客户端教程', url: 'https://m3.mouhiojl.com/#/docs', checkedAt: '2026-09-27', link: false },
       { name: '秒秒云官网邀请入口', url: 'https://m3.mouhiojl.com/#/register?code=kRQzsnp3', checkedAt: '2026-09-27' },
     ],
@@ -465,13 +468,14 @@ export const airportData: AirportData[] = [
   {
     name: "锦云", path: "/posts/jinyun-review-2026/", image: '/shouye.png',
     price: 6, priceText: '6元/月', traffic: '50GB/月',
-    trial: null, noExpiry: true, dedicatedClient: false, universalSubscription: true,
+    trial: false, noExpiry: true, dedicatedClient: false, universalSubscription: true,
     scenarios: ['cheap', 'clash', 'chatgpt', 'streaming'], status: '资料已核对',
-    risk: "免费试用待核实；套餐不退款；按套餐限3至5台设备，365天包不等于不限时",
+    risk: "不支持免费试用；套餐不退款；按套餐限3至5台设备，365天包不等于不限时",
     summary: "月付6元50GB、9元100GB、16元200GB；18元季付64GB/月、99元年付128GB/月。29.9元100GB及48.8元300GB包365天有效，99元100GB不限时用完作废。支持Clash Verge、Clash Meta及Shadowrocket；所有核对套餐不退款，AI和流媒体为商家说明。",
     subscriptionClients: ['Clash Verge', 'Clash Meta', 'Shadowrocket'],
     informationSources: [
       { name: '锦云套餐页', url: 'https://jybdw1.wanhlj.com:8888/#/shop', checkedAt: '2026-09-27', link: false },
+      { name: '锦云试用规则（站长补充）', url: '/posts/jinyun-review-2026/', checkedAt: '2026-10-05', link: false },
       { name: '锦云客户端教程', url: 'https://jybdw1.wanhlj.com:8888/#/docs', checkedAt: '2026-09-27', link: false },
       { name: '锦云官网邀请入口', url: 'https://jybdw1.wanhlj.com:8888/#/register?code=KgThlDZI', checkedAt: '2026-09-27' },
     ],
@@ -479,13 +483,14 @@ export const airportData: AirportData[] = [
   {
     name: "熊猫cloud", path: "/posts/xiongmaocloud-review-2026/", image: '/shouye.png',
     price: 6, priceText: '6元/月', traffic: '300GB/月',
-    trial: null, noExpiry: false, dedicatedClient: false, universalSubscription: true,
+    trial: false, noExpiry: false, dedicatedClient: false, universalSubscription: true,
     scenarios: ['cheap', 'clash', 'chatgpt', 'streaming'], status: '资料已核对',
-    risk: "免费试用待核实；套餐不退款；66元600GB包客服确认有效期1年（站长2026-10-05提供），此前官网商品名写不限时",
+    risk: "不支持免费试用；套餐不退款；66元600GB包客服确认有效期1年（站长2026-10-05提供），此前官网商品名写不限时",
     summary: "月付6元300GB、10元600GB、15元1200GB；24元季付500GB/月，限3至5台设备。25.9元500GB总量包365天有效；66元600GB包经站长2026-10-05转述客服确认有效期1年，不计为不限时；此前官网商品名称写不限时，正文写限时365天。支持Clash、Clash Verge、Clash Meta及Shadowrocket订阅；套餐不退款，流媒体与AI支持为商家说明。",
     subscriptionClients: ['Clash Verge', 'Clash Meta', 'Shadowrocket'],
     informationSources: [
       { name: '熊猫cloud套餐页', url: 'https://cl888.cailudl.com:9999/#/shop', checkedAt: '2026-09-27', link: false },
+      { name: '熊猫cloud试用规则（站长补充）', url: '/posts/xiongmaocloud-review-2026/', checkedAt: '2026-10-05', link: false },
       { name: '熊猫cloud客户端教程', url: 'https://cl888.cailudl.com:9999/#/docs', checkedAt: '2026-09-27', link: false },
       { name: '熊猫cloud官网邀请入口', url: 'https://cl888.cailudl.com:9999/#/register?code=NEU8pOgo', checkedAt: '2026-09-27' },
     ],
@@ -532,9 +537,9 @@ export const airportData: AirportData[] = [
               "link": false
           },
           {
-              "name": "云图官网邀请入口",
-              "url": "https://vip.ytjcok.org/#/register?code=jHSxbS1R",
-              "checkedAt": "2026-09-28"
+              "name": "云图官网邀请入口（站长更新）",
+              "url": "https://super.ytjcok.org/#/register?code=jHSxbS1R",
+              "checkedAt": "2026-10-05"
           },
           {
               "name": "云图试用规则（站长补充）",
@@ -692,43 +697,48 @@ export const airportData: AirportData[] = [
       "name": "极速Cloud",
       "path": "/posts/jisucloud-review-2026/",
       "image": "/shouye.png",
-      "price": 8.9,
+      "price": 15,
       "regularPrice": 30,
-      "priceText": "新人8.9元/月（不可续费）；常规30元/月起",
-      "traffic": "新人标称100GB/月，10倍折合10GB；常规折合100GB/月起",
-      "trial": null,
+      "priceText": "新人15元/月（不可续费）；常规30元/月起",
+      "traffic": "新人标称200GB/月，10倍折合20GB；常规折合100GB/月起",
+      "trial": false,
       "noExpiry": true,
       "dedicatedClient": false,
       "universalSubscription": true,
       "scenarios": [
-          "cheap",
           "clash",
           "chatgpt",
           "streaming"
       ],
       "status": "资料已核对",
-      "risk": "全套餐10倍倍率；新人档不能续费；设备数与知识库通用文案冲突；免费试用待核实",
-      "summary": "新人8.9元月付标称100GB、10倍折合10GB且仅可买一次；常规30元标称1000GB/月、折合100GB。329元标称1000GB不限时间总量包折合100GB，限3台且不退款；88元与168元包有365天期限。支持Clash Verge订阅，通用文档不限设备与具体卡片2至5台不一致，按套餐复核。",
+      "risk": "全套餐10倍倍率；新人档不能续费；设备数与知识库通用文案冲突；不支持免费试用",
+      "summary": "新人15元月付标称200GB、10倍折合20GB，仅可买一次不可续费；常规30元标称1000GB/月、折合100GB限3台，45元1500GB折合150GB限5台。329元标称1000GB不限时间总量包折合100GB，限3台且不退款；88元与168元包有365天期限。支持Clash Verge订阅，文档不限设备与卡片2至5台不一致。每月账单日刷新，续费不立即重置；用量90%后出现重置入口，费用待核实。同款一次性重购覆盖、不叠加余量。",
       "subscriptionClients": [
           "Clash Verge"
       ],
       "informationSources": [
           {
+              "name": "极速Cloud试用规则（站长补充）",
+              "url": "/posts/jisucloud-review-2026/",
+              "checkedAt": "2026-10-05",
+              "link": false
+          },
+          {
               "name": "极速Cloud套餐页",
-              "url": "https://y1.jisucloud8.com:8888/#/plan",
-              "checkedAt": "2026-09-28",
+              "url": "https://191.101.132.80/#/plan",
+              "checkedAt": "2026-10-05",
               "link": false
           },
           {
               "name": "极速Cloud客户端教程",
-              "url": "https://y1.jisucloud8.com:8888/#/knowledge-base/3",
-              "checkedAt": "2026-09-28",
+              "url": "https://191.101.132.80/#/knowledge-base/3",
+              "checkedAt": "2026-10-05",
               "link": false
           },
           {
               "name": "极速Cloud续费重置说明",
-              "url": "https://y1.jisucloud8.com:8888/#/knowledge-base/6",
-              "checkedAt": "2026-09-28",
+              "url": "https://191.101.132.80/#/knowledge-base/6",
+              "checkedAt": "2026-10-05",
               "link": false
           },
           {
@@ -745,7 +755,7 @@ export const airportData: AirportData[] = [
       "price": 3,
       "priceText": "3元/月",
       "traffic": "200GB/月",
-      "trial": null,
+      "trial": false,
       "noExpiry": false,
       "dedicatedClient": false,
       "universalSubscription": true,
@@ -755,12 +765,18 @@ export const airportData: AirportData[] = [
           "streaming"
       ],
       "status": "资料已核对",
-      "risk": "免费试用、退款、倍率与月额度重置日期待核实；20元总量包只有一年有效期",
+      "risk": "不支持免费试用；退款、倍率与月额度重置日期待核实；20元总量包只有一年有效期",
       "summary": "月付3元200GB、6元500GB、10元1000GB，分别限2、3、5台；年付12元50GB/月和24元100GB/月。20元1000GB为一年有效总量包，不计入不限时。教程提供Clash Verge订阅导入；主流AI和流媒体支持为笼统商家说明，未给出各平台实测。",
       "subscriptionClients": [
           "Clash Verge"
       ],
       "informationSources": [
+          {
+              "name": "杏花云试用规则（站长补充）",
+              "url": "/posts/xinghuayun-review-2026/",
+              "checkedAt": "2026-10-05",
+              "link": false
+          },
           {
               "name": "杏花云套餐页",
               "url": "https://xh.xinghuajichang.com/#/shop",
@@ -781,6 +797,181 @@ export const airportData: AirportData[] = [
       ]
   },
 
+  {
+    "name": "AnDy Cloud",
+    "path": "/posts/andycloud-review-2026/",
+    "image": "/shouye.png",
+    "price": 5,
+    "priceText": "5元/月",
+    "traffic": "100GB/月",
+    "trial": false,
+    "noExpiry": true,
+    "dedicatedClient": false,
+    "universalSubscription": true,
+    "scenarios": [
+      "cheap",
+      "clash"
+    ],
+    "status": "资料已核对",
+    "risk": "不支持免费试用；退款、计费倍率与重置费用待核实；订阅导入需先购买；一次性重购覆盖额度，不叠加余量",
+    "summary": "不支持免费试用。月付5元100GB、10元300GB、15元500GB、25元1000GB，限2至8台；年付30元含50GB/月，限2台。100元一次性1000GB包无过期日，用完为止，限10台，重购覆盖不叠加。周期套餐按账单日重置，未用流量不累积；续费不立即重置，已用90%后出现重置入口，费用未明。提供Clash Verge、Android Clash、Clash Mi与Shadowrocket教程，购买后开放订阅导入。速率与流媒体支持为商家标注，没有新增实测。",
+    "subscriptionClients": [
+      "Clash Verge",
+      "Clash Mi",
+      "Android Clash",
+      "Shadowrocket"
+    ],
+    "informationSources": [
+      { "name": "AnDy Cloud试用规则（站长补充）", "url": "/posts/andycloud-review-2026/", "checkedAt": "2026-10-06", "link": false },
+      {
+        "name": "AnDy Cloud套餐页",
+        "url": "https://ddhh.andycloud.cc:8888/#/shop",
+        "checkedAt": "2026-10-05",
+        "link": false
+      },
+      {
+        "name": "AnDy Cloud续费与重置说明",
+        "url": "https://ddhh.andycloud.cc:8888/#/docs/2",
+        "checkedAt": "2026-10-05",
+        "link": false
+      },
+      {
+        "name": "AnDy Cloud Windows Clash教程",
+        "url": "https://ddhh.andycloud.cc:8888/#/docs/4",
+        "checkedAt": "2026-10-05",
+        "link": false
+      },
+      {
+        "name": "AnDy Cloud仪表盘订阅说明",
+        "url": "https://ddhh.andycloud.cc:8888/#/dashboard",
+        "checkedAt": "2026-10-05",
+        "link": false
+      },
+      {
+        "name": "AnDy Cloud官网邀请入口",
+        "url": "https://ddhh.andycloud.cc:8888/#/register?code=a8qOz45S",
+        "checkedAt": "2026-10-05"
+      }
+    ]
+  },
+  {
+    "name": "Tidal潮汐加速",
+    "path": "/posts/tidal-review-2026/",
+    "image": "/shouye.png",
+    "price": 25,
+    "priceText": "25元/月",
+    "traffic": "100GB/月",
+    "trial": false,
+    "noExpiry": true,
+    "dedicatedClient": true,
+    "universalSubscription": true,
+    "scenarios": [
+      "clash",
+      "newbie"
+    ],
+    "status": "资料已核对",
+    "risk": "不支持免费试用；取消套餐按使用比例退回账户余额，不等于原路退款；年付优惠期限、叠加与结算未验证",
+    "summary": "不支持免费试用。Air月付25元100GB限3台，Plus35元300GB限6台，Pro55元1024GB不限设备；年付卡片分别展示118.8、238.8、358.8元。59元128GB、89元256GB、159元512GB永久流量包不限设备，用完为止。周期按每月账单日重置；购买后可获取Clash等通用订阅，也有Windows、macOS、Android、Linux及iOS客户端入口。FAQ允许按使用比例取消套餐并退到账户余额；现金退款范围未明。Tidal年付八折活动有倒计时，结算和叠加未验证。AI与流媒体为商家说明，未新增实测。",
+    "subscriptionClients": [
+      "Clash Verge Rev",
+      "Clash Meta for Android",
+      "Clash Mi",
+      "ClashX",
+      "Shadowrocket",
+      "Stash",
+      "Quantumult X"
+    ],
+    "informationSources": [
+      { "name": "Tidal试用规则（站长补充）", "url": "/posts/tidal-review-2026/", "checkedAt": "2026-10-06", "link": false },
+      {
+        "name": "Tidal套餐页与常见问题",
+        "url": "https://tidalfast.com/plans",
+        "checkedAt": "2026-10-05",
+        "link": false
+      },
+      {
+        "name": "Tidal客户端下载页",
+        "url": "https://tidalfast.com/download",
+        "checkedAt": "2026-10-05",
+        "link": false
+      },
+      {
+        "name": "Tidal服务条款页（本次显示暂无内容）",
+        "url": "https://tidalfast.com/tos",
+        "checkedAt": "2026-10-05",
+        "link": false
+      },
+      {
+        "name": "Tidal官网邀请入口",
+        "url": "https://www.chaoxijiasu.com/register?code=uuttj42W",
+        "checkedAt": "2026-10-05"
+      }
+    ]
+  },
+  {
+    "name": "云界线",
+    "path": "/posts/yunjiexian-review-2026/",
+    "image": "/shouye.png",
+    "price": 22,
+    "priceText": "卡片22元/月（正文25元，结算待核实）",
+    "traffic": "150GB/月",
+    "trial": false,
+    "noExpiry": true,
+    "dedicatedClient": true,
+    "universalSubscription": true,
+    "scenarios": [
+      "newbie"
+    ],
+    "status": "资料已核对",
+    "risk": "月付卡片22/40/66元与正文25/45/75元冲突；99元不限时包卡片80GB与正文300GB冲突；不支持免费试用；通用订阅向客服领取，具体格式先确认；退款及优惠结算待核实",
+    "summary": "不支持免费试用，通用订阅可向客服领取，具体客户端格式先确认。96元年付小包60GB/月，从购买日起每30天刷新。轻云150GB、凌云300GB、御云600GB月付卡片22/40/66元，正文25/45/75元，结算待核实；重置分别22/40/66元且不延长有效期。99元不限时包卡片80GB与正文300GB冲突，199元200GB不限时包两处一致，均不按月刷新，用完重购。Windows账号登录自有客户端，iOS用Nextin识别码yjx，另有Android与Mac教程。yjx888首单七折适用月/季/半年/年付，每人一次不可叠加，排除两年/三年/重置/一次性包；结算未验证。线路、速率及解锁为商家说明。",
+    "informationSources": [
+      { "name": "云界线试用与订阅规则（站长补充）", "url": "/posts/yunjiexian-review-2026/", "checkedAt": "2026-10-06", "link": false },
+      {
+        "name": "云界线套餐页",
+        "url": "https://www1.yunjiexiant.xyz/#/plans",
+        "checkedAt": "2026-10-05",
+        "link": false
+      },
+      {
+        "name": "云界线客户端知识库",
+        "url": "https://www1.yunjiexiant.xyz/#/knowledge",
+        "checkedAt": "2026-10-05",
+        "link": false
+      },
+      {
+        "name": "云界线仪表盘与优惠公告",
+        "url": "https://www1.yunjiexiant.xyz/#/dashboard",
+        "checkedAt": "2026-10-05",
+        "link": false
+      },
+      {
+        "name": "云界线官网邀请入口",
+        "url": "https://www1.yunjiexiant.xyz/#/?code=y4BofmLr",
+        "checkedAt": "2026-10-05"
+      }
+    ]
+  },
+
+  {
+    name: '极速123', path: '/posts/jisu123-review-2026/', image: '/shouye.png',
+    price: 15.99, priceText: '15.99元/月', traffic: '标称1200GB/月，6倍折合200GB/月',
+    trial: false, noExpiry: true, dedicatedClient: false, universalSubscription: true,
+    scenarios: ['clash'], status: '资料已核对',
+    risk: '商品标注6倍扣量；文档与卡片设备数、一次性有效期存在差异；不支持免费试用；月付退款与重置费待核实',
+    summary: '不支持免费试用。月付15.99元标称1200GB、6倍折合200GB限3台，22元折合300GB限5台；118元年付每月标称1000GB、折合约166.7GB。不限时128元标称1000GB总量、折合约166.7GB，限3台且不退款；59元与98元总量包有365天有效期。官网文档指向第三方客户端教程，支持Clash Verge、FlClash等订阅导入；续费不立即刷新，重购一次性包覆盖而不叠加。IEPL与GPT、Netflix、TikTok解锁为商家说明，未新增实测。',
+    subscriptionClients: ['Clash Verge', 'FlClash', 'v2rayN', 'Clash Meta', 'NekoBox', 'v2rayNG', 'Shadowrocket'],
+    informationSources: [
+      { name: '极速123试用规则（站长补充）', url: '/posts/jisu123-review-2026/', checkedAt: '2026-10-06', link: false },
+      { name: '极速123套餐商店', url: 'https://905.jsy902.xyz/#/shop', checkedAt: '2026-10-05', link: false },
+      { name: '极速123线路及倍率介绍', url: 'https://905.jsy902.xyz/#/docs/16', checkedAt: '2026-10-05', link: false },
+      { name: '极速123续费与流量重置说明', url: 'https://905.jsy902.xyz/#/docs/13', checkedAt: '2026-10-05', link: false },
+      { name: '极速123电脑端教程入口', url: 'https://905.jsy902.xyz/#/docs/5', checkedAt: '2026-10-05', link: false },
+      { name: '官网指向的第三方客户端教程目录', url: 'https://www.ruanjiandaohang.com/', checkedAt: '2026-10-05', link: false },
+      { name: '官网指向的Clash Verge订阅教程', url: 'https://www.ruanjiandaohang.com/tutorial.html?id=art_clash', checkedAt: '2026-10-05', link: false },
+      { name: '极速123官网邀请入口', url: 'https://905.jsy902.xyz/#/register?code=PB9zvaUD', checkedAt: '2026-10-05' },
+    ],
+  },
 ]
 
 export const hiddenAirportStatuses = new Set(['已淘汰', '停止推荐', '下架'])
@@ -798,7 +989,7 @@ export const mainRecommendationData = mainRecommendationNames.map((name) => {
 // Date of the last full review; partial updates retain their per-source checkedAt dates.
 export const airportDataLastReviewed = '2026-08-19'
 // Advance for actual changes to current data or its classification, not historical test dates.
-export const airportDataLastModified = '2026-10-05'
+export const airportDataLastModified = '2026-10-06'
 
 export const getAirportPriceMetrics = (airports: readonly AirportData[]) => {
   const visible = airports.filter(isVisibleAirport)

@@ -89,9 +89,12 @@ test('one-year validity and unresolved no-expiry claims stay consistent across s
     markdownTables(read('airports.md'))[0],
     htmlTables(read('airports.html'))[0],
   ]
-  assert.equal(airportMetrics.noExpiryCount, 36)
+  const confirmedNoExpiry = data.airports.filter((airport) => airport.noExpiry === true)
+  const unresolvedNoExpiry = data.airports.filter((airport) => airport.noExpiry === null)
+  assert.equal(airportMetrics.noExpiryCount, confirmedNoExpiry.length)
   assert.equal(airportMetrics.noExpiryUnverifiedCount, 1)
-  assert.equal(airportCollections.noExpiry.items.length, 37)
+  assert.equal(unresolvedNoExpiry.length, 1)
+  assert.equal(airportCollections.noExpiry.items.length, confirmedNoExpiry.length + unresolvedNoExpiry.length)
   for (const name of ['鲤云', '熊猫cloud']) {
     const airport = airportData.find((item) => item.name === name)
     assert.equal(airport.noExpiry, false)
@@ -130,7 +133,8 @@ test('one-year validity and unresolved no-expiry claims stay consistent across s
   assert.deepEqual(validateServiceSchema(yunTuService, yunTu, 'validity'), [])
   assert.equal(data.lastModified, airportDataLastModified)
   assert.equal(data.lastReviewed, airportDataLastReviewed)
-  assert.equal(airportDataLastModified, '2026-10-05')
+  assert.match(airportDataLastModified, /^\d{4}-\d{2}-\d{2}$/)
+  assert.ok(Date.parse(airportDataLastModified) >= Date.parse('2026-10-05'))
   assert.equal(airportDataLastReviewed, '2026-08-19')
   const dataset = JSON.parse(read('airports.html').match(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)[1])
   assert.equal(dataset.dateModified, airportDataLastModified)

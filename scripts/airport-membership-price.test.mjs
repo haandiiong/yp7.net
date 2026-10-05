@@ -52,8 +52,9 @@ test('hidden airports only belong to risk monitoring even if an old collection c
   assert.deepEqual(membershipPaths(airport), ['/risk-monitor/'])
 })
 
-test('introductory entry statistics preserve 8.9 while normal-cycle statistics use 30', () => {
-  const airport = byName('极速Cloud')
+test('introductory entry statistics preserve the entry price while using the normal-cycle reference', () => {
+  // Keep this metric regression independent of future changes to live product prices.
+  const airport = { ...byName('极速Cloud'), price: 8.9, regularPrice: 30 }
   assert.equal(airport.price, 8.9)
   assert.equal(airport.regularPrice, 30)
   assert.deepEqual(getAirportPriceMetrics([airport]), {

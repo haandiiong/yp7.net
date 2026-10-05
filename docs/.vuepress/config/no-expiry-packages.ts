@@ -18,6 +18,16 @@ const listed = (priceCny: number, trafficGb: number, deviceLimit: string, validi
 })
 
 export const noExpiryPackages: Record<string, NoExpiryPackage> = {
+  '/posts/jisu123-review-2026/': {
+    ...listed(128, 1000 / 6, '3台', '不限时间，用完为止；6倍扣量，重购覆盖而不叠加；不支持退款', '2026-10-05'),
+    trafficText: '标称1000GB／6倍计费折合约166.7GB',
+  },
+  '/posts/andycloud-review-2026/': listed(100, 1000, '10台', '无过期日，用完即止；重购覆盖新额度，不叠加剩余流量', '2026-10-05'),
+  '/posts/tidal-review-2026/': listed(59, 128, '不限同时在线设备', '永久有效，用完为止；续购叠加及退款适用范围待核实', '2026-10-05'),
+  '/posts/yunjiexian-review-2026/': {
+    priceCny: 99, trafficGb: null, priceText: '99元', trafficText: '卡片80GB／正文300GB（冲突）', status: 'conflicting',
+    deviceLimit: '不限客户端数量', validity: '标注不限时，不按月刷新、用完重购；交付额度待核实；另有199元200GB包', checkedAt: '2026-10-05',
+  },
   '/posts/yuntu-review-2026/': {
     priceCny: 78, trafficGb: null, priceText: '78元', trafficText: '标题50GB／正文每月50GB（冲突）', status: 'conflicting',
     deviceLimit: '5台', validity: '两档订单页均写每月流量且提示新购替换现有套餐；销售窗口、购后有效期与刷新规则未明', checkedAt: '2026-10-05',
@@ -25,7 +35,7 @@ export const noExpiryPackages: Record<string, NoExpiryPackage> = {
   '/posts/lingmaowangluo-review-2026/': listed(100, 100, '不限客户端数量', '不限时，用完为止；手动重置9折，基数待核实', '2026-09-28'),
   '/posts/firefly-review-2026/': listed(100, 100, '不限时档未注明', '永久不过期，用完为止；续购规则待核实', '2026-09-28'),
   '/posts/jisucloud-review-2026/': {
-    ...listed(329, 100, '3台', '不限时间，用完为止；10倍计费，单价按折合100GB计算', '2026-09-28'),
+    ...listed(329, 100, '3台', '不限时间，用完为止；10倍计费，单价按折合100GB计算', '2026-10-05'),
     trafficText: '标称1000GB／10倍计费折合100GB',
   },
   '/posts/wuyoulianjie-review-2026/': listed(98, 100, '待核实', '标注永久不限时；重置与续购规则待核实', '2026-09-28'),
