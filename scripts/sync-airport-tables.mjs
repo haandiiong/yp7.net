@@ -62,6 +62,12 @@ const clientSummary = (airport) => {
   return '无专属客户端'
 }
 
+// The first line is shared data; subsequent lines remain editorial notes.
+const withEditorialNotes = (value, previous = '') => {
+  const separator = previous.match(/<br\s*\/?\s*>/i)
+  return separator ? `${value}${previous.slice(separator.index)}` : value
+}
+
 const scenarioLabels = {
   stable: '稳定',
   cheap: '低价',
@@ -98,6 +104,11 @@ const columnGetters = {
   价格: (airport) => airport.priceText,
   最低价格: (airport) => airport.priceText,
   价格与试用: (airport) => `${airport.priceText}，${airport.trial === null ? '试用待核实' : airport.trial ? '支持试用' : '无试用'}`,
+  套餐与试用: (airport, _index, row) => withEditorialNotes(
+    `${airport.priceText}，${airport.traffic}；${airport.trial === null ? '试用待核实' : airport.trial ? '支持试用' : '无试用'}`,
+    row['套餐与试用'],
+  ),
+  客户端与限制: (airport, _index, row) => withEditorialNotes(clientSummary(airport), row['客户端与限制']),
   月流量: (airport, _index, _row, config) => config.sectionLinks ? airport.traffic.replace(/\/月$/, '') : airport.traffic,
   流量额度: (airport) => airport.traffic,
   流量: (airport) => airport.traffic,
@@ -127,6 +138,12 @@ const tableConfigs = [
     items: collection.items,
   })),
   {
+    filePath: airportCollections.all.sourceFile,
+    heading: '## 便宜的机场汇总',
+    sectionLinks: true,
+    items: airportCollections.cheap.items,
+  },
+  {
     filePath: 'docs/风险监测/机场风险监测.md',
     heading: '## 站内观察状态',
     items: visibleAirportData,
@@ -145,6 +162,18 @@ const syncRiskOverview = (content) => {
     if (!pattern.test(current)) fail('docs/风险监测/机场风险监测.md: missing risk overview row')
     return current.replace(pattern, value)
   }, content)
+}
+
+const syncRecommendationScope = (content) => {
+  const recordedNames = new Set(airportCollections.chatgpt.items.map((airport) => airport.name))
+  const recommendations = airportCollections.mainRecommendation.items
+  const recordedCount = recommendations.filter((airport) => recordedNames.has(airport.name)).length
+  const scope = `本站已整理[${visibleAirportData.length}家机场资料](/posts/jichang-heji/)，本页按客户端、预算与套餐周期精选${recommendations.length}款，其中${recordedCount}款附[Siilas带日期测试记录](#测试证据摘要)。`
+  const pattern = /<!-- recommendation-scope:start -->[\s\S]*?<!-- recommendation-scope:end -->/
+  if (!pattern.test(content)) fail('docs/机场推荐/机场推荐.md: missing recommendation scope markers')
+
+  // Counts describe source records and editorial selections, not continuous monitoring.
+  return content.replace(pattern, `<!-- recommendation-scope:start -->\n\n${scope}\n\n<!-- recommendation-scope:end -->`)
 }
 
 const renderTable = ({ headers, divider, rows }, airports, config) => config.noExpiryComparison ? [
@@ -181,7 +210,9 @@ const syncTable = (config) => {
   const original = readFileSync(absolutePath, 'utf8')
   const source = config.filePath === 'docs/风险监测/机场风险监测.md'
     ? syncRiskOverview(original)
-    : original
+    : config.filePath === airportCollections.mainRecommendation.sourceFile
+      ? syncRecommendationScope(original)
+      : original
   const lines = source.split('\n')
   const headingIndex = lines.findIndex((line) => line.trim() === config.heading)
   if (headingIndex === -1) fail(`${config.filePath}: missing heading ${config.heading}`)
@@ -208,9 +239,9 @@ const syncTable = (config) => {
 
 if (!existsSync(airportsPath)) fail(`Missing ${airportsPath}`)
 
-const changedFiles = tableConfigs
+const changedFiles = [...new Set(tableConfigs
   .filter((config) => syncTable(config))
-  .map((config) => config.filePath)
+  .map((config) => config.filePath))]
 
 if (checkOnly && changedFiles.length) {
   console.error('Airport tables are out of sync:')

@@ -71,6 +71,18 @@ test('article titles retain the VuePress site suffix and normal indexing policy'
   assert.deepEqual(getRobots(resolveHead(page)), [defaultRobots])
 })
 
+test('airport sharing uses a dedicated wide cover without changing the original logo', () => {
+  const page = makePage('/posts/jiuyun-review-2026/', '九云机场套餐')
+  const head = resolveHead(page)
+  const social = Object.fromEntries(head.filter(([tag, attrs]) => tag === 'meta' && attrs.property)
+    .map(([, attrs]) => [attrs.property, attrs.content]))
+  assert.equal(social['og:image'], 'https://yp7.net/covers/posts-jiuyun-review-2026.png')
+  assert.equal(social['og:image:width'], '1280')
+  assert.equal(social['og:image:height'], '720')
+  const { airportData } = loadConfig(join(configDir, 'airports.ts'))
+  assert.equal(airportData.find((airport) => airport.path === page.path).image, '/shouye.png')
+})
+
 test('the explicit content date drives the footer and metadata without losing Git contributors', () => {
   const contributors = [{ name: 'yp7', commits: 3 }]
   const gitTime = Date.parse('2026-09-23T13:59:00Z')

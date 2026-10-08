@@ -2,7 +2,7 @@
   "site": "yp7.net",
   "url": "https://yp7.net",
   "lastReviewed": "2026-08-19",
-  "lastModified": "2026-10-06",
+  "lastModified": "2026-10-07",
   "metrics": {
     "count": 56,
     "trialCount": 10,
@@ -15,7 +15,7 @@
     "regularCheapUnderTenCount": 13,
     "regularAveragePrice": 17.2,
     "salesSampleCount": 17,
-    "historicalPerformanceRecordCount": 9,
+    "historicalPerformanceRecordCount": 6,
     "priceBasis": {
       "entry": "首次入门周期参考价，包含不可续费的新人优惠；不是所有机场的实际首购结算价",
       "regular": "常规持续套餐周期参考价，仅极速Cloud改用30元，其余沿用已记录价格；不是逐家验证的续费成交价"

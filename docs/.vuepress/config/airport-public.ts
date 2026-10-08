@@ -21,6 +21,7 @@ export const serializeAirport = (airport: AirportData) => {
         latencyMs: performance.latencyMs,
         downloadMbpsRange: performance.downloadMbpsRange,
         evidenceSummary: performance.evidenceSummary,
+        evidenceSources: performance.evidenceSources || [],
         recordStatus: 'historical' as const,
         recordNotice: historicalTestingNotice,
       },

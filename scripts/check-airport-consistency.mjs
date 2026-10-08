@@ -17,6 +17,7 @@ const { getNoExpiryPackage, getNoExpiryCells, noExpiryColumns } = loadConfig('no
 const errors = []
 const dataColumns = ['机场', '最低价格', '流量额度', '试用', '不限时', '专属客户端', '通用订阅', '历史证据', '历史测试日期', '历史延迟', '历史速度区间', '状态']
 const salesColumns = ['机场', '销量样本', '最低价格', '流量额度', '试用', '专属客户端', '通用订阅', '状态']
+const recommendationColumns = ['机场', '适用场景', '套餐与试用', '客户端与限制', '测试依据']
 const validateNoExpiryRows = (rows, airports, context) => {
   const found = validateAirportRows(rows, airports, context, { requiredColumns: noExpiryColumns })
   airports.forEach((airport, index) => {
@@ -49,6 +50,9 @@ try {
       if (record.historicalEvidence?.recordStatus !== 'historical') errors.push(`airports.json: ${airport.name} missing historical status`)
       for (const field of ['evidenceLevel', 'lastTestedAt', 'testWindow', 'testRegion', 'testNetwork', 'testDevice', 'latencyMs', 'downloadMbpsRange', 'evidenceSummary']) {
         if (record.historicalEvidence?.[field] !== airport.performance[field]) errors.push(`airports.json: ${airport.name} historical ${field} differs`)
+      }
+      if (!isDeepStrictEqual(record.historicalEvidence?.evidenceSources, airport.performance.evidenceSources || [])) {
+        errors.push(`airports.json: ${airport.name} historical evidence sources differ`)
       }
     } else if (record.historicalEvidence) errors.push(`airports.json: ${airport.name} unexpected historical evidence`)
 
@@ -85,7 +89,10 @@ try {
     const context = collection.pagePath
     const source = read(join(root, collection.sourceFile))
     const pageHtml = read(join(dist, collection.pagePath, 'index.html'))
-    const options = { sectionLinks: collection.sectionLinks, hostname }
+    const options = {
+      sectionLinks: collection.sectionLinks, hostname,
+      requiredColumns: key === 'mainRecommendation' ? recommendationColumns : [],
+    }
     errors.push(...validateAirportRows(markdownTableAfterHeading(source, collection.heading), collection.items, `${context} Markdown`, options))
     errors.push(...validateAirportRows(htmlTableAfterHeading(pageHtml, collection.heading), collection.items, `${context} HTML`, options))
     if (key === 'noExpiry') {

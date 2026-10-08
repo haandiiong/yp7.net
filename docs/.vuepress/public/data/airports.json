@@ -2,7 +2,7 @@
   "site": "yp7.net",
   "url": "https://yp7.net",
   "lastReviewed": "2026-08-19",
-  "lastModified": "2026-10-06",
+  "lastModified": "2026-10-07",
   "testingPolicy": {
     "effectiveDate": "2026-08-18",
     "yp7ConductsCurrentTests": false,
@@ -23,7 +23,7 @@
     "regularCheapUnderTenCount": 13,
     "regularAveragePrice": 17.2,
     "salesSampleCount": 17,
-    "historicalPerformanceRecordCount": 9,
+    "historicalPerformanceRecordCount": 6,
     "priceBasis": {
       "entry": "首次入门周期参考价，包含不可续费的新人优惠；不是所有机场的实际首购结算价",
       "regular": "常规持续套餐周期参考价，仅极速Cloud改用30元，其余沿用已记录价格；不是逐家验证的续费成交价"
@@ -96,15 +96,25 @@
         "billing": "one-off"
       },
       "historicalEvidence": {
-        "evidenceLevel": "A",
+        "evidenceLevel": null,
         "lastTestedAt": "2026-06-03",
-        "testWindow": "20:00-23:00",
-        "testRegion": "日本东京",
-        "testNetwork": "SoftBank / 1000Mbps",
-        "testDevice": "Windows 电脑",
-        "latencyMs": 61,
-        "downloadMbpsRange": "780-880Mbps",
-        "evidenceSummary": "该历史办公与 ChatGPT 记录仅作归档；后续套餐核验与 Siilas 节点观察分别标注日期，不能据此保证当前表现。",
+        "testWindow": "23:05-23:08（UTC+8），Speedtest图为15:08 GMT",
+        "testRegion": "本地地区未注明；Speedtest服务器ViewQwest Singapore，不能当作本地地点",
+        "testNetwork": "图中显示Cylix，但未标注本地接入线路、带宽或旧文SoftBank条件",
+        "testDevice": "网页测速与桌面客户端画面，具体设备未注明",
+        "latencyMs": 170,
+        "downloadMbpsRange": "13.96Mbps（2026-06-03 Speedtest单次原图），上传3.70Mbps",
+        "evidenceSummary": "撤回旧文未证实的速度区间、单一延迟和字母评级；Speedtest图显示下载13.96Mbps、上传3.70Mbps、Ping170ms。YouTube图仅覆盖当时视频画面；两图不能证明办公、ChatGPT或长期稳定性，亦不由后来的Siilas样本替代旧记录。",
+        "evidenceSources": [
+          {
+            "name": "网际快车归档Speedtest原图",
+            "url": "/kuaichespeedtest.jpg"
+          },
+          {
+            "name": "网际快车归档YouTube原图",
+            "url": "/kuaicheyoutube.jpg"
+          }
+        ],
         "recordStatus": "historical",
         "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
@@ -216,7 +226,7 @@
         "billing": "one-off"
       },
       "historicalEvidence": {
-        "evidenceLevel": "A",
+        "evidenceLevel": null,
         "lastTestedAt": "2026-05-30",
         "testWindow": "21:22-21:25（UTC+8）",
         "testRegion": "截图未标注本地地区",
@@ -224,7 +234,17 @@
         "testDevice": "旧文记载苹果电脑，截图未独立标注设备型号",
         "latencyMs": 82,
         "downloadMbpsRange": "778.79Mbps（Speedtest 单次历史结果）",
-        "evidenceSummary": "2026-05-30既有客户端、YouTube及Speedtest配图；Speedtest使用M1 Limited Singapore服务器，图中下载778.79Mbps、上传52.09Mbps、Ping82ms。本地地区与运营商未由截图证实。",
+        "evidenceSummary": "2026-05-30既有客户端、YouTube及Speedtest配图；Speedtest使用M1 Limited Singapore服务器，图中下载778.79Mbps、上传52.09Mbps、Ping82ms。测速图未独立显示订阅身份、本地地区和运营商，不作字母评级。",
+        "evidenceSources": [
+          {
+            "name": "全球云归档Speedtest原图",
+            "url": "/speedtest.png"
+          },
+          {
+            "name": "全球云归档YouTube原图",
+            "url": "/youtubecesu.png"
+          }
+        ],
         "recordStatus": "historical",
         "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
@@ -269,19 +289,6 @@
         "sourcePage": "/posts/xxyun-review-2026/",
         "currency": "CNY",
         "billing": "one-off"
-      },
-      "historicalEvidence": {
-        "evidenceLevel": "B",
-        "lastTestedAt": "2026-06-18",
-        "testWindow": "20:00-23:00",
-        "testRegion": "亚洲网络环境",
-        "testNetwork": "多端日常观察",
-        "testDevice": "多端日常观察",
-        "latencyMs": 72,
-        "downloadMbpsRange": "620-790Mbps",
-        "evidenceSummary": "仅有历史流媒体场景观察；当前解锁情况请查看 Siilas 最新记录。",
-        "recordStatus": "historical",
-        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "url": "https://yp7.net/posts/xxyun-review-2026/"
     },
@@ -367,19 +374,6 @@
         "sourcePage": "/posts/adaxi-review-2026/",
         "currency": "CNY",
         "billing": "one-off"
-      },
-      "historicalEvidence": {
-        "evidenceLevel": "B",
-        "lastTestedAt": "2026-06-18",
-        "testWindow": "20:00-23:00",
-        "testRegion": "亚洲网络环境",
-        "testNetwork": "通用订阅客户端观察",
-        "testDevice": "通用订阅客户端",
-        "latencyMs": 120,
-        "downloadMbpsRange": "200-420Mbps",
-        "evidenceSummary": "已有低价场景观察，定位轻量备用，不建议直接作为长期主力。",
-        "recordStatus": "historical",
-        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "url": "https://yp7.net/posts/adaxi-review-2026/"
     },
@@ -611,15 +605,37 @@
       ],
       "salesSample": 832,
       "historicalEvidence": {
-        "evidenceLevel": "A",
+        "evidenceLevel": null,
         "lastTestedAt": "2026-06-03",
-        "testWindow": "20:00-23:00",
-        "testRegion": "日本东京",
-        "testNetwork": "SoftBank / 1000Mbps",
-        "testDevice": "安卓手机",
-        "latencyMs": 58,
-        "downloadMbpsRange": "850-920Mbps",
-        "evidenceSummary": "有多张专属客户端延迟截图和 Speedtest 截图；当前表现请查看 Siilas 最新记录。",
+        "testWindow": "YouTube图22:38-22:39（UTC+8）；Speedtest图仅显示22:41/22:42，完整日期未显示",
+        "testRegion": "截图未标注本地地区；Speedtest服务器显示Singapore，不能当作本地地点",
+        "testNetwork": "原图未标注本地运营商与接入带宽，旧文SoftBank / 1000Mbps条件未证实",
+        "testDevice": "Android手机界面；型号未注明",
+        "latencyMs": null,
+        "downloadMbpsRange": "365.78及367.76Mbps（两张归档Speedtest图，完整日期及所用节点未独立注明）",
+        "evidenceSummary": "撤回旧文未证实的速度区间、单一延迟和字母评级；图中可读Speedtest下载为365.78/367.76Mbps、Ping121/105ms。YouTube图有6月3日完整时间，Speedtest图无完整日期，不能把全部图视为同一节点或同条件连续测试；未独立证实ChatGPT或长期稳定性。",
+        "evidenceSources": [
+          {
+            "name": "光年梯归档Speedtest图一",
+            "url": "/guangnianticesu1.jpg"
+          },
+          {
+            "name": "光年梯归档Speedtest图二",
+            "url": "/guangnianticesu2.jpg"
+          },
+          {
+            "name": "光年梯归档YouTube图一",
+            "url": "/guangniantispeedtest1.jpg"
+          },
+          {
+            "name": "光年梯归档YouTube图二",
+            "url": "/guangniantispeedtest2.jpg"
+          },
+          {
+            "name": "光年梯归档YouTube图三",
+            "url": "/guangniantispeedtest3.jpg"
+          }
+        ],
         "recordStatus": "historical",
         "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
@@ -953,15 +969,21 @@
       ],
       "salesSample": 82,
       "historicalEvidence": {
-        "evidenceLevel": "A",
+        "evidenceLevel": null,
         "lastTestedAt": "2026-04-04",
         "testWindow": "12:55 CST（非晚高峰）",
         "testRegion": "香港、美国、日本、新加坡、马来西亚、台湾、俄罗斯等多节点",
         "testNetwork": "珠海联通 / 9Gbps / 32线程订阅测速",
         "testDevice": "MiaoKo 自定义测试",
-        "latencyMs": 222,
+        "latencyMs": null,
         "downloadMbpsRange": "主流节点约82-430Mbps，截图最高约780Mbps（原值 10.22-53.75MB/s，个别低速或0速节点另见截图）",
         "evidenceSummary": "已补充 2026-04-04 MiaoKo 订阅测速截图，概要 61/61；该截图为非晚高峰单次历史记录，当前表现请查看 Siilas。",
+        "evidenceSources": [
+          {
+            "name": "U1S1归档订阅测速原图",
+            "url": "/U1S1CS.png"
+          }
+        ],
         "recordStatus": "historical",
         "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
@@ -1252,15 +1274,21 @@
         "billing": "one-off"
       },
       "historicalEvidence": {
-        "evidenceLevel": "A",
+        "evidenceLevel": null,
         "lastTestedAt": "2026-05-09",
         "testWindow": "16:58 CST（非晚高峰）",
         "testRegion": "香港、台湾、美国、日本、新加坡等多节点",
         "testNetwork": "广东佛山联通 / 2Gbps / 8线程订阅测速",
         "testDevice": "MiaoKo 自定义测试",
-        "latencyMs": 69,
+        "latencyMs": null,
         "downloadMbpsRange": "约144-2096Mbps（截图原值 17.96-262.06MB/s，低速节点另见截图）",
         "evidenceSummary": "已补充 2026-05-09 MiaoKo 订阅测速截图；该截图为非晚高峰单次历史记录，当前表现请查看 Siilas。",
+        "evidenceSources": [
+          {
+            "name": "瞬云归档订阅测速原图",
+            "url": "/shunyuncesu.jpg"
+          }
+        ],
         "recordStatus": "historical",
         "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
@@ -1383,15 +1411,21 @@
         "billing": "one-off"
       },
       "historicalEvidence": {
-        "evidenceLevel": "A",
+        "evidenceLevel": null,
         "lastTestedAt": "2026-06-30",
         "testWindow": "14:58 CST（非晚高峰）",
         "testRegion": "香港、台湾、日本、新加坡、美国多节点",
         "testNetwork": "珠海联通 / 9Gbps / 32线程订阅测速",
         "testDevice": "MiaoKo 自定义测试",
-        "latencyMs": 209,
+        "latencyMs": null,
         "downloadMbpsRange": "约273-2130Mbps（截图原值 34.10-266.19MB/s）",
         "evidenceSummary": "已补充 2026-06-30 MiaoKo 订阅测速截图；该截图为非晚高峰单次历史记录，当前表现请查看 Siilas。",
+        "evidenceSources": [
+          {
+            "name": "二猫云归档订阅测速原图",
+            "url": "/ermaoyuncesu.png"
+          }
+        ],
         "recordStatus": "historical",
         "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
@@ -1533,19 +1567,6 @@
         "sourcePage": "/posts/guangsuyun/",
         "currency": "CNY",
         "billing": "one-off"
-      },
-      "historicalEvidence": {
-        "evidenceLevel": "B",
-        "lastTestedAt": "2026-06-18",
-        "testWindow": "20:00-23:00",
-        "testRegion": "亚洲网络环境",
-        "testNetwork": "多端日常观察",
-        "testDevice": "多端日常观察",
-        "latencyMs": 70,
-        "downloadMbpsRange": "700-820Mbps",
-        "evidenceSummary": "仅有历史榜单和日常观察记录；当前表现请查看 Siilas 最新记录。",
-        "recordStatus": "historical",
-        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
       },
       "url": "https://yp7.net/posts/guangsuyun/"
     },

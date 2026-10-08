@@ -9,6 +9,7 @@ const plainText = (value) => value.replace(/<[^>]*>/g, '')
 
 const makeRows = (headers, rows, getText, getLinks) => rows.map((cells) => ({
   cells: Object.fromEntries(headers.map((header, i) => [header, getText(cells[i] || '')])),
+  rawCells: Object.fromEntries(headers.map((header, i) => [header, cells[i] || ''])),
   href: getLinks(cells[0] || '')[0],
   hrefs: cells.flatMap(getLinks),
 }))
@@ -83,10 +84,14 @@ export const validateAirportRows = (rows, airports, context, { sectionLinks = fa
       客户端: clients(airport), '订阅/客户端': clients(airport),
       当前状态: airport.status, 状态: airport.status, 风险提示: airport.risk,
       销量样本: String(airport.salesSample),
-      历史证据: evidence?.evidenceLevel || '无',
+      历史证据: evidence ? evidence.evidenceLevel || '未评级' : '无',
       历史测试日期: evidence?.lastTestedAt || '无历史记录',
-      历史延迟: evidence ? `${evidence.latencyMs}ms` : '无历史记录',
+      历史延迟: evidence ? evidence.latencyMs === null ? '未证实' : `${evidence.latencyMs}ms` : '无历史记录',
       历史速度区间: evidence?.downloadMbpsRange || '无历史记录',
+    }
+    const primaryValues = {
+      套餐与试用: `${airport.priceText}，${airport.traffic}；${airport.trial === null ? '试用待核实' : airport.trial ? '支持试用' : '无试用'}`,
+      客户端与限制: clients(airport),
     }
     const capabilities = {
       试用: airport.trial, 免费试用: airport.trial, 不限时: airport.noExpiry,
@@ -94,7 +99,11 @@ export const validateAirportRows = (rows, airports, context, { sectionLinks = fa
       专属客户端: airport.dedicatedClient, 通用订阅: airport.universalSubscription,
     }
     for (const [column, value] of Object.entries(row.cells)) {
-      if (column in capabilities) {
+      if (column in primaryValues) {
+        // Only the first line is generated; prices and conditions in the notes are editorial.
+        const primaryValue = plainText((row.rawCells?.[column] ?? value).split(/<br\s*\/?\s*>/i)[0])
+        if (primaryValue !== primaryValues[column]) errors.push(`${context}: ${airport.name} ${column} differs`)
+      } else if (column in capabilities) {
         if (booleanValue(value) !== capabilities[column]) errors.push(`${context}: ${airport.name} ${column} differs`)
       } else if (column in expected) {
         const normalize = (text) => ['月流量', '流量额度', '流量'].includes(column) ? text.replace(/\/月$/, '') : plainText(text)

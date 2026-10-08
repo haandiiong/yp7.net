@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict'
-import { mkdtempSync, readFileSync, rmSync } from 'node:fs'
+import { spawnSync } from 'node:child_process'
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
-import { join } from 'node:path'
+import { dirname, join, resolve } from 'node:path'
 import test from 'node:test'
 import { loadConfig } from './lib/load-config.mjs'
 import {
@@ -162,10 +163,23 @@ test('rendered HTML and Markdown retain the historical evidence exported to JSON
   assert.ok(!('historicalEvidence' in publicFlybit), 'Flybit has no traceable historical performance record')
   assert.deepEqual(validateAirportRows(html, airportCollections.all.items, 'HTML'), [])
   assert.deepEqual(validateAirportRows(markdown, airportCollections.all.items, 'Markdown'), [])
+  const guangnianti = json.airports.find((airport) => airport.name === '光年梯')
+  assert.equal(guangnianti.historicalEvidence.evidenceLevel, null)
+  assert.equal(guangnianti.historicalEvidence.latencyMs, null)
+  assert.ok(guangnianti.historicalEvidence.evidenceSources.some((source) => source.url === '/guangnianticesu1.jpg'))
+  for (const table of [html, markdown]) {
+    const row = table.find((item) => item.cells['机场'] === '光年梯')
+    assert.equal(row.cells['历史证据'], '未评级')
+    assert.equal(row.cells['历史延迟'], '未证实')
+  }
+  for (const name of ['光速云', 'xxyun', '阿达西']) {
+    assert.ok(!('historicalEvidence' in json.airports.find((airport) => airport.name === name)), `${name}: unsupported old claims are not exported as test evidence`)
+  }
   for (const source of airportData.filter((airport) => airport.performance)) {
     const record = json.airports.find((airport) => airport.path === source.path)
     assert.equal(record.historicalEvidence.lastTestedAt, source.performance.lastTestedAt)
     assert.equal(record.historicalEvidence.recordStatus, 'historical')
+    assert.deepEqual(record.historicalEvidence.evidenceSources, source.performance.evidenceSources || [])
     assert.ok(!('performance' in record))
     const row = html.find((item) => item.cells['机场'] === source.name)
     row.cells['历史测试日期'] = '无历史记录'
@@ -191,6 +205,58 @@ test('consistency checks reject stale prices, wrong capabilities, extra names an
   const list = getPageSchema(page)['@graph'].find((item) => item['@type'] === 'ItemList')
   list.itemListElement.reverse()
   assert.ok(validateItemList(list, collection.items, 'fixture').some((error) => error.includes('names/URLs/order')))
+})
+
+test('compact recommendation cells validate shared facts before editorial line breaks', () => {
+  const airport = { name: '示例', path: '/example/', priceText: '15元/月', traffic: '128GB/月', trial: null, dedicatedClient: true, universalSubscription: true }
+  const columns = ['机场', '适用场景', '套餐与试用', '客户端与限制', '测试依据']
+  const packageCell = '15元/月，128GB/月；试用待核实<br>另有36元128GB不限时包'
+  const clientCell = '专属客户端、通用订阅<br>入门套餐限3台'
+  const markdown = `| ${columns.join(' | ')} |\n|---|---|---|---|---|\n| [示例](/example/) | 新手 | ${packageCell} | ${clientCell} | 仅资料 |\n`
+  const html = `<table><tr>${columns.map((column) => `<th>${column}</th>`).join('')}</tr><tr><td><a href="/example/">示例</a></td><td>新手</td><td>${packageCell}</td><td>${clientCell}</td><td>仅资料</td></tr></table>`
+  for (const [source, parse] of [[markdown, markdownTables], [html, htmlTables]]) {
+    assert.deepEqual(validateAirportRows(parse(source)[0], [airport], 'compact', { requiredColumns: columns }), [])
+    for (const [before, after, column] of [
+      ['15元/月，128GB/月', '12元/月，128GB/月', '套餐与试用'],
+      ['15元/月，128GB/月', '15元/月，100GB/月', '套餐与试用'],
+      ['试用待核实', '无试用', '套餐与试用'],
+      ['专属客户端、通用订阅', '通用订阅', '客户端与限制'],
+    ]) {
+      assert.deepEqual(validateAirportRows(parse(source.replace(before, after))[0], [airport], 'compact'), [`compact: 示例 ${column} differs`])
+    }
+    const missing = source.replaceAll('套餐与试用', '套餐')
+    assert.ok(validateAirportRows(parse(missing)[0], [airport], 'compact', { requiredColumns: columns }).some((error) => error.includes('missing 套餐与试用')))
+  }
+})
+
+test('table sync updates compact recommendation facts and preserves every editorial note', (t) => {
+  const dest = mkdtempSync(join(tmpdir(), 'yp7-compact-table-'))
+  t.after(() => rmSync(dest, { recursive: true, force: true }))
+  const copySource = (file, content = readFileSync(file, 'utf8')) => {
+    const target = join(dest, file)
+    mkdirSync(dirname(target), { recursive: true })
+    writeFileSync(target, content)
+  }
+  const collection = airportCollections.mainRecommendation
+  for (const file of new Set([
+    ...Object.values(airportCollections).map((item) => item.sourceFile).filter(Boolean),
+    'docs/风险监测/机场风险监测.md', 'docs/.vuepress/config/airports.ts',
+  ])) copySource(file)
+  const rows = collection.items.map((airport) => `| [${airport.name}](#${airport.name.toLowerCase()}) | 人工场景 | 旧价格；旧试用<br>另有备用包；折扣需核对<br>第二条说明 | 旧客户端<br>入门限制需核对 | 人工测试依据 |`)
+  copySource(collection.sourceFile, `<!-- recommendation-scope:start -->\n旧数量\n<!-- recommendation-scope:end -->\n\n${collection.heading}\n\n| 机场 | 适用场景 | 套餐与试用 | 客户端与限制 | 测试依据 |\n|---|---|---|---|---|\n${rows.join('\n')}\n`)
+  const synced = spawnSync(process.execPath, [resolve('scripts/sync-airport-tables.mjs')], { cwd: dest, encoding: 'utf8' })
+  assert.equal(synced.status, 0, synced.stderr)
+  const source = readFileSync(join(dest, collection.sourceFile), 'utf8')
+  const result = markdownTableAfterHeading(source, collection.heading)
+  assert.deepEqual(validateAirportRows(result, collection.items, 'synced', { sectionLinks: true }), [])
+  for (const row of result) {
+    assert.ok(row.rawCells['套餐与试用'].endsWith('<br>另有备用包；折扣需核对<br>第二条说明'))
+    assert.ok(row.rawCells['客户端与限制'].endsWith('<br>入门限制需核对'))
+    assert.equal(row.cells['适用场景'], '人工场景')
+    assert.equal(row.cells['测试依据'], '人工测试依据')
+  }
+  const checked = spawnSync(process.execPath, [resolve('scripts/sync-airport-tables.mjs'), '--check'], { cwd: dest, encoding: 'utf8' })
+  assert.equal(checked.status, 0, checked.stderr)
 })
 
 test('Service validation detects a capability or price contradiction', () => {

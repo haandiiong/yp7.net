@@ -175,9 +175,9 @@ const getAirportMarkdownTable = (airports: PublicAirportData[], columns: string[
     booleanText(airport.noExpiry),
     airport.dedicatedClient ? '支持' : '不支持',
     booleanText(airport.universalSubscription),
-    airport.historicalEvidence?.evidenceLevel || '无',
+    airport.historicalEvidence ? airport.historicalEvidence.evidenceLevel || '未评级' : '无',
     airport.historicalEvidence?.lastTestedAt || '无历史记录',
-    airport.historicalEvidence ? `${airport.historicalEvidence.latencyMs}ms` : '无历史记录',
+    airport.historicalEvidence ? airport.historicalEvidence.latencyMs === null ? '未证实' : `${airport.historicalEvidence.latencyMs}ms` : '无历史记录',
     airport.historicalEvidence?.downloadMbpsRange || '无历史记录',
     airport.status,
   ])
@@ -283,9 +283,9 @@ const getAirportHtmlTable = (airports: PublicAirportData[]) => {
         <td>${booleanText(airport.noExpiry)}</td>
         <td>${airport.dedicatedClient ? '支持' : '不支持'}</td>
         <td>${booleanText(airport.universalSubscription)}</td>
-        <td>${escapeHtml(airport.historicalEvidence?.evidenceLevel || '无')}</td>
+        <td>${escapeHtml(airport.historicalEvidence ? airport.historicalEvidence.evidenceLevel || '未评级' : '无')}</td>
         <td>${escapeHtml(airport.historicalEvidence?.lastTestedAt || '无历史记录')}</td>
-        <td>${airport.historicalEvidence ? `${airport.historicalEvidence.latencyMs}ms` : '无历史记录'}</td>
+        <td>${airport.historicalEvidence ? airport.historicalEvidence.latencyMs === null ? '未证实' : `${airport.historicalEvidence.latencyMs}ms` : '无历史记录'}</td>
         <td>${escapeHtml(airport.historicalEvidence?.downloadMbpsRange || '无历史记录')}</td>
         <td>${escapeHtml(airport.status)}</td>
       </tr>`).join('\n')

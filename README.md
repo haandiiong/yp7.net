@@ -60,7 +60,9 @@ pnpm run docs:preview
 
 `trial`（免费试用）和 `universalSubscription`（通用订阅）使用三种状态：`true` 为确认支持，`false` 为不支持，`null` 为待核实。待核实条目不进入对应的免费试用榜或 Clash 榜，正文、公开数据与 Schema 均保留该状态。价格按 `priceText` 标明的套餐周期比较，`traffic` 保留每日或每月重置说明；一次性流量包价格在详情中单列，不能写成月付价格。
 
-`docs:sync-tables` 同步主推荐对比表、机场大全价格总表、各场景候选表及风险观察表的基础字段，保留表内编辑说明和已有页内链接。详细套餐、优惠条件和正文叙述仍需编辑维护。`docs:check-consistency` 在构建后交叉核对正文表格、公开 JSON/Markdown/HTML、单机场 Service 和集合 ItemList，检查名单、顺序、链接、价格、能力与历史证据。
+`docs:sync-tables` 同步主推荐对比表、机场大全价格总表、各场景候选表及风险观察表的基础字段，保留表内编辑说明和已有页内链接。主推荐首屏 `recommendation-scope` 标记内的资料数量、精选数量和 Siilas 记录覆盖数也自动同步；记录覆盖按有原始样本的场景集合与首推名单交集计算，不表示连续监测或近期复测。详细套餐、优惠条件、推荐理由和带日期的样本摘要仍需编辑维护。`docs:check-consistency` 在构建后交叉核对正文表格、公开 JSON/Markdown/HTML、单机场 Service 和集合 ItemList，检查名单、顺序、链接、价格、能力与历史证据。
+
+主推荐表的“套餐与试用”列首行按 `priceText，traffic；支持试用/无试用/试用待核实` 自动生成，“客户端与限制”列首行同步客户端能力；人工补充放在第一个 `<br>` 后，同步时完整保留。适用场景与测试依据由编辑维护，桌面表格和手机卡片共用同一张 Markdown 表。
 
 构建后运行：
 
@@ -98,6 +100,7 @@ pnpm run docs:test-data
 - 修改单机场页或机场结构化数据后，运行 `pnpm run docs:sync-review-sections` 同步“推荐依据与历史测试记录”“本文属于”和“相关阅读”，避免页面内链断层。
 - 本地图片放在 `docs/.vuepress/public/`，正文使用 `/image-name.png` 这种绝对路径。
 - 推广链接可以正常写入正文，构建时会自动补充 `rel="sponsored nofollow noopener noreferrer"`。
+- 分享封面与正文标志、原始测速截图分开：`page-covers.ts` 映射各页的1280×720 PNG，源SVG保存在 `public/covers/sources/`。新增页面后可运行 `node scripts/generate-page-covers.mjs`（维护环境需有 Sharp，也可通过 `YP7_SHARP_MODULE` 指定已有模块），再检查封面的标题和布局。生产构建直接使用已提交的图片，无需图片渲染依赖。
 - 优化既有机场文章前，先按目标关键词检查 Google 和 Bing 的实际排名；排名前 5 的文章只做必要的数据、价格、日期、链接修正，不调整正文结构。
 - 结构性改写优先用于排名靠后的文章，避免破坏已经稳定获得搜索流量的页面。例如“全球云机场”相关关键词如果已在前 5，不改动文章结构。
 

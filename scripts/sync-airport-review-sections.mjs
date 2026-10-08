@@ -159,7 +159,8 @@ const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hi
     ['历史 YouTube 4K 表现', performance?.youtube4kResult || '无历史记录；请查看 Siilas 最新记录'],
     ['历史下载速度', performance?.downloadMbpsRange || '无历史记录；请查看 Siilas 最新记录'],
     ['历史稳定性判断', performance?.stability || '无历史测试判断'],
-    ['历史证据等级', performance?.evidenceLevel ? `${performance.evidenceLevel}级` : '无历史测试证据'],
+    ['历史证据等级', performance ? performance.evidenceLevel ? `${performance.evidenceLevel}级` : '未评级；按原始记录的具体范围阅读' : '无历史测试证据'],
+    ...(performance?.evidenceSources?.length ? [['历史原始资料', performance.evidenceSources.map((source) => `[${source.name}](${source.url})`).join('；')]] : []),
     ['风险记录', airport.risk],
     ['历史证据摘要', performance?.evidenceSummary || '无 yp7.net 历史测试记录；当前页面只整理推荐资料与风险提示'],
   ]

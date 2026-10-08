@@ -1,4 +1,5 @@
 import { airportData, airportDataLastModified, airportDataLastReviewed, airportMetrics } from './airports'
+import { pageCovers } from './page-covers'
 
 export const hostname = 'https://yp7.net'
 export const siteName = 'yp7.net'
@@ -13,7 +14,7 @@ export const sitePublishingPrinciplesUrl = `${hostname}/about/#编辑原则`
 export const siteContactUrl = 'https://t.me/yp7net'
 export const monitoredAirportCount = airportMetrics.count
 export const structuredRankingCount = 10
-export const defaultImage = `${hostname}/shouye.png`
+export const defaultImage = `${hostname}${pageCovers['/']}`
 export const defaultRobots = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
 
 const airportPageImages = Object.fromEntries(
@@ -36,4 +37,7 @@ export const pageImages: Record<string, string> = {
   '/rankings/streaming/': '/youtubecesu.png',
   '/risk-monitor/': '/shouye.png',
   '/methodology/': '/speedtest.png',
+  // Sharing covers are independent of the logos and historical screenshots
+  // used in article bodies and public airport data.
+  ...pageCovers,
 }

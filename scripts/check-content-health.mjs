@@ -740,10 +740,9 @@ if (airportMetrics) {
 
 const siteConfigPath = join(root, 'docs/.vuepress/config/site.ts')
 if (existsSync(siteConfigPath)) {
-  const siteConfig = readFileSync(siteConfigPath, 'utf8')
-  const pageImages = [...siteConfig.matchAll(/'([^']+)'\s*:\s*'([^']+)'/g)]
+  const { pageImages } = loadConfig('site.ts')
 
-  for (const [, route, image] of pageImages) {
+  for (const [route, image] of Object.entries(pageImages)) {
     const normalizedRoute = normalizeRoute(route)
     if (!routeMap.has(normalizedRoute) && !generatedRoutes.has(normalizedRoute)) {
       errors.push(`site.ts: page image route has no page ${route}`)
@@ -751,6 +750,14 @@ if (existsSync(siteConfigPath)) {
 
     if (!existsSync(join(publicDir, image))) {
       errors.push(`site.ts: page image asset missing ${image}`)
+    }
+    if (image.startsWith('/covers/') && existsSync(join(publicDir, image))) {
+      const bytes = readFileSync(join(publicDir, image))
+      // PNG dimensions in IHDR; check the actual checked-in asset, not its label.
+      if (bytes.length < 24 || bytes.toString('hex', 0, 8) !== '89504e470d0a1a0a'
+        || bytes.readUInt32BE(16) !== 1280 || bytes.readUInt32BE(20) !== 720) {
+        errors.push(`site.ts: cover must be a 1280×720 PNG ${image}`)
+      }
     }
   }
 }

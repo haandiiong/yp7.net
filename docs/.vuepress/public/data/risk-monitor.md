@@ -1,6 +1,6 @@
 # yp7.net 机场风险监测
 
-Data updated: 2026-10-06; last full review: 2026-08-19
+Data updated: 2026-10-07; last full review: 2026-08-19
 
 | 机场 | 状态 | 风险提示 | 链接 |
 | --- | --- | --- | --- |

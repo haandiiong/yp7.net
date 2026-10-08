@@ -32,6 +32,11 @@ const getSocialHead = (page: any) => {
     ['meta', { property: 'og:locale:alternate', content: 'zh_HK' }],
     ['meta', { property: 'og:image', content: image }],
     ['meta', { property: 'og:image:alt', content: title }],
+    ...(image.includes('/covers/') ? [
+      ['meta', { property: 'og:image:width', content: '1280' }],
+      ['meta', { property: 'og:image:height', content: '720' }],
+      ['meta', { property: 'og:image:type', content: 'image/png' }],
+    ] : []),
     ...(articlePage && datePublished
       ? [['meta', { property: 'article:published_time', content: datePublished }]]
       : []),
