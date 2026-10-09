@@ -1,7 +1,7 @@
 ---
 title: 拼好连机场怎么样？9.9元100GB套餐、免费试用与客户端下载
 createTime: 2026/05/12
-dateModified: 2026/10/05
+dateModified: 2026/10/09
 permalink: /posts/runway-review-2026/
 tags:
   - 拼好连机场
@@ -21,6 +21,29 @@ description: 拼好连机场2026年9月套餐与使用资料：9.9元/月100GB�
 **拼好连月付9.9元起，包含100GB流量，并提供45元150GB不限时套餐。** 官方客户端覆盖 iOS、Android、macOS 和 Windows，后台也提供订阅地址与二维码。免费试用为1天6GB。
 
 <!-- more -->
+
+<!-- siilas-testing:start -->
+## Siilas 测速与使用体验记录
+
+2026-10-09 接收 [Siilas 拼好连（原 Runway）原始记录](https://siilas.com/airport/pinhaolian/) **12 条已验证测速**，覆盖 5 个不同测试日，采样跨度为 2026-07-13 至 2026-09-23。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
+
+已核对 Siilas 来源正式发布版本。完整记录、测试环境与证据见[接收快照](/data/siilas-tests.json)。
+
+Siilas 当前规则计算的综合评分为 **6.4/10**，参评要求为四地区各至少 3 个不同测试日。评分来自其全部有效样本，含所列性价比计分套餐；它不直接改写 yp7.net 推荐顺序。[查看 Siilas 评分方法](https://siilas.com/methodology/)。
+
+各地区最新一条记录分别如下，时间为北京时间。不同地区的最近日期可能不同：
+
+| 地区 | 样本时间 | 下载 Mbps | 上传 Mbps | 空闲延迟 ms | ChatGPT | 流媒体 | 原始证据 |
+| --- | --- | ---: | ---: | ---: | --- | --- | --- |
+| 新加坡 | 2026-09-20 21:56 | 326.36 | 49.75 | 122 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/result/19695036279) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-09-20-2156-sg-speedtest.png) |
+| 香港 | 2026-09-23 22:30 | 424.59 | 91.41 | 48 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19707411862) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-09-23-2230-hk-speedtest.png) |
+| 日本 | 2026-09-23 22:39 | 13.3 | 94.93 | 97 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19707450274) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-09-23-2239-jp-speedtest.png) |
+| 美国 | 2026-09-23 22:35 | 363.72 | 96.75 | 204 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19707435263) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-09-23-2235-us-speedtest.png) |
+
+上述最近记录所列代理客户端：FlClash；测速工具：Speedtest Desktop。每条原始记录保留自己的网络、设备和工具字段，未记录的历史条件不套用到新样本。
+
+ChatGPT、流媒体是提交者的定性体验；Speedtest 佐证测速数值，不证明各平台解锁、其他 AI 服务或长期稳定性。Siilas 与 yp7.net 由同一站长运营，不能当作独立第三方背书。
+<!-- siilas-testing:end -->
 
 ## 拼好连机场官网入口
 
@@ -122,7 +145,7 @@ description: 拼好连机场2026年9月套餐与使用资料：9.9元/月100GB�
 | 美国 | 2026-09-23 22:35 | 363.72Mbps | 流畅 | 流畅 |
 | 日本 | 2026-09-23 22:39 | 13.3Mbps | 流畅 | 流畅 |
 
-上述9月样本的来源记录注明测试环境为**中国南方电信家庭宽带1000Mbps、Wi-Fi、MacBook、FlClash**。日本节点在9月23日的下载速度只有13.3Mbps，不能因为当次 ChatGPT 与视频状态为“流畅”就推断其速度也高。记录未注明每条测速所用的套餐，不能用424.59Mbps的最高值反推9.9元入门档突破200Mbps标称限速。7月13日香港节点的 ChatGPT 状态为“不可用”；7月16日新加坡、日本节点的 ChatGPT 均为“响应较慢”，视频均为“缓冲明显”。7月记录未注明本地测试地区与运营商，不能套用9月的环境。
+上述9月样本的单条来源字段注明**中国电信、Wi-Fi、MacBook、FlClash**，本地地区与带宽按各条原始记录阅读，不用通用环境说明补齐缺失条件。日本节点在9月23日的下载速度只有13.3Mbps，不能因为当次 ChatGPT 与视频状态为“流畅”就推断其速度也高。记录未注明每条测速所用的套餐，不能用424.59Mbps的最高值反推9.9元入门档突破200Mbps标称限速。7月13日香港节点的 ChatGPT 状态为“不可用”；7月16日新加坡、日本节点的 ChatGPT 均为“响应较慢”，视频均为“缓冲明显”。7月记录未注明本地测试地区与运营商，不能套用9月的环境。
 
 Siilas 表中的“流媒体”是泛称体验状态，并未逐项验证 Netflix、Disney+、TikTok 或片库解锁；ChatGPT 状态也不能推及 Claude、Gemini、OpenAI API 与持续办公。以上历史样本不能替代在自己网络、客户端和常用时段的短期验证。
 

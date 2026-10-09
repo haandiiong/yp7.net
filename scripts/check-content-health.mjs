@@ -463,6 +463,7 @@ const requiredSeoSitemapPaths = [
   '/posts/jichang-heji/',
 ]
 const crawlerReadableDataResourcePaths = [
+  '/data/siilas-tests.json',
   '/data/airports.json',
   '/data/rankings.json',
   '/data/risk-monitor.json',

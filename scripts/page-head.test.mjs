@@ -1,34 +1,13 @@
 import assert from 'node:assert/strict'
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
-import { createRequire } from 'node:module'
 import { tmpdir } from 'node:os'
-import { dirname, join, resolve } from 'node:path'
+import { join } from 'node:path'
 import test from 'node:test'
 import { fileURLToPath } from 'node:url'
-import vm from 'node:vm'
-import ts from 'typescript'
 import { dedupeHead } from 'vuepress/shared'
+import { loadConfig } from './lib/load-config.mjs'
 
 const configDir = fileURLToPath(new URL('../docs/.vuepress/config/', import.meta.url))
-const require = createRequire(import.meta.url)
-const configModules = new Map()
-
-// Load the existing TypeScript config without a build or additional test runtime.
-const loadConfig = (filePath) => {
-  if (configModules.has(filePath)) return configModules.get(filePath).exports
-
-  const module = { exports: {} }
-  configModules.set(filePath, module)
-  const { outputText } = ts.transpileModule(readFileSync(filePath, 'utf8'), {
-    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
-  })
-  const run = vm.runInThisContext(`(function(require, exports, module) {\n${outputText}\n})`, { filename: filePath })
-  run((specifier) => specifier.startsWith('.')
-    ? loadConfig(resolve(dirname(filePath), `${specifier}.ts`))
-    : require(specifier), module.exports, module)
-  return module.exports
-}
-
 const { extendPageWithSeo } = loadConfig(join(configDir, 'page-head.ts'))
 const { patchGeneratedHtml } = loadConfig(join(configDir, 'generated.ts'))
 const { defaultRobots, siteName } = loadConfig(join(configDir, 'site.ts'))

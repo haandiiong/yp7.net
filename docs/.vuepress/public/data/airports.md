@@ -1,6 +1,6 @@
 # yp7.net 机场数据
 
-Data updated: 2026-10-07; last full review: 2026-08-19
+Data updated: 2026-10-09; last full review: 2026-08-19
 
 Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现；当前测试数据见 https://siilas.com/test/
 

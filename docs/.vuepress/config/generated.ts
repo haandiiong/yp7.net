@@ -12,6 +12,7 @@ import { airportCollections, airportRankingKeys } from './airport-collections'
 import type { AirportCollectionKey } from './airport-collections'
 import { serializeAirport } from './airport-public'
 import type { PublicAirportData } from './airport-public'
+import { siilasTestingSnapshot } from './siilas-evidence'
 import { getNoExpiryCells, noExpiryColumns, noExpiryComparisonNotice } from './no-expiry-packages'
 import { defaultImage, hostname, siteDescription, siteLastModified, siteLastReviewed, siteName } from './site'
 
@@ -403,6 +404,7 @@ export const generateAirportDataFiles = (app: any) => {
   const { airports, rankings, riskMonitor } = dataPageConfigs
 
   mkdirSync(dataDir, { recursive: true })
+  writeFileSync(`${dataDir}/siilas-tests.json`, `${JSON.stringify(siilasTestingSnapshot, null, 2)}\n`)
   writeFileSync(`${dataDir}/airports.json`, JSON.stringify({
     site: siteName,
     url: hostname,
@@ -491,6 +493,7 @@ export const generateAirportDataFiles = (app: any) => {
       <div class="links">
         <a href="/data/airports.json">airports.json</a>
         <a href="/data/airports.md">airports.md</a>
+        <a href="/data/siilas-tests.json">Siilas 原始测速与评分接收快照</a>
         <a href="/data/rankings">rankings</a>
         <a href="/posts/jichang-heji/">机场大全</a>
         <a href="/methodology/">推荐方法</a>

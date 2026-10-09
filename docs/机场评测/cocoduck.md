@@ -1,7 +1,7 @@
 ---
 title: cocoduck机场套餐与使用指南：17元月付、1天2GB试用及客户端
 createTime: 2026/04/25
-dateModified: 2026/10/05
+dateModified: 2026/10/09
 permalink: /posts/cocoduck-review/
 tags:
   - cocoduck机场
@@ -12,7 +12,30 @@ tags:
 description: cocoduck机场个人套餐17元/月含100GB，新用户可体验1天2GB；迷你鸭77元/年含40GB月流量。整理套餐价格、加油包条件、专属客户端与Clash订阅兼容说明。
 ---
 
-页面更新：2026年10月3日，补充 Siilas 原始记录入口；套餐和客户端资料仍按2026年9月27日核对记录，不代表10月重新核价或测速。
+页面更新：2026年10月9日，接收 Siilas 带日期的记录与评分，最晚样本仍为8月13日；套餐和客户端资料仍按2026年9月27日核对记录，不代表10月重新核价或新增测速。
+
+<!-- siilas-testing:start -->
+## Siilas 测速与使用体验记录
+
+2026-10-09 接收 [Siilas cocoduck原始记录](https://siilas.com/airport/cocoduck/) **12 条已验证测速**，覆盖 3 个不同测试日，采样跨度为 2026-07-13 至 2026-08-13。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
+
+已核对 Siilas 来源正式发布版本。完整记录、测试环境与证据见[接收快照](/data/siilas-tests.json)。
+
+Siilas 当前规则计算的综合评分为 **5.9/10**，参评要求为四地区各至少 3 个不同测试日。评分来自其全部有效样本，含所列性价比计分套餐；它不直接改写 yp7.net 推荐顺序。[查看 Siilas 评分方法](https://siilas.com/methodology/)。
+
+各地区最新一条记录分别如下，时间为北京时间。不同地区的最近日期可能不同：
+
+| 地区 | 样本时间 | 下载 Mbps | 上传 Mbps | 空闲延迟 ms | ChatGPT | 流媒体 | 原始证据 |
+| --- | --- | ---: | ---: | ---: | --- | --- | --- |
+| 新加坡 | 2026-08-13 22:27 | 91.01 | 81.53 | 259 | 轻微延迟 | 轻微缓冲 | [Speedtest](https://www.speedtest.net/result/d/19551583411) · [测速截图](https://siilas.com/evidence/cocoduck/2026-08-13-2227-sg-speedtest.png) |
+| 香港 | 2026-08-13 21:56 | 85.25 | 79.92 | 231 | 响应较慢 | 缓冲明显 | [Speedtest](https://www.speedtest.net/result/19551454767) · [测速截图](https://siilas.com/evidence/cocoduck/2026-08-13-2156-hk-speedtest.png) |
+| 日本 | 2026-08-13 22:06 | 217.69 | 97.38 | 169 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/result/19551495564) · [测速截图](https://siilas.com/evidence/cocoduck/2026-08-13-2206-jp-speedtest.png) |
+| 美国 | 2026-08-13 22:16 | 0.55 | 95.44 | 628 | 响应较慢 | 缓冲明显 | [Speedtest](https://www.speedtest.net/result/19551536675) · [测速截图](https://siilas.com/evidence/cocoduck/2026-08-13-2216-us-speedtest.png) |
+
+上述最近记录所列代理客户端：FlClash；测速工具：Speedtest Desktop。每条原始记录保留自己的网络、设备和工具字段，未记录的历史条件不套用到新样本。
+
+ChatGPT、流媒体是提交者的定性体验；Speedtest 佐证测速数值，不证明各平台解锁、其他 AI 服务或长期稳定性。Siilas 与 yp7.net 由同一站长运营，不能当作独立第三方背书。
+<!-- siilas-testing:end -->
 
 ## cocoduck机场怎么样？先试用再按流量选择
 
