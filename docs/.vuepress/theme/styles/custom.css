@@ -64,6 +64,10 @@
   white-space: nowrap;
 }
 
+.airport-catalogue .vp-doc .airport-official-link {
+  overflow-wrap: anywhere;
+}
+
 /* 首推页的五列对比：桌面完整表格，手机按机场纵向阅读。 */
 .vp-doc .recommendation-comparison table {
   display: table;

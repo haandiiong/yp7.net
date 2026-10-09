@@ -61,7 +61,7 @@ pnpm run docs:receive-siilas
 pnpm run docs:check-siilas
 ```
 
-来源目录不同可设置 `SIILAS_PROJECT_DIR`。接收脚本调用来源项目的实际评分与分区规则，不维护另一套评分公式；`--check` 核对原始记录、规则指纹、评分及 9 篇文章的生成摘要。仅接收步骤需要来源工作区，CI 和生产构建无需访问相邻项目。
+来源目录不同可设置 `SIILAS_PROJECT_DIR`。接收脚本调用来源项目的实际评分与分区规则，不维护另一套评分公式；`--check` 核对原始记录、规则指纹、评分、9 篇单机场文章以及主推荐、ChatGPT榜和流媒体榜的生成摘要。仅接收步骤需要来源工作区，CI 和生产构建无需访问相邻项目。
 
 发布状态按“机场 slug + 原始记录 ID + 完整记录及证据版本”跟踪，记录与每张截图都保存状态和 SHA256；不会用全站最新测试日期判断是否已发布。补录旧日期、修改已有记录、同 URL 更换图片，都保守标为 `pending`，已有待发布记录在再次接收或检查时保持待发布。初次来源未知时全部记录及证据待发布。旧版只有 `unpublishedTestDates` 的快照会迁移，保留原待发布记录；没有旧内容哈希的图片版本也先待核对。`unpublishedTestDates` 只为旧数据使用者保留，不是单条发布状态的依据。
 
@@ -69,7 +69,7 @@ pnpm run docs:check-siilas
 
 原始记录分别保留代理客户端 `client` 和测速工具 `measurementTool`；客户端未知如实留空。多张证据保留 `evidenceImages` 的标签与路径，并导出绝对 `evidenceUrls`；文章按“测速截图”“ChatGPT 状态截图”等语义展示，逐张标注待发布状态。
 
-接收会同步 `siilas-testing` 标记内的记录表与评分，并更新 `airportDataLastModified` 编辑日期；不推进 `airportDataLastReviewed` 或各条商业复核日期。标记外的选购说明及历史摘要须人工核对，避免旧“最新日期”与新表矛盾。完成后重新构建并同步生成数据。不要在 CI 中执行需要相邻来源项目的接收脚本。
+接收会同步单机场页 `siilas-testing` 标记内的记录表与评分，以及主推荐和两张场景榜的测试/体验列、`siilas-collection-evidence` 接收摘要、`siilas-score-comparison` 分数比较和 `siilas-page-updated` 页面编辑日期。各地区保留自己的最近样本时间和发布状态，缺测、未记录与 null 评分如实展示；原始记录未明确平台时只称视频/流媒体。旧手写样本收进带日期历史说明，选购理由、商业字段、候选名单与排序仍由编辑维护。更新 `airportDataLastModified` 编辑日期，不推进 `airportDataLastReviewed` 或各条商业复核日期。完成后重新构建并同步生成数据。不要在 CI 中执行需要相邻来源项目的接收脚本。
 
 ## 数据生成流程
 
@@ -85,9 +85,9 @@ pnpm run docs:check-siilas
 
 `trial`（免费试用）和 `universalSubscription`（通用订阅）使用三种状态：`true` 为确认支持，`false` 为不支持，`null` 为待核实。待核实条目不进入对应的免费试用榜或 Clash 榜，正文、公开数据与 Schema 均保留该状态。价格按 `priceText` 标明的套餐周期比较，`traffic` 保留每日或每月重置说明；一次性流量包价格在详情中单列，不能写成月付价格。
 
-`docs:sync-tables` 同步主推荐对比表、机场大全价格总表、各场景候选表及风险观察表的基础字段，保留表内编辑说明和已有页内链接。主推荐首屏 `recommendation-scope` 标记内的资料数量、精选数量和 Siilas 记录覆盖数也自动同步；记录覆盖按有原始样本的场景集合与首推名单交集计算，不表示连续监测或近期复测。详细套餐、优惠条件、推荐理由和带日期的样本摘要仍需编辑维护。`docs:check-consistency` 在构建后交叉核对正文表格、公开 JSON/Markdown/HTML、单机场 Service 和集合 ItemList，检查名单、顺序、链接、价格、能力与历史证据。
+`docs:sync-tables` 同步主推荐对比表、机场大全价格总表、各场景候选表及风险观察表的基础字段，保留表内编辑说明和已有页内链接。主推荐首屏 `recommendation-scope` 标记内的资料数量、精选数量和 Siilas 记录覆盖数也自动同步；记录覆盖按有原始样本的场景集合与首推名单交集计算，不表示连续监测或近期复测。详细套餐、优惠条件、推荐理由和历史引用仍需编辑维护，三篇页面的当前 Siilas 摘要由 `docs:receive-siilas` 同步。`docs:check-consistency` 在构建后交叉核对正文表格、公开 JSON/Markdown/HTML、单机场 Service 和集合 ItemList，检查名单、顺序、链接、价格、能力与历史证据。
 
-主推荐表的“套餐与试用”列首行按 `priceText，traffic；支持试用/无试用/试用待核实` 自动生成，“客户端与限制”列首行同步客户端能力；人工补充放在第一个 `<br>` 后，同步时完整保留。适用场景与测试依据由编辑维护，桌面表格和手机卡片共用同一张 Markdown 表。
+主推荐表的“套餐与试用”列首行按 `priceText，traffic；支持试用/无试用/试用待核实` 自动生成，“客户端与限制”列首行同步客户端能力；人工补充放在第一个 `<br>` 后，同步时完整保留。适用场景由编辑维护，测试依据由 Siilas 接收脚本同步，桌面表格和手机卡片共用同一张 Markdown 表。
 
 构建后运行：
 
@@ -122,7 +122,7 @@ pnpm run docs:test-data
 - 新增机场评测页时，同步检查 `docs/.vuepress/config/airports.ts` 里的结构化字段、页面图片和销量样本。
 - 修改 `docs/.vuepress/config/airports.ts` 的价格、流量、试用、客户端、通用订阅、销量样本或风险字段后，运行 `pnpm run docs:sync-tables` 同步榜单和风险监测表格，避免多处数据漂移。
 - 完成价格、服务状态、能力和风险的实际复核后，手动更新 `airportDataLastReviewed`；仅补录历史测速或调整测试口径时不要推进该日期。
-- 接收 Siilas 测速后检查 `docs:check-siilas`，保留原始测试日期，人工核对标记外的日期与体验摘要；不以接收日期刷新商业核价日期。
+- 接收 Siilas 测速后检查 `docs:check-siilas` 与 `docs:test-data`，保留原始测试日期，人工核对标记外的历史引用；不以接收日期刷新商业核价日期。数据测试也检查三篇实际合集摘要与仓库快照一致，无需相邻来源项目。
 - 修改单机场页或机场结构化数据后，运行 `pnpm run docs:sync-review-sections` 同步“推荐依据与历史测试记录”“本文属于”和“相关阅读”，避免页面内链断层。
 - 本地图片放在 `docs/.vuepress/public/`，正文使用 `/image-name.png` 这种绝对路径。
 - 推广链接可以正常写入正文，构建时会自动补充 `rel="sponsored nofollow noopener noreferrer"`。

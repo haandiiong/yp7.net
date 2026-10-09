@@ -132,10 +132,10 @@ test('the receipt CLI handles published historical additions and repeated --chec
   const projectDir = join(dir, 'yp7')
   const sourceDir = join(dir, 'siilas')
   const repoDir = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-  for (const target of ['scripts/lib', 'docs/.vuepress/config', 'docs/机场评测']) mkdirSync(join(projectDir, target), { recursive: true })
+  for (const target of ['scripts/lib', 'docs/.vuepress/config', 'docs/机场评测', 'docs/机场推荐', 'docs/机场榜单']) mkdirSync(join(projectDir, target), { recursive: true })
   for (const target of ['src/data', 'public/evidence']) mkdirSync(join(sourceDir, target), { recursive: true })
   symlinkSync(join(repoDir, 'node_modules'), join(projectDir, 'node_modules'), 'dir')
-  for (const script of ['sync-siilas-tests.mjs', 'lib/siilas-publication.mjs', 'lib/siilas-article-summary.mjs']) {
+  for (const script of ['sync-siilas-tests.mjs', 'lib/siilas-publication.mjs', 'lib/siilas-article-summary.mjs', 'lib/siilas-collection-summary.mjs', 'lib/load-config.mjs']) {
     copyFileSync(join(repoDir, 'scripts', script), join(projectDir, 'scripts', script))
   }
   writeFileSync(join(sourceDir, 'package.json'), '{"type":"module"}')
@@ -143,6 +143,29 @@ test('the receipt CLI handles published historical additions and repeated --chec
   writeFileSync(join(sourceDir, 'src/data/test-record-presentation.ts'), 'export const getLatestRegionTests = (tests) => tests.map(test => ({region:test.node,test})); export const getLatestExperienceSummary = () => "fixture";')
   writeFileSync(join(projectDir, 'docs/.vuepress/config/airports.ts'), "export const airportDataLastModified = '2026-10-07'\n")
   writeFileSync(join(projectDir, 'docs/机场评测/a.md'), '---\npermalink: /posts/a/\ndateModified: 2026/10/07\n---\n\n## 官网\n')
+  const collections = {
+    mainRecommendation: { pagePath: '/posts/jichang-tuijian/', sourceFile: 'docs/机场推荐/机场推荐.md', heading: '## 2026机场推荐对比' },
+    chatgpt: { pagePath: '/rankings/chatgpt/', sourceFile: 'docs/机场榜单/ChatGPT机场榜.md', heading: '## ChatGPT机场候选' },
+    streaming: { pagePath: '/rankings/streaming/', sourceFile: 'docs/机场榜单/流媒体机场榜.md', heading: '## 流媒体机场候选' },
+  }
+  for (const collection of Object.values(collections)) collection.items = [{ name: 'a', path: '/posts/a/' }]
+  writeFileSync(join(projectDir, 'docs/.vuepress/config/airport-collections.ts'), `export const airportCollections = ${JSON.stringify(collections)}\n`)
+  for (const [key, collection] of Object.entries(collections)) {
+    const header = key === 'mainRecommendation'
+      ? '| 机场 | 适用场景 | 套餐与试用 | 客户端与限制 | 测试依据 |'
+      : `| 机场 | 价格 | 流量 | ${key === 'chatgpt' ? '客户端 | ChatGPT观察' : '订阅/客户端 | 视频观察'} | 风险提示 |`
+    const row = key === 'mainRecommendation'
+      ? '| [a](#a) | fixture | 10元/月，100GB/月 | 通用订阅 | 待接收 |'
+      : '| [a](/posts/a/) | 10元/月 | 100GB/月 | 通用订阅 | 待接收 | fixture |'
+    writeFileSync(join(projectDir, collection.sourceFile), [
+      '---', `permalink: ${collection.pagePath}`, 'dateModified: 2026/10/07', '---', '',
+      '<!-- siilas-page-updated:start -->', '待接收', '<!-- siilas-page-updated:end -->', '',
+      collection.heading, '', header,
+      key === 'mainRecommendation' ? '| --- | --- | --- | --- | --- |' : '| --- | --- | --- | --- | --- | --- |', row, '',
+      '<!-- siilas-collection-evidence:start -->', '待接收', '<!-- siilas-collection-evidence:end -->', '',
+      ...(key === 'mainRecommendation' ? ['<!-- siilas-score-comparison:start -->', '待接收', '<!-- siilas-score-comparison:end -->', ''] : []),
+    ].join('\n'))
+  }
   writeFileSync(join(sourceDir, 'public/evidence/speedtest.png'), 'original screenshot bytes')
   const writeSource = (records) => writeFileSync(join(sourceDir, 'src/data/airports.json'), JSON.stringify({ airports: [airport('a', records)] }))
   const run = (...args) => {
@@ -164,10 +187,16 @@ test('the receipt CLI handles published historical additions and repeated --chec
   const pending = sourceSnapshot()
   assert.equal(recordStatus(pending, 'a', 'recent-hk'), 'published')
   assert.equal(recordStatus(pending, 'a', 'historical-sg'), 'pending')
-  const files = [snapshotPath, join(projectDir, 'docs/机场评测/a.md'), join(projectDir, 'docs/.vuepress/config/airports.ts')]
+  const files = [snapshotPath, join(projectDir, 'docs/机场评测/a.md'), join(projectDir, 'docs/.vuepress/config/airports.ts'),
+    ...Object.values(collections).map((collection) => join(projectDir, collection.sourceFile))]
   const before = files.map((path) => readFileSync(path, 'utf8'))
   run('--check')
   run('--check')
   assert.deepEqual(files.map((path) => readFileSync(path, 'utf8')), before)
   assert.ok(before[1].includes('[ChatGPT 状态截图（待发布）](https://siilas.com/evidence/chatgpt.png)'))
+  for (const markdown of before.slice(3)) {
+    assert.ok(markdown.includes('2026-07-01'), 'historical regional date must reach collection pages')
+    assert.ok(markdown.includes('待发布'), 'pending record status must reach collection pages')
+  }
+  for (const markdown of before.slice(4)) assert.ok(markdown.includes('[ChatGPT 状态截图（待发布）](https://siilas.com/evidence/chatgpt.png)'))
 })

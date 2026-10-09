@@ -7,6 +7,8 @@ import vm from 'node:vm'
 import ts from 'typescript'
 import { renderSiilasSummary } from './lib/siilas-article-summary.mjs'
 import { applySiilasPublication } from './lib/siilas-publication.mjs'
+import { syncSiilasCollectionArticle } from './lib/siilas-collection-summary.mjs'
+import { loadConfig } from './lib/load-config.mjs'
 
 const projectDir = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const sourceDir = resolve(process.env.SIILAS_PROJECT_DIR || resolve(projectDir, '../siilas'))
@@ -140,16 +142,24 @@ const articleChanges = records.map((airport) => {
   if (!block.test(markdown)) throw new Error(`无法插入 ${airport.name} 的 Siilas 接收摘要`)
   return { ...article, markdown: markdown === article.markdown ? markdown : markdown.replace(/^dateModified:\s*.+$/m, `dateModified: ${snapshot.receivedAt.replace(/-/g, '/')}`) }
 })
+const { airportCollections } = loadConfig('airport-collections.ts')
+const collectionChanges = ['mainRecommendation', 'chatgpt', 'streaming'].map((key) => {
+  const collection = airportCollections[key]
+  const filename = resolve(projectDir, collection.sourceFile)
+  const markdown = syncSiilasCollectionArticle(readFileSync(filename, 'utf8'), collection, snapshot)
+  return { filename, markdown }
+})
+const allArticleChanges = [...articleChanges, ...collectionChanges]
 if (checkOnly) {
   if (currentModifiedAt < snapshot.receivedAt) throw new Error('机场数据编辑日期早于 Siilas 接收日期，请重新运行接收脚本。')
   if (!existing || readFileSync(outputPath, 'utf8') !== serialized) throw new Error('Siilas 接收快照与当前来源记录、评分或计算规则不一致，请重新运行接收脚本。')
-  for (const article of articleChanges) if (readFileSync(article.filename, 'utf8') !== article.markdown) throw new Error(`Siilas 接收摘要与当前快照不一致：${article.filename}`)
+  for (const article of allArticleChanges) if (readFileSync(article.filename, 'utf8') !== article.markdown) throw new Error(`Siilas 接收摘要与当前快照不一致：${article.filename}`)
   console.log(`Siilas 接收快照一致：${snapshot.airportCount} 家机场、${snapshot.rawTestCount} 条原始测速；来源状态为 ${snapshot.source.publicationStatus}。`)
 } else {
   mkdirSync(dirname(outputPath), { recursive: true })
   writeFileSync(outputPath, serialized)
   // Receipt changes editorial data, not commercial or full-review dates.
   if (currentModifiedAt < snapshot.receivedAt) writeFileSync(metadataPath, metadata.replace(modifiedAtPattern, `export const airportDataLastModified = '${snapshot.receivedAt}'`))
-  for (const article of articleChanges) if (readFileSync(article.filename, 'utf8') !== article.markdown) writeFileSync(article.filename, article.markdown)
+  for (const article of allArticleChanges) if (readFileSync(article.filename, 'utf8') !== article.markdown) writeFileSync(article.filename, article.markdown)
   console.log(`已本地接收 Siilas ${snapshot.airportCount} 家机场、${snapshot.rawTestCount} 条原始测速及权威评分；没有提交或发布。`)
 }
