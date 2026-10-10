@@ -981,6 +981,24 @@ export const airportData: AirportData[] = [
       { name: '极速123官网邀请入口', url: 'https://905.jsy902.xyz/#/register?code=PB9zvaUD', checkedAt: '2026-10-05' },
     ],
   },
+  {
+    name: '灯塔加速器', path: '/posts/dengta-review-2026/', image: '/shouye.png',
+    price: 30, priceText: '30元/月', traffic: '120GB/月',
+    trial: true, noExpiry: false, dedicatedClient: true, universalSubscription: true,
+    scenarios: ['newbie', 'trial'], status: '资料已核对',
+    risk: '订阅导出受套餐周期限制，Clash格式未确认；入门与轻量无退款保障，帮助页泛化退款说明有冲突；试用额度和期限以账户显示为准',
+    summary: '最低实际月付30元120GB、3台设备；入门仅120元年付，每月60GB。新用户注册自动获免费试用，额度、期限和设备数以App显示为准。官方提供Windows、macOS、Android、iOS TestFlight及软路由客户端；轻量仅年付、VIP/SVIP季付及以上可导出第三方订阅，入门不导出，未确认Clash格式。入门和轻量无退款保障；VIP/SVIP标注24小时内且已用流量不超过10%，与帮助页泛化说明的差异待核实。限速、专线、超额降速及稳定性属于商家说明，未新增实测。',
+    informationSources: [
+      { name: '灯塔官网套餐与客户端下载', url: 'https://dengta12.com/', checkedAt: '2026-10-10' },
+      { name: '灯塔个人中心套餐购买页', url: 'https://dengta12.com/account?tab=plans', checkedAt: '2026-10-10', link: false },
+      { name: '灯塔新用户免费试用说明', url: 'https://dengta12.com/help/4/57', checkedAt: '2026-10-10' },
+      { name: '灯塔试用账户额度快照', url: 'https://dengta12.com/account?tab=invite', checkedAt: '2026-10-10', link: false },
+      { name: '灯塔订阅导出说明', url: 'https://dengta12.com/help/1/123', checkedAt: '2026-10-10' },
+      { name: '灯塔退款帮助与套餐限制', url: 'https://dengta12.com/help/2/46', checkedAt: '2026-10-10' },
+      { name: '灯塔流量统计与重置说明', url: 'https://dengta12.com/help/1/16', checkedAt: '2026-10-10' },
+      { name: '灯塔官网邀请入口（站长提供）', url: 'https://www.dengta12.com/reg?ref=DjdVKysq', checkedAt: '2026-10-10' },
+    ],
+  },
 ]
 
 export const hiddenAirportStatuses = new Set(['已淘汰', '停止推荐', '下架'])

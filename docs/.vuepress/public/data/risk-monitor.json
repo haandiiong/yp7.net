@@ -4,16 +4,16 @@
   "lastReviewed": "2026-08-19",
   "lastModified": "2026-10-10",
   "metrics": {
-    "count": 56,
-    "trialCount": 10,
+    "count": 57,
+    "trialCount": 11,
     "noExpiryCount": 40,
     "noExpiryUnverifiedCount": 0,
-    "dedicatedClientCount": 38,
-    "universalSubscriptionCount": 41,
+    "dedicatedClientCount": 39,
+    "universalSubscriptionCount": 42,
     "cheapUnderTenCount": 13,
-    "averagePrice": 16.9,
+    "averagePrice": 17.2,
     "regularCheapUnderTenCount": 13,
-    "regularAveragePrice": 17.2,
+    "regularAveragePrice": 17.4,
     "salesSampleCount": 17,
     "historicalPerformanceRecordCount": 6,
     "priceBasis": {
@@ -369,6 +369,12 @@
       "status": "资料已核对",
       "risk": "商品标注6倍扣量；文档与卡片设备数、一次性有效期存在差异；不支持免费试用；月付退款与重置费待核实",
       "url": "https://yp7.net/posts/jisu123-review-2026/"
+    },
+    {
+      "name": "灯塔加速器",
+      "status": "资料已核对",
+      "risk": "订阅导出受套餐周期限制，Clash格式未确认；入门与轻量无退款保障，帮助页泛化退款说明有冲突；试用额度和期限以账户显示为准",
+      "url": "https://yp7.net/posts/dengta-review-2026/"
     }
   ]
 }

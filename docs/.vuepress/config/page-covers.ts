@@ -20,6 +20,7 @@ export const pageCovers: Record<string, string> = {
   '/posts/clash-subscription-troubleshooting/': '/covers/posts-clash-subscription-troubleshooting.png',
   '/posts/clash-verge-guide-2026/': '/covers/posts-clash-verge-guide-2026.png',
   '/posts/cocoduck-review/': '/covers/posts-cocoduck-review.png',
+  '/posts/dengta-review-2026/': '/covers/posts-dengta-review-2026.png',
   '/posts/edge-x-review-2026/': '/covers/posts-edge-x-review-2026.png',
   '/posts/ermiao-vpn-review/': '/covers/posts-ermiao-vpn-review.png',
   '/posts/firefly-review-2026/': '/covers/posts-firefly-review-2026.png',

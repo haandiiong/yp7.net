@@ -176,7 +176,7 @@ const validateExternalAnchorRel = (html, projectPath) => {
     if (!/\bnoopener\b/.test(rel) || !/\bnoreferrer\b/.test(rel)) {
       errors.push(`${projectPath}: external link ${href} missing noopener/noreferrer`)
     }
-    if (/(\?|&|#)(code|aff|r|c|from)=/i.test(href) && !/\bsponsored\b/.test(rel)) {
+    if (/(\?|&|#)(code|aff|r|c|from|ref)=/i.test(href) && !/\bsponsored\b/.test(rel)) {
       errors.push(`${projectPath}: sponsored-looking link ${href} missing sponsored rel`)
     }
   }

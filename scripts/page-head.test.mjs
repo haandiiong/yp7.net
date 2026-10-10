@@ -95,7 +95,7 @@ test('post-generation cleanup preserves the head that the client will take over'
   for (const [file, page] of fixtures) {
     const head = `<head><title>${getTitles(resolveHead(page))[0]}</title><meta name="robots" content="${getRobots(resolveHead(page))[0]}"></head>`
     expectedHeads.set(file, head)
-    writeFileSync(join(dest, file), `<!doctype html><html>${head}<body><div id="VPContent"></div></body></html>`)
+    writeFileSync(join(dest, file), `<!doctype html><html>${head}<body><div id="VPContent"></div><a href="https://www.dengta12.com/reg?ref=DjdVKysq">官网入口</a></body></html>`)
   }
 
   patchGeneratedHtml({ dir: { dest: (file = '') => join(dest, file) } })
@@ -105,5 +105,6 @@ test('post-generation cleanup preserves the head that the client will take over'
     assert.equal(html.match(/<head>[\s\S]*?<\/head>/)?.[0], expectedHeads.get(file), file)
     assert.equal((html.match(/<title>/g) || []).length, 1, file)
     assert.equal((html.match(/<meta name="robots"/g) || []).length, 1, file)
+    assert.match(html, /href="https:\/\/www\.dengta12\.com\/reg\?ref=DjdVKysq"[^>]*rel="sponsored nofollow noopener noreferrer"/)
   }
 })
