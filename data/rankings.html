@@ -1,0 +1,2207 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="yp7.net 机场推荐数据 HTML 页面，按销量样本、低价、试用、客户端、Clash、ChatGPT和流媒体场景整理资料；旧测试记录统一标记为历史。数据页提供机器可读 JSON、Markdown 和 HTML 表格，覆盖价格、流量、试用、客户端、订阅兼容和风险状态，方便搜索引擎与读者引用。">
+    <meta name="keywords" content="机场榜单,机场排行榜,销量机场,稳定机场,低价机场,Clash机场,ChatGPT机场,流媒体机场">
+    <link rel="canonical" href="https://yp7.net/data/rankings">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="yp7.net">
+    <meta property="og:title" content="yp7.net 机场推荐数据：销量、低价、Clash、ChatGPT、流媒体与历史记录">
+    <meta property="og:description" content="yp7.net 机场推荐数据 HTML 页面，按销量样本、低价、试用、客户端、Clash、ChatGPT和流媒体场景整理资料；旧测试记录统一标记为历史。数据页提供机器可读 JSON、Markdown 和 HTML 表格，覆盖价格、流量、试用、客户端、订阅兼容和风险状态，方便搜索引擎与读者引用。">
+    <meta property="og:url" content="https://yp7.net/data/rankings">
+    <meta property="og:image" content="https://yp7.net/covers/home.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="yp7.net 机场推荐数据：销量、低价、Clash、ChatGPT、流媒体与历史记录">
+    <meta name="twitter:description" content="yp7.net 机场推荐数据 HTML 页面，按销量样本、低价、试用、客户端、Clash、ChatGPT和流媒体场景整理资料；旧测试记录统一标记为历史。数据页提供机器可读 JSON、Markdown 和 HTML 表格，覆盖价格、流量、试用、客户端、订阅兼容和风险状态，方便搜索引擎与读者引用。">
+    <meta name="twitter:image" content="https://yp7.net/covers/home.png">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"yp7.net 机场榜单数据","description":"yp7.net 机场推荐数据集按销量样本、价格、试用、客户端、Clash、ChatGPT 和流媒体等场景整理机场条目；旧测试记录仅作历史资料，当前测试数据来自 Siilas。","url":"https://yp7.net/data/rankings","dateModified":"2026-10-10","license":"https://yp7.net/methodology/","creator":{"@type":"Organization","@id":"https://yp7.net/#organization","name":"yp7.net","url":"https://yp7.net"}}</script>
+    <title>yp7.net 机场推荐数据：销量、低价、Clash、ChatGPT、流媒体与历史记录</title>
+    <style>
+      body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #111827; background: #f8fafc; }
+      main { width: min(1120px, calc(100vw - 32px)); margin: 0 auto; padding: 40px 0 64px; }
+      h1 { margin: 0 0 12px; font-size: clamp(30px, 5vw, 48px); line-height: 1.1; }
+      p { color: #475569; line-height: 1.8; }
+      a { color: #2563eb; }
+      .card { overflow-x: auto; border: 1px solid #e2e8f0; border-radius: 12px; background: #fff; box-shadow: 0 12px 30px rgba(15, 23, 42, .06); }
+      table { width: 100%; border-collapse: collapse; font-size: 14px; }
+      th, td { border-bottom: 1px solid #e2e8f0; padding: 12px; text-align: left; vertical-align: top; }
+      th { background: #f1f5f9; color: #334155; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+      .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+      .links a { border: 1px solid #bfdbfe; border-radius: 999px; background: #eff6ff; padding: 8px 12px; font-size: 13px; font-weight: 700; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>yp7.net 机场榜单数据</h1>
+      <p>数据更新：2026-10-10；上次全面复核：2026-08-19。各条目资料日期见来源记录。</p>
+      <p>2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现。2026-08-18 起 yp7.net 不再自行测速，当前测试主要引用 <a href="https://siilas.com/test/" target="_blank" rel="noopener noreferrer">Siilas</a> 对应记录；用户投稿另列来源、测试时间和环境。</p>
+      <p>本页是人类可读的机场推荐数据 HTML 入口。机器读取可使用 JSON 或 Markdown 文件。</p>
+      <div class="links">
+        <a href="/data/rankings.json">rankings.json</a>
+        <a href="/data/rankings.md">rankings.md</a>
+        <a href="/posts/jichang-heji/">机场大全</a>
+        <a href="/posts/jichang-tuijian/">机场推荐</a>
+        <a href="/rankings/cheap/">低价机场</a>
+        <a href="/rankings/trial/">免费试用</a>
+        <a href="/rankings/no-expiry/">不限时套餐</a>
+        <a href="/rankings/dedicated-client/">专属客户端</a>
+        <a href="/rankings/clash/">Clash机场</a>
+        <a href="/rankings/chatgpt/">ChatGPT机场</a>
+        <a href="/rankings/streaming/">流媒体机场</a>
+      </div>
+      <h2>综合推荐顺序</h2>
+      <div class="card"><table>
+        <thead>
+          <tr><th>机场</th><th>最低价格</th><th>流量额度</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>历史证据</th><th>历史测试日期</th><th>历史延迟</th><th>历史速度区间</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+<tr>
+        <td><a href="/posts/flybit-review-2026/">Flybit</a></td>
+        <td>15元/月</td>
+        <td>128GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>Clash观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xxyun-review-2026/">xxyun</a></td>
+        <td>9.99元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>流媒体观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/wangji-kuaiche-review/">网际快车</a></td>
+        <td>28元/30天</td>
+        <td>60GB/日（每日重置）</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-06-03</td>
+        <td>170ms</td>
+        <td>13.96Mbps（2026-06-03 Speedtest单次原图），上传3.70Mbps</td>
+        <td>重点观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/quanqiuyun/">全球云</a></td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>未评级</td>
+        <td>2026-05-30</td>
+        <td>82ms</td>
+        <td>778.79Mbps（Speedtest 单次历史结果）</td>
+        <td>主推观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/runway-review-2026/">拼好连</a></td>
+        <td>9.9元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/jiuyun-review-2026/">九云</a></td>
+        <td>6元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/adaxi-review-2026/">阿达西</a></td>
+        <td>3元/30天</td>
+        <td>20GB/30天</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>低价观察</td>
+      </tr>
+        </tbody>
+      </table></div>
+<h2>销量机场</h2>
+      <div class="card"><table>
+        <thead>
+          <tr><th>机场</th><th>销量样本</th><th>最低价格</th><th>流量额度</th><th>试用</th><th>专属客户端</th><th>通用订阅</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+<tr>
+        <td><a href="/posts/quanqiuyun/">全球云</a></td>
+        <td>1048</td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>主推观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xxyun-review-2026/">xxyun</a></td>
+        <td>942</td>
+        <td>9.99元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>流媒体观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/chongshangyunxiao/">冲上云霄</a></td>
+        <td>929</td>
+        <td>7元/30天</td>
+        <td>50GB/30天</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>低价观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/wangji-kuaiche-review/">网际快车</a></td>
+        <td>849</td>
+        <td>28元/30天</td>
+        <td>60GB/日（每日重置）</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>重点观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/guangnianti-review-2026/">光年梯</a></td>
+        <td>832</td>
+        <td>18元/月</td>
+        <td>110GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/flybit-review-2026/">Flybit</a></td>
+        <td>744</td>
+        <td>15元/月</td>
+        <td>128GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>Clash观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/adaxi-review-2026/">阿达西</a></td>
+        <td>462</td>
+        <td>3元/30天</td>
+        <td>20GB/30天</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>低价观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/runway-review-2026/">拼好连</a></td>
+        <td>445</td>
+        <td>9.9元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/sogo-review-2026/">sogo</a></td>
+        <td>419</td>
+        <td>25元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/99ba-review-2026/">99吧</a></td>
+        <td>413</td>
+        <td>9.9元/月</td>
+        <td>70GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>试用观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/guangsuyun/">光速云</a></td>
+        <td>346</td>
+        <td>23元/月</td>
+        <td>148GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>备用观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/cocoduck-review/">cocoduck</a></td>
+        <td>280</td>
+        <td>17元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/weituyun/">唯兔云</a></td>
+        <td>221</td>
+        <td>19.9元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>流媒体观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/tank-review-2026/">坦克云（原坦克加速）</a></td>
+        <td>219</td>
+        <td>9.9元/月</td>
+        <td>80GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>新手观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/ermiao-vpn-review/">二猫云</a></td>
+        <td>191</td>
+        <td>20元/月</td>
+        <td>130GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>专线观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/shunyun-review-2026/">瞬云</a></td>
+        <td>128</td>
+        <td>18元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/u1s1-review-2026/">U1S1</a></td>
+        <td>82</td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>专线观察</td>
+      </tr>
+        </tbody>
+      </table></div>
+<h2>稳定机场</h2>
+      <div class="card"><table>
+        <thead>
+          <tr><th>机场</th><th>最低价格</th><th>流量额度</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>历史证据</th><th>历史测试日期</th><th>历史延迟</th><th>历史速度区间</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+<tr>
+        <td><a href="/posts/quanqiuyun/">全球云</a></td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>未评级</td>
+        <td>2026-05-30</td>
+        <td>82ms</td>
+        <td>778.79Mbps（Speedtest 单次历史结果）</td>
+        <td>主推观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/guangnianti-review-2026/">光年梯</a></td>
+        <td>18元/月</td>
+        <td>110GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>未评级</td>
+        <td>2026-06-03</td>
+        <td>未证实</td>
+        <td>365.78及367.76Mbps（两张归档Speedtest图，完整日期及所用节点未独立注明）</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/wangji-kuaiche-review/">网际快车</a></td>
+        <td>28元/30天</td>
+        <td>60GB/日（每日重置）</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-06-03</td>
+        <td>170ms</td>
+        <td>13.96Mbps（2026-06-03 Speedtest单次原图），上传3.70Mbps</td>
+        <td>重点观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/guangsuyun/">光速云</a></td>
+        <td>23元/月</td>
+        <td>148GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>备用观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/u1s1-review-2026/">U1S1</a></td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-04-04</td>
+        <td>未证实</td>
+        <td>主流节点约82-430Mbps，截图最高约780Mbps（原值 10.22-53.75MB/s，个别低速或0速节点另见截图）</td>
+        <td>专线观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/yinyun-review-2026/">隐云</a></td>
+        <td>29元/月参考价（首购季付起）</td>
+        <td>专属模式不限流量；通用模式150GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>备用观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/jilianyun-review-2026/">极连云</a></td>
+        <td>18元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>稳定观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/ermiao-vpn-review/">二猫云</a></td>
+        <td>20元/月</td>
+        <td>130GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-06-30</td>
+        <td>未证实</td>
+        <td>约273-2130Mbps（截图原值 34.10-266.19MB/s）</td>
+        <td>专线观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/huanyuyun-review-2026/">寰宇云</a></td>
+        <td>18元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/kexinyun-review-2026/">可信云</a></td>
+        <td>15元/月</td>
+        <td>60GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+        </tbody>
+      </table></div>
+<h2>低价机场</h2>
+      <div class="card"><table>
+        <thead>
+          <tr><th>机场</th><th>最低价格</th><th>流量额度</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>历史证据</th><th>历史测试日期</th><th>历史延迟</th><th>历史速度区间</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+<tr>
+        <td><a href="/posts/adaxi-review-2026/">阿达西</a></td>
+        <td>3元/30天</td>
+        <td>20GB/30天</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>低价观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/chongshangyunxiao/">冲上云霄</a></td>
+        <td>7元/30天</td>
+        <td>50GB/30天</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>低价观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/jiuyun-review-2026/">九云</a></td>
+        <td>6元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/tank-review-2026/">坦克云（原坦克加速）</a></td>
+        <td>9.9元/月</td>
+        <td>80GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>新手观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/runway-review-2026/">拼好连</a></td>
+        <td>9.9元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/99ba-review-2026/">99吧</a></td>
+        <td>9.9元/月</td>
+        <td>70GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>试用观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xxyun-review-2026/">xxyun</a></td>
+        <td>9.99元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>流媒体观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xsus-review-2026/">XSUS</a></td>
+        <td>12元/月</td>
+        <td>168GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>性价比观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/liyun-review-2026/">鲤云</a></td>
+        <td>5元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/miaomiaoyun-review-2026/">秒秒云</a></td>
+        <td>9元/月</td>
+        <td>128GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/jinyun-review-2026/">锦云</a></td>
+        <td>6元/月</td>
+        <td>50GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xiongmaocloud-review-2026/">熊猫cloud</a></td>
+        <td>6元/月</td>
+        <td>300GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xinghuayun-review-2026/">杏花云</a></td>
+        <td>3元/月</td>
+        <td>200GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/andycloud-review-2026/">AnDy Cloud</a></td>
+        <td>5元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+        </tbody>
+      </table></div>
+<h2>免费试用机场</h2>
+      <div class="card"><table>
+        <thead>
+          <tr><th>机场</th><th>最低价格</th><th>流量额度</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>历史证据</th><th>历史测试日期</th><th>历史延迟</th><th>历史速度区间</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+<tr>
+        <td><a href="/posts/wangji-kuaiche-review/">网际快车</a></td>
+        <td>28元/30天</td>
+        <td>60GB/日（每日重置）</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-06-03</td>
+        <td>170ms</td>
+        <td>13.96Mbps（2026-06-03 Speedtest单次原图），上传3.70Mbps</td>
+        <td>重点观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/flybit-review-2026/">Flybit</a></td>
+        <td>15元/月</td>
+        <td>128GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>Clash观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/runway-review-2026/">拼好连</a></td>
+        <td>9.9元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/99ba-review-2026/">99吧</a></td>
+        <td>9.9元/月</td>
+        <td>70GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>试用观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/ssone/">SSONE</a></td>
+        <td>15元/月</td>
+        <td>60GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>订阅观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/cocoduck-review/">cocoduck</a></td>
+        <td>17元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/tank-review-2026/">坦克云（原坦克加速）</a></td>
+        <td>9.9元/月</td>
+        <td>80GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>新手观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/ermiao-vpn-review/">二猫云</a></td>
+        <td>20元/月</td>
+        <td>130GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-06-30</td>
+        <td>未证实</td>
+        <td>约273-2130Mbps（截图原值 34.10-266.19MB/s）</td>
+        <td>专线观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/sujie-review-2026/">速界</a></td>
+        <td>15元/月</td>
+        <td>50GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/kuajieyun-review-2026/">跨界云</a></td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/dengta-review-2026/">灯塔加速器</a></td>
+        <td>30元/月</td>
+        <td>120GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+        </tbody>
+      </table></div>
+<h2>不限时套餐机场</h2>
+      <div class="card"><p>按已核对的不限时入门包比较，金额为未扣优惠的整笔标价。每GB成本＝一次付款金额÷一次性总流量，保留三位小数；明确统一计费倍率时按折合传输额度计算，并在流量列注明。价格、流量或有效期存在冲突时不计算。各行注明官网套餐核验日期，后续站长补充单独记录，不代表当天重新核对全部官网或性能。</p>
+  <table><thead><tr><th>机场</th><th>一次付款金额</th><th>一次性总流量</th><th>每GB成本</th><th>设备限制</th><th>有效期与重置</th><th>套餐核验日期</th></tr></thead>
+  <tbody><tr><td><a href="/posts/jiuyun-review-2026/">九云</a></td><td>36元</td><td>100GB</td><td>0.360元/GB</td><td>3台同时在线</td><td>不限时；不重置，用完作废</td><td>2026-09-22</td></tr>
+<tr><td><a href="/posts/quanqiuyun/">全球云</a></td><td>100元</td><td>100GB</td><td>1.000元/GB</td><td>不限时档待核实</td><td>无到期日；不自动重置</td><td>2026-09-11</td></tr>
+<tr><td><a href="/posts/wangji-kuaiche-review/">网际快车</a></td><td>6.8元</td><td>20GB</td><td>0.340元/GB</td><td>不限设备数</td><td>不限时；不按月清零，用完为止</td><td>2026-09-10</td></tr>
+<tr><td><a href="/posts/guangsuyun/">光速云</a></td><td>680元</td><td>1000GB</td><td>0.680元/GB</td><td>不限时档待核实</td><td>无时间限制；不自动重置，重置612元</td><td>2026-09-16</td></tr>
+<tr><td><a href="/posts/xxyun-review-2026/">xxyun</a></td><td>待核实</td><td>待核实</td><td>待核实，不计算</td><td>不限时档待核实</td><td>已见不限时入口；具体规则待核实</td><td>2026-09-10</td></tr>
+<tr><td><a href="/posts/flybit-review-2026/">Flybit</a></td><td>36元</td><td>128GB</td><td>0.281元/GB</td><td>不限设备数，支持家庭共享</td><td>不限时；按用量扣除，用完后按规则续购</td><td>2026-09-08</td></tr>
+<tr><td><a href="/posts/adaxi-review-2026/">阿达西</a></td><td>50元</td><td>300GB</td><td>0.167元/GB</td><td>不限设备数</td><td>标注永不过期；限速600Mbps</td><td>2026-09-16</td></tr>
+<tr><td><a href="/posts/runway-review-2026/">拼好连</a></td><td>45元</td><td>150GB</td><td>0.300元/GB</td><td>专属客户端3台；第三方不限连接</td><td>不限时；手动重置45元</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/weituyun/">唯兔云</a></td><td>100元</td><td>100GB</td><td>1.000元/GB</td><td>不限时档待核实</td><td>不限时；不自动刷新，续费9折</td><td>2026-09-23</td></tr>
+<tr><td><a href="/posts/99ba-review-2026/">99吧</a></td><td>35.9元</td><td>111GB</td><td>0.323元/GB</td><td>同时登录99台</td><td>不限时；续购与叠加细则待核实</td><td>2026-09-07</td></tr>
+<tr><td><a href="/posts/xunda-review-2026/">迅达</a></td><td>66元</td><td>300GB</td><td>0.220元/GB</td><td>5台；仅限个人使用</td><td>不限时；不自动重置，重置56.66元</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/ccyz-review-2026/">ccyz</a></td><td>145元</td><td>550GB</td><td>0.264元/GB</td><td>5台</td><td>不限时；不按月补充流量</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/uuone-review-2026/">uuone</a></td><td>99元</td><td>450GB</td><td>0.220元/GB</td><td>10台</td><td>无时间限制；叠加规则待核实</td><td>2026-09-23</td></tr>
+<tr><td><a href="/posts/chongshangyunxiao/">冲上云霄</a></td><td>365元</td><td>800GB</td><td>0.456元/GB</td><td>不限设备数</td><td>标注永不过期；续购与叠加待核实</td><td>2026-09-23</td></tr>
+<tr><td><a href="/posts/xsus-review-2026/">XSUS</a></td><td>65元</td><td>188GB</td><td>0.346元/GB</td><td>最多5个IP；同网络多设备计1个IP</td><td>无过期日；再购重置额度，不叠加余量</td><td>2026-09-23</td></tr>
+<tr><td><a href="/posts/tank-review-2026/">坦克云（原坦克加速）</a></td><td>50元</td><td>100GB</td><td>0.500元/GB</td><td>2台设备与IP同时连接</td><td>不限时；总流量用完为止</td><td>2026-09-23</td></tr>
+<tr><td><a href="/posts/shunyun-review-2026/">瞬云</a></td><td>260元</td><td>2000GB</td><td>0.130元/GB</td><td>不限客户端数量；仅限个人</td><td>无到期日；不自动重置，重置234元</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/jilianyun-review-2026/">极连云</a></td><td>399元</td><td>600GB</td><td>0.665元/GB</td><td>不限同时使用客户端数量</td><td>不限时；重置费待核实</td><td>2026-09-23官网；2026-09-27站长确认价格与流量</td></tr>
+<tr><td><a href="/posts/ermiao-vpn-review/">二猫云</a></td><td>99元</td><td>100GB</td><td>0.990元/GB</td><td>卡片不限；帮助中心提示按套餐限制，待确认</td><td>长期有效；可补充流量，费用待核实</td><td>2026-09-23</td></tr>
+<tr><td><a href="/posts/huanyuyun-review-2026/">寰宇云</a></td><td>158元</td><td>1000GB</td><td>0.158元/GB</td><td>不限在线设备或客户端数量</td><td>不限时；按总流量使用</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/yifanyun-review-2026/">一翻云</a></td><td>100元</td><td>100GB</td><td>1.000元/GB</td><td>不限设备数</td><td>长期有效；常规包，另有中秋限售包</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/sogo-review-2026/">sogo</a></td><td>卡片120元／正文100元（冲突）</td><td>120GB</td><td>待核实，不计算</td><td>不限设备数</td><td>不限时；不自动刷新，重置费待核实</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/bianyuan-review-2026/">边缘节点</a></td><td>100元</td><td>100GB</td><td>1.000元/GB</td><td>不限设备数</td><td>不限时；不自动刷新，重置90元</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/yuzhoucloud-review-2026/">宇宙云</a></td><td>110元</td><td>120GB</td><td>0.917元/GB</td><td>不限设备数</td><td>不限时；可补充流量，费用待核实</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/kexinyun-review-2026/">可信云</a></td><td>50元</td><td>50GB</td><td>1.000元/GB</td><td>不限设备数</td><td>标注永久不限时；不参与活动</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/xingdaomeng-review-2026/">星岛梦</a></td><td>100元</td><td>100GB</td><td>1.000元/GB</td><td>不限设备数</td><td>不限时；不自动重置，手动重置9折</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/yinxingren-review-2026/">隐形人</a></td><td>229元</td><td>160GB</td><td>1.431元/GB</td><td>详情1台／卡片不限（冲突）</td><td>无时间限制；设备规则需先确认</td><td>2026-09-26</td></tr>
+<tr><td><a href="/posts/kuajieyun-review-2026/">跨界云</a></td><td>200元</td><td>300GB</td><td>0.667元/GB</td><td>不限设备登录数</td><td>长期有效；不自动刷新，重置180元</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/shanyue-review-2026/">闪跃</a></td><td>150元</td><td>列表100GB／订单确认页0GB（冲突）</td><td>待核实，不计算</td><td>不限时档未注明</td><td>标注不限时；订单确认页重置选项130元，交付额度待核实</td><td>2026-10-05</td></tr>
+<tr><td><a href="/posts/wuyoulianjie-review-2026/">无忧链接</a></td><td>98元</td><td>100GB</td><td>0.980元/GB</td><td>待核实</td><td>标注永久不限时；重置与续购规则待核实</td><td>2026-09-28</td></tr>
+<tr><td><a href="/posts/shanshuiyun-review-2026/">山水云</a></td><td>99元</td><td>100GB</td><td>0.990元/GB</td><td>3台同时在线</td><td>不限时；用完为止，续购规则待核实</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/miaomiaoyun-review-2026/">秒秒云</a></td><td>59元</td><td>商品100GB／正文100GB每月（冲突）</td><td>待核实，不计算</td><td>3台同时在线</td><td>10月5日订单页标注不限时但也写100G/月；总量及刷新规则待确认</td><td>2026-10-05</td></tr>
+<tr><td><a href="/posts/jinyun-review-2026/">锦云</a></td><td>99元</td><td>100GB</td><td>0.990元/GB</td><td>3台同时在线</td><td>不限时；用完作废，不重置</td><td>2026-09-27</td></tr>
+<tr><td><a href="/posts/lingmaowangluo-review-2026/">灵猫网络</a></td><td>100元</td><td>100GB</td><td>1.000元/GB</td><td>不限客户端数量</td><td>不限时，用完为止；手动重置9折，基数待核实</td><td>2026-09-28</td></tr>
+<tr><td><a href="/posts/firefly-review-2026/">Firefly</a></td><td>100元</td><td>100GB</td><td>1.000元/GB</td><td>不限时档未注明</td><td>永久不过期，用完为止；续购规则待核实</td><td>2026-09-28</td></tr>
+<tr><td><a href="/posts/jisucloud-review-2026/">极速Cloud</a></td><td>329元</td><td>标称1000GB／10倍计费折合100GB</td><td>3.290元/GB</td><td>3台</td><td>不限时间，用完为止；10倍计费，单价按折合100GB计算</td><td>2026-10-05</td></tr>
+<tr><td><a href="/posts/andycloud-review-2026/">AnDy Cloud</a></td><td>100元</td><td>1000GB</td><td>0.100元/GB</td><td>10台</td><td>无过期日，用完即止；重购覆盖新额度，不叠加剩余流量</td><td>2026-10-05</td></tr>
+<tr><td><a href="/posts/tidal-review-2026/">Tidal潮汐加速</a></td><td>59元</td><td>128GB</td><td>0.461元/GB</td><td>不限同时在线设备</td><td>永久有效，用完为止；续购叠加及退款适用范围待核实</td><td>2026-10-05</td></tr>
+<tr><td><a href="/posts/yunjiexian-review-2026/">云界线</a></td><td>99元</td><td>卡片80GB／正文300GB（冲突）</td><td>待核实，不计算</td><td>不限客户端数量</td><td>标注不限时，不按月刷新、用完重购；交付额度待核实；另有199元200GB包</td><td>2026-10-05</td></tr>
+<tr><td><a href="/posts/jisu123-review-2026/">极速123</a></td><td>128元</td><td>标称1000GB／6倍计费折合约166.7GB</td><td>0.768元/GB</td><td>3台</td><td>不限时间，用完为止；6倍扣量，重购覆盖而不叠加；不支持退款</td><td>2026-10-05</td></tr></tbody></table></div>
+<h2>专属客户端机场</h2>
+      <div class="card"><table>
+        <thead>
+          <tr><th>机场</th><th>最低价格</th><th>流量额度</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>历史证据</th><th>历史测试日期</th><th>历史延迟</th><th>历史速度区间</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+<tr>
+        <td><a href="/posts/quanqiuyun/">全球云</a></td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>未评级</td>
+        <td>2026-05-30</td>
+        <td>82ms</td>
+        <td>778.79Mbps（Speedtest 单次历史结果）</td>
+        <td>主推观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/guangnianti-review-2026/">光年梯</a></td>
+        <td>18元/月</td>
+        <td>110GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>未评级</td>
+        <td>2026-06-03</td>
+        <td>未证实</td>
+        <td>365.78及367.76Mbps（两张归档Speedtest图，完整日期及所用节点未独立注明）</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/guangsuyun/">光速云</a></td>
+        <td>23元/月</td>
+        <td>148GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>备用观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xxyun-review-2026/">xxyun</a></td>
+        <td>9.99元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>流媒体观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/runway-review-2026/">拼好连</a></td>
+        <td>9.9元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/weituyun/">唯兔云</a></td>
+        <td>19.9元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>流媒体观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xunda-review-2026/">迅达</a></td>
+        <td>15元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/ssone/">SSONE</a></td>
+        <td>15元/月</td>
+        <td>60GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>订阅观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/u1s1-review-2026/">U1S1</a></td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-04-04</td>
+        <td>未证实</td>
+        <td>主流节点约82-430Mbps，截图最高约780Mbps（原值 10.22-53.75MB/s，个别低速或0速节点另见截图）</td>
+        <td>专线观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/yinyun-review-2026/">隐云</a></td>
+        <td>29元/月参考价（首购季付起）</td>
+        <td>专属模式不限流量；通用模式150GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>备用观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/cocoduck-review/">cocoduck</a></td>
+        <td>17元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xsus-review-2026/">XSUS</a></td>
+        <td>12元/月</td>
+        <td>168GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>性价比观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/tank-review-2026/">坦克云（原坦克加速）</a></td>
+        <td>9.9元/月</td>
+        <td>80GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>新手观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/shunyun-review-2026/">瞬云</a></td>
+        <td>18元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-05-09</td>
+        <td>未证实</td>
+        <td>约144-2096Mbps（截图原值 17.96-262.06MB/s，低速节点另见截图）</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/jilianyun-review-2026/">极连云</a></td>
+        <td>18元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>稳定观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/ermiao-vpn-review/">二猫云</a></td>
+        <td>20元/月</td>
+        <td>130GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-06-30</td>
+        <td>未证实</td>
+        <td>约273-2130Mbps（截图原值 34.10-266.19MB/s）</td>
+        <td>专线观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/huanyuyun-review-2026/">寰宇云</a></td>
+        <td>18元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/yifanyun-review-2026/">一翻云</a></td>
+        <td>20元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/sogo-review-2026/">sogo</a></td>
+        <td>25元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/sujie-review-2026/">速界</a></td>
+        <td>15元/月</td>
+        <td>50GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/bianyuan-review-2026/">边缘节点</a></td>
+        <td>15元/月</td>
+        <td>50GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/yuzhoucloud-review-2026/">宇宙云</a></td>
+        <td>25元/月</td>
+        <td>160GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/kuaili-review-2026/">快狸</a></td>
+        <td>15元/月</td>
+        <td>50GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>客户端观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/kexinyun-review-2026/">可信云</a></td>
+        <td>15元/月</td>
+        <td>60GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xingdaomeng-review-2026/">星岛梦</a></td>
+        <td>25元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/yinxingren-review-2026/">隐形人</a></td>
+        <td>24元/月</td>
+        <td>144GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/shandianshu-review-2026/">闪电鼠</a></td>
+        <td>22元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/huanqiuti-review-2026/">环球梯</a></td>
+        <td>23元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/kuajieyun-review-2026/">跨界云</a></td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/edge-x-review-2026/">Edge-X</a></td>
+        <td>22.8元/月</td>
+        <td>200GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/shanyue-review-2026/">闪跃</a></td>
+        <td>24元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/wuyoulianjie-review-2026/">无忧链接</a></td>
+        <td>19元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/liulianyun-review-2026/">榴莲云</a></td>
+        <td>24元/月</td>
+        <td>140GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/lingmaowangluo-review-2026/">灵猫网络</a></td>
+        <td>25元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/firefly-review-2026/">Firefly</a></td>
+        <td>25元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/shenxingjiasu-review-2026/">神行加速</a></td>
+        <td>23元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/tidal-review-2026/">Tidal潮汐加速</a></td>
+        <td>25元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/yunjiexian-review-2026/">云界线</a></td>
+        <td>卡片22元/月（正文25元，结算待核实）</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/dengta-review-2026/">灯塔加速器</a></td>
+        <td>30元/月</td>
+        <td>120GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+        </tbody>
+      </table></div>
+<h2>Clash 机场</h2>
+      <div class="card"><table>
+        <thead>
+          <tr><th>机场</th><th>最低价格</th><th>流量额度</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>历史证据</th><th>历史测试日期</th><th>历史延迟</th><th>历史速度区间</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+<tr>
+        <td><a href="/posts/flybit-review-2026/">Flybit</a></td>
+        <td>15元/月</td>
+        <td>128GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>Clash观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/wangji-kuaiche-review/">网际快车</a></td>
+        <td>28元/30天</td>
+        <td>60GB/日（每日重置）</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-06-03</td>
+        <td>170ms</td>
+        <td>13.96Mbps（2026-06-03 Speedtest单次原图），上传3.70Mbps</td>
+        <td>重点观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/jiuyun-review-2026/">九云</a></td>
+        <td>6元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/99ba-review-2026/">99吧</a></td>
+        <td>9.9元/月</td>
+        <td>70GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>试用观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/runway-review-2026/">拼好连</a></td>
+        <td>9.9元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xunda-review-2026/">迅达</a></td>
+        <td>15元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/tank-review-2026/">坦克云（原坦克加速）</a></td>
+        <td>9.9元/月</td>
+        <td>80GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>新手观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/ermiao-vpn-review/">二猫云</a></td>
+        <td>20元/月</td>
+        <td>130GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-06-30</td>
+        <td>未证实</td>
+        <td>约273-2130Mbps（截图原值 34.10-266.19MB/s）</td>
+        <td>专线观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/u1s1-review-2026/">U1S1</a></td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-04-04</td>
+        <td>未证实</td>
+        <td>主流节点约82-430Mbps，截图最高约780Mbps（原值 10.22-53.75MB/s，个别低速或0速节点另见截图）</td>
+        <td>专线观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/kuaili-review-2026/">快狸</a></td>
+        <td>15元/月</td>
+        <td>50GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>客户端观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/ccyz-review-2026/">ccyz</a></td>
+        <td>49.9元/季（约16.63元/月）</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/shunyun-review-2026/">瞬云</a></td>
+        <td>18元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-05-09</td>
+        <td>未证实</td>
+        <td>约144-2096Mbps（截图原值 17.96-262.06MB/s，低速节点另见截图）</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/huanyuyun-review-2026/">寰宇云</a></td>
+        <td>18元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/yuzhoucloud-review-2026/">宇宙云</a></td>
+        <td>25元/月</td>
+        <td>160GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/kuajieyun-review-2026/">跨界云</a></td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/edge-x-review-2026/">Edge-X</a></td>
+        <td>22.8元/月</td>
+        <td>200GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/shanyue-review-2026/">闪跃</a></td>
+        <td>24元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/liyun-review-2026/">鲤云</a></td>
+        <td>5元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/shanshuiyun-review-2026/">山水云</a></td>
+        <td>12元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/miaomiaoyun-review-2026/">秒秒云</a></td>
+        <td>9元/月</td>
+        <td>128GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/jinyun-review-2026/">锦云</a></td>
+        <td>6元/月</td>
+        <td>50GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xiongmaocloud-review-2026/">熊猫cloud</a></td>
+        <td>6元/月</td>
+        <td>300GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/yuntu-review-2026/">云图</a></td>
+        <td>20元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/jisucloud-review-2026/">极速Cloud</a></td>
+        <td>新人15元/月（不可续费）；常规30元/月起</td>
+        <td>新人标称200GB/月，10倍折合20GB；常规折合100GB/月起</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xinghuayun-review-2026/">杏花云</a></td>
+        <td>3元/月</td>
+        <td>200GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/lingmaowangluo-review-2026/">灵猫网络</a></td>
+        <td>25元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/firefly-review-2026/">Firefly</a></td>
+        <td>25元/月</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/wuyoulianjie-review-2026/">无忧链接</a></td>
+        <td>19元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/shenxingjiasu-review-2026/">神行加速</a></td>
+        <td>23元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/liulianyun-review-2026/">榴莲云</a></td>
+        <td>24元/月</td>
+        <td>140GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/andycloud-review-2026/">AnDy Cloud</a></td>
+        <td>5元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/tidal-review-2026/">Tidal潮汐加速</a></td>
+        <td>25元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/jisu123-review-2026/">极速123</a></td>
+        <td>15.99元/月</td>
+        <td>标称1200GB/月，6倍折合200GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/yunjiexian-review-2026/">云界线</a></td>
+        <td>卡片22元/月（正文25元，结算待核实）</td>
+        <td>150GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+        </tbody>
+      </table></div>
+<h2>ChatGPT 机场</h2>
+      <div class="card"><table>
+        <thead>
+          <tr><th>机场</th><th>最低价格</th><th>流量额度</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>历史证据</th><th>历史测试日期</th><th>历史延迟</th><th>历史速度区间</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+<tr>
+        <td><a href="/posts/flybit-review-2026/">Flybit</a></td>
+        <td>15元/月</td>
+        <td>128GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>Clash观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/runway-review-2026/">拼好连</a></td>
+        <td>9.9元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/guangnianti-review-2026/">光年梯</a></td>
+        <td>18元/月</td>
+        <td>110GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>未评级</td>
+        <td>2026-06-03</td>
+        <td>未证实</td>
+        <td>365.78及367.76Mbps（两张归档Speedtest图，完整日期及所用节点未独立注明）</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/cocoduck-review/">cocoduck</a></td>
+        <td>17元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/wangji-kuaiche-review/">网际快车</a></td>
+        <td>28元/30天</td>
+        <td>60GB/日（每日重置）</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-06-03</td>
+        <td>170ms</td>
+        <td>13.96Mbps（2026-06-03 Speedtest单次原图），上传3.70Mbps</td>
+        <td>重点观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/quanqiuyun/">全球云</a></td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>未评级</td>
+        <td>2026-05-30</td>
+        <td>82ms</td>
+        <td>778.79Mbps（Speedtest 单次历史结果）</td>
+        <td>主推观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xsus-review-2026/">XSUS</a></td>
+        <td>12元/月</td>
+        <td>168GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>性价比观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xxyun-review-2026/">xxyun</a></td>
+        <td>9.99元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>流媒体观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/bianyuan-review-2026/">边缘节点</a></td>
+        <td>15元/月</td>
+        <td>50GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+        </tbody>
+      </table></div>
+<h2>流媒体机场</h2>
+      <div class="card"><table>
+        <thead>
+          <tr><th>机场</th><th>最低价格</th><th>流量额度</th><th>试用</th><th>不限时</th><th>专属客户端</th><th>通用订阅</th><th>历史证据</th><th>历史测试日期</th><th>历史延迟</th><th>历史速度区间</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+<tr>
+        <td><a href="/posts/flybit-review-2026/">Flybit</a></td>
+        <td>15元/月</td>
+        <td>128GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>Clash观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/runway-review-2026/">拼好连</a></td>
+        <td>9.9元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/guangnianti-review-2026/">光年梯</a></td>
+        <td>18元/月</td>
+        <td>110GB/月</td>
+        <td>不支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>未评级</td>
+        <td>2026-06-03</td>
+        <td>未证实</td>
+        <td>365.78及367.76Mbps（两张归档Speedtest图，完整日期及所用节点未独立注明）</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/cocoduck-review/">cocoduck</a></td>
+        <td>17元/月</td>
+        <td>100GB/月</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+<tr>
+        <td><a href="/posts/wangji-kuaiche-review/">网际快车</a></td>
+        <td>28元/30天</td>
+        <td>60GB/日（每日重置）</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>未评级</td>
+        <td>2026-06-03</td>
+        <td>170ms</td>
+        <td>13.96Mbps（2026-06-03 Speedtest单次原图），上传3.70Mbps</td>
+        <td>重点观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/quanqiuyun/">全球云</a></td>
+        <td>20元/月</td>
+        <td>120GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>未评级</td>
+        <td>2026-05-30</td>
+        <td>82ms</td>
+        <td>778.79Mbps（Speedtest 单次历史结果）</td>
+        <td>主推观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xsus-review-2026/">XSUS</a></td>
+        <td>12元/月</td>
+        <td>168GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>性价比观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/xxyun-review-2026/">xxyun</a></td>
+        <td>9.99元/月</td>
+        <td>100GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>流媒体观察</td>
+      </tr>
+<tr>
+        <td><a href="/posts/bianyuan-review-2026/">边缘节点</a></td>
+        <td>15元/月</td>
+        <td>50GB/月</td>
+        <td>不支持</td>
+        <td>支持</td>
+        <td>支持</td>
+        <td>不支持</td>
+        <td>无</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>无历史记录</td>
+        <td>资料已核对</td>
+      </tr>
+        </tbody>
+      </table></div>
+    </main>
+  </body>
+</html>

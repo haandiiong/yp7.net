@@ -1,0 +1,5624 @@
+{
+  "site": "yp7.net",
+  "url": "https://yp7.net",
+  "lastReviewed": "2026-08-19",
+  "lastModified": "2026-10-10",
+  "testingPolicy": {
+    "effectiveDate": "2026-08-18",
+    "yp7ConductsCurrentTests": false,
+    "currentSource": "Siilas",
+    "currentSourceUrl": "https://siilas.com/test/",
+    "historicalRecordsNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现",
+    "contributedRecordsNotice": "用户投稿单列来源、测试日期和环境，不代表 yp7.net 自行测试或全部节点的当前表现"
+  },
+  "metrics": {
+    "count": 57,
+    "trialCount": 11,
+    "noExpiryCount": 40,
+    "noExpiryUnverifiedCount": 0,
+    "dedicatedClientCount": 39,
+    "universalSubscriptionCount": 42,
+    "cheapUnderTenCount": 13,
+    "averagePrice": 17.2,
+    "regularCheapUnderTenCount": 13,
+    "regularAveragePrice": 17.4,
+    "salesSampleCount": 17,
+    "historicalPerformanceRecordCount": 6,
+    "priceBasis": {
+      "entry": "首次入门周期参考价，包含不可续费的新人优惠；不是所有机场的实际首购结算价",
+      "regular": "常规持续套餐周期参考价，仅极速Cloud改用30元，其余沿用已记录价格；不是逐家验证的续费成交价"
+    }
+  },
+  "airports": [
+    {
+      "name": "网际快车",
+      "path": "/posts/wangji-kuaiche-review/",
+      "image": "/kuaiche.png",
+      "price": 28,
+      "priceText": "28元/30天",
+      "traffic": "60GB/日（每日重置）",
+      "trial": true,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "clash",
+        "chatgpt",
+        "trial"
+      ],
+      "status": "重点观察",
+      "risk": "日享限60GB/日；免费试用需填写体验券yp7net，旧优惠码与退款待核实",
+      "summary": "不限时流量包6.8元20GB起；日享包28元30天，每天60GB、凌晨重置。首页提供 FlClash 等第三方客户端订阅，软路由另有 OpenClash 插件；填写体验券yp7net可获1天5GB免费试用。",
+      "subscriptionClients": [
+        "FlClash",
+        "Hiddify",
+        "SingBox",
+        "Karing",
+        "v2ray",
+        "v2rayNG",
+        "Clash Meta",
+        "NekoBox",
+        "Egern",
+        "Shadowrocket",
+        "QuantumultX",
+        "Clash",
+        "Loon",
+        "Surge",
+        "Surfboard"
+      ],
+      "informationSources": [
+        {
+          "name": "网际快车官网",
+          "url": "https://wjkc66.vip/?c=GDIHMU",
+          "checkedAt": "2026-09-10"
+        },
+        {
+          "name": "网际快车体验券规则（站长补充）",
+          "url": "/posts/wangji-kuaiche-review/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "salesSample": 849,
+      "siilasEvidence": {
+        "slug": "interexpress",
+        "name": "网际快车",
+        "yp7Path": "/posts/wangji-kuaiche-review/",
+        "sourceUrl": "https://siilas.com/airport/interexpress/",
+        "latestTestAt": "2026-10-08",
+        "verifiedTestCount": 17,
+        "testDateCount": 5,
+        "regionalSampleDays": {
+          "新加坡": 4,
+          "香港": 5,
+          "日本": 4,
+          "美国": 4
+        },
+        "rankingEligible": true,
+        "score": 5.7,
+        "stability": 51.2,
+        "scoreBreakdown": {
+          "stability": 51.2,
+          "speed": 30.9,
+          "chatgpt": 67.2,
+          "streaming": 87.2,
+          "value": 100
+        },
+        "experienceScores": {
+          "chatgpt": 67.2,
+          "streaming": 87.2
+        },
+        "scoringPlan": {
+          "name": "30 天日享包",
+          "priceCny": 28,
+          "trafficGb": 1800,
+          "priceLabel": "¥28/30天",
+          "trafficLabel": "每日 60GB（30 天）"
+        },
+        "latestExperience": {
+          "chatgpt": "新加坡 2026-09-11：流畅；香港 2026-10-08：不可用；日本 2026-09-11：流畅；美国 2026-09-11：流畅",
+          "streaming": "新加坡 2026-09-11：流畅；香港 2026-10-08：轻微缓冲；日本 2026-09-11：流畅；美国 2026-09-11：流畅"
+        },
+        "latestRegionTests": [
+          {
+            "region": "新加坡",
+            "test": {
+              "id": "20260911-2139-sg",
+              "testedAt": "2026-09-11",
+              "time": "21:39",
+              "window": "晚高峰",
+              "node": "新加坡节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 611.42,
+              "uploadMbps": 33.77,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 96,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19660922179",
+              "evidenceImage": "/evidence/interexpress/2026-09-11-2139-sg-speedtest.png",
+              "evidenceNote": "Speedtest 截图时间为 1:39 PM GMT（北京时间 21:39），测速服务器 PT. Indosat Tbk，Singapore；负载延迟下载 138 ms、上传 106 ms；用户反馈 ChatGPT 与 YouTube 4K 均流畅",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Akile",
+              "device": null,
+              "client": null,
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/interexpress/2026-09-11-2139-sg-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/interexpress/2026-09-11-2139-sg-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "8cd501b57bfdc4b0056286c967dad8939ca67f94c3a55df8a9476bdfbf81b6d8",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/interexpress/2026-09-11-2139-sg-speedtest.png",
+                    "sha256": "6f885bdc3d5124af98da87a7d0b1d1a9e3f57946d0bf2ee93b4b35ab0b0bce03",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "香港",
+            "test": {
+              "id": "20261008-2117-hk",
+              "testedAt": "2026-10-08",
+              "time": "21:17",
+              "window": "晚高峰",
+              "node": "香港节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 141.53,
+              "uploadMbps": 84.35,
+              "chatgpt": "不可用",
+              "streaming": "轻微缓冲",
+              "latencyMs": 207,
+              "downloadLatencyMs": 248,
+              "uploadLatencyMs": 556,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765515114",
+              "evidenceImage": "/evidence/interexpress/2026-10-08-2117-hk-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 1:17 PM，换算北京时间 21:17。用户确认使用 FlClash 客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "DMIT",
+              "server": "AIXXYCODE.ID · Hong Kong",
+              "device": "MacBook",
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/interexpress/2026-10-08-2117-hk-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/interexpress/2026-10-08-2117-hk-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "2bcf8890fae5285eaee62eb2c715db2b3b2060e3e097e5e613e717ac3df695bf",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/interexpress/2026-10-08-2117-hk-speedtest.png",
+                    "sha256": "847c28e889f6f11948275877b26c2ac6bd7810b243ebddf95e04b16243ede332",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "日本",
+            "test": {
+              "id": "20260911-2144-jp",
+              "testedAt": "2026-09-11",
+              "time": "21:44",
+              "window": "晚高峰",
+              "node": "日本节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 120.27,
+              "uploadMbps": 49.76,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 194,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19660943229",
+              "evidenceImage": "/evidence/interexpress/2026-09-11-2144-jp-speedtest.png",
+              "evidenceNote": "Speedtest 截图时间为 1:44 PM GMT（北京时间 21:44），测速服务器 fdcservers.net，Tokyo；负载延迟下载 175 ms、上传 184 ms；用户反馈 ChatGPT 与 YouTube 4K 均流畅",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Astrix",
+              "device": null,
+              "client": null,
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/interexpress/2026-09-11-2144-jp-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/interexpress/2026-09-11-2144-jp-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "ed2b694afa2ccbce063c02a15f5202ca70a448bd954d83b97f61930365f6d6a2",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/interexpress/2026-09-11-2144-jp-speedtest.png",
+                    "sha256": "c9be20ee86ab013deea3b8fd00d18be67cb4465f02bc61df3f4420c86a0a7a4f",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "美国",
+            "test": {
+              "id": "20260911-2158-us",
+              "testedAt": "2026-09-11",
+              "time": "21:58",
+              "window": "晚高峰",
+              "node": "美国节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 164.38,
+              "uploadMbps": 47.91,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 254,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19660996608",
+              "evidenceImage": "/evidence/interexpress/2026-09-11-2158-us-speedtest.png",
+              "evidenceNote": "Speedtest 截图时间为 1:58 PM GMT（北京时间 21:58），测速服务器名称显示为 Mutual Telephone Co...，McPherson, KS；负载延迟下载 285 ms、上传 295 ms；用户反馈 ChatGPT 与 YouTube 4K 均流畅",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "IDC",
+              "device": null,
+              "client": null,
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/interexpress/2026-09-11-2158-us-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/interexpress/2026-09-11-2158-us-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "5b53630d8250321ad1f72f58bc2a6fe138c9b486067d782f0c46262d992f1d00",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/interexpress/2026-09-11-2158-us-speedtest.png",
+                    "sha256": "8fdc6b36b46e2d9f70e53425310ad0e68aaf7752b5309667a43b46e4a07ae0b5",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
+        "receivedAt": "2026-10-09",
+        "sourcePublicationStatus": "published",
+        "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+        "methodologyUrl": "https://siilas.com/methodology/",
+        "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
+      },
+      "noExpiryPackage": {
+        "priceCny": 6.8,
+        "trafficGb": 20,
+        "priceText": "6.8元",
+        "trafficText": "20GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "不限时；不按月清零，用完为止",
+        "checkedAt": "2026-09-10",
+        "unitPriceCnyPerGb": 0.34,
+        "sourcePage": "/posts/wangji-kuaiche-review/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "historicalEvidence": {
+        "evidenceLevel": null,
+        "lastTestedAt": "2026-06-03",
+        "testWindow": "23:05-23:08（UTC+8），Speedtest图为15:08 GMT",
+        "testRegion": "本地地区未注明；Speedtest服务器ViewQwest Singapore，不能当作本地地点",
+        "testNetwork": "图中显示Cylix，但未标注本地接入线路、带宽或旧文SoftBank条件",
+        "testDevice": "网页测速与桌面客户端画面，具体设备未注明",
+        "latencyMs": 170,
+        "downloadMbpsRange": "13.96Mbps（2026-06-03 Speedtest单次原图），上传3.70Mbps",
+        "evidenceSummary": "撤回旧文未证实的速度区间、单一延迟和字母评级；Speedtest图显示下载13.96Mbps、上传3.70Mbps、Ping170ms。YouTube图仅覆盖当时视频画面；两图不能证明办公、ChatGPT或长期稳定性，亦不由后来的Siilas样本替代旧记录。",
+        "evidenceSources": [
+          {
+            "name": "网际快车归档Speedtest原图",
+            "url": "/kuaichespeedtest.jpg"
+          },
+          {
+            "name": "网际快车归档YouTube原图",
+            "url": "/kuaicheyoutube.jpg"
+          }
+        ],
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/wangji-kuaiche-review/"
+    },
+    {
+      "name": "Flybit",
+      "path": "/posts/flybit-review-2026/",
+      "image": "/flybit.jpg",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "128GB/月",
+      "trial": true,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash",
+        "trial"
+      ],
+      "status": "Clash观察",
+      "risk": "套餐不支持退款；购买前核实并短期测试",
+      "summary": "月付 15 元含 128GB，注册 1 天 2GB 免费试用（站长补充）；仪表盘列出 7 款第三方客户端一键导入，另有不限时流量包。套餐不支持退款，建议先试用。",
+      "subscriptionClients": [
+        "Clash Meta",
+        "Hiddify",
+        "SingBox",
+        "Shadowrocket",
+        "QuantumultX",
+        "Surge",
+        "Stash"
+      ],
+      "informationSources": [
+        {
+          "name": "Flybit 官网",
+          "url": "https://goflybit.com/#/register?code=p3DOcgzt",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "name": "Flybit试用规则（站长补充）",
+          "url": "/posts/flybit-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "salesSample": 744,
+      "siilasEvidence": {
+        "slug": "flybit",
+        "name": "Flybit",
+        "yp7Path": "/posts/flybit-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/flybit/",
+        "latestTestAt": "2026-08-13",
+        "verifiedTestCount": 13,
+        "testDateCount": 4,
+        "regionalSampleDays": {
+          "新加坡": 3,
+          "香港": 4,
+          "日本": 3,
+          "美国": 3
+        },
+        "rankingEligible": true,
+        "score": 6.9,
+        "stability": 66.1,
+        "scoreBreakdown": {
+          "stability": 66.1,
+          "speed": 51.1,
+          "chatgpt": 75,
+          "streaming": 98.4,
+          "value": 85.3
+        },
+        "experienceScores": {
+          "chatgpt": 75,
+          "streaming": 98.4
+        },
+        "scoringPlan": {
+          "name": "每月 128GB",
+          "priceCny": 15,
+          "trafficGb": 128,
+          "priceLabel": "¥15/月",
+          "trafficLabel": "128GB/月"
+        },
+        "latestExperience": {
+          "chatgpt": "新加坡 2026-08-13：流畅；香港 2026-08-13：不可用；日本 2026-08-13：流畅；美国 2026-08-13：流畅",
+          "streaming": "新加坡 2026-08-13：流畅；香港 2026-08-13：流畅；日本 2026-08-13：流畅；美国 2026-08-13：流畅"
+        },
+        "latestRegionTests": [
+          {
+            "region": "新加坡",
+            "test": {
+              "id": "20260813-2032-sg",
+              "testedAt": "2026-08-13",
+              "time": "20:32",
+              "window": "晚高峰",
+              "node": "新加坡节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 405.28,
+              "uploadMbps": 22.89,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 87,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/result/19551127158",
+              "evidenceImage": "/evidence/flybit/2026-08-13-2032-sg-speedtest.png",
+              "evidenceNote": "Speedtest Desktop 截图时间为 12:32 PM GMT（北京时间 20:32），测速服务器 fdcservers.net，新加坡；负载延迟下载 185 ms、上传 97 ms",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Google Cloud Platform",
+              "device": null,
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/flybit/2026-08-13-2032-sg-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/flybit/2026-08-13-2032-sg-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "aab86831e9a05d532f478a35b0a8095d2c40f053e1f8af29bdd5d9095821dbf6",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/flybit/2026-08-13-2032-sg-speedtest.png",
+                    "sha256": "a06778be30c06421856145b07ecef54c220abadeda004a02e051fe54a1cddb96",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "香港",
+            "test": {
+              "id": "20260813-2134-hk",
+              "testedAt": "2026-08-13",
+              "time": "21:34",
+              "window": "晚高峰",
+              "node": "香港节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 456.43,
+              "uploadMbps": 1.82,
+              "chatgpt": "不可用",
+              "streaming": "流畅",
+              "latencyMs": 275,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/result/19551367517",
+              "evidenceImage": "/evidence/flybit/2026-08-13-2134-hk-speedtest.png",
+              "evidenceNote": "Speedtest 结果页截图时间为 1:34 PM GMT（北京时间 21:34），测速服务器 STC，香港；负载延迟下载 318 ms、上传 311 ms",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Teyvat Continent",
+              "device": null,
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/flybit/2026-08-13-2134-hk-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/flybit/2026-08-13-2134-hk-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "79d59299eb00dedc5e44d09ae438820298378587fe03f9806747e945a3d7a475",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/flybit/2026-08-13-2134-hk-speedtest.png",
+                    "sha256": "a7a384b6ed2ee09cc7a9cc2bbe6753b687fcb46e25df81f755f535951831a5e6",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "日本",
+            "test": {
+              "id": "20260813-2130-jp",
+              "testedAt": "2026-08-13",
+              "time": "21:30",
+              "window": "晚高峰",
+              "node": "日本节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 340.81,
+              "uploadMbps": 95.7,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 118,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/result/19551352299",
+              "evidenceImage": "/evidence/flybit/2026-08-13-2130-jp-speedtest.png",
+              "evidenceNote": "Speedtest Desktop 截图时间为 1:30 PM GMT（北京时间 21:30），测速服务器 fdcservers.net，东京；负载延迟下载 170 ms、上传 302 ms",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Google Cloud Platform",
+              "device": null,
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/flybit/2026-08-13-2130-jp-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/flybit/2026-08-13-2130-jp-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "469b0bf07850849b0316629e14f03696383b4f27004aa034ecee60e1fdb13b78",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/flybit/2026-08-13-2130-jp-speedtest.png",
+                    "sha256": "0c567d9c23349a3d2df5856a18fbe3de45aad280deaaac8a634a6b0b00e75aa3",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "美国",
+            "test": {
+              "id": "20260813-2144-us",
+              "testedAt": "2026-08-13",
+              "time": "21:44",
+              "window": "晚高峰",
+              "node": "美国节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 564.36,
+              "uploadMbps": 94.15,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 275,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/result/19551406884",
+              "evidenceImage": "/evidence/flybit/2026-08-13-2144-us-speedtest.png",
+              "evidenceNote": "Speedtest Desktop 截图时间为 1:44 PM GMT（北京时间 21:44），测速服务器 Intermax Networks，Coeur d’Alene, ID；负载延迟下载 298 ms、上传 450 ms",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Redoubt Networks",
+              "device": null,
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/flybit/2026-08-13-2144-us-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/flybit/2026-08-13-2144-us-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "533e4e15c2b50f88943311805c2c39fa5d0a6031db8e0843ebdd8158f0162b76",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/flybit/2026-08-13-2144-us-speedtest.png",
+                    "sha256": "638d0755f3c87fda3da20233ed32d38a02bf7fd77ba99f7589b84180ed43789a",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
+        "receivedAt": "2026-10-09",
+        "sourcePublicationStatus": "published",
+        "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+        "methodologyUrl": "https://siilas.com/methodology/",
+        "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
+      },
+      "noExpiryPackage": {
+        "priceCny": 36,
+        "trafficGb": 128,
+        "priceText": "36元",
+        "trafficText": "128GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数，支持家庭共享",
+        "validity": "不限时；按用量扣除，用完后按规则续购",
+        "checkedAt": "2026-09-08",
+        "unitPriceCnyPerGb": 0.281,
+        "sourcePage": "/posts/flybit-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/flybit-review-2026/"
+    },
+    {
+      "name": "全球云",
+      "path": "/posts/quanqiuyun/",
+      "image": "/qqy.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "120GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "stable",
+        "chatgpt",
+        "streaming",
+        "newbie"
+      ],
+      "status": "主推观察",
+      "risk": "不支持免费试用和通用订阅；旧优惠码与退款待核实",
+      "summary": "不支持免费试用和通用订阅。20元/月120GB起，另有99元/年59GB/月轻量版及100元100GB起的不限时包。知识库提供 Windows、Android、Mac、Linux 自研客户端说明，iOS 使用 Nextin；BGP、1倍流量和解锁能力为套餐标注，实际连接需自行验证。",
+      "informationSources": [
+        {
+          "name": "全球云官网",
+          "url": "https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf",
+          "checkedAt": "2026-09-11"
+        },
+        {
+          "name": "全球云试用与订阅规则（站长补充）",
+          "url": "/posts/quanqiuyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "salesSample": 1048,
+      "siilasEvidence": {
+        "slug": "globalcloud",
+        "name": "全球云",
+        "yp7Path": "/posts/quanqiuyun/",
+        "sourceUrl": "https://siilas.com/airport/globalcloud/",
+        "latestTestAt": "2026-10-08",
+        "verifiedTestCount": 28,
+        "testDateCount": 8,
+        "regionalSampleDays": {
+          "新加坡": 8,
+          "香港": 6,
+          "日本": 6,
+          "美国": 6
+        },
+        "rankingEligible": true,
+        "score": 5.4,
+        "stability": 46.2,
+        "scoreBreakdown": {
+          "stability": 46.2,
+          "speed": 41.1,
+          "chatgpt": 65.9,
+          "streaming": 88.8,
+          "value": 60
+        },
+        "experienceScores": {
+          "chatgpt": 65.9,
+          "streaming": 88.8
+        },
+        "scoringPlan": {
+          "name": "BGP 智能优化・入门方案",
+          "priceCny": 20,
+          "trafficGb": 120,
+          "priceLabel": "¥20/月",
+          "trafficLabel": "120GB/月"
+        },
+        "latestExperience": {
+          "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-10-08：流畅；美国 2026-10-08：流畅",
+          "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：流畅；日本 2026-10-08：流畅；美国 2026-10-08：流畅"
+        },
+        "latestRegionTests": [
+          {
+            "region": "新加坡",
+            "test": {
+              "id": "20261008-2047-sg",
+              "testedAt": "2026-10-08",
+              "time": "20:47",
+              "window": "晚高峰",
+              "node": "新加坡节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 416.9,
+              "uploadMbps": 92.81,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 143,
+              "downloadLatencyMs": 205,
+              "uploadLatencyMs": 319,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765395401",
+              "evidenceImage": "/evidence/globalcloud/2026-10-08-2047-sg-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 12:47 PM，换算北京时间 20:47。用户确认使用全球云客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Komi",
+              "server": "FPT Telecom · Singapore",
+              "device": "MacBook",
+              "client": "全球云客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/globalcloud/2026-10-08-2047-sg-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/globalcloud/2026-10-08-2047-sg-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "27b22426c9abf3e2c1ccada942de404b930fa74eae60a6333c3e680ac885a01b",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/globalcloud/2026-10-08-2047-sg-speedtest.png",
+                    "sha256": "bf75c2cf94d1c59b52867999732ea977f6d5fd672bbf211e2f196b66bff2d74d",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "香港",
+            "test": {
+              "id": "20261008-2105-hk",
+              "testedAt": "2026-10-08",
+              "time": "21:05",
+              "window": "晚高峰",
+              "node": "香港节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 424.58,
+              "uploadMbps": 91.34,
+              "chatgpt": "不可用",
+              "streaming": "流畅",
+              "latencyMs": 326,
+              "downloadLatencyMs": null,
+              "uploadLatencyMs": 4159,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765465408",
+              "evidenceImage": "/evidence/globalcloud/2026-10-08-2105-hk-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 1:05 PM，换算北京时间 21:05。截图未显示下载负载延迟；上传负载延迟为 4159 ms，按原图记录。用户确认使用全球云客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Lshiy-user-content",
+              "server": "Club SIM by HKT · Hong Kong",
+              "device": "MacBook",
+              "client": "全球云客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/globalcloud/2026-10-08-2105-hk-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/globalcloud/2026-10-08-2105-hk-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "c217318f6f3911b9fc2b686308a76f6879e7227ab09a29dd66c8b1797cce1702",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/globalcloud/2026-10-08-2105-hk-speedtest.png",
+                    "sha256": "3b138768ab675edc8d473d418b9dadec7401bac9cabff4ca1cdcf8db52b9065c",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "日本",
+            "test": {
+              "id": "20261008-2051-jp",
+              "testedAt": "2026-10-08",
+              "time": "20:51",
+              "window": "晚高峰",
+              "node": "日本节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 132.71,
+              "uploadMbps": 37,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 171,
+              "downloadLatencyMs": 165,
+              "uploadLatencyMs": 205,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765413045",
+              "evidenceImage": "/evidence/globalcloud/2026-10-08-2051-jp-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 12:51 PM，换算北京时间 20:51。用户确认使用全球云客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Komi",
+              "server": "サーバーならDDPS.jp · Tokyo",
+              "device": "MacBook",
+              "client": "全球云客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/globalcloud/2026-10-08-2051-jp-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/globalcloud/2026-10-08-2051-jp-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "c1f36ce4b97f821b7ca028687e10942100608be648c8713ba81add616cb70128",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/globalcloud/2026-10-08-2051-jp-speedtest.png",
+                    "sha256": "0304bc4b8141ab168cca2792c4b5bd6a3175e792adde83963e01b9d1344a69e0",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "美国",
+            "test": {
+              "id": "20261008-2057-us",
+              "testedAt": "2026-10-08",
+              "time": "20:57",
+              "window": "晚高峰",
+              "node": "美国节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 405.33,
+              "uploadMbps": 90.74,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 303,
+              "downloadLatencyMs": 349,
+              "uploadLatencyMs": 503,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765434254",
+              "evidenceImage": "/evidence/globalcloud/2026-10-08-2057-us-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 12:57 PM，换算北京时间 20:57。用户确认使用全球云客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Komi",
+              "server": "Chisholm Broadband · Enid, OK",
+              "device": "MacBook",
+              "client": "全球云客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/globalcloud/2026-10-08-2057-us-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/globalcloud/2026-10-08-2057-us-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "8070fcba5eda20d1170e1ef9ee437dde31fa95357642a4ada9ab09fcc67fbfd9",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/globalcloud/2026-10-08-2057-us-speedtest.png",
+                    "sha256": "6d435a9b8b87d3b20e2b71f98b4ae78bf5e5682768e61d1e5cd20940e23ccf0f",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
+        "receivedAt": "2026-10-09",
+        "sourcePublicationStatus": "published",
+        "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+        "methodologyUrl": "https://siilas.com/methodology/",
+        "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
+      },
+      "noExpiryPackage": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限时档待核实",
+        "validity": "无到期日；不自动重置",
+        "checkedAt": "2026-09-11",
+        "unitPriceCnyPerGb": 1,
+        "sourcePage": "/posts/quanqiuyun/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "historicalEvidence": {
+        "evidenceLevel": null,
+        "lastTestedAt": "2026-05-30",
+        "testWindow": "21:22-21:25（UTC+8）",
+        "testRegion": "截图未标注本地地区",
+        "testNetwork": "截图未标注本地运营商与接入带宽",
+        "testDevice": "旧文记载苹果电脑，截图未独立标注设备型号",
+        "latencyMs": 82,
+        "downloadMbpsRange": "778.79Mbps（Speedtest 单次历史结果）",
+        "evidenceSummary": "2026-05-30既有客户端、YouTube及Speedtest配图；Speedtest使用M1 Limited Singapore服务器，图中下载778.79Mbps、上传52.09Mbps、Ping82ms。测速图未独立显示订阅身份、本地地区和运营商，不作字母评级。",
+        "evidenceSources": [
+          {
+            "name": "全球云归档Speedtest原图",
+            "url": "/speedtest.png"
+          },
+          {
+            "name": "全球云归档YouTube原图",
+            "url": "/youtubecesu.png"
+          }
+        ],
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/quanqiuyun/"
+    },
+    {
+      "name": "xxyun",
+      "path": "/posts/xxyun-review-2026/",
+      "image": "/xxyun.png",
+      "price": 9.99,
+      "priceText": "9.99元/月",
+      "traffic": "100GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "cheap",
+        "streaming"
+      ],
+      "status": "流媒体观察",
+      "risk": "仅官方客户端，解锁需按节点复核",
+      "summary": "9.99元/月起、100GB/月，提供 Android、iOS、Windows 和 Mac 官方客户端；不支持 Clash、FlClash 或 Shadowrocket，适合接受官方客户端的低预算用户短期比较。",
+      "informationSources": [
+        {
+          "name": "xxyun 官网",
+          "url": "https://xxyun.at/?code=3AYVsSKY",
+          "checkedAt": "2026-09-10"
+        }
+      ],
+      "salesSample": 942,
+      "siilasEvidence": {
+        "slug": "xxyun",
+        "name": "xxyun",
+        "yp7Path": "/posts/xxyun-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/xxyun/",
+        "latestTestAt": "2026-10-08",
+        "verifiedTestCount": 12,
+        "testDateCount": 5,
+        "regionalSampleDays": {
+          "新加坡": 3,
+          "香港": 3,
+          "日本": 3,
+          "美国": 3
+        },
+        "rankingEligible": true,
+        "score": 6.1,
+        "stability": 73.1,
+        "scoreBreakdown": {
+          "stability": 73.1,
+          "speed": 14.3,
+          "chatgpt": 68.8,
+          "streaming": 79.2,
+          "value": 100
+        },
+        "experienceScores": {
+          "chatgpt": 68.8,
+          "streaming": 79.2
+        },
+        "scoringPlan": {
+          "name": "初级月付",
+          "priceCny": 9.99,
+          "trafficGb": 100,
+          "priceLabel": "¥9.99/月",
+          "trafficLabel": "100GB/月"
+        },
+        "latestExperience": {
+          "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-10-08：流畅；美国 2026-08-08：轻微延迟",
+          "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：轻微缓冲；日本 2026-10-08：流畅；美国 2026-08-08：轻微缓冲"
+        },
+        "latestRegionTests": [
+          {
+            "region": "新加坡",
+            "test": {
+              "id": "20261008-1919-sg",
+              "testedAt": "2026-10-08",
+              "time": "19:19",
+              "window": "晚间",
+              "node": "新加坡节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 183.53,
+              "uploadMbps": 95.95,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 92,
+              "downloadLatencyMs": 101,
+              "uploadLatencyMs": 301,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765091965",
+              "evidenceImage": "/evidence/xxyun/2026-10-08-1919-sg-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 11:19 AM，换算北京时间 19:19。用户确认使用 xxyun 客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Akamai Technologies",
+              "server": "CBN · Singapore",
+              "device": "MacBook",
+              "client": "xxyun 官方专属客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/xxyun/2026-10-08-1919-sg-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/xxyun/2026-10-08-1919-sg-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "f2614f2b90561b9e0638aa590be4da6a9695fec6f90c96a1b5e36dd41be73986",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/xxyun/2026-10-08-1919-sg-speedtest.png",
+                    "sha256": "c8c355ffa60ed3b5830ec005ff7d31df3a1c090da07f25987000163e3289e927",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "香港",
+            "test": {
+              "id": "20261008-1939-hk",
+              "testedAt": "2026-10-08",
+              "time": "19:39",
+              "window": "晚间",
+              "node": "香港节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 17.01,
+              "uploadMbps": 20.01,
+              "chatgpt": "不可用",
+              "streaming": "轻微缓冲",
+              "latencyMs": 150,
+              "downloadLatencyMs": 147,
+              "uploadLatencyMs": 269,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765155474",
+              "evidenceImage": "/evidence/xxyun/2026-10-08-1939-hk-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 11:39 AM，换算北京时间 19:39。截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "DMIT",
+              "server": "CSL · Hong Kong",
+              "device": "MacBook",
+              "client": "xxyun 官方专属客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/xxyun/2026-10-08-1939-hk-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/xxyun/2026-10-08-1939-hk-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "817cbdeac304f9e763177ea77d80ef1297072709e07823b368caf1adf73c165a",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/xxyun/2026-10-08-1939-hk-speedtest.png",
+                    "sha256": "3965c4a438afb9f514981e661d38a4c55a1235130342a3406c6138b95b3e9e84",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "日本",
+            "test": {
+              "id": "20261008-1928-jp",
+              "testedAt": "2026-10-08",
+              "time": "19:28",
+              "window": "晚间",
+              "node": "日本节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 115.9,
+              "uploadMbps": 76.3,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 110,
+              "downloadLatencyMs": 146,
+              "uploadLatencyMs": 164,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765121073",
+              "evidenceImage": "/evidence/xxyun/2026-10-08-1928-jp-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 11:28 AM，换算北京时间 19:28。截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Lamhosting",
+              "server": "サーバーならDDPS.jp · Tokyo",
+              "device": "MacBook",
+              "client": "xxyun 官方专属客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/xxyun/2026-10-08-1928-jp-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/xxyun/2026-10-08-1928-jp-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "8afc2b9f5032d8e6312815f8ba6194288b5a48f6d574d62359dd6c046b651488",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/xxyun/2026-10-08-1928-jp-speedtest.png",
+                    "sha256": "18f60f636be975aa226b9dbcc2ee50a0599ab3aa071d4085630e382e76c0060e",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "美国",
+            "test": {
+              "id": "20260808-1009-us",
+              "testedAt": "2026-08-08",
+              "time": "18:09",
+              "window": "晚间",
+              "node": "美国节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 136.53,
+              "uploadMbps": 86.1,
+              "chatgpt": "轻微延迟",
+              "streaming": "轻微缓冲",
+              "latencyMs": 382,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/result/19531510081",
+              "evidenceImage": "/evidence/xxyun/2026-08-08-1009-us-speedtest.png",
+              "evidenceNote": "截图原始时间为 GMT 10:09，换算北京时间 18:09；历史记录 ID 与证据文件名沿用截图 GMT 钟点。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "DMIT",
+              "device": "macOS",
+              "client": "xxyun 官方专属客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/xxyun/2026-08-08-1009-us-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/xxyun/2026-08-08-1009-us-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "c17e7e14574f8068772a38a2f9e68086cca3d8c0b87511a8a60cae5094094fb0",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/xxyun/2026-08-08-1009-us-speedtest.png",
+                    "sha256": "202db3f964181c710b550fc94b3bd7d28263828627a6b066607d5b6cd33c773a",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
+        "receivedAt": "2026-10-09",
+        "sourcePublicationStatus": "published",
+        "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+        "methodologyUrl": "https://siilas.com/methodology/",
+        "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
+      },
+      "noExpiryPackage": {
+        "priceCny": null,
+        "trafficGb": null,
+        "priceText": "待核实",
+        "trafficText": "待核实",
+        "status": "unverified",
+        "deviceLimit": "不限时档待核实",
+        "validity": "已见不限时入口；具体规则待核实",
+        "checkedAt": "2026-09-10",
+        "unitPriceCnyPerGb": null,
+        "sourcePage": "/posts/xxyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/xxyun-review-2026/"
+    },
+    {
+      "name": "阿达西",
+      "path": "/posts/adaxi-review-2026/",
+      "image": "/adaxi.png",
+      "price": 3,
+      "priceText": "3元/30天",
+      "traffic": "20GB/30天",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash"
+      ],
+      "status": "低价观察",
+      "risk": "入门档限速100Mbps、不支持专线；不支持免费试用，退款待核实，独享节点默认自动续费",
+      "summary": "不支持免费试用。3元20GB/30天、10元80GB/30天，另有50元300GB不限时包；三档分别限速100/500/600Mbps，均不支持专线、设备数不限。官网提供v2rayN、Shadowrocket和Flyer订阅教程。日本独享节点20元/月，共用套餐流量且默认自动续费。",
+      "informationSources": [
+        {
+          "name": "阿达西试用规则（站长补充）",
+          "url": "/posts/adaxi-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "阿达西套餐页",
+          "url": "https://adaxi.net/plan",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西Windows教程",
+          "url": "https://adaxi.net/doc",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西macOS教程",
+          "url": "https://adaxi.net/doc/macos",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西iOS教程",
+          "url": "https://adaxi.net/doc/ios",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西Android教程",
+          "url": "https://adaxi.net/doc/android",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西常见问题",
+          "url": "https://adaxi.net/doc/faq",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "阿达西独享节点",
+          "url": "https://adaxi.net/dedicated",
+          "checkedAt": "2026-09-16",
+          "link": false
+        }
+      ],
+      "salesSample": 462,
+      "noExpiryPackage": {
+        "priceCny": 50,
+        "trafficGb": 300,
+        "priceText": "50元",
+        "trafficText": "300GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "标注永不过期；限速600Mbps",
+        "checkedAt": "2026-09-16",
+        "unitPriceCnyPerGb": 0.167,
+        "sourcePage": "/posts/adaxi-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/adaxi-review-2026/"
+    },
+    {
+      "name": "拼好连",
+      "path": "/posts/runway-review-2026/",
+      "image": "/runway.png",
+      "price": 9.9,
+      "priceText": "9.9元/月",
+      "traffic": "100GB/月",
+      "trial": true,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "trial",
+        "newbie",
+        "clash",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "退款待核实；专属客户端限3台，入门限200Mbps",
+      "summary": "9.9元/月100GB起，另有19.9元200GB、50元600GB和79元1024GB；45元150GB不限时。官方四端客户端支持账号登录，后台可复制通用订阅，Windows教程使用FlClash。免费试用1天6GB。",
+      "informationSources": [
+        {
+          "name": "拼好连套餐商店",
+          "url": "https://new.runwayhz.com/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "拼好连客户端与试用公告",
+          "url": "https://new.runwayhz.com/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "拼好连试用规则（站长补充）",
+          "url": "/posts/runway-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "拼好连使用规则",
+          "url": "https://new.runwayhz.com/#/docs/5",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "拼好连FlClash订阅教程",
+          "url": "https://new.runwayhz.com/#/docs/2",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "salesSample": 445,
+      "siilasEvidence": {
+        "slug": "pinhaolian",
+        "name": "拼好连（原 Runway）",
+        "yp7Path": "/posts/runway-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/pinhaolian/",
+        "latestTestAt": "2026-09-23",
+        "verifiedTestCount": 12,
+        "testDateCount": 5,
+        "regionalSampleDays": {
+          "新加坡": 3,
+          "香港": 3,
+          "日本": 3,
+          "美国": 3
+        },
+        "rankingEligible": true,
+        "score": 6.4,
+        "stability": 68.4,
+        "scoreBreakdown": {
+          "stability": 68.4,
+          "speed": 20.8,
+          "chatgpt": 81.3,
+          "streaming": 91.7,
+          "value": 100
+        },
+        "experienceScores": {
+          "chatgpt": 81.3,
+          "streaming": 91.7
+        },
+        "scoringPlan": {
+          "name": "天天尝鲜拼",
+          "priceCny": 9.9,
+          "trafficGb": 100,
+          "priceLabel": "¥9.90/月",
+          "trafficLabel": "100GB/月"
+        },
+        "latestExperience": {
+          "chatgpt": "新加坡 2026-09-20：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅",
+          "streaming": "新加坡 2026-09-20：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅"
+        },
+        "latestRegionTests": [
+          {
+            "region": "新加坡",
+            "test": {
+              "id": "20260920-2156-sg",
+              "testedAt": "2026-09-20",
+              "time": "21:56",
+              "window": "晚高峰",
+              "node": "新加坡节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 326.36,
+              "uploadMbps": 49.75,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 122,
+              "downloadLatencyMs": 205,
+              "uploadLatencyMs": 99,
+              "resultUrl": "https://www.speedtest.net/result/19695036279",
+              "evidenceImage": "/evidence/pinhaolian/2026-09-20-2156-sg-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 13:56，换算北京时间 21:56。",
+              "sourceRegion": "中国南方",
+              "carrier": "中国电信",
+              "accessType": "家庭宽带",
+              "connectionType": "Wi-Fi",
+              "isp": "M247",
+              "server": "M1 Limited · Singapore",
+              "device": "MacBook",
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/pinhaolian/2026-09-20-2156-sg-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/pinhaolian/2026-09-20-2156-sg-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "d00748e9fa04c1470630bdb9dfa0da11da606df172e953e8ab8a6264684bcde1",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/pinhaolian/2026-09-20-2156-sg-speedtest.png",
+                    "sha256": "7300c6d3eaac2983c24ab38b1e9e897d4b259b63af533c82739626243bd934d4",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "香港",
+            "test": {
+              "id": "20260923-2230-hk",
+              "testedAt": "2026-09-23",
+              "time": "22:30",
+              "window": "晚高峰",
+              "node": "香港节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 424.59,
+              "uploadMbps": 91.41,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 48,
+              "downloadLatencyMs": 176,
+              "uploadLatencyMs": 266,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19707411862",
+              "evidenceImage": "/evidence/pinhaolian/2026-09-23-2230-hk-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 14:30，换算北京时间 22:30。",
+              "sourceRegion": "中国南方",
+              "carrier": "中国电信",
+              "accessType": "家庭宽带",
+              "connectionType": "Wi-Fi",
+              "isp": "BAGE",
+              "server": "RETN · Hong Kong",
+              "device": "MacBook",
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/pinhaolian/2026-09-23-2230-hk-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/pinhaolian/2026-09-23-2230-hk-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "58935b8ac3b681a5fdc38d37172ed72bb7009a8ab270eecffc540338944d01f5",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/pinhaolian/2026-09-23-2230-hk-speedtest.png",
+                    "sha256": "8cf4f6bca49823e5c2f3b9078459128b9e3b44c48936215582b824650c64f2fe",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "日本",
+            "test": {
+              "id": "20260923-2239-jp",
+              "testedAt": "2026-09-23",
+              "time": "22:39",
+              "window": "晚高峰",
+              "node": "日本节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 13.3,
+              "uploadMbps": 94.93,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 97,
+              "downloadLatencyMs": 178,
+              "uploadLatencyMs": 384,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19707450274",
+              "evidenceImage": "/evidence/pinhaolian/2026-09-23-2239-jp-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 14:39，换算北京时间 22:39。",
+              "sourceRegion": "中国南方",
+              "carrier": "中国电信",
+              "accessType": "家庭宽带",
+              "connectionType": "Wi-Fi",
+              "isp": "BAGE",
+              "server": "fdcservers.net · Tokyo",
+              "device": "MacBook",
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/pinhaolian/2026-09-23-2239-jp-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/pinhaolian/2026-09-23-2239-jp-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "36e395a4153e9880c8820c367b99725484860dc4586dc016bd919d0632987a9d",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/pinhaolian/2026-09-23-2239-jp-speedtest.png",
+                    "sha256": "e23dd643c1a67d8d763825677316b0fa4c401973601204fa92aeed379c01098e",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "美国",
+            "test": {
+              "id": "20260923-2235-us",
+              "testedAt": "2026-09-23",
+              "time": "22:35",
+              "window": "晚高峰",
+              "node": "美国节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 363.72,
+              "uploadMbps": 96.75,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 204,
+              "downloadLatencyMs": 276,
+              "uploadLatencyMs": 387,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19707435263",
+              "evidenceImage": "/evidence/pinhaolian/2026-09-23-2235-us-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 14:35，换算北京时间 22:35。",
+              "sourceRegion": "中国南方",
+              "carrier": "中国电信",
+              "accessType": "家庭宽带",
+              "connectionType": "Wi-Fi",
+              "isp": "BAGE",
+              "server": "Melbicom · Los Angeles, CA",
+              "device": "MacBook",
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/pinhaolian/2026-09-23-2235-us-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/pinhaolian/2026-09-23-2235-us-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "052079833c732460a851405f887439278c451a0c1034facb4de9c9e199880923",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/pinhaolian/2026-09-23-2235-us-speedtest.png",
+                    "sha256": "3e2bf1f8c1d8952b5d3e3c996f7a565bf6bc4963d5d710d0795e6648426a9954",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
+        "receivedAt": "2026-10-09",
+        "sourcePublicationStatus": "published",
+        "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+        "methodologyUrl": "https://siilas.com/methodology/",
+        "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
+      },
+      "noExpiryPackage": {
+        "priceCny": 45,
+        "trafficGb": 150,
+        "priceText": "45元",
+        "trafficText": "150GB",
+        "status": "listed",
+        "deviceLimit": "专属客户端3台；第三方不限连接",
+        "validity": "不限时；手动重置45元",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 0.3,
+        "sourcePage": "/posts/runway-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/runway-review-2026/"
+    },
+    {
+      "name": "唯兔云",
+      "path": "/posts/weituyun/",
+      "image": "/weituyun.png",
+      "price": 19.9,
+      "priceText": "19.9元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "streaming"
+      ],
+      "status": "流媒体观察",
+      "risk": "不支持免费试用和通用订阅；14.9元节假日套餐暂无定价，退款待核实",
+      "summary": "当前月付19.9元150GB起，79.9元/年45GB每月、120元/年75GB每月；不限时100元100GB、160元200GB、340元500GB。提供自有客户端，不支持免费试用和通用订阅。",
+      "informationSources": [
+        {
+          "name": "唯兔云试用与订阅规则（站长补充）",
+          "url": "/posts/weituyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "唯兔云套餐页",
+          "url": "https://hjusedi.v2saat.club/#/plans",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "唯兔云知识库",
+          "url": "https://hjusedi.v2saat.club/#/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "唯兔云仪表盘",
+          "url": "https://hjusedi.v2saat.club/#/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "salesSample": 221,
+      "noExpiryPackage": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限时档待核实",
+        "validity": "不限时；不自动刷新，续费9折",
+        "checkedAt": "2026-09-23",
+        "unitPriceCnyPerGb": 1,
+        "sourcePage": "/posts/weituyun/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/weituyun/"
+    },
+    {
+      "name": "99吧",
+      "path": "/posts/99ba-review-2026/",
+      "image": "/99ba.png",
+      "price": 9.9,
+      "priceText": "9.9元/月",
+      "traffic": "70GB/月",
+      "trial": true,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "trial",
+        "clash"
+      ],
+      "status": "试用观察",
+      "risk": "套餐仅限内地使用，暂不支持退款，先试用",
+      "summary": "9.9元月付70GB，支持1天1GB试用、不限时流量包和多客户端一键订阅导入；实际节点表现需另行验证。",
+      "informationSources": [
+        {
+          "name": "99吧套餐、客户端与试用说明",
+          "url": "https://99ba.net/#/register?code=Wls9E3cC",
+          "checkedAt": "2026-09-07",
+          "link": false
+        }
+      ],
+      "salesSample": 413,
+      "noExpiryPackage": {
+        "priceCny": 35.9,
+        "trafficGb": 111,
+        "priceText": "35.9元",
+        "trafficText": "111GB",
+        "status": "listed",
+        "deviceLimit": "同时登录99台",
+        "validity": "不限时；续购与叠加细则待核实",
+        "checkedAt": "2026-09-07",
+        "unitPriceCnyPerGb": 0.323,
+        "sourcePage": "/posts/99ba-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/99ba-review-2026/"
+    },
+    {
+      "name": "光年梯",
+      "path": "/posts/guangnianti-review-2026/",
+      "image": "/gnt.png",
+      "price": 18,
+      "priceText": "18元/月",
+      "traffic": "110GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "stable",
+        "streaming",
+        "newbie"
+      ],
+      "status": "资料已核对",
+      "risk": "套餐不退款；普通套餐不支持通用订阅，不支持免费试用，先确认设备兼容",
+      "summary": "18元/月110GB起，另有89元/年50GB/月限时套餐及680元/月500GB独享私人专线。官网提供多平台客户端说明，iOS使用Nextin，Linux另有文档；普通套餐标注IPLC、1倍率和不限在线客户端数量，不提供退款。线路与解锁为服务商宣传，普通套餐不支持通用订阅，不支持免费试用。2026年9月27日站长补充8折优惠码GNT80，适用套餐、期限、次数及叠加条件未说明，结算金额未验证。",
+      "informationSources": [
+        {
+          "name": "光年梯试用规则（站长补充）",
+          "url": "/posts/guangnianti-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "光年梯优惠码（站长补充）",
+          "url": "/posts/guangnianti-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "光年梯套餐页",
+          "url": "https://bk1dvc.guangnianertt1.homes/#/plans",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "光年梯客户端知识库",
+          "url": "https://bk1dvc.guangnianertt1.homes/#/knowledge",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "光年梯仪表盘",
+          "url": "https://bk1dvc.guangnianertt1.homes/#/dashboard",
+          "checkedAt": "2026-09-16",
+          "link": false
+        }
+      ],
+      "salesSample": 832,
+      "siilasEvidence": {
+        "slug": "guangnianti",
+        "name": "光年梯",
+        "yp7Path": "/posts/guangnianti-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/guangnianti/",
+        "latestTestAt": "2026-10-08",
+        "verifiedTestCount": 16,
+        "testDateCount": 4,
+        "regionalSampleDays": {
+          "新加坡": 4,
+          "香港": 4,
+          "日本": 4,
+          "美国": 4
+        },
+        "rankingEligible": true,
+        "score": 5,
+        "stability": 38.6,
+        "scoreBreakdown": {
+          "stability": 38.6,
+          "speed": 33,
+          "chatgpt": 71.9,
+          "streaming": 90.6,
+          "value": 61.1
+        },
+        "experienceScores": {
+          "chatgpt": 71.9,
+          "streaming": 90.6
+        },
+        "scoringPlan": {
+          "name": "光年梯入门版",
+          "priceCny": 18,
+          "trafficGb": 110,
+          "priceLabel": "¥18/月",
+          "trafficLabel": "110GB/月"
+        },
+        "latestExperience": {
+          "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-10-08：轻微延迟；美国 2026-10-08：轻微延迟",
+          "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：流畅；日本 2026-10-08：缓冲严重；美国 2026-10-08：缓冲严重"
+        },
+        "latestRegionTests": [
+          {
+            "region": "新加坡",
+            "test": {
+              "id": "20261008-2017-sg",
+              "testedAt": "2026-10-08",
+              "time": "20:17",
+              "window": "晚高峰",
+              "node": "新加坡节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 107.26,
+              "uploadMbps": 13.89,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 208,
+              "downloadLatencyMs": 220,
+              "uploadLatencyMs": 243,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765286002",
+              "evidenceImage": "/evidence/guangnianti/2026-10-08-2017-sg-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 12:17 PM，换算北京时间 20:17。用户确认使用光年梯客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Komi",
+              "server": "AIXXYCODE.ID · Singapore",
+              "device": "MacBook",
+              "client": "光年梯客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-10-08-2017-sg-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/guangnianti/2026-10-08-2017-sg-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "306103e2c4bb1f952a97c7d79e37827dc7db4821ee02da3e4853c4d129e48a61",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/guangnianti/2026-10-08-2017-sg-speedtest.png",
+                    "sha256": "6681a8e7a5f7ae0e1bd4ca0fa2dbe7a1f6b08722c99e7d2d78a8a68791737eae",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "香港",
+            "test": {
+              "id": "20261008-2043-hk",
+              "testedAt": "2026-10-08",
+              "time": "20:43",
+              "window": "晚高峰",
+              "node": "香港节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 121.46,
+              "uploadMbps": 7.83,
+              "chatgpt": "不可用",
+              "streaming": "流畅",
+              "latencyMs": 179,
+              "downloadLatencyMs": 175,
+              "uploadLatencyMs": 168,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765381537",
+              "evidenceImage": "/evidence/guangnianti/2026-10-08-2043-hk-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 12:43 PM，换算北京时间 20:43。用户确认使用光年梯客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Lshiy-user-content",
+              "server": "1010 · Hong Kong",
+              "device": "MacBook",
+              "client": "光年梯客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-10-08-2043-hk-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/guangnianti/2026-10-08-2043-hk-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "6133e5128246daa3338ce068450b6558ec4be618d2de4861f3689147c695e34b",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/guangnianti/2026-10-08-2043-hk-speedtest.png",
+                    "sha256": "08344ad753f83966ce2ee3f34afcd84a7eeca579db17831320a203d94c014afb",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "日本",
+            "test": {
+              "id": "20261008-2039-jp",
+              "testedAt": "2026-10-08",
+              "time": "20:39",
+              "window": "晚高峰",
+              "node": "日本节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 67.53,
+              "uploadMbps": 48.92,
+              "chatgpt": "轻微延迟",
+              "streaming": "缓冲严重",
+              "latencyMs": 373,
+              "downloadLatencyMs": 555,
+              "uploadLatencyMs": 742,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765366735",
+              "evidenceImage": "/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 12:39 PM，换算北京时间 20:39。用户确认使用光年梯客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Deutsche Telekom",
+              "server": "Rakuten Mobile, Inc · Tokyo",
+              "device": "MacBook",
+              "client": "光年梯客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "e91274504d450015903abd18ce29a35cd4cf29beefd0ed244bbf61b35c2a49d0",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png",
+                    "sha256": "620cce7e488141fa6a7d0fae2c318fcebe87e5c9fb655f570cc33e90b922a2a2",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "美国",
+            "test": {
+              "id": "20261008-2030-us",
+              "testedAt": "2026-10-08",
+              "time": "20:30",
+              "window": "晚高峰",
+              "node": "美国节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 8.22,
+              "uploadMbps": 46.29,
+              "chatgpt": "轻微延迟",
+              "streaming": "缓冲严重",
+              "latencyMs": 204,
+              "downloadLatencyMs": 230,
+              "uploadLatencyMs": 228,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765333047",
+              "evidenceImage": "/evidence/guangnianti/2026-10-08-2030-us-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 12:30 PM，换算北京时间 20:30。用户确认使用光年梯客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Pegasus Technologies",
+              "server": "Misaka Network, Inc. · Los Angeles, CA",
+              "device": "MacBook",
+              "client": "光年梯客户端",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-10-08-2030-us-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/guangnianti/2026-10-08-2030-us-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "d1d45714aa5af4a2d30c30cecea2a0b32ac64635bef496fa8bfa1992f5d3e8a5",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/guangnianti/2026-10-08-2030-us-speedtest.png",
+                    "sha256": "630400756b819a6d5a34fd4987788ea4cd56cc525569a4386eaea29d7a405951",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
+        "receivedAt": "2026-10-09",
+        "sourcePublicationStatus": "published",
+        "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+        "methodologyUrl": "https://siilas.com/methodology/",
+        "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
+      },
+      "historicalEvidence": {
+        "evidenceLevel": null,
+        "lastTestedAt": "2026-06-03",
+        "testWindow": "YouTube图22:38-22:39（UTC+8）；Speedtest图仅显示22:41/22:42，完整日期未显示",
+        "testRegion": "截图未标注本地地区；Speedtest服务器显示Singapore，不能当作本地地点",
+        "testNetwork": "原图未标注本地运营商与接入带宽，旧文SoftBank / 1000Mbps条件未证实",
+        "testDevice": "Android手机界面；型号未注明",
+        "latencyMs": null,
+        "downloadMbpsRange": "365.78及367.76Mbps（两张归档Speedtest图，完整日期及所用节点未独立注明）",
+        "evidenceSummary": "撤回旧文未证实的速度区间、单一延迟和字母评级；图中可读Speedtest下载为365.78/367.76Mbps、Ping121/105ms。YouTube图有6月3日完整时间，Speedtest图无完整日期，不能把全部图视为同一节点或同条件连续测试；未独立证实ChatGPT或长期稳定性。",
+        "evidenceSources": [
+          {
+            "name": "光年梯归档Speedtest图一",
+            "url": "/guangnianticesu1.jpg"
+          },
+          {
+            "name": "光年梯归档Speedtest图二",
+            "url": "/guangnianticesu2.jpg"
+          },
+          {
+            "name": "光年梯归档YouTube图一",
+            "url": "/guangniantispeedtest1.jpg"
+          },
+          {
+            "name": "光年梯归档YouTube图二",
+            "url": "/guangniantispeedtest2.jpg"
+          },
+          {
+            "name": "光年梯归档YouTube图三",
+            "url": "/guangniantispeedtest3.jpg"
+          }
+        ],
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/guangnianti-review-2026/"
+    },
+    {
+      "name": "迅达",
+      "path": "/posts/xunda-review-2026/",
+      "image": "/xunda.png",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "chatgpt",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持退款，仅限个人使用；设备限5至20台，不支持免费试用",
+      "summary": "15元/月150GB起，35元300GB、50元600GB；年付169元起，流量仍按月。66元300GB、299元1200GB不限时，支持付费重置。提供Android、Windows和Mac专属客户端，Clash/ClashMeta一键导入及通用订阅；不支持免费试用。",
+      "subscriptionClients": [
+        "Clash",
+        "ClashMeta"
+      ],
+      "informationSources": [
+        {
+          "name": "迅达试用规则（站长补充）",
+          "url": "/posts/xunda-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "迅达套餐页",
+          "url": "https://sulianproxy.com/plan",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "迅达订阅入口",
+          "url": "https://sulianproxy.com/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "迅达购买条款",
+          "url": "https://sulianproxy.com/knowledge/1",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "迅达常见问题",
+          "url": "https://sulianproxy.com/knowledge/2",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "迅达专属客户端下载",
+          "url": "https://sulianproxy.com/knowledge/10",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 66,
+        "trafficGb": 300,
+        "priceText": "66元",
+        "trafficText": "300GB",
+        "status": "listed",
+        "deviceLimit": "5台；仅限个人使用",
+        "validity": "不限时；不自动重置，重置56.66元",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 0.22,
+        "sourcePage": "/posts/xunda-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/xunda-review-2026/"
+    },
+    {
+      "name": "ccyz",
+      "path": "/posts/ccyz-review-2026/",
+      "image": "/ccyz.png",
+      "price": 16.63,
+      "priceText": "49.9元/季（约16.63元/月）",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "streaming",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "季度起付，限5至10台设备；退款与优惠码适用范围待核实",
+      "summary": "Lite 49.9元/季含150GB/月，另有170元年付；145元550GB不限时。普通套餐每月订单日重置，未用流量不累计。支持Clash、ClashMeta及通用订阅，教程使用FlClash、Clash Verge、Nextin和Shadowrocket；BGP+IEPL和解锁为商家说明。首页展示ccyz九五折码。",
+      "subscriptionClients": [
+        "Clash",
+        "ClashMeta"
+      ],
+      "informationSources": [
+        {
+          "name": "CCYZ套餐页",
+          "url": "https://ccyz.uu-cc123.com/plan",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "CCYZ客户端与优惠说明",
+          "url": "https://ccyz.uu-cc123.com/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "CCYZ文档中心",
+          "url": "https://ccyz.uu-cc123.com/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 145,
+        "trafficGb": 550,
+        "priceText": "145元",
+        "trafficText": "550GB",
+        "status": "listed",
+        "deviceLimit": "5台",
+        "validity": "不限时；不按月补充流量",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 0.264,
+        "sourcePage": "/posts/ccyz-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/ccyz-review-2026/"
+    },
+    {
+      "name": "uuone",
+      "path": "/posts/uuone-review-2026/",
+      "image": "/uuone.png",
+      "price": 19,
+      "priceText": "19元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "streaming",
+        "clash"
+      ],
+      "status": "性价比观察",
+      "risk": "不支持免费试用；退款与旧优惠码待核实；设备数量和速率因套餐不同",
+      "summary": "不支持免费试用。19元/月150GB起，29元300GB、49元800GB；99元450GB不限时。BGP套餐标注300至800Mbps、10至20台设备。教程使用Clash Verge、Clash Meta和Nextin，支持通用订阅，未见自有客户端说明。",
+      "informationSources": [
+        {
+          "name": "uuone试用规则（站长补充）",
+          "url": "/posts/uuone-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "UUONE套餐页",
+          "url": "https://uu-1.v1ppone.de/plan",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "UUONE使用文档",
+          "url": "https://uu-1.v1ppone.de/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "UUONE iOS教程",
+          "url": "https://uu-1.v1ppone.de/knowledge/9",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 99,
+        "trafficGb": 450,
+        "priceText": "99元",
+        "trafficText": "450GB",
+        "status": "listed",
+        "deviceLimit": "10台",
+        "validity": "无时间限制；叠加规则待核实",
+        "checkedAt": "2026-09-23",
+        "unitPriceCnyPerGb": 0.22,
+        "sourcePage": "/posts/uuone-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/uuone-review-2026/"
+    },
+    {
+      "name": "冲上云霄",
+      "path": "/posts/chongshangyunxiao/",
+      "image": "/csyx.png",
+      "price": 7,
+      "priceText": "7元/30天",
+      "traffic": "50GB/30天",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash",
+        "streaming"
+      ],
+      "status": "低价观察",
+      "risk": "不支持免费试用；入门限速200Mbps且无专线；退款和长周期流量重置待核实",
+      "summary": "不支持免费试用。7元/30天50GB起，30元500GB起支持IEPL；365元800GB及800元5120GB不限时。套餐不限设备，Windows与Mac教程使用v2rayN，Android使用Flyer；默认1倍率，特殊倍率按节点标注。",
+      "informationSources": [
+        {
+          "name": "冲上云霄试用规则（站长补充）",
+          "url": "/posts/chongshangyunxiao/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "冲上云霄套餐页",
+          "url": "https://678.999865.xyz/plan",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "冲上云霄使用文档",
+          "url": "https://678.999865.xyz/doc",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "冲上云霄常见问题",
+          "url": "https://678.999865.xyz/doc/faq",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "salesSample": 929,
+      "noExpiryPackage": {
+        "priceCny": 365,
+        "trafficGb": 800,
+        "priceText": "365元",
+        "trafficText": "800GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "标注永不过期；续购与叠加待核实",
+        "checkedAt": "2026-09-23",
+        "unitPriceCnyPerGb": 0.456,
+        "sourcePage": "/posts/chongshangyunxiao/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/chongshangyunxiao/"
+    },
+    {
+      "name": "SSONE",
+      "path": "/posts/ssone/",
+      "image": "/ssone.png",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "60GB/月",
+      "trial": true,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash",
+        "trial"
+      ],
+      "status": "订阅观察",
+      "risk": "购买后不退款，新套餐覆盖旧套餐；年付超值无忧按年重置流量",
+      "summary": "15元/月60GB起，新注册账号免费体验1小时；另有80元/季300GB每月、200元/年5000GB每年。自有Windows、Mac和Android客户端，支持第三方订阅；套餐不限在线数量，峰值速率因档位不同。",
+      "informationSources": [
+        {
+          "name": "SSONE套餐与购买说明",
+          "url": "https://m.ssone.io/shop",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "SSONE使用文档",
+          "url": "https://m.ssone.io/docs",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/ssone/"
+    },
+    {
+      "name": "U1S1",
+      "path": "/posts/u1s1-review-2026/",
+      "image": "/u1s1.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "120GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "streaming",
+        "chatgpt",
+        "clash",
+        "直播",
+        "电商"
+      ],
+      "status": "专线观察",
+      "risk": "当前未见在售不限时套餐；定制需询价，旧优惠码与退款条件待核实",
+      "summary": "20元/月120GB起，96元年付60GB/月；常规套餐标注BGP三网优化、IEPL出口、SS协议和不限设备，AI与流媒体解锁为商家说明。提供四端客户端，600元/月起的直播或电商定制方案需咨询具体资源；本次套餐页未见在售不限时包。",
+      "informationSources": [
+        {
+          "name": "U1S1套餐页",
+          "url": "https://njdsues.u1sat.homes/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "U1S1客户端入口",
+          "url": "https://njdsues.u1sat.homes/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "salesSample": 82,
+      "historicalEvidence": {
+        "evidenceLevel": null,
+        "lastTestedAt": "2026-04-04",
+        "testWindow": "12:55 CST（非晚高峰）",
+        "testRegion": "香港、美国、日本、新加坡、马来西亚、台湾、俄罗斯等多节点",
+        "testNetwork": "珠海联通 / 9Gbps / 32线程订阅测速",
+        "testDevice": "MiaoKo 自定义测试",
+        "latencyMs": null,
+        "downloadMbpsRange": "主流节点约82-430Mbps，截图最高约780Mbps（原值 10.22-53.75MB/s，个别低速或0速节点另见截图）",
+        "evidenceSummary": "已补充 2026-04-04 MiaoKo 订阅测速截图，概要 61/61；该截图为非晚高峰单次历史记录，当前表现请查看 Siilas。",
+        "evidenceSources": [
+          {
+            "name": "U1S1归档订阅测速原图",
+            "url": "/U1S1CS.png"
+          }
+        ],
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/u1s1-review-2026/"
+    },
+    {
+      "name": "隐云",
+      "path": "/posts/yinyun-review-2026/",
+      "image": "/yinyun.png",
+      "price": 29,
+      "priceText": "29元/月参考价（首购季付起）",
+      "traffic": "专属模式不限流量；通用模式150GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "clash"
+      ],
+      "status": "备用观察",
+      "risk": "轻量版首购季付起；两种模式限制不同；不支持免费试用，退款待核实",
+      "summary": "不支持免费试用。轻量、标准、高级版月价参考29/49/99元。专属模式不限流量，分别限2/5/10台设备；通用模式不限设备，分别150/400/1024GB每月。专属模式标注不可降级，轻量首次需季付。",
+      "informationSources": [
+        {
+          "name": "隐云试用规则（站长补充）",
+          "url": "/posts/yinyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "隐云购买页",
+          "url": "https://103.238.130.44:2026/purchase",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "隐云仪表盘",
+          "url": "https://103.238.130.44:2026/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/yinyun-review-2026/"
+    },
+    {
+      "name": "cocoduck",
+      "path": "/posts/cocoduck-review/",
+      "image": "/cocoduck.png",
+      "price": 17,
+      "priceText": "17元/月",
+      "traffic": "100GB/月",
+      "trial": true,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "streaming",
+        "trial",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "试用无人工支持；加油包需搭配常规套餐，旧客户端需确认兼容性",
+      "summary": "17元/月100GB起，77元年付迷你鸭含40GB/月；新用户1天2GB免费体验。自有Android、Android TV、Windows和macOS客户端，iOS专属客户端仍开发中，可用第三方订阅。提供Clash主备订阅、Shadowrocket、Quantumult、Stash和V2Ray；9月5日公告称DNS问题修复，建议更新订阅。",
+      "subscriptionClients": [
+        "Clash",
+        "Shadowrocket",
+        "Quantumult",
+        "Stash",
+        "V2Ray"
+      ],
+      "informationSources": [
+        {
+          "name": "COCODUCK套餐与加油包",
+          "url": "https://dash.cocoduck.live/user/product",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "COCODUCK客户端与试用公告",
+          "url": "https://dash.cocoduck.live/user",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "salesSample": 280,
+      "siilasEvidence": {
+        "slug": "cocoduck",
+        "name": "cocoduck",
+        "yp7Path": "/posts/cocoduck-review/",
+        "sourceUrl": "https://siilas.com/airport/cocoduck/",
+        "latestTestAt": "2026-08-13",
+        "verifiedTestCount": 12,
+        "testDateCount": 3,
+        "regionalSampleDays": {
+          "新加坡": 3,
+          "香港": 3,
+          "日本": 3,
+          "美国": 3
+        },
+        "rankingEligible": true,
+        "score": 5.9,
+        "stability": 49.8,
+        "scoreBreakdown": {
+          "stability": 49.8,
+          "speed": 51.6,
+          "chatgpt": 72.9,
+          "streaming": 89.6,
+          "value": 58.8
+        },
+        "experienceScores": {
+          "chatgpt": 72.9,
+          "streaming": 89.6
+        },
+        "scoringPlan": {
+          "name": "个人套餐（月付）",
+          "priceCny": 17,
+          "trafficGb": 100,
+          "priceLabel": "¥17/月",
+          "trafficLabel": "100GB/月"
+        },
+        "latestExperience": {
+          "chatgpt": "新加坡 2026-08-13：轻微延迟；香港 2026-08-13：响应较慢；日本 2026-08-13：流畅；美国 2026-08-13：响应较慢",
+          "streaming": "新加坡 2026-08-13：轻微缓冲；香港 2026-08-13：缓冲明显；日本 2026-08-13：流畅；美国 2026-08-13：缓冲明显"
+        },
+        "latestRegionTests": [
+          {
+            "region": "新加坡",
+            "test": {
+              "id": "20260813-2227-sg",
+              "testedAt": "2026-08-13",
+              "time": "22:27",
+              "window": "晚高峰",
+              "node": "新加坡节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 91.01,
+              "uploadMbps": 81.53,
+              "chatgpt": "轻微延迟",
+              "streaming": "轻微缓冲",
+              "latencyMs": 259,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/result/d/19551583411",
+              "evidenceImage": "/evidence/cocoduck/2026-08-13-2227-sg-speedtest.png",
+              "evidenceNote": "Speedtest Desktop 截图时间为 2:27 PM GMT（北京时间 22:27），测速服务器 Axclusive Pte Ltd，新加坡；负载延迟下载 264 ms、上传 338 ms",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Eons Data Communications",
+              "device": null,
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/cocoduck/2026-08-13-2227-sg-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/cocoduck/2026-08-13-2227-sg-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "2551bf170cb0b2a1d6bde912096bf8435c20a2b176570eabc924809ae262d013",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/cocoduck/2026-08-13-2227-sg-speedtest.png",
+                    "sha256": "3b75891813e2a2f13e6a6f3a0197e78e080d6b0da9db81c3610b63afbc8155c9",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "香港",
+            "test": {
+              "id": "20260813-2156-hk",
+              "testedAt": "2026-08-13",
+              "time": "21:56",
+              "window": "晚高峰",
+              "node": "香港节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 85.25,
+              "uploadMbps": 79.92,
+              "chatgpt": "响应较慢",
+              "streaming": "缓冲明显",
+              "latencyMs": 231,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/result/19551454767",
+              "evidenceImage": "/evidence/cocoduck/2026-08-13-2156-hk-speedtest.png",
+              "evidenceNote": "Speedtest Desktop 截图时间为 1:56 PM GMT（北京时间 21:56），测速服务器 CTCSCI TECH LTD，香港；负载延迟下载 242 ms、上传 442 ms",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "NETVIGATOR",
+              "device": null,
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/cocoduck/2026-08-13-2156-hk-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/cocoduck/2026-08-13-2156-hk-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "d8398c535de006455dbfb60f0bd50bdc0249f122fd86a0f6c8ebc540543f1c2f",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/cocoduck/2026-08-13-2156-hk-speedtest.png",
+                    "sha256": "95bf0e2a0ade144cfa0be86846e1da7d0a52710c37b9966fdaf4e45e640ba1b7",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "日本",
+            "test": {
+              "id": "20260813-2206-jp",
+              "testedAt": "2026-08-13",
+              "time": "22:06",
+              "window": "晚高峰",
+              "node": "日本节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 217.69,
+              "uploadMbps": 97.38,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 169,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/result/19551495564",
+              "evidenceImage": "/evidence/cocoduck/2026-08-13-2206-jp-speedtest.png",
+              "evidenceNote": "Speedtest Desktop 截图时间为 2:06 PM GMT（北京时间 22:06），测速服务器 IPA CyberLab，Bunkyo；负载延迟下载 211 ms、上传 367 ms",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Eons Data Communications",
+              "device": null,
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/cocoduck/2026-08-13-2206-jp-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/cocoduck/2026-08-13-2206-jp-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "cebe537519db9a68f11a1277890002307308d0cb68d27e1e05e3d8659759e27d",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/cocoduck/2026-08-13-2206-jp-speedtest.png",
+                    "sha256": "25cc2922d8848c3efdb176b3b74dbbc28a158e2cabc93e289daeb1fde0b72b2c",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "美国",
+            "test": {
+              "id": "20260813-2216-us",
+              "testedAt": "2026-08-13",
+              "time": "22:16",
+              "window": "晚高峰",
+              "node": "美国节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 0.55,
+              "uploadMbps": 95.44,
+              "chatgpt": "响应较慢",
+              "streaming": "缓冲明显",
+              "latencyMs": 628,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/result/19551536675",
+              "evidenceImage": "/evidence/cocoduck/2026-08-13-2216-us-speedtest.png",
+              "evidenceNote": "Speedtest Desktop 截图时间为 2:16 PM GMT（北京时间 22:16），测速服务器 EGI Hosting，Santa Clara, CA；负载延迟下载 588 ms、上传 426 ms",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Eons Data Communications",
+              "device": null,
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/cocoduck/2026-08-13-2216-us-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/cocoduck/2026-08-13-2216-us-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "92837d38df8af48f2409fa2adab93cff29bf811c99e2f3c99a1a82ae33de284d",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/cocoduck/2026-08-13-2216-us-speedtest.png",
+                    "sha256": "f138e28048e900c3c14afff737bc5e4330ae2f9b587589d2f1bda91690b014a1",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
+        "receivedAt": "2026-10-09",
+        "sourcePublicationStatus": "published",
+        "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+        "methodologyUrl": "https://siilas.com/methodology/",
+        "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
+      },
+      "url": "https://yp7.net/posts/cocoduck-review/"
+    },
+    {
+      "name": "XSUS",
+      "path": "/posts/xsus-review-2026/",
+      "image": "/xsus.png",
+      "price": 12,
+      "priceText": "12元/月",
+      "traffic": "168GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "streaming",
+        "clash"
+      ],
+      "status": "性价比观察",
+      "risk": "无法原路退款；流量不叠加，续费不立即重置；不支持免费试用",
+      "summary": "不支持免费试用。12元/月168GB起，65元188GB起不限时包，另有52元/季50GB每月的IEPL套餐。最多5个IP，同网络多设备算1个IP；支持专用客户端及第三方订阅。",
+      "subscriptionClients": [
+        "Clash",
+        "sing-box",
+        "Shadowrocket",
+        "Loon"
+      ],
+      "informationSources": [
+        {
+          "name": "XSUS试用规则（站长补充）",
+          "url": "/posts/xsus-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "XSUS套餐与购买须知",
+          "url": "https://xsus.cloud/plan",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "XSUS帮助中心",
+          "url": "https://xsus.cloud/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "XSUS仪表盘",
+          "url": "https://xsus.cloud/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "siilasEvidence": {
+        "slug": "xsus",
+        "name": "XSUS",
+        "yp7Path": "/posts/xsus-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/xsus/",
+        "latestTestAt": "2026-10-08",
+        "verifiedTestCount": 13,
+        "testDateCount": 4,
+        "regionalSampleDays": {
+          "新加坡": 4,
+          "香港": 3,
+          "日本": 3,
+          "美国": 3
+        },
+        "rankingEligible": true,
+        "score": 5.3,
+        "stability": 37.5,
+        "scoreBreakdown": {
+          "stability": 37.5,
+          "speed": 32.4,
+          "chatgpt": 78.6,
+          "streaming": 84.9,
+          "value": 100
+        },
+        "experienceScores": {
+          "chatgpt": 78.6,
+          "streaming": 84.9
+        },
+        "scoringPlan": {
+          "name": "P-Small 基础套餐",
+          "priceCny": 12,
+          "trafficGb": 168,
+          "priceLabel": "¥12/月起",
+          "trafficLabel": "168GB/月"
+        },
+        "latestExperience": {
+          "chatgpt": "新加坡 2026-10-08：轻微延迟；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅",
+          "streaming": "新加坡 2026-10-08：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅"
+        },
+        "latestRegionTests": [
+          {
+            "region": "新加坡",
+            "test": {
+              "id": "20261008-2109-sg",
+              "testedAt": "2026-10-08",
+              "time": "21:09",
+              "window": "晚高峰",
+              "node": "新加坡节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 316,
+              "uploadMbps": 80.69,
+              "chatgpt": "轻微延迟",
+              "streaming": "流畅",
+              "latencyMs": 248,
+              "downloadLatencyMs": 290,
+              "uploadLatencyMs": 330,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765482567",
+              "evidenceImage": "/evidence/xsus/2026-10-08-2109-sg-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 1:09 PM，换算北京时间 21:09。用户确认使用 FlClash 客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Akari Networks",
+              "server": "M1 Limited · Singapore",
+              "device": "MacBook",
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/xsus/2026-10-08-2109-sg-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/xsus/2026-10-08-2109-sg-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "e8628fbedb552149f2362565d0741194ce418137830bf3501963721709640e2a",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/xsus/2026-10-08-2109-sg-speedtest.png",
+                    "sha256": "0715d30fd2750b617cdc0376e87ef18c611ba8b051aa93e379b1c3d7c22931d2",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "香港",
+            "test": {
+              "id": "20260923-2209-hk",
+              "testedAt": "2026-09-23",
+              "time": "22:09",
+              "window": "晚高峰",
+              "node": "香港节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 319.87,
+              "uploadMbps": 3.64,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 110,
+              "downloadLatencyMs": 258,
+              "uploadLatencyMs": 119,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19707317959",
+              "evidenceImage": "/evidence/xsus/2026-09-23-2209-hk-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 14:09，换算北京时间 22:09。",
+              "sourceRegion": "中国南方",
+              "carrier": "中国电信",
+              "accessType": "家庭宽带",
+              "connectionType": "Wi-Fi",
+              "isp": "Astrix",
+              "server": "Tata Communications · Hong Kong",
+              "device": "MacBook",
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/xsus/2026-09-23-2209-hk-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/xsus/2026-09-23-2209-hk-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "b2394b652a1c4320e0bd7e9e47f984a3c01b87f8c29e557347a7031aaa119352",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/xsus/2026-09-23-2209-hk-speedtest.png",
+                    "sha256": "279f8cb69ca3a0984ebd10b4a96665a4309a721300e2dc0108ea14a15b2f121d",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "日本",
+            "test": {
+              "id": "20260923-2220-jp",
+              "testedAt": "2026-09-23",
+              "time": "22:20",
+              "window": "晚高峰",
+              "node": "日本节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 35.57,
+              "uploadMbps": 56.69,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 108,
+              "downloadLatencyMs": 108,
+              "uploadLatencyMs": 138,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19707366046",
+              "evidenceImage": "/evidence/xsus/2026-09-23-2220-jp-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 14:20，换算北京时间 22:20。",
+              "sourceRegion": "中国南方",
+              "carrier": "中国电信",
+              "accessType": "家庭宽带",
+              "connectionType": "Wi-Fi",
+              "isp": "Akari Networks",
+              "server": "IPA CyberLab 400G · Tokyo",
+              "device": "MacBook",
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/xsus/2026-09-23-2220-jp-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/xsus/2026-09-23-2220-jp-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "4e8acf275ac26aefcfc372ac7c96cbabbb71093cd2d3cd51531aba995e906398",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/xsus/2026-09-23-2220-jp-speedtest.png",
+                    "sha256": "94cb185f8d25a867208572148881f60cf82ad6a2d3b9e3daf106449a5fe73c1a",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "美国",
+            "test": {
+              "id": "20260923-2225-us",
+              "testedAt": "2026-09-23",
+              "time": "22:25",
+              "window": "晚高峰",
+              "node": "美国节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 347.98,
+              "uploadMbps": 26.38,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 261,
+              "downloadLatencyMs": 313,
+              "uploadLatencyMs": 267,
+              "resultUrl": "https://www.speedtest.net/result/19707388202",
+              "evidenceImage": "/evidence/xsus/2026-09-23-2225-us-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 14:25，换算北京时间 22:25。",
+              "sourceRegion": "中国南方",
+              "carrier": "中国电信",
+              "accessType": "家庭宽带",
+              "connectionType": "Wi-Fi",
+              "isp": "Akari Networks",
+              "server": "Hotwire Fision · Los Angeles, CA",
+              "device": "MacBook",
+              "client": "FlClash",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/xsus/2026-09-23-2225-us-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/xsus/2026-09-23-2225-us-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "0a5c4eb88185ce6bda98fdf8c5844f29545ef8ab76165d7218f5115d9811f7a6",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/xsus/2026-09-23-2225-us-speedtest.png",
+                    "sha256": "e2f99813c1900e4755db52b17a9283a7397ba831c21000efe25ce4faf3ef3c31",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
+        "receivedAt": "2026-10-09",
+        "sourcePublicationStatus": "published",
+        "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+        "methodologyUrl": "https://siilas.com/methodology/",
+        "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
+      },
+      "noExpiryPackage": {
+        "priceCny": 65,
+        "trafficGb": 188,
+        "priceText": "65元",
+        "trafficText": "188GB",
+        "status": "listed",
+        "deviceLimit": "最多5个IP；同网络多设备计1个IP",
+        "validity": "无过期日；再购重置额度，不叠加余量",
+        "checkedAt": "2026-09-23",
+        "unitPriceCnyPerGb": 0.346,
+        "sourcePage": "/posts/xsus-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/xsus-review-2026/"
+    },
+    {
+      "name": "坦克云（原坦克加速）",
+      "path": "/posts/tank-review-2026/",
+      "image": "/tankejiasu.png",
+      "price": 9.9,
+      "priceText": "9.9元/月",
+      "traffic": "80GB/月",
+      "trial": true,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash",
+        "trial"
+      ],
+      "status": "新手观察",
+      "risk": "入门限1台设备与IP；退款与旧优惠码待核实",
+      "summary": "支持1天200GB免费试用。9.9元/月80GB起；另有49元/月不限流量、50元100GB及199元500GB不限时。官方客户端支持Windows、Android、Mac、Linux，iOS使用第三方客户端。",
+      "subscriptionClients": [
+        "Clash",
+        "Surge",
+        "Shadowrocket",
+        "Surfboard",
+        "Quantumult X"
+      ],
+      "informationSources": [
+        {
+          "name": "坦克云试用规则（站长补充）",
+          "url": "/posts/tank-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "坦克云套餐页",
+          "url": "https://aa.tankejiasu.com/#/stage/buysubs",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "坦克云使用文档",
+          "url": "https://aa.tankejiasu.com/#/stage/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "坦克云仪表盘",
+          "url": "https://aa.tankejiasu.com/#/stage/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "salesSample": 219,
+      "noExpiryPackage": {
+        "priceCny": 50,
+        "trafficGb": 100,
+        "priceText": "50元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "2台设备与IP同时连接",
+        "validity": "不限时；总流量用完为止",
+        "checkedAt": "2026-09-23",
+        "unitPriceCnyPerGb": 0.5,
+        "sourcePage": "/posts/tank-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/tank-review-2026/"
+    },
+    {
+      "name": "瞬云",
+      "path": "/posts/shunyun-review-2026/",
+      "image": "/shunyun.png",
+      "price": 18,
+      "priceText": "18元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "streaming",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用和退款；周期套餐仅限个人使用，旧优惠码待核实",
+      "summary": "不支持免费试用。18元/月150GB起，99元年付59GB/月；不限时260元2000GB、600元5000GB，不自动重置，手动重置为原价90%。官方Android、Windows和macOS客户端，iOS可用Clash Mi或Shadowrocket等第三方订阅。ANYCAST、原生IP、最高2.5Gbps及解锁属于商家说明。",
+      "informationSources": [
+        {
+          "name": "瞬云试用规则（站长补充）",
+          "url": "/posts/shunyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "瞬云套餐商店",
+          "url": "https://syjccloud.com/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "瞬云客户端文档",
+          "url": "https://syjccloud.com/#/docs",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "瞬云官方客户端教程",
+          "url": "https://syjccloud.com/#/docs/6",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "瞬云维护公告",
+          "url": "https://syjccloud.com/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "salesSample": 128,
+      "noExpiryPackage": {
+        "priceCny": 260,
+        "trafficGb": 2000,
+        "priceText": "260元",
+        "trafficText": "2000GB",
+        "status": "listed",
+        "deviceLimit": "不限客户端数量；仅限个人",
+        "validity": "无到期日；不自动重置，重置234元",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 0.13,
+        "sourcePage": "/posts/shunyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "historicalEvidence": {
+        "evidenceLevel": null,
+        "lastTestedAt": "2026-05-09",
+        "testWindow": "16:58 CST（非晚高峰）",
+        "testRegion": "香港、台湾、美国、日本、新加坡等多节点",
+        "testNetwork": "广东佛山联通 / 2Gbps / 8线程订阅测速",
+        "testDevice": "MiaoKo 自定义测试",
+        "latencyMs": null,
+        "downloadMbpsRange": "约144-2096Mbps（截图原值 17.96-262.06MB/s，低速节点另见截图）",
+        "evidenceSummary": "已补充 2026-05-09 MiaoKo 订阅测速截图；该截图为非晚高峰单次历史记录，当前表现请查看 Siilas。",
+        "evidenceSources": [
+          {
+            "name": "瞬云归档订阅测速原图",
+            "url": "/shunyuncesu.jpg"
+          }
+        ],
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/shunyun-review-2026/"
+    },
+    {
+      "name": "极连云",
+      "path": "/posts/jilianyun-review-2026/",
+      "image": "/jilianyun.png",
+      "price": 18,
+      "priceText": "18元/月",
+      "traffic": "100GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "stable"
+      ],
+      "status": "稳定观察",
+      "risk": "不支持免费试用和通用订阅；不退款；不限时399元600GB已确认，重置费用待核实",
+      "summary": "18元/月100GB起，96元/年60GB每月；不限时为399元600GB，9月27日站长补充确认；重置费用仍待核实，不按旧说明推算。提供自有客户端，不支持免费试用和通用订阅；套餐标注IPLC、1倍率及不限客户端数量。",
+      "informationSources": [
+        {
+          "name": "极连云不限时价格与流量（站长补充）",
+          "url": "/posts/jilianyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "极连云试用与订阅规则（站长补充）",
+          "url": "/posts/jilianyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "极连云套餐页",
+          "url": "https://roasa.jilianat.homes/#/plans",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "极连云知识库",
+          "url": "https://roasa.jilianat.homes/#/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 399,
+        "trafficGb": 600,
+        "priceText": "399元",
+        "trafficText": "600GB",
+        "status": "listed",
+        "deviceLimit": "不限同时使用客户端数量",
+        "validity": "不限时；重置费待核实",
+        "checkedAt": "2026-09-23",
+        "ownerConfirmedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 0.665,
+        "sourcePage": "/posts/jilianyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/jilianyun-review-2026/"
+    },
+    {
+      "name": "二猫云",
+      "path": "/posts/ermiao-vpn-review/",
+      "image": "/ermaoyun.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "130GB/月",
+      "trial": true,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "clash",
+        "chatgpt",
+        "streaming",
+        "newbie"
+      ],
+      "status": "专线观察",
+      "risk": "部分套餐价格文案与卡片不一致；退款及旧优惠码待核实",
+      "summary": "免费试用1天200GB；20元/月130GB起，每30天刷新；另有89元/年60GB/月及99元100GB、199元200GB不限时包。提供四平台官方客户端，教程支持Clash Mi、Clash Verge Rev、Clash Meta与Shadowrocket；IEPL、解锁及不限速为商家说明。",
+      "informationSources": [
+        {
+          "name": "二猫云套餐页",
+          "url": "https://network.ermaotztz3.homes/#/plans",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "二猫云帮助中心",
+          "url": "https://network.ermaotztz3.homes/#/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "二猫云客户端下载",
+          "url": "https://network.ermaotztz3.homes/#/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "salesSample": 191,
+      "noExpiryPackage": {
+        "priceCny": 99,
+        "trafficGb": 100,
+        "priceText": "99元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "卡片不限；帮助中心提示按套餐限制，待确认",
+        "validity": "长期有效；可补充流量，费用待核实",
+        "checkedAt": "2026-09-23",
+        "unitPriceCnyPerGb": 0.99,
+        "sourcePage": "/posts/ermiao-vpn-review/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "historicalEvidence": {
+        "evidenceLevel": null,
+        "lastTestedAt": "2026-06-30",
+        "testWindow": "14:58 CST（非晚高峰）",
+        "testRegion": "香港、台湾、日本、新加坡、美国多节点",
+        "testNetwork": "珠海联通 / 9Gbps / 32线程订阅测速",
+        "testDevice": "MiaoKo 自定义测试",
+        "latencyMs": null,
+        "downloadMbpsRange": "约273-2130Mbps（截图原值 34.10-266.19MB/s）",
+        "evidenceSummary": "已补充 2026-06-30 MiaoKo 订阅测速截图；该截图为非晚高峰单次历史记录，当前表现请查看 Siilas。",
+        "evidenceSources": [
+          {
+            "name": "二猫云归档订阅测速原图",
+            "url": "/ermaoyuncesu.png"
+          }
+        ],
+        "recordStatus": "historical",
+        "recordNotice": "2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现"
+      },
+      "url": "https://yp7.net/posts/ermiao-vpn-review/"
+    },
+    {
+      "name": "寰宇云",
+      "path": "/posts/huanyuyun-review-2026/",
+      "image": "/huanyuyun.png",
+      "price": 18,
+      "priceText": "18元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "stable",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "售出不退款；不支持免费试用；旧优惠码待核实",
+      "summary": "不支持免费试用。18元/月150GB起，79元年付60GB/月；不限时158元1000GB、368元3000GB。周期套餐流量不累计，不限在线设备；提供Android、Windows和macOS官方客户端以及通用订阅，iOS有Nextin、Shadowrocket教程。原生IP、平台解锁和晚高峰不降速均为商家说明。",
+      "subscriptionClients": [
+        "Clash",
+        "Nekoray",
+        "ClashX Meta",
+        "Stash"
+      ],
+      "informationSources": [
+        {
+          "name": "寰宇云试用规则（站长补充）",
+          "url": "/posts/huanyuyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "寰宇云套餐商店",
+          "url": "https://hyy.52kok.cn/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "寰宇云订阅入口",
+          "url": "https://hyy.52kok.cn/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "寰宇云客户端文档",
+          "url": "https://hyy.52kok.cn/#/docs",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "寰宇云官方客户端教程",
+          "url": "https://hyy.52kok.cn/#/docs/1",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 158,
+        "trafficGb": 1000,
+        "priceText": "158元",
+        "trafficText": "1000GB",
+        "status": "listed",
+        "deviceLimit": "不限在线设备或客户端数量",
+        "validity": "不限时；按总流量使用",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 0.158,
+        "sourcePage": "/posts/huanyuyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/huanyuyun-review-2026/"
+    },
+    {
+      "name": "光速云",
+      "path": "/posts/guangsuyun/",
+      "image": "/guangsuyun.png",
+      "price": 23,
+      "priceText": "23元/月",
+      "traffic": "148GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "stable",
+        "streaming"
+      ],
+      "status": "备用观察",
+      "risk": "不支持免费试用和通用订阅；套餐不退款；流光版238GB与220GB文案冲突待核实",
+      "summary": "月付23元含148GB/月，年付99元含59GB/月，均经9月27日站长补充确认；另有680元一次性1000GB不限时包。流光版238GB与220GB文案差异仍待核实。官网提供多平台客户端，iOS使用Nextin、专属码gsy；不限时包不自动重置，手动重置612元。不支持免费试用和通用订阅，套餐不退款。",
+      "informationSources": [
+        {
+          "name": "光速云年付及极速版额度（站长补充）",
+          "url": "/posts/guangsuyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "光速云试用与订阅规则（站长补充）",
+          "url": "/posts/guangsuyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "光速云套餐页",
+          "url": "https://fdgfds.guangsut.sbs/#/plans",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "光速云客户端知识库",
+          "url": "https://fdgfds.guangsut.sbs/#/knowledge",
+          "checkedAt": "2026-09-16",
+          "link": false
+        },
+        {
+          "name": "光速云仪表盘",
+          "url": "https://fdgfds.guangsut.sbs/#/dashboard",
+          "checkedAt": "2026-09-16",
+          "link": false
+        }
+      ],
+      "salesSample": 346,
+      "noExpiryPackage": {
+        "priceCny": 680,
+        "trafficGb": 1000,
+        "priceText": "680元",
+        "trafficText": "1000GB",
+        "status": "listed",
+        "deviceLimit": "不限时档待核实",
+        "validity": "无时间限制；不自动重置，重置612元",
+        "checkedAt": "2026-09-16",
+        "unitPriceCnyPerGb": 0.68,
+        "sourcePage": "/posts/guangsuyun/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/guangsuyun/"
+    },
+    {
+      "name": "sogo",
+      "path": "/posts/sogo-review-2026/",
+      "image": "/sogo.png",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "newbie"
+      ],
+      "status": "资料已核对",
+      "risk": "不限时标价与说明冲突；不支持免费试用和通用订阅；退款及旧优惠码待核实",
+      "summary": "不支持免费试用和通用订阅。25元/月150GB起，98元年付每月60GB，周期流量每30天刷新；不限时卡片120元120GB起。提供四端官方客户端，iOS使用Nextin识别码sogoyun。不限时说明中的100元售价和90元重置费与卡片不符，需确认后购买。",
+      "informationSources": [
+        {
+          "name": "sogo试用与订阅规则（站长补充）",
+          "url": "/posts/sogo-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "sogo套餐商店",
+          "url": "https://afasfw.sogotztz2.sbs/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "sogo基础版价格详情",
+          "url": "https://afasfw.sogotztz2.sbs/#/order/1?period=month_price",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "sogo客户端下载",
+          "url": "https://afasfw.sogotztz2.sbs/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "sogo客户端教程",
+          "url": "https://afasfw.sogotztz2.sbs/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "salesSample": 419,
+      "noExpiryPackage": {
+        "priceCny": null,
+        "trafficGb": 120,
+        "priceText": "卡片120元／正文100元（冲突）",
+        "trafficText": "120GB",
+        "status": "conflicting",
+        "deviceLimit": "不限设备数",
+        "validity": "不限时；不自动刷新，重置费待核实",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": null,
+        "sourcePage": "/posts/sogo-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/sogo-review-2026/"
+    },
+    {
+      "name": "速界",
+      "path": "/posts/sujie-review-2026/",
+      "image": "/sujie.png",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "50GB/月",
+      "trial": true,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "streaming",
+        "newbie",
+        "trial"
+      ],
+      "status": "资料已核对",
+      "risk": "免费试用1天50GB需注册后联系客服领取；15元月付体验另为付费套餐且不参加优惠；不支持通用订阅；退款待核实；光速版流量说明冲突",
+      "summary": "注册后联系客服可领取1天50GB免费试用。限时月付体验15元50GB为另一付费套餐，90元年付每月50GB；常规25元120GB、50元250GB、100元卡片500GB、200元1000GB。提供四端客户端，iOS使用Nextin识别码speedworld0526。不支持通用订阅，退款及旧优惠码待核实。",
+      "informationSources": [
+        {
+          "name": "速界试用与订阅规则（站长补充）",
+          "url": "/posts/sujie-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "速界套餐商店",
+          "url": "https://utyimn.azjstq.xyz/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "速界客户端下载",
+          "url": "https://utyimn.azjstq.xyz/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "速界客户端教程",
+          "url": "https://utyimn.azjstq.xyz/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/sujie-review-2026/"
+    },
+    {
+      "name": "边缘节点",
+      "path": "/posts/bianyuan-review-2026/",
+      "image": "/bianyuan.png",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "50GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "streaming",
+        "chatgpt",
+        "newbie"
+      ],
+      "status": "资料已核对",
+      "risk": "月付体验不参加优惠；不支持免费试用和通用订阅，退款待核实；450GB不限时重置费说明冲突",
+      "summary": "限时体验15元/月50GB，标准22元/月120GB；98元年付每月45GB，不限时100元100GB或399元450GB。常规套餐展示xk808八折码，体验月付不参加。提供四端客户端，iOS使用Nextin识别码edgenova0526；不支持免费试用和通用订阅。",
+      "informationSources": [
+        {
+          "name": "边缘节点试用与订阅规则（站长补充）",
+          "url": "/posts/bianyuan-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "边缘节点套餐与优惠说明",
+          "url": "https://zvbghs02.ztymforedge.lol/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "边缘节点客户端下载",
+          "url": "https://zvbghs02.ztymforedge.lol/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "边缘节点客户端教程",
+          "url": "https://zvbghs02.ztymforedge.lol/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "siilasEvidence": {
+        "slug": "edgenode",
+        "name": "边缘节点",
+        "yp7Path": "/posts/bianyuan-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/edgenode/",
+        "latestTestAt": "2026-10-08",
+        "verifiedTestCount": 12,
+        "testDateCount": 4,
+        "regionalSampleDays": {
+          "新加坡": 3,
+          "香港": 3,
+          "日本": 3,
+          "美国": 3
+        },
+        "rankingEligible": true,
+        "score": 4,
+        "stability": 18.1,
+        "scoreBreakdown": {
+          "stability": 18.1,
+          "speed": 32.9,
+          "chatgpt": 68.8,
+          "streaming": 85.4,
+          "value": 54.5
+        },
+        "experienceScores": {
+          "chatgpt": 68.8,
+          "streaming": 85.4
+        },
+        "scoringPlan": {
+          "name": "极界·标准套餐",
+          "priceCny": 22,
+          "trafficGb": 120,
+          "priceLabel": "¥22/月",
+          "trafficLabel": "120GB/月"
+        },
+        "latestExperience": {
+          "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-10-08：流畅；美国 2026-10-08：流畅",
+          "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：流畅；日本 2026-10-08：轻微缓冲；美国 2026-10-08：流畅"
+        },
+        "latestRegionTests": [
+          {
+            "region": "新加坡",
+            "test": {
+              "id": "20261008-1942-sg",
+              "testedAt": "2026-10-08",
+              "time": "19:42",
+              "window": "晚间",
+              "node": "新加坡节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 551.47,
+              "uploadMbps": 94.93,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 88,
+              "downloadLatencyMs": 143,
+              "uploadLatencyMs": 290,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765167377",
+              "evidenceImage": "/evidence/edgenode/2026-10-08-1942-sg-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 11:42 AM，换算北京时间 19:42。用户确认使用边缘节点客户端 EdgeNova；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "AUK Network",
+              "server": "CBN · Singapore",
+              "device": "MacBook",
+              "client": "边缘节点客户端（EdgeNova）",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/edgenode/2026-10-08-1942-sg-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/edgenode/2026-10-08-1942-sg-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "2e8b18394c93129eb056e77db5b3cf078b78bbd13bb02da38f5463a9b23f10dc",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/edgenode/2026-10-08-1942-sg-speedtest.png",
+                    "sha256": "f57e66bf82d8be18a8ad7a8d20480b8a27500ab96eb3cbfe3c490076f5f4dea5",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "香港",
+            "test": {
+              "id": "20261008-1959-hk",
+              "testedAt": "2026-10-08",
+              "time": "19:59",
+              "window": "晚间",
+              "node": "香港节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 541.78,
+              "uploadMbps": 95.4,
+              "chatgpt": "不可用",
+              "streaming": "流畅",
+              "latencyMs": 152,
+              "downloadLatencyMs": 213,
+              "uploadLatencyMs": 377,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765222685",
+              "evidenceImage": "/evidence/edgenode/2026-10-08-1959-hk-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 11:59 AM，换算北京时间 19:59。用户确认使用边缘节点客户端 EdgeNova；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Lshiy-user-content",
+              "server": "fdcservers.net · Hong Kong",
+              "device": "MacBook",
+              "client": "边缘节点客户端（EdgeNova）",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/edgenode/2026-10-08-1959-hk-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/edgenode/2026-10-08-1959-hk-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "994141b9f46f2fe2635a1f0e04e53ce81493a49cc3ce2ec6335a0ac998027e31",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/edgenode/2026-10-08-1959-hk-speedtest.png",
+                    "sha256": "a7559e8b0cd3ef6c9c0f31b4e931e887f69d72f93ae648e3869cc253dd336f49",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "日本",
+            "test": {
+              "id": "20261008-1953-jp",
+              "testedAt": "2026-10-08",
+              "time": "19:53",
+              "window": "晚间",
+              "node": "日本节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 78.75,
+              "uploadMbps": 59.59,
+              "chatgpt": "流畅",
+              "streaming": "轻微缓冲",
+              "latencyMs": 163,
+              "downloadLatencyMs": 150,
+              "uploadLatencyMs": 213,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765202122",
+              "evidenceImage": "/evidence/edgenode/2026-10-08-1953-jp-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 11:53 AM，换算北京时间 19:53。用户确认使用边缘节点客户端 EdgeNova；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Dodo",
+              "server": "サーバーならDDPS.jp · Tokyo",
+              "device": "MacBook",
+              "client": "边缘节点客户端（EdgeNova）",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/edgenode/2026-10-08-1953-jp-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/edgenode/2026-10-08-1953-jp-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "4df4c40948a159f16761798ad5c825a06e288ebc5aac5aad1e2fed30c5dfe65f",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/edgenode/2026-10-08-1953-jp-speedtest.png",
+                    "sha256": "7c37661c22c850f45c4bd4958ce650f2584c77d2ba4b776539770485aaca4c2a",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "region": "美国",
+            "test": {
+              "id": "20261008-2001-us",
+              "testedAt": "2026-10-08",
+              "time": "20:01",
+              "window": "晚高峰",
+              "node": "美国节点",
+              "baselineDownloadMbps": 1000,
+              "downloadMbps": 601.7,
+              "uploadMbps": 95.33,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 235,
+              "downloadLatencyMs": 294,
+              "uploadLatencyMs": 454,
+              "jitterMs": null,
+              "packetLossPercent": null,
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765231897",
+              "evidenceImage": "/evidence/edgenode/2026-10-08-2001-us-speedtest.png",
+              "evidenceNote": "截图时间为 GMT 12:01 PM，换算北京时间 20:01。用户确认使用边缘节点客户端 EdgeNova；截图中的 Speedtest Desktop 为测速工具。",
+              "sourceRegion": null,
+              "connectionType": "Wi-Fi",
+              "isp": "Komi",
+              "server": "Vyve Broadband · Abilene, KS",
+              "device": "MacBook",
+              "client": "边缘节点客户端（EdgeNova）",
+              "measurementTool": "Speedtest Desktop",
+              "evidenceUrl": "https://siilas.com/evidence/edgenode/2026-10-08-2001-us-speedtest.png",
+              "evidenceUrls": [
+                "https://siilas.com/evidence/edgenode/2026-10-08-2001-us-speedtest.png"
+              ],
+              "publication": {
+                "status": "published",
+                "versionSha256": "15a5db564e8a5191a1aa8b2ebd397cff59d9efbe1b9283109cd0777b5b60eb78",
+                "evidenceVersions": [
+                  {
+                    "label": "测速截图",
+                    "url": "https://siilas.com/evidence/edgenode/2026-10-08-2001-us-speedtest.png",
+                    "sha256": "58bbdfad5b7da43b422bf4a0c55c6b315e8afda4171cdba4c08580cc4cd92a69",
+                    "status": "published"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
+        "receivedAt": "2026-10-09",
+        "sourcePublicationStatus": "published",
+        "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+        "methodologyUrl": "https://siilas.com/methodology/",
+        "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
+      },
+      "noExpiryPackage": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "不限时；不自动刷新，重置90元",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 1,
+        "sourcePage": "/posts/bianyuan-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/bianyuan-review-2026/"
+    },
+    {
+      "name": "宇宙云",
+      "path": "/posts/yuzhoucloud-review-2026/",
+      "image": "/yuzhouyun.png",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "160GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "newbie",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；退款及旧优惠码待核实；周期重置费基数与补流量费用需确认",
+      "summary": "不支持免费试用。25元/月160GB起，96元年付每月60GB，不限时110元120GB起。提供四端客户端及Clash Mi手动导入教程；iOS自研模式使用Nextin识别码yuzhouyun0405。220元不限时包提供240GB总流量，9月27日站长补充确认；周期重置9折的基数及补流量费用需确认。",
+      "informationSources": [
+        {
+          "name": "宇宙云220元不限时额度（站长补充）",
+          "url": "/posts/yuzhoucloud-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "宇宙云试用规则（站长补充）",
+          "url": "/posts/yuzhoucloud-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "宇宙云套餐商店",
+          "url": "https://tlsmvchy.yuzhoutttt3.click/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "宇宙云客户端下载",
+          "url": "https://tlsmvchy.yuzhoutttt3.click/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "宇宙云客户端与Clash Mi教程",
+          "url": "https://tlsmvchy.yuzhoutttt3.click/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 110,
+        "trafficGb": 120,
+        "priceText": "110元",
+        "trafficText": "120GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "不限时；可补充流量，费用待核实",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 0.917,
+        "sourcePage": "/posts/yuzhoucloud-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/yuzhoucloud-review-2026/"
+    },
+    {
+      "name": "快狸",
+      "path": "/posts/kuaili-review-2026/",
+      "image": "/kuaili.png",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "50GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "newbie",
+        "chatgpt",
+        "clash",
+        "streaming"
+      ],
+      "status": "客户端观察",
+      "risk": "不支持免费试用；季付与年付优惠文案需核对；退款及旧优惠码待核实",
+      "summary": "不支持免费试用。15元月付50GB起，120元年付30GB/月；22元100GB、35元250GB、95元500GB、180元1000GB月付，周期流量每30天刷新。提供四平台客户端，iOS使用Nextin识别码kuaili0421，并有Clash Mi订阅导入教程。夜狸季付290元高于三个月月付285元，年付并非统一8折；IEPL、解锁与不限设备为商家说明。",
+      "informationSources": [
+        {
+          "name": "快狸试用规则（站长补充）",
+          "url": "/posts/kuaili-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "快狸套餐页",
+          "url": "https://m3lop.ztfxkl.xyz/#/plans",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "快狸帮助中心",
+          "url": "https://m3lop.ztfxkl.xyz/#/knowledge",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "快狸客户端下载",
+          "url": "https://m3lop.ztfxkl.xyz/#/dashboard",
+          "checkedAt": "2026-09-26",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/kuaili-review-2026/"
+    },
+    {
+      "name": "可信云",
+      "path": "/posts/kexinyun-review-2026/",
+      "image": "/kexinyun.png",
+      "price": 15,
+      "priceText": "15元/月",
+      "traffic": "60GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "stable"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用和通用订阅；退款待核实；50GB不限时包不参加优惠活动",
+      "summary": "15元/月60GB起，96元年付60GB/月；标准档50元/月300GB，新增50元一次性50GB不限时。自有桌面和Android客户端，iOS使用Nextin及识别码kosing0404；套餐标注不限设备。IEPL、原生IP及流媒体AI解锁为商家说明，不支持免费试用和通用订阅，退款待核实。",
+      "informationSources": [
+        {
+          "name": "可信云试用与订阅规则（站长补充）",
+          "url": "/posts/kexinyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "可信云套餐页",
+          "url": "https://aass.kexintztz2.sbs/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "可信云客户端下载",
+          "url": "https://aass.kexintztz2.sbs/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "可信云帮助中心",
+          "url": "https://aass.kexintztz2.sbs/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 50,
+        "trafficGb": 50,
+        "priceText": "50元",
+        "trafficText": "50GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "标注永久不限时；不参与活动",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 1,
+        "sourcePage": "/posts/kexinyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/kexinyun-review-2026/"
+    },
+    {
+      "name": "星岛梦",
+      "path": "/posts/xingdaomeng-review-2026/",
+      "image": "/xingdaomeng.png",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "年付与一次性包规则不同；旧优惠码与退款条件待核实",
+      "summary": "月付25元150GB起，96元年付小包含60GB/月；不限时100元100GB、300元300GB、600元1TB，不自动重置，手动重置为原价90%。提供四端客户端；1倍率、不限设备、IPLC或IEPL、最高2.5Gbps及解锁能力均为套餐说明。",
+      "informationSources": [
+        {
+          "name": "星岛梦套餐页",
+          "url": "https://rweqr.xdmttt4.click/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "星岛梦客户端入口",
+          "url": "https://rweqr.xdmttt4.click/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "星岛梦客户端知识库",
+          "url": "https://rweqr.xdmttt4.click/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "不限时；不自动重置，手动重置9折",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 1,
+        "sourcePage": "/posts/xingdaomeng-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/xingdaomeng-review-2026/"
+    },
+    {
+      "name": "一翻云",
+      "path": "/posts/yifanyun-review-2026/",
+      "image": "/yifanyun.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "newbie"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用和通用订阅；退款和旧优惠码待核实；中秋限定套餐停售时间未注明",
+      "summary": "20元/月150GB起，98元年付每月60GB；中秋限定50元50GB不限时，常规100元100GB起。Android、Windows与Mac提供专属客户端，iOS文档使用Nextin及识别码1fly0404；不支持免费试用和通用订阅，线路与解锁为商家宣传。",
+      "informationSources": [
+        {
+          "name": "一翻云试用与订阅规则（站长补充）",
+          "url": "/posts/yifanyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "一翻云套餐页",
+          "url": "https://ngfi2bnfn.1fyohnzt.xyz/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "一翻云客户端下载",
+          "url": "https://ngfi2bnfn.1fyohnzt.xyz/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "一翻云客户端帮助中心",
+          "url": "https://ngfi2bnfn.1fyohnzt.xyz/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "长期有效；常规包，另有中秋限售包",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 1,
+        "sourcePage": "/posts/yifanyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/yifanyun-review-2026/"
+    },
+    {
+      "name": "九云",
+      "path": "/posts/jiuyun-review-2026/",
+      "image": "/shouye.png",
+      "price": 6,
+      "priceText": "6元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持试用，不支持退款；并发设备数因套餐而异",
+      "summary": "月付6元150GB起，每30天重置；不限时36元100GB、99元300GB，流量用完作废。教程提供Clash Verge、Clash Meta、Karing和Shadowrocket，海外中转及解锁能力为商家说明，未新增实测。",
+      "subscriptionClients": [
+        "Clash Verge",
+        "Clash Meta",
+        "Karing",
+        "Shadowrocket"
+      ],
+      "informationSources": [
+        {
+          "name": "九云套餐商店",
+          "url": "https://888.jiuyundl.com/#/shop",
+          "checkedAt": "2026-09-22",
+          "link": false
+        },
+        {
+          "name": "九云客户端教程",
+          "url": "https://888.jiuyundl.com/#/docs",
+          "checkedAt": "2026-09-22",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 36,
+        "trafficGb": 100,
+        "priceText": "36元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "3台同时在线",
+        "validity": "不限时；不重置，用完作废",
+        "checkedAt": "2026-09-22",
+        "unitPriceCnyPerGb": 0.36,
+        "sourcePage": "/posts/jiuyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/jiuyun-review-2026/"
+    },
+    {
+      "name": "隐形人",
+      "path": "/posts/yinxingren-review-2026/",
+      "image": "/shouye.png",
+      "price": 24,
+      "priceText": "24元/月",
+      "traffic": "144GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "newbie",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "不限时包设备数卡片与详情冲突；不支持试用和通用订阅，退款待核实",
+      "summary": "24元/月144GB起，109元年付80GB/月；不限时229元160GB、549元420GB、1199元1000GB。提供Android、Windows、Mac官方客户端，iOS使用Nextin及识别码yxr；不限时包详情分别限1、2、3台设备。不支持试用和通用订阅；另收录2026年9月26日用户提供的晚间单次测速截图，专线、AI和流媒体解锁仍为商家说明。",
+      "informationSources": [
+        {
+          "name": "隐形人套餐页",
+          "url": "https://wpkhf.invisibleattt.sbs/#/plans",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "隐形人帮助中心",
+          "url": "https://wpkhf.invisibleattt.sbs/#/knowledge",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "隐形人客户端下载",
+          "url": "https://wpkhf.invisibleattt.sbs/#/dashboard",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "用户提供的隐形人单次测速截图",
+          "url": "/yinxingren-speedtest-2026-09-26.jpg",
+          "checkedAt": "2026-09-26"
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 229,
+        "trafficGb": 160,
+        "priceText": "229元",
+        "trafficText": "160GB",
+        "status": "listed",
+        "deviceLimit": "详情1台／卡片不限（冲突）",
+        "validity": "无时间限制；设备规则需先确认",
+        "checkedAt": "2026-09-26",
+        "unitPriceCnyPerGb": 1.431,
+        "sourcePage": "/posts/yinxingren-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/yinxingren-review-2026/"
+    },
+    {
+      "name": "闪电鼠",
+      "path": "/posts/shandianshu-review-2026/",
+      "image": "/shouye.png",
+      "price": 22,
+      "priceText": "22元/月",
+      "traffic": "120GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "newbie",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用和通用订阅；退款待核实；首购优惠适用范围需核对",
+      "summary": "不支持免费试用和通用订阅。22元月付120GB起，另有40元250GB、70元500GB月付及96元年付60GB/月；流量每30天重置。提供四平台客户端教程，iOS使用Nextin识别码sd88。公告列出新用户首购7折码sd88，未验证适用套餐与叠加条件；专线、解锁及不限设备为商家说明。",
+      "informationSources": [
+        {
+          "name": "闪电鼠试用与订阅规则（站长补充）",
+          "url": "/posts/shandianshu-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "闪电鼠套餐页",
+          "url": "https://www2.shandiantt.xyz/#/plans",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "闪电鼠使用教程",
+          "url": "https://www2.shandiantt.xyz/#/knowledge",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "闪电鼠下载中心",
+          "url": "https://www2.shandiantt.xyz/#/downloads",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "闪电鼠新人优惠公告",
+          "url": "https://www2.shandiantt.xyz/#/dashboard",
+          "checkedAt": "2026-09-26",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/shandianshu-review-2026/"
+    },
+    {
+      "name": "环球梯",
+      "path": "/posts/huanqiuti-review-2026/",
+      "image": "/shouye.png",
+      "price": 23,
+      "priceText": "23元/月",
+      "traffic": "120GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": false,
+      "scenarios": [
+        "newbie",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "按量包详情限365天，与卡片终身标签不同；不支持免费试用和通用订阅，退款待核实",
+      "summary": "不支持免费试用和通用订阅。23元月付120GB起，96元年付60GB/月；39元240GB、69元600GB月付，设备分别限3、5、10台。按量包99元80GB、299元400GB，有效期均为365天，不属于不限时套餐。提供四平台客户端教程，iOS使用Nextin识别码HQ66。公告七折码HQ66限2000份、每人一次、不可叠加，截止2026年11月30日，结算与余量未验证；流媒体和AI支持为商家说明。",
+      "informationSources": [
+        {
+          "name": "环球梯试用与订阅规则（站长补充）",
+          "url": "/posts/huanqiuti-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "环球梯套餐页",
+          "url": "https://www2.huanqiutitt.xyz/#/plans",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "环球梯客户端教程",
+          "url": "https://www2.huanqiutitt.xyz/#/knowledge",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "环球梯客户端下载与优惠公告",
+          "url": "https://www2.huanqiutitt.xyz/#/dashboard",
+          "checkedAt": "2026-09-26",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/huanqiuti-review-2026/"
+    },
+    {
+      "name": "跨界云",
+      "path": "/posts/kuajieyun-review-2026/",
+      "image": "/shouye.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "120GB/月",
+      "trial": true,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "newbie",
+        "chatgpt",
+        "streaming",
+        "trial",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "20GB试用需注册后联系客服领取，期限未说明；通用订阅需购买订阅后联系客服领取；退款待核实，不限时包不参与优惠，中秋老用户套餐停售日期未明确",
+      "summary": "20元月付120GB起，另有40元330GB、90元830GB、130元1800GB月付；96元年付60GB/月、150元年付100GB/月。不限时200元300GB，180元重置且不参与优惠；40元50GB中秋包仅限老用户，具体停售日期未明确。注册后可向在线客服领取20GB试用，期限未说明；通用订阅需购买订阅后联系在线客服领取。提供Android、Windows、Mac客户端，iOS使用Nextin识别码kjy。普通周期套餐描述年付8折、两年付7折、三年付6折，本次未核实可用优惠码；AI与流媒体能力为商家说明，退款待核实。",
+      "informationSources": [
+        {
+          "name": "跨界云试用与通用订阅规则（站长补充）",
+          "url": "/posts/kuajieyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "跨界云套餐页",
+          "url": "https://kasoasf.kuajiecloudtttt.mom/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "跨界云客户端教程",
+          "url": "https://kasoasf.kuajiecloudtttt.mom/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "跨界云客户端下载",
+          "url": "https://kasoasf.kuajiecloudtttt.mom/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 200,
+        "trafficGb": 300,
+        "priceText": "200元",
+        "trafficText": "300GB",
+        "status": "listed",
+        "deviceLimit": "不限设备登录数",
+        "validity": "长期有效；不自动刷新，重置180元",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 0.667,
+        "sourcePage": "/posts/kuajieyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/kuajieyun-review-2026/"
+    },
+    {
+      "name": "Edge-X",
+      "path": "/posts/edge-x-review-2026/",
+      "image": "/shouye.png",
+      "price": 22.8,
+      "priceText": "22.8元/月",
+      "traffic": "200GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "newbie",
+        "clash",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；普通订阅需关闭DNS覆写，特殊网络按专用教程；全年流量包不退款；月付退款须流量≤5GB、支付宝付款及生效未满12小时同时满足并提交工单；优惠叠加与结算未验证",
+      "summary": "22.8元月付200GB起，另有34.8元300GB、64.8元600GB月付，按每月订单日重置；全年总量800GB年付168元、1600GB年付268元、3600GB年付468元，按每年订单日重置且不退款，不属于不限时套餐。提供四端客户端，iOS合作客户端Nextin识别码为edgex，并提供Clash、Surge、Surfboard、Stash通用订阅入口；普通订阅需关闭DNS覆写，特殊网络按专用教程；Shadowrocket、Quantumult X和Loon需按各自教程导入配置。IEPL、平峰1倍率/闲时0.5倍率、境外接入、AI与流媒体支持均为商家说明，闲时时间范围未明确；不支持免费试用。",
+      "informationSources": [
+        {
+          "name": "Edge-X试用规则（站长补充）",
+          "url": "/posts/edge-x-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "Edge-X套餐商店",
+          "url": "https://edgex-net.com/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "Edge-X官方客户端教程",
+          "url": "https://edgex-net.com/#/knowledge/1",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "Edge-X新用户必读与退款规则",
+          "url": "https://edgex-net.com/#/knowledge/4",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "Edge-X第三方客户端与境外订阅教程",
+          "url": "https://edgex-net.com/#/knowledge/5",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "Edge-X客户端、订阅入口与活动公告",
+          "url": "https://edgex-net.com/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/edge-x-review-2026/"
+    },
+    {
+      "name": "闪跃",
+      "path": "/posts/shanyue-review-2026/",
+      "image": "/shouye.png",
+      "price": 24,
+      "priceText": "24元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "newbie",
+        "clash",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；Clash订阅链接需联系客服获取；退款待核实；两档不限时包订单确认页流量额度均显示0GB，与列表100GB／200GB冲突，付款前需核实",
+      "summary": "24元月付150GB起，另有44元300GB、84元600GB、134元1000GB月付；96元年付60GB/月、180元年付120GB/月，重置费分别15元、30元。不限时包列表标150元100GB、288元200GB，长期不过期；2026年10月5日对应订单确认页均显示流量额度0GB，并提供130元、268元的重置流量选项，未提交订单或付款，实际交付额度待核实。提供四端客户端教程，iOS需外区Apple ID下载Nextin，输入识别码sywl后使用官网账号登录。常规套餐标注不限制同时使用客户端数量，IPLC、1倍率、晚高峰不限速、原生IP、ChatGPT/TikTok与流媒体支持均为商家说明，未新增实测。不支持免费试用；客服可提供Clash订阅链接，退款待核实。",
+      "informationSources": [
+        {
+          "name": "闪跃试用与Clash订阅规则（站长补充）",
+          "url": "/posts/shanyue-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "闪跃套餐页",
+          "url": "https://kkj.flashleaptt.xyz/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "闪跃两档不限时包列表与订单确认页（未付款）",
+          "url": "https://kkj.flashleaptt.xyz/?code=msdAwmER#/plans",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "闪跃四端客户端知识库",
+          "url": "https://kkj.flashleaptt.xyz/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "闪跃官方客户端下载",
+          "url": "https://kkj.flashleaptt.xyz/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 150,
+        "trafficGb": null,
+        "priceText": "150元",
+        "trafficText": "列表100GB／订单确认页0GB（冲突）",
+        "status": "conflicting",
+        "deviceLimit": "不限时档未注明",
+        "validity": "标注不限时；订单确认页重置选项130元，交付额度待核实",
+        "checkedAt": "2026-10-05",
+        "unitPriceCnyPerGb": null,
+        "sourcePage": "/posts/shanyue-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/shanyue-review-2026/"
+    },
+    {
+      "name": "无忧链接",
+      "path": "/posts/wuyoulianjie-review-2026/",
+      "image": "/shouye.png",
+      "price": 19,
+      "priceText": "19元/月",
+      "traffic": "100GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "chatgpt",
+        "streaming",
+        "newbie",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；通用订阅需向客服索取；退款、设备限制及具体订阅格式待核实；定制套餐需先联系客服",
+      "summary": "当前可见月付19元100GB起，另有79元年付40GB/月；98元100GB、288元300GB一次性不限时包。官网提供四端客户端，Android以官网账号登录，iOS使用Nextin、专属码wylj。IPLC及AI、流媒体支持为商家说明，未新增实测；2026年9月28日站长补充确认不支持免费试用，通用订阅可向客服索取，具体格式和退款仍需核实。",
+      "informationSources": [
+        {
+          "name": "无忧链接套餐页",
+          "url": "https://iwerer.worryfreettt.xyz/#/plans",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "无忧链接客户端教程",
+          "url": "https://iwerer.worryfreettt.xyz/#/knowledge",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "无忧链接官网邀请入口",
+          "url": "https://haandiiong.worryfreeaff.com/#/?code=h5MSQqsL",
+          "checkedAt": "2026-09-28"
+        },
+        {
+          "name": "无忧链接试用与订阅规则（站长补充）",
+          "url": "/posts/wuyoulianjie-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 98,
+        "trafficGb": 100,
+        "priceText": "98元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "待核实",
+        "validity": "标注永久不限时；重置与续购规则待核实",
+        "checkedAt": "2026-09-28",
+        "unitPriceCnyPerGb": 0.98,
+        "sourcePage": "/posts/wuyoulianjie-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/wuyoulianjie-review-2026/"
+    },
+    {
+      "name": "榴莲云",
+      "path": "/posts/liulianyun-review-2026/",
+      "image": "/shouye.png",
+      "price": 24,
+      "priceText": "24元/月",
+      "traffic": "140GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "chatgpt",
+        "streaming",
+        "newbie",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；通用订阅需购买后向客服领取，具体格式与客户端兼容先确认；退款待核实；ll88七折码适用及叠加条件需确认",
+      "summary": "不支持免费试用；通用订阅需购买订阅后向客服领取，具体格式与客户端兼容先确认。可见最低月付24元140GB，40元260GB、60元420GB、100元750GB；96元年付提供60GB/月，购买日起每30天刷新，不限同时使用客户端数量。四端账号登录客户端，iOS Nextin专属码lly；公告展示ll88七折码，结算未验证。IPLC及原生IP、AI与流媒体为商家说明。",
+      "informationSources": [
+        {
+          "name": "榴莲云试用与订阅规则（站长补充）",
+          "url": "/posts/liulianyun-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "榴莲云套餐页",
+          "url": "https://www2.liulianyuntt.xyz/#/plans",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "榴莲云客户端教程",
+          "url": "https://www2.liulianyuntt.xyz/#/knowledge",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "榴莲云官网邀请入口",
+          "url": "https://haadvip01.liulianyunaff.com/?code=wNI31wy3",
+          "checkedAt": "2026-09-28"
+        }
+      ],
+      "url": "https://yp7.net/posts/liulianyun-review-2026/"
+    },
+    {
+      "name": "鲤云",
+      "path": "/posts/liyun-review-2026/",
+      "image": "/shouye.png",
+      "price": 5,
+      "priceText": "5元/月",
+      "traffic": "100GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；周期套餐不退款；59元200GB包客服确认有效期1年（站长2026-10-05提供），此前官网含永久文案",
+      "summary": "月付5元100GB、8元200GB、15元400GB；16元季付128GB/月、88元年付256GB/月。59元一次性200GB包经站长2026-10-05转述客服确认有效期1年，不计为不限时；此前官网同时写永久与限时1年。提供Clash Verge、Clash Meta及Shadowrocket教程；liyun888八折码未核对结算，周期套餐明确不退款。",
+      "subscriptionClients": [
+        "Clash Verge",
+        "Clash Meta",
+        "Shadowrocket"
+      ],
+      "informationSources": [
+        {
+          "name": "鲤云套餐页",
+          "url": "https://ly888.liydl.com:8888/#/plan",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "鲤云试用规则（站长补充）",
+          "url": "/posts/liyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "鲤云客户端教程",
+          "url": "https://ly888.liydl.com:8888/#/knowledge-base",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "鲤云官网邀请入口",
+          "url": "https://ly888.liydl.com:8888/#/register?code=5cHFZJPd",
+          "checkedAt": "2026-09-28"
+        }
+      ],
+      "url": "https://yp7.net/posts/liyun-review-2026/"
+    },
+    {
+      "name": "山水云",
+      "path": "/posts/shanshuiyun-review-2026/",
+      "image": "/shouye.png",
+      "price": 12,
+      "priceText": "12元/月",
+      "traffic": "100GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；退款待核实；同时在线3台；365天包有到期时间",
+      "summary": "月付12元100GB、20元200GB、39元500GB；33元季付128GB/月、77元年付64GB/月。39.9元128GB、59.9元256GB总量包365天有效且不重置；99元100GB不限时，均限3台设备。支持Clash Verge、Clash Meta及Shadowrocket；线路带宽和解锁为商家说明。",
+      "subscriptionClients": [
+        "Clash Verge",
+        "Clash Meta",
+        "Shadowrocket"
+      ],
+      "informationSources": [
+        {
+          "name": "山水云套餐页",
+          "url": "https://sldm1.ssyylf.com/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "山水云试用规则（站长补充）",
+          "url": "/posts/shanshuiyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "山水云客户端教程",
+          "url": "https://sldm1.ssyylf.com/#/docs",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "山水云官网邀请入口",
+          "url": "https://sldm1.ssyylf.com/#/register?code=nhEZN9EI",
+          "checkedAt": "2026-09-27"
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 99,
+        "trafficGb": 100,
+        "priceText": "99元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "3台同时在线",
+        "validity": "不限时；用完为止，续购规则待核实",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 0.99,
+        "sourcePage": "/posts/shanshuiyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/shanshuiyun-review-2026/"
+    },
+    {
+      "name": "秒秒云",
+      "path": "/posts/miaomiaoyun-review-2026/",
+      "image": "/shouye.png",
+      "price": 9,
+      "priceText": "9元/月",
+      "traffic": "128GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；普通套餐退款待核实；59元不限时包额度单位、49.9元365天包刷新量不清楚；特惠说明仅支持年付与订单页可选半年和一年冲突",
+      "summary": "月付9元128GB、15元256GB、29元512GB；18元季付64GB/月、88元年付100GB/月。10月5日订单页确认：59元一次性不限时包仍写100G/月，49.9元365天200GB包仍写每30天刷新；64G特惠半年39元/一年79元，200G特惠半年99元/一年198元，说明文字却仍写仅支持年付。提供Clash Verge、Clash Meta和Shadowrocket教程；特惠明确不退款。",
+      "subscriptionClients": [
+        "Clash Verge",
+        "Clash Meta",
+        "Shadowrocket"
+      ],
+      "informationSources": [
+        {
+          "name": "秒秒云套餐与订单确认页",
+          "url": "https://m1.mmycnm.com/#/shop",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "秒秒云试用规则（站长补充）",
+          "url": "/posts/miaomiaoyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "秒秒云客户端教程",
+          "url": "https://m3.mouhiojl.com/#/docs",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "秒秒云官网邀请入口",
+          "url": "https://m3.mouhiojl.com/#/register?code=kRQzsnp3",
+          "checkedAt": "2026-09-27"
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 59,
+        "trafficGb": null,
+        "priceText": "59元",
+        "trafficText": "商品100GB／正文100GB每月（冲突）",
+        "status": "conflicting",
+        "deviceLimit": "3台同时在线",
+        "validity": "10月5日订单页标注不限时但也写100G/月；总量及刷新规则待确认",
+        "checkedAt": "2026-10-05",
+        "unitPriceCnyPerGb": null,
+        "sourcePage": "/posts/miaomiaoyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/miaomiaoyun-review-2026/"
+    },
+    {
+      "name": "锦云",
+      "path": "/posts/jinyun-review-2026/",
+      "image": "/shouye.png",
+      "price": 6,
+      "priceText": "6元/月",
+      "traffic": "50GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；套餐不退款；按套餐限3至5台设备，365天包不等于不限时",
+      "summary": "月付6元50GB、9元100GB、16元200GB；18元季付64GB/月、99元年付128GB/月。29.9元100GB及48.8元300GB包365天有效，99元100GB不限时用完作废。支持Clash Verge、Clash Meta及Shadowrocket；所有核对套餐不退款，AI和流媒体为商家说明。",
+      "subscriptionClients": [
+        "Clash Verge",
+        "Clash Meta",
+        "Shadowrocket"
+      ],
+      "informationSources": [
+        {
+          "name": "锦云套餐页",
+          "url": "https://jybdw1.wanhlj.com:8888/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "锦云试用规则（站长补充）",
+          "url": "/posts/jinyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "锦云客户端教程",
+          "url": "https://jybdw1.wanhlj.com:8888/#/docs",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "锦云官网邀请入口",
+          "url": "https://jybdw1.wanhlj.com:8888/#/register?code=KgThlDZI",
+          "checkedAt": "2026-09-27"
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 99,
+        "trafficGb": 100,
+        "priceText": "99元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "3台同时在线",
+        "validity": "不限时；用完作废，不重置",
+        "checkedAt": "2026-09-27",
+        "unitPriceCnyPerGb": 0.99,
+        "sourcePage": "/posts/jinyun-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/jinyun-review-2026/"
+    },
+    {
+      "name": "熊猫cloud",
+      "path": "/posts/xiongmaocloud-review-2026/",
+      "image": "/shouye.png",
+      "price": 6,
+      "priceText": "6元/月",
+      "traffic": "300GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；套餐不退款；66元600GB包客服确认有效期1年（站长2026-10-05提供），此前官网商品名写不限时",
+      "summary": "月付6元300GB、10元600GB、15元1200GB；24元季付500GB/月，限3至5台设备。25.9元500GB总量包365天有效；66元600GB包经站长2026-10-05转述客服确认有效期1年，不计为不限时；此前官网商品名称写不限时，正文写限时365天。支持Clash、Clash Verge、Clash Meta及Shadowrocket订阅；套餐不退款，流媒体与AI支持为商家说明。",
+      "subscriptionClients": [
+        "Clash Verge",
+        "Clash Meta",
+        "Shadowrocket"
+      ],
+      "informationSources": [
+        {
+          "name": "熊猫cloud套餐页",
+          "url": "https://cl888.cailudl.com:9999/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "熊猫cloud试用规则（站长补充）",
+          "url": "/posts/xiongmaocloud-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "熊猫cloud客户端教程",
+          "url": "https://cl888.cailudl.com:9999/#/docs",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "熊猫cloud官网邀请入口",
+          "url": "https://cl888.cailudl.com:9999/#/register?code=NEU8pOgo",
+          "checkedAt": "2026-09-27"
+        }
+      ],
+      "url": "https://yp7.net/posts/xiongmaocloud-review-2026/"
+    },
+    {
+      "name": "云图",
+      "path": "/posts/yuntu-review-2026/",
+      "image": "/shouye.png",
+      "price": 20,
+      "priceText": "20元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；套餐不退款；仅限5台个人设备；78元包为每月50GB、持续12个月，不属于不限时；119元商品期限与刷新规则仍待核实；新购套餐会替换当前有效套餐",
+      "summary": "月付20元150GB、40元300GB、79元600GB，1倍率、5台设备，三款周期套餐购买日重置且不累积。2026年10月10日站长补充确认：78元一次支付，每月50GB，持续12个月，属于有限期限的周期套餐，不计为不限时；具体刷新日和剩余流量处理未确认。119元商品此前标每月100GB，其购后期限与刷新规则仍待核实，不能套用78元档的12个月规则。2026年10月5日订单页提示新购套餐替换当前有效套餐。Windows教程提供Clash Verge Rev及AnyTLS；ChatGPT和流媒体支持为官网声明，未新增实测。2026年9月28日站长补充确认不支持免费试用。",
+      "subscriptionClients": [
+        "Clash Verge Rev"
+      ],
+      "informationSources": [
+        {
+          "name": "云图套餐页",
+          "url": "https://ytjcok.com/#/shop",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "云图78元与119元商品卡片及订单确认页（站长复核）",
+          "url": "https://ytjcok.com/#/shop",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "云图78元套餐每月流量与12个月期限（站长补充）",
+          "url": "/posts/yuntu-review-2026/",
+          "checkedAt": "2026-10-10",
+          "link": false
+        },
+        {
+          "name": "云图客户端教程",
+          "url": "https://ytjcok.com/#/docs/1",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "云图官网邀请入口（站长更新）",
+          "url": "https://super.ytjcok.org/#/register?code=jHSxbS1R",
+          "checkedAt": "2026-10-05"
+        },
+        {
+          "name": "云图试用规则（站长补充）",
+          "url": "/posts/yuntu-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/yuntu-review-2026/"
+    },
+    {
+      "name": "灵猫网络",
+      "path": "/posts/lingmaowangluo-review-2026/",
+      "image": "/shouye.png",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "chatgpt",
+        "streaming",
+        "newbie",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；支持通用订阅；退款、不限时重置9折基数待核实，定制需联系客服询价",
+      "summary": "月付25元150GB、45元300GB；85元年付45GB/月，周期套餐按购买日重置。不限时100元100GB、350元500GB总量，用完手动重置9折但基数待确认。Mac专属客户端账号登录、iOS Nextin识别码lmwl。线路峰值及AI、流媒体解锁为商家说明，未新增实测。2026年9月28日站长补充确认不支持免费试用，支持通用订阅。",
+      "informationSources": [
+        {
+          "name": "灵猫网络套餐页",
+          "url": "https://downwww.civetnettttt.lol/#/plans",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "灵猫网络客户端教程",
+          "url": "https://downwww.civetnettttt.lol/#/knowledge",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "灵猫网络官网邀请入口",
+          "url": "https://haandiiong.civetaff.com/#/?code=NeRAyp5h",
+          "checkedAt": "2026-09-28"
+        },
+        {
+          "name": "灵猫网络试用与订阅规则（站长补充）",
+          "url": "/posts/lingmaowangluo-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限客户端数量",
+        "validity": "不限时，用完为止；手动重置9折，基数待核实",
+        "checkedAt": "2026-09-28",
+        "unitPriceCnyPerGb": 1,
+        "sourcePage": "/posts/lingmaowangluo-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/lingmaowangluo-review-2026/"
+    },
+    {
+      "name": "Firefly",
+      "path": "/posts/firefly-review-2026/",
+      "image": "/shouye.png",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "chatgpt",
+        "streaming",
+        "newbie",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；通用订阅需向客服索取；退款、不限时设备数及重置规则待核实",
+      "summary": "月付25元150GB起，45元300GB、85元600GB、150元1.0TB；96元年付含60GB/月，当月用完可加15元重置。100元一次性100GB总量不过期、用完为止。Windows专属客户端账号登录，iOS Nextin识别码firefly；IPLC、AI及流媒体为官网声明，未新增实测。2026年9月28日站长补充确认不支持免费试用，通用订阅可向客服索取。",
+      "informationSources": [
+        {
+          "name": "Firefly套餐页",
+          "url": "https://fly.fireflyxx.cfd/#/plans",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "Firefly客户端教程",
+          "url": "https://fly.fireflyxx.cfd/#/knowledge",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "Firefly官网邀请入口",
+          "url": "https://haandiiong.fireflyaff.com/#/?code=3u9poqXH",
+          "checkedAt": "2026-09-28"
+        },
+        {
+          "name": "Firefly试用与订阅规则（站长补充）",
+          "url": "/posts/firefly-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限时档未注明",
+        "validity": "永久不过期，用完为止；续购规则待核实",
+        "checkedAt": "2026-09-28",
+        "unitPriceCnyPerGb": 1,
+        "sourcePage": "/posts/firefly-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/firefly-review-2026/"
+    },
+    {
+      "name": "神行加速",
+      "path": "/posts/shenxingjiasu-review-2026/",
+      "image": "/shouye.png",
+      "price": 23,
+      "priceText": "23元/月",
+      "traffic": "120GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash",
+        "chatgpt",
+        "streaming",
+        "newbie"
+      ],
+      "status": "资料已核对",
+      "risk": "基础与尊享正文流量单位错误，采用卡片260GB和520GB仍需复核；不支持免费试用；通用订阅需购买订阅后联系客服领取；退款待核实",
+      "summary": "月付23元120GB、40元260GB、72元520GB，后两档正文错写40/月与72/月，须复核；96元年付60GB/月，每30天刷新。Windows账号登录专属客户端，iOS Nextin识别码xs0077。公告新客7折优惠码sx0077，结算未验证；IPLC、IEPL及解锁为商家说明。不支持免费试用，通用订阅需购买订阅后联系客服领取，具体客户端格式需确认。",
+      "informationSources": [
+        {
+          "name": "神行加速套餐页",
+          "url": "https://www1.shenxingjstt.xyz/#/plans",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "神行加速客户端教程",
+          "url": "https://www1.shenxingjstt.xyz/#/knowledge",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "神行加速优惠公告",
+          "url": "https://www1.shenxingjstt.xyz/#/dashboard",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "神行加速官网邀请入口",
+          "url": "https://haandiion01.shenxingaff.com/#/?code=FiirNX8j",
+          "checkedAt": "2026-09-28"
+        },
+        {
+          "name": "神行加速试用与订阅规则（站长补充）",
+          "url": "/posts/shenxingjiasu-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "url": "https://yp7.net/posts/shenxingjiasu-review-2026/"
+    },
+    {
+      "name": "极速Cloud",
+      "path": "/posts/jisucloud-review-2026/",
+      "image": "/shouye.png",
+      "price": 15,
+      "regularPrice": 30,
+      "priceText": "新人15元/月（不可续费）；常规30元/月起",
+      "traffic": "新人标称200GB/月，10倍折合20GB；常规折合100GB/月起",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash",
+        "chatgpt",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "全套餐10倍倍率；新人档不能续费；设备数与知识库通用文案冲突；不支持免费试用",
+      "summary": "新人15元月付标称200GB、10倍折合20GB，仅可买一次不可续费；常规30元标称1000GB/月、折合100GB限3台，45元1500GB折合150GB限5台。329元标称1000GB不限时间总量包折合100GB，限3台且不退款；88元与168元包有365天期限。支持Clash Verge订阅，文档不限设备与卡片2至5台不一致。每月账单日刷新，续费不立即重置；用量90%后出现重置入口，费用待核实。同款一次性重购覆盖、不叠加余量。",
+      "subscriptionClients": [
+        "Clash Verge"
+      ],
+      "informationSources": [
+        {
+          "name": "极速Cloud试用规则（站长补充）",
+          "url": "/posts/jisucloud-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速Cloud套餐页",
+          "url": "https://191.101.132.80/#/plan",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速Cloud客户端教程",
+          "url": "https://191.101.132.80/#/knowledge-base/3",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速Cloud续费重置说明",
+          "url": "https://191.101.132.80/#/knowledge-base/6",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速Cloud官网邀请入口",
+          "url": "https://y1.jisucloud8.com:8888/#/register?code=XDSrGf1n",
+          "checkedAt": "2026-09-28"
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 329,
+        "trafficGb": 100,
+        "priceText": "329元",
+        "trafficText": "标称1000GB／10倍计费折合100GB",
+        "status": "listed",
+        "deviceLimit": "3台",
+        "validity": "不限时间，用完为止；10倍计费，单价按折合100GB计算",
+        "checkedAt": "2026-10-05",
+        "unitPriceCnyPerGb": 3.29,
+        "sourcePage": "/posts/jisucloud-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/jisucloud-review-2026/"
+    },
+    {
+      "name": "杏花云",
+      "path": "/posts/xinghuayun-review-2026/",
+      "image": "/shouye.png",
+      "price": 3,
+      "priceText": "3元/月",
+      "traffic": "200GB/月",
+      "trial": false,
+      "noExpiry": false,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash",
+        "streaming"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；退款、倍率与月额度重置日期待核实；20元总量包只有一年有效期",
+      "summary": "月付3元200GB、6元500GB、10元1000GB，分别限2、3、5台；年付12元50GB/月和24元100GB/月。20元1000GB为一年有效总量包，不计入不限时。教程提供Clash Verge订阅导入；主流AI和流媒体支持为笼统商家说明，未给出各平台实测。",
+      "subscriptionClients": [
+        "Clash Verge"
+      ],
+      "informationSources": [
+        {
+          "name": "杏花云试用规则（站长补充）",
+          "url": "/posts/xinghuayun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "杏花云套餐页",
+          "url": "https://xh.xinghuajichang.com/#/shop",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "杏花云客户端教程",
+          "url": "https://xh.xinghuajichang.com/#/docs/1",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "杏花云官网邀请入口",
+          "url": "https://xh.xinghuajichang.com/#/register?code=GxpLWxgt",
+          "checkedAt": "2026-09-28"
+        }
+      ],
+      "url": "https://yp7.net/posts/xinghuayun-review-2026/"
+    },
+    {
+      "name": "AnDy Cloud",
+      "path": "/posts/andycloud-review-2026/",
+      "image": "/shouye.png",
+      "price": 5,
+      "priceText": "5元/月",
+      "traffic": "100GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "cheap",
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；退款、计费倍率与重置费用待核实；订阅导入需先购买；一次性重购覆盖额度，不叠加余量",
+      "summary": "不支持免费试用。月付5元100GB、10元300GB、15元500GB、25元1000GB，限2至8台；年付30元含50GB/月，限2台。100元一次性1000GB包无过期日，用完为止，限10台，重购覆盖不叠加。周期套餐按账单日重置，未用流量不累积；续费不立即重置，已用90%后出现重置入口，费用未明。提供Clash Verge、Android Clash、Clash Mi与Shadowrocket教程，购买后开放订阅导入。速率与流媒体支持为商家标注，没有新增实测。",
+      "subscriptionClients": [
+        "Clash Verge",
+        "Clash Mi",
+        "Android Clash",
+        "Shadowrocket"
+      ],
+      "informationSources": [
+        {
+          "name": "AnDy Cloud试用规则（站长补充）",
+          "url": "/posts/andycloud-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        },
+        {
+          "name": "AnDy Cloud套餐页",
+          "url": "https://ddhh.andycloud.cc:8888/#/shop",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "AnDy Cloud续费与重置说明",
+          "url": "https://ddhh.andycloud.cc:8888/#/docs/2",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "AnDy Cloud Windows Clash教程",
+          "url": "https://ddhh.andycloud.cc:8888/#/docs/4",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "AnDy Cloud仪表盘订阅说明",
+          "url": "https://ddhh.andycloud.cc:8888/#/dashboard",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "AnDy Cloud官网邀请入口",
+          "url": "https://ddhh.andycloud.cc:8888/#/register?code=a8qOz45S",
+          "checkedAt": "2026-10-05"
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 100,
+        "trafficGb": 1000,
+        "priceText": "100元",
+        "trafficText": "1000GB",
+        "status": "listed",
+        "deviceLimit": "10台",
+        "validity": "无过期日，用完即止；重购覆盖新额度，不叠加剩余流量",
+        "checkedAt": "2026-10-05",
+        "unitPriceCnyPerGb": 0.1,
+        "sourcePage": "/posts/andycloud-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/andycloud-review-2026/"
+    },
+    {
+      "name": "Tidal潮汐加速",
+      "path": "/posts/tidal-review-2026/",
+      "image": "/shouye.png",
+      "price": 25,
+      "priceText": "25元/月",
+      "traffic": "100GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash",
+        "newbie"
+      ],
+      "status": "资料已核对",
+      "risk": "不支持免费试用；取消套餐按使用比例退回账户余额，不等于原路退款；年付优惠期限、叠加与结算未验证",
+      "summary": "不支持免费试用。Air月付25元100GB限3台，Plus35元300GB限6台，Pro55元1024GB不限设备；年付卡片分别展示118.8、238.8、358.8元。59元128GB、89元256GB、159元512GB永久流量包不限设备，用完为止。周期按每月账单日重置；购买后可获取Clash等通用订阅，也有Windows、macOS、Android、Linux及iOS客户端入口。FAQ允许按使用比例取消套餐并退到账户余额；现金退款范围未明。Tidal年付八折活动有倒计时，结算和叠加未验证。AI与流媒体为商家说明，未新增实测。",
+      "subscriptionClients": [
+        "Clash Verge Rev",
+        "Clash Meta for Android",
+        "Clash Mi",
+        "ClashX",
+        "Shadowrocket",
+        "Stash",
+        "Quantumult X"
+      ],
+      "informationSources": [
+        {
+          "name": "Tidal试用规则（站长补充）",
+          "url": "/posts/tidal-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        },
+        {
+          "name": "Tidal套餐页与常见问题",
+          "url": "https://tidalfast.com/plans",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "Tidal客户端下载页",
+          "url": "https://tidalfast.com/download",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "Tidal服务条款页（本次显示暂无内容）",
+          "url": "https://tidalfast.com/tos",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "Tidal官网邀请入口",
+          "url": "https://www.chaoxijiasu.com/register?code=uuttj42W",
+          "checkedAt": "2026-10-05"
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 59,
+        "trafficGb": 128,
+        "priceText": "59元",
+        "trafficText": "128GB",
+        "status": "listed",
+        "deviceLimit": "不限同时在线设备",
+        "validity": "永久有效，用完为止；续购叠加及退款适用范围待核实",
+        "checkedAt": "2026-10-05",
+        "unitPriceCnyPerGb": 0.461,
+        "sourcePage": "/posts/tidal-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/tidal-review-2026/"
+    },
+    {
+      "name": "云界线",
+      "path": "/posts/yunjiexian-review-2026/",
+      "image": "/shouye.png",
+      "price": 22,
+      "priceText": "卡片22元/月（正文25元，结算待核实）",
+      "traffic": "150GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "newbie"
+      ],
+      "status": "资料已核对",
+      "risk": "月付卡片22/40/66元与正文25/45/75元冲突；99元不限时包卡片80GB与正文300GB冲突；不支持免费试用；通用订阅向客服领取，具体格式先确认；退款及优惠结算待核实",
+      "summary": "不支持免费试用，通用订阅可向客服领取，具体客户端格式先确认。96元年付小包60GB/月，从购买日起每30天刷新。轻云150GB、凌云300GB、御云600GB月付卡片22/40/66元，正文25/45/75元，结算待核实；重置分别22/40/66元且不延长有效期。99元不限时包卡片80GB与正文300GB冲突，199元200GB不限时包两处一致，均不按月刷新，用完重购。Windows账号登录自有客户端，iOS用Nextin识别码yjx，另有Android与Mac教程。yjx888首单七折适用月/季/半年/年付，每人一次不可叠加，排除两年/三年/重置/一次性包；结算未验证。线路、速率及解锁为商家说明。",
+      "informationSources": [
+        {
+          "name": "云界线试用与订阅规则（站长补充）",
+          "url": "/posts/yunjiexian-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        },
+        {
+          "name": "云界线套餐页",
+          "url": "https://www1.yunjiexiant.xyz/#/plans",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "云界线客户端知识库",
+          "url": "https://www1.yunjiexiant.xyz/#/knowledge",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "云界线仪表盘与优惠公告",
+          "url": "https://www1.yunjiexiant.xyz/#/dashboard",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "云界线官网邀请入口",
+          "url": "https://www1.yunjiexiant.xyz/#/?code=y4BofmLr",
+          "checkedAt": "2026-10-05"
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 99,
+        "trafficGb": null,
+        "priceText": "99元",
+        "trafficText": "卡片80GB／正文300GB（冲突）",
+        "status": "conflicting",
+        "deviceLimit": "不限客户端数量",
+        "validity": "标注不限时，不按月刷新、用完重购；交付额度待核实；另有199元200GB包",
+        "checkedAt": "2026-10-05",
+        "unitPriceCnyPerGb": null,
+        "sourcePage": "/posts/yunjiexian-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/yunjiexian-review-2026/"
+    },
+    {
+      "name": "极速123",
+      "path": "/posts/jisu123-review-2026/",
+      "image": "/shouye.png",
+      "price": 15.99,
+      "priceText": "15.99元/月",
+      "traffic": "标称1200GB/月，6倍折合200GB/月",
+      "trial": false,
+      "noExpiry": true,
+      "dedicatedClient": false,
+      "universalSubscription": true,
+      "scenarios": [
+        "clash"
+      ],
+      "status": "资料已核对",
+      "risk": "商品标注6倍扣量；文档与卡片设备数、一次性有效期存在差异；不支持免费试用；月付退款与重置费待核实",
+      "summary": "不支持免费试用。月付15.99元标称1200GB、6倍折合200GB限3台，22元折合300GB限5台；118元年付每月标称1000GB、折合约166.7GB。不限时128元标称1000GB总量、折合约166.7GB，限3台且不退款；59元与98元总量包有365天有效期。官网文档指向第三方客户端教程，支持Clash Verge、FlClash等订阅导入；续费不立即刷新，重购一次性包覆盖而不叠加。IEPL与GPT、Netflix、TikTok解锁为商家说明，未新增实测。",
+      "subscriptionClients": [
+        "Clash Verge",
+        "FlClash",
+        "v2rayN",
+        "Clash Meta",
+        "NekoBox",
+        "v2rayNG",
+        "Shadowrocket"
+      ],
+      "informationSources": [
+        {
+          "name": "极速123试用规则（站长补充）",
+          "url": "/posts/jisu123-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        },
+        {
+          "name": "极速123套餐商店",
+          "url": "https://905.jsy902.xyz/#/shop",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速123线路及倍率介绍",
+          "url": "https://905.jsy902.xyz/#/docs/16",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速123续费与流量重置说明",
+          "url": "https://905.jsy902.xyz/#/docs/13",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速123电脑端教程入口",
+          "url": "https://905.jsy902.xyz/#/docs/5",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "官网指向的第三方客户端教程目录",
+          "url": "https://www.ruanjiandaohang.com/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "官网指向的Clash Verge订阅教程",
+          "url": "https://www.ruanjiandaohang.com/tutorial.html?id=art_clash",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速123官网邀请入口",
+          "url": "https://905.jsy902.xyz/#/register?code=PB9zvaUD",
+          "checkedAt": "2026-10-05"
+        }
+      ],
+      "noExpiryPackage": {
+        "priceCny": 128,
+        "trafficGb": 166.66666666666666,
+        "priceText": "128元",
+        "trafficText": "标称1000GB／6倍计费折合约166.7GB",
+        "status": "listed",
+        "deviceLimit": "3台",
+        "validity": "不限时间，用完为止；6倍扣量，重购覆盖而不叠加；不支持退款",
+        "checkedAt": "2026-10-05",
+        "unitPriceCnyPerGb": 0.768,
+        "sourcePage": "/posts/jisu123-review-2026/",
+        "currency": "CNY",
+        "billing": "one-off"
+      },
+      "url": "https://yp7.net/posts/jisu123-review-2026/"
+    },
+    {
+      "name": "灯塔加速器",
+      "path": "/posts/dengta-review-2026/",
+      "image": "/shouye.png",
+      "price": 30,
+      "priceText": "30元/月",
+      "traffic": "120GB/月",
+      "trial": true,
+      "noExpiry": false,
+      "dedicatedClient": true,
+      "universalSubscription": true,
+      "scenarios": [
+        "newbie",
+        "trial"
+      ],
+      "status": "资料已核对",
+      "risk": "订阅导出受套餐周期限制，Clash格式未确认；入门与轻量无退款保障，帮助页泛化退款说明有冲突；试用额度和期限以账户显示为准",
+      "summary": "最低实际月付30元120GB、3台设备；入门仅120元年付，每月60GB。新用户注册自动获免费试用，额度、期限和设备数以App显示为准。官方提供Windows、macOS、Android、iOS TestFlight及软路由客户端；轻量仅年付、VIP/SVIP季付及以上可导出第三方订阅，入门不导出，未确认Clash格式。入门和轻量无退款保障；VIP/SVIP标注24小时内且已用流量不超过10%，与帮助页泛化说明的差异待核实。限速、专线、超额降速及稳定性属于商家说明，未新增实测。",
+      "informationSources": [
+        {
+          "name": "灯塔官网套餐与客户端下载",
+          "url": "https://dengta12.com/",
+          "checkedAt": "2026-10-10"
+        },
+        {
+          "name": "灯塔个人中心套餐购买页",
+          "url": "https://dengta12.com/account?tab=plans",
+          "checkedAt": "2026-10-10",
+          "link": false
+        },
+        {
+          "name": "灯塔新用户免费试用说明",
+          "url": "https://dengta12.com/help/4/57",
+          "checkedAt": "2026-10-10"
+        },
+        {
+          "name": "灯塔试用账户额度快照",
+          "url": "https://dengta12.com/account?tab=invite",
+          "checkedAt": "2026-10-10",
+          "link": false
+        },
+        {
+          "name": "灯塔订阅导出说明",
+          "url": "https://dengta12.com/help/1/123",
+          "checkedAt": "2026-10-10"
+        },
+        {
+          "name": "灯塔退款帮助与套餐限制",
+          "url": "https://dengta12.com/help/2/46",
+          "checkedAt": "2026-10-10"
+        },
+        {
+          "name": "灯塔流量统计与重置说明",
+          "url": "https://dengta12.com/help/1/16",
+          "checkedAt": "2026-10-10"
+        },
+        {
+          "name": "灯塔官网邀请入口（站长提供）",
+          "url": "https://www.dengta12.com/reg?ref=DjdVKysq",
+          "checkedAt": "2026-10-10"
+        }
+      ],
+      "url": "https://yp7.net/posts/dengta-review-2026/"
+    }
+  ]
+}
