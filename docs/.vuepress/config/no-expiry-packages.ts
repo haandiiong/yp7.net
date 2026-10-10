@@ -28,10 +28,6 @@ export const noExpiryPackages: Record<string, NoExpiryPackage> = {
     priceCny: 99, trafficGb: null, priceText: '99元', trafficText: '卡片80GB／正文300GB（冲突）', status: 'conflicting',
     deviceLimit: '不限客户端数量', validity: '标注不限时，不按月刷新、用完重购；交付额度待核实；另有199元200GB包', checkedAt: '2026-10-05',
   },
-  '/posts/yuntu-review-2026/': {
-    priceCny: 78, trafficGb: null, priceText: '78元', trafficText: '标题50GB／正文每月50GB（冲突）', status: 'conflicting',
-    deviceLimit: '5台', validity: '两档订单页均写每月流量且提示新购替换现有套餐；销售窗口、购后有效期与刷新规则未明', checkedAt: '2026-10-05',
-  },
   '/posts/lingmaowangluo-review-2026/': listed(100, 100, '不限客户端数量', '不限时，用完为止；手动重置9折，基数待核实', '2026-09-28'),
   '/posts/firefly-review-2026/': listed(100, 100, '不限时档未注明', '永久不过期，用完为止；续购规则待核实', '2026-09-28'),
   '/posts/jisucloud-review-2026/': {

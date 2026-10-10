@@ -506,7 +506,7 @@ export const airportData: AirportData[] = [
       "priceText": "20元/月",
       "traffic": "150GB/月",
       "trial": false,
-      "noExpiry": null,
+      "noExpiry": false,
       "dedicatedClient": false,
       "universalSubscription": true,
       "scenarios": [
@@ -515,8 +515,8 @@ export const airportData: AirportData[] = [
           "streaming"
       ],
       "status": "资料已核对",
-      "risk": "不支持免费试用；套餐不退款；仅限5台个人设备；标注不限时的商品与每月额度正文冲突，购后有效期待核实；新购套餐会替换当前有效套餐",
-      "summary": "月付20元150GB、40元300GB、79元600GB，1倍率、5台设备，三款周期套餐购买日重置且不累积。2026年10月5日复核78元50GB与119元100GB商品卡片及订单页：均一次性付款，名称写不限时，权益却写每月流量；【限时套餐】销售窗口、购后有效期、一次总量或按月补充规则均待核实，暂不计算单价。两档订单页提示新购套餐替换当前有效套餐。Windows教程提供Clash Verge Rev及AnyTLS；ChatGPT和流媒体支持为官网声明，未新增实测。2026年9月28日站长补充确认不支持免费试用。",
+      "risk": "不支持免费试用；套餐不退款；仅限5台个人设备；78元包为每月50GB、持续12个月，不属于不限时；119元商品期限与刷新规则仍待核实；新购套餐会替换当前有效套餐",
+      "summary": "月付20元150GB、40元300GB、79元600GB，1倍率、5台设备，三款周期套餐购买日重置且不累积。2026年10月10日站长补充确认：78元一次支付，每月50GB，持续12个月，属于有限期限的周期套餐，不计为不限时；具体刷新日和剩余流量处理未确认。119元商品此前标每月100GB，其购后期限与刷新规则仍待核实，不能套用78元档的12个月规则。2026年10月5日订单页提示新购套餐替换当前有效套餐。Windows教程提供Clash Verge Rev及AnyTLS；ChatGPT和流媒体支持为官网声明，未新增实测。2026年9月28日站长补充确认不支持免费试用。",
       "subscriptionClients": [
           "Clash Verge Rev"
       ],
@@ -531,6 +531,12 @@ export const airportData: AirportData[] = [
               "name": "云图78元与119元商品卡片及订单确认页（站长复核）",
               "url": "https://ytjcok.com/#/shop",
               "checkedAt": "2026-10-05",
+              "link": false
+          },
+          {
+              "name": "云图78元套餐每月流量与12个月期限（站长补充）",
+              "url": "/posts/yuntu-review-2026/",
+              "checkedAt": "2026-10-10",
               "link": false
           },
           {
@@ -992,7 +998,7 @@ export const mainRecommendationData = mainRecommendationNames.map((name) => {
 // Date of the last full review; partial updates retain their per-source checkedAt dates.
 export const airportDataLastReviewed = '2026-08-19'
 // Advance for actual changes to current data or its classification, not historical test dates.
-export const airportDataLastModified = '2026-10-09'
+export const airportDataLastModified = '2026-10-10'
 
 export const getAirportPriceMetrics = (airports: readonly AirportData[]) => {
   const visible = airports.filter(isVisibleAirport)

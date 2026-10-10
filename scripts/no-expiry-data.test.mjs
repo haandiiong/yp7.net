@@ -76,7 +76,7 @@ test('a conflicting package must never acquire a computed unit price', () => {
   }
 })
 
-test('one-year validity and unresolved no-expiry claims stay consistent across summaries and exports', (t) => {
+test('finite-duration packages stay excluded from no-expiry summaries and exports', (t) => {
   const dest = mkdtempSync(join(tmpdir(), 'yp7-conflicting-validity-'))
   t.after(() => rmSync(dest, { recursive: true, force: true }))
   generateAirportDataFiles({ dir: { dest: (file = '') => join(dest, file) } })
@@ -92,15 +92,25 @@ test('one-year validity and unresolved no-expiry claims stay consistent across s
   const confirmedNoExpiry = data.airports.filter((airport) => airport.noExpiry === true)
   const unresolvedNoExpiry = data.airports.filter((airport) => airport.noExpiry === null)
   assert.equal(airportMetrics.noExpiryCount, confirmedNoExpiry.length)
-  assert.equal(airportMetrics.noExpiryUnverifiedCount, 1)
-  assert.equal(unresolvedNoExpiry.length, 1)
+  assert.equal(airportMetrics.noExpiryUnverifiedCount, 0)
+  assert.equal(unresolvedNoExpiry.length, 0)
+  assert.equal(airportCollections.noExpiry.items.length, 40)
   assert.equal(airportCollections.noExpiry.items.length, confirmedNoExpiry.length + unresolvedNoExpiry.length)
-  for (const name of ['鲤云', '熊猫cloud']) {
+  const noExpirySource = readFileSync(airportCollections.noExpiry.sourceFile, 'utf8')
+  const noExpiryTables = [
+    markdownTableAfterHeading(noExpirySource, airportCollections.noExpiry.heading),
+    markdownTableAfterHeading(read('rankings.md'), `## ${airportCollections.noExpiry.dataTitle}`),
+    htmlTableAfterHeading(read('rankings.html'), `## ${airportCollections.noExpiry.dataTitle}`),
+  ]
+  assert.match(noExpirySource, /当前列出40家候选/)
+  for (const name of ['鲤云', '熊猫cloud', '云图']) {
     const airport = airportData.find((item) => item.name === name)
     assert.equal(airport.noExpiry, false)
     assert.equal(noExpiryPackages[airport.path], undefined)
     assert.equal(data.airports.find((item) => item.name === name).noExpiry, false)
+    assert.equal(data.airports.find((item) => item.name === name).noExpiryPackage, undefined)
     assert.equal(rankings.rankings.noExpiry.some((item) => item.name === name), false)
+    for (const rows of noExpiryTables) assert.equal(rows.some((item) => item.cells['机场'] === name), false)
     for (const rows of tables) {
       const row = rows.find((item) => item.cells['机场'] === name)
       const column = '不限时' in row.cells ? '不限时' : '不限时套餐'
@@ -116,21 +126,19 @@ test('one-year validity and unresolved no-expiry claims stay consistent across s
     assert.deepEqual(validateServiceSchema(service, airport, 'validity'), [])
   }
   const yunTu = airportData.find((item) => item.name === '云图')
-  assert.equal(yunTu.noExpiry, null)
-  assert.equal(getNoExpiryPackage(yunTu.path).status, 'conflicting')
-  assert.equal(getNoExpiryPackage(yunTu.path).unitPriceCnyPerGb, null)
-  assert.equal(data.airports.find((item) => item.name === '云图').noExpiry, null)
-  assert.equal(rankings.rankings.noExpiry.find((item) => item.name === '云图').noExpiry, null)
-  for (const rows of tables) {
-    const row = rows.find((item) => item.cells['机场'] === '云图')
-    const column = '不限时' in row.cells ? '不限时' : '不限时套餐'
-    assert.equal(row.cells[column], '待核实')
-    assert.deepEqual(validateAirportRows([row], [yunTu], 'validity', { sectionLinks: true }), [])
-  }
-  const yunTuSchema = getPageSchema({ path: yunTu.path, title: '云图', frontmatter: {}, data: {}, content: '' })
-  const yunTuService = yunTuSchema['@graph'].find((item) => item['@type'] === 'Service')
-  assert.match(yunTuService.description, /不限时套餐：待核实/)
-  assert.deepEqual(validateServiceSchema(yunTuService, yunTu, 'validity'), [])
+  assert.throws(() => getNoExpiryPackage(yunTu.path), /Missing no-expiry package record/)
+  const yunTuPublic = data.airports.find((item) => item.name === '云图')
+  assert.equal(yunTuPublic.summary, yunTu.summary)
+  assert.match(yunTu.summary, /78元一次支付[^。]*每月50GB[^。]*12个月/)
+  assert.match(yunTu.summary, /119元[^。]*期限[^。]*刷新[^。]*待核实/)
+  assert.match(yunTu.summary, /不能套用78元档的12个月规则/)
+  assert.ok(yunTu.informationSources.some((item) => item.checkedAt === '2026-10-10' && /78元.*12个月/.test(item.name)))
+  const noExpirySchema = getPageSchema({ path: airportCollections.noExpiry.pagePath, title: airportCollections.noExpiry.name,
+    frontmatter: {}, data: {}, content: noExpirySource })
+  const noExpiryList = noExpirySchema['@graph'].find((item) => item['@type'] === 'ItemList')
+  assert.equal(noExpiryList.numberOfItems, 40)
+  assert.equal(noExpiryList.itemListElement.some((entry) => entry.item.name === '云图'), false)
+  assert.equal(noExpiryList.itemListElement.some((entry) => entry.item.url === `https://yp7.net${yunTu.path}`), false)
   assert.equal(data.lastModified, airportDataLastModified)
   assert.equal(data.lastReviewed, airportDataLastReviewed)
   assert.match(airportDataLastModified, /^\d{4}-\d{2}-\d{2}$/)

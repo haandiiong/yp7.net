@@ -1,6 +1,6 @@
 # yp7.net 机场榜单数据
 
-Data updated: 2026-10-09; last full review: 2026-08-19
+Data updated: 2026-10-10; last full review: 2026-08-19
 
 Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现；当前测试数据见 https://siilas.com/test/
 
@@ -126,7 +126,6 @@ Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史�
 | [山水云](https://yp7.net/posts/shanshuiyun-review-2026/) | 99元 | 100GB | 0.990元/GB | 3台同时在线 | 不限时；用完为止，续购规则待核实 | 2026-09-27 |
 | [秒秒云](https://yp7.net/posts/miaomiaoyun-review-2026/) | 59元 | 商品100GB／正文100GB每月（冲突） | 待核实，不计算 | 3台同时在线 | 10月5日订单页标注不限时但也写100G/月；总量及刷新规则待确认 | 2026-10-05 |
 | [锦云](https://yp7.net/posts/jinyun-review-2026/) | 99元 | 100GB | 0.990元/GB | 3台同时在线 | 不限时；用完作废，不重置 | 2026-09-27 |
-| [云图](https://yp7.net/posts/yuntu-review-2026/) | 78元 | 标题50GB／正文每月50GB（冲突） | 待核实，不计算 | 5台 | 两档订单页均写每月流量且提示新购替换现有套餐；销售窗口、购后有效期与刷新规则未明 | 2026-10-05 |
 | [灵猫网络](https://yp7.net/posts/lingmaowangluo-review-2026/) | 100元 | 100GB | 1.000元/GB | 不限客户端数量 | 不限时，用完为止；手动重置9折，基数待核实 | 2026-09-28 |
 | [Firefly](https://yp7.net/posts/firefly-review-2026/) | 100元 | 100GB | 1.000元/GB | 不限时档未注明 | 永久不过期，用完为止；续购规则待核实 | 2026-09-28 |
 | [极速Cloud](https://yp7.net/posts/jisucloud-review-2026/) | 329元 | 标称1000GB／10倍计费折合100GB | 3.290元/GB | 3台 | 不限时间，用完为止；10倍计费，单价按折合100GB计算 | 2026-10-05 |
@@ -204,7 +203,7 @@ Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史�
 | [秒秒云](https://yp7.net/posts/miaomiaoyun-review-2026/) | 9元/月 | 128GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [锦云](https://yp7.net/posts/jinyun-review-2026/) | 6元/月 | 50GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [熊猫cloud](https://yp7.net/posts/xiongmaocloud-review-2026/) | 6元/月 | 300GB/月 | 不支持 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [云图](https://yp7.net/posts/yuntu-review-2026/) | 20元/月 | 150GB/月 | 不支持 | 待核实 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [云图](https://yp7.net/posts/yuntu-review-2026/) | 20元/月 | 150GB/月 | 不支持 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [极速Cloud](https://yp7.net/posts/jisucloud-review-2026/) | 新人15元/月（不可续费）；常规30元/月起 | 新人标称200GB/月，10倍折合20GB；常规折合100GB/月起 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [杏花云](https://yp7.net/posts/xinghuayun-review-2026/) | 3元/月 | 200GB/月 | 不支持 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [灵猫网络](https://yp7.net/posts/lingmaowangluo-review-2026/) | 25元/月 | 150GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |

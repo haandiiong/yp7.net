@@ -24,7 +24,7 @@
     "docs:check-content": "node scripts/check-content-health.mjs",
     "docs:typecheck": "tsc --noEmit",
     "docs:test-head": "node --test scripts/page-head.test.mjs",
-    "docs:test-data": "node --test scripts/airport-data.test.mjs scripts/siilas-tests.test.mjs scripts/siilas-publication.test.mjs scripts/siilas-collection-summary.test.mjs",
+    "docs:test-data": "node --test scripts/airport-data.test.mjs scripts/no-expiry-data.test.mjs scripts/siilas-tests.test.mjs scripts/siilas-publication.test.mjs scripts/siilas-collection-summary.test.mjs",
     "docs:preview": "http-server docs/.vuepress/dist",
     "vp-update": "pnpm dlx vp-update"
   },

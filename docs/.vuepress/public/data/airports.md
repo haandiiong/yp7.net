@@ -1,6 +1,6 @@
 # yp7.net 机场数据
 
-Data updated: 2026-10-09; last full review: 2026-08-19
+Data updated: 2026-10-10; last full review: 2026-08-19
 
 Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现；当前测试数据见 https://siilas.com/test/
 
@@ -52,7 +52,7 @@ Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史�
 | [秒秒云](https://yp7.net/posts/miaomiaoyun-review-2026/) | 9元/月 | 128GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [锦云](https://yp7.net/posts/jinyun-review-2026/) | 6元/月 | 50GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [熊猫cloud](https://yp7.net/posts/xiongmaocloud-review-2026/) | 6元/月 | 300GB/月 | 不支持 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [云图](https://yp7.net/posts/yuntu-review-2026/) | 20元/月 | 150GB/月 | 不支持 | 待核实 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [云图](https://yp7.net/posts/yuntu-review-2026/) | 20元/月 | 150GB/月 | 不支持 | 不支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [灵猫网络](https://yp7.net/posts/lingmaowangluo-review-2026/) | 25元/月 | 150GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [Firefly](https://yp7.net/posts/firefly-review-2026/) | 25元/月 | 150GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
 | [神行加速](https://yp7.net/posts/shenxingjiasu-review-2026/) | 23元/月 | 120GB/月 | 不支持 | 不支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
