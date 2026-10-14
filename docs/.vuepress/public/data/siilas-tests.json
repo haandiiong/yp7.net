@@ -8,8 +8,8 @@
     "methodologyUrl": "https://siilas.com/methodology/",
     "testedBy": "siilas",
     "relationship": "Siilas 与 yp7.net 由同一站长运营；独立测速指独立于商业资料采集，不是第三方背书。",
-    "publicationStatus": "local-unpublished",
-    "publicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
+    "publicationStatus": "published",
+    "publicationNotice": "已核对 Siilas 来源正式发布版本。",
     "pendingRecords": [],
     "unpublishedTestDates": [],
     "sourceFilesSha256": {

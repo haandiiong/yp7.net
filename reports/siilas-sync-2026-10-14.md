@@ -12,3 +12,11 @@
 最终验证：69 项测试通过；类型检查及 108 页构建通过；10 份公开生成数据同步；9 个集合 / 57 个服务跨输出一致性通过；103 篇 Markdown 内容健康通过。Siilas 的 37 项测试和构建、57 家商业来源、47 家资料表检查也通过。
 
 完整双向记录见相邻 Siilas 项目的 `docs/reviews/data-sync-2026-10-14.md`。
+
+## 后续正式来源确认
+
+用户随后授权全部提交、推送和发布。Siilas 提交 `d3f0aa7a47f02efc03dd6733cb9da80c82184fbd` 的生产验证、Cloudflare Pages 部署和 IndexNow 提交均成功。[发布检查](https://github.com/haandiiong/siilas/actions/runs/38584241231)
+
+确认来源状态前，已对线上 15 个页面与本地生产输出做逻辑内容比较：九家实测页的全部 135 条完整记录及详情与源 JSON 一致，九家评分不变；83 张测试原图及全部 130 张引用原图的 SHA256 一致；9 张分享 PNG 和 27 张 WebP 均通过 HTTP、类型、尺寸及实际解码检查。YouTube 4K、ChatGPT 五档 30 秒规则、教程、云图套餐和两家入口均已上线。
+
+依据实际线上核验执行 `docs:receive-siilas -- --source-published`，来源整体状态由 `local-unpublished` 更新为 `published`。原有 135 条记录和证据保持已发布状态，没有新增或改写真实测速；商业核价日期与推荐顺序保持不变。本文前半部分记录的是正式核验之前的本地接收状态。

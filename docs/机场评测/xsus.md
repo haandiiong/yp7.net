@@ -20,7 +20,7 @@ description: XSUS套餐更新：12元168GB月付起、65元188GB不限时起，�
 
 2026-10-14 接收 [Siilas XSUS原始记录](https://siilas.com/airport/xsus/) **13 条已验证测速**，覆盖 4 个不同测试日，采样跨度为 2026-07-18 至 2026-10-08。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
 
-Siilas 来源更新仍待发布，来源页面可能还是旧版。完整记录、测试环境与证据见[接收快照](/data/siilas-tests.json)。
+已核对 Siilas 来源正式发布版本。完整记录、测试环境与证据见[接收快照](/data/siilas-tests.json)。
 
 Siilas 当前规则计算的综合评分为 **5.3/10**，参评要求为四地区各至少 3 个不同测试日。评分来自其全部有效样本，含所列性价比计分套餐；它不直接改写 yp7.net 推荐顺序。[查看 Siilas 评分方法](https://siilas.com/methodology/)。
 
