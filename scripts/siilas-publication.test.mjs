@@ -189,6 +189,8 @@ test('the receipt CLI handles published historical additions and repeated --chec
   const sourceSnapshot = () => JSON.parse(readFileSync(snapshotPath, 'utf8'))
   writeSource([sample()])
   run()
+  assert.deepEqual(sourceSnapshot().methodology.experienceMethods, experienceMethods, 'receipt must preserve the source method rather than reconstruct it')
+  assert.equal(sourceSnapshot().source.sourceFilesSha256['src/data/test-experience-schema.mjs'], hash(readFileSync(join(sourceDir, 'src/data/test-experience-schema.mjs'))))
   run('--source-published')
   assert.equal(sourceSnapshot().source.publicationStatus, 'published')
   const laterEdit = new Date(`${sourceSnapshot().receivedAt}T00:00:00.000Z`)

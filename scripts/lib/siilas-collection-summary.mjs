@@ -73,7 +73,7 @@ const renderRecommendationEvidence = (collection, snapshot) => {
   }),
   '',
   experienceMethods
-    ? 'ChatGPT、视频列是测试者当次提交的体验；Speedtest 核对吞吐与延迟，不能由测速数值推导平台可用性。已确认的 YouTube 4K 缓冲观察不证明 Netflix、Disney+、TikTok、其他 AI 平台可用或长期稳定性。更细的记录见[ChatGPT证据页](/rankings/chatgpt/)和[流媒体证据页](/rankings/streaming/)。'
+    ? `ChatGPT、视频列是测试者当次提交的体验；Speedtest 核对吞吐与延迟，不能由测速数值推导平台可用性。已确认的 ${snapshot.methodology.experienceMethods.streaming.platform} ${snapshot.methodology.experienceMethods.streaming.quality} 缓冲观察不证明 Netflix、Disney+、TikTok、其他 AI 平台可用或长期稳定性。更细的记录见[ChatGPT证据页](/rankings/chatgpt/)和[流媒体证据页](/rankings/streaming/)。`
     : 'ChatGPT、视频列是测试者当次提交的定性体验；Speedtest 核对吞吐与延迟，不能由测速数值推导平台可用性。未明确平台的记录只称视频/流媒体，不扩展为 YouTube 4K、Netflix、Disney+、TikTok、其他 AI 平台或长期稳定性。更细的记录见[ChatGPT证据页](/rankings/chatgpt/)和[流媒体证据页](/rankings/streaming/)。',
   ].join('\n')
 }
@@ -130,7 +130,7 @@ const renderScenarioEvidence = (collection, snapshot, field) => {
   field === 'chatgpt'
     ? 'ChatGPT 状态是测试者当次提交的定性体验，不由下载速度推导，也不证明 Claude、Gemini、OpenAI API、所有登录环节或长期稳定性。网络、设备、客户端与工具按每条原始记录区分，不把历史环境套用到新记录。'
     : experienceMethods
-      ? '上表使用原始记录的“流媒体”状态，按已确认的 YouTube 4K 方法说明解读；这不证明 Netflix 片库、Disney+ 地区内容或 TikTok 功能验证。网络、设备、客户端与工具按每条原始记录区分，不把历史环境套用到新记录。'
+      ? `上表使用原始记录的“流媒体”状态，按已确认的 ${snapshot.methodology.experienceMethods.streaming.platform} ${snapshot.methodology.experienceMethods.streaming.quality} 方法说明解读；这不证明 Netflix 片库、Disney+ 地区内容或 TikTok 功能验证。网络、设备、客户端与工具按每条原始记录区分，不把历史环境套用到新记录。`
       : '上表仅使用原始记录的“流媒体”状态；未逐项确认平台的记录不能扩展为 YouTube 4K、Netflix 片库、Disney+ 地区内容或 TikTok 功能验证。网络、设备、客户端与工具按每条原始记录区分，不把历史环境套用到新记录。',
   ].join('\n')
 }
