@@ -1,0 +1,932 @@
+{
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 9,
+      "moderate": 38,
+      "high": 36,
+      "critical": 0
+    },
+    "dependencies": 200,
+    "devDependencies": 258,
+    "optionalDependencies": 48,
+    "totalDependencies": 506
+  },
+  "auditEntries": 83,
+  "uniqueAdvisoryIds": 73,
+  "advisories": [
+    {
+      "id": "GHSA-7wwv-vh3v-89cq",
+      "module": "highlight.js",
+      "severity": "moderate",
+      "versions": [
+        "9.18.5"
+      ],
+      "patched": ">=10.4.1",
+      "url": "https://github.com/advisories/GHSA-7wwv-vh3v-89cq",
+      "dependencyPath": ".>@vuepress/plugin-medium-zoom>@vuepress/types>@types/markdown-it>highlight.js"
+    },
+    {
+      "id": "GHSA-c7qv-q95q-8v27",
+      "module": "http-proxy-middleware",
+      "severity": "high",
+      "versions": [
+        "1.3.1"
+      ],
+      "patched": ">=2.0.7",
+      "url": "https://github.com/advisories/GHSA-c7qv-q95q-8v27",
+      "dependencyPath": ".>@vuepress/plugin-medium-zoom>@vuepress/types>@types/webpack-dev-server>http-proxy-middleware"
+    },
+    {
+      "id": "GHSA-9gqv-wp59-fq42",
+      "module": "http-proxy-middleware",
+      "severity": "moderate",
+      "versions": [
+        "1.3.1"
+      ],
+      "patched": ">=2.0.9",
+      "url": "https://github.com/advisories/GHSA-9gqv-wp59-fq42",
+      "dependencyPath": ".>@vuepress/plugin-medium-zoom>@vuepress/types>@types/webpack-dev-server>http-proxy-middleware"
+    },
+    {
+      "id": "GHSA-4www-5p9h-95mh",
+      "module": "http-proxy-middleware",
+      "severity": "moderate",
+      "versions": [
+        "1.3.1"
+      ],
+      "patched": ">=2.0.8",
+      "url": "https://github.com/advisories/GHSA-4www-5p9h-95mh",
+      "dependencyPath": ".>@vuepress/plugin-medium-zoom>@vuepress/types>@types/webpack-dev-server>http-proxy-middleware"
+    },
+    {
+      "id": "GHSA-g4jq-h2w9-997c",
+      "module": "vite",
+      "severity": "low",
+      "versions": [
+        "7.0.6"
+      ],
+      "patched": ">=7.0.7",
+      "url": "https://github.com/advisories/GHSA-g4jq-h2w9-997c",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>@vitejs/plugin-vue>vite"
+    },
+    {
+      "id": "GHSA-jqfw-vq24-v9c3",
+      "module": "vite",
+      "severity": "low",
+      "versions": [
+        "7.0.6"
+      ],
+      "patched": ">=7.0.7",
+      "url": "https://github.com/advisories/GHSA-jqfw-vq24-v9c3",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>@vitejs/plugin-vue>vite"
+    },
+    {
+      "id": "GHSA-93m4-6634-74q7",
+      "module": "vite",
+      "severity": "moderate",
+      "versions": [
+        "7.0.6"
+      ],
+      "patched": ">=7.0.8",
+      "url": "https://github.com/advisories/GHSA-93m4-6634-74q7",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>@vitejs/plugin-vue>vite"
+    },
+    {
+      "id": "GHSA-36hm-qxxp-pg3m",
+      "module": "preact",
+      "severity": "high",
+      "versions": [
+        "10.27.1"
+      ],
+      "patched": ">=10.27.3",
+      "url": "https://github.com/advisories/GHSA-36hm-qxxp-pg3m",
+      "dependencyPath": ".>vuepress-theme-plume>@vuepress/plugin-docsearch>@docsearch/js>preact"
+    },
+    {
+      "id": "GHSA-g9mf-h72j-4rw9",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.18.2",
+      "url": "https://github.com/advisories/GHSA-g9mf-h72j-4rw9",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-mh29-5h37-fv8m",
+      "module": "js-yaml",
+      "severity": "moderate",
+      "versions": [
+        "3.14.1"
+      ],
+      "patched": ">=3.14.2",
+      "url": "https://github.com/advisories/GHSA-mh29-5h37-fv8m",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>gray-matter>js-yaml"
+    },
+    {
+      "id": "GHSA-mh29-5h37-fv8m",
+      "module": "js-yaml",
+      "severity": "moderate",
+      "versions": [
+        "4.1.0"
+      ],
+      "patched": ">=4.1.1",
+      "url": "https://github.com/advisories/GHSA-mh29-5h37-fv8m",
+      "dependencyPath": ".>vuepress-theme-plume>js-yaml"
+    },
+    {
+      "id": "GHSA-4fh9-h7wg-q85m",
+      "module": "mdast-util-to-hast",
+      "severity": "moderate",
+      "versions": [
+        "13.2.0"
+      ],
+      "patched": ">=13.2.1",
+      "url": "https://github.com/advisories/GHSA-4fh9-h7wg-q85m",
+      "dependencyPath": ".>vuepress-theme-plume>@vuepress/plugin-git>rehype-stringify>hast-util-to-html>mdast-util-to-hast"
+    },
+    {
+      "id": "GHSA-w7fw-mjwx-w883",
+      "module": "qs",
+      "severity": "low",
+      "versions": [
+        "6.14.0"
+      ],
+      "patched": ">=6.14.2",
+      "url": "https://github.com/advisories/GHSA-w7fw-mjwx-w883",
+      "dependencyPath": ".>http-server>union>qs"
+    },
+    {
+      "id": "GHSA-38c4-r59v-3vqw",
+      "module": "markdown-it",
+      "severity": "moderate",
+      "versions": [
+        "14.1.0"
+      ],
+      "patched": ">=14.1.1",
+      "url": "https://github.com/advisories/GHSA-38c4-r59v-3vqw",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/cli>@vuepress/core>@vuepress/markdown>@mdit-vue/plugin-component>markdown-it"
+    },
+    {
+      "id": "GHSA-mw96-cpmx-2vgc",
+      "module": "rollup",
+      "severity": "high",
+      "versions": [
+        "4.50.0"
+      ],
+      "patched": ">=4.59.0",
+      "url": "https://github.com/advisories/GHSA-mw96-cpmx-2vgc",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>@vitejs/plugin-vue>vite>rollup"
+    },
+    {
+      "id": "GHSA-6rw7-vpxm-498p",
+      "module": "qs",
+      "severity": "moderate",
+      "versions": [
+        "6.14.0"
+      ],
+      "patched": ">=6.14.1",
+      "url": "https://github.com/advisories/GHSA-6rw7-vpxm-498p",
+      "dependencyPath": ".>http-server>union>qs"
+    },
+    {
+      "id": "GHSA-f269-vfmq-vjvj",
+      "module": "undici",
+      "severity": "high",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.24.0",
+      "url": "https://github.com/advisories/GHSA-f269-vfmq-vjvj",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-2mjp-6q6p-2qxm",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.24.0",
+      "url": "https://github.com/advisories/GHSA-2mjp-6q6p-2qxm",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-vrm6-8vpv-qv8q",
+      "module": "undici",
+      "severity": "high",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.24.0",
+      "url": "https://github.com/advisories/GHSA-vrm6-8vpv-qv8q",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-v9p9-hfj2-hcw8",
+      "module": "undici",
+      "severity": "high",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.24.0",
+      "url": "https://github.com/advisories/GHSA-v9p9-hfj2-hcw8",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-4992-7rv2-5pvq",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.24.0",
+      "url": "https://github.com/advisories/GHSA-4992-7rv2-5pvq",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-3v7f-55p6-f55p",
+      "module": "picomatch",
+      "severity": "moderate",
+      "versions": [
+        "2.3.1"
+      ],
+      "patched": ">=2.3.2",
+      "url": "https://github.com/advisories/GHSA-3v7f-55p6-f55p",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/cli>@vuepress/core>@vuepress/markdown>@vuepress/utils>globby>fast-glob>micromatch>picomatch"
+    },
+    {
+      "id": "GHSA-3v7f-55p6-f55p",
+      "module": "picomatch",
+      "severity": "moderate",
+      "versions": [
+        "4.0.3"
+      ],
+      "patched": ">=4.0.4",
+      "url": "https://github.com/advisories/GHSA-3v7f-55p6-f55p",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>@vitejs/plugin-vue>vite>fdir>picomatch"
+    },
+    {
+      "id": "GHSA-c2c7-rcm5-vvqj",
+      "module": "picomatch",
+      "severity": "high",
+      "versions": [
+        "2.3.1"
+      ],
+      "patched": ">=2.3.2",
+      "url": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/cli>@vuepress/core>@vuepress/markdown>@vuepress/utils>globby>fast-glob>micromatch>picomatch"
+    },
+    {
+      "id": "GHSA-c2c7-rcm5-vvqj",
+      "module": "picomatch",
+      "severity": "high",
+      "versions": [
+        "4.0.3"
+      ],
+      "patched": ">=4.0.4",
+      "url": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>@vitejs/plugin-vue>vite>fdir>picomatch"
+    },
+    {
+      "id": "GHSA-4w7w-66w2-5vf9",
+      "module": "vite",
+      "severity": "moderate",
+      "versions": [
+        "7.0.6"
+      ],
+      "patched": ">=7.3.2",
+      "url": "https://github.com/advisories/GHSA-4w7w-66w2-5vf9",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>@vitejs/plugin-vue>vite"
+    },
+    {
+      "id": "GHSA-p9ff-h696-f583",
+      "module": "vite",
+      "severity": "high",
+      "versions": [
+        "7.0.6"
+      ],
+      "patched": ">=7.3.2",
+      "url": "https://github.com/advisories/GHSA-p9ff-h696-f583",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>@vitejs/plugin-vue>vite"
+    },
+    {
+      "id": "GHSA-r4q5-vmmm-2653",
+      "module": "follow-redirects",
+      "severity": "moderate",
+      "versions": [
+        "1.15.11"
+      ],
+      "patched": ">=1.16.0",
+      "url": "https://github.com/advisories/GHSA-r4q5-vmmm-2653",
+      "dependencyPath": ".>@vuepress/plugin-medium-zoom>@vuepress/types>@types/webpack-dev-server>http-proxy-middleware>http-proxy>follow-redirects"
+    },
+    {
+      "id": "GHSA-qx2v-qp2m-jg93",
+      "module": "postcss",
+      "severity": "moderate",
+      "versions": [
+        "8.5.6"
+      ],
+      "patched": ">=8.5.10",
+      "url": "https://github.com/advisories/GHSA-qx2v-qp2m-jg93",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>@vueuse/core>@vueuse/shared>vue>@vue/compiler-sfc>postcss"
+    },
+    {
+      "id": "GHSA-q8mj-m7cp-5q26",
+      "module": "qs",
+      "severity": "moderate",
+      "versions": [
+        "6.14.0"
+      ],
+      "patched": ">=6.15.2",
+      "url": "https://github.com/advisories/GHSA-q8mj-m7cp-5q26",
+      "dependencyPath": ".>http-server>union>qs"
+    },
+    {
+      "id": "GHSA-v6wh-96g9-6wx3",
+      "module": "vite",
+      "severity": "moderate",
+      "versions": [
+        "7.0.6"
+      ],
+      "patched": ">=7.3.5",
+      "url": "https://github.com/advisories/GHSA-v6wh-96g9-6wx3",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>@vitejs/plugin-vue>vite"
+    },
+    {
+      "id": "GHSA-6v5v-wf23-fmfq",
+      "module": "markdown-it",
+      "severity": "moderate",
+      "versions": [
+        "14.1.0"
+      ],
+      "patched": ">=14.2.0",
+      "url": "https://github.com/advisories/GHSA-6v5v-wf23-fmfq",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/cli>@vuepress/core>@vuepress/markdown>@mdit-vue/plugin-component>markdown-it"
+    },
+    {
+      "id": "GHSA-p88m-4jfj-68fv",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.28.0",
+      "url": "https://github.com/advisories/GHSA-p88m-4jfj-68fv",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-vxpw-j846-p89q",
+      "module": "undici",
+      "severity": "high",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.28.0",
+      "url": "https://github.com/advisories/GHSA-vxpw-j846-p89q",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-g8m3-5g58-fq7m",
+      "module": "undici",
+      "severity": "low",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.28.0",
+      "url": "https://github.com/advisories/GHSA-g8m3-5g58-fq7m",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-64mm-vxmg-q3vj",
+      "module": "http-proxy-middleware",
+      "severity": "moderate",
+      "versions": [
+        "1.3.1"
+      ],
+      "patched": ">=2.0.10",
+      "url": "https://github.com/advisories/GHSA-64mm-vxmg-q3vj",
+      "dependencyPath": ".>@vuepress/plugin-medium-zoom>@vuepress/types>@types/webpack-dev-server>http-proxy-middleware"
+    },
+    {
+      "id": "GHSA-pr7r-676h-xcf6",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.28.0",
+      "url": "https://github.com/advisories/GHSA-pr7r-676h-xcf6",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-22p9-wv53-3rq4",
+      "module": "linkify-it",
+      "severity": "high",
+      "versions": [
+        "5.0.0"
+      ],
+      "patched": ">=5.0.1",
+      "url": "https://github.com/advisories/GHSA-22p9-wv53-3rq4",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/cli>@vuepress/core>@vuepress/markdown>@mdit-vue/plugin-component>markdown-it>linkify-it"
+    },
+    {
+      "id": "GHSA-h67p-54hq-rp68",
+      "module": "js-yaml",
+      "severity": "moderate",
+      "versions": [
+        "3.14.1"
+      ],
+      "patched": ">=3.15.0",
+      "url": "https://github.com/advisories/GHSA-h67p-54hq-rp68",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>gray-matter>js-yaml"
+    },
+    {
+      "id": "GHSA-h67p-54hq-rp68",
+      "module": "js-yaml",
+      "severity": "moderate",
+      "versions": [
+        "4.1.0"
+      ],
+      "patched": ">=4.2.0",
+      "url": "https://github.com/advisories/GHSA-h67p-54hq-rp68",
+      "dependencyPath": ".>vuepress-theme-plume>js-yaml"
+    },
+    {
+      "id": "GHSA-fx2h-pf6j-xcff",
+      "module": "vite",
+      "severity": "high",
+      "versions": [
+        "7.0.6"
+      ],
+      "patched": ">=7.3.5",
+      "url": "https://github.com/advisories/GHSA-fx2h-pf6j-xcff",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>@vitejs/plugin-vue>vite"
+    },
+    {
+      "id": "GHSA-52cp-r559-cp3m",
+      "module": "js-yaml",
+      "severity": "high",
+      "versions": [
+        "4.1.0"
+      ],
+      "patched": ">=4.3.0",
+      "url": "https://github.com/advisories/GHSA-52cp-r559-cp3m",
+      "dependencyPath": ".>vuepress-theme-plume>js-yaml"
+    },
+    {
+      "id": "GHSA-52cp-r559-cp3m",
+      "module": "js-yaml",
+      "severity": "high",
+      "versions": [
+        "3.14.1"
+      ],
+      "patched": ">=3.15.0",
+      "url": "https://github.com/advisories/GHSA-52cp-r559-cp3m",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>gray-matter>js-yaml"
+    },
+    {
+      "id": "GHSA-v245-v573-v5vm",
+      "module": "linkify-it",
+      "severity": "high",
+      "versions": [
+        "5.0.0"
+      ],
+      "patched": ">=5.0.2",
+      "url": "https://github.com/advisories/GHSA-v245-v573-v5vm",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/cli>@vuepress/core>@vuepress/markdown>@mdit-vue/plugin-component>markdown-it>linkify-it"
+    },
+    {
+      "id": "GHSA-6g55-p6wh-862q",
+      "module": "postcss",
+      "severity": "high",
+      "versions": [
+        "8.5.6"
+      ],
+      "patched": ">=8.5.12",
+      "url": "https://github.com/advisories/GHSA-6g55-p6wh-862q",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>@vueuse/core>@vueuse/shared>vue>@vue/compiler-sfc>postcss"
+    },
+    {
+      "id": "GHSA-fxqj-rqcc-2cmp",
+      "module": "postcss",
+      "severity": "moderate",
+      "versions": [
+        "8.5.6"
+      ],
+      "patched": ">=8.5.23",
+      "url": "https://github.com/advisories/GHSA-fxqj-rqcc-2cmp",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>@vueuse/core>@vueuse/shared>vue>@vue/compiler-sfc>postcss"
+    },
+    {
+      "id": "GHSA-8xcm-r25x-g524",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.0",
+      "url": "https://github.com/advisories/GHSA-8xcm-r25x-g524",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-4cwx-7wf7-3272",
+      "module": "undici",
+      "severity": "high",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.0",
+      "url": "https://github.com/advisories/GHSA-4cwx-7wf7-3272",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-m8rv-5g2x-5cg5",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.0",
+      "url": "https://github.com/advisories/GHSA-m8rv-5g2x-5cg5",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-jr45-8vmc-qm54",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.0",
+      "url": "https://github.com/advisories/GHSA-jr45-8vmc-qm54",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-v3r7-h72x-cjcm",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.0",
+      "url": "https://github.com/advisories/GHSA-v3r7-h72x-cjcm",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-35p6-xmwp-9g52",
+      "module": "undici",
+      "severity": "low",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.28.0",
+      "url": "https://github.com/advisories/GHSA-35p6-xmwp-9g52",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-5p4m-2wfm-xmqj",
+      "module": "js-yaml",
+      "severity": "high",
+      "versions": [
+        "3.14.1"
+      ],
+      "patched": ">=3.15.1",
+      "url": "https://github.com/advisories/GHSA-5p4m-2wfm-xmqj",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>gray-matter>js-yaml"
+    },
+    {
+      "id": "GHSA-5p4m-2wfm-xmqj",
+      "module": "js-yaml",
+      "severity": "high",
+      "versions": [
+        "4.1.0"
+      ],
+      "patched": ">=4.3.1",
+      "url": "https://github.com/advisories/GHSA-5p4m-2wfm-xmqj",
+      "dependencyPath": ".>vuepress-theme-plume>js-yaml"
+    },
+    {
+      "id": "GHSA-28wg-ghj8-5hjv",
+      "module": "nanoid",
+      "severity": "high",
+      "versions": [
+        "5.1.5"
+      ],
+      "patched": ">=5.1.16",
+      "url": "https://github.com/advisories/GHSA-28wg-ghj8-5hjv",
+      "dependencyPath": ".>vuepress-theme-plume>@vuepress/plugin-shiki>nanoid"
+    },
+    {
+      "id": "GHSA-28wg-ghj8-5hjv",
+      "module": "nanoid",
+      "severity": "high",
+      "versions": [
+        "3.3.11"
+      ],
+      "patched": ">=3.3.16",
+      "url": "https://github.com/advisories/GHSA-28wg-ghj8-5hjv",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>@vueuse/core>@vueuse/shared>vue>@vue/compiler-sfc>postcss>nanoid"
+    },
+    {
+      "id": "GHSA-2v37-7h3g-55p8",
+      "module": "nanoid",
+      "severity": "high",
+      "versions": [
+        "3.3.11"
+      ],
+      "patched": ">=3.3.18",
+      "url": "https://github.com/advisories/GHSA-2v37-7h3g-55p8",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>@vueuse/core>@vueuse/shared>vue>@vue/compiler-sfc>postcss>nanoid"
+    },
+    {
+      "id": "GHSA-2v37-7h3g-55p8",
+      "module": "nanoid",
+      "severity": "high",
+      "versions": [
+        "5.1.5"
+      ],
+      "patched": ">=5.1.6",
+      "url": "https://github.com/advisories/GHSA-2v37-7h3g-55p8",
+      "dependencyPath": ".>vuepress-theme-plume>@vuepress/plugin-shiki>nanoid"
+    },
+    {
+      "id": "GHSA-r28c-9q8g-f849",
+      "module": "postcss",
+      "severity": "high",
+      "versions": [
+        "8.5.6"
+      ],
+      "patched": ">=8.5.18",
+      "url": "https://github.com/advisories/GHSA-r28c-9q8g-f849",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>@vueuse/core>@vueuse/shared>vue>@vue/compiler-sfc>postcss"
+    },
+    {
+      "id": "GHSA-c83g-rgw3-j3cx",
+      "module": "browserslist",
+      "severity": "high",
+      "versions": [
+        "4.25.4"
+      ],
+      "patched": ">=4.28.7",
+      "url": "https://github.com/advisories/GHSA-c83g-rgw3-j3cx",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>autoprefixer>browserslist"
+    },
+    {
+      "id": "GHSA-73wf-gq98-2v4g",
+      "module": "browserslist",
+      "severity": "high",
+      "versions": [
+        "4.25.4"
+      ],
+      "patched": ">=4.28.7",
+      "url": "https://github.com/advisories/GHSA-73wf-gq98-2v4g",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/bundler-vite>autoprefixer>browserslist"
+    },
+    {
+      "id": "GHSA-xwg4-73v4-xw9w",
+      "module": "nanoid",
+      "severity": "high",
+      "versions": [
+        "5.1.5"
+      ],
+      "patched": ">=5.1.11",
+      "url": "https://github.com/advisories/GHSA-xwg4-73v4-xw9w",
+      "dependencyPath": ".>vuepress-theme-plume>@vuepress/plugin-shiki>nanoid"
+    },
+    {
+      "id": "GHSA-xwg4-73v4-xw9w",
+      "module": "nanoid",
+      "severity": "high",
+      "versions": [
+        "3.3.11"
+      ],
+      "patched": ">=3.3.12",
+      "url": "https://github.com/advisories/GHSA-xwg4-73v4-xw9w",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>@vueuse/core>@vueuse/shared>vue>@vue/compiler-sfc>postcss>nanoid"
+    },
+    {
+      "id": "GHSA-4mjr-xmp4-gh2g",
+      "module": "qs",
+      "severity": "moderate",
+      "versions": [
+        "6.14.0"
+      ],
+      "patched": ">=6.16.0",
+      "url": "https://github.com/advisories/GHSA-4mjr-xmp4-gh2g",
+      "dependencyPath": ".>http-server>union>qs"
+    },
+    {
+      "id": "GHSA-px8p-9vwx-vf98",
+      "module": "fflate",
+      "severity": "moderate",
+      "versions": [
+        "0.8.2"
+      ],
+      "patched": ">=0.8.3",
+      "url": "https://github.com/advisories/GHSA-px8p-9vwx-vf98",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>fflate"
+    },
+    {
+      "id": "GHSA-2883-xcg3-v3hh",
+      "module": "js-yaml",
+      "severity": "high",
+      "versions": [
+        "3.14.1"
+      ],
+      "patched": ">=3.15.2",
+      "url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>gray-matter>js-yaml"
+    },
+    {
+      "id": "GHSA-2883-xcg3-v3hh",
+      "module": "js-yaml",
+      "severity": "high",
+      "versions": [
+        "4.1.0"
+      ],
+      "patched": ">=4.3.2",
+      "url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "dependencyPath": ".>vuepress-theme-plume>js-yaml"
+    },
+    {
+      "id": "GHSA-5p2g-fcmc-qvqq",
+      "module": "image-size",
+      "severity": "high",
+      "versions": [
+        "2.0.2"
+      ],
+      "patched": ">=2.0.3",
+      "url": "https://github.com/advisories/GHSA-5p2g-fcmc-qvqq",
+      "dependencyPath": ".>vuepress-theme-plume>vuepress-plugin-md-power>image-size"
+    },
+    {
+      "id": "GHSA-w3rx-r6r6-pgpr",
+      "module": "image-size",
+      "severity": "high",
+      "versions": [
+        "2.0.2"
+      ],
+      "patched": ">=2.0.3",
+      "url": "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr",
+      "dependencyPath": ".>vuepress-theme-plume>vuepress-plugin-md-power>image-size"
+    },
+    {
+      "id": "GHSA-253c-mchw-3w2r",
+      "module": "markdown-it",
+      "severity": "moderate",
+      "versions": [
+        "14.1.0"
+      ],
+      "patched": ">=14.3.1",
+      "url": "https://github.com/advisories/GHSA-253c-mchw-3w2r",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/cli>@vuepress/core>@vuepress/markdown>@mdit-vue/plugin-component>markdown-it"
+    },
+    {
+      "id": "GHSA-pmjh-fq2x-6v4x",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.1",
+      "url": "https://github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-r53p-7pc4-xj5r",
+      "module": "undici",
+      "severity": "low",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.1",
+      "url": "https://github.com/advisories/GHSA-r53p-7pc4-xj5r",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-rfgv-xxqx-mfg5",
+      "module": "undici",
+      "severity": "high",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.1",
+      "url": "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-3xpg-4rpp-hhhm",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.1",
+      "url": "https://github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-2jfj-6hjv-fm6j",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.1",
+      "url": "https://github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-2gqq-gqf2-x968",
+      "module": "undici",
+      "severity": "low",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.1",
+      "url": "https://github.com/advisories/GHSA-2gqq-gqf2-x968",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-8436-99hf-9mmv",
+      "module": "undici",
+      "severity": "low",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.1",
+      "url": "https://github.com/advisories/GHSA-8436-99hf-9mmv",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-rx4f-c7p8-82vq",
+      "module": "undici",
+      "severity": "moderate",
+      "versions": [
+        "7.15.0"
+      ],
+      "patched": ">=7.29.1",
+      "url": "https://github.com/advisories/GHSA-rx4f-c7p8-82vq",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>cheerio>undici"
+    },
+    {
+      "id": "GHSA-vfj7-8cjw-p6xm",
+      "module": "braces",
+      "severity": "high",
+      "versions": [
+        "3.0.3"
+      ],
+      "patched": null,
+      "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>vuepress>@vuepress/cli>@vuepress/core>@vuepress/markdown>@vuepress/utils>globby>fast-glob>micromatch>braces"
+    },
+    {
+      "id": "GHSA-hp3w-g68c-fv3c",
+      "module": "sprintf-js",
+      "severity": "moderate",
+      "versions": [
+        "1.0.3"
+      ],
+      "patched": null,
+      "url": "https://github.com/advisories/GHSA-hp3w-g68c-fv3c",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>gray-matter>js-yaml>argparse>sprintf-js"
+    },
+    {
+      "id": "GHSA-238p-pmpm-9mq7",
+      "module": "katex",
+      "severity": "low",
+      "versions": [
+        "0.16.22"
+      ],
+      "patched": ">=0.18.2",
+      "url": "https://github.com/advisories/GHSA-238p-pmpm-9mq7",
+      "dependencyPath": ".>vuepress-theme-plume>@vuepress/plugin-markdown-math>@mdit/plugin-katex-slim>katex"
+    },
+    {
+      "id": "GHSA-68fv-2mgg-jv7q",
+      "module": "source-map-js",
+      "severity": "high",
+      "versions": [
+        "1.2.1"
+      ],
+      "patched": ">=1.2.2",
+      "url": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>@vueuse/core>@vueuse/shared>vue>@vue/compiler-dom>@vue/compiler-core>source-map-js"
+    },
+    {
+      "id": "GHSA-g2v6-rqmx-r4w6",
+      "module": "@vue/server-renderer",
+      "severity": "high",
+      "versions": [
+        "3.5.21"
+      ],
+      "patched": ">=3.5.42",
+      "url": "https://github.com/advisories/GHSA-g2v6-rqmx-r4w6",
+      "dependencyPath": ".>@vuepress-plume/plugin-search>@vuepress/helper>@vueuse/core>@vueuse/shared>vue>@vue/server-renderer"
+    }
+  ]
+}

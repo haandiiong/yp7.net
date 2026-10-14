@@ -1,0 +1,1321 @@
+[
+  {
+    "route": "/",
+    "theme": "light",
+    "width": 1440,
+    "pageWidth": 1440,
+    "colorScheme": "normal",
+    "links": [
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "App Store 下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "购买国外 Apple ID ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看官方使用手册",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "FlClash 官方仓库",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场推荐 →",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场合集 →",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "前往 Flybit 官网导航 ↗",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(23, 101, 79)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "查看导入排错",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "Flybit 套餐与使用说明",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "查看Flybit套餐与使用说明",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "订阅导入失败排查",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场与订阅入门",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "低价机场",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "免费试用",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "不限时套餐",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "Clash订阅",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "AI工具",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "流媒体",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "全部客户端工具",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "科学上网入门",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "AI工具排错",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "Siilas测速中心",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "推荐方法与资料来源",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场风险监测",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "关于本站与商业披露",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "route": "/posts/jichang-tuijian/",
+    "width": 1440,
+    "errors": [],
+    "title": "2026机场推荐：7款精选机场，价格、客户端与试用对比 | yp7.net"
+  },
+  {
+    "route": "/",
+    "theme": "dark",
+    "width": 1440,
+    "pageWidth": 1440,
+    "colorScheme": "dark",
+    "links": [
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "App Store 下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "购买国外 Apple ID ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看官方使用手册",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "FlClash 官方仓库",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场推荐 →",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场合集 →",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "前往 Flybit 官网导航 ↗",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(23, 101, 79)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "查看导入排错",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "Flybit 套餐与使用说明",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "查看Flybit套餐与使用说明",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "订阅导入失败排查",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场与订阅入门",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "低价机场",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "免费试用",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "不限时套餐",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "Clash订阅",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "AI工具",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "流媒体",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "全部客户端工具",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "科学上网入门",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "AI工具排错",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "Siilas测速中心",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "推荐方法与资料来源",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场风险监测",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "关于本站与商业披露",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "route": "/",
+    "theme": "light",
+    "width": 390,
+    "pageWidth": 390,
+    "colorScheme": "normal",
+    "links": [
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "App Store 下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "购买国外 Apple ID ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看官方使用手册",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "FlClash 官方仓库",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场推荐 →",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场合集 →",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "前往 Flybit 官网导航 ↗",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(23, 101, 79)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "查看导入排错",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "Flybit 套餐与使用说明",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "查看Flybit套餐与使用说明",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "订阅导入失败排查",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场与订阅入门",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "低价机场",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "免费试用",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "不限时套餐",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "Clash订阅",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "AI工具",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "流媒体",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "全部客户端工具",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "科学上网入门",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "AI工具排错",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "Siilas测速中心",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "推荐方法与资料来源",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场风险监测",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "关于本站与商业披露",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "route": "/posts/jichang-tuijian/",
+    "width": 390,
+    "errors": [],
+    "title": "2026机场推荐：7款精选机场，价格、客户端与试用对比 | yp7.net"
+  },
+  {
+    "route": "/",
+    "theme": "dark",
+    "width": 390,
+    "pageWidth": 390,
+    "colorScheme": "dark",
+    "links": [
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "App Store 下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "购买国外 Apple ID ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看官方使用手册",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "FlClash 官方仓库",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场推荐 →",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场合集 →",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "前往 Flybit 官网导航 ↗",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(23, 101, 79)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "查看导入排错",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "Flybit 套餐与使用说明",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "查看Flybit套餐与使用说明",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "订阅导入失败排查",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场与订阅入门",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "低价机场",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "免费试用",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "不限时套餐",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "Clash订阅",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "AI工具",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "流媒体",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "全部客户端工具",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "科学上网入门",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "AI工具排错",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "Siilas测速中心",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "推荐方法与资料来源",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场风险监测",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "关于本站与商业披露",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "route": "/",
+    "theme": "light",
+    "width": 320,
+    "pageWidth": 320,
+    "colorScheme": "normal",
+    "links": [
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "App Store 下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "购买国外 Apple ID ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看官方使用手册",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(246, 246, 247)",
+        "contrast": 6.4580547436873115
+      },
+      {
+        "text": "FlClash 官方仓库",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场推荐 →",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场合集 →",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "前往 Flybit 官网导航 ↗",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(23, 101, 79)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "查看导入排错",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "Flybit 套餐与使用说明",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "查看Flybit套餐与使用说明",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "订阅导入失败排查",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场与订阅入门",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "低价机场",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "免费试用",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "不限时套餐",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "Clash订阅",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "AI工具",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "流媒体",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "全部客户端工具",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "科学上网入门",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "AI工具排错",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "Siilas测速中心",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "推荐方法与资料来源",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "机场风险监测",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "关于本站与商业披露",
+        "color": "rgb(23, 101, 79)",
+        "background": "rgb(255, 255, 255)",
+        "contrast": 6.974875406534843
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "route": "/posts/jichang-tuijian/",
+    "width": 320,
+    "errors": [],
+    "title": "2026机场推荐：7款精选机场，价格、客户端与试用对比 | yp7.net"
+  },
+  {
+    "route": "/",
+    "theme": "dark",
+    "width": 320,
+    "pageWidth": 320,
+    "colorScheme": "dark",
+    "links": [
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "App Store 下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "购买国外 Apple ID ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看官方使用手册",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "GitHub下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "备用下载 ↗",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "查看安装教程",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(32, 33, 39)",
+        "contrast": 8.631599700222614
+      },
+      {
+        "text": "FlClash 官方仓库",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场推荐 →",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场合集 →",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "前往 Flybit 官网导航 ↗",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(23, 101, 79)",
+        "contrast": 6.974875406534843
+      },
+      {
+        "text": "查看导入排错",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "Flybit 套餐与使用说明",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "查看Flybit套餐与使用说明",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "订阅导入失败排查",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场与订阅入门",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "低价机场",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "免费试用",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "不限时套餐",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "Clash订阅",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "AI工具",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "流媒体",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "全部客户端工具",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "科学上网入门",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "AI工具排错",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "Siilas测速中心",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "推荐方法与资料来源",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "机场风险监测",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      },
+      {
+        "text": "关于本站与商业披露",
+        "color": "rgb(140, 203, 177)",
+        "background": "rgb(27, 27, 31)",
+        "contrast": 9.232084944152465
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "desktopThemeSwitch": "passed"
+  },
+  {
+    "developmentServer": "Vite 7.3.7",
+    "routes": [
+      "/",
+      "/posts/jichang-tuijian/"
+    ],
+    "errors": []
+  }
+]

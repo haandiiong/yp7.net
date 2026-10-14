@@ -1,0 +1,15 @@
+{
+  "pageStatus": 200,
+  "pageUpdate": "2026年10月9日。",
+  "hasPaymentSection": false,
+  "dates": [
+    {
+      "type": "CollectionPage",
+      "url": "https://yp7.net/posts/jichang-tuijian/",
+      "dateModified": "2026-10-10T00:00:00.000Z"
+    }
+  ],
+  "sitemapEntry": "<url><loc>https://yp7.net/posts/jichang-tuijian/</loc><lastmod>2026-10-10T00:00:00.000Z</lastmod><changefreq>daily</changefreq></url>",
+  "deploySha": "1e7e4089d8ebb3b67afc96d36f057c389c22f3fb",
+  "deployShaStatus": 200
+}

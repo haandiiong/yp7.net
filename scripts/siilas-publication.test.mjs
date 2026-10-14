@@ -135,12 +135,24 @@ test('the receipt CLI handles published historical additions and repeated --chec
   for (const target of ['scripts/lib', 'docs/.vuepress/config', 'docs/机场评测', 'docs/机场推荐', 'docs/机场榜单']) mkdirSync(join(projectDir, target), { recursive: true })
   for (const target of ['src/data', 'public/evidence']) mkdirSync(join(sourceDir, target), { recursive: true })
   symlinkSync(join(repoDir, 'node_modules'), join(projectDir, 'node_modules'), 'dir')
-  for (const script of ['sync-siilas-tests.mjs', 'lib/siilas-publication.mjs', 'lib/siilas-article-summary.mjs', 'lib/siilas-collection-summary.mjs', 'lib/load-config.mjs']) {
+  for (const script of ['sync-siilas-tests.mjs', 'lib/siilas-publication.mjs', 'lib/siilas-article-summary.mjs', 'lib/siilas-article-date.mjs', 'lib/siilas-collection-summary.mjs', 'lib/siilas-experience-methods.mjs', 'lib/load-config.mjs']) {
     copyFileSync(join(repoDir, 'scripts', script), join(projectDir, 'scripts', script))
   }
   writeFileSync(join(sourceDir, 'package.json'), '{"type":"module"}')
   writeFileSync(join(sourceDir, 'src/data/airport-data.ts'), 'import data from "./airports.json"; export const airports = data.airports; export const MIN_RANKING_REGION_DAYS = 3;')
   writeFileSync(join(sourceDir, 'src/data/test-record-presentation.ts'), 'export const getLatestRegionTests = (tests) => tests.map(test => ({region:test.node,test})); export const getLatestExperienceSummary = () => "fixture";')
+  const experienceMethods = {
+    confirmedAt: '2026-10-14',
+    streaming: { platform: 'YouTube', quality: '4K', seekCount: 3, measurement: '拖动后至恢复播放前的缓冲等待' },
+    chatgpt: { measurement: '发送消息至开始出现回答的等待', responseTiers: [
+      { maxSeconds: 5, label: '≤ 5 秒', status: '流畅', score: 100 },
+      { maxSeconds: 10, label: '> 5 秒且 ≤ 10 秒', status: '轻微延迟', score: 75 },
+      { maxSeconds: 20, label: '> 10 秒且 ≤ 20 秒', status: '响应较慢', score: 50 },
+      { maxSeconds: 30, label: '> 20 秒且 ≤ 30 秒', status: '响应严重延迟', score: 25 },
+      { maxSeconds: null, label: '超过 30 秒仍未开始回答，或页面无法打开', status: '不可用', score: 0 },
+    ] },
+  }
+  writeFileSync(join(sourceDir, 'src/data/test-experience-schema.mjs'), `export const TEST_EXPERIENCE_METHODS = ${JSON.stringify(experienceMethods)};`)
   writeFileSync(join(projectDir, 'docs/.vuepress/config/airports.ts'), "export const airportDataLastModified = '2026-10-07'\n")
   writeFileSync(join(projectDir, 'docs/机场评测/a.md'), '---\npermalink: /posts/a/\ndateModified: 2026/10/07\n---\n\n## 官网\n')
   const collections = {
@@ -179,6 +191,13 @@ test('the receipt CLI handles published historical additions and repeated --chec
   run()
   run('--source-published')
   assert.equal(sourceSnapshot().source.publicationStatus, 'published')
+  const laterEdit = new Date(`${sourceSnapshot().receivedAt}T00:00:00.000Z`)
+  laterEdit.setUTCDate(laterEdit.getUTCDate() + 1)
+  const laterEditDate = laterEdit.toISOString().slice(0, 10).replace(/-/g, '/')
+  for (const filename of ['docs/机场评测/a.md', ...Object.values(collections).map((collection) => collection.sourceFile)]) {
+    const path = join(projectDir, filename)
+    writeFileSync(path, readFileSync(path, 'utf8').replace(/^dateModified:.*$/m, `dateModified: ${laterEditDate}`))
+  }
   const historical = sample({ id: 'historical-sg', testedAt: '2026-07-01', node: '新加坡',
     evidenceImages: [{ label: 'ChatGPT 状态截图', path: '/evidence/chatgpt.png' }] })
   writeFileSync(join(sourceDir, 'public/evidence/chatgpt.png'), 'chatgpt screenshot bytes')
@@ -190,9 +209,25 @@ test('the receipt CLI handles published historical additions and repeated --chec
   const files = [snapshotPath, join(projectDir, 'docs/机场评测/a.md'), join(projectDir, 'docs/.vuepress/config/airports.ts'),
     ...Object.values(collections).map((collection) => join(projectDir, collection.sourceFile))]
   const before = files.map((path) => readFileSync(path, 'utf8'))
+  for (const markdown of [before[1], ...before.slice(3)]) {
+    assert.ok(markdown.includes(`dateModified: ${laterEditDate}`), 'receipt must preserve a later manual article date')
+    assert.ok(markdown.includes(`${pending.receivedAt} 接收`), 'receipt notice must retain the actual receipt date')
+  }
   run('--check')
   run('--check')
   assert.deepEqual(files.map((path) => readFileSync(path, 'utf8')), before)
+  const articlePath = join(projectDir, 'docs/机场评测/a.md')
+  const staleArticle = before[1].replace(/^dateModified:.*$/m, 'dateModified: 2026/10/07')
+  writeFileSync(articlePath, staleArticle)
+  const staleCheck = spawnSync(process.execPath, [join(projectDir, 'scripts/sync-siilas-tests.mjs'), '--check'],
+    { cwd: projectDir, env: { ...process.env, SIILAS_PROJECT_DIR: sourceDir }, encoding: 'utf8' })
+  assert.notEqual(staleCheck.status, 0, 'check must reject an outdated date even when its evidence block is unchanged')
+  assert.match(staleCheck.stderr, /Siilas 接收摘要与当前快照不一致/)
+  assert.equal(readFileSync(articlePath, 'utf8'), staleArticle, 'check must leave the outdated article untouched')
+  run()
+  assert.equal(readFileSync(articlePath, 'utf8'), staleArticle.replace('dateModified: 2026/10/07', `dateModified: ${pending.receivedAt.replace(/-/g, '/')}`))
+  assert.equal(readFileSync(snapshotPath, 'utf8'), before[0], 'date-only correction must not change the accepted records')
+  assert.deepEqual(files.slice(2).map((path) => readFileSync(path, 'utf8')), before.slice(2), 'date-only correction must preserve metadata and collection pages')
   assert.ok(before[1].includes('[ChatGPT 状态截图（待发布）](https://siilas.com/evidence/chatgpt.png)'))
   for (const markdown of before.slice(3)) {
     assert.ok(markdown.includes('2026-07-01'), 'historical regional date must reach collection pages')

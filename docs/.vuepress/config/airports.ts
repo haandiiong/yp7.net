@@ -1007,12 +1007,6 @@ export const isVisibleAirport = (airport: AirportData) => !hiddenAirportStatuses
 
 export const visibleAirportData = airportData.filter(isVisibleAirport)
 
-export const mainRecommendationData = mainRecommendationNames.map((name) => {
-  const airport = visibleAirportData.find((item) => item.name === name)
-  if (!airport) throw new Error(`Missing main recommendation data for ${name}`)
-  return airport
-})
-
 // Date of the last full review; partial updates retain their per-source checkedAt dates.
 export const airportDataLastReviewed = '2026-08-19'
 // Advance for actual changes to current data or its classification, not historical test dates.

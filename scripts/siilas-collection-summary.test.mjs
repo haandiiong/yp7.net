@@ -32,6 +32,38 @@ test('all three published collection summaries match the accepted Siilas snapsho
   }
 })
 
+for (const { name, articleDate, receivedAt } of [
+  { name: 'a later manual edit keeps its date when the accepted snapshot is older', articleDate: '2026/10/12', receivedAt: '2026-10-09' },
+  { name: 'a newer receipt advances the article date', articleDate: '2026/10/08', receivedAt: '2026-10-12' },
+]) test(name, () => {
+  const accepted = { ...snapshot, receivedAt }
+  for (const collection of pages) {
+    const original = read(collection).replace(/^dateModified:.*$/m, `dateModified: ${articleDate}`)
+    const markdown = syncSiilasCollectionArticle(original, collection, accepted)
+    assert.match(markdown, /^dateModified: 2026\/10\/12$/m)
+    const pageUpdated = markdown.match(/<!-- siilas-page-updated:start -->[\s\S]*?<!-- siilas-page-updated:end -->/)[0]
+    assert.match(pageUpdated, /2026年10月12日/)
+    const evidence = markdown.match(/<!-- siilas-collection-evidence:start -->[\s\S]*?<!-- siilas-collection-evidence:end -->/)[0]
+    assert.ok(evidence.includes(`${receivedAt} 接收 [Siilas 原始记录]`), 'receipt date must remain independent of editorial date')
+    assert.ok(evidence.includes(`最新实际测试日为 ${snapshot.latestTestAt}`), 'test date must not become the editorial date')
+    assert.equal(syncSiilasCollectionArticle(markdown, collection, accepted), markdown, 'date synchronization must be idempotent')
+  }
+})
+
+test('unchanged collection evidence still corrects an older frontmatter date without touching body fields', () => {
+  const accepted = { ...snapshot, receivedAt: '2026-10-09' }
+  for (const collection of pages) {
+    const original = `${read(collection).replace(/^dateModified:.*$/m, 'dateModified: 2026/10/08')}\n\ndateModified: 2099/01/01\n`
+    const current = syncSiilasCollectionArticle(original, collection, accepted)
+    // Keep the generated page-update label current while making only the
+    // frontmatter stale, so the next receipt must detect a date-only change.
+    const stale = current.replace(/^dateModified:.*$/m, 'dateModified: 2026/10/08')
+    assert.equal(syncSiilasCollectionArticle(stale, collection, accepted), current)
+    assert.ok(current.endsWith('\n\ndateModified: 2099/01/01\n'))
+    assert.equal(syncSiilasCollectionArticle(current, collection, accepted), current)
+  }
+})
+
 test('new mixed-region observations replace stale summaries without changing commercial fields or editorial order', () => {
   const updated = structuredClone(snapshot)
   updated.receivedAt = '2026-10-10'
@@ -46,7 +78,8 @@ test('new mixed-region observations replace stale summaries without changing com
   hongkong.streaming = '缓冲明显'
   airport.latestTestAt = hongkong.testedAt
   for (const collection of pages) {
-    const original = read(collection)
+    // Pin the fixture date; later real article edits are covered separately.
+    const original = read(collection).replace(/^dateModified:.*$/m, 'dateModified: 2026/10/09')
     const markdown = syncSiilasCollectionArticle(original, collection, updated)
     const before = candidateRows(original, collection)
     const after = candidateRows(markdown, collection)

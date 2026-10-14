@@ -1,0 +1,762 @@
+[
+  {
+    "route": "/",
+    "viewport": 1440,
+    "errors": [],
+    "failed": [],
+    "title": "最新科学上网工具与机场推荐（VPN、翻墙、梯子）｜yp7.net",
+    "pageWidth": 1440,
+    "h1": [
+      "科学上网工具与机场推荐（本站最佳选择）"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/",
+    "brokenImages": [],
+    "overflow": []
+  },
+  {
+    "route": "/posts/jichang-tuijian/",
+    "viewport": 1440,
+    "errors": [],
+    "failed": [],
+    "title": "2026机场推荐：7款精选机场，价格、客户端与试用对比 | yp7.net",
+    "pageWidth": 1440,
+    "h1": [
+      "2026机场推荐：7款精选机场，价格、客户端与试用对比"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/posts/jichang-tuijian/",
+    "brokenImages": [],
+    "overflow": []
+  },
+  {
+    "route": "/posts/jichang-heji/",
+    "viewport": 1440,
+    "errors": [],
+    "failed": [],
+    "title": "2026机场大全：机场价格、流量与试用对比 | yp7.net",
+    "pageWidth": 1440,
+    "h1": [
+      "2026机场大全：机场价格、流量与试用对比"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/posts/jichang-heji/",
+    "brokenImages": [],
+    "overflow": []
+  },
+  {
+    "route": "/rankings/no-expiry/",
+    "viewport": 1440,
+    "errors": [],
+    "failed": [],
+    "title": "2026不限时机场榜：一次性价格、总流量与每GB成本比较 | yp7.net",
+    "pageWidth": 1440,
+    "h1": [
+      "2026不限时机场榜：一次性价格、总流量与每GB成本比较"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/rankings/no-expiry/",
+    "brokenImages": [],
+    "overflow": []
+  },
+  {
+    "route": "/rankings/chatgpt/",
+    "viewport": 1440,
+    "errors": [],
+    "failed": [],
+    "title": "2026 ChatGPT机场记录：9家Siilas节点观察与套餐对比 | yp7.net",
+    "pageWidth": 1440,
+    "h1": [
+      "2026 ChatGPT机场记录：9家Siilas节点观察与套餐对比"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/rankings/chatgpt/",
+    "brokenImages": [],
+    "overflow": []
+  },
+  {
+    "route": "/posts/flybit-review-2026/",
+    "viewport": 1440,
+    "errors": [],
+    "failed": [],
+    "title": "Flybit机场怎么样？套餐价格、Clash订阅与客户端支持 | yp7.net",
+    "pageWidth": 1440,
+    "h1": [
+      "Flybit机场怎么样？套餐价格、Clash订阅与客户端支持"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/posts/flybit-review-2026/",
+    "brokenImages": [],
+    "overflow": []
+  },
+  {
+    "route": "/",
+    "viewport": 390,
+    "errors": [],
+    "failed": [],
+    "title": "最新科学上网工具与机场推荐（VPN、翻墙、梯子）｜yp7.net",
+    "pageWidth": 390,
+    "h1": [
+      "科学上网工具与机场推荐（本站最佳选择）"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/",
+    "brokenImages": [],
+    "overflow": []
+  },
+  {
+    "route": "/posts/jichang-tuijian/",
+    "viewport": 390,
+    "errors": [],
+    "failed": [],
+    "title": "2026机场推荐：7款精选机场，价格、客户端与试用对比 | yp7.net",
+    "pageWidth": 390,
+    "h1": [
+      "2026机场推荐：7款精选机场，价格、客户端与试用对比"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/posts/jichang-tuijian/",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 424.90625,
+        "scrollWidth": 425
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 82.125,
+        "scrollWidth": 81
+      },
+      {
+        "tag": "THEAD",
+        "class": "",
+        "width": 564.203125,
+        "scrollWidth": 564
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 564.203125,
+        "scrollWidth": 564
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 93.640625,
+        "scrollWidth": 93
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 63.109375,
+        "scrollWidth": 62
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 62.109375,
+        "scrollWidth": 61
+      },
+      {
+        "tag": "TBODY",
+        "class": "",
+        "width": 564.203125,
+        "scrollWidth": 564
+      }
+    ]
+  },
+  {
+    "route": "/posts/jichang-heji/",
+    "viewport": 390,
+    "errors": [],
+    "failed": [],
+    "title": "2026机场大全：机场价格、流量与试用对比 | yp7.net",
+    "pageWidth": 390,
+    "h1": [
+      "2026机场大全：机场价格、流量与试用对比"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/posts/jichang-heji/",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "THEAD",
+        "class": "",
+        "width": 662.09375,
+        "scrollWidth": 662
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 662.09375,
+        "scrollWidth": 662
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 104.40625,
+        "scrollWidth": 103
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 104.40625,
+        "scrollWidth": 103
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 93.75,
+        "scrollWidth": 93
+      },
+      {
+        "tag": "TBODY",
+        "class": "",
+        "width": 662.09375,
+        "scrollWidth": 662
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 662.09375,
+        "scrollWidth": 662
+      },
+      {
+        "tag": "TD",
+        "class": "",
+        "width": 104.40625,
+        "scrollWidth": 103
+      }
+    ]
+  },
+  {
+    "route": "/rankings/no-expiry/",
+    "viewport": 390,
+    "errors": [],
+    "failed": [],
+    "title": "2026不限时机场榜：一次性价格、总流量与每GB成本比较 | yp7.net",
+    "pageWidth": 390,
+    "h1": [
+      "2026不限时机场榜：一次性价格、总流量与每GB成本比较"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/rankings/no-expiry/",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "THEAD",
+        "class": "",
+        "width": 531.25,
+        "scrollWidth": 531
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 531.25,
+        "scrollWidth": 531
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 96.515625,
+        "scrollWidth": 96
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 74.03125,
+        "scrollWidth": 73
+      },
+      {
+        "tag": "TBODY",
+        "class": "",
+        "width": 531.25,
+        "scrollWidth": 531
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 531.25,
+        "scrollWidth": 531
+      },
+      {
+        "tag": "TD",
+        "class": "",
+        "width": 96.515625,
+        "scrollWidth": 96
+      },
+      {
+        "tag": "TD",
+        "class": "",
+        "width": 74.03125,
+        "scrollWidth": 73
+      }
+    ]
+  },
+  {
+    "route": "/rankings/chatgpt/",
+    "viewport": 390,
+    "errors": [],
+    "failed": [],
+    "title": "2026 ChatGPT机场记录：9家Siilas节点观察与套餐对比 | yp7.net",
+    "pageWidth": 390,
+    "h1": [
+      "2026 ChatGPT机场记录：9家Siilas节点观察与套餐对比"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/rankings/chatgpt/",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "THEAD",
+        "class": "",
+        "width": 505.484375,
+        "scrollWidth": 505
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 505.484375,
+        "scrollWidth": 505
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 93.640625,
+        "scrollWidth": 93
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 96.375,
+        "scrollWidth": 95
+      },
+      {
+        "tag": "TBODY",
+        "class": "",
+        "width": 505.484375,
+        "scrollWidth": 505
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 505.484375,
+        "scrollWidth": 505
+      },
+      {
+        "tag": "TD",
+        "class": "",
+        "width": 93.640625,
+        "scrollWidth": 93
+      },
+      {
+        "tag": "TD",
+        "class": "",
+        "width": 96.375,
+        "scrollWidth": 95
+      }
+    ]
+  },
+  {
+    "route": "/posts/flybit-review-2026/",
+    "viewport": 390,
+    "errors": [],
+    "failed": [],
+    "title": "Flybit机场怎么样？套餐价格、Clash订阅与客户端支持 | yp7.net",
+    "pageWidth": 390,
+    "h1": [
+      "Flybit机场怎么样？套餐价格、Clash订阅与客户端支持"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/posts/flybit-review-2026/",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "THEAD",
+        "class": "",
+        "width": 572.875,
+        "scrollWidth": 573
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 572.875,
+        "scrollWidth": 573
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 93.640625,
+        "scrollWidth": 93
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 47.28125,
+        "scrollWidth": 46
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 101.15625,
+        "scrollWidth": 100
+      },
+      {
+        "tag": "TBODY",
+        "class": "",
+        "width": 572.875,
+        "scrollWidth": 573
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 572.875,
+        "scrollWidth": 573
+      },
+      {
+        "tag": "TD",
+        "class": "",
+        "width": 93.640625,
+        "scrollWidth": 93
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "viewport": 320,
+    "errors": [],
+    "failed": [],
+    "title": "最新科学上网工具与机场推荐（VPN、翻墙、梯子）｜yp7.net",
+    "pageWidth": 320,
+    "h1": [
+      "科学上网工具与机场推荐（本站最佳选择）"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/",
+    "brokenImages": [],
+    "overflow": []
+  },
+  {
+    "route": "/posts/jichang-tuijian/",
+    "viewport": 320,
+    "errors": [],
+    "failed": [],
+    "title": "2026机场推荐：7款精选机场，价格、客户端与试用对比 | yp7.net",
+    "pageWidth": 320,
+    "h1": [
+      "2026机场推荐：7款精选机场，价格、客户端与试用对比"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/posts/jichang-tuijian/",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 424.90625,
+        "scrollWidth": 425
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 110.6875,
+        "scrollWidth": 110
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 82.125,
+        "scrollWidth": 81
+      },
+      {
+        "tag": "THEAD",
+        "class": "",
+        "width": 564.203125,
+        "scrollWidth": 564
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 564.203125,
+        "scrollWidth": 564
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 62.40625,
+        "scrollWidth": 61
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 93.640625,
+        "scrollWidth": 93
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 63.109375,
+        "scrollWidth": 62
+      }
+    ]
+  },
+  {
+    "route": "/posts/jichang-heji/",
+    "viewport": 320,
+    "errors": [],
+    "failed": [],
+    "title": "2026机场大全：机场价格、流量与试用对比 | yp7.net",
+    "pageWidth": 320,
+    "h1": [
+      "2026机场大全：机场价格、流量与试用对比"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/posts/jichang-heji/",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "THEAD",
+        "class": "",
+        "width": 662.09375,
+        "scrollWidth": 662
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 662.09375,
+        "scrollWidth": 662
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 90.125,
+        "scrollWidth": 89
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 104.40625,
+        "scrollWidth": 103
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 104.40625,
+        "scrollWidth": 103
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 93.75,
+        "scrollWidth": 93
+      },
+      {
+        "tag": "TBODY",
+        "class": "",
+        "width": 662.09375,
+        "scrollWidth": 662
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 662.09375,
+        "scrollWidth": 662
+      }
+    ]
+  },
+  {
+    "route": "/rankings/no-expiry/",
+    "viewport": 320,
+    "errors": [],
+    "failed": [],
+    "title": "2026不限时机场榜：一次性价格、总流量与每GB成本比较 | yp7.net",
+    "pageWidth": 320,
+    "h1": [
+      "2026不限时机场榜：一次性价格、总流量与每GB成本比较"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/rankings/no-expiry/",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "THEAD",
+        "class": "",
+        "width": 531.25,
+        "scrollWidth": 531
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 531.25,
+        "scrollWidth": 531
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 73.953125,
+        "scrollWidth": 73
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 61.5625,
+        "scrollWidth": 61
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 96.515625,
+        "scrollWidth": 96
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 74.03125,
+        "scrollWidth": 73
+      },
+      {
+        "tag": "TBODY",
+        "class": "",
+        "width": 531.25,
+        "scrollWidth": 531
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 531.25,
+        "scrollWidth": 531
+      }
+    ]
+  },
+  {
+    "route": "/rankings/chatgpt/",
+    "viewport": 320,
+    "errors": [],
+    "failed": [],
+    "title": "2026 ChatGPT机场记录：9家Siilas节点观察与套餐对比 | yp7.net",
+    "pageWidth": 320,
+    "h1": [
+      "2026 ChatGPT机场记录：9家Siilas节点观察与套餐对比"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/rankings/chatgpt/",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "THEAD",
+        "class": "",
+        "width": 505.484375,
+        "scrollWidth": 505
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 505.484375,
+        "scrollWidth": 505
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 61.5625,
+        "scrollWidth": 61
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 93.640625,
+        "scrollWidth": 93
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 96.375,
+        "scrollWidth": 95
+      },
+      {
+        "tag": "TBODY",
+        "class": "",
+        "width": 505.484375,
+        "scrollWidth": 505
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 505.484375,
+        "scrollWidth": 505
+      },
+      {
+        "tag": "TD",
+        "class": "",
+        "width": 61.5625,
+        "scrollWidth": 61
+      }
+    ]
+  },
+  {
+    "route": "/posts/flybit-review-2026/",
+    "viewport": 320,
+    "errors": [],
+    "failed": [],
+    "title": "Flybit机场怎么样？套餐价格、Clash订阅与客户端支持 | yp7.net",
+    "pageWidth": 320,
+    "h1": [
+      "Flybit机场怎么样？套餐价格、Clash订阅与客户端支持"
+    ],
+    "mainCount": 1,
+    "canonical": "https://yp7.net/posts/flybit-review-2026/",
+    "brokenImages": [],
+    "overflow": [
+      {
+        "tag": "THEAD",
+        "class": "",
+        "width": 572.875,
+        "scrollWidth": 573
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 572.875,
+        "scrollWidth": 573
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 57.84375,
+        "scrollWidth": 57
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 93.640625,
+        "scrollWidth": 93
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 47.28125,
+        "scrollWidth": 46
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "width": 101.15625,
+        "scrollWidth": 100
+      },
+      {
+        "tag": "TBODY",
+        "class": "",
+        "width": 572.875,
+        "scrollWidth": 573
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "width": 572.875,
+        "scrollWidth": 573
+      }
+    ]
+  }
+]

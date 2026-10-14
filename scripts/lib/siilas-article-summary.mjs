@@ -1,4 +1,8 @@
+import { syncSiilasArticleDateModified } from './siilas-article-date.mjs'
+import { renderSiilasExperienceMethods } from './siilas-experience-methods.mjs'
+
 export const renderSiilasSummary = (airport, snapshot) => {
+  const experienceMethods = renderSiilasExperienceMethods(snapshot)
   const cell = (value) => String(value ?? '未记录').replace(/\|/g, '\\|').replace(/\n/g, ' ')
   const firstDate = airport.tests.map((test) => test.testedAt).sort()[0]
   const score = airport.score === null ? '样本不足，暂无综合评分' : `${airport.score}/10`
@@ -50,7 +54,18 @@ export const renderSiilasSummary = (airport, snapshot) => {
     ...(otherEvidence.length ? ['附加应用证据保留原采样日期，不作为测速截图：', '', ...otherEvidence, ''] : []),
     `上述最近记录所列代理客户端：${clients}；测速工具：${measurementTools}。每条原始记录保留自己的网络、设备和工具字段，未记录的历史条件不套用到新样本。`,
     '',
+    ...(experienceMethods ? [experienceMethods, ''] : []),
     'ChatGPT、流媒体是提交者的定性体验；Speedtest 佐证测速数值，不证明各平台解锁、其他 AI 服务或长期稳定性。Siilas 与 yp7.net 由同一站长运营，不能当作独立第三方背书。',
     '<!-- siilas-testing:end -->',
   ].join('\n')
+}
+
+export const syncSiilasArticleSummary = (markdown, airport, snapshot) => {
+  const summary = renderSiilasSummary(airport, snapshot)
+  const block = /<!-- siilas-testing:start -->[\s\S]*?<!-- siilas-testing:end -->/
+  const next = block.test(markdown)
+    ? markdown.replace(block, () => summary)
+    : markdown.replace(/^## /m, () => `${summary}\n\n## `)
+  if (!block.test(next)) throw new Error(`无法插入 ${airport.name} 的 Siilas 接收摘要`)
+  return syncSiilasArticleDateModified(next, snapshot.receivedAt)
 }

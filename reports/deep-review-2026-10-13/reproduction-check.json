@@ -1,0 +1,31 @@
+{
+  "hiddenStatus": [
+    {
+      "status": "停止推荐",
+      "error": "Missing main recommendation data for Flybit",
+      "fixtureChanged": true
+    },
+    {
+      "status": "已淘汰",
+      "error": "Missing main recommendation data for Flybit",
+      "fixtureChanged": true
+    },
+    {
+      "status": "下架",
+      "error": "Missing main recommendation data for Flybit",
+      "fixtureChanged": true
+    }
+  ],
+  "replacement": {
+    "before": 1,
+    "after": 2,
+    "withCallback": 1,
+    "summaryContainsDollarAmpersand": true
+  },
+  "date": {
+    "receivedAt": "2026-10-09",
+    "chosen": "2026-10-09",
+    "result": "dateModified: 2026/10/08",
+    "inputUnchanged": true
+  }
+}

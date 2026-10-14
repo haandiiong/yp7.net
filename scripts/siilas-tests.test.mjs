@@ -4,11 +4,58 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import test from 'node:test'
 import { loadConfig } from './lib/load-config.mjs'
+import { renderSiilasSummary, syncSiilasArticleSummary } from './lib/siilas-article-summary.mjs'
+import { syncSiilasArticleDateModified } from './lib/siilas-article-date.mjs'
 
 const { siilasTestingSnapshot: snapshot } = loadConfig('siilas-evidence.ts')
 const { airportData, airportDataLastReviewed } = loadConfig('airports.ts')
 const { airportCollections } = loadConfig('airport-collections.ts')
 const { generateAirportDataFiles } = loadConfig('generated.ts')
+
+test('existing and newly inserted airport summaries preserve literal replacement tokens', () => {
+  const accepted = { ...snapshot, receivedAt: '2026-10-09' }
+  const header = '---\ntitle: 测试文章\ndateModified: 2026/10/08\n---'
+  const before = '\n\n人工前文保持一次。\n\n'
+  const after = '\n\n## 官网\n\n人工正文保持一次。\ndateModified: 2099/01/01\n'
+  for (const literal of ['$&', "$'", '$`', '$$']) {
+    const airport = structuredClone(snapshot.airports[0])
+    const client = `客户端 ${literal} 原样`
+    airport.latestRegionTests.find(({ test: record }) => record).test.client = client
+    const summary = renderSiilasSummary(airport, accepted)
+    const expected = `${header.replace('2026/10/08', '2026/10/09')}${before}${summary}${after}`
+    for (const oldSummary of ['', '<!-- siilas-testing:start -->\n旧摘要\n<!-- siilas-testing:end -->\n\n']) {
+      const original = `${header}${before}${oldSummary}${after.trimStart()}`
+      const current = syncSiilasArticleSummary(original, airport, accepted)
+      assert.equal(current, expected, `${literal}: ${oldSummary ? 'replace' : 'insert'}`)
+      assert.ok(current.includes(client), 'source text must remain literal')
+      assert.equal((current.match(/<!-- siilas-testing:start -->/g) ?? []).length, 1)
+      assert.equal(syncSiilasArticleSummary(current, airport, accepted), current, 'receipt must remain idempotent')
+    }
+  }
+})
+
+test('unchanged airport evidence still corrects an article date older than the receipt', () => {
+  const accepted = { ...snapshot, receivedAt: '2026-10-09' }
+  const airport = snapshot.airports[0]
+  const summary = renderSiilasSummary(airport, accepted)
+  const body = `\n\n${summary}\n\n## 官网\n\ndateModified: 2099/01/01\n`
+  const stale = `---\ntitle: 测试文章\ndateModified: 2026/10/08\n---${body}`
+  const current = syncSiilasArticleSummary(stale, airport, accepted)
+  assert.equal(current, `---\ntitle: 测试文章\ndateModified: 2026/10/09\n---${body}`)
+  assert.equal(syncSiilasArticleSummary(current, airport, accepted), current)
+  const laterEdit = current.replace('dateModified: 2026/10/09', 'dateModified: 2026/10/12')
+  assert.equal(syncSiilasArticleSummary(laterEdit, airport, accepted), laterEdit, 'later manual edits must be preserved')
+})
+
+test('date writes remain inside the opening frontmatter and preserve line endings', () => {
+  const original = "---\r\ntitle: 测试文章\r\ndateModified: '2026-10-08'\r\n---\r\n\r\ndateModified: 2099/01/01\r\n"
+  const current = syncSiilasArticleDateModified(original, '2026-10-09')
+  assert.equal(current, original.replace("dateModified: '2026-10-08'", 'dateModified: 2026/10/09'))
+  for (const invalid of [
+    '---\ntitle: 测试文章\n---\n\ndateModified: 2026/10/08\n',
+    '正文\n---\ndateModified: 2026/10/08\n---\n',
+  ]) assert.throws(() => syncSiilasArticleDateModified(invalid, '2026-10-09'), /frontmatter 缺少 dateModified/)
+})
 
 test('accepted Siilas evidence has traceable dates, records and rule versions', () => {
   assert.equal(snapshot.airportCount, snapshot.airports.length)

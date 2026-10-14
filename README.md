@@ -35,10 +35,13 @@ pnpm run docs:check-data
 pnpm run docs:check-consistency
 pnpm run docs:check-content
 pnpm run docs:typecheck
-pnpm run docs:test-head
-pnpm run docs:test-data
+pnpm run docs:test
 pnpm run docs:preview
 ```
+
+`docs:test` 自动运行 `scripts/` 下全部 `*.test.mjs`，提交前与 CI 使用同一入口；`docs:test-head` 和 `docs:test-data` 保留为定向排查入口。
+
+`pnpm-workspace.yaml` 为安全修复定向固定 Vite 7.3.7 和 KaTeX 0.18.2。两者超出当前上游依赖声明的范围，已验证生产构建、开发预览及数学插件的公开渲染接口；升级 VuePress、主题或数学插件时应复核这些覆盖项，并重新检查公式渲染和页面显示。
 
 ## 内容结构
 
@@ -69,7 +72,11 @@ pnpm run docs:check-siilas
 
 原始记录分别保留代理客户端 `client` 和测速工具 `measurementTool`；客户端未知如实留空。多张证据保留 `evidenceImages` 的标签与路径，并导出绝对 `evidenceUrls`；文章按“测速截图”“ChatGPT 状态截图”等语义展示，逐张标注待发布状态。
 
-接收会同步单机场页 `siilas-testing` 标记内的记录表与评分，以及主推荐和两张场景榜的测试/体验列、`siilas-collection-evidence` 接收摘要、`siilas-score-comparison` 分数比较和 `siilas-page-updated` 页面编辑日期。各地区保留自己的最近样本时间和发布状态，缺测、未记录与 null 评分如实展示；原始记录未明确平台时只称视频/流媒体。旧手写样本收进带日期历史说明，选购理由、商业字段、候选名单与排序仍由编辑维护。更新 `airportDataLastModified` 编辑日期，不推进 `airportDataLastReviewed` 或各条商业复核日期。完成后重新构建并同步生成数据。不要在 CI 中执行需要相邻来源项目的接收脚本。
+`methodology.experienceMethods` 接收 Siilas 权威模块中的统一体验方法及确认日期：YouTube 4K 三次拖动观察恢复播放前缓冲；ChatGPT 从发送消息到开始出现回答，采用 5、10、20、30 秒及未响应五档。文章自动摘要从这份已接收元信息说明方法；原始记录若包含可选 `streamingTest`、`chatgptTest`，随完整记录保留，未保存的精确秒数不补写。方法和规则文件变化也需要重新接收，但不自动确认其已经正式发布。
+
+接收会同步单机场页 `siilas-testing` 标记内的记录表与评分，以及主推荐和两张场景榜的测试/体验列、`siilas-collection-evidence` 接收摘要、`siilas-score-comparison` 分数比较和 `siilas-page-updated` 页面编辑日期。各地区保留自己的最近样本时间和发布状态，缺测、未记录与 null 评分如实展示；没有已确认统一方法的旧快照只称视频/流媒体。旧手写样本收进带日期历史说明，选购理由、商业字段、候选名单与排序仍由编辑维护。更新 `airportDataLastModified` 编辑日期，不推进 `airportDataLastReviewed` 或各条商业复核日期。完成后重新构建并同步生成数据。不要在 CI 中执行需要相邻来源项目的接收脚本。
+
+文章编辑日期取已有 `dateModified` 与接收日期中较晚的一天，保留接收之后的人工编辑日期；主推荐和两张场景榜的正文更新时间与 frontmatter 保持一致。接收摘要仍使用实际接收日期，原始测试日期不受文章编辑日期影响。
 
 ## 数据生成流程
 
@@ -110,8 +117,7 @@ pnpm run docs:check-data
 pnpm run docs:check-consistency
 pnpm run docs:check-content
 pnpm run docs:typecheck
-pnpm run docs:test-head
-pnpm run docs:test-data
+pnpm run docs:test
 ```
 
 ## 内容更新 Checklist

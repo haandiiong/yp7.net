@@ -1,9 +1,10 @@
 import assert from 'node:assert/strict'
 import { spawnSync } from 'node:child_process'
-import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { cpSync, mkdirSync, mkdtempSync, readFileSync, rmSync, symlinkSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { dirname, join, resolve } from 'node:path'
 import test from 'node:test'
+import { pathToFileURL } from 'node:url'
 import { loadConfig } from './lib/load-config.mjs'
 import {
   htmlTables, markdownTables, markdownTableAfterHeading,
@@ -54,6 +55,59 @@ test('price changes use the same record and hidden services disappear from all c
   airport.status = '停止推荐'
   assert.ok(Object.values(createAirportCollections(updated)).every((collection) => !collection.items.includes(airport)))
 })
+
+for (const status of ['停止推荐', '已淘汰', '下架']) {
+  test(`loading source with a ${status} main recommendation excludes it from public collections`, async (t) => {
+    const fixture = mkdtempSync(join(tmpdir(), 'yp7-hidden-main-source-'))
+    t.after(() => rmSync(fixture, { recursive: true, force: true }))
+    const configDir = join(fixture, 'docs/.vuepress/config')
+    const loaderPath = join(fixture, 'scripts/lib/load-config.mjs')
+    mkdirSync(dirname(loaderPath), { recursive: true })
+    cpSync('docs/.vuepress/config', configDir, { recursive: true })
+    cpSync('scripts/lib/load-config.mjs', loaderPath)
+    symlinkSync(resolve('node_modules'), join(fixture, 'node_modules'), 'dir')
+
+    // Change the fixture source before loading its config graph, as an actual
+    // retirement does. Mutating an already-loaded clone misses initialization errors.
+    const sourcePath = join(configDir, 'airports.ts')
+    const source = readFileSync(sourcePath, 'utf8')
+    const edited = source.replace(/(name: 'Flybit'[\s\S]*?\bstatus: ')[^']*'/, `$1${status}'`)
+    assert.notEqual(edited, source, 'fixture must update the main recommendation status')
+    writeFileSync(sourcePath, edited)
+    const { loadConfig: loadFixtureConfig } = await import(pathToFileURL(loaderPath).href)
+    const fixtureAirports = loadFixtureConfig('airports.ts')
+    const { airportCollections: collections } = loadFixtureConfig('airport-collections.ts')
+    const hidden = fixtureAirports.airportData.find((airport) => airport.name === 'Flybit')
+    assert.equal(hidden.status, status)
+    assert.ok(!fixtureAirports.visibleAirportData.some((airport) => airport.path === hidden.path))
+    for (const [key, collection] of Object.entries(collections)) {
+      const expected = airportCollections[key].items.filter((airport) => airport.path !== hidden.path)
+      assert.deepEqual(collection.items.map((airport) => airport.path), expected.map((airport) => airport.path))
+    }
+
+    const output = join(fixture, 'output')
+    loadFixtureConfig('generated.ts').generateAirportDataFiles({ dir: { dest: (file = '') => join(output, file) } })
+    const read = (file) => readFileSync(join(output, 'data', file), 'utf8')
+    const publicData = JSON.parse(read('airports.json'))
+    const publicRankings = JSON.parse(read('rankings.json')).rankings
+    assert.equal(publicData.metrics.count, fixtureAirports.visibleAirportData.length)
+    assert.deepEqual(publicData.airports.map((airport) => airport.path), collections.all.items.map((airport) => airport.path))
+    for (const [key, records] of Object.entries(publicRankings)) {
+      assert.deepEqual(records.map((airport) => airport.path), collections[key].items.map((airport) => airport.path))
+      assert.ok(!records.some((airport) => airport.path === hidden.path), `${key}: hidden airport leaked`)
+    }
+    for (const [file, parse] of [['airports.md', markdownTables], ['rankings.md', markdownTables], ['airports.html', htmlTables], ['rankings.html', htmlTables]]) {
+      assert.ok(parse(read(file)).flat().every((row) => row.cells['机场'] !== hidden.name), `${file}: hidden airport leaked`)
+    }
+    const risk = JSON.parse(read('risk-monitor.json')).risks.find((airport) => airport.name === hidden.name)
+    assert.equal(risk.status, status, 'the retired service remains available in risk monitoring')
+    const { getPageSchema: getFixturePageSchema } = loadFixtureConfig('schema.ts')
+    const main = collections.mainRecommendation
+    const schema = getFixturePageSchema({ path: main.pagePath, frontmatter: {}, data: {}, content: '' })['@graph']
+      .find((item) => item['@type'] === 'ItemList')
+    assert.deepEqual(validateItemList(schema, main.items, main.pagePath, undefined, main.ordered), [])
+  })
+}
 
 test('capability changes remove an editorial candidate only from affected collections', () => {
   const updated = structuredClone(airportData)

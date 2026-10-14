@@ -1,0 +1,53 @@
+{
+  "theme": "dark",
+  "links": [
+    {
+      "text": "GitHub下载 ↗",
+      "color": "rgb(23, 101, 79)",
+      "background": "rgb(32, 33, 39)",
+      "fontSize": "13px"
+    },
+    {
+      "text": "备用下载 ↗",
+      "color": "rgb(23, 101, 79)",
+      "background": "rgb(32, 33, 39)",
+      "fontSize": "13px"
+    },
+    {
+      "text": "查看安装教程",
+      "color": "rgb(23, 101, 79)",
+      "background": "rgb(32, 33, 39)",
+      "fontSize": "12px"
+    },
+    {
+      "text": "App Store 下载 ↗",
+      "color": "rgb(23, 101, 79)",
+      "background": "rgb(32, 33, 39)",
+      "fontSize": "13px"
+    },
+    {
+      "text": "购买国外 Apple ID ↗",
+      "color": "rgb(23, 101, 79)",
+      "background": "rgb(32, 33, 39)",
+      "fontSize": "13px"
+    },
+    {
+      "text": "查看官方使用手册",
+      "color": "rgb(23, 101, 79)",
+      "background": "rgb(32, 33, 39)",
+      "fontSize": "12px"
+    },
+    {
+      "text": "GitHub下载 ↗",
+      "color": "rgb(23, 101, 79)",
+      "background": "rgb(32, 33, 39)",
+      "fontSize": "13px"
+    },
+    {
+      "text": "备用下载 ↗",
+      "color": "rgb(23, 101, 79)",
+      "background": "rgb(32, 33, 39)",
+      "fontSize": "13px"
+    }
+  ]
+}

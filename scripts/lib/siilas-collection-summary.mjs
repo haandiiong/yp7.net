@@ -1,3 +1,6 @@
+import { getSiilasArticleDateModified, syncSiilasArticleDateModified } from './siilas-article-date.mjs'
+import { renderSiilasExperienceMethods } from './siilas-experience-methods.mjs'
+
 const cell = (value) => String(value ?? '未记录').replace(/\|/g, '\\|').replace(/\n/g, ' ')
 const pending = (test) => test?.publication?.status === 'pending'
   || test?.publication?.evidenceVersions?.some((image) => image.status === 'pending')
@@ -39,11 +42,14 @@ const recommendationCell = (airport) => airport
   ? `[分区最新样本](${airport.sourceUrl})；${siilasRankingStatus(airport)}<br>ChatGPT：${siilasExperienceSummary(airport, 'chatgpt')}<br>视频：${siilasExperienceSummary(airport, 'streaming')}`
   : '套餐与客户端资料；暂无已接收 Siilas 测速'
 
-const renderRecommendationEvidence = (collection, snapshot) => [
+const renderRecommendationEvidence = (collection, snapshot) => {
+  const experienceMethods = renderSiilasExperienceMethods(snapshot)
+  return [
   receiptNotice(snapshot),
   '',
   scoreNotice(snapshot),
   '',
+  ...(experienceMethods ? [experienceMethods, ''] : []),
   '下表的“当日覆盖”只统计最新测试日；其他地区仍保留各自最近日期。ChatGPT 和视频状态见上方对比表，具体时分与证据见单机场页。',
   '',
   '| 机场 | 最新测试日 | 当日覆盖 | 各地区最近样本日期 | 参评状态与综合分 |',
@@ -66,8 +72,11 @@ const renderRecommendationEvidence = (collection, snapshot) => [
     ].map(cell).join(' | ')} |`
   }),
   '',
-  'ChatGPT、视频列是测试者当次提交的定性体验；Speedtest 核对吞吐与延迟，不能由测速数值推导平台可用性。未明确平台的记录只称视频/流媒体，不扩展为 YouTube 4K、Netflix、Disney+、TikTok、其他 AI 平台或长期稳定性。更细的记录见[ChatGPT证据页](/rankings/chatgpt/)和[流媒体证据页](/rankings/streaming/)。',
-].join('\n')
+  experienceMethods
+    ? 'ChatGPT、视频列是测试者当次提交的体验；Speedtest 核对吞吐与延迟，不能由测速数值推导平台可用性。已确认的 YouTube 4K 缓冲观察不证明 Netflix、Disney+、TikTok、其他 AI 平台可用或长期稳定性。更细的记录见[ChatGPT证据页](/rankings/chatgpt/)和[流媒体证据页](/rankings/streaming/)。'
+    : 'ChatGPT、视频列是测试者当次提交的定性体验；Speedtest 核对吞吐与延迟，不能由测速数值推导平台可用性。未明确平台的记录只称视频/流媒体，不扩展为 YouTube 4K、Netflix、Disney+、TikTok、其他 AI 平台或长期稳定性。更细的记录见[ChatGPT证据页](/rankings/chatgpt/)和[流媒体证据页](/rankings/streaming/)。',
+  ].join('\n')
+}
 
 const renderComparison = (collection, snapshot) => {
   const items = collection.items.filter((item) => ['Flybit', '拼好连'].includes(item.name))
@@ -95,11 +104,14 @@ const evidenceLinks = (airport, test) => [
   ...(test.publication?.evidenceVersions ?? []).map((image) => `[${image.label}${image.status === 'pending' ? '（待发布）' : ''}](${image.url})`),
 ].join(' · ')
 
-const renderScenarioEvidence = (collection, snapshot, field) => [
+const renderScenarioEvidence = (collection, snapshot, field) => {
+  const experienceMethods = renderSiilasExperienceMethods(snapshot, field)
+  return [
   receiptNotice(snapshot),
   '',
   scoreNotice(snapshot),
   '',
+  ...(experienceMethods ? [experienceMethods, ''] : []),
   '以下逐项列出各地区最近一条记录，时间为北京时间；未测试或未记录的字段如实留空。不同地区的日期可能不同，历史样本另列。',
   '',
   `| 机场与节点地区 | 样本时间 | ${field === 'chatgpt' ? 'ChatGPT状态' : '视频/流媒体状态'} | 下载 Mbps | 原始记录与证据 |`,
@@ -117,8 +129,11 @@ const renderScenarioEvidence = (collection, snapshot, field) => [
   '',
   field === 'chatgpt'
     ? 'ChatGPT 状态是测试者当次提交的定性体验，不由下载速度推导，也不证明 Claude、Gemini、OpenAI API、所有登录环节或长期稳定性。网络、设备、客户端与工具按每条原始记录区分，不把历史环境套用到新记录。'
-    : '上表仅使用原始记录的“流媒体”状态；未逐项确认平台的记录不能扩展为 YouTube 4K、Netflix 片库、Disney+ 地区内容或 TikTok 功能验证。网络、设备、客户端与工具按每条原始记录区分，不把历史环境套用到新记录。',
-].join('\n')
+    : experienceMethods
+      ? '上表使用原始记录的“流媒体”状态，按已确认的 YouTube 4K 方法说明解读；这不证明 Netflix 片库、Disney+ 地区内容或 TikTok 功能验证。网络、设备、客户端与工具按每条原始记录区分，不把历史环境套用到新记录。'
+      : '上表仅使用原始记录的“流媒体”状态；未逐项确认平台的记录不能扩展为 YouTube 4K、Netflix 片库、Disney+ 地区内容或 TikTok 功能验证。网络、设备、客户端与工具按每条原始记录区分，不把历史环境套用到新记录。',
+  ].join('\n')
+}
 
 const block = (key, content) => `<!-- ${key}:start -->\n\n${content}\n\n<!-- ${key}:end -->`
 const replaceBlock = (markdown, key, content) => {
@@ -162,12 +177,13 @@ export const syncSiilasCollectionArticle = (markdown, collection, snapshot) => {
     : collection.pagePath === '/rankings/chatgpt/' ? 'chatgpt'
       : collection.pagePath === '/rankings/streaming/' ? 'streaming' : undefined
   if (!field) throw new Error(`不支持的 Siilas 合集：${collection.pagePath}`)
+  const dateModified = getSiilasArticleDateModified(markdown, snapshot.receivedAt)
   let next = syncEvidenceColumn(markdown, collection, snapshot, field)
   next = replaceBlock(next, 'siilas-page-updated', field === 'main'
-    ? `**页面更新：${dateLabel(snapshot.receivedAt)}。**`
-    : `更新时间：${dateLabel(snapshot.receivedAt)}（同步 Siilas 接收快照；各地区实际测试日期见下表，本次没有新增 yp7.net 现场测试）`)
+    ? `**页面更新：${dateLabel(dateModified)}。**`
+    : `更新时间：${dateLabel(dateModified)}（同步 Siilas 接收快照；各地区实际测试日期见下表，本次没有新增 yp7.net 现场测试）`)
   next = replaceBlock(next, 'siilas-collection-evidence', field === 'main'
     ? renderRecommendationEvidence(collection, snapshot) : renderScenarioEvidence(collection, snapshot, field))
   if (field === 'main') next = replaceBlock(next, 'siilas-score-comparison', renderComparison(collection, snapshot))
-  return next === markdown ? next : next.replace(/^dateModified:\s*.+$/m, `dateModified: ${snapshot.receivedAt.replace(/-/g, '/')}`)
+  return syncSiilasArticleDateModified(next, snapshot.receivedAt)
 }

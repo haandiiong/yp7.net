@@ -5,7 +5,7 @@ import { dirname, extname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import vm from 'node:vm'
 import ts from 'typescript'
-import { renderSiilasSummary } from './lib/siilas-article-summary.mjs'
+import { syncSiilasArticleSummary } from './lib/siilas-article-summary.mjs'
 import { applySiilasPublication } from './lib/siilas-publication.mjs'
 import { syncSiilasCollectionArticle } from './lib/siilas-collection-summary.mjs'
 import { loadConfig } from './lib/load-config.mjs'
@@ -55,6 +55,7 @@ const loadSource = (filename) => {
 
 const { airports, MIN_RANKING_REGION_DAYS } = loadSource('src/data/airport-data.ts')
 const { getLatestRegionTests, getLatestExperienceSummary } = loadSource('src/data/test-record-presentation.ts')
+const { TEST_EXPERIENCE_METHODS } = loadSource('src/data/test-experience-schema.mjs')
 const rawAirports = airports.map((airport) => ({
   slug: airport.slug,
   name: airport.name,
@@ -112,6 +113,7 @@ const snapshot = {
     scoreRange: '0–10',
     scoreNotice: '综合评分、分项分数和参评状态直接来自 Siilas 当前计算规则。样本不足为 null，不自行补评分；性价比分项同时受所列计分套餐影响。',
     experienceNotice: 'ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。',
+    experienceMethods: TEST_EXPERIENCE_METHODS,
   },
   airportCount: records.length,
   rawTestCount: records.reduce((count, airport) => count + airport.tests.length, 0),
@@ -134,13 +136,7 @@ const reviewsByPath = new Map(readdirSync(reviewsDir).filter((file) => file.ends
 const articleChanges = records.map((airport) => {
   const article = reviewsByPath.get(airport.yp7Path)
   if (!article) throw new Error(`找不到 ${airport.name} 的 yp7.net 独立文章：${airport.yp7Path}`)
-  const summary = renderSiilasSummary(airport, snapshot)
-  const block = /<!-- siilas-testing:start -->[\s\S]*?<!-- siilas-testing:end -->/
-  const markdown = block.test(article.markdown)
-    ? article.markdown.replace(block, summary)
-    : article.markdown.replace(/^## /m, `${summary}\n\n## `)
-  if (!block.test(markdown)) throw new Error(`无法插入 ${airport.name} 的 Siilas 接收摘要`)
-  return { ...article, markdown: markdown === article.markdown ? markdown : markdown.replace(/^dateModified:\s*.+$/m, `dateModified: ${snapshot.receivedAt.replace(/-/g, '/')}`) }
+  return { ...article, markdown: syncSiilasArticleSummary(article.markdown, airport, snapshot) }
 })
 const { airportCollections } = loadConfig('airport-collections.ts')
 const collectionChanges = ['mainRecommendation', 'chatgpt', 'streaming'].map((key) => {

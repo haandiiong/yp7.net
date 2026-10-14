@@ -1,0 +1,31 @@
+{
+  "vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 1,
+    "high": 1,
+    "critical": 0
+  },
+  "advisories": [
+    {
+      "module": "braces",
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+      "versions": [
+        "3.0.3"
+      ],
+      "dependencyPath": ".>@vuepress/bundler-vite>@vuepress/utils>globby>fast-glob>micromatch>braces",
+      "patched": "<0.0.0"
+    },
+    {
+      "module": "sprintf-js",
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-hp3w-g68c-fv3c",
+      "versions": [
+        "1.0.3"
+      ],
+      "dependencyPath": ".>@vuepress/bundler-vite>@vuepress/core>@vuepress/markdown>@mdit-vue/plugin-frontmatter>gray-matter>js-yaml>argparse>sprintf-js",
+      "patched": "<0.0.0"
+    }
+  ]
+}
