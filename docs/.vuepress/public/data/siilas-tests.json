@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "receivedAt": "2026-10-09",
+  "receivedAt": "2026-10-14",
   "source": {
     "name": "Siilas",
     "origin": "https://siilas.com",
@@ -8,23 +8,68 @@
     "methodologyUrl": "https://siilas.com/methodology/",
     "testedBy": "siilas",
     "relationship": "Siilas 与 yp7.net 由同一站长运营；独立测速指独立于商业资料采集，不是第三方背书。",
-    "publicationStatus": "published",
-    "publicationNotice": "已核对 Siilas 来源正式发布版本。",
+    "publicationStatus": "local-unpublished",
+    "publicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
     "pendingRecords": [],
     "unpublishedTestDates": [],
     "sourceFilesSha256": {
-      "src/data/airport-data.ts": "f72e6f58df82d0a5e852e347756c7a30993890686e2d5487aae439812fb8e289",
+      "src/data/airport-data.ts": "144424057feba9f18a4d11e27aaa8ee1ed147df7838ccb97170c038bd2138eef",
       "src/data/airports.json": "1e69c5b5b59512538737035efeae935befc8ca324850130a914b0f0a0ef9f9b3",
       "src/data/date-schema.ts": "53d619d9ed3afb2586922328af8a74558019a5f05d24bccd9a22927688a0c09f",
       "src/data/date-utils.mjs": "9e850f4933b623046ae64938ab5694be7b3787f1826e2bdd479d1c5752b53220",
-      "src/data/test-record-presentation.ts": "2f848e848079f571e8d94b95dde78c0e1033f2542f5dc7224b1fc7ef461272c3"
+      "src/data/test-experience-schema.mjs": "a75a726e254c2c71825a08dfc23da1e74526eb66e343c1b773dc4c5fdbe0a369",
+      "src/data/test-record-presentation.ts": "668a3e8e96fabedc6fa22bb965a0861b4dd3177c3b639aefbc0d36184e6cd692"
     }
   },
   "methodology": {
     "minimumDaysPerRegion": 3,
     "scoreRange": "0–10",
     "scoreNotice": "综合评分、分项分数和参评状态直接来自 Siilas 当前计算规则。样本不足为 null，不自行补评分；性价比分项同时受所列计分套餐影响。",
-    "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
+    "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。",
+    "experienceMethods": {
+      "confirmedAt": "2026-10-14",
+      "streaming": {
+        "platform": "YouTube",
+        "quality": "4K",
+        "seekCount": 3,
+        "measurement": "拖动后至恢复播放前的缓冲等待"
+      },
+      "chatgpt": {
+        "measurement": "发送消息至开始出现回答的等待",
+        "responseTiers": [
+          {
+            "maxSeconds": 5,
+            "label": "≤ 5 秒",
+            "status": "流畅",
+            "score": 100
+          },
+          {
+            "maxSeconds": 10,
+            "label": "> 5 秒且 ≤ 10 秒",
+            "status": "轻微延迟",
+            "score": 75
+          },
+          {
+            "maxSeconds": 20,
+            "label": "> 10 秒且 ≤ 20 秒",
+            "status": "响应较慢",
+            "score": 50
+          },
+          {
+            "maxSeconds": 30,
+            "label": "> 20 秒且 ≤ 30 秒",
+            "status": "响应严重延迟",
+            "score": 25
+          },
+          {
+            "maxSeconds": null,
+            "label": "超过 30 秒仍未开始回答，或页面无法打开",
+            "status": "不可用",
+            "score": 0
+          }
+        ]
+      }
+    }
   },
   "airportCount": 9,
   "rawTestCount": 135,

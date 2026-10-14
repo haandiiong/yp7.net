@@ -47,6 +47,39 @@ test('unchanged airport evidence still corrects an article date older than the r
   assert.equal(syncSiilasArticleSummary(laterEdit, airport, accepted), laterEdit, 'later manual edits must be preserved')
 })
 
+test('visible airport update labels follow the later editorial date without changing historical review notes', () => {
+  const accepted = { ...snapshot, receivedAt: '2026-10-14' }
+  const airport = snapshot.airports[0]
+  const summary = renderSiilasSummary(airport, accepted)
+  const notes = '（接收 Siilas 记录；套餐标价核对于2026年9月8日，客户端核对于9月9日；本次未重新核价。原样 $& $$ $` $\'）'
+  const historical = '历史核价说明：更新时间：2026年9月8日；商业资料仍沿用原记录。'
+  const labels = (day, month) => [
+    `更新时间：${day}${notes}`,
+    `更新时间：**${day}**${notes}`,
+    `更新时间：${month}${notes}`,
+    `更新时间：**${month}**${notes}`,
+    historical,
+  ]
+  for (const { articleDate, dateModified, day, month } of [
+    // This is the live failure: receipt and frontmatter are already current,
+    // while the visible label still shows the previous receipt's date.
+    { articleDate: '2026/10/14', dateModified: '2026/10/14', day: '2026年10月14日', month: '2026年10月' },
+    { articleDate: '2026/10/09', dateModified: '2026/10/14', day: '2026年10月14日', month: '2026年10月' },
+    { articleDate: '2026/11/02', dateModified: '2026/11/02', day: '2026年11月2日', month: '2026年11月' },
+  ]) {
+    for (const newline of ['\n', '\r\n']) {
+      const page = (date, visible) => [
+        '---', 'title: 测试文章', `dateModified: ${date}`, '---', '',
+        ...visible, '', summary, '', '## 官网', '人工购买说明保留。', '',
+      ].join(newline)
+      const original = page(articleDate, labels('2026年10月9日', '2026年10月'))
+      const current = syncSiilasArticleSummary(original, airport, accepted)
+      assert.equal(current, page(dateModified, labels(day, month)), `${articleDate}: ${JSON.stringify(newline)}`)
+      assert.equal(syncSiilasArticleSummary(current, airport, accepted), current, 'receipt must remain idempotent')
+    }
+  }
+})
+
 test('date writes remain inside the opening frontmatter and preserve line endings', () => {
   const original = "---\r\ntitle: 测试文章\r\ndateModified: '2026-10-08'\r\n---\r\n\r\ndateModified: 2099/01/01\r\n"
   const current = syncSiilasArticleDateModified(original, '2026-10-09')
@@ -55,6 +88,19 @@ test('date writes remain inside the opening frontmatter and preserve line ending
     '---\ntitle: 测试文章\n---\n\ndateModified: 2026/10/08\n',
     '正文\n---\ndateModified: 2026/10/08\n---\n',
   ]) assert.throws(() => syncSiilasArticleDateModified(invalid, '2026-10-09'), /frontmatter 缺少 dateModified/)
+})
+
+test('receipt aligns the introductory visible date while preserving commercial and historical dates', () => {
+  const original = '---\ntitle: 同步日期检查\ndateModified: 2026/10/09\n---\n\n更新时间：**2026年10月9日**（接收数据；套餐核对于9月8日）\n\n## 历史资料\n\n更新时间：2026年8月13日（原测试记录）\n'
+  const expected = original.replace('dateModified: 2026/10/09', 'dateModified: 2026/10/14').replace('**2026年10月9日**', '**2026年10月14日**')
+  assert.equal(syncSiilasArticleDateModified(original, '2026-10-14'), expected)
+  assert.equal(syncSiilasArticleDateModified(expected, '2026-10-14'), expected)
+  const later = expected.replace('dateModified: 2026/10/14', 'dateModified: 2026/10/16').replace('**2026年10月14日**', '**2026年10月16日**')
+  assert.equal(syncSiilasArticleDateModified(later, '2026-10-14'), later)
+  const crlf = original.replace(/\n/g, '\r\n')
+  assert.equal(syncSiilasArticleDateModified(crlf, '2026-10-14'), expected.replace(/\n/g, '\r\n'))
+  const monthOnly = original.replace('**2026年10月9日**', '**2026年9月**')
+  assert.equal(syncSiilasArticleDateModified(monthOnly, '2026-10-14'), expected.replace('**2026年10月14日**', '**2026年10月**'))
 })
 
 test('accepted Siilas evidence has traceable dates, records and rule versions', () => {

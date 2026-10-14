@@ -1,7 +1,7 @@
 ---
 title: 2026 ChatGPT机场记录：9家Siilas节点观察与套餐对比
 createTime: 2026/06/04
-dateModified: 2026/10/09
+dateModified: 2026/10/14
 permalink: /rankings/chatgpt/
 tags:
   - ChatGPT机场
@@ -16,7 +16,7 @@ description: 仅收录Siilas已有原始测速和ChatGPT定性记录的9家机�
 
 <!-- siilas-page-updated:start -->
 
-更新时间：2026年10月9日（同步 Siilas 接收快照；各地区实际测试日期见下表，本次没有新增 yp7.net 现场测试）
+更新时间：2026年10月14日（同步 Siilas 接收快照；各地区实际测试日期见下表，本次没有新增 yp7.net 现场测试）
 
 <!-- siilas-page-updated:end -->
 
@@ -50,9 +50,11 @@ description: 仅收录Siilas已有原始测速和ChatGPT定性记录的9家机�
 
 <!-- siilas-collection-evidence:start -->
 
-2026-10-09 接收 [Siilas 原始记录](https://siilas.com/test/)；最新实际测试日为 2026-10-08。接收与页面编辑没有新增 yp7.net 测试或重新核价。已核对 Siilas 来源正式发布版本。完整记录、测试环境与证据版本见[接收快照](/data/siilas-tests.json)。
+2026-10-14 接收 [Siilas 原始记录](https://siilas.com/test/)；最新实际测试日为 2026-10-08。接收与页面编辑没有新增 yp7.net 测试或重新核价。Siilas 来源更新仍待发布，来源页面可能还是旧版。完整记录、测试环境与证据版本见[接收快照](/data/siilas-tests.json)。
 
 参评状态、综合分与分项分直接采用 Siilas 计算结果；参评要求为四地区各至少 3 个不同测试日。样本日数不等于连续稳定运行天数，综合分不决定本页编辑顺序。[评分方法](https://siilas.com/methodology/)。
+
+**Siilas 已确认的体验方法（2026-10-14）：**ChatGPT：观察发送消息至开始出现回答的等待；5 档为≤ 5 秒＝流畅（100 分）；> 5 秒且 ≤ 10 秒＝轻微延迟（75 分）；> 10 秒且 ≤ 20 秒＝响应较慢（50 分）；> 20 秒且 ≤ 30 秒＝响应严重延迟（25 分）；超过 30 秒仍未开始回答，或页面无法打开＝不可用（0 分）。方法说明不为历史记录补写具体首答秒数、三次缓冲秒数或视频信息；单条记录仍以原始填写内容为准。
 
 以下逐项列出各地区最近一条记录，时间为北京时间；未测试或未记录的字段如实留空。不同地区的日期可能不同，历史样本另列。
 

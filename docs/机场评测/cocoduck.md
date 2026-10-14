@@ -1,7 +1,7 @@
 ---
 title: cocoduck机场套餐与使用指南：17元月付、1天2GB试用及客户端
 createTime: 2026/04/25
-dateModified: 2026/10/09
+dateModified: 2026/10/14
 permalink: /posts/cocoduck-review/
 tags:
   - cocoduck机场
@@ -17,9 +17,9 @@ description: cocoduck机场个人套餐17元/月含100GB，新用户可体验1�
 <!-- siilas-testing:start -->
 ## Siilas 测速与使用体验记录
 
-2026-10-09 接收 [Siilas cocoduck原始记录](https://siilas.com/airport/cocoduck/) **12 条已验证测速**，覆盖 3 个不同测试日，采样跨度为 2026-07-13 至 2026-08-13。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
+2026-10-14 接收 [Siilas cocoduck原始记录](https://siilas.com/airport/cocoduck/) **12 条已验证测速**，覆盖 3 个不同测试日，采样跨度为 2026-07-13 至 2026-08-13。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
 
-已核对 Siilas 来源正式发布版本。完整记录、测试环境与证据见[接收快照](/data/siilas-tests.json)。
+Siilas 来源更新仍待发布，来源页面可能还是旧版。完整记录、测试环境与证据见[接收快照](/data/siilas-tests.json)。
 
 Siilas 当前规则计算的综合评分为 **5.9/10**，参评要求为四地区各至少 3 个不同测试日。评分来自其全部有效样本，含所列性价比计分套餐；它不直接改写 yp7.net 推荐顺序。[查看 Siilas 评分方法](https://siilas.com/methodology/)。
 
@@ -33,6 +33,8 @@ Siilas 当前规则计算的综合评分为 **5.9/10**，参评要求为四地�
 | 美国 | 2026-08-13 22:16 | 0.55 | 95.44 | 628 | 响应较慢 | 缓冲明显 | [Speedtest](https://www.speedtest.net/result/19551536675) · [测速截图](https://siilas.com/evidence/cocoduck/2026-08-13-2216-us-speedtest.png) |
 
 上述最近记录所列代理客户端：FlClash；测速工具：Speedtest Desktop。每条原始记录保留自己的网络、设备和工具字段，未记录的历史条件不套用到新样本。
+
+**Siilas 已确认的体验方法（2026-10-14）：**YouTube 4K 画质：拖动进度条 3 次，分别观察拖动后至恢复播放前的缓冲等待。ChatGPT：观察发送消息至开始出现回答的等待；5 档为≤ 5 秒＝流畅（100 分）；> 5 秒且 ≤ 10 秒＝轻微延迟（75 分）；> 10 秒且 ≤ 20 秒＝响应较慢（50 分）；> 20 秒且 ≤ 30 秒＝响应严重延迟（25 分）；超过 30 秒仍未开始回答，或页面无法打开＝不可用（0 分）。方法说明不为历史记录补写具体首答秒数、三次缓冲秒数或视频信息；单条记录仍以原始填写内容为准。
 
 ChatGPT、流媒体是提交者的定性体验；Speedtest 佐证测速数值，不证明各平台解锁、其他 AI 服务或长期稳定性。Siilas 与 yp7.net 由同一站长运营，不能当作独立第三方背书。
 <!-- siilas-testing:end -->
