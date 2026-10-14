@@ -54,6 +54,7 @@ export const isSponsoredLink = (href = '') => {
   if (!/^https?:\/\//.test(href)) return false
 
   return /(\?|&|#)(code|aff|r|c|from|ref)=/i.test(href)
+    || /^https?:\/\/yp7\.yqhyym\.com(?:[/?#]|$)/i.test(href)
     || /\/\/haandiiong\./i.test(href)
     || /vipaff|aff\.cc|kuailicloudt|sogoyunaff|gsyaff|2maoyunaff|jlcvipaff/i.test(href)
 }

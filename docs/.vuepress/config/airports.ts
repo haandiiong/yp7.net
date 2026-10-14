@@ -450,7 +450,7 @@ export const airportData: AirportData[] = [
       { name: '山水云套餐页', url: 'https://sldm1.ssyylf.com/#/shop', checkedAt: '2026-09-27', link: false },
       { name: '山水云试用规则（站长补充）', url: '/posts/shanshuiyun-review-2026/', checkedAt: '2026-10-05', link: false },
       { name: '山水云客户端教程', url: 'https://sldm1.ssyylf.com/#/docs', checkedAt: '2026-09-27', link: false },
-      { name: '山水云官网邀请入口', url: 'https://sldm1.ssyylf.com/#/register?code=nhEZN9EI', checkedAt: '2026-09-27' },
+      { name: '山水云官网邀请入口（站长更新）', url: 'https://yp7.yqhyym.com', checkedAt: '2026-10-14' },
     ],
   },
   {
@@ -1016,7 +1016,7 @@ export const mainRecommendationData = mainRecommendationNames.map((name) => {
 // Date of the last full review; partial updates retain their per-source checkedAt dates.
 export const airportDataLastReviewed = '2026-08-19'
 // Advance for actual changes to current data or its classification, not historical test dates.
-export const airportDataLastModified = '2026-10-10'
+export const airportDataLastModified = '2026-10-14'
 
 export const getAirportPriceMetrics = (airports: readonly AirportData[]) => {
   const visible = airports.filter(isVisibleAirport)
