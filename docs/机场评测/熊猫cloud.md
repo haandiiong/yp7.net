@@ -1,7 +1,7 @@
 ---
 title: 熊猫cloud机场套餐与订阅指南：6元300GB月付、设备限制与365天流量包
 createTime: 2026/09/27
-dateModified: 2026/10/05
+dateModified: 2026/10/17
 permalink: /posts/xiongmaocloud-review-2026/
 tags:
   - 熊猫cloud机场
@@ -154,5 +154,5 @@ description: 熊猫cloud机场6元月付含300GB，10元600GB、15元1200GB，�
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [秒秒云机场怎么样？](/posts/miaomiaoyun-review-2026/)
-- [山水云机场怎么样？](/posts/shanshuiyun-review-2026/)
+- [杏花云机场怎么样？](/posts/xinghuayun-review-2026/)
 - [99吧机场怎么样？](/posts/99ba-review-2026/)

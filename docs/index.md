@@ -1,7 +1,7 @@
 ---
-title: 最新科学上网工具与机场推荐（VPN、翻墙、梯子）｜yp7.net
-description: 科学上网工具与机场推荐：按Android、iPhone、Mac、Windows选择FlClash或Clash Mi客户端，了解Flybit套餐价格、注册试用1天2GB、订阅导入与节点连接，查看机场合集和使用教程。
-dateModified: 2026/09/28
+title: 科学上网工具下载与客户端安装教程｜yp7.net
+description: 按Android、iPhone、Mac、Windows选择FlClash或Clash Mi客户端，查看项目发布页、应用商店、安装教程与机场订阅导入步骤，学习节点连接和排错；比较价格、试用及购买限制可查看2026机场推荐主榜。
+dateModified: 2026/10/17
 pageLayout: page
 article: false
 sidebar: false

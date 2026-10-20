@@ -1,0 +1,20 @@
+{
+  "auditDate": "2026-10-17",
+  "tests": 84,
+  "buildPages": 109,
+  "htmlFiles": 112,
+  "internalLinksAndAnchorsChecked": 7900,
+  "brokenLinks": 0,
+  "duplicateIds": 0,
+  "xxyunOneOffPackageVerified": {
+    "priceCny": 66.66,
+    "trafficGb": 500,
+    "unitPriceCnyPerGb": 0.133
+  },
+  "legacyWangjiAnchorsPreserved": 2,
+  "jiuyunAndYinxingrenDirectLinksPreserved": true,
+  "merchantAccountDetailsNotExported": true,
+  "localPreviewVisualCheck": false,
+  "committed": false,
+  "published": false
+}

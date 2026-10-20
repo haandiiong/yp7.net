@@ -111,7 +111,7 @@ const getDisplayNameFromTitle = (title, fallback) => {
   return match?.[1] || fallback
 }
 
-const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hiddenAirportStatuses) => {
+export const renderEvidenceSection = (airport, airportDataLastReviewed, displayName, hiddenAirportStatuses) => {
   if (hiddenAirportStatuses.has(airport.status)) {
     const rows = [
       ['风险复核时间', formatDate(airportDataLastReviewed)],
@@ -270,11 +270,11 @@ const stripManagedBottomSections = (content) => {
   return content.slice(0, Math.min(...sectionStarts)).trimEnd()
 }
 
-const upsertEvidenceSection = (content, evidenceSection) => {
+export const upsertEvidenceSection = (content, evidenceSection) => {
   const existingEvidencePattern = /\n## [^\n]*(?:测评证据区|推荐依据与历史测试记录|套餐资料与历史记录|套餐与使用资料汇总|风险依据与资料记录)\n[\s\S]*?(?=\n## |$)/
 
   if (existingEvidencePattern.test(content)) {
-    return content.replace(existingEvidencePattern, `\n${evidenceSection}\n`)
+    return content.replace(existingEvidencePattern, () => `\n${evidenceSection}\n`)
   }
 
   const insertBeforePattern = /\n## (FAQ|.*常见问题|总结)\b/

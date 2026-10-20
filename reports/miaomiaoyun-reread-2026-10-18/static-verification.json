@@ -1,0 +1,92 @@
+{
+  "verifiedOn": "2026-10-18",
+  "scope": "Local generated HTML/data filesystem validation only; canonical data URLs resolved to generated artifacts using existing redirects. No browser or network.",
+  "htmlPages": 112,
+  "linkCounts": {
+    "internalHref": 7913,
+    "fragmentLinks": 2417,
+    "external": 1100
+  },
+  "linkErrors": [],
+  "duplicateIds": [],
+  "missingOriginalHeadingAnchors": [],
+  "checks": [
+    {
+      "name": "all 20 original article heading anchors preserved",
+      "passed": true
+    },
+    {
+      "name": "detail current product 29.90",
+      "passed": true
+    },
+    {
+      "name": "detail current product 49.90",
+      "passed": true
+    },
+    {
+      "name": "detail current product 365天",
+      "passed": true
+    },
+    {
+      "name": "detail current product 88元",
+      "passed": true
+    },
+    {
+      "name": "detail current product 一次性",
+      "passed": true
+    },
+    {
+      "name": "detail current product 36",
+      "passed": true
+    },
+    {
+      "name": "detail current product 72",
+      "passed": true
+    },
+    {
+      "name": "detail current product 108",
+      "passed": true
+    },
+    {
+      "name": "detail current product 180",
+      "passed": true
+    },
+    {
+      "name": "detail current product 348",
+      "passed": true
+    },
+    {
+      "name": "detail current product 100G/月",
+      "passed": true
+    },
+    {
+      "name": "current 88 one-off conflict exported, no unit cost",
+      "passed": true
+    },
+    {
+      "name": "40 candidates, 3 package conflicts",
+      "passed": true
+    },
+    {
+      "name": "posts/jichang-heji/index.html current total40",
+      "passed": true
+    },
+    {
+      "name": "rankings/no-expiry/index.html current total40",
+      "passed": true
+    },
+    {
+      "name": "catalogue no-expiry percentage70",
+      "passed": true
+    },
+    {
+      "name": "Jiuyun direct standalone link",
+      "passed": true
+    },
+    {
+      "name": "Yinxingren direct standalone link",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

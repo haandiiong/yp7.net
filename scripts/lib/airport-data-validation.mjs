@@ -1,3 +1,7 @@
+import { loadConfig } from './load-config.mjs'
+
+const { splitMarkdownTableRow } = loadConfig('markdown-table.ts')
+
 const entities = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' }
 const plainText = (value) => value.replace(/<[^>]*>/g, '')
   .replace(/&(#x[\da-f]+|#\d+|amp|lt|gt|quot|apos|nbsp);/gi, (entity, key) => (
@@ -24,7 +28,7 @@ export const htmlTables = (html) => [...html.matchAll(/<table\b[^>]*>([\s\S]*?)<
 })
 
 export const markdownTables = (markdown) => [...markdown.matchAll(/(?:^\|[^\n]*\|\n)+/gm)].map((table) => {
-  const lines = table[0].trim().split('\n').map((line) => line.slice(1, -1).split(/(?<!\\)\|/).map((cell) => cell.trim()))
+  const lines = table[0].trim().split('\n').map(splitMarkdownTableRow)
   const text = (value) => plainText(value.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\\\|/g, '|'))
   return makeRows(lines[0], lines.slice(2), text, (cell) => [...cell.matchAll(/\]\(([^)]+)\)/g)].map((match) => match[1]))
 })

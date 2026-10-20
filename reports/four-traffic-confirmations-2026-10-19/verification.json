@@ -1,0 +1,363 @@
+{
+  "checkedAt": "2026-10-19T05:13:10.008Z",
+  "baselinePath": "reports/four-traffic-confirmations-2026-10-19/before.json",
+  "scope": "Read-only shared-data protection verification; only this verification.json was written. No site modification, build, sync, or browser action performed.",
+  "passed": true,
+  "failures": [],
+  "checks": {
+    "rawCount58Unchanged": true,
+    "identityAndOrderUnchanged": true,
+    "onlyExpectedFourAirportsChanged": true,
+    "onlySummaryRiskInformationSourcesChanged": true,
+    "allPriceTrafficCapabilityPerformanceFieldsUnchanged": true,
+    "mainSevenHashAndOrderUnchanged": true,
+    "collectionsHashUnchanged": true,
+    "rawSiilasHashUnchanged": true,
+    "metricsUnchanged": true,
+    "noExpiry40IdentityAndOrderUnchanged": true,
+    "onlyYunjiexianMiaomiaoyunNoExpiryChanged": true,
+    "noExpiryAmountsDeviceLimitsAndOfficialDatesUnchanged": true,
+    "confirmedNoExpiryValuesCostsAndDates": true,
+    "noConflictingNoExpiryRecords": true,
+    "yuntuNoExpiryFalseAndNoPackageEntry": true,
+    "fullReviewStillAugust19": true,
+    "partialModificationOctober19": true,
+    "allOriginalInformationSourcesAndDatesPreserved": true,
+    "fourNewUserSourcesDatedOctober19": true
+  },
+  "airportData": {
+    "beforeCount": 58,
+    "afterCount": 58,
+    "changed": [
+      {
+        "name": "光速云",
+        "path": "/posts/guangsuyun/",
+        "fields": [
+          "risk",
+          "summary",
+          "informationSources"
+        ]
+      },
+      {
+        "name": "秒秒云",
+        "path": "/posts/miaomiaoyun-review-2026/",
+        "fields": [
+          "risk",
+          "summary",
+          "informationSources"
+        ]
+      },
+      {
+        "name": "云图",
+        "path": "/posts/yuntu-review-2026/",
+        "fields": [
+          "risk",
+          "summary",
+          "informationSources"
+        ]
+      },
+      {
+        "name": "云界线",
+        "path": "/posts/yunjiexian-review-2026/",
+        "fields": [
+          "risk",
+          "summary",
+          "informationSources"
+        ]
+      }
+    ],
+    "allowedChangedFields": [
+      "summary",
+      "risk",
+      "informationSources"
+    ],
+    "protectedFields": [
+      "price",
+      "priceText",
+      "regularPrice",
+      "regularPriceText",
+      "traffic",
+      "trial",
+      "noExpiry",
+      "dedicatedClient",
+      "universalSubscription",
+      "subscriptionClients",
+      "scenarios",
+      "performance"
+    ],
+    "protectedFieldCounts": {
+      "price": 58,
+      "priceText": 58,
+      "regularPrice": 58,
+      "regularPriceText": 58,
+      "traffic": 58,
+      "trial": 58,
+      "noExpiry": 58,
+      "dedicatedClient": 58,
+      "universalSubscription": 58,
+      "subscriptionClients": 58,
+      "scenarios": 58,
+      "performance": 58
+    },
+    "protectedViolations": []
+  },
+  "hashes": {
+    "main7": {
+      "before": "4d4441d619f13d58ace2fe36c27d0b4f939db2e56f92c0e3b15086db2f7ef118",
+      "after": "4d4441d619f13d58ace2fe36c27d0b4f939db2e56f92c0e3b15086db2f7ef118",
+      "names": [
+        "Flybit",
+        "xxyun",
+        "网际快车",
+        "全球云",
+        "拼好连",
+        "九云",
+        "阿达西"
+      ]
+    },
+    "collections": {
+      "path": "docs/.vuepress/config/airport-collections.ts",
+      "before": "af60e15079b4c0470e495655bbe6bef39079b42017201c02b7d413dfc18a09f8",
+      "after": "af60e15079b4c0470e495655bbe6bef39079b42017201c02b7d413dfc18a09f8"
+    },
+    "siilasRaw": {
+      "path": "docs/.vuepress/config/data/siilas-tests.json",
+      "sourceLocator": "scripts/sync-siilas-tests.mjs:15; docs/.vuepress/config/siilas-evidence.ts:1",
+      "before": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+      "after": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad"
+    }
+  },
+  "metrics": {
+    "before": {
+      "count": 57,
+      "trialCount": 11,
+      "noExpiryCount": 40,
+      "noExpiryUnverifiedCount": 0,
+      "dedicatedClientCount": 39,
+      "universalSubscriptionCount": 42,
+      "cheapUnderTenCount": 12,
+      "averagePrice": 17.4,
+      "regularCheapUnderTenCount": 12,
+      "regularAveragePrice": 17.6,
+      "performanceCount": 6,
+      "salesSampleCount": 17
+    },
+    "after": {
+      "count": 57,
+      "trialCount": 11,
+      "noExpiryCount": 40,
+      "noExpiryUnverifiedCount": 0,
+      "dedicatedClientCount": 39,
+      "universalSubscriptionCount": 42,
+      "cheapUnderTenCount": 12,
+      "averagePrice": 17.4,
+      "regularCheapUnderTenCount": 12,
+      "regularAveragePrice": 17.6,
+      "performanceCount": 6,
+      "salesSampleCount": 17
+    }
+  },
+  "dates": {
+    "fullReview": "2026-08-19",
+    "partialModification": "2026-10-19"
+  },
+  "noExpiryPackages": {
+    "beforeCount": 40,
+    "afterCount": 40,
+    "changed": [
+      {
+        "path": "/posts/yunjiexian-review-2026/",
+        "fields": [
+          "trafficGb",
+          "trafficText",
+          "status",
+          "validity",
+          "ownerConfirmedAt",
+          "ownerConfirmedScope"
+        ],
+        "before": {
+          "priceCny": 99,
+          "trafficGb": null,
+          "priceText": "99元",
+          "trafficText": "卡片80GB／正文300GB（冲突）",
+          "status": "conflicting",
+          "deviceLimit": "不限客户端数量",
+          "validity": "标注不限时，不按月刷新、用完重购；交付额度待核实；另有199元200GB包",
+          "checkedAt": "2026-10-18",
+          "ownerConfirmedAt": "2026-10-18",
+          "ownerConfirmedScope": "卡片价格"
+        },
+        "after": {
+          "priceCny": 99,
+          "trafficGb": 80,
+          "priceText": "99元",
+          "trafficText": "80GB",
+          "status": "listed",
+          "deviceLimit": "不限客户端数量",
+          "validity": "永久总量，不按月刷新，用完重购；重购余量处理待核；另有199元200GB包",
+          "checkedAt": "2026-10-18",
+          "ownerConfirmedAt": "2026-10-19",
+          "ownerConfirmedScope": "99元包一次性80GB",
+          "unitPriceCnyPerGb": 1.238,
+          "sourcePage": "/posts/yunjiexian-review-2026/",
+          "currency": "CNY",
+          "billing": "one-off"
+        },
+        "cells": [
+          "99元",
+          "80GB",
+          "1.238元/GB",
+          "不限客户端数量",
+          "永久总量，不按月刷新，用完重购；重购余量处理待核；另有199元200GB包",
+          "2026-10-18官网；2026-10-19站长确认99元包一次性80GB"
+        ]
+      },
+      {
+        "path": "/posts/miaomiaoyun-review-2026/",
+        "fields": [
+          "trafficGb",
+          "trafficText",
+          "status",
+          "validity",
+          "ownerConfirmedAt",
+          "ownerConfirmedScope"
+        ],
+        "before": {
+          "priceCny": 88,
+          "trafficGb": null,
+          "priceText": "88元",
+          "trafficText": "商品100GB／正文100GB每月（冲突）",
+          "status": "conflicting",
+          "deviceLimit": "3台同时在线",
+          "validity": "一次性付款，标注不限时流量；正文100G/月的额度与刷新待确认；29.9/49.9元365天包不计入",
+          "checkedAt": "2026-10-18"
+        },
+        "after": {
+          "priceCny": 88,
+          "trafficGb": 100,
+          "priceText": "88元",
+          "trafficText": "100GB",
+          "status": "listed",
+          "deviceLimit": "3台同时在线",
+          "validity": "一次性总量，不限时，用完为止，不按月发放；重购余量处理待核；29.9/49.9元365天包不计入",
+          "checkedAt": "2026-10-18",
+          "ownerConfirmedAt": "2026-10-19",
+          "ownerConfirmedScope": "88元包一次性100GB",
+          "unitPriceCnyPerGb": 0.88,
+          "sourcePage": "/posts/miaomiaoyun-review-2026/",
+          "currency": "CNY",
+          "billing": "one-off"
+        },
+        "cells": [
+          "88元",
+          "100GB",
+          "0.880元/GB",
+          "3台同时在线",
+          "一次性总量，不限时，用完为止，不按月发放；重购余量处理待核；29.9/49.9元365天包不计入",
+          "2026-10-18官网；2026-10-19站长确认88元包一次性100GB"
+        ]
+      }
+    ],
+    "expectedChecks": [
+      {
+        "path": "/posts/yunjiexian-review-2026/",
+        "expected": {
+          "price": 99,
+          "traffic": 80,
+          "unitPrice": 1.238,
+          "unitPriceCell": "1.238元/GB"
+        },
+        "actual": {
+          "price": 99,
+          "traffic": 80,
+          "unitPrice": 1.238,
+          "unitPriceCell": "1.238元/GB",
+          "status": "listed",
+          "checkedAt": "2026-10-18",
+          "ownerConfirmedAt": "2026-10-19"
+        },
+        "passed": true
+      },
+      {
+        "path": "/posts/miaomiaoyun-review-2026/",
+        "expected": {
+          "price": 88,
+          "traffic": 100,
+          "unitPrice": 0.88,
+          "unitPriceCell": "0.880元/GB"
+        },
+        "actual": {
+          "price": 88,
+          "traffic": 100,
+          "unitPrice": 0.88,
+          "unitPriceCell": "0.880元/GB",
+          "status": "listed",
+          "checkedAt": "2026-10-18",
+          "ownerConfirmedAt": "2026-10-19"
+        },
+        "passed": true
+      }
+    ],
+    "priceDeviceDateViolations": [],
+    "conflictingRecords": [],
+    "yuntu": {
+      "noExpiry": false,
+      "hasEntry": false
+    }
+  },
+  "sources": {
+    "checkedAirportCount": 58,
+    "originalPreserved": true,
+    "violations": [],
+    "additions": [
+      {
+        "name": "光速云",
+        "path": "/posts/guangsuyun/",
+        "additions": [
+          {
+            "name": "光速云68元量子版500GB每月（用户补充确认）",
+            "url": "/posts/guangsuyun/",
+            "checkedAt": "2026-10-19",
+            "link": false
+          }
+        ]
+      },
+      {
+        "name": "秒秒云",
+        "path": "/posts/miaomiaoyun-review-2026/",
+        "additions": [
+          {
+            "name": "秒秒云88元包一次性总量100GB（用户补充确认）",
+            "url": "/posts/miaomiaoyun-review-2026/",
+            "checkedAt": "2026-10-19",
+            "link": false
+          }
+        ]
+      },
+      {
+        "name": "云图",
+        "path": "/posts/yuntu-review-2026/",
+        "additions": [
+          {
+            "name": "云图119元每月100GB持续12个月（用户补充确认）",
+            "url": "/posts/yuntu-review-2026/",
+            "checkedAt": "2026-10-19",
+            "link": false
+          }
+        ]
+      },
+      {
+        "name": "云界线",
+        "path": "/posts/yunjiexian-review-2026/",
+        "additions": [
+          {
+            "name": "云界线99元包一次性80GB（用户补充确认）",
+            "url": "/posts/yunjiexian-review-2026/",
+            "checkedAt": "2026-10-19",
+            "link": false
+          }
+        ]
+      }
+    ]
+  }
+}

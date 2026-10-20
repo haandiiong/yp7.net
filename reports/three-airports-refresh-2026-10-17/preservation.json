@@ -1,0 +1,20 @@
+{
+  "auditDate": "2026-10-17",
+  "changedServiceRecords": [
+    "xxyun",
+    "网际快车",
+    "全球云"
+  ],
+  "otherServiceRecordsPreserved": 55,
+  "unchangedFieldsForTargets": "price, priceText, traffic, capabilities, scenarios, status, sales and historical evidence",
+  "unchangedSiilasSnapshotSha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+  "unchangedDetailSiilasBlocks": {
+    "xxyun.md": "42e465478ac34dd7d1302f73e243dee493be93a55b84eadb216ef76ca644c352",
+    "网际快车.md": "27e20433c0684f304656e09295a6796eba6b10b30dbc77070f52c4495311389d",
+    "全球云.md": "ec27b1e6fed75f98ff04131369d12f598628d47f691debeb29c77eca7257861f"
+  },
+  "collectionsUnchanged": true,
+  "lastModified": "2026-10-17",
+  "lastFullReview": "2026-08-19",
+  "otherVisibleServiceRecordsPreserved": 54
+}

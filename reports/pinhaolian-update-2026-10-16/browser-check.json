@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-16",
+  "checks": [
+    { "path": "/posts/runway-review-2026/", "width": 390, "pageScrollWidth": 390, "pricingColumns": 5, "pricingContainerWidth": 342, "pricingTableWidth": 700, "packageNameWhiteSpace": "nowrap", "testedScrollLeft": 358 },
+    { "path": "/posts/jichang-buying-guide/", "width": 390, "pageScrollWidth": 390, "renewalExampleVisible": true },
+    { "path": "/posts/jichang-tuijian/", "width": 390, "pageScrollWidth": 390, "pinhaolianVisible": true },
+    { "path": "/posts/runway-review-2026/", "width": 1280, "pageScrollWidth": 1280, "pinhaolianVisible": true, "macLimitVisible": true, "shadowrocketRouteVisible": true },
+    { "path": "/posts/jichang-buying-guide/", "width": 1280, "pageScrollWidth": 1280, "pinhaolianVisible": true },
+    { "path": "/posts/jichang-tuijian/", "width": 1280, "pageScrollWidth": 1280, "pinhaolianVisible": true, "macLimitVisible": true },
+    { "path": "/rankings/clash/", "width": 1280, "pageScrollWidth": 1280, "pinhaolianVisible": true, "shadowrocketRouteVisible": true }
+  ],
+  "observedConsoleErrors": [],
+  "temporaryViewportReset": true,
+  "limitations": "仅检查当前主题，未做明暗主题矩阵；未测试商家客户端或节点性能。"
+}

@@ -240,6 +240,7 @@ export const getPageSchema = (page: any) => {
   const articleSection = getArticleSection(page)
   const topics = getPageTopics(page)
   const wordCount = getWordCount(page.content)
+  const breadcrumbItems = getBreadcrumbItems(page)
 
   return {
     '@context': 'https://schema.org',
@@ -320,11 +321,11 @@ export const getPageSchema = (page: any) => {
             }
           : {}),
       },
-      {
+      ...(breadcrumbItems.length > 1 ? [{
         '@type': 'BreadcrumbList',
         '@id': `${canonicalUrl}#breadcrumb`,
-        itemListElement: getBreadcrumbItems(page),
-      },
+        itemListElement: breadcrumbItems,
+      }] : []),
       ...getAirportServiceSchemas(page),
       ...(generatedItemListSchema ? [generatedItemListSchema] : []),
       ...extraSchemas,

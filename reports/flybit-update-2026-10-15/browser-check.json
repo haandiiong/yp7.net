@@ -1,0 +1,20 @@
+{
+  "desktop": {
+    "columns": 7,
+    "containerWidth": 784,
+    "overflow": false,
+    "rows": 4,
+    "tableWidth": 784,
+    "width": 1440
+  },
+  "mobile": {
+    "columns": 7,
+    "containerWidth": 342,
+    "headingTop": 64.1953125,
+    "overflow": false,
+    "rows": 4,
+    "tableWidth": 700,
+    "width": 390
+  },
+  "errors": []
+}

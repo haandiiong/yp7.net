@@ -1,7 +1,9 @@
 import { getSiilasArticleDateModified, syncSiilasArticleDateModified } from './siilas-article-date.mjs'
 import { renderSiilasExperienceMethods } from './siilas-experience-methods.mjs'
+import { loadConfig } from './load-config.mjs'
 
-const cell = (value) => String(value ?? '未记录').replace(/\|/g, '\\|').replace(/\n/g, ' ')
+const { splitMarkdownTableRow, escapeMarkdownTableCell } = loadConfig('markdown-table.ts')
+const cell = (value) => escapeMarkdownTableCell(value ?? '未记录')
 const pending = (test) => test?.publication?.status === 'pending'
   || test?.publication?.evidenceVersions?.some((image) => image.status === 'pending')
 const dateLabel = (date) => date.replace(/^(\d{4})-(\d{2})-(\d{2})$/, (_, year, month, day) => `${year}年${Number(month)}月${Number(day)}日`)
@@ -38,9 +40,83 @@ export const siilasExperienceSummary = (airport, field) => {
 const receiptNotice = (snapshot) => `${snapshot.receivedAt} 接收 [Siilas 原始记录](${snapshot.source.archiveUrl})；最新实际测试日为 ${snapshot.latestTestAt ?? '未记录'}。接收与页面编辑没有新增 yp7.net 测试或重新核价。${snapshot.source.publicationNotice}完整记录、测试环境与证据版本见[接收快照](/data/siilas-tests.json)。`
 const scoreNotice = (snapshot) => `参评状态、综合分与分项分直接采用 Siilas 计算结果；参评要求为四地区各至少 ${snapshot.methodology.minimumDaysPerRegion} 个不同测试日。样本日数不等于连续稳定运行天数，综合分不决定本页编辑顺序。[评分方法](${snapshot.source.methodologyUrl})。`
 
-const recommendationCell = (airport) => airport
-  ? `[分区最新样本](${airport.sourceUrl})；${siilasRankingStatus(airport)}<br>ChatGPT：${siilasExperienceSummary(airport, 'chatgpt')}<br>视频：${siilasExperienceSummary(airport, 'streaming')}`
-  : '套餐与客户端资料；暂无已接收 Siilas 测速'
+const recommendationCell = (airport) => {
+  if (!airport) return '套餐与客户端资料；暂无已接收 Siilas 测速'
+  const days = new Set(airport.tests.map(recordedDate).filter(Boolean)).size
+  const pendingCount = airport.tests.filter(pending).length
+  return `[最近实际测试：${latestEvidenceDate(airport) ?? '暂无测速证据日期'}](${airport.sourceUrl})<br>${airport.tests.length}条原始记录；${days}个不同测试日${pendingCount ? `；${pendingCount}条待发布` : ''}`
+}
+
+const recordedDate = (test) => /^\d{4}-\d{2}-\d{2}$/.test(test?.testedAt ?? '') ? test.testedAt : undefined
+// Match Siilas latestTestAt/latestRegionTests: a raw entry needs a Speedtest
+// result or its main screenshot. Publication status is a separate distinction.
+const hasTestEvidence = (test) => Boolean(test?.resultUrl || test?.evidenceImage)
+const latestEvidenceDate = (airport) => airport.tests.filter(hasTestEvidence).map(recordedDate).filter(Boolean).sort().at(-1)
+const measuredNumber = (value) => Number.isFinite(value) && value >= 0
+
+const regionalCoverage = (airport) => {
+  const regions = airport.latestRegionTests ?? []
+  if (!regions.length) return '地区摘要未记录'
+  const tested = regions.filter(({ test }) => test)
+  const missing = regions.filter(({ test }) => !test).map(({ region }) => region)
+  const dates = new Set(tested.map(({ test }) => recordedDate(test)).filter(Boolean))
+  const undated = tested.filter(({ test }) => !recordedDate(test)).map(({ region }) => region)
+  return [
+    `${tested.length}/${regions.length}个所列地区有最近样本`,
+    dates.size > 1 ? '最近日期混合，不能视为同一轮对照' : dates.size ? '有日期的最近样本同日，未确认同条件' : '',
+    ...(missing.length ? [`${missing.join('、')}未测试`] : []),
+    ...(undated.length ? [`${undated.join('、')}日期未记录`] : []),
+  ].filter(Boolean).join('；')
+}
+
+const missingMeasurements = (tests) => {
+  if (!tests.length) return '暂无原始记录，不统计指标缺口'
+  const missing = (label, predicate) => {
+    const count = tests.filter((test) => !predicate(test)).length
+    return `${label}：${count ? `${count}/${tests.length}条未记录` : '每条均有记录'}`
+  }
+  const completeBuffers = (test) => Array.isArray(test.streamingTest?.seekBufferingSeconds)
+    && test.streamingTest.seekBufferingSeconds.length === 3 && test.streamingTest.seekBufferingSeconds.every(measuredNumber)
+  const incompleteBuffers = tests.filter((test) => !completeBuffers(test)).length
+  const partialBuffers = tests.filter((test) => !completeBuffers(test)
+    && Array.isArray(test.streamingTest?.seekBufferingSeconds) && test.streamingTest.seekBufferingSeconds.some(measuredNumber)).length
+  return [
+    missing('丢包', (test) => measuredNumber(test.packetLossPercent) && test.packetLossPercent <= 100),
+    missing('抖动', (test) => measuredNumber(test.jitterMs)),
+    missing('首答秒数', (test) => measuredNumber(test.chatgptTest?.firstResponseSeconds)),
+    `三次缓冲秒数：${incompleteBuffers ? `${incompleteBuffers}/${tests.length}条未完整记录${partialBuffers ? `（含${partialBuffers}条部分计时）` : ''}` : '每条均完整记录'}`,
+  ].join('<br>')
+}
+
+const renderRecommendationCoverage = (collection, snapshot) => [
+  '### 本页候选的证据覆盖与缺口',
+  '',
+  '下表统计本页候选的全部原始记录及指标缺口，含尚无测速证据的记录；最近有测速证据日只取有 Speedtest 链接或主截图的记录。同日补录会增加条数，不增加不同测试日数；日期跨度不代表连续观测或连续稳定天数。',
+  '',
+  '<div class="recommendation-evidence">',
+  '',
+  '| 机场 | 原始记录与测试日 | 最近有测速证据日 | 地区覆盖与日期关系 | 指标记录缺口 |',
+  '| --- | --- | --- | --- | --- |',
+  ...collection.items.map((item) => {
+    const airport = recordFor(item, snapshot)
+    if (!airport) return `| ${cell(item.name)} | 未接收 | 未接收 | 暂无已接收地区记录 | 暂无已接收原始记录，不统计指标缺口 |`
+    const tests = airport.tests
+    const days = new Set(tests.map(recordedDate).filter(Boolean)).size
+    const undated = tests.filter((test) => !recordedDate(test)).length
+    const pendingCount = tests.filter(pending).length
+    return `| ${[
+      `[${item.name}](${airport.sourceUrl})`,
+      `${tests.length}条原始记录；${days}个不同测试日${undated ? `；${undated}条日期未记录` : ''}${pendingCount ? `；${pendingCount}条待发布` : ''}`,
+      latestEvidenceDate(airport) ?? '未记录', regionalCoverage(airport), missingMeasurements(tests),
+    ].map(cell).join(' | ')} |`
+  }),
+  '',
+  '</div>',
+  '',
+  '缺口按原始数值字段统计；null或没有填写表示未记录，不能当作实测0。只有“流畅”等状态不算具体首答或缓冲计时；三次缓冲须保留三项实际数值，部分计时不补齐。地区最近日期混合或缺测时保留原状；同日样本也不自动构成同条件对照。',
+  '',
+  '来源稳定性分与速度分按其样本和计算口径解读，不是长期可用率或连续稳定天数，也不是跨机场同条件的公平速度名次。',
+].join('\n')
 
 const renderRecommendationEvidence = (collection, snapshot) => {
   const experienceMethods = renderSiilasExperienceMethods(snapshot)
@@ -50,27 +126,42 @@ const renderRecommendationEvidence = (collection, snapshot) => {
   scoreNotice(snapshot),
   '',
   ...(experienceMethods ? [experienceMethods, ''] : []),
-  '下表的“当日覆盖”只统计最新测试日；其他地区仍保留各自最近日期。ChatGPT 和视频状态见上方对比表，具体时分与证据见单机场页。',
+  '下表的最新测试日与“当日覆盖”只统计有 Speedtest 链接或主截图的记录；无测速证据的新记录不推进该日期，待发布状态另行标注。其他地区仍保留各自最近日期。ChatGPT 和视频状态在后表分别列出，具体时分与证据见单机场页。',
   '',
   '| 机场 | 最新测试日 | 当日覆盖 | 各地区最近样本日期 | 参评状态与综合分 |',
   '| --- | --- | --- | --- | --- |',
   ...collection.items.map((item) => {
     const airport = recordFor(item, snapshot)
     if (!airport) return `| ${cell(item.name)} | 未接收 | — | 暂无可引用的 Siilas 测速 | 暂无综合评分 |`
-    const current = airport.tests.filter((test) => test.testedAt === airport.latestTestAt)
-    const regions = airport.latestRegionTests.filter(({ test }) => test && test.testedAt === airport.latestTestAt).map(({ region }) => region)
+    const latestDate = latestEvidenceDate(airport)
+    const current = airport.tests.filter((test) => hasTestEvidence(test) && latestDate && recordedDate(test) === latestDate)
+    const regions = airport.latestRegionTests.filter(({ test }) => hasTestEvidence(test) && latestDate && recordedDate(test) === latestDate).map(({ region }) => region)
     const dates = new Map()
     for (const { region, test } of airport.latestRegionTests) {
-      const date = test ? `${test.testedAt}${pending(test) ? '（待发布）' : ''}` : '未测试'
+      const date = test ? `${recordedDate(test) ?? '日期未记录'}${pending(test) ? '（待发布）' : ''}` : '未测试'
       if (!dates.has(date)) dates.set(date, [])
       dates.get(date).push(region)
     }
     return `| ${[
-      `[${item.name}](${airport.sourceUrl})`, airport.latestTestAt,
+      `[${item.name}](${airport.sourceUrl})`, latestDate ?? '未记录',
       `${regions.join('、') || '地区未记录'}，${current.length}条${current.some(pending) ? '（含待发布）' : ''}`,
       [...dates].map(([date, areas]) => `${date} ${areas.join('、')}`).join('；'), siilasRankingStatus(airport),
     ].map(cell).join(' | ')} |`
   }),
+  '',
+  '### 各地区的 ChatGPT 与视频观察',
+  '',
+  '| 机场 | ChatGPT 最近分区观察 | 视频最近分区观察 |',
+  '| --- | --- | --- |',
+  ...collection.items.map((item) => {
+    const airport = recordFor(item, snapshot)
+    return `| ${[
+      airport ? `[${item.name}](${airport.sourceUrl})` : item.name,
+      siilasExperienceSummary(airport, 'chatgpt'), siilasExperienceSummary(airport, 'streaming'),
+    ].map(cell).join(' | ')} |`
+  }),
+  '',
+  renderRecommendationCoverage(collection, snapshot),
   '',
   experienceMethods
     ? `ChatGPT、视频列是测试者当次提交的体验；Speedtest 核对吞吐与延迟，不能由测速数值推导平台可用性。已确认的 ${snapshot.methodology.experienceMethods.streaming.platform} ${snapshot.methodology.experienceMethods.streaming.quality} 缓冲观察不证明 Netflix、Disney+、TikTok、其他 AI 平台可用或长期稳定性。更细的记录见[ChatGPT证据页](/rankings/chatgpt/)和[流媒体证据页](/rankings/streaming/)。`
@@ -150,14 +241,14 @@ const syncEvidenceColumn = (markdown, collection, snapshot, field) => {
   if (headingIndex < 0) throw new Error(`缺少合集标题：${collection.heading}`)
   const tableIndex = lines.findIndex((line, index) => index > headingIndex && line.startsWith('|'))
   if (tableIndex < 0) throw new Error(`缺少合集候选表：${collection.pagePath}`)
-  const split = (line) => line.split(/(?<!\\)\|/)
-  const headers = split(lines[tableIndex]).map((part) => part.trim())
+  const headers = splitMarkdownTableRow(lines[tableIndex])
   const target = headers.indexOf(field === 'main' ? '测试依据' : field === 'chatgpt' ? 'ChatGPT观察' : '视频观察')
   const nameIndex = headers.indexOf('机场')
   if (target < 0 || nameIndex < 0) throw new Error(`缺少合集测试列：${collection.pagePath}`)
   const seen = new Set()
   for (let index = tableIndex + 2; index < lines.length && lines[index].startsWith('|'); index += 1) {
-    const parts = split(lines[index])
+    const parts = splitMarkdownTableRow(lines[index])
+    if (parts.length !== headers.length) throw new Error(`合集候选表列数不一致：${collection.pagePath} 第${index + 1}行`)
     const name = parts[nameIndex].trim().match(/^\[([^\]]+)\]\(/)?.[1]
     const item = collection.items.find((candidate) => candidate.name === name)
     if (!item || seen.has(item.path)) throw new Error(`合集候选表含未知或重复机场：${name}`)
@@ -165,8 +256,8 @@ const syncEvidenceColumn = (markdown, collection, snapshot, field) => {
     const airport = recordFor(item, snapshot)
     const summary = field === 'main' ? recommendationCell(airport)
       : `${siilasExperienceSummary(airport, field)}<br>${siilasRankingStatus(airport)}`
-    parts[target] = ` ${cell(summary)} `
-    lines[index] = parts.join('|')
+    parts[target] = cell(summary)
+    lines[index] = `| ${parts.join(' | ')} |`
   }
   if (seen.size !== collection.items.length) throw new Error(`合集候选表与编辑名单不一致：${collection.pagePath}`)
   return lines.join('\n')

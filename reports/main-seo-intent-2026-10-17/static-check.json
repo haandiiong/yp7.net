@@ -1,0 +1,107 @@
+{
+  "pages": [
+    {
+      "route": "/",
+      "title": "科学上网工具下载与客户端安装教程｜yp7.net",
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "canonical": [
+        "https://yp7.net/"
+      ],
+      "h1": [
+        "科学上网工具下载与客户端安装"
+      ]
+    },
+    {
+      "route": "/posts/jichang-tuijian/",
+      "title": "2026机场推荐：7款机场优缺点、价格与试用对比 | yp7.net",
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "canonical": [
+        "https://yp7.net/posts/jichang-tuijian/"
+      ],
+      "h1": [
+        "2026机场推荐：7款机场优缺点、价格与试用对比"
+      ]
+    },
+    {
+      "route": "/blog/",
+      "title": "博客 | yp7.net",
+      "robots": [
+        "noindex, follow"
+      ],
+      "canonical": [
+        "https://yp7.net/blog/"
+      ],
+      "h1": []
+    },
+    {
+      "route": "/blog/tags/",
+      "title": "标签 | yp7.net",
+      "robots": [
+        "noindex, follow"
+      ],
+      "canonical": [
+        "https://yp7.net/blog/tags/"
+      ],
+      "h1": []
+    },
+    {
+      "route": "/blog/categories/",
+      "title": "分类 | yp7.net",
+      "robots": [
+        "noindex, follow"
+      ],
+      "canonical": [
+        "https://yp7.net/blog/categories/"
+      ],
+      "h1": []
+    },
+    {
+      "route": "/blog/archives/",
+      "title": "归档 | yp7.net",
+      "robots": [
+        "noindex, follow"
+      ],
+      "canonical": [
+        "https://yp7.net/blog/archives/"
+      ],
+      "h1": []
+    }
+  ],
+  "h2Order": [
+    "快速导航",
+    "2026机场推荐对比",
+    "7款机场逐项说明",
+    "机场推荐怎么选",
+    "为什么精选这7款机场",
+    "测试证据摘要",
+    "机场推荐常见问题",
+    "推荐原则与商业披露",
+    "更新记录",
+    "相关阅读"
+  ],
+  "internalLinksChecked": 569,
+  "linkErrors": [],
+  "sitemapEntries": 103,
+  "rawRecordsAndCommercialDataPreserved": true,
+  "browserVisualCheck": "blocked: computer-use browser transport unavailable; no screenshot or mobile overflow verification claimed",
+  "previewOpenRequest": "queued in right-side browser",
+  "foldedSections": [
+    {
+      "summary": "查看历史综合分与分项：按接收时的套餐计分",
+      "open": false
+    },
+    {
+      "summary": "历史引用：9月28日与10月5日查阅时的样本",
+      "open": false
+    },
+    {
+      "summary": "展开页面修改记录与资料核验日期",
+      "open": false
+    }
+  ],
+  "previewHttpStatus": 200
+}

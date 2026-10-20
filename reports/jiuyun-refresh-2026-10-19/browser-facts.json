@@ -1,0 +1,187 @@
+{
+  "checkedAt": "2026-10-19",
+  "method": "Native Chrome UI through cua_repl; selected existing logged-in Jiuyun tab. Read cards, payment menus, five tutorials and announcement. No account-identifying fields or personal subscription links retained.",
+  "shopUrl": "https://216.236.63.122/#/shop",
+  "plans": [
+    {
+      "name": "365天500G流量包",
+      "payment": "one-off",
+      "price": 19.9,
+      "totalTrafficGb": 500,
+      "validityDays": 365,
+      "devices": 3
+    },
+    {
+      "name": "365天1000G流量包",
+      "payment": "one-off",
+      "price": 29.9,
+      "totalTrafficGb": 1000,
+      "validityDays": 365,
+      "devices": 5
+    },
+    {
+      "name": "月付150G",
+      "cardTrafficGb": 150,
+      "devices": 3,
+      "prices": {
+        "month": 6,
+        "quarter": 18,
+        "halfYear": 36,
+        "year": 72
+      },
+      "cyclePricesObservedInMenu": true,
+      "monthlyRefreshSource": "2026-09-22 prior reading; current card did not repeat refresh rule"
+    },
+    {
+      "name": "月付300G",
+      "cardTrafficGb": 300,
+      "devices": 4,
+      "prices": {
+        "month": 9,
+        "quarter": 27,
+        "halfYear": 54,
+        "year": 108
+      },
+      "cyclePricesObservedInMenu": true,
+      "monthlyRefreshSource": "2026-09-22 prior reading; current card did not repeat refresh rule"
+    },
+    {
+      "name": "月付600G",
+      "cardTrafficGb": 600,
+      "devices": 5,
+      "prices": {
+        "month": 16,
+        "quarter": 48,
+        "halfYear": 96,
+        "year": 192
+      },
+      "cyclePricesObservedInMenu": true,
+      "monthlyRefreshSource": "2026-09-22 prior reading; current card did not repeat refresh rule"
+    },
+    {
+      "name": "年付200G特惠",
+      "price": 68,
+      "payment": "year",
+      "cardTrafficGb": 200,
+      "devices": 3,
+      "otherPeriodsObserved": false
+    },
+    {
+      "name": "季付200G特惠",
+      "price": 18,
+      "payment": "quarter",
+      "cardTrafficGb": 200,
+      "devices": 3
+    },
+    {
+      "name": "年付400G特惠",
+      "price": 88,
+      "payment": "year",
+      "cardTrafficGb": 400,
+      "devices": 4
+    },
+    {
+      "name": "不限时100G",
+      "price": 36,
+      "payment": "one-off",
+      "totalTrafficGb": 100,
+      "devices": 3
+    },
+    {
+      "name": "不限时300G",
+      "price": 99,
+      "payment": "one-off",
+      "totalTrafficGb": 300,
+      "devices": 3
+    }
+  ],
+  "clients": {
+    "directoryUrl": "https://216.236.63.122/#/knowledge",
+    "directoryCount": 7,
+    "readDocuments": [
+      {
+        "id": 6,
+        "title": "Clash Verge computer",
+        "documentDate": "2026-09-21",
+        "tutorialVersion": "2.4.7"
+      },
+      {
+        "id": 5,
+        "title": "Mac Clash Verge",
+        "documentDate": "2026-09-21",
+        "architectures": [
+          "Apple Silicon",
+          "Intel"
+        ],
+        "tutorialVersion": "2.4.7"
+      },
+      {
+        "id": 7,
+        "title": "Android Clash Meta",
+        "documentDate": "2026-09-21",
+        "tutorialVersion": "2.11.24"
+      },
+      {
+        "id": 8,
+        "title": "Karing",
+        "documentDate": "2026-09-21",
+        "systems": [
+          "Windows",
+          "Android/Harmony",
+          "iOS",
+          "Mac"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "iOS Shadowrocket use",
+        "documentDate": "2026-08-14"
+      }
+    ],
+    "importButtons": [
+      "Shadowrocket",
+      "Clash",
+      "Sing-box",
+      "Surge",
+      "Quantumult X",
+      "Surfboard"
+    ],
+    "installedOrImported": false
+  },
+  "announcement": {
+    "url": "https://216.236.63.122/#/dashboard",
+    "publishedAt": null,
+    "maintenance": "Update or reimport subscription after maintenance; uses relative yesterday without a date; no current availability validation",
+    "coupon": {
+      "code": "9yun",
+      "discount": "20% off",
+      "eligiblePlans": null,
+      "expiresAt": null,
+      "stacking": null,
+      "checkoutVerified": false
+    }
+  },
+  "priorRules": {
+    "checkedAt": "2026-09-22",
+    "freeTrial": false,
+    "refund": false,
+    "periodicRefresh": "every 30 days",
+    "notReconfirmedInCurrentCards": true
+  },
+  "unresolved": [
+    "bandwidth cap",
+    "billing multiplier",
+    "carryover and renewal/change-plan residual handling",
+    "coupon scope/expiry/settlement"
+  ],
+  "actionsNotPerformed": [
+    "purchase",
+    "checkout",
+    "payment",
+    "coupon redemption",
+    "private subscription copying",
+    "download",
+    "install",
+    "connection test"
+  ]
+}

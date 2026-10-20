@@ -1,10 +1,12 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { join, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { loadConfig } from './lib/load-config.mjs'
 
 const root = process.cwd()
 const airportsPath = join(root, 'docs/.vuepress/config/airports.ts')
 const checkOnly = process.argv.includes('--check')
+const { splitMarkdownTableRow, escapeMarkdownTableCell } = loadConfig('markdown-table.ts')
 
 const fail = (message) => {
   console.error(message)
@@ -16,7 +18,7 @@ const normalizeRoute = (path) => {
   return path.endsWith('/') ? path : `${path}/`
 }
 
-const parseMarkdownTable = (lines, tableStart) => {
+export const parseMarkdownTable = (lines, tableStart) => {
   const tableLines = []
 
   for (let index = tableStart; index < lines.length; index += 1) {
@@ -25,17 +27,17 @@ const parseMarkdownTable = (lines, tableStart) => {
     tableLines.push(lines[index])
   }
 
-  const parseLine = (line) => line
-    .trim()
-    .replace(/^\|/, '')
-    .replace(/\|$/, '')
-    .split('|')
-    .map((cell) => cell.trim())
-
-  const headers = parseLine(tableLines[0] || '')
+  const headers = splitMarkdownTableRow(tableLines[0] || '')
+  const dividerCells = splitMarkdownTableRow(tableLines[1] || '')
+  if (!headers.length || dividerCells.length !== headers.length || dividerCells.some((cell) => !/^:?-+:?$/.test(cell))) {
+    throw new Error('Markdown table headers and divider must have matching columns')
+  }
   const divider = tableLines[1] || `| ${headers.map(() => '---').join(' | ')} |`
   const rows = tableLines.slice(2).map((line) => {
-    const cells = parseLine(line)
+    const cells = splitMarkdownTableRow(line)
+    if (cells.length !== headers.length) {
+      throw new Error(`Markdown table has ${cells.length} cells; expected ${headers.length}: ${line}`)
+    }
     return Object.fromEntries(headers.map((header, index) => [header, cells[index] || '']))
   })
 
@@ -65,7 +67,8 @@ const clientSummary = (airport) => {
 // The first line is shared data; subsequent lines remain editorial notes.
 const withEditorialNotes = (value, previous = '') => {
   const separator = previous.match(/<br\s*\/?\s*>/i)
-  return separator ? `${value}${previous.slice(separator.index)}` : value
+  const firstLine = String(value).replace(/\r\n|\r|\n/g, ' ')
+  return separator ? `${firstLine}${previous.slice(separator.index)}` : firstLine
 }
 
 const scenarioLabels = {
@@ -168,7 +171,7 @@ const syncRecommendationScope = (content) => {
   const recordedNames = new Set(airportCollections.chatgpt.items.map((airport) => airport.name))
   const recommendations = airportCollections.mainRecommendation.items
   const recordedCount = recommendations.filter((airport) => recordedNames.has(airport.name)).length
-  const scope = `本站已整理[${visibleAirportData.length}家机场资料](/posts/jichang-heji/)，本页按客户端、预算与套餐周期精选${recommendations.length}款，其中${recordedCount}款附[Siilas带日期测试记录](#测试证据摘要)。`
+  const scope = `本站已整理[${visibleAirportData.length}家机场资料](/posts/jichang-heji/)，本页按客户端、预算与套餐周期精选${recommendations.length}款。**证据覆盖：${recordedCount}/${recommendations.length}款有[Siilas带日期测试记录](#测试证据摘要)，${recommendations.length - recordedCount}款暂无已接收测速。**`
   const pattern = /<!-- recommendation-scope:start -->[\s\S]*?<!-- recommendation-scope:end -->/
   if (!pattern.test(content)) fail('docs/机场推荐/机场推荐.md: missing recommendation scope markers')
 
@@ -176,12 +179,12 @@ const syncRecommendationScope = (content) => {
   return content.replace(pattern, `<!-- recommendation-scope:start -->\n\n${scope}\n\n<!-- recommendation-scope:end -->`)
 }
 
-const renderTable = ({ headers, divider, rows }, airports, config) => config.noExpiryComparison ? [
-  `| ${noExpiryColumns.join(' | ')} |`,
+export const renderTable = ({ headers, divider, rows }, airports, config) => config.noExpiryComparison ? [
+  `| ${noExpiryColumns.map(escapeMarkdownTableCell).join(' | ')} |`,
   `| ${noExpiryColumns.map(() => '---').join(' | ')} |`,
-  ...airports.map((airport) => `| [${airport.name}](${airport.path}) | ${getNoExpiryCells(airport.path).join(' | ')} |`),
+  ...airports.map((airport) => `| ${[`[${airport.name}](${airport.path})`, ...getNoExpiryCells(airport.path)].map(escapeMarkdownTableCell).join(' | ')} |`),
 ].join('\n') : [
-  `| ${headers.join(' | ')} |`,
+  `| ${headers.map(escapeMarkdownTableCell).join(' | ')} |`,
   divider,
   ...airports.map((airport, index) => {
     const existingRow = rows.find((row) => {
@@ -199,7 +202,7 @@ const renderTable = ({ headers, divider, rows }, airports, config) => config.noE
       fail(`${config.filePath}: missing manual value for ${airport.name} ${header}`)
     })
 
-    return `| ${cells.join(' | ')} |`
+    return `| ${cells.map(escapeMarkdownTableCell).join(' | ')} |`
   }),
 ].join('\n')
 
@@ -237,22 +240,26 @@ const syncTable = (config) => {
   return next !== original
 }
 
-if (!existsSync(airportsPath)) fail(`Missing ${airportsPath}`)
+const syncAirportTables = () => {
+  if (!existsSync(airportsPath)) fail(`Missing ${airportsPath}`)
 
-const changedFiles = [...new Set(tableConfigs
-  .filter((config) => syncTable(config))
-  .map((config) => config.filePath))]
+  const changedFiles = [...new Set(tableConfigs
+    .filter((config) => syncTable(config))
+    .map((config) => config.filePath))]
 
-if (checkOnly && changedFiles.length) {
-  console.error('Airport tables are out of sync:')
-  changedFiles.forEach((filePath) => console.error(`- ${filePath}`))
-  console.error('Run node scripts/sync-airport-tables.mjs.')
-  process.exit(1)
+  if (checkOnly && changedFiles.length) {
+    console.error('Airport tables are out of sync:')
+    changedFiles.forEach((filePath) => console.error(`- ${filePath}`))
+    console.error('Run node scripts/sync-airport-tables.mjs.')
+    process.exit(1)
+  }
+
+  if (changedFiles.length) {
+    console.log(`Synced ${changedFiles.length} airport table files.`)
+    changedFiles.forEach((filePath) => console.log(`- ${filePath}`))
+  } else {
+    console.log('Airport tables are in sync.')
+  }
 }
 
-if (changedFiles.length) {
-  console.log(`Synced ${changedFiles.length} airport table files.`)
-  changedFiles.forEach((filePath) => console.log(`- ${filePath}`))
-} else {
-  console.log('Airport tables are in sync.')
-}
+if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) syncAirportTables()

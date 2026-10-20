@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-17",
+  "resolvedFindings": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8"
+  ],
+  "tests": {
+    "total": 84,
+    "passed": 84,
+    "failed": 0
+  },
+  "staticHtmlFiles": 112,
+  "validBreadcrumbLists": 108,
+  "homepageBreadcrumb": "omitted",
+  "datasetsWithoutUnverifiedLicense": 3,
+  "renderedPageDatesChecked": 4,
+  "directDetailLinksPreserved": {
+    "九云": 1,
+    "隐形人": 3
+  },
+  "protectedSourceHashesMatchReviewBaseline": {
+    "docs/.vuepress/config/airports.ts": "a4f81a99e90f790bd880ffdbab3fcf69ae4fe4bb3d8eb063de230c2fcf4b1e81",
+    "docs/.vuepress/config/airport-collections.ts": "af60e15079b4c0470e495655bbe6bef39079b42017201c02b7d413dfc18a09f8",
+    "docs/.vuepress/config/no-expiry-packages.ts": "21211ee65c3e961ac123e5da53fb40a41c13d3bcaa0c81566a88eb35fff48b66",
+    "docs/.vuepress/config/siilas-evidence.ts": "14954cdb671545df16b17d0da8195910e3c1bdef8e51d1ae97bdae4dc5f12fd1",
+    "docs/.vuepress/config/data/siilas-tests.json": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad"
+  },
+  "rawTestRecords": 135,
+  "rawSnapshotReceiptDate": "2026-10-14",
+  "visualVerification": {
+    "completed": false,
+    "reason": "Existing browser security policy block; static source and build artifacts checked."
+  },
+  "committed": false,
+  "published": false
+}

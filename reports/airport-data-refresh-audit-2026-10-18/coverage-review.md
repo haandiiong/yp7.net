@@ -1,0 +1,22 @@
+# 非主推资料覆盖审阅 — 2026年10月18日
+
+当前项目证据审查；本轮未重新访问各商家后台或验证客户端。未改网站内容。
+
+| 对象 | 后续应取得的数据 | 现稿定位 |
+|---|---|---|
+| 二猫云 | 20元正文与40/80元卡片、年付8折与8.5折，逐档订单与活动规则 | [二猫云:43](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/二猫云.md:43) |
+| 速界 | 光速500/499G、长周期整笔报价、重置日和结转 | [速界:46](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/速界.md:46)、[速界:49](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/速界.md:49) |
+| 快狸 | 季290元高于月95元×3的当前报价；年价不符统一8折，不擅自改价 | [快狸:46](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/快狸.md:46) |
+| 99吧 | 近期波动影响与恢复证据；24.99/24.9等小数及长周期最终价 | [99吧:23](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/99吧.md:23)、[99吧:101](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/99吧.md:101)、[99吧:120](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/99吧.md:120) |
+| 唯兔云、一翻云、跨界云 | 节日活动可购状态、截止、人群；无日期的2天后不据此推算停售 | [唯兔云:35](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/唯兔云.md:35)、[一翻云:48](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/一翻云.md:48)、[跨界云:61](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/跨界云.md:61) |
+| 坦克云 | 49元不限量与2999元永久尊享的限速/FUP/设备、试用领取起算 | [坦克加速:33](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/坦克加速.md:33)、[坦克加速:70](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/坦克加速.md:70) |
+| SSONE、跨界云 | SSONE1小时试用额度/节点；跨界20GB期限与起算 | [ssone:50](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/ssone.md:50)、[跨界云:132](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/跨界云.md:132) |
+| Firefly、无忧链接 | 客服订阅格式/领取条件；一次性包设备、重购与重置规则 | [Firefly:58](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/Firefly.md:58)、[Firefly:70](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/Firefly.md:70)、[无忧链接:48](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/无忧链接.md:48) |
+| 灵猫网络、榴莲云 | 订阅具体格式、加油包、9折基数、ll88适用/期限/叠加 | [灵猫网络:41](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/灵猫网络.md:41)、[灵猫网络:85](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/灵猫网络.md:85)、[榴莲云:55](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/榴莲云.md:55) |
+| cocoduck、SSONE、光年梯 | iOS/OpenWrt开发状态与版本矩阵；SSONE所称iOS Clash应用和鸿蒙版本；光年Android V7/V8同链 | [cocoduck:84](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/cocoduck.md:84)、[ssone:65](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/ssone.md:65)、[光年梯:139](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/光年梯.md:139) |
+| 冲上云霄、隐云、UUONE、极连云 | 长周期中途刷新、首次季度整笔报价、FUP/限速、重购结转、重置费用 | [冲上云霄:38](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/冲上云霄.md:38)、[隐云:28](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/隐云.md:28)、[uuone:35](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/uuone.md:35)、[极连云:35](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/极连云.md:35) |
+| Tidal、闪电鼠、环球梯 | Tidal倒计时明确截止/最终价，sd88适用叠加，HQ66份额与当前条件 | [Tidal潮汐加速:50](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/Tidal潮汐加速.md:50)、[闪电鼠:55](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/闪电鼠.md:55)、[环球梯:61](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/环球梯.md:61) |
+
+来源日期两处局部差异：UUONE页首9月28日与正文/共享9月27日不一致（[uuone:16](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/uuone.md:16)、[uuone:68](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/uuone.md:68)）；一翻云页首9月28日与正文/共享9月27日不一致（[一翻云:20](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/一翻云.md:20)、[一翻云:26](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/一翻云.md:26)、[一翻云:32](/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/一翻云.md:32)）。应查原记录后统一，不将其当作商家规则变化。
+
+坦克云10月18日、山水云10月14日只更新邀请，不代表套餐与教程同期复核；实际套餐来源仍分别9月23日、27日。99吧套餐、试用和教程已于10月17日重读，不再整组列为过期。

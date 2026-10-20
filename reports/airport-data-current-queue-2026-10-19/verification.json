@@ -1,0 +1,18 @@
+{
+  "auditedAt": "2026-10-19",
+  "protectedSourceFiles": 472,
+  "sourceFilesChanged": [],
+  "sourceFilesAdded": [],
+  "sourceFilesRemoved": [],
+  "checks": {
+    "tables": "passed",
+    "reviewSections": "passed",
+    "generatedData": "passed",
+    "collectionFormats": "passed: 9 collections, 57 services, JSON/Markdown/HTML/Schema",
+    "contentHealth": "passed: 104 markdown files",
+    "siilasAcceptedSnapshot": "passed: 9 airports, 135 records"
+  },
+  "reportLinkErrors": [],
+  "reportLineErrors": [],
+  "passed": true
+}

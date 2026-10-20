@@ -2,6 +2,8 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { extname, join, relative } from 'node:path'
 import { loadConfig } from './lib/load-config.mjs'
 
+const { splitMarkdownTableRow } = loadConfig('markdown-table.ts')
+
 const root = process.cwd()
 const docsDir = join(root, 'docs')
 const publicDir = join(root, 'docs/.vuepress/public')
@@ -343,17 +345,21 @@ const getMarkdownTableAfterHeading = (filePath, heading) => {
 
 const parseMarkdownTable = (filePath, heading) => {
   const tableLines = getMarkdownTableAfterHeading(filePath, heading)
-  if (!tableLines || tableLines.length < 2) return undefined
+  if (!tableLines) return undefined
+  if (tableLines.length < 2) {
+    errors.push(`${filePath} ${heading}: Markdown table is missing its header divider`)
+    return undefined
+  }
 
-  const parseLine = (line) => line
-    .replace(/^\|/, '')
-    .replace(/\|$/, '')
-    .split('|')
-    .map((cell) => cell.trim())
-
-  const headers = parseLine(tableLines[0])
-  const rows = tableLines.slice(2).map((line) => {
-    const cells = parseLine(line)
+  const headers = splitMarkdownTableRow(tableLines[0])
+  const parsedRows = tableLines.slice(2).map(splitMarkdownTableRow)
+  const divider = splitMarkdownTableRow(tableLines[1])
+  if (divider.length !== headers.length || divider.some((cell) => !/^:?-+:?$/.test(cell)) || parsedRows.some((cells) => cells.length !== headers.length)) {
+    errors.push(`${filePath} ${heading}: Markdown table column counts differ`)
+    return undefined
+  }
+  const rows = parsedRows.map((rawCells) => {
+    const cells = rawCells.map((cell) => cell.replace(/\\\|/g, '|'))
     return Object.fromEntries(headers.map((header, index) => [header, cells[index] || '']))
   })
 

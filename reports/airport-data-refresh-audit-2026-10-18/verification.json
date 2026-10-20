@@ -1,0 +1,42 @@
+{
+  "auditedAt": "2026-10-18",
+  "visibleServices": 57,
+  "sourceFilesCompared": 130,
+  "changedWebsiteSourceFiles": [],
+  "managedTables": "in-sync",
+  "managedReviewSections": "in-sync",
+  "generatedPublicData": "in-sync",
+  "consistency": {
+    "pages": 9,
+    "services": 57,
+    "formats": [
+      "JSON",
+      "Markdown",
+      "HTML",
+      "Schema"
+    ],
+    "passed": true
+  },
+  "contentHealth": {
+    "markdownFiles": 104,
+    "passed": true
+  },
+  "siilas": {
+    "airports": 9,
+    "rawRecords": 135,
+    "receivedAt": "2026-10-14",
+    "latestTestAt": "2026-10-08",
+    "check": "passed",
+    "publicHeaderAndLatestListingMatched": true,
+    "rawDataChanged": false
+  },
+  "auditFindingCount": 16,
+  "sourceMetadataIssues": 3,
+  "websiteModified": false,
+  "buildRun": false,
+  "published": false,
+  "reportLocalReferences": {
+    "reportsChecked": 3,
+    "missing": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-17",
+  "readOnlySourceFilesVerified": 472,
+  "changedSourceFiles": [],
+  "findings": {
+    "P2": 4,
+    "P3": 4
+  },
+  "dependencyAdvisories": {
+    "high": 1,
+    "moderate": 1,
+    "patchedVersionsAvailable": false
+  },
+  "verification": {
+    "tests": 75,
+    "typecheck": "passed",
+    "buildPages": 109,
+    "htmlFiles": 112,
+    "internalLinks": 7893,
+    "internalAssetReferences": 814
+  },
+  "visualVerification": {
+    "completed": false,
+    "reason": "Browser security policy rejected the local preview read because URL protocol authority was not granted."
+  }
+}

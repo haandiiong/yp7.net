@@ -1,0 +1,58 @@
+{
+  "source": "CUA本地最终构建页面观察",
+  "checks": [
+    {
+      "page": "/posts/runway-review-2026/",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "pinhaolianCandidatePresent": true,
+      "currentFactsVerified": true
+    },
+    {
+      "page": "/posts/jichang-tuijian/",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "pinhaolianCandidatePresent": true,
+      "currentFactsVerified": true
+    },
+    {
+      "page": "/rankings/trial/",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "pinhaolianCandidatePresent": true,
+      "currentFactsVerified": true
+    },
+    {
+      "page": "/rankings/cheap/",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "pinhaolianCandidatePresent": false,
+      "currentFactsVerified": true
+    },
+    {
+      "page": "/rankings/dedicated-client/",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "pinhaolianCandidatePresent": false,
+      "currentFactsVerified": true
+    },
+    {
+      "page": "/rankings/no-expiry/",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "pinhaolianCandidatePresent": true,
+      "currentFactsVerified": true
+    },
+    {
+      "page": "/posts/runway-review-2026/",
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "planContainerWidth": 342,
+      "planTableWidth": 700,
+      "trial1Day6GbPresent": true
+    }
+  ],
+  "observedConsoleErrors": [],
+  "viewportReset": true,
+  "temporaryTabClosed": true
+}

@@ -1,0 +1,211 @@
+{
+  "checkedAt": "2026-10-19T13:57:37.224Z",
+  "baselinePath": "reports/jiuyun-coupon-client-fix-2026-10-19/before.json",
+  "confirmationPath": "reports/jiuyun-coupon-client-fix-2026-10-19/confirmation.json",
+  "finalScopeClarificationApplied": true,
+  "scope": "Read-only verification after final user scope clarification; only this report was written. No source edits, browser action, build, sync, payment or test performed.",
+  "passed": true,
+  "failures": [],
+  "checks": {
+    "count58Unchanged": true,
+    "identityAndOrderUnchanged": true,
+    "onlyJiuyunAllowedFieldsChanged": true,
+    "other57RecordsEntirelyUnchanged": true,
+    "protectedFieldsUnchangedAcross58": true,
+    "noExpiry40RecordsEntirelyUnchanged": true,
+    "metricsUnchanged": true,
+    "mainSevenHashUnchanged": true,
+    "collectionsHashUnchanged": true,
+    "rawSiilasHashUnchanged": true,
+    "clientArrayExactlySixObservedMenuItems": true,
+    "tutorialOnlyNamesNotInOneClickArray": true,
+    "oldSourcesPreserved": true,
+    "exactlyOneNewUserSourceOctober19": true,
+    "noAddedPerformanceOrSiilasRecord": true,
+    "fullReviewStillAugust19": true,
+    "partialModificationOctober19": true
+  },
+  "airportData": {
+    "beforeCount": 58,
+    "afterCount": 58,
+    "changed": [
+      {
+        "name": "九云",
+        "path": "/posts/jiuyun-review-2026/",
+        "fields": [
+          "risk",
+          "summary",
+          "subscriptionClients",
+          "informationSources"
+        ]
+      }
+    ],
+    "protectedFields": [
+      "price",
+      "priceText",
+      "traffic",
+      "trial",
+      "noExpiry",
+      "dedicatedClient",
+      "universalSubscription",
+      "performance"
+    ],
+    "protectedFieldCounts": {
+      "price": 58,
+      "priceText": 58,
+      "traffic": 58,
+      "trial": 58,
+      "noExpiry": 58,
+      "dedicatedClient": 58,
+      "universalSubscription": 58,
+      "performance": 58
+    },
+    "protectedViolations": []
+  },
+  "noExpiryPackages": {
+    "beforeCount": 40,
+    "afterCount": 40,
+    "allRecordsUnchanged": true
+  },
+  "metrics": {
+    "before": {
+      "count": 57,
+      "trialCount": 11,
+      "noExpiryCount": 40,
+      "noExpiryUnverifiedCount": 0,
+      "dedicatedClientCount": 39,
+      "universalSubscriptionCount": 42,
+      "cheapUnderTenCount": 12,
+      "averagePrice": 17.4,
+      "regularCheapUnderTenCount": 12,
+      "regularAveragePrice": 17.6,
+      "performanceCount": 6,
+      "salesSampleCount": 17
+    },
+    "after": {
+      "count": 57,
+      "trialCount": 11,
+      "noExpiryCount": 40,
+      "noExpiryUnverifiedCount": 0,
+      "dedicatedClientCount": 39,
+      "universalSubscriptionCount": 42,
+      "cheapUnderTenCount": 12,
+      "averagePrice": 17.4,
+      "regularCheapUnderTenCount": 12,
+      "regularAveragePrice": 17.6,
+      "performanceCount": 6,
+      "salesSampleCount": 17
+    }
+  },
+  "hashes": {
+    "main7": {
+      "before": "4d4441d619f13d58ace2fe36c27d0b4f939db2e56f92c0e3b15086db2f7ef118",
+      "after": "4d4441d619f13d58ace2fe36c27d0b4f939db2e56f92c0e3b15086db2f7ef118",
+      "names": [
+        "Flybit",
+        "xxyun",
+        "网际快车",
+        "全球云",
+        "拼好连",
+        "九云",
+        "阿达西"
+      ]
+    },
+    "collections": {
+      "path": "docs/.vuepress/config/airport-collections.ts",
+      "before": "af60e15079b4c0470e495655bbe6bef39079b42017201c02b7d413dfc18a09f8",
+      "after": "af60e15079b4c0470e495655bbe6bef39079b42017201c02b7d413dfc18a09f8"
+    },
+    "siilasRaw": {
+      "path": "docs/.vuepress/config/data/siilas-tests.json",
+      "before": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+      "after": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad"
+    }
+  },
+  "clients": {
+    "browserFactsPath": "reports/jiuyun-refresh-2026-10-19/browser-facts.json",
+    "expectedObservedMenu": [
+      "Shadowrocket",
+      "Clash",
+      "Sing-box",
+      "Surge",
+      "Quantumult X",
+      "Surfboard"
+    ],
+    "actual": [
+      "Shadowrocket",
+      "Clash",
+      "Sing-box",
+      "Surge",
+      "Quantumult X",
+      "Surfboard"
+    ],
+    "tutorialOnlyNames": [
+      "Clash Verge",
+      "Clash Meta",
+      "Karing"
+    ],
+    "tutorialTextChecks": {
+      "clashVergeWindowsAndMac": true,
+      "androidClashMeta": true,
+      "karingManualUrl": true,
+      "shadowrocketManualUrl": true,
+      "menuReadingNotExecution": true
+    },
+    "markdownPath": "docs/机场评测/九云.md"
+  },
+  "coupon": {
+    "code": "9yun",
+    "discount": 0.8,
+    "confirmedAt": "2026-10-19",
+    "excluded": [
+      {
+        "price": 19.9,
+        "totalTrafficGb": 500,
+        "validityDays": 365
+      },
+      {
+        "price": 29.9,
+        "totalTrafficGb": 1000,
+        "validityDays": 365
+      }
+    ],
+    "eligible": "The remaining six periodic products and the 36 yuan 100GB / 99 yuan 300GB no-expiry products",
+    "usageLimitMeaning": "unlimited number of uses",
+    "checks": {
+      "confirmationDated19": true,
+      "confirmedCodeAndDiscount": true,
+      "exactlyTwo365DayPackagesExcluded": true,
+      "summaryExplicitOnlyTwoExcluded": true,
+      "summaryExplicitSixPeriodicAndTwoNoExpiryEligible": true,
+      "riskExplicitOnlyTwo365DayExcluded": true,
+      "unlimitedNumberOfUses": true,
+      "expiryStackingSettlementStillUnknown": true,
+      "articleExplicitTwoExcludedEightEligible": true,
+      "articleNoNewVisitOrPayment": true,
+      "articleStillListsUndiscountedPrices": true
+    },
+    "unconfirmed": [
+      "截止日期",
+      "其他优惠叠加",
+      "实际结算金额"
+    ]
+  },
+  "informationSources": {
+    "missingOrAlteredOldSources": [],
+    "newSources": [
+      {
+        "name": "九云9yun八折码适用范围与次数（用户补充确认）",
+        "url": "/posts/jiuyun-review-2026/",
+        "checkedAt": "2026-10-19",
+        "link": false
+      }
+    ]
+  },
+  "currentSummary": "10月19日官网重读10款：月付6元150GB、9元300GB、16元600GB，分别3/4/5台；季18元200GB、年68元200GB各3台，年88元400GB改4台。新365天总量500GB19.90元3台、1000GB29.90元5台，不计不限时；另有36元100GB、99元300GB不限时各3台。三档月度各周期总价已读，周期每30天刷新及无试用/不退款仍据9月22日旧资料，当前列表未重述。已读Clash Verge电脑/Mac、Clash Meta安卓、Karing与Shadowrocket教程，后台另列六类导入按钮，未实操。无日期公告提示维护后更新订阅及8折券9yun；10月19日用户补充确认8折码9yun仅排除19.90元500GB和29.90元1000GB两款365天流量包，六款周期商品及36元100GB、99元300GB不限时包均可用，不限制使用次数。截止日期、优惠叠加与实际结算未核；未新增测速。",
+  "currentRisk": "不支持试用和退款仍据9月22日；9yun仅排除19.90/29.90元两款365天包、次数不限，截止、叠加及结算待核；当前带宽、倍率和重购余量未列",
+  "dates": {
+    "fullReview": "2026-08-19",
+    "partialModification": "2026-10-19"
+  }
+}

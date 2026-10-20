@@ -1,0 +1,52 @@
+{
+  "verifiedOn": "2026-10-18",
+  "merchantObservationDate": "2026-10-17",
+  "tests": {
+    "passed": 84,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "build": {
+    "status": "passed",
+    "pages": 109
+  },
+  "contentHealth": {
+    "status": "passed",
+    "markdownFiles": 104
+  },
+  "managedTables": "in-sync",
+  "managedReviewSections": "in-sync",
+  "publicData": "in-sync",
+  "consistency": {
+    "status": "passed",
+    "collectionPages": 9,
+    "services": 57,
+    "formats": [
+      "JSON",
+      "Markdown",
+      "HTML",
+      "Schema"
+    ]
+  },
+  "static": {
+    "passed": true,
+    "htmlPages": 112,
+    "internalHrefs": 8684,
+    "fragmentLinks": 2416,
+    "missingTargets": 0,
+    "invalidFragments": 0,
+    "duplicateIds": 0,
+    "keyChecksPassed": 24
+  },
+  "siilas": {
+    "receivedAt": "2026-10-14",
+    "airports": 9,
+    "rawRecords": 135,
+    "sha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad"
+  },
+  "editorialDateAlignment": "XSUS related-link update advanced its editorial date; visible date aligned using the existing accepted snapshot. No receipt, source date, test, score or evidence block was changed.",
+  "paymentThreshold": "Default 10 CNY and accepted input 3 CNY observed without submission. Payment-channel minimum, fees, actual deposit and refunds remain unverified.",
+  "merchantAccountDataExported": false,
+  "localPreviewBrowserInspection": false,
+  "published": false
+}

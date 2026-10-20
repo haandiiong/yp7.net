@@ -1,0 +1,1560 @@
+{
+  "asOf": "2026-10-19",
+  "checkedAt": "2026-10-19T14:56:29.793Z",
+  "scope": "Read-only evidence and source-date audit. Only these two reports were written. No merchant backend repricing, receiver, snapshot/source change, browser action or build.",
+  "publicObservation": {
+    "checkedOn": "2026-10-19",
+    "url": "https://siilas.com/test/",
+    "accessStatus": "readable",
+    "method": "web.open public archive; observed headline and latest list (turn73view0)",
+    "airportCount": 9,
+    "verifiedTestCount": 135,
+    "latestTestAt": "2026-10-08",
+    "latestRecord": {
+      "airport": "网际快车",
+      "region": "香港",
+      "testedAt": "2026-10-08",
+      "timeBeijing": "21:17"
+    },
+    "extractedLineReferences": {
+      "headline": "11-13",
+      "latestRecord": "22-23"
+    },
+    "newSampleObserved": false,
+    "matchesSnapshotCountsAndLatestDay": true,
+    "limits": "只核对公开总量与最新列表，未逐条重验135条及图片，也不保证检查后页面不会更新。未运行接收器。"
+  },
+  "snapshot": {
+    "path": "docs/.vuepress/config/data/siilas-tests.json",
+    "sha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+    "receivedAt": "2026-10-14",
+    "receiptAgeDays": 5,
+    "latestTestAt": "2026-10-08",
+    "latestTestAgeDays": 11,
+    "airportCount": 9,
+    "rawTestCount": 135,
+    "verifiedTestCount": 135,
+    "everyRecordHasResultOrMainImage": true,
+    "pendingRecords": [],
+    "sourceRelationship": "Siilas 与 yp7.net 由同一站长运营；独立测速指独立于商业资料采集，不是第三方背书。"
+  },
+  "coverage": {
+    "rawAirportCount": 58,
+    "visibleAirportCount": 57,
+    "siilasAirportCount": 9,
+    "mainWithSiilas": 5,
+    "mainWithoutSiilas": [
+      "九云",
+      "阿达西"
+    ],
+    "airports": [
+      {
+        "name": "全球云",
+        "path": "/posts/quanqiuyun/",
+        "sourceUrl": "https://siilas.com/airport/globalcloud/",
+        "latestTestAt": "2026-10-08",
+        "ageDays": 11,
+        "records": 28,
+        "testDateCount": 8,
+        "rankingEligible": true,
+        "regionalSampleDays": {
+          "新加坡": 8,
+          "香港": 6,
+          "日本": 6,
+          "美国": 6
+        },
+        "latestRegions": [
+          {
+            "region": "新加坡",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "香港",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "不可用",
+            "streaming": "流畅"
+          },
+          {
+            "region": "日本",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "美国",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          }
+        ],
+        "source": {
+          "path": "docs/.vuepress/config/data/siilas-tests.json",
+          "line": 80,
+          "regionsLine": 118
+        }
+      },
+      {
+        "name": "光年梯",
+        "path": "/posts/guangnianti-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/guangnianti/",
+        "latestTestAt": "2026-10-08",
+        "ageDays": 11,
+        "records": 16,
+        "testDateCount": 4,
+        "rankingEligible": true,
+        "regionalSampleDays": {
+          "新加坡": 4,
+          "香港": 4,
+          "日本": 4,
+          "美国": 4
+        },
+        "latestRegions": [
+          {
+            "region": "新加坡",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "香港",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "不可用",
+            "streaming": "流畅"
+          },
+          {
+            "region": "日本",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "轻微延迟",
+            "streaming": "缓冲严重"
+          },
+          {
+            "region": "美国",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "轻微延迟",
+            "streaming": "缓冲严重"
+          }
+        ],
+        "source": {
+          "path": "docs/.vuepress/config/data/siilas-tests.json",
+          "line": 1229,
+          "regionsLine": 1267
+        }
+      },
+      {
+        "name": "网际快车",
+        "path": "/posts/wangji-kuaiche-review/",
+        "sourceUrl": "https://siilas.com/airport/interexpress/",
+        "latestTestAt": "2026-10-08",
+        "ageDays": 11,
+        "records": 17,
+        "testDateCount": 5,
+        "rankingEligible": true,
+        "regionalSampleDays": {
+          "新加坡": 4,
+          "香港": 5,
+          "日本": 4,
+          "美国": 4
+        },
+        "latestRegions": [
+          {
+            "region": "新加坡",
+            "date": "2026-09-11",
+            "ageDays": 38,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "香港",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "不可用",
+            "streaming": "轻微缓冲"
+          },
+          {
+            "region": "日本",
+            "date": "2026-09-11",
+            "ageDays": 38,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "美国",
+            "date": "2026-09-11",
+            "ageDays": 38,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          }
+        ],
+        "source": {
+          "path": "docs/.vuepress/config/data/siilas-tests.json",
+          "line": 1989,
+          "regionsLine": 2027
+        }
+      },
+      {
+        "name": "xxyun",
+        "path": "/posts/xxyun-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/xxyun/",
+        "latestTestAt": "2026-10-08",
+        "ageDays": 11,
+        "records": 12,
+        "testDateCount": 5,
+        "rankingEligible": true,
+        "regionalSampleDays": {
+          "新加坡": 3,
+          "香港": 3,
+          "日本": 3,
+          "美国": 3
+        },
+        "latestRegions": [
+          {
+            "region": "新加坡",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "香港",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "不可用",
+            "streaming": "轻微缓冲"
+          },
+          {
+            "region": "日本",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "美国",
+            "date": "2026-08-08",
+            "ageDays": 72,
+            "chatgpt": "轻微延迟",
+            "streaming": "轻微缓冲"
+          }
+        ],
+        "source": {
+          "path": "docs/.vuepress/config/data/siilas-tests.json",
+          "line": 2784,
+          "regionsLine": 2822
+        }
+      },
+      {
+        "name": "Flybit",
+        "path": "/posts/flybit-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/flybit/",
+        "latestTestAt": "2026-08-13",
+        "ageDays": 67,
+        "records": 13,
+        "testDateCount": 4,
+        "rankingEligible": true,
+        "regionalSampleDays": {
+          "新加坡": 3,
+          "香港": 4,
+          "日本": 3,
+          "美国": 3
+        },
+        "latestRegions": [
+          {
+            "region": "新加坡",
+            "date": "2026-08-13",
+            "ageDays": 67,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "香港",
+            "date": "2026-08-13",
+            "ageDays": 67,
+            "chatgpt": "不可用",
+            "streaming": "流畅"
+          },
+          {
+            "region": "日本",
+            "date": "2026-08-13",
+            "ageDays": 67,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "美国",
+            "date": "2026-08-13",
+            "ageDays": 67,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          }
+        ],
+        "source": {
+          "path": "docs/.vuepress/config/data/siilas-tests.json",
+          "line": 3428,
+          "regionsLine": 3466
+        }
+      },
+      {
+        "name": "拼好连（原 Runway）",
+        "path": "/posts/runway-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/pinhaolian/",
+        "latestTestAt": "2026-09-23",
+        "ageDays": 26,
+        "records": 12,
+        "testDateCount": 5,
+        "rankingEligible": true,
+        "regionalSampleDays": {
+          "新加坡": 3,
+          "香港": 3,
+          "日本": 3,
+          "美国": 3
+        },
+        "latestRegions": [
+          {
+            "region": "新加坡",
+            "date": "2026-09-20",
+            "ageDays": 29,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "香港",
+            "date": "2026-09-23",
+            "ageDays": 26,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "日本",
+            "date": "2026-09-23",
+            "ageDays": 26,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "美国",
+            "date": "2026-09-23",
+            "ageDays": 26,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          }
+        ],
+        "source": {
+          "path": "docs/.vuepress/config/data/siilas-tests.json",
+          "line": 4108,
+          "regionsLine": 4146
+        }
+      },
+      {
+        "name": "cocoduck",
+        "path": "/posts/cocoduck-review/",
+        "sourceUrl": "https://siilas.com/airport/cocoduck/",
+        "latestTestAt": "2026-08-13",
+        "ageDays": 67,
+        "records": 12,
+        "testDateCount": 3,
+        "rankingEligible": true,
+        "regionalSampleDays": {
+          "新加坡": 3,
+          "香港": 3,
+          "日本": 3,
+          "美国": 3
+        },
+        "latestRegions": [
+          {
+            "region": "新加坡",
+            "date": "2026-08-13",
+            "ageDays": 67,
+            "chatgpt": "轻微延迟",
+            "streaming": "轻微缓冲"
+          },
+          {
+            "region": "香港",
+            "date": "2026-08-13",
+            "ageDays": 67,
+            "chatgpt": "响应较慢",
+            "streaming": "缓冲明显"
+          },
+          {
+            "region": "日本",
+            "date": "2026-08-13",
+            "ageDays": 67,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "美国",
+            "date": "2026-08-13",
+            "ageDays": 67,
+            "chatgpt": "响应较慢",
+            "streaming": "缓冲明显"
+          }
+        ],
+        "source": {
+          "path": "docs/.vuepress/config/data/siilas-tests.json",
+          "line": 4733,
+          "regionsLine": 4771
+        }
+      },
+      {
+        "name": "边缘节点",
+        "path": "/posts/bianyuan-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/edgenode/",
+        "latestTestAt": "2026-10-08",
+        "ageDays": 11,
+        "records": 12,
+        "testDateCount": 4,
+        "rankingEligible": true,
+        "regionalSampleDays": {
+          "新加坡": 3,
+          "香港": 3,
+          "日本": 3,
+          "美国": 3
+        },
+        "latestRegions": [
+          {
+            "region": "新加坡",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "香港",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "不可用",
+            "streaming": "流畅"
+          },
+          {
+            "region": "日本",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "流畅",
+            "streaming": "轻微缓冲"
+          },
+          {
+            "region": "美国",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          }
+        ],
+        "source": {
+          "path": "docs/.vuepress/config/data/siilas-tests.json",
+          "line": 5373,
+          "regionsLine": 5411
+        }
+      },
+      {
+        "name": "XSUS",
+        "path": "/posts/xsus-review-2026/",
+        "sourceUrl": "https://siilas.com/airport/xsus/",
+        "latestTestAt": "2026-10-08",
+        "ageDays": 11,
+        "records": 13,
+        "testDateCount": 4,
+        "rankingEligible": true,
+        "regionalSampleDays": {
+          "新加坡": 4,
+          "香港": 3,
+          "日本": 3,
+          "美国": 3
+        },
+        "latestRegions": [
+          {
+            "region": "新加坡",
+            "date": "2026-10-08",
+            "ageDays": 11,
+            "chatgpt": "轻微延迟",
+            "streaming": "流畅"
+          },
+          {
+            "region": "香港",
+            "date": "2026-09-23",
+            "ageDays": 26,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "日本",
+            "date": "2026-09-23",
+            "ageDays": 26,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          },
+          {
+            "region": "美国",
+            "date": "2026-09-23",
+            "ageDays": 26,
+            "chatgpt": "流畅",
+            "streaming": "流畅"
+          }
+        ],
+        "source": {
+          "path": "docs/.vuepress/config/data/siilas-tests.json",
+          "line": 6051,
+          "regionsLine": 6089
+        }
+      }
+    ],
+    "main": [
+      {
+        "name": "Flybit",
+        "path": "/posts/flybit-review-2026/",
+        "siilas": {
+          "name": "Flybit",
+          "path": "/posts/flybit-review-2026/",
+          "sourceUrl": "https://siilas.com/airport/flybit/",
+          "latestTestAt": "2026-08-13",
+          "ageDays": 67,
+          "records": 13,
+          "testDateCount": 4,
+          "rankingEligible": true,
+          "regionalSampleDays": {
+            "新加坡": 3,
+            "香港": 4,
+            "日本": 3,
+            "美国": 3
+          },
+          "latestRegions": [
+            {
+              "region": "新加坡",
+              "date": "2026-08-13",
+              "ageDays": 67,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            },
+            {
+              "region": "香港",
+              "date": "2026-08-13",
+              "ageDays": 67,
+              "chatgpt": "不可用",
+              "streaming": "流畅"
+            },
+            {
+              "region": "日本",
+              "date": "2026-08-13",
+              "ageDays": 67,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            },
+            {
+              "region": "美国",
+              "date": "2026-08-13",
+              "ageDays": 67,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            }
+          ],
+          "source": {
+            "path": "docs/.vuepress/config/data/siilas-tests.json",
+            "line": 3428,
+            "regionsLine": 3466
+          }
+        },
+        "historicalDate": null,
+        "salesSample": 744,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 257
+        }
+      },
+      {
+        "name": "xxyun",
+        "path": "/posts/xxyun-review-2026/",
+        "siilas": {
+          "name": "xxyun",
+          "path": "/posts/xxyun-review-2026/",
+          "sourceUrl": "https://siilas.com/airport/xxyun/",
+          "latestTestAt": "2026-10-08",
+          "ageDays": 11,
+          "records": 12,
+          "testDateCount": 5,
+          "rankingEligible": true,
+          "regionalSampleDays": {
+            "新加坡": 3,
+            "香港": 3,
+            "日本": 3,
+            "美国": 3
+          },
+          "latestRegions": [
+            {
+              "region": "新加坡",
+              "date": "2026-10-08",
+              "ageDays": 11,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            },
+            {
+              "region": "香港",
+              "date": "2026-10-08",
+              "ageDays": 11,
+              "chatgpt": "不可用",
+              "streaming": "轻微缓冲"
+            },
+            {
+              "region": "日本",
+              "date": "2026-10-08",
+              "ageDays": 11,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            },
+            {
+              "region": "美国",
+              "date": "2026-08-08",
+              "ageDays": 72,
+              "chatgpt": "轻微延迟",
+              "streaming": "轻微缓冲"
+            }
+          ],
+          "source": {
+            "path": "docs/.vuepress/config/data/siilas-tests.json",
+            "line": 2784,
+            "regionsLine": 2822
+          }
+        },
+        "historicalDate": null,
+        "salesSample": 942,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 239
+        }
+      },
+      {
+        "name": "网际快车",
+        "path": "/posts/wangji-kuaiche-review/",
+        "siilas": {
+          "name": "网际快车",
+          "path": "/posts/wangji-kuaiche-review/",
+          "sourceUrl": "https://siilas.com/airport/interexpress/",
+          "latestTestAt": "2026-10-08",
+          "ageDays": 11,
+          "records": 17,
+          "testDateCount": 5,
+          "rankingEligible": true,
+          "regionalSampleDays": {
+            "新加坡": 4,
+            "香港": 5,
+            "日本": 4,
+            "美国": 4
+          },
+          "latestRegions": [
+            {
+              "region": "新加坡",
+              "date": "2026-09-11",
+              "ageDays": 38,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            },
+            {
+              "region": "香港",
+              "date": "2026-10-08",
+              "ageDays": 11,
+              "chatgpt": "不可用",
+              "streaming": "轻微缓冲"
+            },
+            {
+              "region": "日本",
+              "date": "2026-09-11",
+              "ageDays": 38,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            },
+            {
+              "region": "美国",
+              "date": "2026-09-11",
+              "ageDays": 38,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            }
+          ],
+          "source": {
+            "path": "docs/.vuepress/config/data/siilas-tests.json",
+            "line": 1989,
+            "regionsLine": 2027
+          }
+        },
+        "historicalDate": "2026-06-03",
+        "salesSample": 849,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 177
+        }
+      },
+      {
+        "name": "全球云",
+        "path": "/posts/quanqiuyun/",
+        "siilas": {
+          "name": "全球云",
+          "path": "/posts/quanqiuyun/",
+          "sourceUrl": "https://siilas.com/airport/globalcloud/",
+          "latestTestAt": "2026-10-08",
+          "ageDays": 11,
+          "records": 28,
+          "testDateCount": 8,
+          "rankingEligible": true,
+          "regionalSampleDays": {
+            "新加坡": 8,
+            "香港": 6,
+            "日本": 6,
+            "美国": 6
+          },
+          "latestRegions": [
+            {
+              "region": "新加坡",
+              "date": "2026-10-08",
+              "ageDays": 11,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            },
+            {
+              "region": "香港",
+              "date": "2026-10-08",
+              "ageDays": 11,
+              "chatgpt": "不可用",
+              "streaming": "流畅"
+            },
+            {
+              "region": "日本",
+              "date": "2026-10-08",
+              "ageDays": 11,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            },
+            {
+              "region": "美国",
+              "date": "2026-10-08",
+              "ageDays": 11,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            }
+          ],
+          "source": {
+            "path": "docs/.vuepress/config/data/siilas-tests.json",
+            "line": 80,
+            "regionsLine": 118
+          }
+        },
+        "historicalDate": "2026-05-30",
+        "salesSample": 1048,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 129
+        }
+      },
+      {
+        "name": "拼好连",
+        "path": "/posts/runway-review-2026/",
+        "siilas": {
+          "name": "拼好连（原 Runway）",
+          "path": "/posts/runway-review-2026/",
+          "sourceUrl": "https://siilas.com/airport/pinhaolian/",
+          "latestTestAt": "2026-09-23",
+          "ageDays": 26,
+          "records": 12,
+          "testDateCount": 5,
+          "rankingEligible": true,
+          "regionalSampleDays": {
+            "新加坡": 3,
+            "香港": 3,
+            "日本": 3,
+            "美国": 3
+          },
+          "latestRegions": [
+            {
+              "region": "新加坡",
+              "date": "2026-09-20",
+              "ageDays": 29,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            },
+            {
+              "region": "香港",
+              "date": "2026-09-23",
+              "ageDays": 26,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            },
+            {
+              "region": "日本",
+              "date": "2026-09-23",
+              "ageDays": 26,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            },
+            {
+              "region": "美国",
+              "date": "2026-09-23",
+              "ageDays": 26,
+              "chatgpt": "流畅",
+              "streaming": "流畅"
+            }
+          ],
+          "source": {
+            "path": "docs/.vuepress/config/data/siilas-tests.json",
+            "line": 4108,
+            "regionsLine": 4146
+          }
+        },
+        "historicalDate": null,
+        "salesSample": 445,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 282
+        }
+      },
+      {
+        "name": "九云",
+        "path": "/posts/jiuyun-review-2026/",
+        "siilas": null,
+        "historicalDate": null,
+        "salesSample": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 75
+        }
+      },
+      {
+        "name": "阿达西",
+        "path": "/posts/adaxi-review-2026/",
+        "siilas": null,
+        "historicalDate": null,
+        "salesSample": 462,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 280
+        }
+      }
+    ],
+    "noSiilas": [
+      {
+        "name": "九云",
+        "path": "/posts/jiuyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 75
+        }
+      },
+      {
+        "name": "光速云",
+        "path": "/posts/guangsuyun/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 194
+        }
+      },
+      {
+        "name": "阿达西",
+        "path": "/posts/adaxi-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 280
+        }
+      },
+      {
+        "name": "唯兔云",
+        "path": "/posts/weituyun/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 304
+        }
+      },
+      {
+        "name": "99吧",
+        "path": "/posts/99ba-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 306
+        }
+      },
+      {
+        "name": "迅达",
+        "path": "/posts/xunda-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 308
+        }
+      },
+      {
+        "name": "ccyz",
+        "path": "/posts/ccyz-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 324
+        }
+      },
+      {
+        "name": "uuone",
+        "path": "/posts/uuone-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 332
+        }
+      },
+      {
+        "name": "冲上云霄",
+        "path": "/posts/chongshangyunxiao/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 333
+        }
+      },
+      {
+        "name": "SSONE",
+        "path": "/posts/ssone/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 334
+        }
+      },
+      {
+        "name": "U1S1",
+        "path": "/posts/u1s1-review-2026/",
+        "structuredHistoricalDate": "2026-04-04",
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 335
+        }
+      },
+      {
+        "name": "隐云",
+        "path": "/posts/yinyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 337
+        }
+      },
+      {
+        "name": "坦克云（原坦克加速）",
+        "path": "/posts/tank-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 349
+        }
+      },
+      {
+        "name": "瞬云",
+        "path": "/posts/shunyun-review-2026/",
+        "structuredHistoricalDate": "2026-05-09",
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 350
+        }
+      },
+      {
+        "name": "极连云",
+        "path": "/posts/jilianyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 351
+        }
+      },
+      {
+        "name": "二猫云",
+        "path": "/posts/ermiao-vpn-review/",
+        "structuredHistoricalDate": "2026-06-30",
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 352
+        }
+      },
+      {
+        "name": "寰宇云",
+        "path": "/posts/huanyuyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 385
+        }
+      },
+      {
+        "name": "一翻云",
+        "path": "/posts/yifanyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 395
+        }
+      },
+      {
+        "name": "sogo",
+        "path": "/posts/sogo-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 409
+        }
+      },
+      {
+        "name": "速界",
+        "path": "/posts/sujie-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 426
+        }
+      },
+      {
+        "name": "宇宙云",
+        "path": "/posts/yuzhoucloud-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 454
+        }
+      },
+      {
+        "name": "快狸",
+        "path": "/posts/kuaili-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 469
+        }
+      },
+      {
+        "name": "可信云",
+        "path": "/posts/kexinyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 483
+        }
+      },
+      {
+        "name": "星岛梦",
+        "path": "/posts/xingdaomeng-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 492
+        }
+      },
+      {
+        "name": "隐形人",
+        "path": "/posts/yinxingren-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 500
+        }
+      },
+      {
+        "name": "闪电鼠",
+        "path": "/posts/shandianshu-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 539
+        }
+      },
+      {
+        "name": "环球梯",
+        "path": "/posts/huanqiuti-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 554
+        }
+      },
+      {
+        "name": "跨界云",
+        "path": "/posts/kuajieyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 568
+        }
+      },
+      {
+        "name": "Edge-X",
+        "path": "/posts/edge-x-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 582
+        }
+      },
+      {
+        "name": "闪跃",
+        "path": "/posts/shanyue-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 598
+        }
+      },
+      {
+        "name": "无忧链接",
+        "path": "/posts/wuyoulianjie-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 614
+        }
+      },
+      {
+        "name": "榴莲云",
+        "path": "/posts/liulianyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 628
+        }
+      },
+      {
+        "name": "鲤云",
+        "path": "/posts/liyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 642
+        }
+      },
+      {
+        "name": "山水云",
+        "path": "/posts/shanshuiyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 657
+        }
+      },
+      {
+        "name": "秒秒云",
+        "path": "/posts/miaomiaoyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 672
+        }
+      },
+      {
+        "name": "锦云",
+        "path": "/posts/jinyun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 712
+        }
+      },
+      {
+        "name": "熊猫cloud",
+        "path": "/posts/xiongmaocloud-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 727
+        }
+      },
+      {
+        "name": "云图",
+        "path": "/posts/yuntu-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 743
+        }
+      },
+      {
+        "name": "灵猫网络",
+        "path": "/posts/lingmaowangluo-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 815
+        }
+      },
+      {
+        "name": "Firefly",
+        "path": "/posts/firefly-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 861
+        }
+      },
+      {
+        "name": "神行加速",
+        "path": "/posts/shenxingjiasu-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 907
+        }
+      },
+      {
+        "name": "极速Cloud",
+        "path": "/posts/jisucloud-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 959
+        }
+      },
+      {
+        "name": "杏花云",
+        "path": "/posts/xinghuayun-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 1014
+        }
+      },
+      {
+        "name": "AnDy Cloud",
+        "path": "/posts/andycloud-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 1063
+        }
+      },
+      {
+        "name": "Tidal潮汐加速",
+        "path": "/posts/tidal-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 1120
+        }
+      },
+      {
+        "name": "云界线",
+        "path": "/posts/yunjiexian-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 1174
+        }
+      },
+      {
+        "name": "极速123",
+        "path": "/posts/jisu123-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 1240
+        }
+      },
+      {
+        "name": "灯塔加速器",
+        "path": "/posts/dengta-review-2026/",
+        "structuredHistoricalDate": null,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 1259
+        }
+      }
+    ],
+    "structuredHistories": [
+      {
+        "name": "全球云",
+        "path": "/posts/quanqiuyun/",
+        "date": "2026-05-30",
+        "ageDays": 142,
+        "hasSiilas": true,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 172
+        }
+      },
+      {
+        "name": "光年梯",
+        "path": "/posts/guangnianti-review-2026/",
+        "date": "2026-06-03",
+        "ageDays": 138,
+        "hasSiilas": true,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 175
+        }
+      },
+      {
+        "name": "网际快车",
+        "path": "/posts/wangji-kuaiche-review/",
+        "date": "2026-06-03",
+        "ageDays": 138,
+        "hasSiilas": true,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 175
+        }
+      },
+      {
+        "name": "U1S1",
+        "path": "/posts/u1s1-review-2026/",
+        "date": "2026-04-04",
+        "ageDays": 198,
+        "hasSiilas": false,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 335
+        }
+      },
+      {
+        "name": "瞬云",
+        "path": "/posts/shunyun-review-2026/",
+        "date": "2026-05-09",
+        "ageDays": 163,
+        "hasSiilas": false,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 350
+        }
+      },
+      {
+        "name": "二猫云",
+        "path": "/posts/ermiao-vpn-review/",
+        "date": "2026-06-30",
+        "ageDays": 111,
+        "hasSiilas": false,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 383
+        }
+      }
+    ]
+  },
+  "localTestingEnvironment": {
+    "rawRecords": 135,
+    "missingSourceRegion": 126,
+    "note": "sourceRegion指本地测试地点，不能用节点地区或测速服务器所在地填补。"
+  },
+  "sales": {
+    "observedAt": "2026-06-18",
+    "source": {
+      "path": "docs/.vuepress/config/airports.ts",
+      "line": 1355
+    },
+    "caveat": "销量样本只用于观察本站读者购买热度，不等同于全网销量、服务商真实总销量或长期稳定性排名。",
+    "ageDays": 123,
+    "visibleCoverage": 17,
+    "visibleTotal": 57,
+    "mainCoverage": 6,
+    "mainMissing": [
+      "九云"
+    ],
+    "records": [
+      {
+        "name": "全球云",
+        "path": "/posts/quanqiuyun/",
+        "sample": 1048,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 129
+        }
+      },
+      {
+        "name": "光年梯",
+        "path": "/posts/guangnianti-review-2026/",
+        "sample": 832,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 175
+        }
+      },
+      {
+        "name": "网际快车",
+        "path": "/posts/wangji-kuaiche-review/",
+        "sample": 849,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 177
+        }
+      },
+      {
+        "name": "光速云",
+        "path": "/posts/guangsuyun/",
+        "sample": 346,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 194
+        }
+      },
+      {
+        "name": "xxyun",
+        "path": "/posts/xxyun-review-2026/",
+        "sample": 942,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 239
+        }
+      },
+      {
+        "name": "Flybit",
+        "path": "/posts/flybit-review-2026/",
+        "sample": 744,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 257
+        }
+      },
+      {
+        "name": "阿达西",
+        "path": "/posts/adaxi-review-2026/",
+        "sample": 462,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 280
+        }
+      },
+      {
+        "name": "拼好连",
+        "path": "/posts/runway-review-2026/",
+        "sample": 445,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 282
+        }
+      },
+      {
+        "name": "唯兔云",
+        "path": "/posts/weituyun/",
+        "sample": 221,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 304
+        }
+      },
+      {
+        "name": "99吧",
+        "path": "/posts/99ba-review-2026/",
+        "sample": 413,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 306
+        }
+      },
+      {
+        "name": "冲上云霄",
+        "path": "/posts/chongshangyunxiao/",
+        "sample": 929,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 333
+        }
+      },
+      {
+        "name": "U1S1",
+        "path": "/posts/u1s1-review-2026/",
+        "sample": 82,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 335
+        }
+      },
+      {
+        "name": "cocoduck",
+        "path": "/posts/cocoduck-review/",
+        "sample": 280,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 339
+        }
+      },
+      {
+        "name": "坦克云（原坦克加速）",
+        "path": "/posts/tank-review-2026/",
+        "sample": 219,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 349
+        }
+      },
+      {
+        "name": "瞬云",
+        "path": "/posts/shunyun-review-2026/",
+        "sample": 128,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 350
+        }
+      },
+      {
+        "name": "二猫云",
+        "path": "/posts/ermiao-vpn-review/",
+        "sample": 191,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 352
+        }
+      },
+      {
+        "name": "sogo",
+        "path": "/posts/sogo-review-2026/",
+        "sample": 419,
+        "source": {
+          "path": "docs/.vuepress/config/airports.ts",
+          "line": 409
+        }
+      }
+    ]
+  },
+  "dateFindings": [
+    {
+      "priority": "P2",
+      "name": "UUONE免费试用来源日期矛盾仍在",
+      "file": "docs/机场评测/uuone.md",
+      "line": 16,
+      "introDate": "2026-09-28",
+      "bodyAndSharedDate": "2026-09-27",
+      "bodyLines": [
+        68,
+        76,
+        96,
+        103
+      ],
+      "sharedLine": 332,
+      "action": "根据原始确认记录统一页首；不改变现有政策，不把相关阅读编辑视为重新确认。"
+    },
+    {
+      "priority": "P2",
+      "name": "一翻云套餐/客户端/试用与订阅来源日期矛盾仍在",
+      "file": "docs/机场评测/一翻云.md",
+      "line": 20,
+      "introDate": "2026-09-28",
+      "bodyAndSharedDate": "2026-09-27",
+      "bodyLines": [
+        13,
+        26,
+        32,
+        91,
+        95,
+        104
+      ],
+      "sharedLine": 402,
+      "action": "核对原始记录并统一文案；当前正文与共享来源均为9月27日，不将页面编辑日替代来源日期。"
+    }
+  ],
+  "historyCaveat": "没有已接收Siilas不等于没有历史证据。U1S1、瞬云、二猫云有结构化历史测速；隐形人有9月26日用户投稿单次测速；一翻云另存无可核实测试日的历史截图。",
+  "resolvedIssueExcluded": "二猫云试用源已补，不再列。",
+  "siteReviewDates": {
+    "fullReview": "2026-08-19",
+    "partialModified": "2026-10-19"
+  }
+}

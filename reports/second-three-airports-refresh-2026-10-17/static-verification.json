@@ -1,0 +1,345 @@
+{
+  "checkedAt": "2026-10-17T12:09:44.087851+00:00",
+  "scope": "Read-only dist static verification; no browser, network requests, build or source edits",
+  "dist": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/.vuepress/dist",
+  "htmlPagesParsed": 112,
+  "hrefCounts": {
+    "internal_href": 8678,
+    "internal_fragment": 2415,
+    "external": 1086
+  },
+  "uniqueLocalTargets": 250,
+  "linkErrors": [],
+  "duplicateIds": [],
+  "checks": [
+    {
+      "name": "九云主榜名称直达独立详情",
+      "passed": true,
+      "details": [
+        {
+          "href": "/posts/jiuyun-review-2026/",
+          "text": "九云"
+        }
+      ]
+    },
+    {
+      "name": "隐形人合集名称直达独立详情",
+      "passed": true,
+      "details": [
+        {
+          "href": "/posts/yinxingren-review-2026/",
+          "text": "隐形人"
+        },
+        {
+          "href": "/posts/yinxingren-review-2026/",
+          "text": "隐形人"
+        },
+        {
+          "href": "/posts/yinxingren-review-2026/",
+          "text": "隐形人"
+        }
+      ]
+    },
+    {
+      "name": "光速云月付25元168GB",
+      "passed": true,
+      "details": [
+        "月付短期观察 可比较25元168GB/月极速版，先确认客户端及现行退款条件",
+        "极速版 25元/月 168GB/月 当前卡片与正文一致",
+        "极速版 74元 94元 179元",
+        "资料来源 光速云旧年付及极速版额度（历史站长补充）；光速云试用与订阅规则（站长补充）；光速云现售套餐及各周期价格；光速云五类客户端知识库；光速云客户端仪表盘",
+        "资料复核日期 光速云旧年付及极速版额度（历史站长补充）：2026-09-27；光速云试用与订阅规则（站长补充）：2026-09-27；光速云现售套餐及各周期价格：2026-10-17；光速云五类客户端知识库：2026-10-17；光速云客户端仪表盘：2026-10-17"
+      ]
+    },
+    {
+      "name": "光速云年付99元69GB",
+      "passed": true,
+      "details": [
+        "轻量版 99元/年 69GB/月 当前卡片与正文一致；一次支付全年金额，流量仍按月提供"
+      ]
+    },
+    {
+      "name": "光速云流光34元238GB",
+      "passed": true,
+      "details": [
+        "流光版 34元/月 238GB/月 本次卡片与正文已统一238GB，旧220GB差异不继续当当前冲突",
+        "流光版 96元 147元 249元"
+      ]
+    },
+    {
+      "name": "光速云量子500与450冲突",
+      "passed": true,
+      "details": [
+        "光速云机场怎么样？ 可比较多平台官方登录、周期流量和永久总量包，先核对量子版额度差异及当前退款适用范围。",
+        "购买前先看什么？ 量子版500GB/450GB差异、各周期实际展示总价、147元包的续购和重置规则。",
+        "量子版 68元/月 卡片500GB/月；正文450GB/月（冲突） 标题也写500GB，但流量政策段仍450G/月，实际权益待确认",
+        "量子版 198元 375元 667元",
+        "风险记录 不支持免费试用和通用订阅；量子版卡片500GB/正文450GB待核；新套餐退款与147元包重购规则未明确"
+      ]
+    },
+    {
+      "name": "光速云138元900GB",
+      "passed": true,
+      "details": [
+        "无界版 138元/月 900GB/月 当前月付价已不同于旧130元记录",
+        "无界版 398元 702元 998元"
+      ]
+    },
+    {
+      "name": "光速云147元247GB一次性",
+      "passed": true,
+      "details": [
+        "致敬斯诺克147永久套餐 147元/一次性 总量247GB 永久总量、用完为止、不自动刷新；卡片1倍率、不限设备"
+      ]
+    },
+    {
+      "name": "光年梯18元110GB",
+      "passed": true,
+      "details": [
+        "光年梯 入门版 18元/月 110GB/月 月付入门档"
+      ]
+    },
+    {
+      "name": "光年梯89元年50GB",
+      "passed": true,
+      "details": [
+        "年付限时套餐 89元/年 50GB/月 年付承诺，不能按月购买；不是全年仅50GB"
+      ]
+    },
+    {
+      "name": "99吧注册自动试用1天1GB",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "99吧近期波动及公告日期差异",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "99吧复制Vless入口",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "光速云普通档规则未遗漏",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "光速云旧612规则未套给147包",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "光速云新退款规则未明确",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "光年梯旧Siilas样本及历史数据保留",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "光年梯GNT80保留9月27日旧确认",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "合集光速云当前数据",
+      "passed": true,
+      "details": {
+        "tableRows": [
+          "光速云 25元/月 168GB/月 ❌ ✔ ✔ ❌",
+          "光速云 147元 总量247GB，不自动刷新 ✔ ❌",
+          "光速云 25元/月 ✔ ❌（9月27日补充，未新导入验证）"
+        ],
+        "tableValuesPassed": true,
+        "sectionFacts": [
+          {
+            "fact": "当前月付价及流量",
+            "passed": true,
+            "pattern": "25元\\s*/\\s*月.*?168GB|25元\\s*168GB"
+          },
+          {
+            "fact": "新不限时价格总量",
+            "passed": true,
+            "pattern": "147元.*?247GB"
+          },
+          {
+            "fact": "量子当前冲突",
+            "passed": true,
+            "pattern": "500GB.*?450GB"
+          },
+          {
+            "fact": "年付新69GB",
+            "passed": true,
+            "pattern": "99元.*?69GB"
+          },
+          {
+            "fact": "现行退款待核",
+            "passed": true,
+            "pattern": "退款.*?(?:另核|待|确认|不明确|未明确)"
+          }
+        ],
+        "sectionCharacters": 1345,
+        "scope": "Named airport heading through next heading of same or higher level; includes all nested subsections."
+      }
+    },
+    {
+      "name": "合集99吧当前数据",
+      "passed": true,
+      "details": {
+        "tableRows": [
+          "99吧 9.9元/月 70GB/月 ✔ 1天1GB ✔ ❌ ✔",
+          "99吧 9.9元/月 70GB/月 ✔ ✔",
+          "99吧 35.9元 111GB ❌ ✔",
+          "99吧 注册自动获得1天1GB，从注册成功时起算 ✔ ❌ ✔"
+        ],
+        "tableValuesPassed": true,
+        "sectionFacts": [
+          {
+            "fact": "注册自动试用",
+            "passed": true,
+            "pattern": "注册.*?自动.*?1天1GB"
+          },
+          {
+            "fact": "近期商家风险",
+            "passed": true,
+            "pattern": "短期网络不稳定"
+          },
+          {
+            "fact": "Vless新入口",
+            "passed": true,
+            "pattern": "复制Vless订阅地址"
+          },
+          {
+            "fact": "公告标题与展示时间差异",
+            "passed": true,
+            "pattern": "2026-10-15.*?2026年8月7日.*?日期不一致"
+          }
+        ],
+        "sectionCharacters": 1051,
+        "scope": "Named airport heading through next heading of same or higher level; includes all nested subsections."
+      }
+    },
+    {
+      "name": "合集光年梯当前数据",
+      "passed": true,
+      "details": {
+        "tableRows": [
+          "光年梯 18元/月 110GB/月 ❌ ❌ ✔ ❌",
+          "光年梯 18元/月 ❌ 普通套餐❌；680元私人专线另有专属订阅"
+        ],
+        "tableValuesPassed": true,
+        "sectionFacts": [
+          {
+            "fact": "月付价流量",
+            "passed": true,
+            "pattern": "18元.*?110GB"
+          },
+          {
+            "fact": "年89元50GB",
+            "passed": true,
+            "pattern": "89元.*?50GB"
+          },
+          {
+            "fact": "原优惠码保留",
+            "passed": true,
+            "pattern": "GNT80"
+          },
+          {
+            "fact": "旧确认日期保留",
+            "passed": true,
+            "pattern": "9月27日"
+          },
+          {
+            "fact": "私人套餐不扩展为普通",
+            "passed": true,
+            "pattern": "私人.*?(?:普通|专属)|普通.*?私人"
+          }
+        ],
+        "sectionCharacters": 847,
+        "scope": "Named airport heading through next heading of same or higher level; includes all nested subsections."
+      }
+    },
+    {
+      "name": "不限时榜光速云147元247GB",
+      "passed": true,
+      "details": [
+        "光速云 147元 247GB 0.595元/GB 不限设备数（商家标注） 一次性总量，永久有效、不按月刷新；新包重置、重购及退款规则待核实 2026-10-17"
+      ]
+    },
+    {
+      "name": "airports.json光速云25/168与147/247",
+      "passed": true,
+      "details": {
+        "price": 25,
+        "traffic": "168GB/月",
+        "package": {
+          "priceCny": 147,
+          "trafficGb": 247,
+          "priceText": "147元",
+          "trafficText": "247GB",
+          "status": "listed",
+          "deviceLimit": "不限设备数（商家标注）",
+          "validity": "一次性总量，永久有效、不按月刷新；新包重置、重购及退款规则待核实",
+          "checkedAt": "2026-10-17",
+          "unitPriceCnyPerGb": 0.595,
+          "sourcePage": "/posts/guangsuyun/",
+          "currency": "CNY",
+          "billing": "one-off"
+        }
+      }
+    },
+    {
+      "name": "rankings.noExpiry光速云25/168与147/247",
+      "passed": true,
+      "details": {
+        "price": 25,
+        "traffic": "168GB/月",
+        "package": {
+          "priceCny": 147,
+          "trafficGb": 247,
+          "priceText": "147元",
+          "trafficText": "247GB",
+          "status": "listed",
+          "deviceLimit": "不限设备数（商家标注）",
+          "validity": "一次性总量，永久有效、不按月刷新；新包重置、重购及退款规则待核实",
+          "checkedAt": "2026-10-17",
+          "unitPriceCnyPerGb": 0.595,
+          "sourcePage": "/posts/guangsuyun/",
+          "currency": "CNY",
+          "billing": "one-off"
+        }
+      }
+    },
+    {
+      "name": "airports.json光速500/450风险",
+      "passed": true,
+      "details": "不支持免费试用和通用订阅；量子版卡片500GB/正文450GB待核；新套餐退款与147元包重购规则未明确"
+    },
+    {
+      "name": "airports.json99吧试用与波动风险",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "airports.json光年梯Siilas日期数值",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "原Siilas快照哈希保持",
+      "passed": true,
+      "details": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad"
+    }
+  ],
+  "passed": true,
+  "verificationNotes": [
+    "Initial catalogue assertions incorrectly required main-price table, one-off-package subtable and prose-only risk/code facts to coexist in one row. Corrected to check corresponding table values and the named airport section including nested subsections. No site content was changed.",
+    "112 HTML files include generated utility/tag/archive/404 pages; the scan uses every HTML file in dist rather than relying on the build article count.",
+    "All href target/ID validation is filesystem-only; external URLs were classified but not requested. This does not claim browser layout or runtime navigation verification."
+  ]
+}

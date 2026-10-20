@@ -1,0 +1,18 @@
+{
+  "confirmedOn": "2026-10-18",
+  "source": "User confirmation: minimum deposit is 1 CNY",
+  "changedServiceRecords": [
+    "阿达西"
+  ],
+  "otherServiceRecordsPreserved": 57,
+  "servicePriceAndCapabilitiesUnchanged": true,
+  "sourceObservationDatesPreserved": true,
+  "renderedPagesChecked": 5,
+  "buildPages": 109,
+  "contentFilesChecked": 104,
+  "dataCollectionsChecked": 9,
+  "servicesChecked": 57,
+  "rawSiilasSha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+  "lastModified": "2026-10-18",
+  "lastFullReview": "2026-08-19"
+}

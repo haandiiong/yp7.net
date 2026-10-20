@@ -1,0 +1,128 @@
+{
+  "baseline": "/tmp/yp7-pinhaolian-plan-refresh-2026-10-16",
+  "otherAirportRecordsUnchanged": true,
+  "siilasEvidenceUnchanged": true,
+  "rawSnapshotSha256": {
+    "docs/.vuepress/config/data/siilas-tests.json": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+    "docs/.vuepress/public/data/siilas-tests.json": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad"
+  },
+  "siilasBlocksPreserved": {
+    "docs/机场评测/runway.md": [
+      "siilas-testing"
+    ],
+    "docs/机场推荐/机场推荐.md": [
+      "siilas-score-comparison",
+      "siilas-collection-evidence"
+    ],
+    "docs/机场榜单/ChatGPT机场榜.md": [
+      "siilas-collection-evidence"
+    ],
+    "docs/机场榜单/流媒体机场榜.md": [
+      "siilas-collection-evidence"
+    ]
+  },
+  "promotionUrlCountsPreserved": true,
+  "fullReviewDatePreserved": "2026-08-19",
+  "collections": {
+    "mainRecommendation": {
+      "before": 7,
+      "after": 7,
+      "membersAndOrderAsExpected": true
+    },
+    "all": {
+      "before": 57,
+      "after": 57,
+      "membersAndOrderAsExpected": true
+    },
+    "sales": {
+      "before": 17,
+      "after": 17,
+      "membersAndOrderAsExpected": true
+    },
+    "stable": {
+      "before": 10,
+      "after": 10,
+      "membersAndOrderAsExpected": true
+    },
+    "cheap": {
+      "before": 14,
+      "after": 13,
+      "membersAndOrderAsExpected": true
+    },
+    "clash": {
+      "before": 34,
+      "after": 34,
+      "membersAndOrderAsExpected": true
+    },
+    "chatgpt": {
+      "before": 9,
+      "after": 9,
+      "membersAndOrderAsExpected": true
+    },
+    "streaming": {
+      "before": 9,
+      "after": 9,
+      "membersAndOrderAsExpected": true
+    },
+    "trial": {
+      "before": 11,
+      "after": 11,
+      "membersAndOrderAsExpected": true
+    },
+    "noExpiry": {
+      "before": 40,
+      "after": 40,
+      "membersAndOrderAsExpected": true
+    },
+    "dedicatedClient": {
+      "before": 39,
+      "after": 38,
+      "membersAndOrderAsExpected": true
+    }
+  },
+  "currentMetrics": {
+    "count": 57,
+    "trialCount": 11,
+    "noExpiryCount": 40,
+    "noExpiryUnverifiedCount": 0,
+    "dedicatedClientCount": 38,
+    "universalSubscriptionCount": 42,
+    "cheapUnderTenCount": 12,
+    "averagePrice": 17.3,
+    "regularCheapUnderTenCount": 12,
+    "regularAveragePrice": 17.6,
+    "salesSampleCount": 17,
+    "historicalPerformanceRecordCount": 6,
+    "priceBasis": {
+      "entry": "首次入门周期参考价，包含不可续费的新人优惠；不是所有机场的实际首购结算价",
+      "regular": "常规持续套餐周期参考价，仅极速Cloud改用30元，其余沿用已记录价格；不是逐家验证的续费成交价"
+    }
+  },
+  "currentPinhaolian": {
+    "price": 19.9,
+    "traffic": "50GB/月",
+    "trial": true,
+    "dedicatedClient": false,
+    "universalSubscription": true,
+    "scenarios": [
+      "trial",
+      "clash",
+      "chatgpt",
+      "streaming"
+    ],
+    "noExpiryPackage": {
+      "priceCny": 70,
+      "trafficGb": 150,
+      "priceText": "70元",
+      "trafficText": "150GB",
+      "status": "listed",
+      "deviceLimit": "第三方不限连接；新机场账号不提供专属客户端",
+      "validity": "不限时；当前重置费、续购与剩余流量处理需确认",
+      "checkedAt": "2026-10-16",
+      "unitPriceCnyPerGb": 0.467,
+      "sourcePage": "/posts/runway-review-2026/",
+      "currency": "CNY",
+      "billing": "one-off"
+    }
+  }
+}

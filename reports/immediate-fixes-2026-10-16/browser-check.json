@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-16",
+  "viewportWidth": 1280,
+  "checks": [
+    { "path": "/posts/clash-guide/", "updatedDateVisible": true, "correctCompatibilityVisible": true, "staleCompatibilityPresent": false, "scrollWidth": 1280 },
+    { "path": "/rankings/coupons/", "historicalActivitySectionVisible": true, "endedWindowVisible": true, "scrollWidth": 1280 },
+    { "path": "/posts/ai-tools-not-working/", "errorWorkflowVisible": true, "oldRegionAdvicePresent": false, "scrollWidth": 1280 },
+    { "path": "/posts/tiktok-not-working/", "symptomWorkflowVisible": true, "unsupported90PercentPresent": false, "scrollWidth": 1280 },
+    { "path": "/data/rankings.html", "coverage10Candidates3RecordedVisible": true, "scrollWidth": 1280 },
+    { "path": "/", "faqExpanded": true, "commercialSourceOctober15Visible": true, "quarter62Visible": true, "uniform1xVisible": true, "trialSourceSeptember27Preserved": true, "noNewTrialClaim": true, "editorialDateOctober16Visible": true, "scrollWidth": 1280 }
+  ],
+  "observedConsoleErrors": [],
+  "limitations": "本轮只核对默认1280宽度，未单独运行手机尺寸或明暗主题矩阵；未新增客户端、试用或节点性能实测。"
+}

@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-20T06:23:54.290562+00:00",
+  "method": "Read-only local HTML parsing; no browser access, network access, build, source changes or safety-block workaround.",
+  "distRoot": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/.vuepress/dist",
+  "htmlPages": 112,
+  "siteHtmlPages": 109,
+  "standaloneDataHtmlPages": 3,
+  "linkCounts": {
+    "internalHref": 8686,
+    "fragmentLinks": 2417,
+    "htmlTargets": 7966,
+    "assetTargets": 720
+  },
+  "routingRules": [
+    "trailing slash and /index.html",
+    "explicit .html",
+    "extensionless route to /index.html or .html, including /data/airports, /data/rankings, /data/risk-monitor",
+    "percent-decoded paths and fragments",
+    "relative and http(s) yp7.net/www.yp7.net links"
+  ],
+  "extensionlessDataRoutesResolved": {
+    "/data/airports": 1,
+    "/data/rankings": 3,
+    "/data/risk-monitor": 1
+  },
+  "linkErrors": [],
+  "duplicateIds": [],
+  "originalHeadingCounts": {
+    "bianyuan-review-2026": 19,
+    "jilianyun-review-2026": 15,
+    "shanyue-review-2026": 24,
+    "ermiao-vpn-review": 17
+  },
+  "originalHeadingCountTotal": 75,
+  "originalHeadingIdsFound": {
+    "bianyuan-review-2026": 19,
+    "jilianyun-review-2026": 15,
+    "shanyue-review-2026": 24,
+    "ermiao-vpn-review": 17
+  },
+  "missingOriginalHeadingIds": {
+    "bianyuan-review-2026": [],
+    "jilianyun-review-2026": [],
+    "shanyue-review-2026": [],
+    "ermiao-vpn-review": []
+  },
+  "passed": true
+}

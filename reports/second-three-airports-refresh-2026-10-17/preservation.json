@@ -1,0 +1,47 @@
+{
+  "auditDate": "2026-10-17",
+  "changedServiceRecords": [
+    "99吧",
+    "光年梯",
+    "光速云"
+  ],
+  "otherServiceRecordsPreserved": 55,
+  "otherVisibleServiceRecordsPreserved": 54,
+  "changedNoExpiryPackages": [
+    "99吧",
+    "光速云"
+  ],
+  "unchangedSiilasSnapshotSha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+  "unchangedDetailSiilasBlocks": {
+    "光年梯": "f70bb27e88c26748f08a9c70070d228954fb9ae417892dbace3ad26f05393281"
+  },
+  "headingCountsPreserved": {
+    "99吧": 26,
+    "光年梯": 36,
+    "光速云": 26
+  },
+  "collectionsUnchanged": true,
+  "lastModified": "2026-10-17",
+  "lastFullReview": "2026-08-19",
+  "metrics": {
+    "count": 57,
+    "trialCount": 11,
+    "noExpiryCount": 40,
+    "noExpiryUnverifiedCount": 0,
+    "dedicatedClientCount": 38,
+    "universalSubscriptionCount": 42,
+    "cheapUnderTenCount": 12,
+    "averagePrice": 17.4,
+    "regularCheapUnderTenCount": 12,
+    "regularAveragePrice": 17.6,
+    "performanceCount": 6,
+    "salesSampleCount": 17
+  },
+  "postSyncHeadingCountsPreserved": {
+    "99吧": 26,
+    "光年梯": 36,
+    "光速云": 26
+  },
+  "catalogueOtherDetailSectionsPreserved": 59,
+  "catalogueHeadingsPreserved": true
+}

@@ -1,0 +1,182 @@
+{
+  "auditedAt": "2026-10-18",
+  "scope": "Current project evidence; 57 visible services. No new merchant visit or site changes.",
+  "findings": [
+    {
+      "priority": "P1",
+      "provider": "云界线99元包",
+      "kind": "交付额度冲突",
+      "current": "卡片80GB、正文300GB；卡片价格已确认",
+      "needed": "该具体商品的交付总流量",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/云界线.md",
+        "line": 71
+      }
+    },
+    {
+      "priority": "P1",
+      "provider": "秒秒云88元包",
+      "kind": "交付/刷新冲突",
+      "current": "一次性不限时间100G、正文100G/月；365天两档已明确",
+      "needed": "总量或分期发放、刷新和期限",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/秒秒云.md",
+        "line": 53
+      }
+    },
+    {
+      "priority": "P1",
+      "provider": "光速云量子版",
+      "kind": "交付额度冲突",
+      "current": "68元档卡片500GB/月、正文450GB/月；轻量69GB已确认",
+      "needed": "量子月流量",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/光速云.md",
+        "line": 83
+      }
+    },
+    {
+      "priority": "P1",
+      "provider": "云图119元商品",
+      "kind": "交付字段缺口",
+      "current": "一年有效已确认；实际100GB发放单位未确认",
+      "needed": "全年总量/每月、刷新及结转",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/云图.md",
+        "line": 45
+      }
+    },
+    {
+      "priority": "P1",
+      "provider": "九云",
+      "kind": "主榜轮换复核",
+      "current": "8款套餐来源9月22日，26天前，不证明当前已变价",
+      "needed": "当前价量、周期、并发和带宽",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/九云.md",
+        "line": 25
+      }
+    },
+    {
+      "priority": "P2",
+      "provider": "边缘节点399元档",
+      "kind": "重置报价冲突",
+      "current": "399元450GB首次价量明确；旧重置段100×0.9=90",
+      "needed": "该档重置报价及交付",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/边缘节点.md",
+        "line": 80
+      }
+    },
+    {
+      "priority": "P2",
+      "provider": "极连云",
+      "kind": "重置报价冲突",
+      "current": "399元600GB明确，旧重置612元/399×0.9不一致",
+      "needed": "重置报价及交付",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/极连云.md",
+        "line": 35
+      }
+    },
+    {
+      "priority": "P2",
+      "provider": "闪跃",
+      "kind": "重置权益缺口",
+      "current": "首次150元100GB、288元200GB已确认",
+      "needed": "130/268元重置后额度和原余量",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/闪跃.md",
+        "line": 61
+      }
+    },
+    {
+      "priority": "P2",
+      "provider": "二猫云定制",
+      "kind": "期限/刷新缺口",
+      "current": "卡片700元一次性、月流量500GB；报价付款已确认",
+      "needed": "购后有效期、未来刷新及重置基数",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/二猫云.md",
+        "line": 45
+      }
+    },
+    {
+      "priority": "P2",
+      "provider": "极速Cloud/极速123",
+      "kind": "文档与具体卡片差异",
+      "current": "按卡片设备限制和365天/不限时分组；10倍/6倍已确认",
+      "needed": "执行设备数、期限与重置费用",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/极速Cloud.md",
+        "line": 89
+      }
+    },
+    {
+      "priority": "P2",
+      "provider": "UUONE",
+      "kind": "项目来源日期差异",
+      "current": "页首9月28日；正文/FAQ/共享来源9月27日",
+      "needed": "依原确认记录统一日期",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/uuone.md",
+        "line": 16
+      }
+    },
+    {
+      "priority": "P2",
+      "provider": "一翻云",
+      "kind": "项目来源日期差异",
+      "current": "页首9月28日；description/正文/共享来源9月27日",
+      "needed": "依原核对记录统一日期",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/一翻云.md",
+        "line": 20
+      }
+    },
+    {
+      "priority": "P2",
+      "provider": "神行加速",
+      "kind": "商品正文缺单位",
+      "current": "当前采用卡片260/520GB；正文40/月、72/月缺流量单位",
+      "needed": "选中商品权益说明",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/神行加速.md",
+        "line": 34
+      }
+    },
+    {
+      "priority": "P2",
+      "provider": "99吧",
+      "kind": "公告/小数价复核",
+      "current": "已披露波动公告日期和24.99/24.9等差异",
+      "needed": "当前影响恢复说明和具体周期金额",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/99吧.md",
+        "line": 23
+      }
+    },
+    {
+      "priority": "P3",
+      "provider": "速界",
+      "kind": "小额差异/报价缺口",
+      "current": "100元档500GB/499G、长周期尚未逐读",
+      "needed": "实际额度和各周期总价",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/速界.md",
+        "line": 46
+      }
+    },
+    {
+      "priority": "P3",
+      "provider": "快狸",
+      "kind": "价格结构复核",
+      "current": "后台季290高于月95×3；本站按原报价列出",
+      "needed": "当前报价和折扣适用，不自动认定错误",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/快狸.md",
+        "line": 46
+      }
+    }
+  ]
+}

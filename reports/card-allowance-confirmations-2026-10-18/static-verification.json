@@ -1,0 +1,20 @@
+{
+  "htmlPages": 112,
+  "linkCounts": {
+    "internalHref": 7913,
+    "fragmentLinks": 2417
+  },
+  "linkErrors": [],
+  "duplicateIds": [],
+  "originalHeadingCounts": {
+    "ermiao-vpn-review": 17,
+    "quanqiuyun": 35,
+    "guangsuyun": 26
+  },
+  "missingOriginalHeadingIds": {
+    "ermiao-vpn-review": [],
+    "quanqiuyun": [],
+    "guangsuyun": []
+  },
+  "passed": true
+}

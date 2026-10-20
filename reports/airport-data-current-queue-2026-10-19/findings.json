@@ -1,0 +1,100 @@
+{
+  "auditedAt": "2026-10-19",
+  "scope": "Current project evidence, not fresh merchant verification. Priority is data-completion order, not confirmed merchant error severity.",
+  "primaryQueue": [
+    {
+      "priority": "先补",
+      "provider": "边缘节点399元450GB",
+      "kind": "重置费用",
+      "current": "首次价量明确，旧重置说明沿用100×0.9=90",
+      "needed": "该具体商品实际重置金额及发放额度",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/边缘节点.md",
+        "line": 80
+      }
+    },
+    {
+      "priority": "先补",
+      "provider": "极连云399元600GB",
+      "kind": "重置费用",
+      "current": "首次399元600GB已确认，重置612元与399×0.9不一致",
+      "needed": "当前重置报价、恢复额度及余量处理",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/极连云.md",
+        "line": 35
+      }
+    },
+    {
+      "priority": "先补",
+      "provider": "闪跃两不限时包",
+      "kind": "重置交付",
+      "current": "首次150元100GB和288元200GB已确认，旧重置选项130/268元",
+      "needed": "重置后实际额度、余量是否覆盖或叠加",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/闪跃.md",
+        "line": 61
+      }
+    },
+    {
+      "priority": "先补",
+      "provider": "二猫云700元定制",
+      "kind": "服务期限/刷新",
+      "current": "700元一次付款与卡片月流量500GB均已采用",
+      "needed": "一次付款覆盖时长、后续刷新与重置基数",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/二猫云.md",
+        "line": 45
+      }
+    },
+    {
+      "priority": "项目整理",
+      "provider": "秒秒云/云图",
+      "kind": "客户端标签",
+      "current": "当前证据为教程，汇总和结构化描述却统一标一键订阅",
+      "needed": "区分已读教程与实见菜单，或用中性订阅客户端标签",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/秒秒云.md",
+        "line": 168
+      }
+    },
+    {
+      "priority": "项目整理",
+      "provider": "UUONE",
+      "kind": "来源日期",
+      "current": "页首9/28与正文/来源9/27不一致",
+      "needed": "依据原确认记录统一来源日期",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/uuone.md",
+        "line": 16
+      }
+    },
+    {
+      "priority": "项目整理",
+      "provider": "一翻云",
+      "kind": "来源日期",
+      "current": "页首9/28与正文/来源9/27不一致",
+      "needed": "依据原核对记录统一来源日期",
+      "evidence": {
+        "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/机场评测/一翻云.md",
+        "line": 20
+      }
+    }
+  ],
+  "closed": [
+    "九云10款及9yun仅排除两365天包、不限次数、六导入菜单",
+    "云界线99元80GB",
+    "秒秒云88元一次性100GB",
+    "光速云68元500GB每月",
+    "云图119元每月100GB共12个月",
+    "二猫卡片价格与周期",
+    "全球云59GB及光速轻量69GB",
+    "sogo卡片价格与90%重置费",
+    "隐形人不限设备",
+    "灯塔无周付/300MB三天试用及指定退款条件",
+    "阿达西最低充值1元",
+    "Flybit192GB季62元和统一1倍率",
+    "拼好连新版试用1天6GB和第三方客户端",
+    "闪跃首次交付",
+    "秒秒云29.9/49.9元365天总量"
+  ]
+}

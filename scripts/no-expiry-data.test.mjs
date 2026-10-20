@@ -54,9 +54,36 @@ test('no-expiry comparison keeps one-off facts consistent without relabelling mo
   assert.equal(getNoExpiryPackage('/posts/jilianyun-review-2026/').priceCny, 399)
   assert.equal(getNoExpiryPackage('/posts/jilianyun-review-2026/').trafficGb, 600)
   assert.equal(getNoExpiryPackage('/posts/jilianyun-review-2026/').unitPriceCnyPerGb, 0.665)
-  for (const path of ['/posts/xxyun-review-2026/', '/posts/sogo-review-2026/', '/posts/shanyue-review-2026/']) {
-    assert.equal(getNoExpiryPackage(path).unitPriceCnyPerGb, null)
+  assert.equal(getNoExpiryPackage('/posts/xxyun-review-2026/').priceCny, 66.66)
+  assert.equal(getNoExpiryPackage('/posts/xxyun-review-2026/').trafficGb, 500)
+  assert.equal(getNoExpiryPackage('/posts/xxyun-review-2026/').unitPriceCnyPerGb, 0.133)
+  assert.equal(getNoExpiryPackage('/posts/ermiao-vpn-review/').priceCny, 100)
+  assert.equal(getNoExpiryPackage('/posts/ermiao-vpn-review/').unitPriceCnyPerGb, 1)
+  assert.equal(rows.find((row) => row.cells['机场'] === '隐形人').cells['设备限制'], '不限设备数')
+  assert.match(rows.find((row) => row.cells['机场'] === '隐形人').cells['套餐核验日期'], /2026-09-26官网；2026-10-18站长确认全部套餐不限设备/)
+  for (const [path, trafficGb, unitPrice] of [
+    ['/posts/yunjiexian-review-2026/', 80, 1.238],
+    ['/posts/miaomiaoyun-review-2026/', 100, 0.88],
+  ]) {
+    const record = getNoExpiryPackage(path)
+    assert.equal(record.trafficGb, trafficGb)
+    assert.equal(record.status, 'listed')
+    assert.equal(record.unitPriceCnyPerGb, unitPrice)
+    assert.equal(record.checkedAt, '2026-10-18')
+    assert.equal(record.ownerConfirmedAt, '2026-10-19')
   }
+  const sogo = getNoExpiryPackage('/posts/sogo-review-2026/')
+  assert.equal(sogo.priceCny, 120)
+  assert.equal(sogo.unitPriceCnyPerGb, 1)
+  const sogoRow = rows.find((row) => row.cells['机场'] === 'sogo')
+  assert.equal(sogoRow.cells['一次付款金额'], '120元')
+  assert.equal(sogoRow.cells['每GB成本'], '1.000元/GB')
+  assert.match(sogoRow.cells['有效期与重置'], /90%为108元/)
+  assert.match(sogoRow.cells['套餐核验日期'], /2026-09-27官网；2026-10-18站长确认卡片价格与重置费用/)
+
+  assert.equal(getNoExpiryPackage('/posts/shanyue-review-2026/').unitPriceCnyPerGb, 1.5)
+  assert.equal(getNoExpiryPackage('/posts/shanyue-review-2026/').trafficGb, 100)
+  assert.match(rows.find((row) => row.cells['机场'] === '闪跃').cells['套餐核验日期'], /2026-10-20官网；2026-10-18站长确认首次交付流量/)
 
   const schema = getPageSchema({ path: collection.pagePath, title: collection.name, frontmatter: {}, data: {}, content: source })
   assert.ok(!JSON.stringify(schema).includes('"offers"'))
@@ -65,14 +92,16 @@ test('no-expiry comparison keeps one-off facts consistent without relabelling mo
 })
 
 test('a conflicting package must never acquire a computed unit price', () => {
-  const path = '/posts/sogo-review-2026/'
-  const original = noExpiryPackages[path].priceCny
+  const path = '/posts/yunjiexian-review-2026/'
+  const original = { ...noExpiryPackages[path] }
   try {
-    // Even if a card amount is later recorded, its conflict must be resolved first.
+    // Even complete numeric fields cannot resolve an explicitly recorded conflict.
     noExpiryPackages[path].priceCny = 120
+    noExpiryPackages[path].trafficGb = 120
+    noExpiryPackages[path].status = 'conflicting'
     assert.equal(getNoExpiryPackage(path).unitPriceCnyPerGb, null)
   } finally {
-    noExpiryPackages[path].priceCny = original
+    Object.assign(noExpiryPackages[path], original)
   }
 })
 
@@ -130,9 +159,29 @@ test('finite-duration packages stay excluded from no-expiry summaries and export
   const yunTuPublic = data.airports.find((item) => item.name === '云图')
   assert.equal(yunTuPublic.summary, yunTu.summary)
   assert.match(yunTu.summary, /78元一次支付[^。]*每月50GB[^。]*12个月/)
-  assert.match(yunTu.summary, /119元[^。]*期限[^。]*刷新[^。]*待核实/)
-  assert.match(yunTu.summary, /不能套用78元档的12个月规则/)
+  assert.match(yunTu.summary, /119元商品购后有效期1年/)
+  assert.match(yunTu.summary, /10月19日用户进一步确认每月100GB，共12个月/)
+  assert.match(yunTu.summary, /不能作为一次可自由使用的1200GB总量包/)
   assert.ok(yunTu.informationSources.some((item) => item.checkedAt === '2026-10-10' && /78元.*12个月/.test(item.name)))
+  assert.ok(yunTu.informationSources.some((item) => item.checkedAt === '2026-10-18' && /119元.*1年有效期/.test(item.name)))
+  assert.ok(yunTu.informationSources.some((item) => item.checkedAt === '2026-10-19' && /119元每月100GB持续12个月/.test(item.name)))
+  // A service may sell both finite-duration packs and a separate advertised
+  // no-expiry pack. Export only the latter, with its confirmed one-off allowance.
+  const miaoMiao = data.airports.find((item) => item.name === '秒秒云')
+  assert.equal(miaoMiao.noExpiry, true)
+  assert.match(miaoMiao.summary, /365天总量100\/200GB分别一次性29\.9\/49\.9元，不计不限时/)
+  const miaoPackage = rankings.rankings.noExpiry.find((item) => item.name === '秒秒云').noExpiryPackage
+  assert.equal(miaoPackage.priceCny, 88)
+  assert.equal(miaoPackage.billing, 'one-off')
+  assert.equal(miaoPackage.trafficGb, 100)
+  assert.equal(miaoPackage.status, 'listed')
+  assert.equal(miaoPackage.unitPriceCnyPerGb, 0.88)
+  for (const rows of noExpiryTables) {
+    const row = rows.find((item) => item.cells['机场'] === '秒秒云')
+    assert.equal(row.cells['一次付款金额'], '88元')
+    assert.equal(row.cells['一次性总流量'], '100GB')
+    assert.equal(row.cells['每GB成本'], '0.880元/GB')
+  }
   const noExpirySchema = getPageSchema({ path: airportCollections.noExpiry.pagePath, title: airportCollections.noExpiry.name,
     frontmatter: {}, data: {}, content: noExpirySource })
   const noExpiryList = noExpirySchema['@graph'].find((item) => item['@type'] === 'ItemList')

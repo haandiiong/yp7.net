@@ -1,0 +1,297 @@
+{
+  "checkedAt": "2026-10-18",
+  "url": "https://siilas.com/test/",
+  "method": "Read with web open; compared displayed archive totals and newest sorted record, not every evidence image.",
+  "observed": {
+    "airportCount": 9,
+    "verifiedTestCount": 135,
+    "latestTestAt": "2026-10-08"
+  },
+  "local": {
+    "receivedAt": "2026-10-14",
+    "airportCount": 9,
+    "verifiedTestCount": 135,
+    "latestTestAt": "2026-10-08"
+  },
+  "newerRecordObserved": false,
+  "rawFileSha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+  "airports": [
+    {
+      "name": "全球云",
+      "path": "/posts/quanqiuyun/",
+      "sourceUrl": "https://siilas.com/airport/globalcloud/",
+      "latestTestAt": "2026-10-08",
+      "ageDays": 10,
+      "verifiedTestCount": 28,
+      "regions": [
+        {
+          "region": "新加坡",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "香港",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "日本",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "美国",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        }
+      ]
+    },
+    {
+      "name": "光年梯",
+      "path": "/posts/guangnianti-review-2026/",
+      "sourceUrl": "https://siilas.com/airport/guangnianti/",
+      "latestTestAt": "2026-10-08",
+      "ageDays": 10,
+      "verifiedTestCount": 16,
+      "regions": [
+        {
+          "region": "新加坡",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "香港",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "日本",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "美国",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        }
+      ]
+    },
+    {
+      "name": "网际快车",
+      "path": "/posts/wangji-kuaiche-review/",
+      "sourceUrl": "https://siilas.com/airport/interexpress/",
+      "latestTestAt": "2026-10-08",
+      "ageDays": 10,
+      "verifiedTestCount": 17,
+      "regions": [
+        {
+          "region": "新加坡",
+          "testedAt": "2026-09-11",
+          "ageDays": 37
+        },
+        {
+          "region": "香港",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "日本",
+          "testedAt": "2026-09-11",
+          "ageDays": 37
+        },
+        {
+          "region": "美国",
+          "testedAt": "2026-09-11",
+          "ageDays": 37
+        }
+      ]
+    },
+    {
+      "name": "xxyun",
+      "path": "/posts/xxyun-review-2026/",
+      "sourceUrl": "https://siilas.com/airport/xxyun/",
+      "latestTestAt": "2026-10-08",
+      "ageDays": 10,
+      "verifiedTestCount": 12,
+      "regions": [
+        {
+          "region": "新加坡",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "香港",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "日本",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "美国",
+          "testedAt": "2026-08-08",
+          "ageDays": 71
+        }
+      ]
+    },
+    {
+      "name": "Flybit",
+      "path": "/posts/flybit-review-2026/",
+      "sourceUrl": "https://siilas.com/airport/flybit/",
+      "latestTestAt": "2026-08-13",
+      "ageDays": 66,
+      "verifiedTestCount": 13,
+      "regions": [
+        {
+          "region": "新加坡",
+          "testedAt": "2026-08-13",
+          "ageDays": 66
+        },
+        {
+          "region": "香港",
+          "testedAt": "2026-08-13",
+          "ageDays": 66
+        },
+        {
+          "region": "日本",
+          "testedAt": "2026-08-13",
+          "ageDays": 66
+        },
+        {
+          "region": "美国",
+          "testedAt": "2026-08-13",
+          "ageDays": 66
+        }
+      ]
+    },
+    {
+      "name": "拼好连（原 Runway）",
+      "path": "/posts/runway-review-2026/",
+      "sourceUrl": "https://siilas.com/airport/pinhaolian/",
+      "latestTestAt": "2026-09-23",
+      "ageDays": 25,
+      "verifiedTestCount": 12,
+      "regions": [
+        {
+          "region": "新加坡",
+          "testedAt": "2026-09-20",
+          "ageDays": 28
+        },
+        {
+          "region": "香港",
+          "testedAt": "2026-09-23",
+          "ageDays": 25
+        },
+        {
+          "region": "日本",
+          "testedAt": "2026-09-23",
+          "ageDays": 25
+        },
+        {
+          "region": "美国",
+          "testedAt": "2026-09-23",
+          "ageDays": 25
+        }
+      ]
+    },
+    {
+      "name": "cocoduck",
+      "path": "/posts/cocoduck-review/",
+      "sourceUrl": "https://siilas.com/airport/cocoduck/",
+      "latestTestAt": "2026-08-13",
+      "ageDays": 66,
+      "verifiedTestCount": 12,
+      "regions": [
+        {
+          "region": "新加坡",
+          "testedAt": "2026-08-13",
+          "ageDays": 66
+        },
+        {
+          "region": "香港",
+          "testedAt": "2026-08-13",
+          "ageDays": 66
+        },
+        {
+          "region": "日本",
+          "testedAt": "2026-08-13",
+          "ageDays": 66
+        },
+        {
+          "region": "美国",
+          "testedAt": "2026-08-13",
+          "ageDays": 66
+        }
+      ]
+    },
+    {
+      "name": "边缘节点",
+      "path": "/posts/bianyuan-review-2026/",
+      "sourceUrl": "https://siilas.com/airport/edgenode/",
+      "latestTestAt": "2026-10-08",
+      "ageDays": 10,
+      "verifiedTestCount": 12,
+      "regions": [
+        {
+          "region": "新加坡",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "香港",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "日本",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "美国",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        }
+      ]
+    },
+    {
+      "name": "XSUS",
+      "path": "/posts/xsus-review-2026/",
+      "sourceUrl": "https://siilas.com/airport/xsus/",
+      "latestTestAt": "2026-10-08",
+      "ageDays": 10,
+      "verifiedTestCount": 13,
+      "regions": [
+        {
+          "region": "新加坡",
+          "testedAt": "2026-10-08",
+          "ageDays": 10
+        },
+        {
+          "region": "香港",
+          "testedAt": "2026-09-23",
+          "ageDays": 25
+        },
+        {
+          "region": "日本",
+          "testedAt": "2026-09-23",
+          "ageDays": 25
+        },
+        {
+          "region": "美国",
+          "testedAt": "2026-09-23",
+          "ageDays": 25
+        }
+      ]
+    }
+  ],
+  "noReceivedRecordCount": 48,
+  "sales": {
+    "observedAt": "2026-06-18",
+    "source": "yp7.net 当前可见销量样本",
+    "caveat": "销量样本只用于观察本站读者购买热度，不等同于全网销量、服务商真实总销量或长期稳定性排名。",
+    "ageDays": 122
+  }
+}

@@ -138,6 +138,7 @@ test('the receipt CLI handles published historical additions and repeated --chec
   for (const script of ['sync-siilas-tests.mjs', 'lib/siilas-publication.mjs', 'lib/siilas-article-summary.mjs', 'lib/siilas-article-date.mjs', 'lib/siilas-collection-summary.mjs', 'lib/siilas-experience-methods.mjs', 'lib/load-config.mjs']) {
     copyFileSync(join(repoDir, 'scripts', script), join(projectDir, 'scripts', script))
   }
+  copyFileSync(join(repoDir, 'docs/.vuepress/config/markdown-table.ts'), join(projectDir, 'docs/.vuepress/config/markdown-table.ts'))
   writeFileSync(join(sourceDir, 'package.json'), '{"type":"module"}')
   writeFileSync(join(sourceDir, 'src/data/airport-data.ts'), 'import data from "./airports.json"; export const airports = data.airports; export const MIN_RANKING_REGION_DAYS = 3;')
   writeFileSync(join(sourceDir, 'src/data/test-record-presentation.ts'), 'export const getLatestRegionTests = (tests) => tests.map(test => ({region:test.node,test})); export const getLatestExperienceSummary = () => "fixture";')

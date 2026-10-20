@@ -1,0 +1,26 @@
+{
+  "escapedPipe": {
+    "input": "| [Flybit](#flybit) | 办公\\|备用 | 15元/月，128GB/月；支持试用<br>试用1天2GB | 通用订阅<br>套餐不退款 | 原始测试日期 |",
+    "escapedPipeContainsOneBackslash": true,
+    "parsed": {
+      "机场": "[Flybit](#flybit)",
+      "适用场景": "办公\\",
+      "套餐与试用": "备用",
+      "客户端与限制": "15元/月，128GB/月；支持试用<br>试用1天2GB",
+      "测试依据": "通用订阅<br>套餐不退款"
+    }
+  },
+  "replacementToken": {
+    "inputRisk": "优惠码为 `$&`",
+    "headingCount": 2,
+    "output": "文章\n## 套餐与使用资料汇总\n\n| 风险记录 | 优惠码为 `\n## 套餐与使用资料汇总\n\n| 风险记录 | 旧风险 |\n` |\n\n## FAQ\n\n正文"
+  },
+  "unverifiedFreshness": {
+    "sourceVerifiedLatestDate": "2026-08-13",
+    "snapshotLatestDate": "2026-10-08",
+    "summaryRow": "| [Flybit](#flybit) | 已有Clash或小火箭<br>选择理由：具名订阅导入入口，可先试用 | 15元/月，128GB/月；支持试用<br>试用1天2GB；不限时包36元128GB起 | 通用订阅<br>套餐不退款 | [最近实际测试：2026-10-17](https://siilas.com/airport/flybit/)<br>14条原始记录；5个不同测试日；1条待发布 |",
+    "coverageRow": "| [Flybit](https://siilas.com/airport/flybit/) | 2026-10-17 | 地区未记录，1条（含待发布） | 2026-08-13 新加坡、香港、日本、美国 | 已参评；综合分 6.9/10 |",
+    "unverifiedSampleMarkedPending": true
+  },
+  "sourceFilesMutated": false
+}

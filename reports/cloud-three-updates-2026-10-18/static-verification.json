@@ -1,0 +1,76 @@
+{
+  "verifiedOn": "2026-10-18",
+  "scope": "Local generated HTML/data only; no browser or network. Canonical data routes mapped to generated .html artifacts using existing redirects.",
+  "htmlPages": 112,
+  "linkCounts": {
+    "internalHref": 8681,
+    "fragmentLinks": 2416,
+    "external": 1095
+  },
+  "canonicalDataAliases": [
+    "/data/airports",
+    "/data/rankings",
+    "/data/risk-monitor"
+  ],
+  "linkErrors": [],
+  "duplicateIds": [],
+  "checks": [
+    {
+      "name": "Miaomiao finite365 total100 excluded from no-expiry",
+      "passed": true
+    },
+    {
+      "name": "Miaomiao annual-monthly package preserved",
+      "passed": true
+    },
+    {
+      "name": "Flashleap first delivery100 with specific confirmation scope",
+      "passed": true
+    },
+    {
+      "name": "Flashleap first delivery200 and reset boundary visible",
+      "passed": true
+    },
+    {
+      "name": "39 no-expiry candidates and2 remaining conflicts",
+      "passed": true
+    },
+    {
+      "name": "Catalogue statistics39 and68 percent",
+      "passed": true
+    },
+    {
+      "name": "posts/yunjiexian-review-2026 轻云 cycle totals",
+      "passed": true
+    },
+    {
+      "name": "posts/yunjiexian-review-2026 凌云 cycle totals",
+      "passed": true
+    },
+    {
+      "name": "posts/yunjiexian-review-2026 御云 cycle totals",
+      "passed": true
+    },
+    {
+      "name": "posts/jichang-heji 轻云 cycle totals",
+      "passed": true
+    },
+    {
+      "name": "posts/jichang-heji 凌云 cycle totals",
+      "passed": true
+    },
+    {
+      "name": "posts/jichang-heji 御云 cycle totals",
+      "passed": true
+    },
+    {
+      "name": "Cloud99 card80/body300 remains conflicting",
+      "passed": true
+    },
+    {
+      "name": "Cloud current sources18 and old owner rule6",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

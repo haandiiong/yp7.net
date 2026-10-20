@@ -1,0 +1,328 @@
+{
+  "checkedAt": "2026-10-19T12:11:26.873Z",
+  "baselinePath": "reports/jiuyun-refresh-2026-10-19/before.json",
+  "browserFactsPath": "reports/jiuyun-refresh-2026-10-19/browser-facts.json",
+  "scope": "Read-only shared-data verification. Only this verification.json was written; no source edits, browser actions, sync, receiving CLI, or build.",
+  "passed": true,
+  "failures": [],
+  "checks": {
+    "rawCount58": true,
+    "identitiesAndOrderUnchanged": true,
+    "onlyJiuyunAllowedFieldsChanged": true,
+    "allProtectedFieldsUnchanged": true,
+    "mainSevenHashUnchanged": true,
+    "collectionsHashUnchanged": true,
+    "rawSiilasHashUnchanged": true,
+    "metricsUnchanged": true,
+    "noExpiry40IdentitiesUnchanged": true,
+    "onlyJiuyunNoExpiryDateAndValidityChanged": true,
+    "noExpiry36Yuan100GbPoint360ThreeDevices": true,
+    "noExpiryCheckedAtOctober19": true,
+    "fixed365DayPackagesNotReplacingUnlimitedEntry": true,
+    "fullReviewAugust19": true,
+    "modifiedOctober19": true,
+    "oldInformationSourcesSeptember22Preserved": true,
+    "threeNewSourcesOctober19": true,
+    "noAddedJiuyunPerformance": true,
+    "noJiuyunSiilasRecord": true
+  },
+  "airportData": {
+    "beforeCount": 58,
+    "afterCount": 58,
+    "changed": [
+      {
+        "name": "九云",
+        "path": "/posts/jiuyun-review-2026/",
+        "fields": [
+          "risk",
+          "summary",
+          "subscriptionClients",
+          "informationSources"
+        ]
+      }
+    ],
+    "protectedFields": [
+      "price",
+      "priceText",
+      "traffic",
+      "trial",
+      "noExpiry",
+      "dedicatedClient",
+      "universalSubscription",
+      "performance"
+    ],
+    "protectedFieldCounts": {
+      "price": 58,
+      "priceText": 58,
+      "traffic": 58,
+      "trial": 58,
+      "noExpiry": 58,
+      "dedicatedClient": 58,
+      "universalSubscription": 58,
+      "performance": 58
+    },
+    "protectedViolations": []
+  },
+  "hashes": {
+    "main7": {
+      "before": "4d4441d619f13d58ace2fe36c27d0b4f939db2e56f92c0e3b15086db2f7ef118",
+      "after": "4d4441d619f13d58ace2fe36c27d0b4f939db2e56f92c0e3b15086db2f7ef118",
+      "names": [
+        "Flybit",
+        "xxyun",
+        "网际快车",
+        "全球云",
+        "拼好连",
+        "九云",
+        "阿达西"
+      ]
+    },
+    "collections": {
+      "path": "docs/.vuepress/config/airport-collections.ts",
+      "before": "af60e15079b4c0470e495655bbe6bef39079b42017201c02b7d413dfc18a09f8",
+      "after": "af60e15079b4c0470e495655bbe6bef39079b42017201c02b7d413dfc18a09f8"
+    },
+    "siilasRaw": {
+      "path": "docs/.vuepress/config/data/siilas-tests.json",
+      "before": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+      "after": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad"
+    }
+  },
+  "metrics": {
+    "before": {
+      "count": 57,
+      "trialCount": 11,
+      "noExpiryCount": 40,
+      "noExpiryUnverifiedCount": 0,
+      "dedicatedClientCount": 39,
+      "universalSubscriptionCount": 42,
+      "cheapUnderTenCount": 12,
+      "averagePrice": 17.4,
+      "regularCheapUnderTenCount": 12,
+      "regularAveragePrice": 17.6,
+      "performanceCount": 6,
+      "salesSampleCount": 17
+    },
+    "after": {
+      "count": 57,
+      "trialCount": 11,
+      "noExpiryCount": 40,
+      "noExpiryUnverifiedCount": 0,
+      "dedicatedClientCount": 39,
+      "universalSubscriptionCount": 42,
+      "cheapUnderTenCount": 12,
+      "averagePrice": 17.4,
+      "regularCheapUnderTenCount": 12,
+      "regularAveragePrice": 17.6,
+      "performanceCount": 6,
+      "salesSampleCount": 17
+    }
+  },
+  "dates": {
+    "fullReview": "2026-08-19",
+    "partialModification": "2026-10-19"
+  },
+  "noExpiryPackages": {
+    "beforeCount": 40,
+    "afterCount": 40,
+    "changed": [
+      {
+        "path": "/posts/jiuyun-review-2026/",
+        "fields": [
+          "validity",
+          "checkedAt"
+        ]
+      }
+    ],
+    "jiuyunBefore": {
+      "priceCny": 36,
+      "trafficGb": 100,
+      "priceText": "36元",
+      "trafficText": "100GB",
+      "status": "listed",
+      "deviceLimit": "3台同时在线",
+      "validity": "不限时；不重置，用完作废",
+      "checkedAt": "2026-09-22"
+    },
+    "jiuyunAfter": {
+      "priceCny": 36,
+      "trafficGb": 100,
+      "priceText": "36元",
+      "trafficText": "100GB",
+      "status": "listed",
+      "deviceLimit": "3台同时在线",
+      "validity": "不限时总量；9月22日旧说明不重置、用完作废；当前重购余量及补量细则未列",
+      "checkedAt": "2026-10-19",
+      "unitPriceCnyPerGb": 0.36,
+      "sourcePage": "/posts/jiuyun-review-2026/",
+      "currency": "CNY",
+      "billing": "one-off"
+    },
+    "cells": [
+      "36元",
+      "100GB",
+      "0.360元/GB",
+      "3台同时在线",
+      "不限时总量；9月22日旧说明不重置、用完作废；当前重购余量及补量细则未列",
+      "2026-10-19"
+    ]
+  },
+  "informationSources": {
+    "oldSources": [
+      {
+        "name": "九云套餐商店",
+        "url": "https://888.jiuyundl.com/#/shop",
+        "checkedAt": "2026-09-22",
+        "link": false
+      },
+      {
+        "name": "九云客户端教程",
+        "url": "https://888.jiuyundl.com/#/docs",
+        "checkedAt": "2026-09-22",
+        "link": false
+      }
+    ],
+    "missingOrAlteredOldSources": [],
+    "newSources": [
+      {
+        "name": "九云当前10款套餐、设备及付款周期选项",
+        "url": "https://216.236.63.122/#/shop",
+        "checkedAt": "2026-10-19",
+        "link": false
+      },
+      {
+        "name": "九云客户端目录及五篇第三方使用教程",
+        "url": "https://216.236.63.122/#/knowledge",
+        "checkedAt": "2026-10-19",
+        "link": false
+      },
+      {
+        "name": "九云订阅菜单、维护提示及9yun优惠公告（未标发布日期）",
+        "url": "https://216.236.63.122/#/dashboard",
+        "checkedAt": "2026-10-19",
+        "link": false
+      }
+    ]
+  },
+  "browserFacts": {
+    "checkedAt": "2026-10-19",
+    "planCount": 10,
+    "structure": {
+      "monthly": 3,
+      "termSpecials": 3,
+      "fixed365DayTotals": 2,
+      "unlimitedTotals": 2
+    },
+    "checks": {
+      "tenUniquePlans": true,
+      "expectedThreeMonthlyThreeTermTwo365TwoUnlimited": true,
+      "first365DayTotal500Gb": true,
+      "second365DayTotal1000Gb": true,
+      "annual400Gb88YuanFourDevices": true,
+      "existingUnlimitedEntry36Yuan100GbThreeDevices": true,
+      "existingUnlimited300Gb99YuanThreeDevices": true,
+      "monthlyCycleMenusObserved": true,
+      "oldTrialRefundRefreshRulesExplicitlyDated": true,
+      "noConnectionOperation": true
+    },
+    "plans": [
+      {
+        "name": "365天500G流量包",
+        "payment": "one-off",
+        "price": 19.9,
+        "totalTrafficGb": 500,
+        "validityDays": 365,
+        "devices": 3
+      },
+      {
+        "name": "365天1000G流量包",
+        "payment": "one-off",
+        "price": 29.9,
+        "totalTrafficGb": 1000,
+        "validityDays": 365,
+        "devices": 5
+      },
+      {
+        "name": "月付150G",
+        "cardTrafficGb": 150,
+        "devices": 3,
+        "prices": {
+          "month": 6,
+          "quarter": 18,
+          "halfYear": 36,
+          "year": 72
+        },
+        "cyclePricesObservedInMenu": true,
+        "monthlyRefreshSource": "2026-09-22 prior reading; current card did not repeat refresh rule"
+      },
+      {
+        "name": "月付300G",
+        "cardTrafficGb": 300,
+        "devices": 4,
+        "prices": {
+          "month": 9,
+          "quarter": 27,
+          "halfYear": 54,
+          "year": 108
+        },
+        "cyclePricesObservedInMenu": true,
+        "monthlyRefreshSource": "2026-09-22 prior reading; current card did not repeat refresh rule"
+      },
+      {
+        "name": "月付600G",
+        "cardTrafficGb": 600,
+        "devices": 5,
+        "prices": {
+          "month": 16,
+          "quarter": 48,
+          "halfYear": 96,
+          "year": 192
+        },
+        "cyclePricesObservedInMenu": true,
+        "monthlyRefreshSource": "2026-09-22 prior reading; current card did not repeat refresh rule"
+      },
+      {
+        "name": "年付200G特惠",
+        "price": 68,
+        "payment": "year",
+        "cardTrafficGb": 200,
+        "devices": 3,
+        "otherPeriodsObserved": false
+      },
+      {
+        "name": "季付200G特惠",
+        "price": 18,
+        "payment": "quarter",
+        "cardTrafficGb": 200,
+        "devices": 3
+      },
+      {
+        "name": "年付400G特惠",
+        "price": 88,
+        "payment": "year",
+        "cardTrafficGb": 400,
+        "devices": 4
+      },
+      {
+        "name": "不限时100G",
+        "price": 36,
+        "payment": "one-off",
+        "totalTrafficGb": 100,
+        "devices": 3
+      },
+      {
+        "name": "不限时300G",
+        "price": 99,
+        "payment": "one-off",
+        "totalTrafficGb": 300,
+        "devices": 3
+      }
+    ]
+  },
+  "performance": {
+    "jiuyunStructuredHistoricalPerformancePresent": false,
+    "jiuyunSiilasRecordPresent": false,
+    "snapshotReceivedAt": "2026-10-14",
+    "snapshotLatestTestAt": "2026-10-08"
+  }
+}

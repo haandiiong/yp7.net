@@ -1,0 +1,103 @@
+{
+  "verifiedOn": "2026-10-18",
+  "tests": {
+    "passed": 84,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "build": {
+    "pages": 109,
+    "status": "passed"
+  },
+  "contentHealth": {
+    "files": 104,
+    "status": "passed"
+  },
+  "managedTables": "in-sync",
+  "managedReviewSections": "in-sync",
+  "publicData": "in-sync",
+  "generatedPublicFiles": 10,
+  "consistency": {
+    "collectionPages": 9,
+    "visibleServices": 57,
+    "formats": [
+      "JSON",
+      "Markdown",
+      "HTML",
+      "Schema"
+    ],
+    "status": "passed"
+  },
+  "changedServiceRecords": [
+    "全球云",
+    "光速云",
+    "二猫云",
+    "隐形人",
+    "灯塔加速器"
+  ],
+  "otherRawServiceRecordsPreserved": 53,
+  "changedNoExpiryPackages": [
+    "/posts/quanqiuyun/",
+    "/posts/guangsuyun/",
+    "/posts/ermiao-vpn-review/",
+    "/posts/yinxingren-review-2026/"
+  ],
+  "basePricesAndCapabilitiesPreserved": true,
+  "allHistoricalPerformanceFieldsPreserved": true,
+  "mainRecommendationOrderPreserved": true,
+  "collectionsConfigPreserved": true,
+  "siilas": {
+    "sha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+    "rawRecords": 135,
+    "airports": 9,
+    "receivedAt": "2026-10-14",
+    "unchanged": true
+  },
+  "metrics": {
+    "count": 57,
+    "trialCount": 11,
+    "noExpiryCount": 40,
+    "noExpiryUnverifiedCount": 0,
+    "dedicatedClientCount": 39,
+    "universalSubscriptionCount": 42,
+    "cheapUnderTenCount": 12,
+    "averagePrice": 17.4,
+    "regularCheapUnderTenCount": 12,
+    "regularAveragePrice": 17.6,
+    "performanceCount": 6,
+    "salesSampleCount": 17
+  },
+  "static": {
+    "htmlPages": 112,
+    "linkCounts": {
+      "internalHref": 7913,
+      "fragmentLinks": 2417
+    },
+    "linkErrors": [],
+    "duplicateIds": [],
+    "originalHeadingCounts": {
+      "ermiao-vpn-review": 17,
+      "yinxingren-review-2026": 19,
+      "dengta-review-2026": 8,
+      "quanqiuyun": 35,
+      "guangsuyun": 26
+    },
+    "missingOriginalHeadingIds": {
+      "ermiao-vpn-review": [],
+      "yinxingren-review-2026": [],
+      "dengta-review-2026": [],
+      "quanqiuyun": [],
+      "guangsuyun": []
+    },
+    "keyChecks": {
+      "noWeeklyColumnInDengta": true,
+      "dengta300MB3Days": true,
+      "dedicatedTrialExplicit": true,
+      "refund24h10Percent": true
+    },
+    "passed": true
+  },
+  "independentContentReview": "passed",
+  "sourceBoundary": "Global/Light/Ermao product cards and cycle filters read10/18; their client dates preserved. Yinxingren and Dengta corrections from user10/18. No payment/order/reset/install/import/performance test.",
+  "published": false
+}

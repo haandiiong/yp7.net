@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-17",
+  "unitTests": {
+    "total": 84,
+    "passed": 84,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "build": {
+    "status": "passed",
+    "pages": 109
+  },
+  "contentHealth": {
+    "status": "passed",
+    "markdownFiles": 104
+  },
+  "consistency": {
+    "status": "passed",
+    "collections": 9,
+    "services": 57,
+    "formats": [
+      "JSON",
+      "Markdown",
+      "HTML",
+      "Schema"
+    ]
+  },
+  "managedTables": "in-sync",
+  "managedReviewSections": "in-sync",
+  "publicData": "in-sync",
+  "siilas": {
+    "status": "unchanged",
+    "airports": 9,
+    "rawRecords": 135,
+    "receivedAt": "2026-10-14",
+    "sha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad"
+  },
+  "resolvedDuringValidation": [
+    "机场大全平均首次入门参考价由17.3元同步为17.4元，内容检查通过并重新构建。"
+  ],
+  "localPreviewBrowserInspection": false,
+  "merchantInspection": "Native Chrome UI, read-only observations; no orders, downloads, redemption, subscription copy or performance tests.",
+  "published": false,
+  "staticOutput": {
+    "passed": true,
+    "htmlPages": 112,
+    "internalHrefs": 8678,
+    "fragmentLinks": 2415,
+    "missingTargets": 0,
+    "invalidIds": 0,
+    "duplicateIds": 0,
+    "keyChecksPassed": 28
+  }
+}

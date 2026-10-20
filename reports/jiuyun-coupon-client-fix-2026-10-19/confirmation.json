@@ -1,0 +1,43 @@
+{
+  "confirmedAt": "2026-10-19",
+  "source": "User confirmation in this chat, including clarification of package scope",
+  "coupon": {
+    "code": "9yun",
+    "discount": 0.8,
+    "excluded": [
+      {
+        "price": 19.9,
+        "totalTrafficGb": 500,
+        "validityDays": 365
+      },
+      {
+        "price": 29.9,
+        "totalTrafficGb": 1000,
+        "validityDays": 365
+      }
+    ],
+    "eligible": "The remaining six periodic products and the 36 yuan 100GB / 99 yuan 300GB no-expiry products",
+    "usageLimit": null,
+    "usageLimitMeaning": "unlimited number of uses",
+    "expiresAt": "not confirmed",
+    "stacking": "not confirmed",
+    "checkoutVerified": false
+  },
+  "clientCorrection": {
+    "importMenuClients": [
+      "Shadowrocket",
+      "Clash",
+      "Sing-box",
+      "Surge",
+      "Quantumult X",
+      "Surfboard"
+    ],
+    "tutorialOnlyNames": [
+      "Clash Verge",
+      "Clash Meta",
+      "Karing"
+    ],
+    "operationPerformed": false
+  },
+  "noNewMerchantVisit": true
+}

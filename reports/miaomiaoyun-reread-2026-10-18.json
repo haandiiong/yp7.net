@@ -1,0 +1,142 @@
+{
+  "checkedAt": "2026-10-18",
+  "method": "Read authenticated merchant Chrome UI, product cards and available billing-cycle selections; no checkout, payment, redemption, download, installation, private subscription copying or performance test.",
+  "store": "https://m3.mouhiojl.com/#/shop",
+  "visibleProductCount": 7,
+  "products": [
+    {
+      "name": "365天-100G(福气包)",
+      "priceCny": 29.9,
+      "billing": "one-off",
+      "trafficGb": 100,
+      "trafficKind": "total",
+      "validityDays": 365,
+      "devices": 3
+    },
+    {
+      "name": "365天-200G(福气包)",
+      "priceCny": 49.9,
+      "billing": "one-off",
+      "trafficGb": 200,
+      "trafficKind": "total",
+      "validityDays": 365,
+      "devices": 3
+    },
+    {
+      "name": "特惠64G",
+      "monthlyTrafficGb": 64,
+      "cyclePricesCny": {
+        "quarter": 18,
+        "halfYear": 36,
+        "year": 72
+      },
+      "devices": 3
+    },
+    {
+      "name": "128G/月-探花",
+      "monthlyTrafficGb": 128,
+      "cyclePricesCny": {
+        "month": 9,
+        "quarter": 27,
+        "halfYear": 54,
+        "year": 108
+      },
+      "devices": 3
+    },
+    {
+      "name": "256G/月-榜眼",
+      "monthlyTrafficGb": 256,
+      "cyclePricesCny": {
+        "month": 15,
+        "quarter": 45,
+        "halfYear": 90,
+        "year": 180
+      },
+      "devices": 4
+    },
+    {
+      "name": "512G/月-状元",
+      "monthlyTrafficGb": 512,
+      "cyclePricesCny": {
+        "month": 29,
+        "quarter": 87,
+        "halfYear": 174,
+        "year": 348
+      },
+      "devices": 5
+    },
+    {
+      "name": "不限时间100G",
+      "priceCny": 88,
+      "billing": "one-off",
+      "cardTrafficGb": 100,
+      "bodyTraffic": "100G/月高速流量",
+      "refreshLabel": "不限时流量",
+      "devices": 3,
+      "status": "conflicting",
+      "trafficGb": null,
+      "unitPriceCnyPerGb": null
+    }
+  ],
+  "cycleCaveat": "Unsupported billing labels retained the previous displayed selection; no additional 2/3-year or special monthly offers are inferred.",
+  "regularRefresh": "Regular cards state refresh every 30 days; store notice says regular plans reset on monthly order day and unused balance does not accumulate. Do not apply to finite-total or no-expiry packs.",
+  "currentRefund": "No refund policy observed on current cards or store notice; old special-offer no-refund text is historical.",
+  "notSeenInCurrentList": [
+    "59元100GB包",
+    "88元年付100GB/月",
+    "200G特惠"
+  ],
+  "supersedes": "Earlier 2026-10-18 user-confirmed 59元/365天100GB mapping is retained only as history; current merchant list supersedes current-offer claims.",
+  "clientDocs": [
+    {
+      "url": "https://m3.mouhiojl.com/#/docs/6",
+      "client": "Clash Verge",
+      "platform": "Windows",
+      "documentUpdated": "2026-09-21"
+    },
+    {
+      "url": "https://m3.mouhiojl.com/#/docs/4",
+      "client": "Clash Meta",
+      "platform": "Android",
+      "documentUpdated": "2026-09-21"
+    },
+    {
+      "url": "https://m3.mouhiojl.com/#/docs/19",
+      "client": "Clash Verge",
+      "platform": "macOS",
+      "documentUpdated": "2026-09-21"
+    },
+    {
+      "url": "https://m3.mouhiojl.com/#/docs/17",
+      "client": "Shadowrocket",
+      "platform": "iOS",
+      "documentUpdated": "2025-06-06"
+    }
+  ],
+  "dashboardWindowsEntry": {
+    "destination": "https://ruanjiandaohang.com/",
+    "description": "Third-party proxy tutorial center; not evidence of a proprietary client. Other dashboard platform buttons not followed."
+  },
+  "notice": {
+    "displayDate": "2024-04-21",
+    "title": "优惠券：2026888//必须更新订阅才能使用",
+    "bodySummary": "Maintenance estimate 3–5 minutes, update/reimport subscription guidance; no current discount, validity or redemption result established."
+  },
+  "trial": {
+    "supported": false,
+    "source": "Owner confirmation",
+    "checkedAt": "2026-10-05",
+    "retested": false
+  },
+  "expectedMetrics": {
+    "visibleAirports": 57,
+    "noExpiryCandidates": 40,
+    "noExpiryPercent": 70,
+    "conflictingNoExpiryPackages": 3
+  },
+  "protected": {
+    "siilasRawSha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+    "mainRecommendationCount": 7
+  }
+}
+

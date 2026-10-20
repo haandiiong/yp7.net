@@ -1,0 +1,53 @@
+{
+  "verifiedOn": "2026-10-18",
+  "tests": {
+    "passed": 84,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "build": {
+    "status": "passed",
+    "pages": 109
+  },
+  "contentHealth": {
+    "status": "passed",
+    "markdownFiles": 104
+  },
+  "managedTables": "in-sync",
+  "managedReviewSections": "in-sync",
+  "publicData": "in-sync",
+  "consistency": {
+    "collectionPages": 9,
+    "services": 57,
+    "formats": [
+      "JSON",
+      "Markdown",
+      "HTML",
+      "Schema"
+    ],
+    "status": "passed"
+  },
+  "static": {
+    "htmlPages": 112,
+    "linkCounts": {
+      "internalHref": 7913,
+      "fragmentLinks": 2417,
+      "external": 1100
+    },
+    "missingTargets": 0,
+    "invalidFragments": 0,
+    "duplicateIds": 0,
+    "originalHeadingAnchors": 20,
+    "keyChecks": 19,
+    "status": "passed"
+  },
+  "siilas": {
+    "receipt": "2026-10-14",
+    "airports": 9,
+    "rawRecords": 135,
+    "status": "unchanged"
+  },
+  "independentReview": "No material inconsistency found across current product, source dates, classification and risk statements.",
+  "scope": "Miaomiaoyun current seven products, billing-cycle displays, four client documents and existing dated notice read in native Chrome. No checkout, payment, installation, subscription copying or performance testing.",
+  "published": false
+}

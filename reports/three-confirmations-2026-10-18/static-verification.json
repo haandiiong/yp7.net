@@ -1,0 +1,20 @@
+{
+  "htmlPages": 112,
+  "linkCounts": {
+    "internalHref": 7913,
+    "fragmentLinks": 2417
+  },
+  "linkErrors": [],
+  "duplicateIds": [],
+  "oldHeadingCounts": {
+    "yunjiexian-review-2026": 24,
+    "sogo-review-2026": 15,
+    "yuntu-review-2026": 23
+  },
+  "missingOriginalHeadingIds": {
+    "yunjiexian-review-2026": [],
+    "sogo-review-2026": [],
+    "yuntu-review-2026": []
+  },
+  "passed": true
+}

@@ -1,0 +1,22 @@
+{
+  "htmlPages": 112,
+  "linkCounts": {
+    "internalHref": 7913,
+    "fragmentLinks": 2417
+  },
+  "linkErrors": [],
+  "duplicateIds": [],
+  "originalHeadingCounts": {
+    "yunjiexian-review-2026": 24,
+    "miaomiaoyun-review-2026": 20,
+    "guangsuyun": 26,
+    "yuntu-review-2026": 23
+  },
+  "missingOriginalHeadingIds": {
+    "yunjiexian-review-2026": [],
+    "miaomiaoyun-review-2026": [],
+    "guangsuyun": [],
+    "yuntu-review-2026": []
+  },
+  "passed": true
+}

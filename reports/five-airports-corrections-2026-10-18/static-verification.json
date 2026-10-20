@@ -1,0 +1,30 @@
+{
+  "htmlPages": 112,
+  "linkCounts": {
+    "internalHref": 7913,
+    "fragmentLinks": 2417
+  },
+  "linkErrors": [],
+  "duplicateIds": [],
+  "originalHeadingCounts": {
+    "ermiao-vpn-review": 17,
+    "yinxingren-review-2026": 19,
+    "dengta-review-2026": 8,
+    "quanqiuyun": 35,
+    "guangsuyun": 26
+  },
+  "missingOriginalHeadingIds": {
+    "ermiao-vpn-review": [],
+    "yinxingren-review-2026": [],
+    "dengta-review-2026": [],
+    "quanqiuyun": [],
+    "guangsuyun": []
+  },
+  "keyChecks": {
+    "noWeeklyColumnInDengta": true,
+    "dengta300MB3Days": true,
+    "dedicatedTrialExplicit": true,
+    "refund24h10Percent": true
+  },
+  "passed": true
+}

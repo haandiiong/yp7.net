@@ -68,16 +68,16 @@
   overflow-wrap: anywhere;
 }
 
-/* 首推页的五列对比：桌面完整表格，手机按机场纵向阅读。 */
-.vp-doc .recommendation-comparison table {
+/* 首推页的对比与证据表：桌面完整表格，手机按机场纵向阅读。 */
+.vp-doc :is(.recommendation-comparison, .recommendation-evidence) table {
   display: table;
   width: 100%;
   table-layout: fixed;
   overflow: visible;
 }
 
-.vp-doc .recommendation-comparison th,
-.vp-doc .recommendation-comparison td {
+.vp-doc :is(.recommendation-comparison, .recommendation-evidence) th,
+.vp-doc :is(.recommendation-comparison, .recommendation-evidence) td {
   padding: 10px 12px;
   line-height: 1.65;
   vertical-align: top;
@@ -104,15 +104,35 @@
   width: 24%;
 }
 
+.vp-doc .recommendation-evidence th:nth-child(1) {
+  width: 13%;
+}
+
+.vp-doc .recommendation-evidence th:nth-child(2) {
+  width: 17%;
+}
+
+.vp-doc .recommendation-evidence th:nth-child(3) {
+  width: 12%;
+}
+
+.vp-doc .recommendation-evidence th:nth-child(4) {
+  width: 28%;
+}
+
+.vp-doc .recommendation-evidence th:nth-child(5) {
+  width: 30%;
+}
+
 @media (max-width: 640px) {
-  .vp-doc .recommendation-comparison table {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) table {
     display: block;
     position: relative;
     border: 0;
   }
 
   /* 保留列标题供辅助技术读取。 */
-  .vp-doc .recommendation-comparison thead {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) thead {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -125,12 +145,12 @@
     border: 0;
   }
 
-  .vp-doc .recommendation-comparison tbody {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) tbody {
     display: grid;
     gap: 16px;
   }
 
-  .vp-doc .recommendation-comparison tbody tr {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) tbody tr {
     display: block;
     min-width: 0;
     overflow: hidden;
@@ -139,24 +159,24 @@
     border-radius: 10px;
   }
 
-  .vp-doc .recommendation-comparison td {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) td {
     display: block;
     width: auto;
     padding: 10px 14px;
     border: 0;
   }
 
-  .vp-doc .recommendation-comparison td + td {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) td + td {
     border-top: 1px solid var(--vp-c-divider);
   }
 
-  .vp-doc .recommendation-comparison td:first-child {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) td:first-child {
     font-size: 16px;
     font-weight: 600;
     background-color: var(--vp-c-bg-soft);
   }
 
-  .vp-doc .recommendation-comparison td + td::before {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) td + td::before {
     display: block;
     margin-bottom: 3px;
     font-size: 12px;
@@ -179,4 +199,67 @@
   .vp-doc .recommendation-comparison td:nth-child(5)::before {
     content: "测试依据";
   }
+
+  .vp-doc .recommendation-evidence td:nth-child(2)::before {
+    content: "原始记录与测试日";
+  }
+
+  .vp-doc .recommendation-evidence td:nth-child(3)::before {
+    content: "最近记录日";
+  }
+
+  .vp-doc .recommendation-evidence td:nth-child(4)::before {
+    content: "地区覆盖与日期关系";
+  }
+
+  .vp-doc .recommendation-evidence td:nth-child(5)::before {
+    content: "指标记录缺口";
+  }
+}
+
+/* Flybit 多周期报价：保留足够列宽，小屏在表格内横向查看。 */
+.vp-doc .flybit-plan-comparison {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.vp-doc .flybit-plan-comparison table {
+  display: table;
+  width: 100%;
+  min-width: 700px;
+}
+
+.vp-doc .flybit-plan-comparison th,
+.vp-doc .flybit-plan-comparison td:not(:nth-child(3)) {
+  white-space: nowrap;
+}
+
+.vp-doc .flybit-plan-comparison td:nth-child(3) {
+  min-width: 12em;
+}
+
+/* 拼好连套餐对照：小屏保留名称、金额与说明的可读列宽。 */
+.vp-doc .pinhaolian-plan-comparison {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.vp-doc .pinhaolian-plan-comparison table {
+  display: table;
+  width: 100%;
+  min-width: 700px;
+  table-layout: auto;
+}
+
+.vp-doc .pinhaolian-plan-comparison th:nth-child(-n+3),
+.vp-doc .pinhaolian-plan-comparison td:nth-child(-n+3) {
+  white-space: nowrap;
+}
+
+.vp-doc .pinhaolian-plan-comparison td:nth-child(4) {
+  min-width: 14em;
+}
+
+.vp-doc .pinhaolian-plan-comparison td:nth-child(5) {
+  min-width: 12em;
 }

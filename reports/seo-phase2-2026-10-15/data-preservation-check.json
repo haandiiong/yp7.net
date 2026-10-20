@@ -1,0 +1,19 @@
+{
+  "candidateTables": [
+    {
+      "collection": "mainRecommendation",
+      "unchangedCandidateRows": 7
+    },
+    {
+      "collection": "chatgpt",
+      "unchangedCandidateRows": 9
+    },
+    {
+      "collection": "streaming",
+      "unchangedCandidateRows": 9
+    }
+  ],
+  "businessConfigurationUnchanged": true,
+  "acceptedSnapshotUnchanged": true,
+  "publicDataUnchanged": true
+}

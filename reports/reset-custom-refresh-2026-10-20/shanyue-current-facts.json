@@ -1,0 +1,123 @@
+{
+  "readAt": "2026-10-20",
+  "method": "Chrome UI, card and unsubmitted quote preview",
+  "source": "https://kkj.flashleaptt.xyz/?code=msdAwmER#/plans",
+  "annual": [
+    {
+      "orderId": 1,
+      "price": 96,
+      "monthlyGb": 60,
+      "reset": 15
+    },
+    {
+      "orderId": 8,
+      "price": 180,
+      "monthlyGb": 120,
+      "reset": 30
+    }
+  ],
+  "periodic": [
+    {
+      "orderId": 2,
+      "name": "Flicker",
+      "monthlyGb": 150,
+      "periodPrices": [
+        24,
+        64,
+        122,
+        230,
+        403,
+        518
+      ],
+      "reset": null
+    },
+    {
+      "orderId": 3,
+      "name": "Leap",
+      "monthlyGb": 300,
+      "periodPrices": [
+        44,
+        118,
+        224,
+        422,
+        739,
+        950
+      ],
+      "reset": 44
+    },
+    {
+      "orderId": 4,
+      "name": "Teleport",
+      "monthlyGb": 600,
+      "periodPrices": [
+        84,
+        226,
+        428,
+        806,
+        1400,
+        1814
+      ],
+      "reset": 84
+    },
+    {
+      "orderId": 5,
+      "name": "Warp",
+      "monthlyGb": 1000,
+      "periodPrices": [
+        134,
+        369,
+        698,
+        1315,
+        2301,
+        2959
+      ],
+      "reset": 134
+    }
+  ],
+  "periodOrder": [
+    "month",
+    "quarter",
+    "halfYear",
+    "year",
+    "twoYears",
+    "threeYears"
+  ],
+  "oneOff": [
+    {
+      "orderId": 6,
+      "price": 150,
+      "cardGb": 100,
+      "resetQuote": 130
+    },
+    {
+      "orderId": 11,
+      "price": 288,
+      "cardGb": 200,
+      "resetQuote": 268
+    }
+  ],
+  "quoteAllowanceDisplayGb": 0,
+  "quoteDisplayObservedInAll8Products": true,
+  "resetSelectedInBothOneOffProducts": true,
+  "firstDeliveryOwnerConfirmedAt": "2026-10-18",
+  "unresolved": [
+    "quote 0GB cause",
+    "reset delivery allowance",
+    "remaining balance handling",
+    "one-off device count",
+    "refund",
+    "monthly refresh day"
+  ],
+  "sixPeriodicMerchantClaims": [
+    "unlimited simultaneous clients",
+    "1x billing",
+    "IPLC",
+    "no peak-hour speed cap",
+    "native IP streaming and AI support"
+  ],
+  "knowledgeAndDownloadsReadAt": "2026-09-27",
+  "trialAndClashOwnerConfirmedAt": "2026-09-27",
+  "submittedOrders": 0,
+  "payments": 0,
+  "performanceTests": 0
+}

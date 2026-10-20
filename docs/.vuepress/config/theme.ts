@@ -29,6 +29,7 @@ export const theme = plumeTheme({
         { text: 'Clash Verge教程', link: '/posts/clash-verge-guide-2026/', icon: 'ic:baseline-personal-video' },
         { text: 'FlClash教程', link: '/posts/flclash-guide-2026/', icon: 'material-symbols:devices-outline' },
         { text: 'Clash Meta 安卓教程', link: '/posts/clash-for-android-guide-2026/', icon: 'ic:baseline-android' },
+        { text: 'Clash Mi iOS教程', link: '/posts/clash-mi-guide-2026/', icon: 'material-symbols:phone-iphone' },
         { text: 'Shadowrocket教程', link: '/posts/shadowrocket-guide-2026/', icon: 'ic:baseline-rocket-launch' },
         { text: 'ChatGPT打不开', link: '/posts/ai-tools-not-working/', icon: 'material-symbols:smart-toy-outline' },
         { text: 'Telegram教程', link: '/posts/telegram-guide-2026/', icon: 'material-symbols:send-outline' },

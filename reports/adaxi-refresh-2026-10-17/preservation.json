@@ -1,0 +1,50 @@
+{
+  "auditDate": "2026-10-17",
+  "changedServiceRecords": [
+    "阿达西"
+  ],
+  "targetChangedFields": [
+    "dedicatedClient",
+    "risk",
+    "summary",
+    "informationSources",
+    "subscriptionClients"
+  ],
+  "otherServiceRecordsPreserved": 57,
+  "otherVisibleServiceRecordsPreserved": 56,
+  "changedNoExpiryPackages": [
+    "阿达西"
+  ],
+  "unchangedSiilasSnapshotSha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+  "detailHeadingCountPreserved": 30,
+  "collectionsConfigUnchanged": true,
+  "mainRecommendationNames": [
+    "Flybit",
+    "xxyun",
+    "网际快车",
+    "全球云",
+    "拼好连",
+    "九云",
+    "阿达西"
+  ],
+  "lastModified": "2026-10-17",
+  "lastFullReview": "2026-08-19",
+  "metrics": {
+    "count": 57,
+    "trialCount": 11,
+    "noExpiryCount": 40,
+    "noExpiryUnverifiedCount": 0,
+    "dedicatedClientCount": 39,
+    "universalSubscriptionCount": 42,
+    "cheapUnderTenCount": 12,
+    "averagePrice": 17.4,
+    "regularCheapUnderTenCount": 12,
+    "regularAveragePrice": 17.6,
+    "performanceCount": 6,
+    "salesSampleCount": 17
+  },
+  "finalVerifiedOn": "2026-10-18",
+  "merchantObservationDate": "2026-10-17",
+  "detailHeadingCountPreservedAfterFinalBuild": 30,
+  "catalogueOldStatisticsAnchorPreserved": true
+}

@@ -1,0 +1,404 @@
+{
+  "checkedAt": "2026-10-20T02:52:58.698Z",
+  "baselinePath": "reports/reset-custom-refresh-2026-10-20/before.json",
+  "scope": "Read-only shared-data protection validation. Only this new verification.json was written; no source/site changes or build, receiver, browser or new measurements.",
+  "passed": true,
+  "failures": [],
+  "checks": {
+    "rawCount58Unchanged": true,
+    "rawIdentityAndOrderUnchanged": true,
+    "onlyExpectedFourAirportsChanged": true,
+    "onlyRiskSummarySourcesChanged": true,
+    "protectedEightFieldsUnchangedAcross58": true,
+    "metricsUnchanged": true,
+    "mainSevenHashAndOrderUnchanged": true,
+    "collectionsHashUnchanged": true,
+    "siilasRawHashUnchangedNoNewMeasurements": true,
+    "noExpiry40IdentityAndOrderUnchanged": true,
+    "noExpiryAllNumericStatusAndDeviceFieldsUnchanged": true,
+    "noExpiryOnlyThreeExpectedEntriesMetadataRulesChanged": true,
+    "ermiaoNoExpiryEntryEntirelyUnchanged": true,
+    "jilianAndEdgeOfficialDatesNotAdvanced": true,
+    "jilianAndEdgeNewOwnerConfirmation20": true,
+    "flashOfficialDate20OwnerDate18": true,
+    "oldSourcesPreservedExceptTwoReReadFlashOfficialSources": true,
+    "newUserSources20": true,
+    "flashTwoNewOfficialSources20SameUrls": true,
+    "fullReviewedStillAugust19": true,
+    "partialModifiedOctober20": true
+  },
+  "airportData": {
+    "beforeCount": 58,
+    "afterCount": 58,
+    "changed": [
+      {
+        "name": "极连云",
+        "path": "/posts/jilianyun-review-2026/",
+        "fields": [
+          "risk",
+          "summary",
+          "informationSources"
+        ]
+      },
+      {
+        "name": "二猫云",
+        "path": "/posts/ermiao-vpn-review/",
+        "fields": [
+          "risk",
+          "summary",
+          "informationSources"
+        ]
+      },
+      {
+        "name": "边缘节点",
+        "path": "/posts/bianyuan-review-2026/",
+        "fields": [
+          "risk",
+          "summary",
+          "informationSources"
+        ]
+      },
+      {
+        "name": "闪跃",
+        "path": "/posts/shanyue-review-2026/",
+        "fields": [
+          "summary",
+          "informationSources"
+        ]
+      }
+    ],
+    "protectedFields": [
+      "price",
+      "priceText",
+      "traffic",
+      "trial",
+      "noExpiry",
+      "dedicatedClient",
+      "universalSubscription",
+      "performance"
+    ],
+    "protectedFieldCounts": {
+      "price": 58,
+      "priceText": 58,
+      "traffic": 58,
+      "trial": 58,
+      "noExpiry": 58,
+      "dedicatedClient": 58,
+      "universalSubscription": 58,
+      "performance": 58
+    },
+    "protectedViolations": []
+  },
+  "metrics": {
+    "before": {
+      "count": 57,
+      "trialCount": 11,
+      "noExpiryCount": 40,
+      "noExpiryUnverifiedCount": 0,
+      "dedicatedClientCount": 39,
+      "universalSubscriptionCount": 42,
+      "cheapUnderTenCount": 12,
+      "averagePrice": 17.4,
+      "regularCheapUnderTenCount": 12,
+      "regularAveragePrice": 17.6,
+      "performanceCount": 6,
+      "salesSampleCount": 17
+    },
+    "after": {
+      "count": 57,
+      "trialCount": 11,
+      "noExpiryCount": 40,
+      "noExpiryUnverifiedCount": 0,
+      "dedicatedClientCount": 39,
+      "universalSubscriptionCount": 42,
+      "cheapUnderTenCount": 12,
+      "averagePrice": 17.4,
+      "regularCheapUnderTenCount": 12,
+      "regularAveragePrice": 17.6,
+      "performanceCount": 6,
+      "salesSampleCount": 17
+    }
+  },
+  "hashes": {
+    "main7": {
+      "before": "4d4441d619f13d58ace2fe36c27d0b4f939db2e56f92c0e3b15086db2f7ef118",
+      "after": "4d4441d619f13d58ace2fe36c27d0b4f939db2e56f92c0e3b15086db2f7ef118",
+      "names": [
+        "Flybit",
+        "xxyun",
+        "网际快车",
+        "全球云",
+        "拼好连",
+        "九云",
+        "阿达西"
+      ]
+    },
+    "collections": {
+      "path": "docs/.vuepress/config/airport-collections.ts",
+      "before": "af60e15079b4c0470e495655bbe6bef39079b42017201c02b7d413dfc18a09f8",
+      "after": "af60e15079b4c0470e495655bbe6bef39079b42017201c02b7d413dfc18a09f8"
+    },
+    "siilasRaw": {
+      "path": "docs/.vuepress/config/data/siilas-tests.json",
+      "before": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+      "after": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+      "receivedAt": "2026-10-14",
+      "latestTestAt": "2026-10-08",
+      "rawTestCount": 135
+    }
+  },
+  "noExpiryPackages": {
+    "beforeCount": 40,
+    "afterCount": 40,
+    "changed": [
+      {
+        "path": "/posts/jilianyun-review-2026/",
+        "fields": [
+          "validity",
+          "ownerConfirmedAt",
+          "ownerConfirmedScope"
+        ],
+        "before": {
+          "priceCny": 399,
+          "trafficGb": 600,
+          "priceText": "399元",
+          "trafficText": "600GB",
+          "status": "listed",
+          "deviceLimit": "不限同时使用客户端数量",
+          "validity": "不限时；重置费待核实",
+          "checkedAt": "2026-09-23",
+          "ownerConfirmedAt": "2026-09-27"
+        },
+        "after": {
+          "priceCny": 399,
+          "trafficGb": 600,
+          "priceText": "399元",
+          "trafficText": "600GB",
+          "status": "listed",
+          "deviceLimit": "不限同时使用客户端数量",
+          "validity": "不限时；重置按对应套餐费用90%为359.10元，重置后额度与余量处理未列",
+          "checkedAt": "2026-09-23",
+          "ownerConfirmedAt": "2026-10-20",
+          "ownerConfirmedScope": "重置费为对应套餐费用90%；价格与流量另据9月27日确认",
+          "unitPriceCnyPerGb": 0.665,
+          "sourcePage": "/posts/jilianyun-review-2026/",
+          "currency": "CNY",
+          "billing": "one-off"
+        }
+      },
+      {
+        "path": "/posts/bianyuan-review-2026/",
+        "fields": [
+          "validity",
+          "ownerConfirmedAt",
+          "ownerConfirmedScope"
+        ],
+        "before": {
+          "priceCny": 100,
+          "trafficGb": 100,
+          "priceText": "100元",
+          "trafficText": "100GB",
+          "status": "listed",
+          "deviceLimit": "不限设备数",
+          "validity": "不限时；不自动刷新，重置90元",
+          "checkedAt": "2026-09-27"
+        },
+        "after": {
+          "priceCny": 100,
+          "trafficGb": 100,
+          "priceText": "100元",
+          "trafficText": "100GB",
+          "status": "listed",
+          "deviceLimit": "不限设备数",
+          "validity": "不限时；不自动刷新；重置按对应套餐费用90%为90元，重置后额度与余量处理未列",
+          "checkedAt": "2026-09-27",
+          "ownerConfirmedAt": "2026-10-20",
+          "ownerConfirmedScope": "重置费为对应套餐费用90%",
+          "unitPriceCnyPerGb": 1,
+          "sourcePage": "/posts/bianyuan-review-2026/",
+          "currency": "CNY",
+          "billing": "one-off"
+        }
+      },
+      {
+        "path": "/posts/shanyue-review-2026/",
+        "fields": [
+          "validity",
+          "checkedAt"
+        ],
+        "before": {
+          "priceCny": 150,
+          "trafficGb": 100,
+          "priceText": "150元",
+          "trafficText": "100GB",
+          "status": "listed",
+          "deviceLimit": "不限时档未注明",
+          "validity": "不限时总量；旧页重置选项130元，重置后额度与余量处理待核",
+          "checkedAt": "2026-10-05",
+          "ownerConfirmedAt": "2026-10-18",
+          "ownerConfirmedScope": "首次交付流量"
+        },
+        "after": {
+          "priceCny": 150,
+          "trafficGb": 100,
+          "priceText": "150元",
+          "trafficText": "100GB",
+          "status": "listed",
+          "deviceLimit": "不限时档未注明",
+          "validity": "不限时总量；当前重置报价130元，预览0GB不作实际交付量；重置后额度与余量处理待核",
+          "checkedAt": "2026-10-20",
+          "ownerConfirmedAt": "2026-10-18",
+          "ownerConfirmedScope": "首次交付流量",
+          "unitPriceCnyPerGb": 1.5,
+          "sourcePage": "/posts/shanyue-review-2026/",
+          "currency": "CNY",
+          "billing": "one-off"
+        }
+      }
+    ],
+    "protectedFields": [
+      "priceCny",
+      "trafficGb",
+      "priceText",
+      "trafficText",
+      "status",
+      "deviceLimit"
+    ],
+    "protectedViolations": [],
+    "ermiaoUnchanged": true
+  },
+  "sources": {
+    "changes": [
+      {
+        "name": "极连云",
+        "path": "/posts/jilianyun-review-2026/",
+        "oldSourceCount": 4,
+        "removed": [],
+        "added": [
+          {
+            "name": "极连云重置费为对应套餐费用90%（用户确认）",
+            "url": "/posts/jilianyun-review-2026/",
+            "checkedAt": "2026-10-20",
+            "link": false
+          }
+        ]
+      },
+      {
+        "name": "二猫云",
+        "path": "/posts/ermiao-vpn-review/",
+        "oldSourceCount": 5,
+        "removed": [],
+        "added": [
+          {
+            "name": "二猫云美国家宽IP为客服定制、购前咨询（用户确认）",
+            "url": "/posts/ermiao-vpn-review/",
+            "checkedAt": "2026-10-20",
+            "link": false
+          }
+        ]
+      },
+      {
+        "name": "边缘节点",
+        "path": "/posts/bianyuan-review-2026/",
+        "oldSourceCount": 4,
+        "removed": [],
+        "added": [
+          {
+            "name": "边缘节点重置费为对应套餐费用90%（用户确认）",
+            "url": "/posts/bianyuan-review-2026/",
+            "checkedAt": "2026-10-20",
+            "link": false
+          }
+        ]
+      },
+      {
+        "name": "闪跃",
+        "path": "/posts/shanyue-review-2026/",
+        "oldSourceCount": 6,
+        "removed": [
+          {
+            "name": "闪跃套餐页",
+            "url": "https://kkj.flashleaptt.xyz/#/plans",
+            "checkedAt": "2026-09-27",
+            "link": false
+          },
+          {
+            "name": "闪跃两档不限时包列表与订单确认页（未付款）",
+            "url": "https://kkj.flashleaptt.xyz/?code=msdAwmER#/plans",
+            "checkedAt": "2026-10-05",
+            "link": false
+          }
+        ],
+        "added": [
+          {
+            "name": "闪跃当前8款套餐及各周期报价（官网重读）",
+            "url": "https://kkj.flashleaptt.xyz/#/plans",
+            "checkedAt": "2026-10-20",
+            "link": false
+          },
+          {
+            "name": "闪跃两档不限时包列表与一次性/重置报价预览（未提交订单）",
+            "url": "https://kkj.flashleaptt.xyz/?code=msdAwmER#/plans",
+            "checkedAt": "2026-10-20",
+            "link": false
+          }
+        ]
+      }
+    ],
+    "unexpectedRemovals": [],
+    "newUserSourceChecks": [
+      {
+        "name": "极连云",
+        "added": [
+          {
+            "name": "极连云重置费为对应套餐费用90%（用户确认）",
+            "url": "/posts/jilianyun-review-2026/",
+            "checkedAt": "2026-10-20",
+            "link": false
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "边缘节点",
+        "added": [
+          {
+            "name": "边缘节点重置费为对应套餐费用90%（用户确认）",
+            "url": "/posts/bianyuan-review-2026/",
+            "checkedAt": "2026-10-20",
+            "link": false
+          }
+        ],
+        "passed": true
+      },
+      {
+        "name": "二猫云",
+        "added": [
+          {
+            "name": "二猫云美国家宽IP为客服定制、购前咨询（用户确认）",
+            "url": "/posts/ermiao-vpn-review/",
+            "checkedAt": "2026-10-20",
+            "link": false
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "note": "Only the two Flash merchant plan/preview records were superseded by new 10/20 merchant readings; its 10/18 owner first-delivery confirmation and 9/27 trial/client sources remain unchanged. All original sources of the other airports remain unchanged."
+  },
+  "domainChecks": {
+    "jilianReset359Point10AndOriginalReadDate": true,
+    "edgeTwoResetValuesAndOriginalReadDate": true,
+    "resetDeliveryAndResidualUnconfirmed": true,
+    "ermiaoCardFieldsRetainedAsCustomDisplay": true,
+    "ermiaoOriginalFullPlansTrialClientDatesRetained": true,
+    "noStartingPriceClaim": true,
+    "flashNewMerchantReadSeparateFromOriginalConfirmation": true,
+    "flashPreviewZeroNotActualDelivery": true,
+    "flashOlderClientTrialSourcesPreserved": true
+  },
+  "dates": {
+    "lastFullReview": "2026-08-19",
+    "lastPartialModification": "2026-10-20"
+  }
+}

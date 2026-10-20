@@ -4,6 +4,7 @@ import type { AirportData } from './airports'
 interface AirportCollectionDefinition {
   name: string
   dataTitle: string
+  selectionNotice?: string
   pagePath?: string
   sourceFile?: string
   heading?: string
@@ -69,7 +70,8 @@ const definitions = {
       .sort((a, b) => b.salesSample! - a.salesSample!),
   },
   stable: {
-    name: '稳定场景资料', dataTitle: '稳定机场',
+    name: '稳定场景资料', dataTitle: '稳定场景候选（编辑筛选）',
+    selectionNotice: '按编辑维护的 stable 场景标签筛选，不按 Siilas 稳定性分排序；标签、单次测速和若干测试日均不能证明长期连续可用率。是否适合实际使用，需逐项核对记录日期、节点与环境。',
     select: visibleWhere((airport) => airport.scenarios.includes('stable')),
   },
   cheap: {

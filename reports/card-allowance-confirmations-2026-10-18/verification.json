@@ -1,0 +1,249 @@
+{
+  "checkedAt": "2026-10-18T12:20:50.991Z",
+  "scope": "Read-only verification against before.json; only this verification report was written. No sync or build performed.",
+  "baselinePath": "reports/card-allowance-confirmations-2026-10-18/before.json",
+  "loadedConfigFiles": [
+    "airports.ts",
+    "no-expiry-packages.ts"
+  ],
+  "passed": true,
+  "failures": [],
+  "invariantChecks": {
+    "rawAirportCount58": true,
+    "sameAirportIdentityAndOrder": true,
+    "onlyThreeExpectedAirportsChanged": true,
+    "allEightProtectedFieldsUnchangedAcross58": true,
+    "onlySummaryRiskAndInformationSourcesChanged": true,
+    "mainSevenAndOrderUnchanged": true,
+    "collectionsFileHashUnchanged": true,
+    "rawSiilasFileHashUnchanged": true,
+    "noExpirySame40Keys": true,
+    "noExpiryOnlyErmiaoMetadataChanged": true,
+    "noExpiryAllOriginalFieldsAndValuesUnchanged": true,
+    "metricsUnchanged": true,
+    "fullReviewDateRemainsAugust19": true,
+    "partialModificationDateOctober18": true,
+    "allOriginalSourcesAndDatesPreserved": true
+  },
+  "airportData": {
+    "countBefore": 58,
+    "countAfter": 58,
+    "added": [],
+    "removed": [],
+    "changed": [
+      {
+        "name": "全球云",
+        "path": "/posts/quanqiuyun/",
+        "changedFields": [
+          "risk",
+          "summary",
+          "informationSources"
+        ]
+      },
+      {
+        "name": "光速云",
+        "path": "/posts/guangsuyun/",
+        "changedFields": [
+          "summary",
+          "informationSources"
+        ]
+      },
+      {
+        "name": "二猫云",
+        "path": "/posts/ermiao-vpn-review/",
+        "changedFields": [
+          "risk",
+          "summary",
+          "informationSources"
+        ]
+      }
+    ],
+    "protectedFields": [
+      "price",
+      "priceText",
+      "traffic",
+      "trial",
+      "noExpiry",
+      "dedicatedClient",
+      "universalSubscription",
+      "performance"
+    ],
+    "protectedFieldCounts": {
+      "price": 58,
+      "priceText": 58,
+      "traffic": 58,
+      "trial": 58,
+      "noExpiry": 58,
+      "dedicatedClient": 58,
+      "universalSubscription": 58,
+      "performance": 58
+    },
+    "protectedViolations": []
+  },
+  "hashes": {
+    "main7": {
+      "algorithm": "sha256(JSON.stringify(mainRecommendationNames))",
+      "before": "4d4441d619f13d58ace2fe36c27d0b4f939db2e56f92c0e3b15086db2f7ef118",
+      "after": "4d4441d619f13d58ace2fe36c27d0b4f939db2e56f92c0e3b15086db2f7ef118",
+      "names": [
+        "Flybit",
+        "xxyun",
+        "网际快车",
+        "全球云",
+        "拼好连",
+        "九云",
+        "阿达西"
+      ]
+    },
+    "airportCollections": {
+      "path": "docs/.vuepress/config/airport-collections.ts",
+      "before": "af60e15079b4c0470e495655bbe6bef39079b42017201c02b7d413dfc18a09f8",
+      "after": "af60e15079b4c0470e495655bbe6bef39079b42017201c02b7d413dfc18a09f8"
+    },
+    "siilasRaw": {
+      "path": "docs/.vuepress/config/data/siilas-tests.json",
+      "locatedBy": "rg --files --hidden and rg -n siilas-tests.json scripts/sync-siilas-tests.mjs",
+      "before": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+      "after": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad"
+    }
+  },
+  "noExpiryPackages": {
+    "countBefore": 40,
+    "countAfter": 40,
+    "changed": [
+      {
+        "path": "/posts/ermiao-vpn-review/",
+        "changedFields": [
+          "ownerConfirmedAt",
+          "ownerConfirmedScope"
+        ]
+      }
+    ],
+    "protectedFields": [
+      "priceCny",
+      "trafficGb",
+      "priceText",
+      "trafficText",
+      "status",
+      "deviceLimit",
+      "validity",
+      "checkedAt"
+    ],
+    "protectedViolations": [],
+    "ermiaoBefore": {
+      "priceCny": 100,
+      "trafficGb": 100,
+      "priceText": "100元",
+      "trafficText": "100GB",
+      "status": "listed",
+      "deviceLimit": "不限设备数（当前卡片）",
+      "validity": "长期有效；可补充流量，费用与重购余量处理待核实",
+      "checkedAt": "2026-10-18"
+    },
+    "ermiaoAfter": {
+      "priceCny": 100,
+      "trafficGb": 100,
+      "priceText": "100元",
+      "trafficText": "100GB",
+      "status": "listed",
+      "deviceLimit": "不限设备数（当前卡片）",
+      "validity": "长期有效；可补充流量，费用与重购余量处理待核实",
+      "checkedAt": "2026-10-18",
+      "ownerConfirmedAt": "2026-10-18",
+      "ownerConfirmedScope": "卡片报价与付款周期"
+    }
+  },
+  "metrics": {
+    "before": {
+      "count": 57,
+      "trialCount": 11,
+      "noExpiryCount": 40,
+      "noExpiryUnverifiedCount": 0,
+      "dedicatedClientCount": 39,
+      "universalSubscriptionCount": 42,
+      "cheapUnderTenCount": 12,
+      "averagePrice": 17.4,
+      "regularCheapUnderTenCount": 12,
+      "regularAveragePrice": 17.6,
+      "performanceCount": 6,
+      "salesSampleCount": 17
+    },
+    "after": {
+      "count": 57,
+      "trialCount": 11,
+      "noExpiryCount": 40,
+      "noExpiryUnverifiedCount": 0,
+      "dedicatedClientCount": 39,
+      "universalSubscriptionCount": 42,
+      "cheapUnderTenCount": 12,
+      "averagePrice": 17.4,
+      "regularCheapUnderTenCount": 12,
+      "regularAveragePrice": 17.6,
+      "performanceCount": 6,
+      "salesSampleCount": 17
+    }
+  },
+  "dates": {
+    "fullReview": "2026-08-19",
+    "partialModification": "2026-10-18"
+  },
+  "sourceDateChecks": [
+    {
+      "name": "全球云",
+      "allPriorSourcesPreserved": true,
+      "officialPlansCheckedAt": [
+        "2026-10-18"
+      ],
+      "clientCheckedAt": [
+        "2026-10-17",
+        "2026-10-17"
+      ],
+      "trialCheckedAt": [
+        "2026-09-27"
+      ],
+      "ownerAllowanceCheckedAt": [
+        "2026-10-18"
+      ]
+    },
+    {
+      "name": "光速云",
+      "allPriorSourcesPreserved": true,
+      "officialPlansCheckedAt": [
+        "2026-10-18"
+      ],
+      "clientCheckedAt": [
+        "2026-10-17",
+        "2026-10-17"
+      ],
+      "trialCheckedAt": [
+        "2026-09-27"
+      ],
+      "ownerAllowanceCheckedAt": [
+        "2026-10-18"
+      ]
+    }
+  ],
+  "contentChecks": {
+    "globalSummaryCurrent59GbPerMonthAt99YuanPerYear": true,
+    "globalRiskNoUnresolved59And60Conflict": true,
+    "globalSummaryTreats60GbAsHistorical": true,
+    "lightSummaryCurrent69GbPerMonthAt99YuanPerYear": true,
+    "lightQuantum500450ConflictPreserved": true,
+    "ermiaoRiskNoOldPriceConflict": true,
+    "ermiaoSummaryUsesCardPricesAndPaymentCycles": true
+  },
+  "currentSummariesAndRisks": {
+    "全球云": {
+      "summary": "2026年10月18日用户确认99元年付轻量版为59GB/月，旧正文60GB不再作为当前权益。现售月付20/40/100/180元对应120/300/700/1500GB每月，季54/108/270/486、半年102/204/510/918、年192/384/960/1728元；一次性100/360/700元对应总量100/400/800GB，另680元/月500GB专线。不限时包支持多终端团队并发但未列具体数量，重购余量与退款待核。套餐官网10月18日重读，客户端仍按10月17日文档，iOS Nextin识别码quanqiuyun、Linux仅压缩包；未新增实测。",
+      "risk": "不支持免费试用和通用订阅仍据9月27日补充；旧优惠码与退款待核实；不限时重购余量未明确"
+    },
+    "光速云": {
+      "summary": "2026年10月18日用户确认99元年付轻量版为69GB/月。现售月付25/34/68/138元对应168/238/卡片500正文450/900GB；季74/96/198/398、半年94/147/375/702、年179/249/667/998元。147元一次性总247GB永久包不按月刷新，680元/月500GB为定制。当前轻量69GB与流光238GB已明确，量子500/450GB未在本次确认范围内；重购与退款待核。套餐官网10月18日重读，客户端仍据10月17日知识库、Nextin识别码gsy、Linux仅下载包；不支持试用/通用订阅沿用9月27日确认，未新增实测。",
+      "risk": "不支持免费试用和通用订阅；68元量子版卡片500GB/月与正文450GB/月待核；退款与147元包重购规则未明确"
+    },
+    "二猫云": {
+      "summary": "10月18日用户确认以卡片报价和付款周期为准：月付20/40/80/160元对应130/230/430/850GB；季57/114/228/456、半年108/216/432/864、年204/408/816/1632元，按卡片整笔金额比较，不套旧宣传折扣。年付小包96元60GB/月；不限时100元100GB及199元200GB，可补量但费用未明。家宽定制700元一次性付款，卡片标月流量500GB，购后有效期与后续刷新未说明，不归永久500GB。官网当前8款10月18日重读，1天200GB试用仍据9月26日站长补充；客户端仍9月23日，未新增实测。",
+      "risk": "退款及旧优惠码待核；定制商品有效期与刷新未明确；总量包补量费用及余量处理未列"
+    }
+  }
+}

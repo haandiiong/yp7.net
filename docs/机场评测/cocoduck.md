@@ -1,7 +1,7 @@
 ---
 title: cocoduck机场套餐与使用指南：17元月付、1天2GB试用及客户端
 createTime: 2026/04/25
-dateModified: 2026/10/14
+dateModified: 2026/10/16
 permalink: /posts/cocoduck-review/
 tags:
   - cocoduck机场
@@ -154,4 +154,4 @@ cocoduck 提供专属客户端和通用订阅，个人套餐为 **17元/月、10
 - [机场推荐方法与测试数据来源](/methodology/)
 - [瞬云机场怎么样？](/posts/shunyun-review-2026/)
 - [SSONE机场怎么样？](/posts/ssone/)
-- [CCYZ机场怎么样？](/posts/ccyz-review-2026/)
+- [拼好连机场怎么样？](/posts/runway-review-2026/)

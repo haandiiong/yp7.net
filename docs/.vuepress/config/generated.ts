@@ -14,6 +14,7 @@ import { serializeAirport } from './airport-public'
 import type { PublicAirportData } from './airport-public'
 import { siilasTestingSnapshot } from './siilas-evidence'
 import { getNoExpiryCells, noExpiryColumns, noExpiryComparisonNotice } from './no-expiry-packages'
+import { escapeMarkdownTableCell } from './markdown-table'
 import { defaultImage, hostname, siteDescription, siteLastModified, siteLastReviewed, siteName } from './site'
 
 const booleanText = (value: boolean | null) => value === null ? '待核实' : value ? '支持' : '不支持'
@@ -167,7 +168,7 @@ const getPublicAirportMetrics = () => {
 }
 
 const getAirportMarkdownTable = (airports: PublicAirportData[], columns: string[] = ['机场', '最低价格', '流量额度', '试用', '不限时', '专属客户端', '通用订阅', '历史证据', '历史测试日期', '历史延迟', '历史速度区间', '状态']) => {
-  const header = `| ${columns.join(' | ')} |`
+  const header = `| ${columns.map(escapeMarkdownTableCell).join(' | ')} |`
   const divider = `| ${columns.map(() => '---').join(' | ')} |`
   const rows = airports.map((airport) => [
     `[${airport.name}](${getCanonicalUrl(airport.path)})`,
@@ -184,7 +185,7 @@ const getAirportMarkdownTable = (airports: PublicAirportData[], columns: string[
     airport.status,
   ])
 
-  return [header, divider, ...rows.map((row) => `| ${row.join(' | ')} |`)].join('\n')
+  return [header, divider, ...rows.map((row) => `| ${row.map(escapeMarkdownTableCell).join(' | ')} |`)].join('\n')
 }
 
 const getSalesMarkdownTable = (airports: PublicAirportData[]) => {
@@ -201,15 +202,15 @@ const getSalesMarkdownTable = (airports: PublicAirportData[]) => {
     airport.status,
   ])
 
-  return [header, divider, ...rows.map((row) => `| ${row.join(' | ')} |`)].join('\n')
+  return [header, divider, ...rows.map((row) => `| ${row.map(escapeMarkdownTableCell).join(' | ')} |`)].join('\n')
 }
 
 const getNoExpiryMarkdownTable = (airports: PublicAirportData[]) => [
   noExpiryComparisonNotice,
   '',
-  `| ${noExpiryColumns.join(' | ')} |`,
+  `| ${noExpiryColumns.map(escapeMarkdownTableCell).join(' | ')} |`,
   `| ${noExpiryColumns.map(() => '---').join(' | ')} |`,
-  ...airports.map((airport) => `| [${airport.name}](${getCanonicalUrl(airport.path)}) | ${getNoExpiryCells(airport.path).join(' | ')} |`),
+  ...airports.map((airport) => `| ${[`[${airport.name}](${getCanonicalUrl(airport.path)})`, ...getNoExpiryCells(airport.path)].map(escapeMarkdownTableCell).join(' | ')} |`),
 ].join('\n')
 
 const renderDataHtmlPage = ({
@@ -344,9 +345,18 @@ ${riskRows.map((item) => `<tr>
       </table>`
 }
 
+const getRankingSelectionNotice = (key: AirportCollectionKey) => {
+  const collection = airportCollections[key]
+  if (!collection.selectionNotice) return undefined
+  const recordedPaths = new Set(siilasTestingSnapshot.airports.map((airport) => airport.yp7Path))
+  const recordedCount = collection.items.filter((airport) => recordedPaths.has(airport.path)).length
+  return `${collection.selectionNotice} 当前${collection.items.length}家候选中，${recordedCount}家有已接收的Siilas记录；有记录不等于已证明长期稳定。完整原始记录见 /data/siilas-tests.json，方法见 /methodology/。`
+}
+
 const rankingSections = airportRankingKeys.map((key) => ({
   key,
   title: airportCollections[key].dataTitle,
+  selectionNotice: getRankingSelectionNotice(key),
   renderHtml: key === 'noExpiry' ? getNoExpiryHtmlTable : key === 'sales' ? getSalesHtmlTable : getAirportHtmlTable,
   renderMarkdown: key === 'noExpiry' ? getNoExpiryMarkdownTable : key === 'sales' ? getSalesMarkdownTable : getAirportMarkdownTable,
 }))
@@ -395,7 +405,6 @@ const getDatasetSchema = (config: typeof dataPageConfigs[keyof typeof dataPageCo
   description: config.schemaDescription,
   url: getDataCanonicalUrl(config.slug),
   dateModified: siteLastModified,
-  license: `${hostname}/methodology/`,
   creator: datasetCreator,
 })
 
@@ -437,6 +446,9 @@ export const generateAirportDataFiles = (app: any) => {
     },
     metrics: getPublicAirportMetrics(),
     salesSampleMeta: airportSalesSampleMeta,
+    collectionMetadata: Object.fromEntries(rankingSections.map(({ key, title, selectionNotice }) => [
+      key, { title, ...(selectionNotice ? { selectionNotice } : {}) },
+    ])),
     rankings: data.rankings,
   }, null, 2))
   writeFileSync(`${dataDir}/risk-monitor.json`, JSON.stringify({
@@ -467,6 +479,7 @@ export const generateAirportDataFiles = (app: any) => {
     ...rankingSections.flatMap((section) => [
       `## ${section.title}`,
       '',
+      ...(section.selectionNotice ? [section.selectionNotice, ''] : []),
       section.renderMarkdown(data.rankings[section.key]),
       '',
     ]),
@@ -478,7 +491,7 @@ export const generateAirportDataFiles = (app: any) => {
     '',
     '| 机场 | 状态 | 风险提示 | 链接 |',
     '| --- | --- | --- | --- |',
-    ...data.riskMonitor.map((item) => `| ${item.name} | ${item.status} | ${item.risk} | ${'url' in item ? `[查看](${item.url})` : `[来源](${item.source})`} |`),
+    ...data.riskMonitor.map((item) => `| ${[item.name, item.status, item.risk, 'url' in item ? `[查看](${item.url})` : `[来源](${item.source})`].map(escapeMarkdownTableCell).join(' | ')} |`),
     '',
   ].join('\n'))
   writeFileSync(`${dataDir}/${airports.file}`, renderDataHtmlPage({
@@ -524,7 +537,7 @@ export const generateAirportDataFiles = (app: any) => {
         <a href="/rankings/chatgpt/">ChatGPT机场</a>
         <a href="/rankings/streaming/">流媒体机场</a>
       </div>
-      ${rankingSections.map((section) => `<h2>${section.title}</h2>
+      ${rankingSections.map((section) => `<h2>${section.title}</h2>${section.selectionNotice ? `\n      <p>${escapeHtml(section.selectionNotice)}</p>` : ''}
       <div class="card">${section.renderHtml(data.rankings[section.key])}</div>`).join('\n')}`,
   }))
   writeFileSync(`${dataDir}/${riskMonitor.file}`, renderDataHtmlPage({

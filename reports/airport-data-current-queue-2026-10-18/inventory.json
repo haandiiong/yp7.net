@@ -1,0 +1,3642 @@
+{
+  "auditedAt": "2026-10-18",
+  "scope": "Current project evidence; source ages do not assert actual merchant changes. Latest source may concern a subset of packages; preserve source scope.",
+  "metrics": {
+    "count": 57,
+    "trialCount": 11,
+    "noExpiryCount": 40,
+    "noExpiryUnverifiedCount": 0,
+    "dedicatedClientCount": 39,
+    "universalSubscriptionCount": 42,
+    "cheapUnderTenCount": 12,
+    "averagePrice": 17.4,
+    "regularCheapUnderTenCount": 12,
+    "regularAveragePrice": 17.6,
+    "performanceCount": 6,
+    "salesSampleCount": 17
+  },
+  "sourceAgeBuckets": {
+    "last7Days": 12,
+    "days8to20": 13,
+    "days21to29": 32,
+    "days30Plus": 0,
+    "missing": 0
+  },
+  "sales": {
+    "observedAt": "2026-06-18",
+    "source": "yp7.net 当前可见销量样本",
+    "caveat": "销量样本只用于观察本站读者购买热度，不等同于全网销量、服务商真实总销量或长期稳定性排名。",
+    "ageDays": 122
+  },
+  "noExpiry": {
+    "count": 40,
+    "conflicting": [
+      {
+        "name": "秒秒云",
+        "priceCny": 88,
+        "trafficGb": null,
+        "priceText": "88元",
+        "trafficText": "商品100GB／正文100GB每月（冲突）",
+        "status": "conflicting",
+        "deviceLimit": "3台同时在线",
+        "validity": "一次性付款，标注不限时流量；正文100G/月的额度与刷新待确认；29.9/49.9元365天包不计入",
+        "checkedAt": "2026-10-18"
+      },
+      {
+        "name": "云界线",
+        "priceCny": 99,
+        "trafficGb": null,
+        "priceText": "99元",
+        "trafficText": "卡片80GB／正文300GB（冲突）",
+        "status": "conflicting",
+        "deviceLimit": "不限客户端数量",
+        "validity": "标注不限时，不按月刷新、用完重购；交付额度待核实；另有199元200GB包",
+        "checkedAt": "2026-10-18",
+        "ownerConfirmedAt": "2026-10-18",
+        "ownerConfirmedScope": "卡片价格"
+      }
+    ],
+    "listed": 38,
+    "listedWithUnresolvedFields": [
+      {
+        "name": "全球云",
+        "rule": "一次购买总量，永久有效、用完即止；不设到期重置，重购余量待核",
+        "devices": "支持多终端及团队并发，具体数量未列"
+      },
+      {
+        "name": "光速云",
+        "rule": "一次性总量，永久有效、不按月刷新；新包重置、重购及退款规则待核实",
+        "devices": "不限设备数（商家标注）"
+      },
+      {
+        "name": "xxyun",
+        "rule": "一次买断，永久有效、用完为止；重购叠加与重置规则未注明",
+        "devices": "不限设备数"
+      },
+      {
+        "name": "Flybit",
+        "rule": "标注无期限；当前所有节点统一1倍率；续购与剩余流量叠加需确认；套餐标注不退款",
+        "devices": "不限设备数"
+      },
+      {
+        "name": "阿达西",
+        "rule": "永久总量300GB，限速600Mbps；重购与剩余额度处理待核",
+        "devices": "不限设备数"
+      },
+      {
+        "name": "拼好连",
+        "rule": "不限时；当前重置费、续购与剩余流量处理需确认",
+        "devices": "第三方不限连接；新机场账号不提供专属客户端"
+      },
+      {
+        "name": "唯兔云",
+        "rule": "不限时；不自动刷新，续费9折",
+        "devices": "不限时档待核实"
+      },
+      {
+        "name": "99吧",
+        "rule": "不限时；不退款；续购与叠加细则待核实",
+        "devices": "同时登录99台"
+      },
+      {
+        "name": "uuone",
+        "rule": "无时间限制；叠加规则待核实",
+        "devices": "10台"
+      },
+      {
+        "name": "冲上云霄",
+        "rule": "标注永不过期；续购与叠加待核实",
+        "devices": "不限设备数"
+      },
+      {
+        "name": "极连云",
+        "rule": "不限时；重置费待核实",
+        "devices": "不限同时使用客户端数量"
+      },
+      {
+        "name": "二猫云",
+        "rule": "长期有效；可补充流量，费用与重购余量处理待核实",
+        "devices": "不限设备数（当前卡片）"
+      },
+      {
+        "name": "sogo",
+        "rule": "不限时；不自动刷新；重置按卡片价90%为108元，余量处理与重置交付规则待核",
+        "devices": "不限设备数"
+      },
+      {
+        "name": "宇宙云",
+        "rule": "不限时；可补充流量，费用待核实",
+        "devices": "不限设备数"
+      },
+      {
+        "name": "隐形人",
+        "rule": "无时间限制；全部套餐不限制设备数量；续购余量规则待核",
+        "devices": "不限设备数"
+      },
+      {
+        "name": "闪跃",
+        "rule": "不限时总量；旧页重置选项130元，重置后额度与余量处理待核",
+        "devices": "不限时档未注明"
+      },
+      {
+        "name": "无忧链接",
+        "rule": "标注永久不限时；重置与续购规则待核实",
+        "devices": "待核实"
+      },
+      {
+        "name": "山水云",
+        "rule": "不限时；用完为止，续购规则待核实",
+        "devices": "3台同时在线"
+      },
+      {
+        "name": "灵猫网络",
+        "rule": "不限时，用完为止；手动重置9折，基数待核实",
+        "devices": "不限客户端数量"
+      },
+      {
+        "name": "Firefly",
+        "rule": "永久不过期，用完为止；续购规则待核实",
+        "devices": "不限时档未注明"
+      },
+      {
+        "name": "Tidal潮汐加速",
+        "rule": "永久有效，用完为止；续购叠加及退款适用范围待核实",
+        "devices": "不限同时在线设备"
+      }
+    ]
+  },
+  "airports": [
+    {
+      "name": "九云",
+      "path": "/posts/jiuyun-review-2026/",
+      "file": "docs/机场评测/九云.md",
+      "priceText": "6元/月",
+      "traffic": "150GB/月",
+      "main": true,
+      "risk": "不支持试用，不支持退款；并发设备数因套餐而异",
+      "latestPlanSourceAt": "2026-09-22",
+      "latestPlanSourceAgeDays": 26,
+      "planSources": [
+        {
+          "name": "九云套餐商店",
+          "url": "https://888.jiuyundl.com/#/shop",
+          "checkedAt": "2026-09-22",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [],
+      "otherSources": [
+        {
+          "name": "九云客户端教程",
+          "url": "https://888.jiuyundl.com/#/docs",
+          "checkedAt": "2026-09-22",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 36,
+        "trafficGb": 100,
+        "priceText": "36元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "3台同时在线",
+        "validity": "不限时；不重置，用完作废",
+        "checkedAt": "2026-09-22"
+      }
+    },
+    {
+      "name": "全球云",
+      "path": "/posts/quanqiuyun/",
+      "file": "docs/机场评测/全球云.md",
+      "priceText": "20元/月",
+      "traffic": "120GB/月",
+      "main": true,
+      "risk": "不支持免费试用和通用订阅仍据9月27日补充；旧优惠码与退款待核实；不限时重购余量未明确",
+      "latestPlanSourceAt": "2026-10-18",
+      "latestPlanSourceAgeDays": 0,
+      "planSources": [
+        {
+          "name": "全球云当前套餐及各周期价格（10月18日重读）",
+          "url": "https://n3oplhjnm.quanqiugttt1.club/?code=Hg3FRQIf#/plans",
+          "checkedAt": "2026-10-18",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "全球云99元年付59GB每月（用户补充确认）",
+          "url": "/posts/quanqiuyun/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "全球云试用与订阅规则（站长补充）",
+          "url": "/posts/quanqiuyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "全球云99元年付59GB每月（用户补充确认）",
+          "url": "/posts/quanqiuyun/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "全球云官网",
+          "url": "https://haandiiong.gcvipaff.cc/#/?code=Hg3FRQIf",
+          "checkedAt": "2026-09-11"
+        },
+        {
+          "name": "全球云当前客户端下载与系统要求",
+          "url": "https://vnjg4ckga.quanqiugttt1.club/?code=Hg3FRQIf#/dashboard",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "全球云五类客户端知识库（Linux仍缺完整教程）",
+          "url": "https://vnjg4ckga.quanqiugttt1.club/?code=Hg3FRQIf#/knowledge",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "全球云试用与订阅规则（站长补充）",
+          "url": "/posts/quanqiuyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "支持多终端及团队并发，具体数量未列",
+        "validity": "一次购买总量，永久有效、用完即止；不设到期重置，重购余量待核",
+        "checkedAt": "2026-10-18"
+      }
+    },
+    {
+      "name": "光年梯",
+      "path": "/posts/guangnianti-review-2026/",
+      "file": "docs/机场评测/光年梯.md",
+      "priceText": "18元/月",
+      "traffic": "110GB/月",
+      "main": false,
+      "risk": "普通套餐不支持通用订阅或免费试用，套餐不退款；GNT80适用及结算待核实；Android V7/V8文档同链",
+      "latestPlanSourceAt": "2026-10-17",
+      "latestPlanSourceAgeDays": 1,
+      "planSources": [
+        {
+          "name": "光年梯套餐及各周期价格",
+          "url": "https://vv3dbvb.guangnianertt1.homes/#/plans",
+          "checkedAt": "2026-10-17",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "光年梯试用规则（站长补充）",
+          "url": "/posts/guangnianti-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "光年梯优惠码（站长补充）",
+          "url": "/posts/guangnianti-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "光年梯试用规则（站长补充）",
+          "url": "/posts/guangnianti-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "光年梯优惠码（站长补充）",
+          "url": "/posts/guangnianti-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "光年梯六篇客户端知识库",
+          "url": "https://vv3dbvb.guangnianertt1.homes/#/knowledge",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "光年梯客户端仪表盘",
+          "url": "https://vv3dbvb.guangnianertt1.homes/#/dashboard",
+          "checkedAt": "2026-10-17",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "网际快车",
+      "path": "/posts/wangji-kuaiche-review/",
+      "file": "docs/机场评测/网际快车.md",
+      "priceText": "28元/30天",
+      "traffic": "60GB/日（每日重置）",
+      "main": true,
+      "risk": "日享限60GB/日；体验券yp7net的1天5GB沿用9月27日补充，本次未兑券、起算未核；旧优惠码与退款待核实",
+      "latestPlanSourceAt": "2026-10-17",
+      "latestPlanSourceAgeDays": 1,
+      "planSources": [
+        {
+          "name": "网际快车当前永久包、日享套餐与扣量顺序",
+          "url": "https://zv.wj-kc.com/#/shop",
+          "checkedAt": "2026-10-17",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "网际快车体验券规则（站长补充）",
+          "url": "/posts/wangji-kuaiche-review/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "网际快车官网",
+          "url": "https://wjkc66.vip/?c=GDIHMU",
+          "checkedAt": "2026-09-10"
+        },
+        {
+          "name": "网际快车六平台客户端菜单、体验券入口及10月12日公告",
+          "url": "https://zv.wj-kc.com/#/",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "网际快车体验券规则（站长补充）",
+          "url": "/posts/wangji-kuaiche-review/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 6.8,
+        "trafficGb": 20,
+        "priceText": "6.8元",
+        "trafficText": "20GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "不限时，用完为止；多套餐按日享→月套餐→永久包扣量",
+        "checkedAt": "2026-10-17"
+      }
+    },
+    {
+      "name": "光速云",
+      "path": "/posts/guangsuyun/",
+      "file": "docs/机场评测/光速云.md",
+      "priceText": "25元/月",
+      "traffic": "168GB/月",
+      "main": false,
+      "risk": "不支持免费试用和通用订阅；68元量子版卡片500GB/月与正文450GB/月待核；退款与147元包重购规则未明确",
+      "latestPlanSourceAt": "2026-10-18",
+      "latestPlanSourceAgeDays": 0,
+      "planSources": [
+        {
+          "name": "光速云现售7款套餐及各周期价格（10月18日重读）",
+          "url": "https://fdgfds.guangsut.sbs/#/plans",
+          "checkedAt": "2026-10-18",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "光速云99元年付69GB每月（用户补充确认）",
+          "url": "/posts/guangsuyun/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "光速云旧年付及极速版额度（历史站长补充）",
+          "url": "/posts/guangsuyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "光速云试用与订阅规则（站长补充）",
+          "url": "/posts/guangsuyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "光速云99元年付69GB每月（用户补充确认）",
+          "url": "/posts/guangsuyun/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "光速云旧年付及极速版额度（历史站长补充）",
+          "url": "/posts/guangsuyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "光速云试用与订阅规则（站长补充）",
+          "url": "/posts/guangsuyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "光速云五类客户端知识库",
+          "url": "https://fdgfds.guangsut.sbs/#/knowledge",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "光速云客户端仪表盘",
+          "url": "https://fdgfds.guangsut.sbs/#/dashboard",
+          "checkedAt": "2026-10-17",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 147,
+        "trafficGb": 247,
+        "priceText": "147元",
+        "trafficText": "247GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数（商家标注）",
+        "validity": "一次性总量，永久有效、不按月刷新；新包重置、重购及退款规则待核实",
+        "checkedAt": "2026-10-18"
+      }
+    },
+    {
+      "name": "xxyun",
+      "path": "/posts/xxyun-review-2026/",
+      "file": "docs/机场评测/xxyun.md",
+      "priceText": "9.99元/月",
+      "traffic": "100GB/月",
+      "main": true,
+      "risk": "仅官方客户端，不支持第三方通用订阅；无退款政策，不支持新疆，校园网不保证；Linux和软路由限所列系统及架构",
+      "latestPlanSourceAt": "2026-10-17",
+      "latestPlanSourceAgeDays": 1,
+      "planSources": [
+        {
+          "name": "xxyun当前月付、年付与不限时套餐",
+          "url": "https://cloud.xxvip.shop/plan",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "xxyun购买与退款须知",
+          "url": "https://cloud.xxvip.shop/knowledge/20",
+          "checkedAt": "2026-10-17",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [],
+      "otherSources": [
+        {
+          "name": "xxyun 官网",
+          "url": "https://xxyun.at/?code=3AYVsSKY",
+          "checkedAt": "2026-09-10"
+        },
+        {
+          "name": "xxyun当前新客优惠展示及客户端下载入口",
+          "url": "https://cloud.xxvip.shop/dashboard",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "xxyun七类官方客户端教程目录及各端使用说明",
+          "url": "https://cloud.xxvip.shop/knowledge",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "xxyun Linux桌面客户端教程",
+          "url": "https://cloud.xxvip.shop/knowledge/25",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "xxyun x86_64官方软路由插件教程",
+          "url": "https://cloud.xxvip.shop/knowledge/18",
+          "checkedAt": "2026-10-17",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 66.66,
+        "trafficGb": 500,
+        "priceText": "66.66元",
+        "trafficText": "500GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "一次买断，永久有效、用完为止；重购叠加与重置规则未注明",
+        "checkedAt": "2026-10-17"
+      }
+    },
+    {
+      "name": "Flybit",
+      "path": "/posts/flybit-review-2026/",
+      "file": "docs/机场评测/flybit.md",
+      "priceText": "15元/月",
+      "traffic": "128GB/月",
+      "main": true,
+      "risk": "套餐标注不退款；协议公告残留AnyTLS；入口恢复仅为商家声明，旧订阅需按公告重新获取",
+      "latestPlanSourceAt": "2026-10-15",
+      "latestPlanSourceAgeDays": 3,
+      "planSources": [
+        {
+          "name": "Flybit当前后台套餐页",
+          "url": "https://fastfastfast.best/purchase",
+          "checkedAt": "2026-10-15",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "Flybit192GB季付62元（用户确认）",
+          "url": "/posts/flybit-review-2026/",
+          "checkedAt": "2026-10-15",
+          "link": false
+        },
+        {
+          "name": "Flybit当前所有节点统一1倍率（用户确认）",
+          "url": "/posts/flybit-review-2026/",
+          "checkedAt": "2026-10-15",
+          "link": false
+        },
+        {
+          "name": "Flybit试用规则（站长补充）",
+          "url": "/posts/flybit-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "Flybit 官网",
+          "url": "https://goflybit.com/#/register?code=p3DOcgzt",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "name": "Flybit192GB季付62元（用户确认）",
+          "url": "/posts/flybit-review-2026/",
+          "checkedAt": "2026-10-15",
+          "link": false
+        },
+        {
+          "name": "Flybit当前所有节点统一1倍率（用户确认）",
+          "url": "/posts/flybit-review-2026/",
+          "checkedAt": "2026-10-15",
+          "link": false
+        },
+        {
+          "name": "Flybit当前后台订阅与客户端入口",
+          "url": "https://fastfastfast.best/portal",
+          "checkedAt": "2026-10-15",
+          "link": false
+        },
+        {
+          "name": "Flybit协议与历史公告（10月10日编辑）",
+          "url": "https://fastfastfast.best/my-announcements/40",
+          "checkedAt": "2026-10-15",
+          "link": false
+        },
+        {
+          "name": "Flybit入口异常与订阅更新公告（商家10月11日声明）",
+          "url": "https://fastfastfast.best/my-announcements/42",
+          "checkedAt": "2026-10-15",
+          "link": false
+        },
+        {
+          "name": "Flybit电脑FlClash教程（10月13日更新）",
+          "url": "https://fastfastfast.best/my-tutorials/16",
+          "checkedAt": "2026-10-15",
+          "link": false
+        },
+        {
+          "name": "Flybit iOS Shadowrocket教程（10月13日更新）",
+          "url": "https://fastfastfast.best/my-tutorials/12",
+          "checkedAt": "2026-10-15",
+          "link": false
+        },
+        {
+          "name": "Flybit九折码公告（未验证订单）",
+          "url": "https://fastfastfast.best/my-announcements/1",
+          "checkedAt": "2026-10-15",
+          "link": false
+        },
+        {
+          "name": "Flybit试用规则（站长补充）",
+          "url": "/posts/flybit-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 36,
+        "trafficGb": 128,
+        "priceText": "36元",
+        "trafficText": "128GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "标注无期限；当前所有节点统一1倍率；续购与剩余流量叠加需确认；套餐标注不退款",
+        "checkedAt": "2026-10-15"
+      }
+    },
+    {
+      "name": "阿达西",
+      "path": "/posts/adaxi-review-2026/",
+      "file": "docs/机场评测/阿达西.md",
+      "priceText": "3元/30天",
+      "traffic": "20GB/30天",
+      "main": true,
+      "risk": "充值手续费待核；入门限100Mbps、无专线；GBox目前仅Windows；无试用、退款待核；独享默认续费",
+      "latestPlanSourceAt": "2026-10-17",
+      "latestPlanSourceAgeDays": 1,
+      "planSources": [
+        {
+          "name": "阿达西现售套餐",
+          "url": "https://adaxi.net/plan",
+          "checkedAt": "2026-10-17",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "阿达西试用规则（站长补充）",
+          "url": "/posts/adaxi-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "阿达西最低充值额（用户补充确认）",
+          "url": "/posts/adaxi-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "阿达西试用规则（站长补充）",
+          "url": "/posts/adaxi-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "阿达西最低充值额（用户补充确认）",
+          "url": "/posts/adaxi-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "阿达西充值输入与默认档位",
+          "url": "https://adaxi.net/deposit",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "阿达西快速订阅菜单",
+          "url": "https://adaxi.net/dashboard",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "阿达西Windows GBox与v2rayN教程",
+          "url": "https://adaxi.net/doc",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "阿达西macOS教程",
+          "url": "https://adaxi.net/doc/macos",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "阿达西iOS两类客户端教程",
+          "url": "https://adaxi.net/doc/ios",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "阿达西Android教程",
+          "url": "https://adaxi.net/doc/android",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "阿达西常见问题",
+          "url": "https://adaxi.net/doc/faq",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "阿达西独享节点",
+          "url": "https://adaxi.net/dedicated",
+          "checkedAt": "2026-10-17",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 50,
+        "trafficGb": 300,
+        "priceText": "50元",
+        "trafficText": "300GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "永久总量300GB，限速600Mbps；重购与剩余额度处理待核",
+        "checkedAt": "2026-10-17"
+      }
+    },
+    {
+      "name": "拼好连",
+      "path": "/posts/runway-review-2026/",
+      "file": "docs/机场评测/runway.md",
+      "priceText": "19.9元/月",
+      "traffic": "50GB/月",
+      "main": true,
+      "risk": "新机场账号不提供专属客户端，需第三方订阅工具；试用领取及起算方式、退款、不限时重置费及老用户锁价期限待核实",
+      "latestPlanSourceAt": "2026-10-16",
+      "latestPlanSourceAgeDays": 2,
+      "planSources": [
+        {
+          "name": "拼好连套餐商店",
+          "url": "https://new.runwayhz.com/#/shop",
+          "checkedAt": "2026-10-16",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "拼好连旧600GB档限速800Mbps（用户确认）",
+          "url": "/posts/runway-review-2026/",
+          "checkedAt": "2026-10-16",
+          "link": false
+        },
+        {
+          "name": "拼好连机场与VPN分流、调价及老用户公告",
+          "url": "https://new.runwayhz.com/#/dashboard",
+          "checkedAt": "2026-10-16",
+          "link": false
+        },
+        {
+          "name": "拼好连新机场试用仍为1天6GB（用户再次确认）",
+          "url": "/posts/runway-review-2026/",
+          "checkedAt": "2026-10-16",
+          "link": false
+        },
+        {
+          "name": "拼好连此前试用规则（9月27日站长补充）",
+          "url": "/posts/runway-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "拼好连旧600GB档限速800Mbps（用户确认）",
+          "url": "/posts/runway-review-2026/",
+          "checkedAt": "2026-10-16",
+          "link": false
+        },
+        {
+          "name": "拼好连机场与VPN分流、调价及老用户公告",
+          "url": "https://new.runwayhz.com/#/dashboard",
+          "checkedAt": "2026-10-16",
+          "link": false
+        },
+        {
+          "name": "拼好连机场官方导航（本次打开核对）",
+          "url": "https://www.phl2.one/",
+          "checkedAt": "2026-10-16"
+        },
+        {
+          "name": "拼好连新机场试用仍为1天6GB（用户再次确认）",
+          "url": "/posts/runway-review-2026/",
+          "checkedAt": "2026-10-16",
+          "link": false
+        },
+        {
+          "name": "拼好连此前试用规则（9月27日站长补充）",
+          "url": "/posts/runway-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "拼好连使用规则",
+          "url": "https://new.runwayhz.com/#/docs/5",
+          "checkedAt": "2026-10-16",
+          "link": false
+        },
+        {
+          "name": "拼好连Windows FlClash教程",
+          "url": "https://new.runwayhz.com/#/docs/2",
+          "checkedAt": "2026-10-16",
+          "link": false
+        },
+        {
+          "name": "拼好连macOS FlClash教程",
+          "url": "https://new.runwayhz.com/#/docs/3",
+          "checkedAt": "2026-10-16",
+          "link": false
+        },
+        {
+          "name": "拼好连Android FlClash教程",
+          "url": "https://new.runwayhz.com/#/docs/4",
+          "checkedAt": "2026-10-16",
+          "link": false
+        },
+        {
+          "name": "拼好连iOS Shadowrocket教程（含旧域名残留）",
+          "url": "https://new.runwayhz.com/#/docs/1",
+          "checkedAt": "2026-10-16",
+          "link": false
+        },
+        {
+          "name": "拼好连此前专属客户端下载（不代表新机场账号权益）",
+          "url": "https://down.runwayhz.com/",
+          "checkedAt": "2026-10-16"
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 70,
+        "trafficGb": 150,
+        "priceText": "70元",
+        "trafficText": "150GB",
+        "status": "listed",
+        "deviceLimit": "第三方不限连接；新机场账号不提供专属客户端",
+        "validity": "不限时；当前重置费、续购与剩余流量处理需确认",
+        "checkedAt": "2026-10-16"
+      }
+    },
+    {
+      "name": "唯兔云",
+      "path": "/posts/weituyun/",
+      "file": "docs/机场评测/唯兔云.md",
+      "priceText": "19.9元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "不支持免费试用和通用订阅；14.9元节假日套餐暂无定价，退款待核实",
+      "latestPlanSourceAt": "2026-09-23",
+      "latestPlanSourceAgeDays": 25,
+      "planSources": [
+        {
+          "name": "唯兔云套餐页",
+          "url": "https://hjusedi.v2saat.club/#/plans",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "唯兔云试用与订阅规则（站长补充）",
+          "url": "/posts/weituyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "唯兔云试用与订阅规则（站长补充）",
+          "url": "/posts/weituyun/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "唯兔云知识库",
+          "url": "https://hjusedi.v2saat.club/#/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "唯兔云仪表盘",
+          "url": "https://hjusedi.v2saat.club/#/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限时档待核实",
+        "validity": "不限时；不自动刷新，续费9折",
+        "checkedAt": "2026-09-23"
+      }
+    },
+    {
+      "name": "99吧",
+      "path": "/posts/99ba-review-2026/",
+      "file": "docs/机场评测/99吧.md",
+      "priceText": "9.9元/月",
+      "traffic": "70GB/月",
+      "main": false,
+      "risk": "10月15日公告提示近期线路不稳定；公告标题与展示时间不一致；仅限内地、不退款，先试用",
+      "latestPlanSourceAt": "2026-10-17",
+      "latestPlanSourceAgeDays": 1,
+      "planSources": [
+        {
+          "name": "99吧现售套餐",
+          "url": "https://99vpn.bar/#/plan",
+          "checkedAt": "2026-10-17",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [],
+      "otherSources": [
+        {
+          "name": "99吧试用及客户端文档",
+          "url": "https://99vpn.bar/#/knowledge",
+          "checkedAt": "2026-10-17",
+          "link": false
+        },
+        {
+          "name": "99吧导入菜单及网络波动公告",
+          "url": "https://99vpn.bar/#/dashboard",
+          "checkedAt": "2026-10-17",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 35.9,
+        "trafficGb": 111,
+        "priceText": "35.9元",
+        "trafficText": "111GB",
+        "status": "listed",
+        "deviceLimit": "同时登录99台",
+        "validity": "不限时；不退款；续购与叠加细则待核实",
+        "checkedAt": "2026-10-17"
+      }
+    },
+    {
+      "name": "迅达",
+      "path": "/posts/xunda-review-2026/",
+      "file": "docs/机场评测/迅达.md",
+      "priceText": "15元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "不支持退款，仅限个人使用；设备限5至20台，不支持免费试用",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "迅达套餐页",
+          "url": "https://sulianproxy.com/plan",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "迅达购买条款",
+          "url": "https://sulianproxy.com/knowledge/1",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "迅达试用规则（站长补充）",
+          "url": "/posts/xunda-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "迅达试用规则（站长补充）",
+          "url": "/posts/xunda-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "迅达订阅入口",
+          "url": "https://sulianproxy.com/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "迅达常见问题",
+          "url": "https://sulianproxy.com/knowledge/2",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "迅达专属客户端下载",
+          "url": "https://sulianproxy.com/knowledge/10",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 66,
+        "trafficGb": 300,
+        "priceText": "66元",
+        "trafficText": "300GB",
+        "status": "listed",
+        "deviceLimit": "5台；仅限个人使用",
+        "validity": "不限时；不自动重置，重置56.66元",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "ccyz",
+      "path": "/posts/ccyz-review-2026/",
+      "file": "docs/机场评测/ccyz.md",
+      "priceText": "49.9元/季（约16.63元/月）",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "季度起付，限5至10台设备；退款与优惠码适用范围待核实",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "CCYZ套餐页",
+          "url": "https://ccyz.uu-cc123.com/plan",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [],
+      "otherSources": [
+        {
+          "name": "CCYZ客户端与优惠说明",
+          "url": "https://ccyz.uu-cc123.com/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "CCYZ文档中心",
+          "url": "https://ccyz.uu-cc123.com/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 145,
+        "trafficGb": 550,
+        "priceText": "145元",
+        "trafficText": "550GB",
+        "status": "listed",
+        "deviceLimit": "5台",
+        "validity": "不限时；不按月补充流量",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "uuone",
+      "path": "/posts/uuone-review-2026/",
+      "file": "docs/机场评测/uuone.md",
+      "priceText": "19元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "不支持免费试用；退款与旧优惠码待核实；设备数量和速率因套餐不同",
+      "latestPlanSourceAt": "2026-09-23",
+      "latestPlanSourceAgeDays": 25,
+      "planSources": [
+        {
+          "name": "UUONE套餐页",
+          "url": "https://uu-1.v1ppone.de/plan",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "uuone试用规则（站长补充）",
+          "url": "/posts/uuone-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "uuone试用规则（站长补充）",
+          "url": "/posts/uuone-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "UUONE使用文档",
+          "url": "https://uu-1.v1ppone.de/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "UUONE iOS教程",
+          "url": "https://uu-1.v1ppone.de/knowledge/9",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 99,
+        "trafficGb": 450,
+        "priceText": "99元",
+        "trafficText": "450GB",
+        "status": "listed",
+        "deviceLimit": "10台",
+        "validity": "无时间限制；叠加规则待核实",
+        "checkedAt": "2026-09-23"
+      }
+    },
+    {
+      "name": "冲上云霄",
+      "path": "/posts/chongshangyunxiao/",
+      "file": "docs/机场评测/冲上云霄.md",
+      "priceText": "7元/30天",
+      "traffic": "50GB/30天",
+      "main": false,
+      "risk": "不支持免费试用；入门限速200Mbps且无专线；退款和长周期流量重置待核实",
+      "latestPlanSourceAt": "2026-09-23",
+      "latestPlanSourceAgeDays": 25,
+      "planSources": [
+        {
+          "name": "冲上云霄套餐页",
+          "url": "https://678.999865.xyz/plan",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "冲上云霄试用规则（站长补充）",
+          "url": "/posts/chongshangyunxiao/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "冲上云霄试用规则（站长补充）",
+          "url": "/posts/chongshangyunxiao/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "冲上云霄使用文档",
+          "url": "https://678.999865.xyz/doc",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "冲上云霄常见问题",
+          "url": "https://678.999865.xyz/doc/faq",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 365,
+        "trafficGb": 800,
+        "priceText": "365元",
+        "trafficText": "800GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "标注永不过期；续购与叠加待核实",
+        "checkedAt": "2026-09-23"
+      }
+    },
+    {
+      "name": "SSONE",
+      "path": "/posts/ssone/",
+      "file": "docs/机场评测/ssone.md",
+      "priceText": "15元/月",
+      "traffic": "60GB/月",
+      "main": false,
+      "risk": "购买后不退款，新套餐覆盖旧套餐；年付超值无忧按年重置流量",
+      "latestPlanSourceAt": "2026-09-23",
+      "latestPlanSourceAgeDays": 25,
+      "planSources": [
+        {
+          "name": "SSONE套餐与购买说明",
+          "url": "https://m.ssone.io/shop",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [],
+      "otherSources": [
+        {
+          "name": "SSONE使用文档",
+          "url": "https://m.ssone.io/docs",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "U1S1",
+      "path": "/posts/u1s1-review-2026/",
+      "file": "docs/机场评测/u1s1.md",
+      "priceText": "20元/月",
+      "traffic": "120GB/月",
+      "main": false,
+      "risk": "当前未见在售不限时套餐；定制需询价，旧优惠码与退款条件待核实",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "U1S1套餐页",
+          "url": "https://njdsues.u1sat.homes/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [],
+      "otherSources": [
+        {
+          "name": "U1S1客户端入口",
+          "url": "https://njdsues.u1sat.homes/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "隐云",
+      "path": "/posts/yinyun-review-2026/",
+      "file": "docs/机场评测/隐云.md",
+      "priceText": "29元/月参考价（首购季付起）",
+      "traffic": "专属模式不限流量；通用模式150GB/月",
+      "main": false,
+      "risk": "轻量版首购季付起；两种模式限制不同；不支持免费试用，退款待核实",
+      "latestPlanSourceAt": "2026-09-23",
+      "latestPlanSourceAgeDays": 25,
+      "planSources": [
+        {
+          "name": "隐云购买页",
+          "url": "https://103.238.130.44:2026/purchase",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "隐云试用规则（站长补充）",
+          "url": "/posts/yinyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "隐云试用规则（站长补充）",
+          "url": "/posts/yinyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "隐云仪表盘",
+          "url": "https://103.238.130.44:2026/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "cocoduck",
+      "path": "/posts/cocoduck-review/",
+      "file": "docs/机场评测/cocoduck.md",
+      "priceText": "17元/月",
+      "traffic": "100GB/月",
+      "main": false,
+      "risk": "试用无人工支持；加油包需搭配常规套餐，旧客户端需确认兼容性",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "COCODUCK套餐与加油包",
+          "url": "https://dash.cocoduck.live/user/product",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [],
+      "otherSources": [
+        {
+          "name": "COCODUCK客户端与试用公告",
+          "url": "https://dash.cocoduck.live/user",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "XSUS",
+      "path": "/posts/xsus-review-2026/",
+      "file": "docs/机场评测/xsus.md",
+      "priceText": "12元/月",
+      "traffic": "168GB/月",
+      "main": false,
+      "risk": "无法原路退款；流量不叠加，续费不立即重置；不支持免费试用",
+      "latestPlanSourceAt": "2026-09-23",
+      "latestPlanSourceAgeDays": 25,
+      "planSources": [
+        {
+          "name": "XSUS套餐与购买须知",
+          "url": "https://xsus.cloud/plan",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "XSUS试用规则（站长补充）",
+          "url": "/posts/xsus-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "XSUS试用规则（站长补充）",
+          "url": "/posts/xsus-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "XSUS帮助中心",
+          "url": "https://xsus.cloud/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "XSUS仪表盘",
+          "url": "https://xsus.cloud/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 65,
+        "trafficGb": 188,
+        "priceText": "65元",
+        "trafficText": "188GB",
+        "status": "listed",
+        "deviceLimit": "最多5个IP；同网络多设备计1个IP",
+        "validity": "无过期日；再购重置额度，不叠加余量",
+        "checkedAt": "2026-09-23"
+      }
+    },
+    {
+      "name": "坦克云（原坦克加速）",
+      "path": "/posts/tank-review-2026/",
+      "file": "docs/机场评测/坦克加速.md",
+      "priceText": "9.9元/月",
+      "traffic": "80GB/月",
+      "main": false,
+      "risk": "入门限1台设备与IP；退款与旧优惠码待核实",
+      "latestPlanSourceAt": "2026-09-23",
+      "latestPlanSourceAgeDays": 25,
+      "planSources": [
+        {
+          "name": "坦克云套餐页",
+          "url": "https://aa.tankejiasu.com/#/stage/buysubs",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "坦克云试用规则（站长补充）",
+          "url": "/posts/tank-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "坦克云官网邀请入口（用户更新）",
+          "url": "https://kele.tankeyun.com/#/register?code=hZKUg7Sw",
+          "checkedAt": "2026-10-18"
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "坦克云试用规则（站长补充）",
+          "url": "/posts/tank-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "坦克云使用文档",
+          "url": "https://aa.tankejiasu.com/#/stage/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "坦克云仪表盘",
+          "url": "https://aa.tankejiasu.com/#/stage/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "坦克云官网邀请入口（用户更新）",
+          "url": "https://kele.tankeyun.com/#/register?code=hZKUg7Sw",
+          "checkedAt": "2026-10-18"
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 50,
+        "trafficGb": 100,
+        "priceText": "50元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "2台设备与IP同时连接",
+        "validity": "不限时；总流量用完为止",
+        "checkedAt": "2026-09-23"
+      }
+    },
+    {
+      "name": "瞬云",
+      "path": "/posts/shunyun-review-2026/",
+      "file": "docs/机场评测/瞬云.md",
+      "priceText": "18元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "不支持免费试用和退款；周期套餐仅限个人使用，旧优惠码待核实",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "瞬云套餐商店",
+          "url": "https://syjccloud.com/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "瞬云试用规则（站长补充）",
+          "url": "/posts/shunyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "瞬云试用规则（站长补充）",
+          "url": "/posts/shunyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "瞬云客户端文档",
+          "url": "https://syjccloud.com/#/docs",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "瞬云官方客户端教程",
+          "url": "https://syjccloud.com/#/docs/6",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "瞬云维护公告",
+          "url": "https://syjccloud.com/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 260,
+        "trafficGb": 2000,
+        "priceText": "260元",
+        "trafficText": "2000GB",
+        "status": "listed",
+        "deviceLimit": "不限客户端数量；仅限个人",
+        "validity": "无到期日；不自动重置，重置234元",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "极连云",
+      "path": "/posts/jilianyun-review-2026/",
+      "file": "docs/机场评测/极连云.md",
+      "priceText": "18元/月",
+      "traffic": "100GB/月",
+      "main": false,
+      "risk": "不支持免费试用和通用订阅；不退款；不限时399元600GB已确认，重置费用待核实",
+      "latestPlanSourceAt": "2026-09-23",
+      "latestPlanSourceAgeDays": 25,
+      "planSources": [
+        {
+          "name": "极连云套餐页",
+          "url": "https://roasa.jilianat.homes/#/plans",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "极连云不限时价格与流量（站长补充）",
+          "url": "/posts/jilianyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "极连云试用与订阅规则（站长补充）",
+          "url": "/posts/jilianyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "极连云不限时价格与流量（站长补充）",
+          "url": "/posts/jilianyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "极连云试用与订阅规则（站长补充）",
+          "url": "/posts/jilianyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "极连云知识库",
+          "url": "https://roasa.jilianat.homes/#/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 399,
+        "trafficGb": 600,
+        "priceText": "399元",
+        "trafficText": "600GB",
+        "status": "listed",
+        "deviceLimit": "不限同时使用客户端数量",
+        "validity": "不限时；重置费待核实",
+        "checkedAt": "2026-09-23",
+        "ownerConfirmedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "二猫云",
+      "path": "/posts/ermiao-vpn-review/",
+      "file": "docs/机场评测/二猫云.md",
+      "priceText": "20元/月",
+      "traffic": "130GB/月",
+      "main": false,
+      "risk": "退款及旧优惠码待核；定制商品有效期与刷新未明确；总量包补量费用及余量处理未列",
+      "latestPlanSourceAt": "2026-10-18",
+      "latestPlanSourceAgeDays": 0,
+      "planSources": [
+        {
+          "name": "二猫云当前8款套餐及各周期报价（官网重读）",
+          "url": "https://samejob.maomaotoo.autos/#/plans",
+          "checkedAt": "2026-10-18",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "二猫云以卡片报价与付款周期为准（用户补充确认）",
+          "url": "/posts/ermiao-vpn-review/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "二猫云1天200GB试用（9月26日站长补充）",
+          "url": "/posts/ermiao-vpn-review/",
+          "checkedAt": "2026-09-26",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "二猫云以卡片报价与付款周期为准（用户补充确认）",
+          "url": "/posts/ermiao-vpn-review/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "二猫云1天200GB试用（9月26日站长补充）",
+          "url": "/posts/ermiao-vpn-review/",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "二猫云帮助中心",
+          "url": "https://network.ermaotztz3.homes/#/knowledge",
+          "checkedAt": "2026-09-23",
+          "link": false
+        },
+        {
+          "name": "二猫云客户端下载",
+          "url": "https://network.ermaotztz3.homes/#/dashboard",
+          "checkedAt": "2026-09-23",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数（当前卡片）",
+        "validity": "长期有效；可补充流量，费用与重购余量处理待核实",
+        "checkedAt": "2026-10-18",
+        "ownerConfirmedAt": "2026-10-18",
+        "ownerConfirmedScope": "卡片报价与付款周期"
+      }
+    },
+    {
+      "name": "寰宇云",
+      "path": "/posts/huanyuyun-review-2026/",
+      "file": "docs/机场评测/寰宇云.md",
+      "priceText": "18元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "售出不退款；不支持免费试用；旧优惠码待核实",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "寰宇云套餐商店",
+          "url": "https://hyy.52kok.cn/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "寰宇云试用规则（站长补充）",
+          "url": "/posts/huanyuyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "寰宇云试用规则（站长补充）",
+          "url": "/posts/huanyuyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "寰宇云订阅入口",
+          "url": "https://hyy.52kok.cn/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "寰宇云客户端文档",
+          "url": "https://hyy.52kok.cn/#/docs",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "寰宇云官方客户端教程",
+          "url": "https://hyy.52kok.cn/#/docs/1",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 158,
+        "trafficGb": 1000,
+        "priceText": "158元",
+        "trafficText": "1000GB",
+        "status": "listed",
+        "deviceLimit": "不限在线设备或客户端数量",
+        "validity": "不限时；按总流量使用",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "一翻云",
+      "path": "/posts/yifanyun-review-2026/",
+      "file": "docs/机场评测/一翻云.md",
+      "priceText": "20元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "不支持免费试用和通用订阅；退款和旧优惠码待核实；中秋限定套餐停售时间未注明",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "一翻云套餐页",
+          "url": "https://ngfi2bnfn.1fyohnzt.xyz/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "一翻云试用与订阅规则（站长补充）",
+          "url": "/posts/yifanyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "一翻云试用与订阅规则（站长补充）",
+          "url": "/posts/yifanyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "一翻云客户端下载",
+          "url": "https://ngfi2bnfn.1fyohnzt.xyz/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "一翻云客户端帮助中心",
+          "url": "https://ngfi2bnfn.1fyohnzt.xyz/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "长期有效；常规包，另有中秋限售包",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "sogo",
+      "path": "/posts/sogo-review-2026/",
+      "file": "docs/机场评测/sogo.md",
+      "priceText": "25元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "不支持免费试用和通用订阅；退款及旧优惠码待核实；重置后的余量处理与交付规则未明确",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "sogo套餐商店",
+          "url": "https://afasfw.sogotztz2.sbs/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "sogo基础版价格详情",
+          "url": "https://afasfw.sogotztz2.sbs/#/order/1?period=month_price",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "sogo卡片价格与九折重置费（用户补充确认）",
+          "url": "/posts/sogo-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "sogo试用与订阅规则（站长补充）",
+          "url": "/posts/sogo-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "sogo卡片价格与九折重置费（用户补充确认）",
+          "url": "/posts/sogo-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "sogo试用与订阅规则（站长补充）",
+          "url": "/posts/sogo-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "sogo客户端下载",
+          "url": "https://afasfw.sogotztz2.sbs/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "sogo客户端教程",
+          "url": "https://afasfw.sogotztz2.sbs/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 120,
+        "trafficGb": 120,
+        "priceText": "120元",
+        "trafficText": "120GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "不限时；不自动刷新；重置按卡片价90%为108元，余量处理与重置交付规则待核",
+        "checkedAt": "2026-09-27",
+        "ownerConfirmedAt": "2026-10-18",
+        "ownerConfirmedScope": "卡片价格与重置费用"
+      }
+    },
+    {
+      "name": "速界",
+      "path": "/posts/sujie-review-2026/",
+      "file": "docs/机场评测/速界.md",
+      "priceText": "15元/月",
+      "traffic": "50GB/月",
+      "main": false,
+      "risk": "免费试用1天50GB需注册后联系客服领取；15元月付体验另为付费套餐且不参加优惠；不支持通用订阅；退款待核实；光速版流量说明冲突",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "速界套餐商店",
+          "url": "https://utyimn.azjstq.xyz/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "速界试用与订阅规则（站长补充）",
+          "url": "/posts/sujie-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "速界试用与订阅规则（站长补充）",
+          "url": "/posts/sujie-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "速界客户端下载",
+          "url": "https://utyimn.azjstq.xyz/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "速界客户端教程",
+          "url": "https://utyimn.azjstq.xyz/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "边缘节点",
+      "path": "/posts/bianyuan-review-2026/",
+      "file": "docs/机场评测/边缘节点.md",
+      "priceText": "15元/月",
+      "traffic": "50GB/月",
+      "main": false,
+      "risk": "月付体验不参加优惠；不支持免费试用和通用订阅，退款待核实；450GB不限时重置费说明冲突",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "边缘节点套餐与优惠说明",
+          "url": "https://zvbghs02.ztymforedge.lol/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "边缘节点试用与订阅规则（站长补充）",
+          "url": "/posts/bianyuan-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "边缘节点试用与订阅规则（站长补充）",
+          "url": "/posts/bianyuan-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "边缘节点客户端下载",
+          "url": "https://zvbghs02.ztymforedge.lol/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "边缘节点客户端教程",
+          "url": "https://zvbghs02.ztymforedge.lol/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "不限时；不自动刷新，重置90元",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "宇宙云",
+      "path": "/posts/yuzhoucloud-review-2026/",
+      "file": "docs/机场评测/宇宙云.md",
+      "priceText": "25元/月",
+      "traffic": "160GB/月",
+      "main": false,
+      "risk": "不支持免费试用；退款及旧优惠码待核实；周期重置费基数与补流量费用需确认",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "宇宙云套餐商店",
+          "url": "https://tlsmvchy.yuzhoutttt3.click/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "宇宙云220元不限时额度（站长补充）",
+          "url": "/posts/yuzhoucloud-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "宇宙云试用规则（站长补充）",
+          "url": "/posts/yuzhoucloud-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "宇宙云220元不限时额度（站长补充）",
+          "url": "/posts/yuzhoucloud-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "宇宙云试用规则（站长补充）",
+          "url": "/posts/yuzhoucloud-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "宇宙云客户端下载",
+          "url": "https://tlsmvchy.yuzhoutttt3.click/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "宇宙云客户端与Clash Mi教程",
+          "url": "https://tlsmvchy.yuzhoutttt3.click/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 110,
+        "trafficGb": 120,
+        "priceText": "110元",
+        "trafficText": "120GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "不限时；可补充流量，费用待核实",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "快狸",
+      "path": "/posts/kuaili-review-2026/",
+      "file": "docs/机场评测/快狸.md",
+      "priceText": "15元/月",
+      "traffic": "50GB/月",
+      "main": false,
+      "risk": "不支持免费试用；季付与年付优惠文案需核对；退款及旧优惠码待核实",
+      "latestPlanSourceAt": "2026-09-26",
+      "latestPlanSourceAgeDays": 22,
+      "planSources": [
+        {
+          "name": "快狸套餐页",
+          "url": "https://m3lop.ztfxkl.xyz/#/plans",
+          "checkedAt": "2026-09-26",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "快狸试用规则（站长补充）",
+          "url": "/posts/kuaili-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "快狸试用规则（站长补充）",
+          "url": "/posts/kuaili-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "快狸帮助中心",
+          "url": "https://m3lop.ztfxkl.xyz/#/knowledge",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "快狸客户端下载",
+          "url": "https://m3lop.ztfxkl.xyz/#/dashboard",
+          "checkedAt": "2026-09-26",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "可信云",
+      "path": "/posts/kexinyun-review-2026/",
+      "file": "docs/机场评测/可信云.md",
+      "priceText": "15元/月",
+      "traffic": "60GB/月",
+      "main": false,
+      "risk": "不支持免费试用和通用订阅；退款待核实；50GB不限时包不参加优惠活动",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "可信云套餐页",
+          "url": "https://aass.kexintztz2.sbs/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "可信云试用与订阅规则（站长补充）",
+          "url": "/posts/kexinyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "可信云试用与订阅规则（站长补充）",
+          "url": "/posts/kexinyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "可信云客户端下载",
+          "url": "https://aass.kexintztz2.sbs/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "可信云帮助中心",
+          "url": "https://aass.kexintztz2.sbs/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 50,
+        "trafficGb": 50,
+        "priceText": "50元",
+        "trafficText": "50GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "标注永久不限时；不参与活动",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "星岛梦",
+      "path": "/posts/xingdaomeng-review-2026/",
+      "file": "docs/机场评测/星岛梦.md",
+      "priceText": "25元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "年付与一次性包规则不同；旧优惠码与退款条件待核实",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "星岛梦套餐页",
+          "url": "https://rweqr.xdmttt4.click/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [],
+      "otherSources": [
+        {
+          "name": "星岛梦客户端入口",
+          "url": "https://rweqr.xdmttt4.click/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "星岛梦客户端知识库",
+          "url": "https://rweqr.xdmttt4.click/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "不限时；不自动重置，手动重置9折",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "隐形人",
+      "path": "/posts/yinxingren-review-2026/",
+      "file": "docs/机场评测/隐形人.md",
+      "priceText": "24元/月",
+      "traffic": "144GB/月",
+      "main": false,
+      "risk": "不支持试用和通用订阅，退款待核实；全部套餐不限设备数量已由10月18日用户确认",
+      "latestPlanSourceAt": "2026-09-26",
+      "latestPlanSourceAgeDays": 22,
+      "planSources": [
+        {
+          "name": "隐形人套餐页",
+          "url": "https://wpkhf.invisibleattt.sbs/#/plans",
+          "checkedAt": "2026-09-26",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "隐形人全部套餐不限设备（用户补充确认）",
+          "url": "/posts/yinxingren-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "用户提供的隐形人单次测速截图",
+          "url": "/yinxingren-speedtest-2026-09-26.jpg",
+          "checkedAt": "2026-09-26"
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "隐形人全部套餐不限设备（用户补充确认）",
+          "url": "/posts/yinxingren-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "隐形人帮助中心",
+          "url": "https://wpkhf.invisibleattt.sbs/#/knowledge",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "隐形人客户端下载",
+          "url": "https://wpkhf.invisibleattt.sbs/#/dashboard",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "用户提供的隐形人单次测速截图",
+          "url": "/yinxingren-speedtest-2026-09-26.jpg",
+          "checkedAt": "2026-09-26"
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 229,
+        "trafficGb": 160,
+        "priceText": "229元",
+        "trafficText": "160GB",
+        "status": "listed",
+        "deviceLimit": "不限设备数",
+        "validity": "无时间限制；全部套餐不限制设备数量；续购余量规则待核",
+        "checkedAt": "2026-09-26",
+        "ownerConfirmedAt": "2026-10-18",
+        "ownerConfirmedScope": "全部套餐不限设备"
+      }
+    },
+    {
+      "name": "闪电鼠",
+      "path": "/posts/shandianshu-review-2026/",
+      "file": "docs/机场评测/闪电鼠.md",
+      "priceText": "22元/月",
+      "traffic": "120GB/月",
+      "main": false,
+      "risk": "不支持免费试用和通用订阅；退款待核实；首购优惠适用范围需核对",
+      "latestPlanSourceAt": "2026-09-26",
+      "latestPlanSourceAgeDays": 22,
+      "planSources": [
+        {
+          "name": "闪电鼠套餐页",
+          "url": "https://www2.shandiantt.xyz/#/plans",
+          "checkedAt": "2026-09-26",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "闪电鼠试用与订阅规则（站长补充）",
+          "url": "/posts/shandianshu-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "闪电鼠试用与订阅规则（站长补充）",
+          "url": "/posts/shandianshu-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "闪电鼠使用教程",
+          "url": "https://www2.shandiantt.xyz/#/knowledge",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "闪电鼠下载中心",
+          "url": "https://www2.shandiantt.xyz/#/downloads",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "闪电鼠新人优惠公告",
+          "url": "https://www2.shandiantt.xyz/#/dashboard",
+          "checkedAt": "2026-09-26",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "环球梯",
+      "path": "/posts/huanqiuti-review-2026/",
+      "file": "docs/机场评测/环球梯.md",
+      "priceText": "23元/月",
+      "traffic": "120GB/月",
+      "main": false,
+      "risk": "按量包详情限365天，与卡片终身标签不同；不支持免费试用和通用订阅，退款待核实",
+      "latestPlanSourceAt": "2026-09-26",
+      "latestPlanSourceAgeDays": 22,
+      "planSources": [
+        {
+          "name": "环球梯套餐页",
+          "url": "https://www2.huanqiutitt.xyz/#/plans",
+          "checkedAt": "2026-09-26",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "环球梯试用与订阅规则（站长补充）",
+          "url": "/posts/huanqiuti-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "环球梯试用与订阅规则（站长补充）",
+          "url": "/posts/huanqiuti-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "环球梯客户端教程",
+          "url": "https://www2.huanqiutitt.xyz/#/knowledge",
+          "checkedAt": "2026-09-26",
+          "link": false
+        },
+        {
+          "name": "环球梯客户端下载与优惠公告",
+          "url": "https://www2.huanqiutitt.xyz/#/dashboard",
+          "checkedAt": "2026-09-26",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "跨界云",
+      "path": "/posts/kuajieyun-review-2026/",
+      "file": "docs/机场评测/跨界云.md",
+      "priceText": "20元/月",
+      "traffic": "120GB/月",
+      "main": false,
+      "risk": "20GB试用需注册后联系客服领取，期限未说明；通用订阅需购买订阅后联系客服领取；退款待核实，不限时包不参与优惠，中秋老用户套餐停售日期未明确",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "跨界云套餐页",
+          "url": "https://kasoasf.kuajiecloudtttt.mom/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "跨界云试用与通用订阅规则（站长补充）",
+          "url": "/posts/kuajieyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "跨界云试用与通用订阅规则（站长补充）",
+          "url": "/posts/kuajieyun-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "跨界云客户端教程",
+          "url": "https://kasoasf.kuajiecloudtttt.mom/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "跨界云客户端下载",
+          "url": "https://kasoasf.kuajiecloudtttt.mom/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 200,
+        "trafficGb": 300,
+        "priceText": "200元",
+        "trafficText": "300GB",
+        "status": "listed",
+        "deviceLimit": "不限设备登录数",
+        "validity": "长期有效；不自动刷新，重置180元",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "Edge-X",
+      "path": "/posts/edge-x-review-2026/",
+      "file": "docs/机场评测/Edge-X.md",
+      "priceText": "22.8元/月",
+      "traffic": "200GB/月",
+      "main": false,
+      "risk": "不支持免费试用；普通订阅需关闭DNS覆写，特殊网络按专用教程；全年流量包不退款；月付退款须流量≤5GB、支付宝付款及生效未满12小时同时满足并提交工单；优惠叠加与结算未验证",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "Edge-X套餐商店",
+          "url": "https://edgex-net.com/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "Edge-X试用规则（站长补充）",
+          "url": "/posts/edge-x-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "Edge-X新用户必读与退款规则",
+          "url": "https://edgex-net.com/#/knowledge/4",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "Edge-X试用规则（站长补充）",
+          "url": "/posts/edge-x-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "Edge-X官方客户端教程",
+          "url": "https://edgex-net.com/#/knowledge/1",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "Edge-X新用户必读与退款规则",
+          "url": "https://edgex-net.com/#/knowledge/4",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "Edge-X第三方客户端与境外订阅教程",
+          "url": "https://edgex-net.com/#/knowledge/5",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "Edge-X客户端、订阅入口与活动公告",
+          "url": "https://edgex-net.com/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "闪跃",
+      "path": "/posts/shanyue-review-2026/",
+      "file": "docs/机场评测/闪跃.md",
+      "priceText": "24元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "不支持免费试用；Clash订阅需联系客服；退款待核；不限时包重置后额度、余量处理和设备限制待核",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "闪跃套餐页",
+          "url": "https://kkj.flashleaptt.xyz/#/plans",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "闪跃不限时包首次交付量（用户补充确认）",
+          "url": "/posts/shanyue-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "闪跃试用与Clash订阅规则（站长补充）",
+          "url": "/posts/shanyue-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "闪跃不限时包首次交付量（用户补充确认）",
+          "url": "/posts/shanyue-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "闪跃试用与Clash订阅规则（站长补充）",
+          "url": "/posts/shanyue-review-2026/",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "闪跃两档不限时包列表与订单确认页（未付款）",
+          "url": "https://kkj.flashleaptt.xyz/?code=msdAwmER#/plans",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "闪跃四端客户端知识库",
+          "url": "https://kkj.flashleaptt.xyz/#/knowledge",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "闪跃官方客户端下载",
+          "url": "https://kkj.flashleaptt.xyz/#/dashboard",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 150,
+        "trafficGb": 100,
+        "priceText": "150元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限时档未注明",
+        "validity": "不限时总量；旧页重置选项130元，重置后额度与余量处理待核",
+        "checkedAt": "2026-10-05",
+        "ownerConfirmedAt": "2026-10-18",
+        "ownerConfirmedScope": "首次交付流量"
+      }
+    },
+    {
+      "name": "无忧链接",
+      "path": "/posts/wuyoulianjie-review-2026/",
+      "file": "docs/机场评测/无忧链接.md",
+      "priceText": "19元/月",
+      "traffic": "100GB/月",
+      "main": false,
+      "risk": "不支持免费试用；通用订阅需向客服索取；退款、设备限制及具体订阅格式待核实；定制套餐需先联系客服",
+      "latestPlanSourceAt": "2026-09-28",
+      "latestPlanSourceAgeDays": 20,
+      "planSources": [
+        {
+          "name": "无忧链接套餐页",
+          "url": "https://iwerer.worryfreettt.xyz/#/plans",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "无忧链接试用与订阅规则（站长补充）",
+          "url": "/posts/wuyoulianjie-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "无忧链接客户端教程",
+          "url": "https://iwerer.worryfreettt.xyz/#/knowledge",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "无忧链接官网邀请入口",
+          "url": "https://haandiiong.worryfreeaff.com/#/?code=h5MSQqsL",
+          "checkedAt": "2026-09-28"
+        },
+        {
+          "name": "无忧链接试用与订阅规则（站长补充）",
+          "url": "/posts/wuyoulianjie-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 98,
+        "trafficGb": 100,
+        "priceText": "98元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "待核实",
+        "validity": "标注永久不限时；重置与续购规则待核实",
+        "checkedAt": "2026-09-28"
+      }
+    },
+    {
+      "name": "榴莲云",
+      "path": "/posts/liulianyun-review-2026/",
+      "file": "docs/机场评测/榴莲云.md",
+      "priceText": "24元/月",
+      "traffic": "140GB/月",
+      "main": false,
+      "risk": "不支持免费试用；通用订阅需购买后向客服领取，具体格式与客户端兼容先确认；退款待核实；ll88七折码适用及叠加条件需确认",
+      "latestPlanSourceAt": "2026-09-28",
+      "latestPlanSourceAgeDays": 20,
+      "planSources": [
+        {
+          "name": "榴莲云套餐页",
+          "url": "https://www2.liulianyuntt.xyz/#/plans",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "榴莲云试用与订阅规则（站长补充）",
+          "url": "/posts/liulianyun-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "榴莲云试用与订阅规则（站长补充）",
+          "url": "/posts/liulianyun-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "榴莲云客户端教程",
+          "url": "https://www2.liulianyuntt.xyz/#/knowledge",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "榴莲云官网邀请入口",
+          "url": "https://haadvip01.liulianyunaff.com/?code=wNI31wy3",
+          "checkedAt": "2026-09-28"
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "鲤云",
+      "path": "/posts/liyun-review-2026/",
+      "file": "docs/机场评测/鲤云.md",
+      "priceText": "5元/月",
+      "traffic": "100GB/月",
+      "main": false,
+      "risk": "不支持免费试用；周期套餐不退款；59元200GB包客服确认有效期1年（站长2026-10-05提供），此前官网含永久文案",
+      "latestPlanSourceAt": "2026-09-28",
+      "latestPlanSourceAgeDays": 20,
+      "planSources": [
+        {
+          "name": "鲤云套餐页",
+          "url": "https://ly888.liydl.com:8888/#/plan",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "鲤云试用规则（站长补充）",
+          "url": "/posts/liyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "鲤云试用规则（站长补充）",
+          "url": "/posts/liyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "鲤云客户端教程",
+          "url": "https://ly888.liydl.com:8888/#/knowledge-base",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "鲤云官网邀请入口",
+          "url": "https://ly888.liydl.com:8888/#/register?code=5cHFZJPd",
+          "checkedAt": "2026-09-28"
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "山水云",
+      "path": "/posts/shanshuiyun-review-2026/",
+      "file": "docs/机场评测/山水云.md",
+      "priceText": "12元/月",
+      "traffic": "100GB/月",
+      "main": false,
+      "risk": "不支持免费试用；退款待核实；同时在线3台；365天包有到期时间",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "山水云套餐页",
+          "url": "https://sldm1.ssyylf.com/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "山水云试用规则（站长补充）",
+          "url": "/posts/shanshuiyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "山水云试用规则（站长补充）",
+          "url": "/posts/shanshuiyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "山水云客户端教程",
+          "url": "https://sldm1.ssyylf.com/#/docs",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "山水云官网邀请入口（站长更新）",
+          "url": "https://yp7.yqhyym.com",
+          "checkedAt": "2026-10-14"
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 99,
+        "trafficGb": 100,
+        "priceText": "99元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "3台同时在线",
+        "validity": "不限时；用完为止，续购规则待核实",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "秒秒云",
+      "path": "/posts/miaomiaoyun-review-2026/",
+      "file": "docs/机场评测/秒秒云.md",
+      "priceText": "9元/月",
+      "traffic": "128GB/月",
+      "main": false,
+      "risk": "不支持免费试用；当前退款规则待核；29.9元100GB与49.9元200GB均仅有效365天；88元一次性不限时商品正文仍写100G/月，额度与刷新待确认",
+      "latestPlanSourceAt": "2026-10-18",
+      "latestPlanSourceAgeDays": 0,
+      "planSources": [
+        {
+          "name": "秒秒云当前7款套餐及可选周期（官网重读）",
+          "url": "https://m3.mouhiojl.com/#/shop",
+          "checkedAt": "2026-10-18",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "秒秒云试用规则（站长补充）",
+          "url": "/posts/miaomiaoyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "秒秒云试用规则（站长补充）",
+          "url": "/posts/miaomiaoyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "秒秒云第三方客户端教程及Windows入口（官网重读）",
+          "url": "https://m3.mouhiojl.com/#/docs",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "秒秒云官网邀请入口",
+          "url": "https://m3.mouhiojl.com/#/register?code=kRQzsnp3",
+          "checkedAt": "2026-09-27"
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 88,
+        "trafficGb": null,
+        "priceText": "88元",
+        "trafficText": "商品100GB／正文100GB每月（冲突）",
+        "status": "conflicting",
+        "deviceLimit": "3台同时在线",
+        "validity": "一次性付款，标注不限时流量；正文100G/月的额度与刷新待确认；29.9/49.9元365天包不计入",
+        "checkedAt": "2026-10-18"
+      }
+    },
+    {
+      "name": "锦云",
+      "path": "/posts/jinyun-review-2026/",
+      "file": "docs/机场评测/锦云.md",
+      "priceText": "6元/月",
+      "traffic": "50GB/月",
+      "main": false,
+      "risk": "不支持免费试用；套餐不退款；按套餐限3至5台设备，365天包不等于不限时",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "锦云套餐页",
+          "url": "https://jybdw1.wanhlj.com:8888/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "锦云试用规则（站长补充）",
+          "url": "/posts/jinyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "锦云试用规则（站长补充）",
+          "url": "/posts/jinyun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "锦云客户端教程",
+          "url": "https://jybdw1.wanhlj.com:8888/#/docs",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "锦云官网邀请入口",
+          "url": "https://jybdw1.wanhlj.com:8888/#/register?code=KgThlDZI",
+          "checkedAt": "2026-09-27"
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 99,
+        "trafficGb": 100,
+        "priceText": "99元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "3台同时在线",
+        "validity": "不限时；用完作废，不重置",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "name": "熊猫cloud",
+      "path": "/posts/xiongmaocloud-review-2026/",
+      "file": "docs/机场评测/熊猫cloud.md",
+      "priceText": "6元/月",
+      "traffic": "300GB/月",
+      "main": false,
+      "risk": "不支持免费试用；套餐不退款；66元600GB包客服确认有效期1年（站长2026-10-05提供），此前官网商品名写不限时",
+      "latestPlanSourceAt": "2026-09-27",
+      "latestPlanSourceAgeDays": 21,
+      "planSources": [
+        {
+          "name": "熊猫cloud套餐页",
+          "url": "https://cl888.cailudl.com:9999/#/shop",
+          "checkedAt": "2026-09-27",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "熊猫cloud试用规则（站长补充）",
+          "url": "/posts/xiongmaocloud-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "熊猫cloud试用规则（站长补充）",
+          "url": "/posts/xiongmaocloud-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "熊猫cloud客户端教程",
+          "url": "https://cl888.cailudl.com:9999/#/docs",
+          "checkedAt": "2026-09-27",
+          "link": false
+        },
+        {
+          "name": "熊猫cloud官网邀请入口",
+          "url": "https://cl888.cailudl.com:9999/#/register?code=NEU8pOgo",
+          "checkedAt": "2026-09-27"
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "云图",
+      "path": "/posts/yuntu-review-2026/",
+      "file": "docs/机场评测/云图.md",
+      "priceText": "20元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "不支持免费试用；套餐不退款；仅限5台个人设备；78元每月50GB持续12个月、119元有效期1年，均非不限时；119元实际额度与刷新规则仍待核实；新购套餐会替换当前有效套餐",
+      "latestPlanSourceAt": "2026-10-05",
+      "latestPlanSourceAgeDays": 13,
+      "planSources": [
+        {
+          "name": "云图套餐页",
+          "url": "https://ytjcok.com/#/shop",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "云图78元与119元商品卡片及订单确认页（站长复核）",
+          "url": "https://ytjcok.com/#/shop",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "云图119元商品1年有效期（用户补充确认）",
+          "url": "/posts/yuntu-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "云图78元套餐每月流量与12个月期限（站长补充）",
+          "url": "/posts/yuntu-review-2026/",
+          "checkedAt": "2026-10-10",
+          "link": false
+        },
+        {
+          "name": "云图试用规则（站长补充）",
+          "url": "/posts/yuntu-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "云图119元商品1年有效期（用户补充确认）",
+          "url": "/posts/yuntu-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "云图78元套餐每月流量与12个月期限（站长补充）",
+          "url": "/posts/yuntu-review-2026/",
+          "checkedAt": "2026-10-10",
+          "link": false
+        },
+        {
+          "name": "云图客户端教程",
+          "url": "https://ytjcok.com/#/docs/1",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "云图官网邀请入口（站长更新）",
+          "url": "https://super.ytjcok.org/#/register?code=jHSxbS1R",
+          "checkedAt": "2026-10-05"
+        },
+        {
+          "name": "云图试用规则（站长补充）",
+          "url": "/posts/yuntu-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "灵猫网络",
+      "path": "/posts/lingmaowangluo-review-2026/",
+      "file": "docs/机场评测/灵猫网络.md",
+      "priceText": "25元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "不支持免费试用；支持通用订阅；退款、不限时重置9折基数待核实，定制需联系客服询价",
+      "latestPlanSourceAt": "2026-09-28",
+      "latestPlanSourceAgeDays": 20,
+      "planSources": [
+        {
+          "name": "灵猫网络套餐页",
+          "url": "https://downwww.civetnettttt.lol/#/plans",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "灵猫网络试用与订阅规则（站长补充）",
+          "url": "/posts/lingmaowangluo-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "灵猫网络客户端教程",
+          "url": "https://downwww.civetnettttt.lol/#/knowledge",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "灵猫网络官网邀请入口",
+          "url": "https://haandiiong.civetaff.com/#/?code=NeRAyp5h",
+          "checkedAt": "2026-09-28"
+        },
+        {
+          "name": "灵猫网络试用与订阅规则（站长补充）",
+          "url": "/posts/lingmaowangluo-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限客户端数量",
+        "validity": "不限时，用完为止；手动重置9折，基数待核实",
+        "checkedAt": "2026-09-28"
+      }
+    },
+    {
+      "name": "Firefly",
+      "path": "/posts/firefly-review-2026/",
+      "file": "docs/机场评测/Firefly.md",
+      "priceText": "25元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "不支持免费试用；通用订阅需向客服索取；退款、不限时设备数及重置规则待核实",
+      "latestPlanSourceAt": "2026-09-28",
+      "latestPlanSourceAgeDays": 20,
+      "planSources": [
+        {
+          "name": "Firefly套餐页",
+          "url": "https://fly.fireflyxx.cfd/#/plans",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "Firefly试用与订阅规则（站长补充）",
+          "url": "/posts/firefly-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "Firefly客户端教程",
+          "url": "https://fly.fireflyxx.cfd/#/knowledge",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "Firefly官网邀请入口",
+          "url": "https://haandiiong.fireflyaff.com/#/?code=3u9poqXH",
+          "checkedAt": "2026-09-28"
+        },
+        {
+          "name": "Firefly试用与订阅规则（站长补充）",
+          "url": "/posts/firefly-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 100,
+        "trafficGb": 100,
+        "priceText": "100元",
+        "trafficText": "100GB",
+        "status": "listed",
+        "deviceLimit": "不限时档未注明",
+        "validity": "永久不过期，用完为止；续购规则待核实",
+        "checkedAt": "2026-09-28"
+      }
+    },
+    {
+      "name": "神行加速",
+      "path": "/posts/shenxingjiasu-review-2026/",
+      "file": "docs/机场评测/神行加速.md",
+      "priceText": "23元/月",
+      "traffic": "120GB/月",
+      "main": false,
+      "risk": "基础与尊享正文流量单位错误，采用卡片260GB和520GB仍需复核；不支持免费试用；通用订阅需购买订阅后联系客服领取；退款待核实",
+      "latestPlanSourceAt": "2026-09-28",
+      "latestPlanSourceAgeDays": 20,
+      "planSources": [
+        {
+          "name": "神行加速套餐页",
+          "url": "https://www1.shenxingjstt.xyz/#/plans",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "神行加速试用与订阅规则（站长补充）",
+          "url": "/posts/shenxingjiasu-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "神行加速客户端教程",
+          "url": "https://www1.shenxingjstt.xyz/#/knowledge",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "神行加速优惠公告",
+          "url": "https://www1.shenxingjstt.xyz/#/dashboard",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "神行加速官网邀请入口",
+          "url": "https://haandiion01.shenxingaff.com/#/?code=FiirNX8j",
+          "checkedAt": "2026-09-28"
+        },
+        {
+          "name": "神行加速试用与订阅规则（站长补充）",
+          "url": "/posts/shenxingjiasu-review-2026/",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "极速Cloud",
+      "path": "/posts/jisucloud-review-2026/",
+      "file": "docs/机场评测/极速Cloud.md",
+      "priceText": "新人15元/月（不可续费）；常规30元/月起",
+      "traffic": "新人标称200GB/月，10倍折合20GB；常规折合100GB/月起",
+      "main": false,
+      "risk": "全套餐10倍倍率；新人档不能续费；设备数与知识库通用文案冲突；不支持免费试用",
+      "latestPlanSourceAt": "2026-10-05",
+      "latestPlanSourceAgeDays": 13,
+      "planSources": [
+        {
+          "name": "极速Cloud套餐页",
+          "url": "https://191.101.132.80/#/plan",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "极速Cloud试用规则（站长补充）",
+          "url": "/posts/jisucloud-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "极速Cloud试用规则（站长补充）",
+          "url": "/posts/jisucloud-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速Cloud客户端教程",
+          "url": "https://191.101.132.80/#/knowledge-base/3",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速Cloud续费重置说明",
+          "url": "https://191.101.132.80/#/knowledge-base/6",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速Cloud官网邀请入口",
+          "url": "https://y1.jisucloud8.com:8888/#/register?code=XDSrGf1n",
+          "checkedAt": "2026-09-28"
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 329,
+        "trafficGb": 100,
+        "priceText": "329元",
+        "trafficText": "标称1000GB／10倍计费折合100GB",
+        "status": "listed",
+        "deviceLimit": "3台",
+        "validity": "不限时间，用完为止；10倍计费，单价按折合100GB计算",
+        "checkedAt": "2026-10-05"
+      }
+    },
+    {
+      "name": "杏花云",
+      "path": "/posts/xinghuayun-review-2026/",
+      "file": "docs/机场评测/杏花云.md",
+      "priceText": "3元/月",
+      "traffic": "200GB/月",
+      "main": false,
+      "risk": "不支持免费试用；退款、倍率与月额度重置日期待核实；20元总量包只有一年有效期",
+      "latestPlanSourceAt": "2026-09-28",
+      "latestPlanSourceAgeDays": 20,
+      "planSources": [
+        {
+          "name": "杏花云套餐页",
+          "url": "https://xh.xinghuajichang.com/#/shop",
+          "checkedAt": "2026-09-28",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "杏花云试用规则（站长补充）",
+          "url": "/posts/xinghuayun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "杏花云试用规则（站长补充）",
+          "url": "/posts/xinghuayun-review-2026/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "杏花云客户端教程",
+          "url": "https://xh.xinghuajichang.com/#/docs/1",
+          "checkedAt": "2026-09-28",
+          "link": false
+        },
+        {
+          "name": "杏花云官网邀请入口",
+          "url": "https://xh.xinghuajichang.com/#/register?code=GxpLWxgt",
+          "checkedAt": "2026-09-28"
+        }
+      ],
+      "noExpiry": null
+    },
+    {
+      "name": "AnDy Cloud",
+      "path": "/posts/andycloud-review-2026/",
+      "file": "docs/机场评测/AnDy Cloud.md",
+      "priceText": "5元/月",
+      "traffic": "100GB/月",
+      "main": false,
+      "risk": "不支持免费试用；退款、计费倍率与重置费用待核实；订阅导入需先购买；一次性重购覆盖额度，不叠加余量",
+      "latestPlanSourceAt": "2026-10-05",
+      "latestPlanSourceAgeDays": 13,
+      "planSources": [
+        {
+          "name": "AnDy Cloud套餐页",
+          "url": "https://ddhh.andycloud.cc:8888/#/shop",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "AnDy Cloud试用规则（站长补充）",
+          "url": "/posts/andycloud-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "AnDy Cloud试用规则（站长补充）",
+          "url": "/posts/andycloud-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        },
+        {
+          "name": "AnDy Cloud续费与重置说明",
+          "url": "https://ddhh.andycloud.cc:8888/#/docs/2",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "AnDy Cloud Windows Clash教程",
+          "url": "https://ddhh.andycloud.cc:8888/#/docs/4",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "AnDy Cloud仪表盘订阅说明",
+          "url": "https://ddhh.andycloud.cc:8888/#/dashboard",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "AnDy Cloud官网邀请入口",
+          "url": "https://ddhh.andycloud.cc:8888/#/register?code=a8qOz45S",
+          "checkedAt": "2026-10-05"
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 100,
+        "trafficGb": 1000,
+        "priceText": "100元",
+        "trafficText": "1000GB",
+        "status": "listed",
+        "deviceLimit": "10台",
+        "validity": "无过期日，用完即止；重购覆盖新额度，不叠加剩余流量",
+        "checkedAt": "2026-10-05"
+      }
+    },
+    {
+      "name": "Tidal潮汐加速",
+      "path": "/posts/tidal-review-2026/",
+      "file": "docs/机场评测/Tidal潮汐加速.md",
+      "priceText": "25元/月",
+      "traffic": "100GB/月",
+      "main": false,
+      "risk": "不支持免费试用；取消套餐按使用比例退回账户余额，不等于原路退款；年付优惠期限、叠加与结算未验证",
+      "latestPlanSourceAt": "2026-10-05",
+      "latestPlanSourceAgeDays": 13,
+      "planSources": [
+        {
+          "name": "Tidal套餐页与常见问题",
+          "url": "https://tidalfast.com/plans",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "Tidal试用规则（站长补充）",
+          "url": "/posts/tidal-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "Tidal试用规则（站长补充）",
+          "url": "/posts/tidal-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        },
+        {
+          "name": "Tidal客户端下载页",
+          "url": "https://tidalfast.com/download",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "Tidal服务条款页（本次显示暂无内容）",
+          "url": "https://tidalfast.com/tos",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "Tidal官网邀请入口",
+          "url": "https://www.chaoxijiasu.com/register?code=uuttj42W",
+          "checkedAt": "2026-10-05"
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 59,
+        "trafficGb": 128,
+        "priceText": "59元",
+        "trafficText": "128GB",
+        "status": "listed",
+        "deviceLimit": "不限同时在线设备",
+        "validity": "永久有效，用完为止；续购叠加及退款适用范围待核实",
+        "checkedAt": "2026-10-05"
+      }
+    },
+    {
+      "name": "云界线",
+      "path": "/posts/yunjiexian-review-2026/",
+      "file": "docs/机场评测/云界线.md",
+      "priceText": "22元/月",
+      "traffic": "150GB/月",
+      "main": false,
+      "risk": "99元包卡片80GB/正文300GB待核；无试用、订阅需客服；退款、重购余量与优惠范围待核",
+      "latestPlanSourceAt": "2026-10-18",
+      "latestPlanSourceAgeDays": 0,
+      "planSources": [
+        {
+          "name": "云界线现售套餐及周期切换价",
+          "url": "https://sfsggds.yunjie162.lol/#/plans",
+          "checkedAt": "2026-10-18",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "云界线以卡片价格为准（用户补充确认）",
+          "url": "/posts/yunjiexian-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "云界线试用与订阅规则（站长补充）",
+          "url": "/posts/yunjiexian-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        },
+        {
+          "name": "云界线官网邀请入口（用户更新）",
+          "url": "https://a01vipaff.yunjiexianaff.com/#/?code=y4BofmLr",
+          "checkedAt": "2026-10-18"
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "云界线以卡片价格为准（用户补充确认）",
+          "url": "/posts/yunjiexian-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "云界线试用与订阅规则（站长补充）",
+          "url": "/posts/yunjiexian-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        },
+        {
+          "name": "云界线官网邀请入口（用户更新）",
+          "url": "https://a01vipaff.yunjiexianaff.com/#/?code=y4BofmLr",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "name": "云界线四平台客户端知识库",
+          "url": "https://sfsggds.yunjie162.lol/#/knowledge",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "云界线仪表盘及新客优惠公告",
+          "url": "https://sfsggds.yunjie162.lol/#/dashboard",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "云界线下载中心（页面标注）",
+          "url": "https://sfsggds.yunjie162.lol/#/downloads",
+          "checkedAt": "2026-10-18",
+          "link": false
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 99,
+        "trafficGb": null,
+        "priceText": "99元",
+        "trafficText": "卡片80GB／正文300GB（冲突）",
+        "status": "conflicting",
+        "deviceLimit": "不限客户端数量",
+        "validity": "标注不限时，不按月刷新、用完重购；交付额度待核实；另有199元200GB包",
+        "checkedAt": "2026-10-18",
+        "ownerConfirmedAt": "2026-10-18",
+        "ownerConfirmedScope": "卡片价格"
+      }
+    },
+    {
+      "name": "极速123",
+      "path": "/posts/jisu123-review-2026/",
+      "file": "docs/机场评测/极速123.md",
+      "priceText": "15.99元/月",
+      "traffic": "标称1200GB/月，6倍折合200GB/月",
+      "main": false,
+      "risk": "商品标注6倍扣量；文档与卡片设备数、一次性有效期存在差异；不支持免费试用；月付退款与重置费待核实",
+      "latestPlanSourceAt": "2026-10-05",
+      "latestPlanSourceAgeDays": 13,
+      "planSources": [
+        {
+          "name": "极速123套餐商店",
+          "url": "https://905.jsy902.xyz/#/shop",
+          "checkedAt": "2026-10-05",
+          "link": false
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "极速123试用规则（站长补充）",
+          "url": "/posts/jisu123-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "极速123试用规则（站长补充）",
+          "url": "/posts/jisu123-review-2026/",
+          "checkedAt": "2026-10-06",
+          "link": false
+        },
+        {
+          "name": "极速123线路及倍率介绍",
+          "url": "https://905.jsy902.xyz/#/docs/16",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速123续费与流量重置说明",
+          "url": "https://905.jsy902.xyz/#/docs/13",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速123电脑端教程入口",
+          "url": "https://905.jsy902.xyz/#/docs/5",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "官网指向的第三方客户端教程目录",
+          "url": "https://www.ruanjiandaohang.com/",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "官网指向的Clash Verge订阅教程",
+          "url": "https://www.ruanjiandaohang.com/tutorial.html?id=art_clash",
+          "checkedAt": "2026-10-05",
+          "link": false
+        },
+        {
+          "name": "极速123官网邀请入口",
+          "url": "https://905.jsy902.xyz/#/register?code=PB9zvaUD",
+          "checkedAt": "2026-10-05"
+        }
+      ],
+      "noExpiry": {
+        "priceCny": 128,
+        "trafficGb": 166.66666666666666,
+        "priceText": "128元",
+        "trafficText": "标称1000GB／6倍计费折合约166.7GB",
+        "status": "listed",
+        "deviceLimit": "3台",
+        "validity": "不限时间，用完为止；6倍扣量，重购覆盖而不叠加；不支持退款",
+        "checkedAt": "2026-10-05"
+      }
+    },
+    {
+      "name": "灯塔加速器",
+      "path": "/posts/dengta-review-2026/",
+      "file": "docs/机场评测/灯塔加速器.md",
+      "priceText": "30元/月",
+      "traffic": "120GB/月",
+      "main": false,
+      "risk": "试用300MB/3天仅专属客户端；付费订阅导出受周期限制，Clash格式未确认；入门与轻量无退款保障，VIP/SVIP退款须24小时内且用量不超过10%",
+      "latestPlanSourceAt": "2026-10-10",
+      "latestPlanSourceAgeDays": 8,
+      "planSources": [
+        {
+          "name": "灯塔官网套餐与客户端下载",
+          "url": "https://dengta12.com/",
+          "checkedAt": "2026-10-10"
+        },
+        {
+          "name": "灯塔个人中心套餐购买页",
+          "url": "https://dengta12.com/account?tab=plans",
+          "checkedAt": "2026-10-10",
+          "link": false
+        },
+        {
+          "name": "灯塔退款帮助与套餐限制",
+          "url": "https://dengta12.com/help/2/46",
+          "checkedAt": "2026-10-10"
+        }
+      ],
+      "ownerConfirmations": [
+        {
+          "name": "灯塔无周付、300MB三天专属客户端试用及退款条件（用户纠正）",
+          "url": "/posts/dengta-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "灯塔新用户免费试用说明",
+          "url": "https://dengta12.com/help/4/57",
+          "checkedAt": "2026-10-10"
+        }
+      ],
+      "otherSources": [
+        {
+          "name": "灯塔无周付、300MB三天专属客户端试用及退款条件（用户纠正）",
+          "url": "/posts/dengta-review-2026/",
+          "checkedAt": "2026-10-18",
+          "link": false
+        },
+        {
+          "name": "灯塔新用户免费试用说明",
+          "url": "https://dengta12.com/help/4/57",
+          "checkedAt": "2026-10-10"
+        },
+        {
+          "name": "灯塔试用账户额度快照",
+          "url": "https://dengta12.com/account?tab=invite",
+          "checkedAt": "2026-10-10",
+          "link": false
+        },
+        {
+          "name": "灯塔订阅导出说明",
+          "url": "https://dengta12.com/help/1/123",
+          "checkedAt": "2026-10-10"
+        },
+        {
+          "name": "灯塔流量统计与重置说明",
+          "url": "https://dengta12.com/help/1/16",
+          "checkedAt": "2026-10-10"
+        },
+        {
+          "name": "灯塔官网邀请入口（站长提供）",
+          "url": "https://www.dengta12.com/reg?ref=DjdVKysq",
+          "checkedAt": "2026-10-10"
+        }
+      ],
+      "noExpiry": null
+    }
+  ]
+}

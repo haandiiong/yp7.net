@@ -1,0 +1,34 @@
+{
+  "verifiedOn": "2026-10-18",
+  "changedServiceRecords": [
+    "云界线",
+    "秒秒云",
+    "闪跃"
+  ],
+  "otherSourceRecordsPreserved": 55,
+  "otherVisibleSourceRecordsPreserved": 54,
+  "headingCountsPreserved": {
+    "云界线": 24,
+    "秒秒云": 20,
+    "闪跃": 24
+  },
+  "mainRecommendationOrderPreserved": true,
+  "collectionsConfigPreserved": true,
+  "rawSiilasSha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+  "lastFullReview": "2026-08-19",
+  "metrics": {
+    "count": 57,
+    "trialCount": 11,
+    "noExpiryCount": 39,
+    "noExpiryUnverifiedCount": 0,
+    "dedicatedClientCount": 39,
+    "universalSubscriptionCount": 42,
+    "cheapUnderTenCount": 12,
+    "averagePrice": 17.4,
+    "regularCheapUnderTenCount": 12,
+    "regularAveragePrice": 17.6,
+    "performanceCount": 6,
+    "salesSampleCount": 17
+  },
+  "conflictingNoExpiryPackages": 2
+}

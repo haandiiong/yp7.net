@@ -245,6 +245,29 @@ test('rendered HTML and Markdown retain the historical evidence exported to JSON
   assert.deepEqual(validateAirportRows(table, rankings.clash, 'Clash Markdown'), [])
 })
 
+test('public stable candidates disclose editorial selection and test coverage in every format', (t) => {
+  const dest = mkdtempSync(join(tmpdir(), 'yp7-stable-disclosure-'))
+  t.after(() => rmSync(dest, { recursive: true, force: true }))
+  generateAirportDataFiles({ dir: { dest: (file = '') => join(dest, file) } })
+  const read = (file) => readFileSync(join(dest, 'data', file), 'utf8')
+  const data = JSON.parse(read('rankings.json'))
+  const snapshot = JSON.parse(read('siilas-tests.json'))
+  const candidates = data.rankings.stable
+  const recorded = new Set(snapshot.airports.map((airport) => airport.yp7Path))
+  const covered = candidates.filter((airport) => recorded.has(airport.path))
+  assert.ok(covered.length < candidates.length, 'untested editorial candidates need an explicit boundary')
+  const { title, selectionNotice } = data.collectionMetadata.stable
+  assert.match(title, /编辑筛选/)
+  assert.match(selectionNotice, /不按 Siilas 稳定性分排序/)
+  assert.match(selectionNotice, /不能证明长期连续可用率/)
+  assert.ok(selectionNotice.includes(`当前${candidates.length}家候选中，${covered.length}家有已接收的Siilas记录`))
+  for (const file of ['rankings.md', 'rankings.html']) {
+    assert.ok(read(file).includes(title), `${file}: editorial label must remain visible`)
+    assert.ok(read(file).includes(selectionNotice), `${file}: selection and coverage notice must accompany the candidates`)
+  }
+  assert.deepEqual(candidates.map((airport) => airport.path), airportCollections.stable.items.map((airport) => airport.path))
+})
+
 test('consistency checks reject stale prices, wrong capabilities, extra names and reordered Schema', () => {
   const collection = airportCollections.clash
   const source = readFileSync(collection.sourceFile, 'utf8')

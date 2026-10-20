@@ -1,0 +1,194 @@
+{
+  "checkedAt": "2026-10-18",
+  "method": "Read existing Chrome merchant tabs and billing-cycle filters. No checkout, payment, download, installation, subscription copying, resets or performance tests.",
+  "global": {
+    "url": "https://n3oplhjnm.quanqiugttt1.club/?code=Hg3FRQIf#/plans",
+    "count": 9,
+    "light": {
+      "priceCny": 99,
+      "period": "year",
+      "cardMonthlyGb": 59,
+      "bodyMonthlyGb": 60
+    },
+    "regularMonthlyPrices": [
+      20,
+      40,
+      100,
+      180
+    ],
+    "monthlyGb": [
+      120,
+      300,
+      700,
+      1500
+    ],
+    "quarterPrices": [
+      54,
+      108,
+      270,
+      486
+    ],
+    "halfYearPrices": [
+      102,
+      204,
+      510,
+      918
+    ],
+    "yearPrices": [
+      192,
+      384,
+      960,
+      1728
+    ],
+    "oneOffPrices": [
+      100,
+      360,
+      700
+    ],
+    "oneOffGb": [
+      100,
+      400,
+      800
+    ],
+    "private": {
+      "price": 680,
+      "period": "month",
+      "gb": 500
+    },
+    "note": "59 is GB, not a CNY price. Current card/body allowance difference remains."
+  },
+  "light": {
+    "url": "https://fdgfds.guangsut.sbs/#/plans",
+    "count": 7,
+    "light": {
+      "priceCny": 99,
+      "period": "year",
+      "monthlyGb": 69
+    },
+    "regularMonthlyPrices": [
+      25,
+      34,
+      68,
+      138
+    ],
+    "monthlyGb": [
+      168,
+      238,
+      {
+        "card": 500,
+        "body": 450
+      },
+      900
+    ],
+    "quarterPrices": [
+      74,
+      96,
+      198,
+      398
+    ],
+    "halfYearPrices": [
+      94,
+      147,
+      375,
+      702
+    ],
+    "yearPrices": [
+      179,
+      249,
+      667,
+      998
+    ],
+    "oneOff": {
+      "price": 147,
+      "gb": 247
+    },
+    "custom": {
+      "price": 680,
+      "period": "month",
+      "gb": 500
+    },
+    "note": "No 59 CNY price tier. Historical59GB is not a current price."
+  },
+  "ermao": {
+    "url": "https://samejob.maomaotoo.autos/#/plans",
+    "count": 8,
+    "light": {
+      "cardYearCny": 96,
+      "bodyYearCny": 89,
+      "monthlyGb": 60
+    },
+    "monthlyPrices": [
+      20,
+      40,
+      80,
+      160
+    ],
+    "monthlyGb": [
+      130,
+      230,
+      430,
+      850
+    ],
+    "quarterPrices": [
+      57,
+      114,
+      228,
+      456
+    ],
+    "halfYearPrices": [
+      108,
+      216,
+      432,
+      864
+    ],
+    "yearPrices": [
+      204,
+      408,
+      816,
+      1632
+    ],
+    "oneOffPrices": [
+      100,
+      199
+    ],
+    "oneOffGb": [
+      100,
+      200
+    ],
+    "custom": {
+      "cardPrice": 700,
+      "cardPeriod": "one-off",
+      "cardField": "月流量500GB",
+      "bodyPeriod": "monthly",
+      "bodyPrice": 700,
+      "bodyGb": 500,
+      "status": "unresolved"
+    },
+    "notes": [
+      "Orange40/body20 and milk80/body20 remain.",
+      "Year totals equal85% of12 monthly payments while prose advertises80%.",
+      "Regular cards and one-off cards list unlimited devices. Client documents not reread."
+    ]
+  },
+  "userConfirmations": {
+    "yinxingren": {
+      "allPlansUnlimitedDevices": true,
+      "date": "2026-10-18"
+    },
+    "dengta": {
+      "weeklyPlans": false,
+      "trialGb": null,
+      "trialMb": 300,
+      "trialDays": 3,
+      "trialClients": "dedicated only",
+      "trialSubscriptionExport": false,
+      "refundPlans": [
+        "VIP",
+        "SVIP"
+      ],
+      "refundHours": 24,
+      "maxUsedPercent": 10,
+      "date": "2026-10-18"
+    }
+  }
+}

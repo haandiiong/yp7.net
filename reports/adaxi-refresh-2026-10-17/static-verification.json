@@ -1,0 +1,187 @@
+{
+  "scope": "Filesystem-only inspection of final rebuilt dist; no browser or network. Prose and tables verified separately.",
+  "htmlPagesParsed": 112,
+  "hrefCounts": {
+    "internal_href": 8684,
+    "internal_fragment": 2416,
+    "external": 1093
+  },
+  "uniqueLocalTargets": 251,
+  "linkErrors": [],
+  "duplicateIds": [],
+  "checks": [
+    {
+      "name": "detail Windows-only GBox and site password",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "detail price and traffic remain 3/20, 10/80 and 50/300",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "detail payment field is separated from actual payment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "detail iOS sing-box and Android Flyer format",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "detail shared traffic and automatic dedicated renewal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "main Windows GBox scope",
+      "passed": true,
+      "details": [
+        "阿达西 每30天20GB够用、轻量备用 选择理由：小流量周期档、总量包与Windows账号登录路线 3元/30天，20GB/30天；无试用 不限时包50元300GB；3元套餐价不等于已核实首次实付 专属客户端、通用订阅 Windows另有官方GBox（UID登录），其他平台用第三方；充值可填3元但实付、手续费未核；入门限100Mbps、无专线 套餐与客户端资料；暂无已接收 Siilas 测速",
+        "阿达西 未接收 — 暂无可引用的 Siilas 测速 暂无综合评分",
+        "阿达西 暂无已接收记录 暂无已接收记录",
+        "阿达西 未接收 未接收 暂无已接收地区记录 暂无已接收原始记录，不统计指标缺口",
+        "阿达西 本次未找到 — 暂不提供测速结论"
+      ]
+    },
+    {
+      "name": "main Android format correctly described",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "catalogue current dedicated-client count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "catalogue current date heading and old alias",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "catalogue Adaxi Windows-only route",
+      "passed": true,
+      "details": {
+        "windowsRows": [
+          "Windows GBox与v2rayN双路线 商家称GBox为官方客户端，输入账户UID与密码登录、无需手动订阅；未核实自研归属或安全性"
+        ],
+        "androidRows": [
+          "Android Flyer 手动导入时选择FLCLASH格式；未下载或验证兼容"
+        ],
+        "scope": "The dedicated-client support statement is separately limited to Windows; Flyer and FLCLASH format are separate table cells."
+      }
+    },
+    {
+      "name": "dedicated list contains Windows-only Adaxi",
+      "passed": true,
+      "details": [
+        "阿达西 3元/30天 20GB/30天 不支持 支持 Windows GBox账号登录；其他平台按第三方订阅教程 最低实际充值额及手续费待核；入门限100Mbps、无专线；GBox目前仅Windows；无试用、退款待核；独享默认续费"
+      ]
+    },
+    {
+      "name": "cheap GBox scope distinguishes remaining platforms",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cheap first payment remains unverified",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no-expiry entry 50/300/600 and 0.167",
+      "passed": true,
+      "details": [
+        "阿达西 50元 300GB 0.167元/GB 不限设备数 永久总量300GB，限速600Mbps；重购与剩余额度处理待核 2026-10-17"
+      ]
+    },
+    {
+      "name": "Jiuyun name still links directly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Yinxingren name still links directly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "public capability and price",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "public metrics count 39 and 42",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "dedicated ranking includes Adaxi without adding Clash editorial membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "public no-expiry record 50/300 and dated 17",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "sources preserve owner confirmation and current observation dates",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "eight current subscription menu names",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Oct 18 editorial wording and Oct 17 merchant observations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Siilas original snapshot and receipt unchanged",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "passed": true,
+  "verificationNotes": [
+    "The previous cheap-page check required a literal \"仅Windows\" phrase. Final inspection accepts its explicit Windows GBox sentence and separate other-platform third-party clause. No product data was changed to satisfy the check.",
+    "Canonical extensionless data routes resolve to their generated .html artifacts, matched against existing _redirects. This verifies static artifact targets without making network requests.",
+    "Catalogue platform and import format were verified by their separate table cells and explicit Windows scope sentence, rather than requiring a combined sentence."
+  ],
+  "resolvedCanonicalDataRoutes": [
+    {
+      "canonicalPath": "/data/airports",
+      "artifact": "data/airports.html",
+      "basis": "Existing repository canonical .html redirect"
+    },
+    {
+      "canonicalPath": "/data/rankings",
+      "artifact": "data/rankings.html",
+      "basis": "Existing repository canonical .html redirect"
+    },
+    {
+      "canonicalPath": "/data/rankings",
+      "artifact": "data/rankings.html",
+      "basis": "Existing repository canonical .html redirect"
+    },
+    {
+      "canonicalPath": "/data/risk-monitor",
+      "artifact": "data/risk-monitor.html",
+      "basis": "Existing repository canonical .html redirect"
+    },
+    {
+      "canonicalPath": "/data/rankings",
+      "artifact": "data/rankings.html",
+      "basis": "Existing repository canonical .html redirect"
+    }
+  ],
+  "verifiedOn": "2026-10-18",
+  "timeZone": "Asia/Shanghai"
+}

@@ -1,0 +1,91 @@
+{
+  "verifiedOn": "2026-10-18",
+  "tests": {
+    "passed": 84,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "build": {
+    "pages": 109,
+    "status": "passed"
+  },
+  "contentHealth": {
+    "files": 104,
+    "status": "passed"
+  },
+  "managedTables": "in-sync",
+  "managedReviewSections": "in-sync",
+  "generatedPublicFiles": 10,
+  "consistency": {
+    "collections": 9,
+    "visibleServices": 57,
+    "formats": [
+      "JSON",
+      "Markdown",
+      "HTML",
+      "Schema"
+    ],
+    "status": "passed"
+  },
+  "changedServiceRecords": [
+    "sogo",
+    "云图",
+    "云界线"
+  ],
+  "otherRawServiceRecordsPreserved": 55,
+  "changedNoExpiryPackages": [
+    "/posts/yunjiexian-review-2026/",
+    "/posts/sogo-review-2026/"
+  ],
+  "otherNoExpiryRecordsPreserved": 38,
+  "metrics": {
+    "count": 57,
+    "trialCount": 11,
+    "noExpiryCount": 40,
+    "noExpiryUnverifiedCount": 0,
+    "dedicatedClientCount": 39,
+    "universalSubscriptionCount": 42,
+    "cheapUnderTenCount": 12,
+    "averagePrice": 17.4,
+    "regularCheapUnderTenCount": 12,
+    "regularAveragePrice": 17.6,
+    "performanceCount": 6,
+    "salesSampleCount": 17
+  },
+  "remainingConflictingPackages": [
+    "/posts/yunjiexian-review-2026/",
+    "/posts/miaomiaoyun-review-2026/"
+  ],
+  "allBasePricesAndCapabilitiesPreserved": true,
+  "mainRecommendationOrderPreserved": true,
+  "collectionsConfigPreserved": true,
+  "siilas": {
+    "sha256": "6b0e5df88446503f7562aaff280f42647ca855821278f75b7f17bd17aa5b13ad",
+    "rawRecords": 135,
+    "airports": 9,
+    "receivedAt": "2026-10-14",
+    "unchanged": true
+  },
+  "static": {
+    "htmlPages": 112,
+    "linkCounts": {
+      "internalHref": 7913,
+      "fragmentLinks": 2417
+    },
+    "linkErrors": [],
+    "duplicateIds": [],
+    "oldHeadingCounts": {
+      "yunjiexian-review-2026": 24,
+      "sogo-review-2026": 15,
+      "yuntu-review-2026": 23
+    },
+    "missingOriginalHeadingIds": {
+      "yunjiexian-review-2026": [],
+      "sogo-review-2026": [],
+      "yuntu-review-2026": []
+    },
+    "passed": true
+  },
+  "scope": "Three user confirmations only; merchant source dates preserved. No merchant visit, checkout, payment, reset, install, subscription copy or performance test.",
+  "published": false
+}
