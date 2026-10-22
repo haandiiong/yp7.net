@@ -2,7 +2,7 @@
   "site": "yp7.net",
   "url": "https://yp7.net",
   "lastReviewed": "2026-08-19",
-  "lastModified": "2026-10-20",
+  "lastModified": "2026-10-22",
   "testingPolicy": {
     "effectiveDate": "2026-08-18",
     "yp7ConductsCurrentTests": false,
@@ -376,9 +376,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -418,9 +418,9 @@
         "summary": "2026年10月17日复核：月付9.99/19.90/39.90元，年付89.99/180/459元，对应每月100/300/1000GB；订单日月重置、不结转。不限时66.66元500GB、199元2888GB，一次买断用完为止，卡片标注不限设备。提供Android、Windows、macOS、iOS Nextin、Linux桌面/终端及x86_64 OpenWrt系官方插件的账号登录路线，仍不作为Clash通用订阅服务。iOS要求15+、识别码xxyun；Linux桌面支持所列Ubuntu/Debian amd64，终端版要求systemd 245+。新客9折码xxyun仍展示，订单未验证；购买须知明确无退款。",
         "informationSources": [
           {
-            "name": "xxyun 官网",
-            "url": "https://xxyun.at/?code=3AYVsSKY",
-            "checkedAt": "2026-09-10"
+            "name": "xxyun 官网邀请入口（用户更新）",
+            "url": "https://www.xxyun.app/?code=3AYVsSKY",
+            "checkedAt": "2026-10-22"
           },
           {
             "name": "xxyun当前月付、年付与不限时套餐",
@@ -683,9 +683,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -985,9 +985,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -1314,9 +1314,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -1467,14 +1467,14 @@
             "美国": 3
           },
           "rankingEligible": true,
-          "score": 6.4,
+          "score": 5.6,
           "stability": 68.4,
           "scoreBreakdown": {
             "stability": 68.4,
             "speed": 20.8,
             "chatgpt": 81.3,
             "streaming": 91.7,
-            "value": 100
+            "value": 25.1
           },
           "experienceScores": {
             "chatgpt": 81.3,
@@ -1482,10 +1482,10 @@
           },
           "scoringPlan": {
             "name": "天天尝鲜拼",
-            "priceCny": 9.9,
-            "trafficGb": 100,
-            "priceLabel": "¥9.90/月",
-            "trafficLabel": "100GB/月"
+            "priceCny": 19.9,
+            "trafficGb": 50,
+            "priceLabel": "¥19.90/月",
+            "trafficLabel": "50GB/月"
           },
           "latestExperience": {
             "chatgpt": "新加坡 2026-09-20：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅",
@@ -1678,9 +1678,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -2175,9 +2175,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -2527,9 +2527,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -2833,9 +2833,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -2898,9 +2898,9 @@
         "summary": "2026年10月17日复核：月付9.99/19.90/39.90元，年付89.99/180/459元，对应每月100/300/1000GB；订单日月重置、不结转。不限时66.66元500GB、199元2888GB，一次买断用完为止，卡片标注不限设备。提供Android、Windows、macOS、iOS Nextin、Linux桌面/终端及x86_64 OpenWrt系官方插件的账号登录路线，仍不作为Clash通用订阅服务。iOS要求15+、识别码xxyun；Linux桌面支持所列Ubuntu/Debian amd64，终端版要求systemd 245+。新客9折码xxyun仍展示，订单未验证；购买须知明确无退款。",
         "informationSources": [
           {
-            "name": "xxyun 官网",
-            "url": "https://xxyun.at/?code=3AYVsSKY",
-            "checkedAt": "2026-09-10"
+            "name": "xxyun 官网邀请入口（用户更新）",
+            "url": "https://www.xxyun.app/?code=3AYVsSKY",
+            "checkedAt": "2026-10-22"
           },
           {
             "name": "xxyun当前月付、年付与不限时套餐",
@@ -3163,9 +3163,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -3406,14 +3406,14 @@
             "美国": 3
           },
           "rankingEligible": true,
-          "score": 6.4,
+          "score": 5.6,
           "stability": 68.4,
           "scoreBreakdown": {
             "stability": 68.4,
             "speed": 20.8,
             "chatgpt": 81.3,
             "streaming": 91.7,
-            "value": 100
+            "value": 25.1
           },
           "experienceScores": {
             "chatgpt": 81.3,
@@ -3421,10 +3421,10 @@
           },
           "scoringPlan": {
             "name": "天天尝鲜拼",
-            "priceCny": 9.9,
-            "trafficGb": 100,
-            "priceLabel": "¥9.90/月",
-            "trafficLabel": "100GB/月"
+            "priceCny": 19.9,
+            "trafficGb": 50,
+            "priceLabel": "¥19.90/月",
+            "trafficLabel": "50GB/月"
           },
           "latestExperience": {
             "chatgpt": "新加坡 2026-09-20：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅",
@@ -3617,9 +3617,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -4040,9 +4040,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -4726,9 +4726,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -5011,9 +5011,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -5906,9 +5906,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -8128,9 +8128,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -8193,9 +8193,9 @@
         "summary": "2026年10月17日复核：月付9.99/19.90/39.90元，年付89.99/180/459元，对应每月100/300/1000GB；订单日月重置、不结转。不限时66.66元500GB、199元2888GB，一次买断用完为止，卡片标注不限设备。提供Android、Windows、macOS、iOS Nextin、Linux桌面/终端及x86_64 OpenWrt系官方插件的账号登录路线，仍不作为Clash通用订阅服务。iOS要求15+、识别码xxyun；Linux桌面支持所列Ubuntu/Debian amd64，终端版要求systemd 245+。新客9折码xxyun仍展示，订单未验证；购买须知明确无退款。",
         "informationSources": [
           {
-            "name": "xxyun 官网",
-            "url": "https://xxyun.at/?code=3AYVsSKY",
-            "checkedAt": "2026-09-10"
+            "name": "xxyun 官网邀请入口（用户更新）",
+            "url": "https://www.xxyun.app/?code=3AYVsSKY",
+            "checkedAt": "2026-10-22"
           },
           {
             "name": "xxyun当前月付、年付与不限时套餐",
@@ -8458,9 +8458,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -8822,9 +8822,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -9145,9 +9145,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -9495,9 +9495,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -9738,14 +9738,14 @@
             "美国": 3
           },
           "rankingEligible": true,
-          "score": 6.4,
+          "score": 5.6,
           "stability": 68.4,
           "scoreBreakdown": {
             "stability": 68.4,
             "speed": 20.8,
             "chatgpt": 81.3,
             "streaming": 91.7,
-            "value": 100
+            "value": 25.1
           },
           "experienceScores": {
             "chatgpt": 81.3,
@@ -9753,10 +9753,10 @@
           },
           "scoringPlan": {
             "name": "天天尝鲜拼",
-            "priceCny": 9.9,
-            "trafficGb": 100,
-            "priceLabel": "¥9.90/月",
-            "trafficLabel": "100GB/月"
+            "priceCny": 19.9,
+            "trafficGb": 50,
+            "priceLabel": "¥19.90/月",
+            "trafficLabel": "50GB/月"
           },
           "latestExperience": {
             "chatgpt": "新加坡 2026-09-20：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅",
@@ -9949,9 +9949,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -10442,9 +10442,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -11111,9 +11111,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -11434,9 +11434,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -11757,9 +11757,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -12688,9 +12688,9 @@
         "summary": "2026年10月17日复核：月付9.99/19.90/39.90元，年付89.99/180/459元，对应每月100/300/1000GB；订单日月重置、不结转。不限时66.66元500GB、199元2888GB，一次买断用完为止，卡片标注不限设备。提供Android、Windows、macOS、iOS Nextin、Linux桌面/终端及x86_64 OpenWrt系官方插件的账号登录路线，仍不作为Clash通用订阅服务。iOS要求15+、识别码xxyun；Linux桌面支持所列Ubuntu/Debian amd64，终端版要求systemd 245+。新客9折码xxyun仍展示，订单未验证；购买须知明确无退款。",
         "informationSources": [
           {
-            "name": "xxyun 官网",
-            "url": "https://xxyun.at/?code=3AYVsSKY",
-            "checkedAt": "2026-09-10"
+            "name": "xxyun 官网邀请入口（用户更新）",
+            "url": "https://www.xxyun.app/?code=3AYVsSKY",
+            "checkedAt": "2026-10-22"
           },
           {
             "name": "xxyun当前月付、年付与不限时套餐",
@@ -12953,9 +12953,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -13252,9 +13252,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -13953,9 +13953,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -14255,9 +14255,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -14551,14 +14551,14 @@
             "美国": 3
           },
           "rankingEligible": true,
-          "score": 6.4,
+          "score": 5.6,
           "stability": 68.4,
           "scoreBreakdown": {
             "stability": 68.4,
             "speed": 20.8,
             "chatgpt": 81.3,
             "streaming": 91.7,
-            "value": 100
+            "value": 25.1
           },
           "experienceScores": {
             "chatgpt": 81.3,
@@ -14566,10 +14566,10 @@
           },
           "scoringPlan": {
             "name": "天天尝鲜拼",
-            "priceCny": 9.9,
-            "trafficGb": 100,
-            "priceLabel": "¥9.90/月",
-            "trafficLabel": "100GB/月"
+            "priceCny": 19.9,
+            "trafficGb": 50,
+            "priceLabel": "¥19.90/月",
+            "trafficLabel": "50GB/月"
           },
           "latestExperience": {
             "chatgpt": "新加坡 2026-09-20：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅",
@@ -14762,9 +14762,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -17037,9 +17037,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -17167,14 +17167,14 @@
             "美国": 3
           },
           "rankingEligible": true,
-          "score": 6.4,
+          "score": 5.6,
           "stability": 68.4,
           "scoreBreakdown": {
             "stability": 68.4,
             "speed": 20.8,
             "chatgpt": 81.3,
             "streaming": 91.7,
-            "value": 100
+            "value": 25.1
           },
           "experienceScores": {
             "chatgpt": 81.3,
@@ -17182,10 +17182,10 @@
           },
           "scoringPlan": {
             "name": "天天尝鲜拼",
-            "priceCny": 9.9,
-            "trafficGb": 100,
-            "priceLabel": "¥9.90/月",
-            "trafficLabel": "100GB/月"
+            "priceCny": 19.9,
+            "trafficGb": 50,
+            "priceLabel": "¥19.90/月",
+            "trafficLabel": "50GB/月"
           },
           "latestExperience": {
             "chatgpt": "新加坡 2026-09-20：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅",
@@ -17378,9 +17378,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -17678,9 +17678,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -17976,9 +17976,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -18264,9 +18264,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -18593,9 +18593,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -18915,9 +18915,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -18957,9 +18957,9 @@
         "summary": "2026年10月17日复核：月付9.99/19.90/39.90元，年付89.99/180/459元，对应每月100/300/1000GB；订单日月重置、不结转。不限时66.66元500GB、199元2888GB，一次买断用完为止，卡片标注不限设备。提供Android、Windows、macOS、iOS Nextin、Linux桌面/终端及x86_64 OpenWrt系官方插件的账号登录路线，仍不作为Clash通用订阅服务。iOS要求15+、识别码xxyun；Linux桌面支持所列Ubuntu/Debian amd64，终端版要求systemd 245+。新客9折码xxyun仍展示，订单未验证；购买须知明确无退款。",
         "informationSources": [
           {
-            "name": "xxyun 官网",
-            "url": "https://xxyun.at/?code=3AYVsSKY",
-            "checkedAt": "2026-09-10"
+            "name": "xxyun 官网邀请入口（用户更新）",
+            "url": "https://www.xxyun.app/?code=3AYVsSKY",
+            "checkedAt": "2026-10-22"
           },
           {
             "name": "xxyun当前月付、年付与不限时套餐",
@@ -19222,9 +19222,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -19521,9 +19521,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -19854,9 +19854,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -19984,14 +19984,14 @@
             "美国": 3
           },
           "rankingEligible": true,
-          "score": 6.4,
+          "score": 5.6,
           "stability": 68.4,
           "scoreBreakdown": {
             "stability": 68.4,
             "speed": 20.8,
             "chatgpt": 81.3,
             "streaming": 91.7,
-            "value": 100
+            "value": 25.1
           },
           "experienceScores": {
             "chatgpt": 81.3,
@@ -19999,10 +19999,10 @@
           },
           "scoringPlan": {
             "name": "天天尝鲜拼",
-            "priceCny": 9.9,
-            "trafficGb": 100,
-            "priceLabel": "¥9.90/月",
-            "trafficLabel": "100GB/月"
+            "priceCny": 19.9,
+            "trafficGb": 50,
+            "priceLabel": "¥19.90/月",
+            "trafficLabel": "50GB/月"
           },
           "latestExperience": {
             "chatgpt": "新加坡 2026-09-20：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅",
@@ -20195,9 +20195,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -20495,9 +20495,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -20793,9 +20793,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -21081,9 +21081,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -21410,9 +21410,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -21732,9 +21732,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -21774,9 +21774,9 @@
         "summary": "2026年10月17日复核：月付9.99/19.90/39.90元，年付89.99/180/459元，对应每月100/300/1000GB；订单日月重置、不结转。不限时66.66元500GB、199元2888GB，一次买断用完为止，卡片标注不限设备。提供Android、Windows、macOS、iOS Nextin、Linux桌面/终端及x86_64 OpenWrt系官方插件的账号登录路线，仍不作为Clash通用订阅服务。iOS要求15+、识别码xxyun；Linux桌面支持所列Ubuntu/Debian amd64，终端版要求systemd 245+。新客9折码xxyun仍展示，订单未验证；购买须知明确无退款。",
         "informationSources": [
           {
-            "name": "xxyun 官网",
-            "url": "https://xxyun.at/?code=3AYVsSKY",
-            "checkedAt": "2026-09-10"
+            "name": "xxyun 官网邀请入口（用户更新）",
+            "url": "https://www.xxyun.app/?code=3AYVsSKY",
+            "checkedAt": "2026-10-22"
           },
           {
             "name": "xxyun当前月付、年付与不限时套餐",
@@ -22039,9 +22039,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -22338,9 +22338,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -22644,9 +22644,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -22996,9 +22996,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -23126,14 +23126,14 @@
             "美国": 3
           },
           "rankingEligible": true,
-          "score": 6.4,
+          "score": 5.6,
           "stability": 68.4,
           "scoreBreakdown": {
             "stability": 68.4,
             "speed": 20.8,
             "chatgpt": 81.3,
             "streaming": 91.7,
-            "value": 100
+            "value": 25.1
           },
           "experienceScores": {
             "chatgpt": 81.3,
@@ -23141,10 +23141,10 @@
           },
           "scoringPlan": {
             "name": "天天尝鲜拼",
-            "priceCny": 9.9,
-            "trafficGb": 100,
-            "priceLabel": "¥9.90/月",
-            "trafficLabel": "100GB/月"
+            "priceCny": 19.9,
+            "trafficGb": 50,
+            "priceLabel": "¥19.90/月",
+            "trafficLabel": "50GB/月"
           },
           "latestExperience": {
             "chatgpt": "新加坡 2026-09-20：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅",
@@ -23337,9 +23337,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -23711,9 +23711,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -24436,9 +24436,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -24761,9 +24761,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -24905,9 +24905,9 @@
         "summary": "2026年10月17日复核：月付9.99/19.90/39.90元，年付89.99/180/459元，对应每月100/300/1000GB；订单日月重置、不结转。不限时66.66元500GB、199元2888GB，一次买断用完为止，卡片标注不限设备。提供Android、Windows、macOS、iOS Nextin、Linux桌面/终端及x86_64 OpenWrt系官方插件的账号登录路线，仍不作为Clash通用订阅服务。iOS要求15+、识别码xxyun；Linux桌面支持所列Ubuntu/Debian amd64，终端版要求systemd 245+。新客9折码xxyun仍展示，订单未验证；购买须知明确无退款。",
         "informationSources": [
           {
-            "name": "xxyun 官网",
-            "url": "https://xxyun.at/?code=3AYVsSKY",
-            "checkedAt": "2026-09-10"
+            "name": "xxyun 官网邀请入口（用户更新）",
+            "url": "https://www.xxyun.app/?code=3AYVsSKY",
+            "checkedAt": "2026-10-22"
           },
           {
             "name": "xxyun当前月付、年付与不限时套餐",
@@ -25170,9 +25170,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -25499,9 +25499,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -25742,14 +25742,14 @@
             "美国": 3
           },
           "rankingEligible": true,
-          "score": 6.4,
+          "score": 5.6,
           "stability": 68.4,
           "scoreBreakdown": {
             "stability": 68.4,
             "speed": 20.8,
             "chatgpt": 81.3,
             "streaming": 91.7,
-            "value": 100
+            "value": 25.1
           },
           "experienceScores": {
             "chatgpt": 81.3,
@@ -25757,10 +25757,10 @@
           },
           "scoringPlan": {
             "name": "天天尝鲜拼",
-            "priceCny": 9.9,
-            "trafficGb": 100,
-            "priceLabel": "¥9.90/月",
-            "trafficLabel": "100GB/月"
+            "priceCny": 19.9,
+            "trafficGb": 50,
+            "priceLabel": "¥19.90/月",
+            "trafficLabel": "50GB/月"
           },
           "latestExperience": {
             "chatgpt": "新加坡 2026-09-20：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅",
@@ -25953,9 +25953,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -26631,9 +26631,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -27459,9 +27459,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -28938,9 +28938,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -29261,9 +29261,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -29403,9 +29403,9 @@
         "summary": "2026年10月17日复核：月付9.99/19.90/39.90元，年付89.99/180/459元，对应每月100/300/1000GB；订单日月重置、不结转。不限时66.66元500GB、199元2888GB，一次买断用完为止，卡片标注不限设备。提供Android、Windows、macOS、iOS Nextin、Linux桌面/终端及x86_64 OpenWrt系官方插件的账号登录路线，仍不作为Clash通用订阅服务。iOS要求15+、识别码xxyun；Linux桌面支持所列Ubuntu/Debian amd64，终端版要求systemd 245+。新客9折码xxyun仍展示，订单未验证；购买须知明确无退款。",
         "informationSources": [
           {
-            "name": "xxyun 官网",
-            "url": "https://xxyun.at/?code=3AYVsSKY",
-            "checkedAt": "2026-09-10"
+            "name": "xxyun 官网邀请入口（用户更新）",
+            "url": "https://www.xxyun.app/?code=3AYVsSKY",
+            "checkedAt": "2026-10-22"
           },
           {
             "name": "xxyun当前月付、年付与不限时套餐",
@@ -29668,9 +29668,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -30326,9 +30326,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -30611,9 +30611,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
@@ -31486,9 +31486,9 @@
             }
           ],
           "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-          "receivedAt": "2026-10-14",
-          "sourcePublicationStatus": "published",
-          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "receivedAt": "2026-10-20",
+          "sourcePublicationStatus": "local-unpublished",
+          "sourcePublicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
           "methodologyUrl": "https://siilas.com/methodology/",
           "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },

@@ -243,7 +243,7 @@ export const airportData: AirportData[] = [
     risk: '仅官方客户端，不支持第三方通用订阅；无退款政策，不支持新疆，校园网不保证；Linux和软路由限所列系统及架构',
     summary: '2026年10月17日复核：月付9.99/19.90/39.90元，年付89.99/180/459元，对应每月100/300/1000GB；订单日月重置、不结转。不限时66.66元500GB、199元2888GB，一次买断用完为止，卡片标注不限设备。提供Android、Windows、macOS、iOS Nextin、Linux桌面/终端及x86_64 OpenWrt系官方插件的账号登录路线，仍不作为Clash通用订阅服务。iOS要求15+、识别码xxyun；Linux桌面支持所列Ubuntu/Debian amd64，终端版要求systemd 245+。新客9折码xxyun仍展示，订单未验证；购买须知明确无退款。',
     informationSources: [
-      { name: 'xxyun 官网', url: 'https://xxyun.at/?code=3AYVsSKY', checkedAt: '2026-09-10' },
+      { name: 'xxyun 官网邀请入口（用户更新）', url: 'https://www.xxyun.app/?code=3AYVsSKY', checkedAt: '2026-10-22' },
       { name: 'xxyun当前月付、年付与不限时套餐', url: 'https://cloud.xxvip.shop/plan', checkedAt: '2026-10-17', link: false },
       { name: 'xxyun当前新客优惠展示及客户端下载入口', url: 'https://cloud.xxvip.shop/dashboard', checkedAt: '2026-10-17', link: false },
       { name: 'xxyun购买与退款须知', url: 'https://cloud.xxvip.shop/knowledge/20', checkedAt: '2026-10-17', link: false },
@@ -1417,7 +1417,7 @@ export const visibleAirportData = airportData.filter(isVisibleAirport)
 // Date of the last full review; partial updates retain their per-source checkedAt dates.
 export const airportDataLastReviewed = '2026-08-19'
 // Advance for actual changes to current data or its classification, not historical test dates.
-export const airportDataLastModified = '2026-10-20'
+export const airportDataLastModified = '2026-10-22'
 
 export const getAirportPriceMetrics = (airports: readonly AirportData[]) => {
   const visible = airports.filter(isVisibleAirport)

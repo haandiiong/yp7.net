@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "receivedAt": "2026-10-14",
+  "receivedAt": "2026-10-20",
   "source": {
     "name": "Siilas",
     "origin": "https://siilas.com",
@@ -8,13 +8,13 @@
     "methodologyUrl": "https://siilas.com/methodology/",
     "testedBy": "siilas",
     "relationship": "Siilas 与 yp7.net 由同一站长运营；独立测速指独立于商业资料采集，不是第三方背书。",
-    "publicationStatus": "published",
-    "publicationNotice": "已核对 Siilas 来源正式发布版本。",
+    "publicationStatus": "local-unpublished",
+    "publicationNotice": "Siilas 来源更新仍待发布，来源页面可能还是旧版。",
     "pendingRecords": [],
     "unpublishedTestDates": [],
     "sourceFilesSha256": {
       "src/data/airport-data.ts": "144424057feba9f18a4d11e27aaa8ee1ed147df7838ccb97170c038bd2138eef",
-      "src/data/airports.json": "1e69c5b5b59512538737035efeae935befc8ca324850130a914b0f0a0ef9f9b3",
+      "src/data/airports.json": "0e567aa927fb340075f5df037abd85bb059ec883a945019580f24b15ca7d578a",
       "src/data/date-schema.ts": "53d619d9ed3afb2586922328af8a74558019a5f05d24bccd9a22927688a0c09f",
       "src/data/date-utils.mjs": "9e850f4933b623046ae64938ab5694be7b3787f1826e2bdd479d1c5752b53220",
       "src/data/test-experience-schema.mjs": "a75a726e254c2c71825a08dfc23da1e74526eb66e343c1b773dc4c5fdbe0a369",
@@ -4119,14 +4119,14 @@
         "美国": 3
       },
       "rankingEligible": true,
-      "score": 6.4,
+      "score": 5.6,
       "stability": 68.4,
       "scoreBreakdown": {
         "stability": 68.4,
         "speed": 20.8,
         "chatgpt": 81.3,
         "streaming": 91.7,
-        "value": 100
+        "value": 25.1
       },
       "experienceScores": {
         "chatgpt": 81.3,
@@ -4134,10 +4134,10 @@
       },
       "scoringPlan": {
         "name": "天天尝鲜拼",
-        "priceCny": 9.9,
-        "trafficGb": 100,
-        "priceLabel": "¥9.90/月",
-        "trafficLabel": "100GB/月"
+        "priceCny": 19.9,
+        "trafficGb": 50,
+        "priceLabel": "¥19.90/月",
+        "trafficLabel": "50GB/月"
       },
       "latestExperience": {
         "chatgpt": "新加坡 2026-09-20：流畅；香港 2026-09-23：流畅；日本 2026-09-23：流畅；美国 2026-09-23：流畅",
