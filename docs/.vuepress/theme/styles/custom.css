@@ -263,3 +263,19 @@
 .vp-doc .pinhaolian-plan-comparison td:nth-child(5) {
   min-width: 12em;
 }
+
+/* 六项主导航在窄平板上使用主题自带菜单，入口和展开层同步切换。 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header.vp-nav .vp-navbar-menu,
+  header.vp-nav .vp-navbar-extra {
+    display: none;
+  }
+
+  header.vp-nav .vp-navbar-hamburger {
+    display: flex;
+  }
+
+  header.vp-nav .vp-nav-screen {
+    display: block;
+  }
+}

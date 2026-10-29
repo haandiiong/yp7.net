@@ -22,6 +22,7 @@ export const stripMarkdown = (content = '') => content
   .trim()
 
 const collectionPagePaths = new Set([
+  '/guides/',
   '/posts/jichang-tuijian/',
   '/posts/jichang-heji/',
   '/risk-monitor/',

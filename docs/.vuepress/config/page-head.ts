@@ -10,6 +10,8 @@ import {
   normalizeDate,
 } from './page-utils'
 import { getPageSchema, hasJsonLdHead } from './schema'
+import { getSiteBreadcrumbs } from './page-structure'
+import { visibleAirportData } from './airports'
 import { defaultRobots, pageImages, siteName } from './site'
 
 const getSocialHead = (page: any) => {
@@ -91,6 +93,13 @@ const getBasicPageHead = (page: any) => {
 }
 
 export const extendPageWithSeo = (page: any) => {
+  page.data.siteBreadcrumbs = getSiteBreadcrumbs(page)
+  if (page.path === '/posts/jichang-heji/') {
+    page.data.airportBrandIndex = visibleAirportData
+      .map(({ name, path }) => ({ name, path }))
+      .sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'))
+  }
+
   const explicitModified = normalizeDate(page.frontmatter.dateModified || page.frontmatter.updateTime || page.frontmatter.lastUpdated)
   if (explicitModified) {
     // Plume's footer reads this field. The user-config hook runs after its Git

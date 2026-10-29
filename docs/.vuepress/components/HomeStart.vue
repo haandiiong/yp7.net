@@ -1,6 +1,11 @@
 <template>
 <main>
 <div class="intro"><span class="eyebrow">按设备选择工具，再导入订阅</span><h1>科学上网工具下载与客户端安装</h1><p>按 Android、iPhone、Mac、Windows 选择客户端，查看安装教程，再导入机场订阅并验证节点连接。</p></div>
+<nav class="home-paths" aria-label="选择访问方向">
+<a class="route-card" href="/posts/jichang-tuijian/"><strong>选机场</strong><span>比较7款候选的价格、试用与限制 →</span></a>
+<a class="route-card" href="/posts/jichang-heji/"><strong>查全部资料</strong><span>查询机场套餐、客户端与风险状态 →</span></a>
+<a class="route-card" href="#download"><strong>已有订阅，安装工具</strong><span>按设备下载客户端，再导入配置 ↓</span></a>
+</nav>
 <section aria-labelledby="download"><div class="stephead"><span class="number">1</span><h2 id="download">选择你的设备</h2><small>GitHub 发布 · 备用下载</small></div>
 <div class="devices">
 <article class="device"><h3>Android</h3><span class="sub">安卓手机 / 平板</span><div class="client">FlClash</div><p class="hint">选择适合设备架构的 APK<br>安装后允许 VPN 连接</p><a class="download" target="_blank" rel="noopener" href="https://github.com/chen08209/FlClash/releases/latest">GitHub下载 ↗</a><a class="download" target="_blank" rel="noopener nofollow" href="https://flclash.cc/download">备用下载 ↗</a><a class="guide" href="/posts/flclash-guide-2026/#安卓安装">查看安装教程</a></article>
@@ -20,8 +25,8 @@
 <details><summary>Flybit价格和免费体验怎么选？</summary><p>按2026年10月15日后台资料，月付15元128GB、不限时36元128GB起；192GB档季付62元。10月15日另补充确认，当前所有节点统一1倍率，使用1GB扣1GB。注册试用1天2GB仍沿用9月27日站长补充，本次未新注册验证，实际到账与有效期以后台为准；本站导航链接已携带邀请码p3DOcgzt。<a href="/posts/flybit-review-2026/">查看Flybit套餐与使用说明</a>。</p></details>
 <details><summary>Clash客户端安装后为什么没有节点？</summary><p>安装软件不会自动获得节点。需先取得匹配的订阅地址，再导入并启用配置。连接异常可看<a href="/posts/clash-subscription-troubleshooting/">订阅导入失败排查</a>，基本概念见<a href="/posts/airport-node-subscription-guide/">机场与订阅入门</a>。</p></details>
 <p>按需求比较：<a href="/rankings/cheap/">低价机场</a> · <a href="/rankings/trial/">免费试用</a> · <a href="/rankings/no-expiry/">不限时套餐</a> · <a href="/rankings/clash/">Clash订阅</a> · <a href="/rankings/chatgpt/">AI工具</a> · <a href="/rankings/streaming/">流媒体</a></p>
-<p>使用指南：<a href="/posts/airport-tools/">全部客户端工具</a> · <a href="/posts/vpn-guide-2026/">科学上网入门</a> · <a href="/posts/ai-tools-not-working/">AI工具排错</a></p>
-<p class="note">当前测试资料来自同一站长运营的<a href="https://siilas.com/test/">Siilas测速中心</a>；套餐整理与测试日期分别记录。<a href="/methodology/">推荐方法与资料来源</a> · <a href="/risk-monitor/">机场风险监测</a> · <a href="/about/">关于本站与商业披露</a>。本页文案更新：2026年10月17日。</p>
+<p>使用指南：<a href="/guides/">全部使用教程</a> · <a href="/posts/airport-tools/">全部客户端工具</a> · <a href="/posts/vpn-guide-2026/">科学上网入门</a> · <a href="/posts/ai-tools-not-working/">AI工具排错</a></p>
+<p class="note">当前测试资料来自同一站长运营的<a href="https://siilas.com/test/">Siilas测速中心</a>；套餐整理与测试日期分别记录。<a href="/methodology/">推荐方法与资料来源</a> · <a href="/risk-monitor/">机场风险监测</a> · <a href="/about/">关于本站与商业披露</a>。本页导航更新：2026年10月29日；套餐与试用沿用上文各自资料日期。</p>
 </section></main>
 </template>
 <style scoped>
@@ -34,5 +39,6 @@ main{color:var(--vp-c-text-1);background:var(--vp-c-bg);--ink:var(--vp-c-text-1)
 [data-theme="dark"] main{--green-text:#8ccbb1}
 </style>
 <style scoped>
+.home-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:-12px 0 36px}.home-paths .route-card{display:block;padding:16px;border:1px solid var(--line);border-radius:10px;background:var(--vp-c-bg-soft);text-align:left}.home-paths .route-card:hover{border-color:var(--green-text);text-decoration:none}.route-card strong{display:block;margin-bottom:5px;font-size:16px}.route-card span{display:block;font-size:12px;line-height:1.6;color:var(--muted)}@media(max-width:720px){.home-paths{grid-template-columns:1fr;gap:8px;margin-bottom:28px}.home-paths .route-card{padding:12px 14px}.route-card strong{margin-bottom:2px}}
 .more-info{margin-top:36px;padding-top:24px;border-top:1px solid var(--line)}.more-info p{font-size:13px}.more-info details{margin:14px 0}.more-info summary{cursor:pointer;font-weight:600;font-size:14px}.more-info h2{margin-bottom:15px}
 </style>

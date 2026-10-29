@@ -1,9 +1,11 @@
 import './theme/styles/custom.css'
 import HomeStart from './components/HomeStart.vue'
+import AirportBrandIndex from './components/AirportBrandIndex.vue'
 
 export default {
   enhance({ app }) {
     app.component('HomeStart', HomeStart)
+    app.component('AirportBrandIndex', AirportBrandIndex)
   },
   mounted() {
     const getImageAlt = (img) => {

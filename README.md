@@ -49,11 +49,15 @@ pnpm run docs:preview
 - `docs/机场榜单/`：按稳定、低价、试用、不限时、客户端、Clash、ChatGPT、流媒体等场景整理的榜单页。
 - `docs/机场推荐/`：机场推荐主文和机场大全。
 - `docs/风险监测/`：机场风险监测页。
+- `docs/使用教程/index.md`（`/guides/`）：按新手流程、设备、故障与应用组织的教程中心；原教程地址继续沿用。
 - `docs/科学上网专区/`、`docs/工具/`、`docs/tiktok专区/` 等：教程型内容。
 - `docs/.vuepress/config/airports.ts`：机场价格、流量、客户端能力、历史记录及风险的基础数据源。
 - `docs/.vuepress/config/airport-collections.ts`：各页面候选名单、顺序和筛选规则，供正文表格、JSON 与 ItemList Schema 共用。
 - `docs/.vuepress/config/airport-public.ts`：公开数据对象，供 JSON、Markdown 和 HTML 数据页共同使用。
+- `docs/.vuepress/config/page-structure.ts`：页面可见面包屑和 JSON-LD 共用的栏目关系。正常机场归机场大全，停止推荐等隐藏状态归风险监测，安装、购买和应用教程归使用教程；栏目调整不改变文章 permalink。
 - `docs/.vuepress/config/data/siilas-tests.json`：已接收的 Siilas 原始测速、最新分区体验、评分、规则指纹与来源发布状态。生产构建只读取这份仓库快照。
+
+主导航按首页、机场推荐、机场大全、按需筛选、使用教程、风险监测组织。机场推荐负责选购取舍，机场大全负责服务索引，场景页负责具体条件；推荐方法、商业披露、关于本站与友链放在页脚。合集品牌索引仅由构建注入可见机场的名称和原地址，不在客户端加载商业配置或测速快照。
 
 ## 接收 Siilas 测试结果
 

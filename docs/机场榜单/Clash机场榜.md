@@ -1,7 +1,7 @@
 ---
 title: Clash机场推荐：2026支持通用订阅的机场节点对比
 createTime: 2026/06/04
-dateModified: 2026/10/19
+dateModified: 2026/10/29
 permalink: /rankings/clash/
 tags:
   - Clash机场
@@ -14,9 +14,9 @@ description: 2026 Clash与通用订阅机场筛选，比较价格、流量、试
 
 > **测试资料来源：** 自2026年8月18日起，yp7.net 不再自行测试。当前表现可参考 [Siilas 测速中心](https://siilas.com/test/) 对应日期的记录；本站旧记录仅作历史资料。用户投稿另标来源、测试时间与环境，不代表本站复测。
 
-更新时间：2026年10月19日（重新读取九云五篇第三方教程：电脑和Mac的Clash Verge、安卓Clash Meta、Karing与Shadowrocket；后台六款导入菜单未调用。九云试用、退款与每30天刷新仍保留9月22日旧来源，不将本次教程读取当作连接实测。99吧、网际快车、xxyun等其他机场的来源和测试日期保留）
+资料更新记录：2026年10月19日（重新读取九云五篇第三方教程：电脑和Mac的Clash Verge、安卓Clash Meta、Karing与Shadowrocket；后台六款导入菜单未调用。九云试用、退款与每30天刷新仍保留9月22日旧来源，不将本次教程读取当作连接实测。99吧、网际快车、xxyun等其他机场的来源和测试日期保留）
 
-> **页面层级：** 本页只承接 Clash 与通用订阅筛选；如果还没有综合候选，请先查看 [2026机场推荐主页面](/posts/jichang-tuijian/)。
+> **栏目：按需筛选。** 本页只承接 Clash 与通用订阅筛选；如果还没有综合候选，请先查看 [2026机场推荐主页面](/posts/jichang-tuijian/)。 查询全部服务与套餐资料，可查看[机场大全](/posts/jichang-heji/)。
 
 本页比较已记录的通用订阅支持、领取条件和客户端教程。支持通用订阅不代表同时兼容Clash、Shadowrocket、sing-box等所有格式，也不证明晚高峰表现。不会配置 Clash 的新手，可以并列参考 [Clash Verge Rev 教程](/posts/clash-verge-guide-2026/) 和 [FlClash 教程](/posts/flclash-guide-2026/)，或选择专属客户端机场。
 
@@ -121,5 +121,7 @@ Clash机场更灵活，适合规则分流和多客户端；专属客户端更省
 
 - [2026机场推荐主页面](/posts/jichang-tuijian/)
 - [专属客户端机场筛选](/rankings/dedicated-client/)
+- [机场大全](/posts/jichang-heji/)
 - [Clash Verge 使用教程](/posts/clash-verge-guide-2026/)
 - [FlClash 使用教程](/posts/flclash-guide-2026/)
+- [使用教程：按设备选择与排错](/guides/)

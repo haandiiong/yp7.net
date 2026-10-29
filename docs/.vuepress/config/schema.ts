@@ -1,5 +1,6 @@
 import { airportData } from './airports'
 import { getAirportCollectionForPage } from './airport-collections'
+import { getSiteBreadcrumbs } from './page-structure'
 import {
   getArticleSection,
   getCanonicalUrl,
@@ -187,42 +188,12 @@ const getGeneratedItemListSchema = (page: any) => {
 }
 
 const getBreadcrumbItems = (page: any) => {
-  const canonicalUrl = getCanonicalUrl(page.path)
-  const title = page.title || siteName
-  const items = [{
+  return getSiteBreadcrumbs(page).map((item, index) => ({
     '@type': 'ListItem',
-    position: 1,
-    name: '首页',
-    item: hostname,
-  }]
-
-  if (page.path === '/') return items
-
-  const filePath = page.filePathRelative || ''
-  const parent = filePath.includes('机场评测')
-    ? { name: '机场大全', item: `${hostname}/posts/jichang-heji/` }
-    : filePath.includes('机场榜单')
-      ? { name: '机场推荐', item: `${hostname}/posts/jichang-tuijian/` }
-      : filePath.includes('机场推荐') && page.path !== '/posts/jichang-tuijian/'
-        ? { name: '机场推荐', item: `${hostname}/posts/jichang-tuijian/` }
-        : undefined
-
-  if (parent && parent.item !== canonicalUrl) {
-    items.push({
-      '@type': 'ListItem',
-      position: 2,
-      ...parent,
-    })
-  }
-
-  items.push({
-    '@type': 'ListItem',
-    position: items.length + 1,
-    name: title,
-    item: canonicalUrl,
-  })
-
-  return items
+    position: index + 1,
+    name: item.text,
+    item: getCanonicalUrl(item.link),
+  }))
 }
 
 export const getPageSchema = (page: any) => {

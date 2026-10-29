@@ -6,45 +6,75 @@ export const theme = plumeTheme({
   hostname,
   // Our maintained dates are calendar days; do not imply an exact edit time.
   lastUpdated: { formatOptions: { year: 'numeric', month: 'numeric', day: 'numeric', timeZone: 'UTC', forceLocale: true } },
-  footer: { message: "yp7.net © 2026 CFF 版权所有" },
+  footer: {
+    message: '<a href="/methodology/">推荐方法与数据来源</a> · <a href="/about/">关于本站与商业披露</a> · <a href="/friends/">友情链接</a>',
+    copyright: 'yp7.net © 2026 CFF 版权所有',
+  },
   navbar: [
     { text: '首页', link: '/', icon: 'material-symbols:home-rounded' },
     { text: '机场推荐', link: '/posts/jichang-tuijian/', icon: 'material-symbols:flight-takeoff' },
+    { text: '机场大全', link: '/posts/jichang-heji/', icon: 'material-symbols:format-list-bulleted' },
     {
-      text: '场景筛选',
+      text: '按需筛选',
       icon: 'material-symbols:leaderboard',
       items: [
-        { text: '低价机场', link: '/rankings/cheap/', icon: 'material-symbols:sell-outline' },
-        { text: '不限时套餐', link: '/rankings/no-expiry/', icon: 'material-symbols:all-inclusive' },
-        { text: 'Clash机场', link: '/rankings/clash/', icon: 'material-symbols:hive-outline' },
-        { text: 'ChatGPT机场', link: '/rankings/chatgpt/', icon: 'material-symbols:smart-toy-outline' },
+        {
+          text: '套餐与费用',
+          items: [
+            { text: '低价机场', link: '/rankings/cheap/' },
+            { text: '不限时套餐', link: '/rankings/no-expiry/' },
+            { text: '免费试用', link: '/rankings/trial/' },
+          ],
+        },
+        {
+          text: '客户端方式',
+          items: [
+            { text: 'Clash订阅', link: '/rankings/clash/' },
+            { text: '专属客户端', link: '/rankings/dedicated-client/' },
+          ],
+        },
+        {
+          text: '应用场景',
+          items: [
+            { text: 'ChatGPT记录', link: '/rankings/chatgpt/' },
+            { text: '流媒体记录', link: '/rankings/streaming/' },
+          ],
+        },
+        { text: '购买辅助', items: [{ text: '优惠码与试用券', link: '/rankings/coupons/' }] },
       ],
     },
     {
-      text: '科学上网教程',
+      text: '使用教程',
       icon: 'ic:baseline-construction',
       items: [
-        { text: '机场工具与下载', link: '/posts/airport-tools/', icon: 'material-symbols:devices-outline' },
-        { text: '科学上网入门', link: '/posts/vpn-guide-2026/', icon: 'material-symbols:school-outline' },
-        { text: 'Clash Verge教程', link: '/posts/clash-verge-guide-2026/', icon: 'ic:baseline-personal-video' },
-        { text: 'FlClash教程', link: '/posts/flclash-guide-2026/', icon: 'material-symbols:devices-outline' },
-        { text: 'Clash Meta 安卓教程', link: '/posts/clash-for-android-guide-2026/', icon: 'ic:baseline-android' },
-        { text: 'Clash Mi iOS教程', link: '/posts/clash-mi-guide-2026/', icon: 'material-symbols:phone-iphone' },
-        { text: 'Shadowrocket教程', link: '/posts/shadowrocket-guide-2026/', icon: 'ic:baseline-rocket-launch' },
-        { text: 'ChatGPT打不开', link: '/posts/ai-tools-not-working/', icon: 'material-symbols:smart-toy-outline' },
-        { text: 'Telegram教程', link: '/posts/telegram-guide-2026/', icon: 'material-symbols:send-outline' },
-        { text: '推荐方法与数据来源', link: '/methodology/', icon: 'material-symbols:science-outline' },
+        { text: '全部使用教程', link: '/guides/', icon: 'material-symbols:menu-book-outline' },
+        {
+          text: '新手开始',
+          items: [
+            { text: '机场与订阅入门', link: '/posts/airport-node-subscription-guide/' },
+            { text: '购买与试用流程', link: '/posts/jichang-buying-guide/' },
+          ],
+        },
+        {
+          text: '客户端安装',
+          items: [
+            { text: '按设备选择工具', link: '/posts/airport-tools/' },
+            { text: 'FlClash教程', link: '/posts/flclash-guide-2026/' },
+            { text: 'Clash Mi iOS教程', link: '/posts/clash-mi-guide-2026/' },
+            { text: 'Shadowrocket教程', link: '/posts/shadowrocket-guide-2026/' },
+          ],
+        },
+        {
+          text: '连接与排错',
+          items: [
+            { text: '订阅导入失败', link: '/posts/clash-subscription-troubleshooting/' },
+            { text: 'ChatGPT打不开', link: '/posts/ai-tools-not-working/' },
+            { text: '常用网站打不开', link: '/posts/google-youtube-github-gmail-not-working/' },
+          ],
+        },
       ],
     },
-    {
-      text: '站点信息',
-      icon: 'material-symbols:info-outline',
-      items: [
-        { text: '风险监测', link: '/risk-monitor/', icon: 'material-symbols:warning-outline' },
-        { text: '友情链接', link: '/friends/', icon: 'material-symbols:link' },
-        { text: '关于本站', link: '/about/', icon: 'material-symbols:info-outline' },
-      ],
-    },
+    { text: '风险监测', link: '/risk-monitor/', icon: 'material-symbols:warning-outline' },
   ],
   profile: {
     name: 'yp7.net',
