@@ -1,7 +1,7 @@
 ---
 title: xxyun机场怎么样？2026套餐价格、官方客户端与使用限制
 createTime: 2026/04/23
-dateModified: 2026/10/22
+dateModified: 2026/10/29
 permalink: /posts/xxyun-review-2026/
 tags:
   - xxyun机场
@@ -18,18 +18,18 @@ description: xxyun机场月付9.99元100GB起，年付89.99元起，不限时66.
 
 官网套餐与客户端资料复核：2026年10月17日，月付仍为9.99元100GB起，本次补齐年付、不限时、Linux与自有x86软路由使用路径，并核对无退款政策。手机、电脑、Linux和软路由均按官方账号登录方式使用，自有软路由插件不等于提供Clash通用订阅。
 
-Siilas原始记录于2026年10月20日重新接收，香港、日本、新加坡最近样本仍为10月8日，美国最近样本仍为8月8日；来源发布状态见下表。套餐与客户端复核仍为10月17日，本次同步没有新增或改写测试记录。
+Siilas原始记录于2026年10月29日重新接收，最新各地区的实际测试日期、体验与来源发布状态见下表。套餐与客户端复核仍为10月17日；本次接收新增来源记录，没有新增yp7.net自产测试或改写原始采样日期。
 
 2026年10月7日撤回旧文6月18日无法追溯的历史速度、延迟、应用评价和字母等级；该旧文日期仅作未证实的归档线索，不作为已证实测试记录。Siilas 各条样本按原日期与节点单独阅读，不能用10月8日的新记录反向证明旧文结论。
 
 <!-- siilas-testing:start -->
 ## Siilas 测速与使用体验记录
 
-2026-10-20 接收 [Siilas xxyun原始记录](https://siilas.com/airport/xxyun/) **12 条已验证测速**，覆盖 5 个不同测试日，采样跨度为 2026-07-13 至 2026-10-08。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
+2026-10-29 接收 [Siilas xxyun原始记录](https://siilas.com/airport/xxyun/) **13 条已验证测速**，覆盖 6 个不同测试日，采样跨度为 2026-07-13 至 2026-10-23。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
 
-Siilas 来源更新仍待发布，来源页面可能还是旧版。完整记录、测试环境与证据见[接收快照](/data/siilas-tests.json)。
+已核对 Siilas 来源正式发布版本。完整记录、测试环境与证据见[接收快照](/data/siilas-tests.json)。
 
-Siilas 当前规则计算的综合评分为 **6.1/10**，参评要求为四地区各至少 3 个不同测试日。评分来自其全部有效样本，含所列性价比计分套餐；它不直接改写 yp7.net 推荐顺序。[查看 Siilas 评分方法](https://siilas.com/methodology/)。
+Siilas 当前规则计算的综合评分为 **5.7/10**，参评要求为四地区各至少 3 个不同测试日。评分来自其全部有效样本，含所列性价比计分套餐；它不直接改写 yp7.net 推荐顺序。[查看 Siilas 评分方法](https://siilas.com/methodology/)。
 
 各地区最新一条记录分别如下，时间为北京时间。不同地区的最近日期可能不同：
 
@@ -38,7 +38,7 @@ Siilas 当前规则计算的综合评分为 **6.1/10**，参评要求为四地�
 | 新加坡 | 2026-10-08 19:19 | 183.53 | 95.95 | 92 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19765091965) · [测速截图](https://siilas.com/evidence/xxyun/2026-10-08-1919-sg-speedtest.png) |
 | 香港 | 2026-10-08 19:39 | 17.01 | 20.01 | 150 | 不可用 | 轻微缓冲 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19765155474) · [测速截图](https://siilas.com/evidence/xxyun/2026-10-08-1939-hk-speedtest.png) |
 | 日本 | 2026-10-08 19:28 | 115.9 | 76.3 | 110 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19765121073) · [测速截图](https://siilas.com/evidence/xxyun/2026-10-08-1928-jp-speedtest.png) |
-| 美国 | 2026-08-08 18:09 | 136.53 | 86.1 | 382 | 轻微延迟 | 轻微缓冲 | [Speedtest](https://www.speedtest.net/result/19531510081) · [测速截图](https://siilas.com/evidence/xxyun/2026-08-08-1009-us-speedtest.png) |
+| 美国 | 2026-10-23 15:36 | 21.82 | 24.61 | 203 | 轻微延迟 | 缓冲严重 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19822385470) · [测速截图](https://siilas.com/evidence/xxyun/2026-10-23-1536-us-speedtest.png) |
 
 上述最近记录所列代理客户端：xxyun 官方专属客户端；测速工具：Speedtest Desktop。每条原始记录保留自己的网络、设备和工具字段，未记录的历史条件不套用到新样本。
 
@@ -169,7 +169,7 @@ xxyun当前后台在2026年10月17日显示以下三档月付套餐。下表为�
 
 ## xxyun稳定吗？
 
-xxyun当前是否稳定，不能由月费、套餐标称带宽或单次测速直接判断。已接收的 [Siilas xxyun 原始记录](https://siilas.com/airport/xxyun/)中，10月8日晚香港下载为17.01Mbps、ChatGPT“不可用”、流媒体“轻微缓冲”；日本和新加坡当晚的两项体验均为“流畅”，美国最近样本仍是8月8日。上表列出实际时间与来源发布状态，不能把不同地区或日期合并为持续稳定的结论。10月17日仅更新商业资料与客户端说明，原测试日期没有因此变更。
+xxyun当前是否稳定，不能由月费、套餐标称带宽或单次测速直接判断。已接收的 [Siilas xxyun 原始记录](https://siilas.com/airport/xxyun/)中，10月8日晚香港下载为17.01Mbps、ChatGPT“不可用”、流媒体“轻微缓冲”；日本和新加坡当晚的两项体验均为“流畅”。10月23日美国节点下载为21.82Mbps，ChatGPT“轻微延迟”、流媒体“缓冲严重”。以上是带日期的不同样本，最新接收结果与来源发布状态见上表，不能合并为持续稳定的结论。10月17日的商业资料与客户端说明更新没有改变任何原测试日期。
 
 影响稳定性的因素主要有：
 

@@ -720,6 +720,42 @@ if (airportMetrics) {
   const hejiContent = existsSync(join(root, hejiPath))
     ? readFileSync(join(root, hejiPath), 'utf8')
     : ''
+  // Keep maintenance history out of the catalogue's visible comparison preambles.
+  // A current page date and dated product facts are distinct from update logs.
+  const overviewEnd = hejiContent.indexOf('## 各机场套餐详情')
+  const overview = overviewEnd >= 0 ? hejiContent.slice(0, overviewEnd) : hejiContent
+  const containerStack = []
+  const updateRecordStart = /^(?:本节全量资料复核日期：|此前(?:更新|\d{4}年)|(?:\d{4}年)?\d{1,2}月\d{1,2}日.*(?:更新|复核|补充|新增|重新读取)|同日(?:随后)?(?:读取|补充|阿达西))/
+
+  overview.split('\n').forEach((line, index) => {
+    const container = line.trim().match(/^(:{3,})\s*(\S+)?(?:\s+(.*))?$/)
+    if (container) {
+      if (!container[2]) {
+        containerStack.pop()
+      } else {
+        const isDetails = container[2] === 'details'
+        if (isDetails && /\bopen\b/.test(container[3] || '')) {
+          errors.push(`${hejiPath}:${index + 1}: catalogue update details must be closed by default`)
+        }
+        containerStack.push(isDetails)
+      }
+      return
+    }
+
+    if (!containerStack.includes(true) && updateRecordStart.test(line.trim())) {
+      errors.push(`${hejiPath}:${index + 1}: comparison update records must stay inside collapsed details`)
+    }
+    if (containerStack.includes(true) && /^\|\s*机场\s*\|/.test(line.trim())) {
+      errors.push(`${hejiPath}:${index + 1}: comparison tables must remain outside collapsed details`)
+    }
+  })
+
+  if (containerStack.length) {
+    errors.push(`${hejiPath}: unclosed container before airport details`)
+  }
+  if (!/^::: details 更新详情与历史记录$/m.test(hejiContent)) {
+    errors.push(`${hejiPath}: missing collapsed catalogue update history`)
+  }
   const percentage = (count) => airportMetrics.count ? Math.round(count / airportMetrics.count * 100) : 0
   const expectedStats = [
     `当前收录机场数量：${airportMetrics.count}`,

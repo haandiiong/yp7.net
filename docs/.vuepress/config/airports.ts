@@ -1417,7 +1417,7 @@ export const visibleAirportData = airportData.filter(isVisibleAirport)
 // Date of the last full review; partial updates retain their per-source checkedAt dates.
 export const airportDataLastReviewed = '2026-08-19'
 // Advance for actual changes to current data or its classification, not historical test dates.
-export const airportDataLastModified = '2026-10-22'
+export const airportDataLastModified = '2026-10-29'
 
 export const getAirportPriceMetrics = (airports: readonly AirportData[]) => {
   const visible = airports.filter(isVisibleAirport)

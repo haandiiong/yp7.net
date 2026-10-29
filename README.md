@@ -125,6 +125,7 @@ pnpm run docs:test
 新增或修改文章时，注意：
 
 - frontmatter 必须包含 `title`、`description`、`createTime`、`dateModified`、`permalink`。
+- 机场合集页（`/posts/jichang-heji/`）的更新过程、补充说明与历史修改记录统一写入对应的 `::: details …更新记录` 折叠区或文末“更新详情与历史记录”，默认关闭，不添加 `open`。后续更新继续在折叠区内追加；表格前只保留简短的当前筛选口径、必要风险提示和页面更新时间，不重新堆叠更新日志。资料核对日期与实际测试日期仍按各自事实保留。
 - 新增机场评测页时，同步检查 `docs/.vuepress/config/airports.ts` 里的结构化字段、页面图片和销量样本。
 - 修改 `docs/.vuepress/config/airports.ts` 的价格、流量、试用、客户端、通用订阅、销量样本或风险字段后，运行 `pnpm run docs:sync-tables` 同步榜单和风险监测表格，避免多处数据漂移。
 - 完成价格、服务状态、能力和风险的实际复核后，手动更新 `airportDataLastReviewed`；仅补录历史测速或调整测试口径时不要推进该日期。
