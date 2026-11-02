@@ -49,7 +49,12 @@
   */
 }
 
-/* 机场大全优先展示价格总表，标签与创建日期仍保留在页面元数据中。 */
+/* Plume's mobile panel leaves an empty item for disabled blog navigation. */
+.blog-modal .blog-nav > .nav-link:not([href]) {
+  display: none;
+}
+
+/* 机场大全优先展示价格总表，创建日期仍保留在页面元数据中。 */
 .airport-catalogue .vp-doc-meta {
   display: none;
 }

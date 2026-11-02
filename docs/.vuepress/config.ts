@@ -44,7 +44,11 @@ export default defineUserConfig({
       },
     },
   ],
-  extendsPage: extendPageWithSeo,
+  extendsPage: (page: any) => {
+    extendPageWithSeo(page)
+    // Keep source topics in the generated metadata, then omit Plume's tag UI and blog tag data.
+    delete page.frontmatter.tags
+  },
   extendsMarkdown: extendSponsoredMarkdown,
   shouldPrefetch: false,
   theme,

@@ -229,6 +229,8 @@ if (existsSync(redirectsPath)) {
 }
 
 const requiredCanonicalRedirects = new Map([
+  ['/blog/tags/', { target: '/', status: '301' }],
+  ['/blog/tags', { target: '/', status: '301' }],
   ['/data/airports.html', { target: '/data/airports', status: '308' }],
   ['/data/rankings.html', { target: '/data/rankings', status: '308' }],
   ['/data/risk-monitor.html', { target: '/data/risk-monitor', status: '308' }],
@@ -453,7 +455,6 @@ const markdownFiles = walkFiles(docsDir, (filePath, entry) => (
 
 const generatedRoutes = new Set([
   '/blog/',
-  '/blog/tags/',
   '/blog/categories/',
   '/blog/archives/',
   '/data/airports/',

@@ -1,3 +1,7 @@
+# 已移除的标签功能统一到博客首页
+/blog/tags/ / 301
+/blog/tags / 301
+
 # 旧文章 ID 与旧别名
 /article/0gematwc/ /posts/clash-verge-guide-2026/ 301
 /article/eh8f4n86/ /posts/clash-for-android-guide-2026/ 301

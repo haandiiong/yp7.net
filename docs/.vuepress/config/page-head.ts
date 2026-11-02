@@ -57,7 +57,6 @@ const noindexPaths = new Set([
   '/home-draft/',
   '/404.html',
   '/blog/',
-  '/blog/tags/',
   '/blog/categories/',
   '/blog/archives/',
   '/friends/',

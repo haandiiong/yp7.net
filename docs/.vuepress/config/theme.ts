@@ -93,10 +93,9 @@ export const theme = plumeTheme({
   blog: {
     exclude: ['about.md', 'friends.md', '科学上网专区/机场测评方法.md'],
     pagination: 15,
-    tags: true,
+    tags: false,
     categories: true,
     archives: true,
-    tagsLink: '/blog/tags/',
     categoriesLink: '/blog/categories/',
     archivesLink: '/blog/archives/',
     postCover: { layout: 'right', ratio: '16:9', width: 200 },
@@ -106,7 +105,6 @@ export const theme = plumeTheme({
       excludePaths: [
         '/404.html',
         '/blog/',
-        '/blog/tags/',
         '/blog/categories/',
         '/blog/archives/',
         '/friends/',
