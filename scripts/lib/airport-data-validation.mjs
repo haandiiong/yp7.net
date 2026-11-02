@@ -1,6 +1,10 @@
 import { loadConfig } from './load-config.mjs'
 
 const { splitMarkdownTableRow } = loadConfig('markdown-table.ts')
+const {
+  comparisonNoticeColumn, getAirportComparisonNotice,
+  getRecommendationPackagePrimary, getRecommendationPackageSecondary,
+} = loadConfig('airport-comparison.ts')
 
 const entities = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' }
 const plainText = (value) => value.replace(/<[^>]*>/g, '')
@@ -67,10 +71,10 @@ const yesNo = (value) => value === null ? '待核实' : value ? '支持' : '不�
 const clients = (airport) => [airport.dedicatedClient && '专属客户端', airport.universalSubscription && '通用订阅']
   .filter(Boolean).join('、') || '无专属客户端'
 
-export const validateAirportRows = (rows, airports, context, { sectionLinks = false, hostname = 'https://yp7.net', requiredColumns = [] } = {}) => {
+export const validateAirportRows = (rows, airports, context, { sectionLinks = false, hostname = 'https://yp7.net', requiredColumns = [], comparisonNotice = false } = {}) => {
   const errors = []
   if (!Array.isArray(rows)) return [`${context}: missing table`]
-  for (const column of requiredColumns) {
+  for (const column of [...requiredColumns, ...(comparisonNotice ? [comparisonNoticeColumn] : [])]) {
     if (rows.some((row) => !(column in row.cells))) errors.push(`${context}: missing ${column} column`)
   }
   const names = rows.map((row) => row.cells['机场'])
@@ -94,8 +98,9 @@ export const validateAirportRows = (rows, airports, context, { sectionLinks = fa
       历史速度区间: evidence?.downloadMbpsRange || '无历史记录',
     }
     const primaryValues = {
-      套餐与试用: `${airport.priceText}，${airport.traffic}；${airport.trial === null ? '试用待核实' : airport.trial ? '支持试用' : '无试用'}`,
+      套餐与试用: getRecommendationPackagePrimary(airport),
       客户端与限制: clients(airport),
+      最低价格: airport.priceText,
     }
     const capabilities = {
       试用: airport.trial, 免费试用: airport.trial, 不限时: airport.noExpiry,
@@ -106,7 +111,18 @@ export const validateAirportRows = (rows, airports, context, { sectionLinks = fa
       if (column in primaryValues) {
         // Only the first line is generated; prices and conditions in the notes are editorial.
         const primaryValue = plainText((row.rawCells?.[column] ?? value).split(/<br\s*\/?\s*>/i)[0])
-        if (primaryValue !== primaryValues[column]) errors.push(`${context}: ${airport.name} ${column} differs`)
+        if (primaryValue !== primaryValues[column] || !value.startsWith(primaryValues[column])) errors.push(`${context}: ${airport.name} ${column} differs`)
+        if (column === '套餐与试用') {
+          const secondary = getRecommendationPackageSecondary(airport)
+          if (secondary && !(row.rawCells?.[column] ?? '').split(/<br\s*\/?\s*>/i).some((line) => plainText(line) === secondary)) {
+            errors.push(`${context}: ${airport.name} missing daily alternative package`)
+          }
+        }
+      } else if (column === comparisonNoticeColumn) {
+        const notice = getAirportComparisonNotice(airport.path)
+        if (notice ? !value.includes(notice.text) || !row.hrefs.includes(notice.sourcePath) && !row.hrefs.includes(`${hostname}${notice.sourcePath}`) : value !== '—') {
+          errors.push(`${context}: ${airport.name} ${comparisonNoticeColumn} differs`)
+        }
       } else if (column in capabilities) {
         if (booleanValue(value) !== capabilities[column]) errors.push(`${context}: ${airport.name} ${column} differs`)
       } else if (column in expected) {
@@ -120,6 +136,11 @@ export const validateAirportRows = (rows, airports, context, { sectionLinks = fa
   })
   return errors
 }
+
+export const getCollectionItemList = (schemas, collection, hostname = 'https://yp7.net') => schemas.find((schema) => (
+  schema['@type'] === 'ItemList'
+  && schema['@id'] === `${hostname}${collection.pagePath}${collection.key === 'all' ? '#all-airports' : '#ranking'}`
+))
 
 export const validateItemList = (schema, airports, context, hostname = 'https://yp7.net', ordered = false) => {
   if (!schema) return [`${context}: missing ItemList`]

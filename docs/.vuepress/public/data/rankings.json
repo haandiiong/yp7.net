@@ -1745,197 +1745,586 @@
         "url": "https://yp7.net/posts/runway-review-2026/"
       },
       {
-        "name": "九云",
-        "path": "/posts/jiuyun-review-2026/",
-        "image": "/shouye.png",
-        "price": 6,
-        "priceText": "6元/月",
-        "traffic": "150GB/月",
-        "trial": false,
-        "noExpiry": true,
-        "dedicatedClient": false,
+        "name": "cocoduck",
+        "path": "/posts/cocoduck-review/",
+        "image": "/cocoduck.png",
+        "price": 17,
+        "priceText": "17元/月",
+        "traffic": "100GB/月",
+        "trial": true,
+        "noExpiry": false,
+        "dedicatedClient": true,
         "universalSubscription": true,
         "scenarios": [
-          "cheap",
+          "streaming",
+          "trial",
           "clash"
         ],
         "status": "资料已核对",
-        "risk": "不支持试用和退款仍据9月22日；9yun仅排除19.90/29.90元两款365天包、次数不限，截止、叠加及结算待核；当前带宽、倍率和重购余量未列",
-        "summary": "10月19日官网重读10款：月付6元150GB、9元300GB、16元600GB，分别3/4/5台；季18元200GB、年68元200GB各3台，年88元400GB改4台。新365天总量500GB19.90元3台、1000GB29.90元5台，不计不限时；另有36元100GB、99元300GB不限时各3台。三档月度各周期总价已读，周期每30天刷新及无试用/不退款仍据9月22日旧资料，当前列表未重述。已读Clash Verge电脑/Mac、Clash Meta安卓、Karing与Shadowrocket教程，后台另列六类导入按钮，未实操。无日期公告提示维护后更新订阅及8折券9yun；10月19日用户补充确认8折码9yun仅排除19.90元500GB和29.90元1000GB两款365天流量包，六款周期商品及36元100GB、99元300GB不限时包均可用，不限制使用次数。截止日期、优惠叠加与实际结算未核；未新增测速。",
+        "risk": "试用无人工支持；加油包需搭配常规套餐，旧客户端需确认兼容性",
+        "summary": "17元/月100GB起，77元年付迷你鸭含40GB/月；新用户1天2GB免费体验。自有Android、Android TV、Windows和macOS客户端，iOS专属客户端仍开发中，可用第三方订阅。提供Clash主备订阅、Shadowrocket、Quantumult、Stash和V2Ray；9月5日公告称DNS问题修复，建议更新订阅。",
         "subscriptionClients": [
-          "Shadowrocket",
           "Clash",
-          "Sing-box",
-          "Surge",
-          "Quantumult X",
-          "Surfboard"
+          "Shadowrocket",
+          "Quantumult",
+          "Stash",
+          "V2Ray"
         ],
         "informationSources": [
           {
-            "name": "九云9yun八折码适用范围与次数（用户补充确认）",
-            "url": "/posts/jiuyun-review-2026/",
-            "checkedAt": "2026-10-19",
+            "name": "COCODUCK套餐与加油包",
+            "url": "https://dash.cocoduck.live/user/product",
+            "checkedAt": "2026-09-27",
             "link": false
           },
           {
-            "name": "九云当前10款套餐、设备及付款周期选项",
-            "url": "https://216.236.63.122/#/shop",
-            "checkedAt": "2026-10-19",
-            "link": false
-          },
-          {
-            "name": "九云客户端目录及五篇第三方使用教程",
-            "url": "https://216.236.63.122/#/knowledge",
-            "checkedAt": "2026-10-19",
-            "link": false
-          },
-          {
-            "name": "九云订阅菜单、维护提示及9yun优惠公告（未标发布日期）",
-            "url": "https://216.236.63.122/#/dashboard",
-            "checkedAt": "2026-10-19",
-            "link": false
-          },
-          {
-            "name": "九云套餐商店",
-            "url": "https://888.jiuyundl.com/#/shop",
-            "checkedAt": "2026-09-22",
-            "link": false
-          },
-          {
-            "name": "九云客户端教程",
-            "url": "https://888.jiuyundl.com/#/docs",
-            "checkedAt": "2026-09-22",
+            "name": "COCODUCK客户端与试用公告",
+            "url": "https://dash.cocoduck.live/user",
+            "checkedAt": "2026-09-27",
             "link": false
           }
         ],
-        "noExpiryPackage": {
-          "priceCny": 36,
-          "trafficGb": 100,
-          "priceText": "36元",
-          "trafficText": "100GB",
-          "status": "listed",
-          "deviceLimit": "3台同时在线",
-          "validity": "不限时总量；9月22日旧说明不重置、用完作废；当前重购余量及补量细则未列",
-          "checkedAt": "2026-10-19",
-          "unitPriceCnyPerGb": 0.36,
-          "sourcePage": "/posts/jiuyun-review-2026/",
-          "currency": "CNY",
-          "billing": "one-off"
+        "salesSample": 280,
+        "siilasEvidence": {
+          "slug": "cocoduck",
+          "name": "cocoduck",
+          "yp7Path": "/posts/cocoduck-review/",
+          "sourceUrl": "https://siilas.com/airport/cocoduck/",
+          "latestTestAt": "2026-10-24",
+          "verifiedTestCount": 16,
+          "testDateCount": 4,
+          "regionalSampleDays": {
+            "新加坡": 4,
+            "香港": 4,
+            "日本": 4,
+            "美国": 4
+          },
+          "rankingEligible": true,
+          "score": 6.3,
+          "stability": 54.4,
+          "scoreBreakdown": {
+            "stability": 54.4,
+            "speed": 57.3,
+            "chatgpt": 79.7,
+            "streaming": 92.2,
+            "value": 58.8
+          },
+          "experienceScores": {
+            "chatgpt": 79.7,
+            "streaming": 92.2
+          },
+          "scoringPlan": {
+            "name": "个人套餐（月付）",
+            "priceCny": 17,
+            "trafficGb": 100,
+            "priceLabel": "¥17/月",
+            "trafficLabel": "100GB/月"
+          },
+          "latestExperience": {
+            "chatgpt": "新加坡 2026-10-24：流畅；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-10-24：流畅",
+            "streaming": "新加坡 2026-10-24：流畅；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-10-24：流畅"
+          },
+          "latestRegionTests": [
+            {
+              "region": "新加坡",
+              "test": {
+                "id": "20261024-1720-sg",
+                "testedAt": "2026-10-24",
+                "time": "17:20",
+                "window": "日间",
+                "node": "新加坡节点",
+                "exitRegion": "新加坡",
+                "baselineDownloadMbps": 1000,
+                "downloadMbps": 559.68,
+                "uploadMbps": 41.86,
+                "chatgpt": "流畅",
+                "streaming": "流畅",
+                "latencyMs": 95,
+                "downloadLatencyMs": 112,
+                "uploadLatencyMs": 88,
+                "jitterMs": null,
+                "packetLossPercent": null,
+                "resultUrl": "https://www.speedtest.net/zh-Hans/result/19826508132",
+                "evidenceImage": "/evidence/cocoduck/2026-10-24-1720-sg-speedtest.png",
+                "evidenceNote": "截图时间为 2026-10-24 GMT 09:20 AM，换算北京时间 2026-10-24 17:20。用户按已确认的出口 IP 地区口径提交新加坡节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。截图中的网络名称“Eons Data Communic...”和测速服务器名称“Symphony Communic...”均被截断，仅保存可见文字，未补全名称；Speedtest Desktop 为测速工具。",
+                "sourceRegion": null,
+                "connectionType": "Wi-Fi",
+                "isp": "Eons Data Communic...",
+                "server": "Symphony Communic... · Singapore",
+                "device": "MacBook",
+                "client": "FlClash",
+                "measurementTool": "Speedtest Desktop",
+                "evidenceUrl": "https://siilas.com/evidence/cocoduck/2026-10-24-1720-sg-speedtest.png",
+                "evidenceUrls": [
+                  "https://siilas.com/evidence/cocoduck/2026-10-24-1720-sg-speedtest.png"
+                ],
+                "publication": {
+                  "status": "published",
+                  "versionSha256": "67b56725806bcb26d2129a87acd690c9e6e37f3536196f64096a076cd4e258cf",
+                  "evidenceVersions": [
+                    {
+                      "label": "测速截图",
+                      "url": "https://siilas.com/evidence/cocoduck/2026-10-24-1720-sg-speedtest.png",
+                      "sha256": "4823ceda537439901086c1b21cab1ae888ce7e7ef8d4c43bc41ac6a7b05713c7",
+                      "status": "published"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "region": "香港",
+              "test": {
+                "id": "20261024-1806-hk",
+                "testedAt": "2026-10-24",
+                "time": "18:06",
+                "window": "晚间",
+                "node": "香港节点",
+                "exitRegion": "香港",
+                "baselineDownloadMbps": 1000,
+                "downloadMbps": 811.98,
+                "uploadMbps": 35.24,
+                "chatgpt": "流畅",
+                "streaming": "流畅",
+                "latencyMs": 250,
+                "downloadLatencyMs": 252,
+                "uploadLatencyMs": 70,
+                "jitterMs": null,
+                "packetLossPercent": null,
+                "resultUrl": "https://www.speedtest.net/zh-Hans/result/19826626708",
+                "evidenceImage": "/evidence/cocoduck/2026-10-24-1806-hk-speedtest.png",
+                "evidenceNote": "截图时间为 2026-10-24 GMT 10:06 AM，换算北京时间 2026-10-24 18:06。用户按已确认的出口 IP 地区口径提交香港节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。截图中的网络名称被截断为“Eons Data Communic...”，仅保存可见文字，未补全名称；测速服务器为 Hutchison HK，地点 Hong Kong；Speedtest Desktop 为测速工具。",
+                "sourceRegion": null,
+                "connectionType": "Wi-Fi",
+                "isp": "Eons Data Communic...",
+                "server": "Hutchison HK · Hong Kong",
+                "device": "MacBook",
+                "client": "FlClash",
+                "measurementTool": "Speedtest Desktop",
+                "evidenceUrl": "https://siilas.com/evidence/cocoduck/2026-10-24-1806-hk-speedtest.png",
+                "evidenceUrls": [
+                  "https://siilas.com/evidence/cocoduck/2026-10-24-1806-hk-speedtest.png"
+                ],
+                "publication": {
+                  "status": "published",
+                  "versionSha256": "ed78597e9e51e310f366fbbc124d010977a4c78bc987a5060bcc593a8f889bf6",
+                  "evidenceVersions": [
+                    {
+                      "label": "测速截图",
+                      "url": "https://siilas.com/evidence/cocoduck/2026-10-24-1806-hk-speedtest.png",
+                      "sha256": "6b911f3651cc68ceb10ca02b7e33b7d02fcf6ba74d918749e9088fa0f321e304",
+                      "status": "published"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "region": "日本",
+              "test": {
+                "id": "20261024-1739-jp",
+                "testedAt": "2026-10-24",
+                "time": "17:39",
+                "window": "日间",
+                "node": "日本节点",
+                "exitRegion": "日本",
+                "baselineDownloadMbps": 1000,
+                "downloadMbps": 618.9,
+                "uploadMbps": 39.15,
+                "chatgpt": "流畅",
+                "streaming": "流畅",
+                "latencyMs": 119,
+                "downloadLatencyMs": 124,
+                "uploadLatencyMs": 304,
+                "jitterMs": null,
+                "packetLossPercent": null,
+                "resultUrl": "https://www.speedtest.net/zh-Hans/result/19826556316",
+                "evidenceImage": "/evidence/cocoduck/2026-10-24-1739-jp-speedtest.png",
+                "evidenceNote": "截图时间为 2026-10-24 GMT 09:39 AM，换算北京时间 2026-10-24 17:39。用户按已确认的出口 IP 地区口径提交日本节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。截图中的网络名称被截断为“Eons Data Communic...”，仅保存可见文字，未补全名称；测速服务器为 IPA CyberLab，地点 Bunkyo；Speedtest Desktop 为测速工具。",
+                "sourceRegion": null,
+                "connectionType": "Wi-Fi",
+                "isp": "Eons Data Communic...",
+                "server": "IPA CyberLab · Bunkyo",
+                "device": "MacBook",
+                "client": "FlClash",
+                "measurementTool": "Speedtest Desktop",
+                "evidenceUrl": "https://siilas.com/evidence/cocoduck/2026-10-24-1739-jp-speedtest.png",
+                "evidenceUrls": [
+                  "https://siilas.com/evidence/cocoduck/2026-10-24-1739-jp-speedtest.png"
+                ],
+                "publication": {
+                  "status": "published",
+                  "versionSha256": "afa94dd723fdbd8d407d0b54a5bdb32fd10784746bd7771df23ce638825d0379",
+                  "evidenceVersions": [
+                    {
+                      "label": "测速截图",
+                      "url": "https://siilas.com/evidence/cocoduck/2026-10-24-1739-jp-speedtest.png",
+                      "sha256": "c96c5530ad8f58b16f1f2d199c52670c1346f5b3c732ddaa36a7c7c38c46b272",
+                      "status": "published"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "region": "美国",
+              "test": {
+                "id": "20261024-1812-us",
+                "testedAt": "2026-10-24",
+                "time": "18:12",
+                "window": "晚间",
+                "node": "美国节点",
+                "exitRegion": "美国",
+                "baselineDownloadMbps": 1000,
+                "downloadMbps": 730.91,
+                "uploadMbps": 46.52,
+                "chatgpt": "流畅",
+                "streaming": "流畅",
+                "latencyMs": 207,
+                "downloadLatencyMs": 344,
+                "uploadLatencyMs": 228,
+                "jitterMs": null,
+                "packetLossPercent": null,
+                "resultUrl": "https://www.speedtest.net/zh-Hans/result/19826643548",
+                "evidenceImage": "/evidence/cocoduck/2026-10-24-1812-us-speedtest.png",
+                "evidenceNote": "截图时间为 2026-10-24 GMT 10:12 AM，换算北京时间 2026-10-24 18:12。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。截图中的网络名称被截断为“Eons Data Communic...”，仅保存可见文字，未补全名称；测速服务器为 KamaTera, Inc.，地点 Santa Clara, CA；Speedtest Desktop 为测速工具。",
+                "sourceRegion": null,
+                "connectionType": "Wi-Fi",
+                "isp": "Eons Data Communic...",
+                "server": "KamaTera, Inc. · Santa Clara, CA",
+                "device": "MacBook",
+                "client": "FlClash",
+                "measurementTool": "Speedtest Desktop",
+                "evidenceUrl": "https://siilas.com/evidence/cocoduck/2026-10-24-1812-us-speedtest.png",
+                "evidenceUrls": [
+                  "https://siilas.com/evidence/cocoduck/2026-10-24-1812-us-speedtest.png"
+                ],
+                "publication": {
+                  "status": "published",
+                  "versionSha256": "5fa04dfe92a46b2f265f3fbab976bf17b58b01092a295a6b59df362b7b93d95b",
+                  "evidenceVersions": [
+                    {
+                      "label": "测速截图",
+                      "url": "https://siilas.com/evidence/cocoduck/2026-10-24-1812-us-speedtest.png",
+                      "sha256": "c73ca563674e006ffc3b9b8970bef6bdf2ef11f2c04c3a991c485cc58006e6e8",
+                      "status": "published"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
+          "receivedAt": "2026-10-29",
+          "sourcePublicationStatus": "published",
+          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "methodologyUrl": "https://siilas.com/methodology/",
+          "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
         },
-        "url": "https://yp7.net/posts/jiuyun-review-2026/"
+        "url": "https://yp7.net/posts/cocoduck-review/"
       },
       {
-        "name": "阿达西",
-        "path": "/posts/adaxi-review-2026/",
-        "image": "/adaxi.png",
-        "price": 3,
-        "priceText": "3元/30天",
-        "traffic": "20GB/30天",
+        "name": "XSUS",
+        "path": "/posts/xsus-review-2026/",
+        "image": "/xsus.png",
+        "price": 12,
+        "priceText": "12元/月",
+        "traffic": "168GB/月",
         "trial": false,
         "noExpiry": true,
         "dedicatedClient": true,
         "universalSubscription": true,
         "scenarios": [
           "cheap",
+          "streaming",
           "clash"
         ],
-        "status": "低价观察",
-        "risk": "充值手续费待核；入门限100Mbps、无专线；GBox目前仅Windows；无试用、退款待核；独享默认续费",
-        "summary": "3元20GB/30天、10元80GB/30天和50元300GB永久总量，限速100/500/600Mbps，设备不限且无专线。10月18日用户补充确认最低充值支持1元；3元入门套餐仍需3元账户余额，手续费及实际付款未测试。10月17日充值页默认10元、自填3元的界面观察保留原日期。新增商家称官方的Windows GBox，UID账号登录；Windows另有v2rayN，Mac v2rayN、iOS Shadowrocket/sing-box、Android Flyer保留通用订阅。当前快速导入菜单8种客户端，未调用或验证兼容。FAQ按节点昵称倍率扣量。日本独享20元/月共用套餐流量并默认自动续费。不支持试用仍据9月27日确认，退款及重购余量未明确。",
+        "status": "性价比观察",
+        "risk": "无法原路退款；流量不叠加，续费不立即重置；不支持免费试用",
+        "summary": "不支持免费试用。12元/月168GB起，65元188GB起不限时包，另有52元/季50GB每月的IEPL套餐。最多5个IP，同网络多设备算1个IP；支持专用客户端及第三方订阅。",
         "subscriptionClients": [
-          "Shadowrocket",
-          "Sing-Box",
-          "Stash",
-          "Surge",
           "Clash",
-          "Clash Meta",
-          "Clash Verge",
-          "FlClash"
+          "sing-box",
+          "Shadowrocket",
+          "Loon"
         ],
         "informationSources": [
           {
-            "name": "阿达西试用规则（站长补充）",
-            "url": "/posts/adaxi-review-2026/",
+            "name": "XSUS试用规则（站长补充）",
+            "url": "/posts/xsus-review-2026/",
             "checkedAt": "2026-09-27",
             "link": false
           },
           {
-            "name": "阿达西最低充值额（用户补充确认）",
-            "url": "/posts/adaxi-review-2026/",
-            "checkedAt": "2026-10-18",
+            "name": "XSUS套餐与购买须知",
+            "url": "https://xsus.cloud/plan",
+            "checkedAt": "2026-09-23",
             "link": false
           },
           {
-            "name": "阿达西现售套餐",
-            "url": "https://adaxi.net/plan",
-            "checkedAt": "2026-10-17",
+            "name": "XSUS帮助中心",
+            "url": "https://xsus.cloud/knowledge",
+            "checkedAt": "2026-09-23",
             "link": false
           },
           {
-            "name": "阿达西充值输入与默认档位",
-            "url": "https://adaxi.net/deposit",
-            "checkedAt": "2026-10-17",
-            "link": false
-          },
-          {
-            "name": "阿达西快速订阅菜单",
-            "url": "https://adaxi.net/dashboard",
-            "checkedAt": "2026-10-17",
-            "link": false
-          },
-          {
-            "name": "阿达西Windows GBox与v2rayN教程",
-            "url": "https://adaxi.net/doc",
-            "checkedAt": "2026-10-17",
-            "link": false
-          },
-          {
-            "name": "阿达西macOS教程",
-            "url": "https://adaxi.net/doc/macos",
-            "checkedAt": "2026-10-17",
-            "link": false
-          },
-          {
-            "name": "阿达西iOS两类客户端教程",
-            "url": "https://adaxi.net/doc/ios",
-            "checkedAt": "2026-10-17",
-            "link": false
-          },
-          {
-            "name": "阿达西Android教程",
-            "url": "https://adaxi.net/doc/android",
-            "checkedAt": "2026-10-17",
-            "link": false
-          },
-          {
-            "name": "阿达西常见问题",
-            "url": "https://adaxi.net/doc/faq",
-            "checkedAt": "2026-10-17",
-            "link": false
-          },
-          {
-            "name": "阿达西独享节点",
-            "url": "https://adaxi.net/dedicated",
-            "checkedAt": "2026-10-17",
+            "name": "XSUS仪表盘",
+            "url": "https://xsus.cloud/dashboard",
+            "checkedAt": "2026-09-23",
             "link": false
           }
         ],
-        "salesSample": 462,
+        "siilasEvidence": {
+          "slug": "xsus",
+          "name": "XSUS",
+          "yp7Path": "/posts/xsus-review-2026/",
+          "sourceUrl": "https://siilas.com/airport/xsus/",
+          "latestTestAt": "2026-10-24",
+          "verifiedTestCount": 16,
+          "testDateCount": 5,
+          "regionalSampleDays": {
+            "新加坡": 4,
+            "香港": 4,
+            "日本": 4,
+            "美国": 4
+          },
+          "rankingEligible": true,
+          "score": 5.5,
+          "stability": 35.1,
+          "scoreBreakdown": {
+            "stability": 35.1,
+            "speed": 37.6,
+            "chatgpt": 82.8,
+            "streaming": 87.5,
+            "value": 100
+          },
+          "experienceScores": {
+            "chatgpt": 82.8,
+            "streaming": 87.5
+          },
+          "scoringPlan": {
+            "name": "P-Small 基础套餐",
+            "priceCny": 12,
+            "trafficGb": 168,
+            "priceLabel": "¥12/月起",
+            "trafficLabel": "168GB/月"
+          },
+          "latestExperience": {
+            "chatgpt": "新加坡 2026-10-08：轻微延迟；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-10-24：流畅",
+            "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-10-24：流畅"
+          },
+          "latestRegionTests": [
+            {
+              "region": "新加坡",
+              "test": {
+                "id": "20261008-2109-sg",
+                "testedAt": "2026-10-08",
+                "time": "21:09",
+                "window": "晚高峰",
+                "node": "新加坡节点",
+                "exitRegion": "新加坡",
+                "baselineDownloadMbps": 1000,
+                "downloadMbps": 316,
+                "uploadMbps": 80.69,
+                "chatgpt": "轻微延迟",
+                "streaming": "流畅",
+                "latencyMs": 248,
+                "downloadLatencyMs": 290,
+                "uploadLatencyMs": 330,
+                "jitterMs": null,
+                "packetLossPercent": null,
+                "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765482567",
+                "evidenceImage": "/evidence/xsus/2026-10-08-2109-sg-speedtest.png",
+                "evidenceNote": "截图时间为 GMT 1:09 PM，换算北京时间 21:09。用户确认使用 FlClash 客户端；截图中的 Speedtest Desktop 为测速工具。",
+                "sourceRegion": null,
+                "connectionType": "Wi-Fi",
+                "isp": "Akari Networks",
+                "server": "M1 Limited · Singapore",
+                "device": "MacBook",
+                "client": "FlClash",
+                "measurementTool": "Speedtest Desktop",
+                "evidenceUrl": "https://siilas.com/evidence/xsus/2026-10-08-2109-sg-speedtest.png",
+                "evidenceUrls": [
+                  "https://siilas.com/evidence/xsus/2026-10-08-2109-sg-speedtest.png"
+                ],
+                "publication": {
+                  "status": "published",
+                  "versionSha256": "894347dcf991dffbe0eb99e06f53e79a80abc4cb00abf7f216e83e244077d301",
+                  "evidenceVersions": [
+                    {
+                      "label": "测速截图",
+                      "url": "https://siilas.com/evidence/xsus/2026-10-08-2109-sg-speedtest.png",
+                      "sha256": "0715d30fd2750b617cdc0376e87ef18c611ba8b051aa93e379b1c3d7c22931d2",
+                      "status": "published"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "region": "香港",
+              "test": {
+                "id": "20261024-1930-hk",
+                "testedAt": "2026-10-24",
+                "time": "19:30",
+                "window": "晚间",
+                "node": "香港节点",
+                "exitRegion": "香港",
+                "baselineDownloadMbps": 1000,
+                "downloadMbps": 476.67,
+                "uploadMbps": 29.79,
+                "chatgpt": "流畅",
+                "streaming": "流畅",
+                "latencyMs": 113,
+                "downloadLatencyMs": 144,
+                "uploadLatencyMs": 116,
+                "jitterMs": null,
+                "packetLossPercent": null,
+                "resultUrl": "https://www.speedtest.net/zh-Hans/result/19826850321",
+                "evidenceImage": "/evidence/xsus/2026-10-24-1930-hk-speedtest.png",
+                "evidenceNote": "截图时间为 2026-10-24 GMT 11:30 AM，换算北京时间 2026-10-24 19:30。用户按已确认的出口 IP 地区口径提交香港节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。截图显示网络名称为 Suibian Network，测速服务器为 CSL，地点 Hong Kong；Speedtest Desktop 为测速工具。",
+                "sourceRegion": null,
+                "connectionType": "Wi-Fi",
+                "isp": "Suibian Network",
+                "server": "CSL · Hong Kong",
+                "device": "MacBook",
+                "client": "FlClash",
+                "measurementTool": "Speedtest Desktop",
+                "evidenceUrl": "https://siilas.com/evidence/xsus/2026-10-24-1930-hk-speedtest.png",
+                "evidenceUrls": [
+                  "https://siilas.com/evidence/xsus/2026-10-24-1930-hk-speedtest.png"
+                ],
+                "publication": {
+                  "status": "published",
+                  "versionSha256": "58d47fd4e95ffbedac56304b92542429e31793729693dfe5bdc86be83fe4b204",
+                  "evidenceVersions": [
+                    {
+                      "label": "测速截图",
+                      "url": "https://siilas.com/evidence/xsus/2026-10-24-1930-hk-speedtest.png",
+                      "sha256": "cf96b42d8c9a7b82c0a9816dad7f86cfe7fd1798072a614ad8cd79c639392adc",
+                      "status": "published"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "region": "日本",
+              "test": {
+                "id": "20261024-1839-jp",
+                "testedAt": "2026-10-24",
+                "time": "18:39",
+                "window": "晚间",
+                "node": "日本节点",
+                "exitRegion": "日本",
+                "baselineDownloadMbps": 1000,
+                "downloadMbps": 1129.13,
+                "uploadMbps": 41.74,
+                "chatgpt": "流畅",
+                "streaming": "流畅",
+                "latencyMs": 84,
+                "downloadLatencyMs": 91,
+                "uploadLatencyMs": 90,
+                "jitterMs": null,
+                "packetLossPercent": null,
+                "resultUrl": "https://www.speedtest.net/zh-Hans/result/19826712509",
+                "evidenceImage": "/evidence/xsus/2026-10-24-1839-jp-speedtest.png",
+                "evidenceNote": "截图时间为 2026-10-24 GMT 10:39 AM，换算北京时间 2026-10-24 18:39。用户按已确认的出口 IP 地区口径提交日本节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。截图显示网络名称为 Akari Networks，测速服务器为 IPA CyberLab，地点 Bunkyo；Speedtest Desktop 为测速工具。下载速度 1129.13 Mbps 按截图原值保存，基准下载带宽沿用已确认的默认值 1000 Mbps，不据此推断本地线路带宽变化。",
+                "sourceRegion": null,
+                "connectionType": "Wi-Fi",
+                "isp": "Akari Networks",
+                "server": "IPA CyberLab · Bunkyo",
+                "device": "MacBook",
+                "client": "FlClash",
+                "measurementTool": "Speedtest Desktop",
+                "evidenceUrl": "https://siilas.com/evidence/xsus/2026-10-24-1839-jp-speedtest.png",
+                "evidenceUrls": [
+                  "https://siilas.com/evidence/xsus/2026-10-24-1839-jp-speedtest.png"
+                ],
+                "publication": {
+                  "status": "published",
+                  "versionSha256": "b0d136e4d0c51e4a111e5beb19df3959ac9d7232a1676dd36ee40b88f05a53c4",
+                  "evidenceVersions": [
+                    {
+                      "label": "测速截图",
+                      "url": "https://siilas.com/evidence/xsus/2026-10-24-1839-jp-speedtest.png",
+                      "sha256": "3607b5b4175ffed1a0367907dcb1987917d0d1b031004e7b6597af97e166625d",
+                      "status": "published"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "region": "美国",
+              "test": {
+                "id": "20261024-1846-us",
+                "testedAt": "2026-10-24",
+                "time": "18:46",
+                "window": "晚间",
+                "node": "美国节点",
+                "exitRegion": "美国",
+                "baselineDownloadMbps": 1000,
+                "downloadMbps": 779.01,
+                "uploadMbps": 39.73,
+                "chatgpt": "流畅",
+                "streaming": "流畅",
+                "latencyMs": 195,
+                "downloadLatencyMs": 199,
+                "uploadLatencyMs": 197,
+                "jitterMs": null,
+                "packetLossPercent": null,
+                "resultUrl": "https://www.speedtest.net/zh-Hans/result/19826731340",
+                "evidenceImage": "/evidence/xsus/2026-10-24-1846-us-speedtest.png",
+                "evidenceNote": "截图时间为 2026-10-24 GMT 10:46 AM，换算北京时间 2026-10-24 18:46。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。截图显示网络名称为 Akari Networks，测速服务器为 Frontier，地点 Los Angeles, CA；Speedtest Desktop 为测速工具。",
+                "sourceRegion": null,
+                "connectionType": "Wi-Fi",
+                "isp": "Akari Networks",
+                "server": "Frontier · Los Angeles, CA",
+                "device": "MacBook",
+                "client": "FlClash",
+                "measurementTool": "Speedtest Desktop",
+                "evidenceUrl": "https://siilas.com/evidence/xsus/2026-10-24-1846-us-speedtest.png",
+                "evidenceUrls": [
+                  "https://siilas.com/evidence/xsus/2026-10-24-1846-us-speedtest.png"
+                ],
+                "publication": {
+                  "status": "published",
+                  "versionSha256": "e75e9086561938707d379b7db25d8a0b8844b9e6d27021e828972d37e118bcbe",
+                  "evidenceVersions": [
+                    {
+                      "label": "测速截图",
+                      "url": "https://siilas.com/evidence/xsus/2026-10-24-1846-us-speedtest.png",
+                      "sha256": "f48ab7726c1839a83c01c08548477cd77a269cb02401649bdada7d169ecb2bbf",
+                      "status": "published"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
+          "receivedAt": "2026-10-29",
+          "sourcePublicationStatus": "published",
+          "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
+          "methodologyUrl": "https://siilas.com/methodology/",
+          "experienceNotice": "ChatGPT 与流媒体为提交者定性体验。Speedtest 链接和截图佐证测速数值，不代表逐项验证 Netflix、Disney+、TikTok、其他 AI 平台或长期解锁。"
+        },
         "noExpiryPackage": {
-          "priceCny": 50,
-          "trafficGb": 300,
-          "priceText": "50元",
-          "trafficText": "300GB",
+          "priceCny": 65,
+          "trafficGb": 188,
+          "priceText": "65元",
+          "trafficText": "188GB",
           "status": "listed",
-          "deviceLimit": "不限设备数",
-          "validity": "永久总量300GB，限速600Mbps；重购与剩余额度处理待核",
-          "checkedAt": "2026-10-17",
-          "unitPriceCnyPerGb": 0.167,
-          "sourcePage": "/posts/adaxi-review-2026/",
+          "deviceLimit": "最多5个IP；同网络多设备计1个IP",
+          "validity": "无过期日；再购重置额度，不叠加余量",
+          "checkedAt": "2026-09-23",
+          "unitPriceCnyPerGb": 0.346,
+          "sourcePage": "/posts/xsus-review-2026/",
           "currency": "CNY",
           "billing": "one-off"
         },
-        "url": "https://yp7.net/posts/adaxi-review-2026/"
+        "url": "https://yp7.net/posts/xsus-review-2026/"
       }
     ],
     "all": [

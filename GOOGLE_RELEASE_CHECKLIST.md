@@ -6,7 +6,9 @@
 
 | URL | 决策 | 发布状态与理由 |
 | --- | --- | --- |
-| `/rankings/sales/` | 301 | 独立销量榜已合并到 `/posts/jichang-heji/`；旧 URL 永久跳转到机场大全，目标页保持 200、index/follow、自引用 canonical 和 Sitemap 收录 |
+| `/posts/jichang/` | 保留并索引 | 合并精选推荐、全部机场价格和品牌资料；目标为 200、自引用 canonical 和 Sitemap 收录 |
+| `/posts/jichang-tuijian/`、`/posts/jichang-tuijian`、`/posts/jichang-heji/`、`/posts/jichang-heji` | 301 | 旧推荐与合集地址直接跳转到 `/posts/jichang/`，不生成旧页或 HTML 跳转 |
+| `/rankings/sales/` | 301 | 独立销量榜直接跳转到统一机场推荐页 `/posts/jichang/`，目标页保持 200、index/follow、自引用 canonical 和 Sitemap 收录 |
 | `/rankings/sales` | 404 | 当前托管层没有无尾斜杠规则；该形式不作为规范 URL，也不加入 Sitemap 或 IndexNow 重定向源列表 |
 | `/data/airports` | 保留但不索引 | 人类可读的机场数据入口；保持 200、自引用 canonical、`noindex, follow`，不加入 Sitemap |
 | `/data/rankings` | 保留但不索引 | 人类可读的榜单数据入口；保持 200、自引用 canonical、`noindex, follow`，不加入 Sitemap |
@@ -17,7 +19,7 @@
 | `/data/*/` | 308 | 托管层统一到对应的无尾斜杠 HTML canonical |
 | `/llms.txt` | 删除 | 发布后返回 404，并加入 IndexNow 删除 URL；Google Search 明确忽略 LLMS.txt |
 
-当前 SEO 内容入口是首页、机场推荐、机场大全、场景榜单、风险监测、机场资料页和教程页。`/data/*` 只作为公开数据与引用入口，不参与页面型 SEO；在 Search Console 数据完成前，不改变上述索引策略，也不删除 JSON/Markdown 数据入口。
+当前 SEO 内容入口是首页、统一机场推荐、场景榜单、风险监测、机场资料页和教程页。`/data/*` 只作为公开数据与引用入口，不参与页面型 SEO；在 Search Console 数据完成前，不改变上述索引策略，也不删除 JSON/Markdown 数据入口。
 
 ## 标题与自然搜索表达
 
@@ -57,15 +59,17 @@ Search Console 的效果报告支持 90 天日期过滤；Links 报告是 Google
 
 ## 发布后复核
 
-- [ ] Sitemap 包含首页、`/posts/jichang-tuijian/`、`/posts/jichang-heji/`、当前场景榜单和全部可见机场资料页。
+- [ ] Sitemap 包含首页、统一机场推荐页 `/posts/jichang/`、当前场景榜单和全部可见机场资料页。
 - [ ] Sitemap 不包含 `/rankings/sales/`、`/data/*`、重定向源、永久删除 URL 或其他 noindex 页面。
-- [ ] `/rankings/sales/` 返回 301，Location 指向 `/posts/jichang-heji/`；无尾斜杠 `/rankings/sales` 当前返回 404。
+- [ ] 旧推荐与合集的有、无尾斜杠地址均返回 301，Location 直接指向 `/posts/jichang/`；旧页不在 Sitemap 中。
+- [ ] 合并页保留 `#机场价格总表`、品牌索引和原合集各品牌锚点，旧带锚点链接可继续定位。
+- [ ] `/rankings/sales/` 返回 301，Location 直接指向 `/posts/jichang/`；无尾斜杠 `/rankings/sales` 当前返回 404。
 - [ ] 三个无扩展名 `/data/*` HTML 页面返回 200，使用自引用 canonical 和 `noindex, follow`。
 - [ ] 三个 `/data/*.html` 返回 308，Location 指向对应无扩展名 canonical。
 - [ ] 三个 `/data/*/` 返回 308，Location 指向对应无尾斜杠 canonical。
 - [ ] 三个 JSON 和三个 Markdown 数据入口保持 200，并能从对应数据 HTML 页面访问。
 - [ ] `/llms.txt` 返回 404，且不在 Sitemap、构建产物或仓库 public 目录中。
-- [ ] 在 URL Inspection 抽查机场推荐、机场大全、一个场景榜、一个机场资料页、一个 noindex 数据页、一个重定向源和 `/llms.txt`。
+- [ ] 在 URL Inspection 抽查统一机场推荐、一个场景榜、一个机场资料页、一个 noindex 数据页、一个重定向源和 `/llms.txt`。
 - [ ] 发布后第 7、14、28 天使用相同口径比较点击、展现、CTR 和平均排名；没有实际数据时不下排名结论。
 
 ## Google 官方依据

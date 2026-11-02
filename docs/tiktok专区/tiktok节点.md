@@ -116,7 +116,7 @@ IEPL、IPLC 或中转描述本身不能保证平台可用性；“干净 IP”�
 
 ## 相关阅读
 
-- [机场推荐（2026更新）](/posts/jichang-tuijian/)
-- [机场大全（2026更新）](/posts/jichang-heji/)
+- [机场推荐（2026更新）](/posts/jichang/)
+- [全部机场价格（2026更新）](/posts/jichang/#机场价格总表)
 - [机场节点地区怎么选](/posts/proxy-node-region-guide/)
 - [Clash 订阅导入失败排查](/posts/clash-subscription-troubleshooting/)

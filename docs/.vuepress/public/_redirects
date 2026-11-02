@@ -30,26 +30,30 @@
 /posts/what-is-vpn/ /posts/vpn-guide-2026/ 301
 
 # 旧机场内容与榜单页
-/rankings/stable/ /posts/jichang-tuijian/ 301
-/rankings/sales/ /posts/jichang-heji/ 301
-/rankings/all/ /posts/jichang-heji/ 301
-/posts/airport-recommend-2026/ /posts/jichang-tuijian/ 301
+/posts/jichang-tuijian/ /posts/jichang/ 301
+/posts/jichang-tuijian /posts/jichang/ 301
+/posts/jichang-heji/ /posts/jichang/ 301
+/posts/jichang-heji /posts/jichang/ 301
+/rankings/stable/ /posts/jichang/ 301
+/rankings/sales/ /posts/jichang/ 301
+/rankings/all/ /posts/jichang/ 301
+/posts/airport-recommend-2026/ /posts/jichang/ 301
 /posts/airport-recommend-2026-best/ /posts/guangnianti-review-2026/ 301
-/posts/airport-list-2026/ /posts/jichang-heji/ 301
+/posts/airport-list-2026/ /posts/jichang/ 301
 /posts/echo-review-2026/ /risk-monitor/ 301
 /posts/flybit-seo/ /posts/flybit-review-2026/ 301
 /posts/guangnianti/ /posts/guangnianti-review-2026/ 301
-/posts/jichangtuijian/ /posts/jichang-tuijian/ 301
+/posts/jichangtuijian/ /posts/jichang/ 301
 /posts/kuaiche/ /posts/wangji-kuaiche-review/ 301
-/posts/low-latency-vpn-guide-2026/ /posts/jichang-tuijian/ 301
-/posts/premium-airport/ /posts/jichang-tuijian/ 301
+/posts/low-latency-vpn-guide-2026/ /posts/jichang/ 301
+/posts/premium-airport/ /posts/jichang/ 301
 /posts/runway-review/ /posts/runway-review-2026/ 301
 /posts/sogo-airport-review-2026/ /posts/sogo-review-2026/ 301
 /posts/u1s1/ /posts/u1s1-review-2026/ 301
-/posts/vpn-airport-ranking-2026/ /posts/jichang-tuijian/ 301
-/posts/vpn2/ /posts/jichang-tuijian/ 301
+/posts/vpn-airport-ranking-2026/ /posts/jichang/ 301
+/posts/vpn2/ /posts/jichang/ 301
 /posts/vpn5/ /posts/ssone/ 301
-/posts/vpnsum/ /posts/jichang-tuijian/ 301
+/posts/vpnsum/ /posts/jichang/ 301
 
 # 数据页的旧 .html 形式统一到无扩展名 canonical
 /data/airports.html /data/airports 308

@@ -2,8 +2,8 @@
 <main>
 <div class="intro"><span class="eyebrow">按设备选择工具，再导入订阅</span><h1>科学上网工具下载与客户端安装</h1><p>按 Android、iPhone、Mac、Windows 选择客户端，查看安装教程，再导入机场订阅并验证节点连接。</p></div>
 <nav class="home-paths" aria-label="选择访问方向">
-<a class="route-card" href="/posts/jichang-tuijian/"><strong>选机场</strong><span>比较7款候选的价格、试用与限制 →</span></a>
-<a class="route-card" href="/posts/jichang-heji/"><strong>查全部资料</strong><span>查询机场套餐、客户端与风险状态 →</span></a>
+<a class="route-card" href="/posts/jichang/"><strong>选机场</strong><span>比较7款候选的价格、试用与限制 →</span></a>
+<a class="route-card" href="/posts/jichang/#机场价格总表"><strong>查全部资料</strong><span>查询机场套餐、客户端与风险状态 →</span></a>
 <a class="route-card" href="#download"><strong>已有订阅，安装工具</strong><span>按设备下载客户端，再导入配置 ↓</span></a>
 </nav>
 <section aria-labelledby="download"><div class="stephead"><span class="number">1</span><h2 id="download">选择你的设备</h2><small>GitHub 发布 · 备用下载</small></div>
@@ -14,7 +14,7 @@
 <article class="device"><h3>Windows</h3><span class="sub">台式机 / 笔记本</span><div class="client">FlClash</div><p class="hint">核对系统版本与处理器架构<br>选择对应的 Windows 安装包</p><a class="download" target="_blank" rel="noopener" href="https://github.com/chen08209/FlClash/releases/latest">GitHub下载 ↗</a><a class="download" target="_blank" rel="noopener nofollow" href="https://flclash.cc/download">备用下载 ↗</a><a class="guide" href="/posts/flclash-guide-2026/#windows安装">查看安装教程</a></article>
 </div><p class="note">优先使用 GitHub 发布页，项目说明见<a href="https://github.com/chen08209/FlClash" target="_blank" rel="noopener">FlClash 官方仓库</a>。GitHub 下载较慢时可尝试备用入口，下载前核对版本和设备架构；本站未核验备用安装包与国内下载速度。</p></section>
 <div class="connector" aria-hidden="true"></div>
-<section aria-labelledby="subscribe"><div class="stephead"><span class="number">2</span><h2 id="subscribe">获取订阅，导入客户端</h2><span class="more-airports">比较套餐与购买限制：<a href="/posts/jichang-tuijian/"><strong>2026机场推荐：7款机场优缺点对比</strong></a> · <a href="/posts/jichang-heji/">机场资料合集 →</a></span></div>
+<section aria-labelledby="subscribe"><div class="stephead"><span class="number">2</span><h2 id="subscribe">获取订阅，导入客户端</h2><span class="more-airports">比较套餐与购买限制：<a href="/posts/jichang/"><strong>2026机场推荐：7款机场优缺点对比</strong></a> · <a href="/posts/jichang/#机场价格总表">全部机场价格与资料 →</a></span></div>
 <div class="flybit"><div><h3>Flybit</h3><p><strong>注册可试用 1 天 2GB。</strong></p><p>通过官网导航注册账号，获取订阅后导入客户端。</p></div><div><a class="cta" target="_blank" rel="sponsored nofollow noopener" href="https://goflybit.com/#/register?code=p3DOcgzt">前往 Flybit 官网导航 ↗</a><span class="invite">邀请码：p3DOcgzt · 链接已携带</span></div></div>
 <ol class="workflow"><li><strong>注册账号</strong><p>从导航页进入官网并注册，核对 1 天 2GB 试用是否到账及有效期。</p></li><li><strong>获取订阅</strong><p>在后台查看体验套餐，复制 Clash / Mihomo 格式订阅。</p></li><li><strong>导入配置</strong><p>回到客户端，在配置或订阅管理中添加链接，更新并启用配置。</p></li><li><strong>连接节点</strong><p>选择节点并启动代理，按提示授权，打开常用网站验证连接。</p></li></ol>
 <p class="note">下载客户端不附送节点。Clash Mi 与 Flybit 的具体配置兼容性需实际验证；若导入失败，先核对订阅格式。<a href="/posts/clash-subscription-troubleshooting/">查看导入排错</a> · <a href="/posts/flybit-review-2026/">Flybit 套餐与使用说明</a><br>推广披露：通过上述链接注册或购买，本站可能获得佣金；试用、价格与套餐规则以服务后台为准。</p>

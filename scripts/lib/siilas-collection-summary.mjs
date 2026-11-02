@@ -164,7 +164,7 @@ const renderRecommendationEvidence = (collection, snapshot) => {
   renderRecommendationCoverage(collection, snapshot),
   '',
   experienceMethods
-    ? `ChatGPT、视频列是测试者当次提交的体验；Speedtest 核对吞吐与延迟，不能由测速数值推导平台可用性。已确认的 ${snapshot.methodology.experienceMethods.streaming.platform} ${snapshot.methodology.experienceMethods.streaming.quality} 缓冲观察不证明 Netflix、Disney+、TikTok、其他 AI 平台可用或长期稳定性。更细的记录见[ChatGPT证据页](/rankings/chatgpt/)和[流媒体证据页](/rankings/streaming/)。`
+    ? `ChatGPT、视频列是测试者当次提交的体验；Speedtest 核对吞吐与延迟，不能由测速数值推导平台可用性。来源方法说明为 ${snapshot.methodology.experienceMethods.streaming.platform} ${snapshot.methodology.experienceMethods.streaming.quality}，未记录平台或画质的单条样本仍只称视频观察；这些记录不证明 Netflix、Disney+、TikTok、其他 AI 平台可用或长期稳定性。更细的记录见[ChatGPT证据页](/rankings/chatgpt/)和[流媒体证据页](/rankings/streaming/)。`
     : 'ChatGPT、视频列是测试者当次提交的定性体验；Speedtest 核对吞吐与延迟，不能由测速数值推导平台可用性。未明确平台的记录只称视频/流媒体，不扩展为 YouTube 4K、Netflix、Disney+、TikTok、其他 AI 平台或长期稳定性。更细的记录见[ChatGPT证据页](/rankings/chatgpt/)和[流媒体证据页](/rankings/streaming/)。',
   ].join('\n')
 }
@@ -264,9 +264,9 @@ const syncEvidenceColumn = (markdown, collection, snapshot, field) => {
 }
 
 export const syncSiilasCollectionArticle = (markdown, collection, snapshot) => {
-  const field = collection.pagePath === '/posts/jichang-tuijian/' ? 'main'
-    : collection.pagePath === '/rankings/chatgpt/' ? 'chatgpt'
-      : collection.pagePath === '/rankings/streaming/' ? 'streaming' : undefined
+  const field = collection.key === 'mainRecommendation' ? 'main'
+    : collection.key === 'chatgpt' ? 'chatgpt'
+      : collection.key === 'streaming' ? 'streaming' : undefined
   if (!field) throw new Error(`不支持的 Siilas 合集：${collection.pagePath}`)
   const dateModified = getSiilasArticleDateModified(markdown, snapshot.receivedAt)
   let next = syncEvidenceColumn(markdown, collection, snapshot, field)

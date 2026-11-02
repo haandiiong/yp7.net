@@ -21,10 +21,10 @@ test('homepage omits a singleton breadcrumb while article and review trails reta
 
   for (const [path, title, source, expected] of [
     ['/posts/example/', '教程', '科学上网专区/example.md', ['首页', '使用教程', '教程']],
-    ['/posts/flybit-review-2026/', 'Flybit 评测', '机场评测/flybit.md', ['首页', '机场大全', 'Flybit 评测']],
+    ['/posts/flybit-review-2026/', 'Flybit 评测', '机场评测/flybit.md', ['首页', '机场推荐', 'Flybit 评测']],
     ['/posts/naiyun-review-2026/', '奈云风险记录', '机场评测/奈云.md', ['首页', '风险监测', '奈云风险记录']],
     ['/posts/jichang-buying-guide/', '购买教程', '机场推荐/机场购买教程.md', ['首页', '使用教程', '购买教程']],
-    ['/posts/jichang-heji/', '机场大全', '机场推荐/机场合集.md', ['首页', '机场大全']],
+    ['/posts/jichang/', '机场推荐', '机场推荐/机场推荐.md', ['首页', '机场推荐']],
     ['/guides/', '使用教程', '使用教程/index.md', ['首页', '使用教程']],
   ]) {
     const breadcrumbs = graphFor(path, title, source).filter((item) => item['@type'] === 'BreadcrumbList')
@@ -41,7 +41,7 @@ test('every airport keeps its route and belongs to the directory or risk records
   for (const airport of airportData) {
     const page = { path: airport.path, title: airport.name, filePathRelative: '机场评测/example.md' }
     const trail = getSiteBreadcrumbs(page)
-    const parent = hiddenAirportStatuses.has(airport.status) ? '/risk-monitor/' : '/posts/jichang-heji/'
+    const parent = hiddenAirportStatuses.has(airport.status) ? '/risk-monitor/' : '/posts/jichang/'
     assert.equal(trail[1].link, parent, airport.name)
     assert.equal(trail.at(-1).link, airport.path, airport.name)
     assert.equal(trail.at(-1).current, true)
@@ -68,7 +68,7 @@ test('visible page data and JSON-LD use the same hierarchy without blog category
     assert.ok(!serialized.data.airportBrandIndex, path)
   }
 
-  const catalogue = { path: '/posts/jichang-heji/', title: '机场大全', frontmatter: {}, data: {}, content: '', contentRendered: '' }
+  const catalogue = { path: '/posts/jichang/', title: '机场大全', frontmatter: {}, data: {}, content: '', contentRendered: '' }
   extendPageWithSeo(catalogue)
   const { visibleAirportData } = loadConfig('airports.ts')
   assert.equal(catalogue.data.airportBrandIndex.length, visibleAirportData.length)

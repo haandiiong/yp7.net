@@ -157,9 +157,9 @@ test('the receipt CLI handles published historical additions and repeated --chec
   writeFileSync(join(projectDir, 'docs/.vuepress/config/airports.ts'), "export const airportDataLastModified = '2026-10-07'\n")
   writeFileSync(join(projectDir, 'docs/机场评测/a.md'), '---\npermalink: /posts/a/\ndateModified: 2026/10/07\n---\n\n## 官网\n')
   const collections = {
-    mainRecommendation: { pagePath: '/posts/jichang-tuijian/', sourceFile: 'docs/机场推荐/机场推荐.md', heading: '## 2026机场推荐对比' },
-    chatgpt: { pagePath: '/rankings/chatgpt/', sourceFile: 'docs/机场榜单/ChatGPT机场榜.md', heading: '## ChatGPT机场候选' },
-    streaming: { pagePath: '/rankings/streaming/', sourceFile: 'docs/机场榜单/流媒体机场榜.md', heading: '## 流媒体机场候选' },
+    mainRecommendation: { key: 'mainRecommendation', pagePath: '/posts/jichang/', sourceFile: 'docs/机场推荐/机场推荐.md', heading: '## 2026机场推荐对比' },
+    chatgpt: { key: 'chatgpt', pagePath: '/rankings/chatgpt/', sourceFile: 'docs/机场榜单/ChatGPT机场榜.md', heading: '## ChatGPT机场候选' },
+    streaming: { key: 'streaming', pagePath: '/rankings/streaming/', sourceFile: 'docs/机场榜单/流媒体机场榜.md', heading: '## 流媒体机场候选' },
   }
   for (const collection of Object.values(collections)) collection.items = [{ name: 'a', path: '/posts/a/' }]
   writeFileSync(join(projectDir, 'docs/.vuepress/config/airport-collections.ts'), `export const airportCollections = ${JSON.stringify(collections)}\n`)

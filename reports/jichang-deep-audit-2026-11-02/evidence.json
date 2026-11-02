@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-02",
+  "scope": "current local article; existing source records; no new provider verification",
+  "noExpiry": {
+    "renderedRows": 34,
+    "expected": 40,
+    "missing": [
+      "九云",
+      "阿达西",
+      "唯兔云",
+      "uuone",
+      "XSUS",
+      "二猫云"
+    ]
+  },
+  "otherCategories": {
+    "trial": 11,
+    "dedicatedClient": 39
+  },
+  "technical": {
+    "newPageStatus": 200,
+    "canonical": "https://yp7.net/posts/jichang/",
+    "h1": 1,
+    "duplicateIds": 0,
+    "brokenFragments": 0,
+    "oldRoutes": "301 single hop in local Cloudflare Pages runtime",
+    "itemLists": [
+      7,
+      57
+    ]
+  },
+  "desktop": {
+    "width": 1280,
+    "height": 720,
+    "firstComparisonY": 943,
+    "choiceGuideY": 26457,
+    "rationaleY": 27510,
+    "bodyHeight": 38725,
+    "visibleMainTextCharacters": 21420,
+    "totalMainTextCharacters": 71315
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "firstComparisonY": 1389,
+    "choiceGuideY": 35212,
+    "rationaleY": 36777,
+    "bodyHeight": 55377,
+    "horizontalOverflow": false
+  },
+  "document": {
+    "elements": 6311,
+    "tables": 90,
+    "tableRows": 727,
+    "headings": 184,
+    "details": 70
+  },
+  "performanceNote": "Local byte/DOM measurements only; no field Core Web Vitals or Google ranking conclusion."
+}

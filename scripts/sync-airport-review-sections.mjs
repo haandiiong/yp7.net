@@ -68,7 +68,7 @@ const scenarioLabels = {
 }
 
 const scenarioRankingLinks = {
-  stable: { label: '机场推荐', link: '/posts/jichang-tuijian/' },
+  stable: { label: '机场推荐', link: '/posts/jichang/' },
   cheap: { label: '低价机场榜', link: '/rankings/cheap/' },
   clash: { label: 'Clash机场榜', link: '/rankings/clash/' },
   chatgpt: { label: 'ChatGPT机场榜', link: '/rankings/chatgpt/' },
@@ -179,7 +179,7 @@ export const renderEvidenceSection = (airport, airportDataLastReviewed, displayN
 
 const membershipLabels = {
   mainRecommendation: '机场推荐',
-  all: '机场大全',
+  all: '机场推荐',
   cheap: '低价机场榜',
   clash: 'Clash机场榜',
   chatgpt: 'ChatGPT机场榜',
@@ -191,12 +191,12 @@ const membershipLabels = {
 
 export const getAirportMembershipLinks = (airport, collections, hiddenAirportStatuses) => {
   if (hiddenAirportStatuses.has(airport.status)) return [{ label: '机场风险监测', link: '/risk-monitor/' }]
-  return [
+  return uniqueLinks([
     ...Object.entries(collections)
       .filter(([_key, collection]) => collection.pagePath && collection.items.some((item) => normalizeRoute(item.path) === normalizeRoute(airport.path)))
       .map(([key, collection]) => ({ label: membershipLabels[key] || collection.dataTitle, link: collection.pagePath })),
     { label: '机场风险监测', link: '/risk-monitor/' },
-  ]
+  ])
 }
 
 const renderMembershipSection = (airport, hiddenAirportStatuses, collections) => {
@@ -225,8 +225,8 @@ const renderRelatedSection = (airport, relatedAirportsByPath, displayNameByPath,
       renderMarkdownLinks([
         { label: '机场风险监测', link: '/risk-monitor/' },
         { label: '机场推荐方法与测试数据来源', link: '/methodology/' },
-        { label: '机场推荐：2026场景筛选与风险提示', link: '/posts/jichang-tuijian/' },
-        { label: '机场大全：价格、流量、试用与风险状态', link: '/posts/jichang-heji/' },
+        { label: '机场推荐：2026场景筛选与风险提示', link: '/posts/jichang/' },
+        { label: '机场价格总表：流量、试用与风险状态', link: '/posts/jichang/#机场价格总表' },
       ]),
     ].join('\n')
   }
@@ -242,9 +242,9 @@ const renderRelatedSection = (airport, relatedAirportsByPath, displayNameByPath,
     ))
 
   const links = uniqueLinks([
-    { label: '机场推荐：2026场景筛选与风险提示', link: '/posts/jichang-tuijian/' },
+    { label: '机场推荐：2026场景筛选与风险提示', link: '/posts/jichang/' },
     primaryScenarioLink,
-    { label: '机场大全：价格、流量、试用与风险状态', link: '/posts/jichang-heji/' },
+    { label: '机场价格总表：流量、试用与风险状态', link: '/posts/jichang/#机场价格总表' },
     { label: '机场风险监测', link: '/risk-monitor/' },
     { label: '机场推荐方法与测试数据来源', link: '/methodology/' },
     ...peerAirports.map((item) => ({

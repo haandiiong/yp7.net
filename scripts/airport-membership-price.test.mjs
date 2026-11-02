@@ -16,8 +16,9 @@ test('Siilas-recorded airports join both evidence pages without changing other c
   assert.ok(!paths.includes('/rankings/clash/'))
   assert.ok(paths.includes('/rankings/chatgpt/'))
   assert.ok(paths.includes('/rankings/streaming/'))
-  assert.ok(!paths.includes('/posts/jichang-tuijian/'))
-  assert.ok(paths.includes('/posts/jichang-heji/'))
+  assert.ok(airportCollections.mainRecommendation.items.some((item) => item.path === airport.path))
+  assert.ok(paths.includes('/posts/jichang/'))
+  assert.equal(paths.filter((path) => path === '/posts/jichang/').length, 1)
   assert.ok(paths.includes('/rankings/cheap/'))
   assert.ok(paths.includes('/rankings/no-expiry/'))
 })
@@ -29,13 +30,13 @@ test('AI and streaming scenario tags alone do not place an airport on evidence p
   const paths = membershipPaths(airport)
   assert.ok(!paths.includes('/rankings/chatgpt/'))
   assert.ok(!paths.includes('/rankings/streaming/'))
-  assert.ok(paths.includes('/posts/jichang-heji/'))
+  assert.ok(paths.includes('/posts/jichang/'))
 })
 
 test('membership follows a changed editorial collection without changing scenario tags', () => {
   const airport = byName('Flybit')
   const before = membershipPaths(airport)
-  assert.ok(before.includes('/posts/jichang-tuijian/'))
+  assert.ok(before.includes('/posts/jichang/'))
   assert.ok(before.includes('/rankings/clash/'))
   const collections = {
     ...airportCollections,
@@ -43,7 +44,8 @@ test('membership follows a changed editorial collection without changing scenari
   }
   const after = membershipPaths(airport, collections)
   assert.ok(!after.includes('/rankings/clash/'))
-  assert.ok(after.includes('/posts/jichang-tuijian/'))
+  assert.ok(after.includes('/posts/jichang/'))
+  assert.equal(after.filter((path) => path === '/posts/jichang/').length, 1)
   assert.ok(airport.scenarios.includes('clash'))
 })
 

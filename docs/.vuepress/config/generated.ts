@@ -142,7 +142,7 @@ const getAirportDataFiles = () => {
         name: 'echo',
         status: '已淘汰',
         risk: '客服失联，谨慎使用',
-        source: `${hostname}/posts/jichang-heji/`,
+        source: `${hostname}/posts/jichang/`,
       },
       ...airportData.map((airport) => ({
         name: airport.name,
@@ -509,7 +509,7 @@ export const generateAirportDataFiles = (app: any) => {
         <a href="/data/airports.md">airports.md</a>
         <a href="/data/siilas-tests.json">Siilas 原始测速与评分接收快照</a>
         <a href="/data/rankings">rankings</a>
-        <a href="/posts/jichang-heji/">机场大全</a>
+        <a href="/posts/jichang/#机场价格总表">机场价格总表</a>
         <a href="/methodology/">推荐方法</a>
       </div>
       <div class="card">${getAirportHtmlTable(data.airports)}</div>`,
@@ -527,8 +527,7 @@ export const generateAirportDataFiles = (app: any) => {
       <div class="links">
         <a href="/data/rankings.json">rankings.json</a>
         <a href="/data/rankings.md">rankings.md</a>
-        <a href="/posts/jichang-heji/">机场大全</a>
-        <a href="/posts/jichang-tuijian/">机场推荐</a>
+        <a href="/posts/jichang/">机场推荐与价格对比</a>
         <a href="/rankings/cheap/">低价机场</a>
         <a href="/rankings/trial/">免费试用</a>
         <a href="/rankings/no-expiry/">不限时套餐</a>

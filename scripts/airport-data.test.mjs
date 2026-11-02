@@ -6,15 +6,18 @@ import { dirname, join, resolve } from 'node:path'
 import test from 'node:test'
 import { pathToFileURL } from 'node:url'
 import { loadConfig } from './lib/load-config.mjs'
+import { parseMarkdownTable, renderTable, syncAirportStatistics } from './sync-airport-tables.mjs'
 import {
   htmlTables, markdownTables, markdownTableAfterHeading,
-  validateAirportRows, validateItemList, validateServiceSchema, validateReviewEvidence,
+  validateAirportRows, getCollectionItemList, validateItemList, validateServiceSchema, validateReviewEvidence,
 } from './lib/airport-data-validation.mjs'
 
 const { airportData } = loadConfig('airports.ts')
 const { airportCollections, createAirportCollections } = loadConfig('airport-collections.ts')
 const { generateAirportDataFiles } = loadConfig('generated.ts')
 const { getPageSchema } = loadConfig('schema.ts')
+const { catalogueComparisonSections, comparisonNoticeColumn, getRecommendationPackagePrimary, getRecommendationPackageSecondary } = loadConfig('airport-comparison.ts')
+const { noExpiryColumns, getNoExpiryCells } = loadConfig('no-expiry-packages.ts')
 const replaceServiceFact = (service, name, value) => {
   service.description = service.description.split('\n').map((line) => (
     line.startsWith(`${name}：`) ? `${name}：${value}` : line
@@ -32,15 +35,46 @@ test('ChatGPT and streaming lists contain only airports with Siilas original rec
   }
 })
 
+test('the curated seven replace only the two budget-only selections while keeping the full catalogue', () => {
+  assert.deepEqual(airportCollections.mainRecommendation.items.map((airport) => airport.name), [
+    'Flybit', 'xxyun', '网际快车', '全球云', '拼好连', 'cocoduck', 'XSUS',
+  ])
+  assert.equal(airportCollections.all.items.length, 57)
+  for (const name of ['九云', '阿达西', 'cocoduck', 'XSUS']) {
+    assert.ok(airportCollections.all.items.some((airport) => airport.name === name), `${name} must remain in the catalogue`)
+  }
+  const snapshot = JSON.parse(readFileSync('docs/.vuepress/config/data/siilas-tests.json', 'utf8'))
+  for (const airport of airportCollections.mainRecommendation.items) {
+    assert.ok(snapshot.airports.some((record) => record.yp7Path === airport.path && record.tests.length > 0), `${airport.name}: missing dated source records`)
+  }
+})
+
 test('page candidates, public collections and Schema preserve the editorial names and order', () => {
   for (const collection of Object.values(airportCollections).filter((item) => item.sourceFile)) {
     const source = readFileSync(collection.sourceFile, 'utf8')
     const rows = markdownTableAfterHeading(source, collection.heading)
     const page = { path: collection.pagePath, title: collection.name, frontmatter: {}, data: {}, content: source }
-    const schema = getPageSchema(page)['@graph'].find((item) => item['@type'] === 'ItemList')
+    const schema = getCollectionItemList(getPageSchema(page)['@graph'], collection)
     assert.deepEqual(rows.map((row) => row.cells['机场']), collection.items.map((airport) => airport.name))
     assert.deepEqual(validateItemList(schema, collection.items, collection.pagePath, undefined, collection.ordered), [])
   }
+})
+
+test('merged recommendation page preserves both independently ordered ItemLists', () => {
+  const main = airportCollections.mainRecommendation
+  const all = airportCollections.all
+  assert.equal(main.pagePath, all.pagePath)
+  assert.equal(main.sourceFile, all.sourceFile)
+  const graph = getPageSchema({ path: main.pagePath, frontmatter: {}, data: {}, content: '' })['@graph']
+  const lists = graph.filter((item) => item['@type'] === 'ItemList')
+  assert.equal(lists.length, 2)
+  assert.equal(new Set(lists.map((item) => item['@id'])).size, 2)
+  for (const collection of [main, all]) {
+    const list = getCollectionItemList(lists, collection)
+    assert.deepEqual(validateItemList(list, collection.items, collection.key, undefined, collection.ordered), [])
+  }
+  const missingCatalogue = lists.filter((item) => item !== getCollectionItemList(lists, all))
+  assert.deepEqual(validateItemList(getCollectionItemList(missingCatalogue, all), all.items, 'all'), ['all: missing ItemList'])
 })
 
 test('price changes use the same record and hidden services disappear from all collections', () => {
@@ -103,8 +137,7 @@ for (const status of ['停止推荐', '已淘汰', '下架']) {
     assert.equal(risk.status, status, 'the retired service remains available in risk monitoring')
     const { getPageSchema: getFixturePageSchema } = loadFixtureConfig('schema.ts')
     const main = collections.mainRecommendation
-    const schema = getFixturePageSchema({ path: main.pagePath, frontmatter: {}, data: {}, content: '' })['@graph']
-      .find((item) => item['@type'] === 'ItemList')
+    const schema = getCollectionItemList(getFixturePageSchema({ path: main.pagePath, frontmatter: {}, data: {}, content: '' })['@graph'], main)
     assert.deepEqual(validateItemList(schema, main.items, main.pagePath, undefined, main.ordered), [])
   })
 }
@@ -320,10 +353,34 @@ test('table sync updates compact recommendation facts and preserves every editor
     'docs/风险监测/机场风险监测.md', 'docs/.vuepress/config/airports.ts',
   ])) copySource(file)
   const rows = collection.items.map((airport) => `| [${airport.name}](#${airport.name.toLowerCase()}) | 人工场景 | 旧价格；旧试用<br>另有备用包；折扣需核对<br>第二条说明 | 旧客户端<br>入门限制需核对 | 人工测试依据 |`)
-  copySource(collection.sourceFile, `<!-- recommendation-scope:start -->\n旧数量\n<!-- recommendation-scope:end -->\n\n${collection.heading}\n\n| 机场 | 适用场景 | 套餐与试用 | 客户端与限制 | 测试依据 |\n|---|---|---|---|---|\n${rows.join('\n')}\n`)
+  const original = readFileSync(collection.sourceFile, 'utf8')
+  const lines = original.replace(/<!-- recommendation-scope:start -->[\s\S]*?<!-- recommendation-scope:end -->/, '<!-- recommendation-scope:start -->\n旧数量\n<!-- recommendation-scope:end -->').split('\n')
+  const headingIndex = lines.findIndex((line) => line === collection.heading)
+  const tableStart = lines.findIndex((line, index) => index > headingIndex && line.startsWith('|'))
+  let tableEnd = tableStart
+  while (lines[tableEnd]?.startsWith('|')) tableEnd += 1
+  lines.splice(tableStart, tableEnd - tableStart,
+    '| 机场 | 适用场景 | 套餐与试用 | 客户端与限制 | 测试依据 |', '|---|---|---|---|---|', ...rows)
+  for (const section of catalogueComparisonSections) {
+    const heading = lines.findIndex((line) => line === section.heading)
+    const start = lines.findIndex((line, index) => index > heading && line.startsWith('|'))
+    let end = start
+    while (lines[end]?.startsWith('|')) end += 1
+    if (section.key === 'noExpiry') lines.splice(start + 2 + 34, end - start - 2 - 34)
+    if (section.key === 'trial') lines.splice(end - 1, 1)
+    if (section.key === 'dedicatedClient') {
+      const hidden = lines.findIndex((line, index) => index > start && index < end && line.startsWith('| [隐云]('))
+      assert.ok(hidden > 0)
+      lines[hidden] = lines[hidden].replace(/^(\| \[隐云\]\([^)]*\) \|)[^|]*\|/, '$1 29元/季<br>需首购季付确认 |')
+    }
+  }
+  copySource(collection.sourceFile, lines.join('\n'))
   const synced = spawnSync(process.execPath, [resolve('scripts/sync-airport-tables.mjs')], { cwd: dest, encoding: 'utf8' })
   assert.equal(synced.status, 0, synced.stderr)
   const source = readFileSync(join(dest, collection.sourceFile), 'utf8')
+  const scope = source.match(/<!-- recommendation-scope:start -->[\s\S]*?<!-- recommendation-scope:end -->/)[0]
+  assert.match(scope, /证据覆盖：7\/7款均有/)
+  assert.ok(!scope.includes('0款暂无'))
   const result = markdownTableAfterHeading(source, collection.heading)
   assert.deepEqual(validateAirportRows(result, collection.items, 'synced', { sectionLinks: true }), [])
   for (const row of result) {
@@ -332,8 +389,95 @@ test('table sync updates compact recommendation facts and preserves every editor
     assert.equal(row.cells['适用场景'], '人工场景')
     assert.equal(row.cells['测试依据'], '人工测试依据')
   }
+  const withoutNotice = (rows) => rows.map((row) => ({
+    cells: Object.fromEntries(Object.entries(row.cells).filter(([column]) => column !== comparisonNoticeColumn)), href: row.href,
+  }))
+  assert.deepEqual(withoutNotice(markdownTableAfterHeading(source, airportCollections.all.heading)), withoutNotice(markdownTableAfterHeading(original, airportCollections.all.heading)), 'updating the selected seven must preserve the catalogue facts in the same file')
+  assert.deepEqual(validateAirportRows(markdownTableAfterHeading(source, airportCollections.all.heading), airportCollections.all.items, 'catalogue', { sectionLinks: true, comparisonNotice: true }), [])
+  for (const section of catalogueComparisonSections) {
+    const rows = markdownTableAfterHeading(source, section.heading)
+    const expected = airportCollections[section.key].items
+    assert.deepEqual(rows.map((row) => row.cells['机场']), expected.map((airport) => airport.name), section.heading)
+    assert.deepEqual(validateAirportRows(rows, expected, section.heading, { sectionLinks: true, comparisonNotice: section.notice }), [])
+    if (section.key === 'noExpiry') {
+      assert.deepEqual(Object.keys(rows[0].cells), noExpiryColumns)
+      for (const [index, airport] of expected.entries()) {
+        assert.deepEqual(noExpiryColumns.slice(1).map((column) => rows[index].cells[column]), getNoExpiryCells(airport.path))
+      }
+    }
+    if (section.key === 'dedicatedClient') {
+      const hidden = rows.find((row) => row.cells['机场'] === '隐云')
+      assert.match(hidden.cells['最低价格'], /首购季付起/)
+      assert.ok(hidden.rawCells['最低价格'].endsWith('<br>需首购季付确认'))
+    }
+  }
   const checked = spawnSync(process.execPath, [resolve('scripts/sync-airport-tables.mjs'), '--check'], { cwd: dest, encoding: 'utf8' })
   assert.equal(checked.status, 0, checked.stderr)
+})
+
+test('recommendation package validation keeps the low-frequency bundle separate from its daily alternative', () => {
+  const airport = airportData.find((item) => item.name === '网际快车')
+  assert.equal(airport.priceText, '28元/30天')
+  const first = getRecommendationPackagePrimary(airport)
+  const second = getRecommendationPackageSecondary(airport)
+  assert.equal(first, '低频备用：6.8元/次，20GB总量；支持试用')
+  assert.equal(second, '日享备选：28元/30天，60GB/日（每日重置）')
+  const markdown = `| 机场 | 套餐与试用 |\n|---|---|\n| [网际快车](${airport.path}) | ${first}<br>${second}<br>人工试用条件保持 |\n`
+  const html = `<table><tr><th>机场</th><th>套餐与试用</th></tr><tr><td><a href="${airport.path}">网际快车</a></td><td>${first}<br>${second}<br>人工试用条件保持</td></tr></table>`
+  for (const [text, parse] of [[markdown, markdownTables], [html, htmlTables]]) {
+    assert.deepEqual(validateAirportRows(parse(text)[0], [airport], 'bundle'), [])
+    assert.ok(validateAirportRows(parse(text.replace('6.8元/次', '28元/月'))[0], [airport], 'bundle').some((error) => error.includes('套餐与试用 differs')))
+    assert.ok(validateAirportRows(parse(text.replace(second, '旧日享报价'))[0], [airport], 'bundle').some((error) => error.includes('daily alternative')))
+  }
+})
+
+test('comparison warnings require their dated notice and its source without changing airport identity', () => {
+  const airport = airportData.find((item) => item.name === '99吧')
+  const warning = '10月17日读取线路波动公告，现状未复核'
+  const markdown = `| 机场 | 近期提示 |\n|---|---|\n| [99吧](#_99吧) | ${warning}；[查看资料](${airport.path}) |\n`
+  const html = `<table><tr><th>机场</th><th>近期提示</th></tr><tr><td><a href="#_99吧">99吧</a></td><td>${warning}；<a href="${airport.path}">查看资料</a></td></tr></table>`
+  for (const [text, parse] of [[markdown, markdownTables], [html, htmlTables]]) {
+    assert.deepEqual(validateAirportRows(parse(text)[0], [airport], 'warning', { sectionLinks: true, comparisonNotice: true }), [])
+    assert.ok(validateAirportRows(parse(text.replace(warning, '服务正常'))[0], [airport], 'warning', { sectionLinks: true, comparisonNotice: true }).some((error) => error.includes('近期提示 differs')))
+    assert.ok(validateAirportRows(parse(text.replace(airport.path, '/posts/other/'))[0], [airport], 'warning', { sectionLinks: true, comparisonNotice: true }).some((error) => error.includes('近期提示 differs')))
+  }
+})
+
+test('client comparison corrects stale prices while retaining quarter-start and editorial conditions', () => {
+  const airport = airportData.find((item) => item.name === '隐云')
+  const table = parseMarkdownTable([
+    '| 机场 | 最低价格 | 不限时套餐 | 通用订阅 |', '|---|---|---|---|',
+    '| [隐云](#隐云) | 29元/季<br>首购季付条件请先确认 | ❌ | ✔ |',
+  ], 0)
+  const rendered = renderTable(table, [airport], { sectionLinks: true })
+  const row = markdownTables(`${rendered}\n`)[0][0]
+  assert.ok(row.rawCells['最低价格'].startsWith(airport.priceText))
+  assert.match(row.rawCells['最低价格'], /首购季付起/)
+  assert.ok(row.rawCells['最低价格'].endsWith('<br>首购季付条件请先确认'))
+  assert.deepEqual(validateAirportRows([row], [airport], 'client', { sectionLinks: true }), [])
+})
+
+test('current statistics follow changed source prices and counts without changing review dates or surrounding prose', () => {
+  const { getAirportPriceMetrics } = loadConfig('airports.ts')
+  const airports = [{ price: 3, regularPrice: 12 }, { price: 6 }]
+  const metrics = {
+    count: airports.length, trialCount: 1, noExpiryCount: 1, noExpiryUnverifiedCount: 0,
+    dedicatedClientCount: 1, universalSubscriptionCount: 2, ...getAirportPriceMetrics(airports),
+  }
+  const before = '商业资料复核：2026-08-19\n<!-- airport-statistics:start -->旧统计<!-- airport-statistics:end -->\n人工补充保持。'
+  const synced = syncAirportStatistics(before, metrics, '2026-08-19')
+  assert.match(synced, /当前收录机场数量：2/)
+  assert.match(synced, /平均首次入门参考价：4.5元/)
+  assert.match(synced, /平均常规持续套餐参考价：9元/)
+  assert.match(synced, /支持试用比例：50%/)
+  assert.match(synced, /支持通用订阅比例：100%/)
+  const updated = syncAirportStatistics(synced, { ...metrics, ...getAirportPriceMetrics([{ price: 12 }, { price: 6 }]) }, '2026-08-19')
+  assert.match(updated, /平均首次入门参考价：9元/)
+  assert.match(updated, /首次入门参考价低于10元：1家/)
+  const outside = (text) => text.replace(/<!-- airport-statistics:start -->[\s\S]*?<!-- airport-statistics:end -->/, '')
+  assert.equal(outside(updated), outside(before))
+  assert.match(updated, /最近一次全量资料复核为2026-08-19/)
+  assert.equal(syncAirportStatistics('未启用统计区块'), '未启用统计区块')
 })
 
 test('Service validation detects a capability or price contradiction', () => {

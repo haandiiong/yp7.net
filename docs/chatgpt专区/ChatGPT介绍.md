@@ -70,7 +70,7 @@ ChatGPT的用途非常广泛：
 👉 很多人把它当作：
 **“超级搜索引擎 + 写作助手”**
 
-- 如果不能流畅使用 ChatGPT，可以先看 [AI工具节点选择与打不开排查指南](/posts/ai-tools-node-guide-2026/)，再参考 [2026年稳定好用的机场推荐](/posts/jichang-tuijian/)。
+- 如果不能流畅使用 ChatGPT，可以先看 [AI工具节点选择与打不开排查指南](/posts/ai-tools-node-guide-2026/)，再参考 [2026年稳定好用的机场推荐](/posts/jichang/)。
 
 ---
 
@@ -242,5 +242,5 @@ ChatGPT会直接生成内容。
 ## 相关阅读
 
 - [ChatGPT、Claude、Gemini 用什么节点？](/posts/ai-tools-node-guide-2026/)
-- [机场推荐（2026更新）](/posts/jichang-tuijian/)
-- [机场大全（2026更新）](/posts/jichang-heji/)
+- [机场推荐（2026更新）](/posts/jichang/)
+- [全部机场价格（2026更新）](/posts/jichang/#机场价格总表)

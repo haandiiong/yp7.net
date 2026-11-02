@@ -1,0 +1,14 @@
+{
+  "docs/.vuepress/config/airports.ts": {
+    "preserved": true,
+    "sha256WithoutEditorialNames": "13984f958b5e1a46276290bb57ce5a7ea6681b8769bcf28ef25950d58f857f4e"
+  },
+  "docs/.vuepress/config/no-expiry-packages.ts": {
+    "preserved": true,
+    "sha256WithoutEditorialNames": "770dceeb986e3a1a50b90052e515511a4dddace3e2c2b068fe324483f82c44f1"
+  },
+  "docs/.vuepress/config/data/siilas-tests.json": {
+    "preserved": true,
+    "sha256WithoutEditorialNames": "52a835b49a676b035d1f6aa1c695341d74811678ef19a080b89e1d305365de01"
+  }
+}

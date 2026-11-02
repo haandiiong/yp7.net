@@ -249,5 +249,5 @@ OKX采用：
 ## 相关阅读
 
 - [USDT是什么？](/posts/what-is-usdt/)
-- [机场推荐（2026更新）](/posts/jichang-tuijian/)
-- [机场大全（2026更新）](/posts/jichang-heji/)
+- [机场推荐（2026更新）](/posts/jichang/)
+- [全部机场价格（2026更新）](/posts/jichang/#机场价格总表)

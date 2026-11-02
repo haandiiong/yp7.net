@@ -1,0 +1,827 @@
+{
+  "htmlFiles": 112,
+  "checkedInternalReferences": 9287,
+  "checkedFragments": 2496,
+  "cssResourceReferences": 73,
+  "sitemapUrls": 103,
+  "issues": [],
+  "warnings": [
+    {
+      "source": "blog/index.html",
+      "kind": "h1-count",
+      "count": 0,
+      "noindex": true
+    },
+    {
+      "source": "blog/archives/index.html",
+      "kind": "h1-count",
+      "count": 0,
+      "noindex": true
+    },
+    {
+      "source": "blog/tags/index.html",
+      "kind": "h1-count",
+      "count": 0,
+      "noindex": true
+    },
+    {
+      "source": "blog/categories/index.html",
+      "kind": "h1-count",
+      "count": 0,
+      "noindex": true
+    },
+    {
+      "source": "friends/index.html",
+      "kind": "h1-count",
+      "count": 0,
+      "noindex": true
+    }
+  ],
+  "legacyInternalLinks": [],
+  "redirectChecks": [
+    {
+      "source": "/article/0gematwc/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/clash-verge-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/clash-verge-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/article/eh8f4n86/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/clash-for-android-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/clash-for-android-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/article/fanqiang/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/router-vpn-setup-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/router-vpn-setup-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/article/uu1se2y8/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/wangji-kuaiche-review/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/wangji-kuaiche-review/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/article/weituyun/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/weituyun/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/weituyun/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/article/z747kgjd/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/shadowrocket-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/shadowrocket-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/article/zf12sje8/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/adaxi-review-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/adaxi-review-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/Clash/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/clash-verge-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/clash-verge-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/OKX/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/okx-review/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/okx-review/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/okx/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/okx-review/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/okx-review/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/Shadowrocket/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/shadowrocket-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/shadowrocket-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/Telegram/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/telegram-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/telegram-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/USDT/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/what-is-usdt/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/what-is-usdt/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/cfa/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/clash-for-android-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/clash-for-android-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/clashverge/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/clash-verge-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/clash-verge-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/chatgpt/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/chatgpt-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/chatgpt-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/jieshao/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/vpn-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/vpn-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/maininfo/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/vpn-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/vpn-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/pac/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/is-vpn-or-airport-better-pros-cons-analysis/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/is-vpn-or-airport-better-pros-cons-analysis/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/ruanluyou/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/soft-router-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/soft-router-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/seo-vpn-guide-2026/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/vpn-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/vpn-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/tiktok1/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/tiktok-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/tiktok-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/tiktok2/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/tiktok-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/tiktok-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/tiktok3/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/tiktok-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/tiktok-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/vpn3/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/clash-verge-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/clash-verge-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/vpn-recommend/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/vpn-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/vpn-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/what-is-vpn/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/vpn-guide-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/vpn-guide-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/jichang-tuijian/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/jichang-tuijian",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/jichang-heji/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/jichang-heji",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/rankings/stable/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/rankings/sales/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/rankings/all/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/airport-recommend-2026/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/airport-recommend-2026-best/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/guangnianti-review-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/guangnianti-review-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/airport-list-2026/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/echo-review-2026/",
+      "expectedStatus": 301,
+      "expectedLocation": "/risk-monitor/",
+      "actual": {
+        "status": 301,
+        "location": "/risk-monitor/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/flybit-seo/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/flybit-review-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/flybit-review-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/guangnianti/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/guangnianti-review-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/guangnianti-review-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/jichangtuijian/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/kuaiche/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/wangji-kuaiche-review/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/wangji-kuaiche-review/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/low-latency-vpn-guide-2026/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/premium-airport/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/runway-review/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/runway-review-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/runway-review-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/sogo-airport-review-2026/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/sogo-review-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/sogo-review-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/u1s1/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/u1s1-review-2026/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/u1s1-review-2026/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/vpn-airport-ranking-2026/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/vpn2/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/vpn5/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/ssone/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/ssone/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/posts/vpnsum/",
+      "expectedStatus": 301,
+      "expectedLocation": "/posts/jichang/",
+      "actual": {
+        "status": 301,
+        "location": "/posts/jichang/"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/data/airports.html",
+      "expectedStatus": 308,
+      "expectedLocation": "/data/airports",
+      "actual": {
+        "status": 308,
+        "location": "/data/airports"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/data/rankings.html",
+      "expectedStatus": 308,
+      "expectedLocation": "/data/rankings",
+      "actual": {
+        "status": 308,
+        "location": "/data/rankings"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    },
+    {
+      "source": "/data/risk-monitor.html",
+      "expectedStatus": 308,
+      "expectedLocation": "/data/risk-monitor",
+      "actual": {
+        "status": 308,
+        "location": "/data/risk-monitor"
+      },
+      "targetResponse": {
+        "status": 200,
+        "location": null
+      },
+      "passed": true
+    }
+  ],
+  "deletedChecks": [
+    {
+      "path": "/article/gqs2dway/",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/article/tj38tso3/",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/llms.txt",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/posts/lesu/",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/posts/vpnres/",
+      "status": 404,
+      "location": null
+    }
+  ],
+  "sitemapHttpIssues": []
+}

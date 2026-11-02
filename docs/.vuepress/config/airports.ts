@@ -68,7 +68,7 @@ export const testingPolicyEffectiveDate = '2026-08-18'
 export const currentTestingSourceName = 'Siilas'
 export const currentTestingSourceUrl = 'https://siilas.com/test/'
 export const historicalTestingNotice = '2026-08-18 前的 yp7.net 测速与测试记录仅作为历史资料，不代表当前表现'
-export const mainRecommendationNames = ['Flybit', 'xxyun', '网际快车', '全球云', '拼好连', '九云', '阿达西'] as const
+export const mainRecommendationNames = ['Flybit', 'xxyun', '网际快车', '全球云', '拼好连', 'cocoduck', 'XSUS'] as const
 
 export const airportData: AirportData[] = [
   {

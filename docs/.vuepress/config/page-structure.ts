@@ -16,7 +16,7 @@ const getParent = (page: any): Omit<SiteBreadcrumb, 'current'> | undefined => {
   if (airport) {
     return hiddenAirportStatuses.has(airport.status)
       ? { text: '风险监测', link: '/risk-monitor/' }
-      : { text: '机场大全', link: '/posts/jichang-heji/' }
+      : { text: '机场推荐', link: '/posts/jichang/' }
   }
 
   const directory = (page.filePathRelative || '').replace(/\\/g, '/').split('/')[0]
@@ -24,9 +24,9 @@ const getParent = (page: any): Omit<SiteBreadcrumb, 'current'> | undefined => {
     return { text: '使用教程', link: '/guides/' }
   }
   if (page.path.startsWith('/rankings/')) {
-    return { text: '机场推荐', link: '/posts/jichang-tuijian/' }
+    return { text: '机场推荐', link: '/posts/jichang/' }
   }
-  if (directory === '机场评测') return { text: '机场大全', link: '/posts/jichang-heji/' }
+  if (directory === '机场评测') return { text: '机场推荐', link: '/posts/jichang/' }
 
   return undefined
 }

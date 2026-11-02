@@ -1,5 +1,5 @@
 import { airportData } from './airports'
-import { getAirportCollectionForPage } from './airport-collections'
+import { getAirportCollectionsForPage } from './airport-collections'
 import { getSiteBreadcrumbs } from './page-structure'
 import {
   getArticleSection,
@@ -152,11 +152,11 @@ const getPageExtraSchemas = (page: any, primaryPageSchemaType: string) => {
 
   if (!schema) return []
   const schemas = Array.isArray(schema) ? schema : [schema]
-  const generatedItemList = getGeneratedItemListSchema(page)
+  const generatedItemLists = getGeneratedItemListSchemas(page)
 
   return schemas
     .map(normalizeExtraSchema)
-    .filter((item) => !(generatedItemList && isSchemaObject(item) && hasSchemaType(item['@type'], 'ItemList')))
+    .filter((item) => !(generatedItemLists.length && isSchemaObject(item) && hasSchemaType(item['@type'], 'ItemList')))
     .filter((item) => !(isSchemaObject(item) && hasSchemaType(item['@type'], primaryPageSchemaType)))
 }
 
@@ -170,22 +170,18 @@ const getAirportListItem = (airport: typeof airportData[number], index: number) 
   },
 })
 
-const getGeneratedItemListSchema = (page: any) => {
-  const ranking = getAirportCollectionForPage(page.path)
-
-  if (!ranking) return undefined
-
-  return {
+const getGeneratedItemListSchemas = (page: any) => (
+  getAirportCollectionsForPage(page.path).map((ranking) => ({
     '@type': 'ItemList',
-    '@id': `${getCanonicalUrl(page.path)}#ranking`,
+    '@id': `${getCanonicalUrl(page.path)}#${ranking.key === 'all' ? 'all-airports' : 'ranking'}`,
     name: ranking.name,
     numberOfItems: ranking.items.length,
     itemListOrder: ranking.ordered
       ? 'https://schema.org/ItemListOrderAscending'
       : 'https://schema.org/ItemListUnordered',
     itemListElement: ranking.items.map(getAirportListItem),
-  }
-}
+  }))
+)
 
 const getBreadcrumbItems = (page: any) => {
   return getSiteBreadcrumbs(page).map((item, index) => ({
@@ -202,7 +198,7 @@ export const getPageSchema = (page: any) => {
   const description = getPageDescription(page)
   const primaryPageSchemaType = getPrimaryPageSchemaType(page)
   const extraSchemas = getPageExtraSchemas(page, primaryPageSchemaType)
-  const generatedItemListSchema = getGeneratedItemListSchema(page)
+  const generatedItemListSchemas = getGeneratedItemListSchemas(page)
   const image = getPageImage(page)
   const datePublished = getPageDatePublished(page)
   const dateModified = getPageDateModified(page)
@@ -298,7 +294,7 @@ export const getPageSchema = (page: any) => {
         itemListElement: breadcrumbItems,
       }] : []),
       ...getAirportServiceSchemas(page),
-      ...(generatedItemListSchema ? [generatedItemListSchema] : []),
+      ...generatedItemListSchemas,
       ...extraSchemas,
     ],
   }

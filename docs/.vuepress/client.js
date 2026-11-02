@@ -1,10 +1,12 @@
 import './theme/styles/custom.css'
-import HomeStart from './components/HomeStart.vue'
+import HomeBlog from './components/HomeBlog.vue'
 import AirportBrandIndex from './components/AirportBrandIndex.vue'
+import HashDetails from './components/HashDetails.vue'
 
 export default {
+  rootComponents: [HashDetails],
   enhance({ app }) {
-    app.component('HomeStart', HomeStart)
+    app.component('HomeBlog', HomeBlog)
     app.component('AirportBrandIndex', AirportBrandIndex)
   },
   mounted() {

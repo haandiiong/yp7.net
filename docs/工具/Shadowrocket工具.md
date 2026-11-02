@@ -91,7 +91,7 @@ Shadowrocket（小火箭）是一款按规则处理网络流量的代理客户�
 2. **再核对套餐权益。** 确认所选套餐能否取得该格式、是否要求购买后领取、设备数与流量是否够用。xxyun要求使用官方客户端，不适合作为小火箭订阅候选；只有“支持通用订阅”而缺少格式说明时，先询问服务商。
 3. **最后验收。** 有免费试用时先核对到账额度、到期时间和可用节点；否则核对退款及短周期购买条件。更新订阅后分别检查常用网页、AI或视频应用，不把导入成功当作连接验收通过。
 
-已有配置能满足需求时，可继续使用原配置；希望比较客户端、预算和试用条件时，再看[机场推荐主页面](/posts/jichang-tuijian/)。此处复用已有机场资料，未重新核价或确认新的小火箭适配结果。
+已有配置能满足需求时，可继续使用原配置；希望比较客户端、预算和试用条件时，再看[机场推荐主页面](/posts/jichang/)。此处复用已有机场资料，未重新核价或确认新的小火箭适配结果。
 
 ### 第一步：准备兼容配置
 
@@ -240,7 +240,7 @@ Shadowrocket（小火箭）是一款按规则处理网络流量的代理客户�
 
 - [已有小火箭的订阅候选与领取条件](/rankings/clash/#shadowrocket-airports)
 
-- [机场推荐（2026更新）](/posts/jichang-tuijian/)
+- [机场推荐（2026更新）](/posts/jichang/)
 - [机场是什么？节点、订阅链接和 Clash 入门](/posts/airport-node-subscription-guide/)
 - [机场节点地区怎么选](/posts/proxy-node-region-guide/)
 - [Google、YouTube、GitHub、Gmail打不开排查](/posts/google-youtube-github-gmail-not-working/)

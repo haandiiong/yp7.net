@@ -212,5 +212,5 @@ FlClash 客户端开源免费；节点、流量与套餐由你使用的服务商
 - [Clash Meta安卓安装与订阅配置](/posts/clash-for-android-guide-2026/)
 - [机场是什么：节点与订阅链接入门](/posts/airport-node-subscription-guide/)
 - [Clash订阅链接导入失败怎么办](/posts/clash-subscription-troubleshooting/)
-- [2026机场推荐：套餐、客户端与风险对比](/posts/jichang-tuijian/)
+- [2026机场推荐：套餐、客户端与风险对比](/posts/jichang/)
 - [Clash与通用订阅机场筛选](/rankings/clash/)

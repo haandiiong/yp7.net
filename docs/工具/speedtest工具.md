@@ -131,7 +131,7 @@ Mbps中的小写b表示bit，MB/s中的大写B表示Byte。按1Byte＝8bit换算
 
 ## 怎样读本站已经接收的样本
 
-[主推荐的测试证据摘要](/posts/jichang-tuijian/#测试证据摘要)列出各地区最近样本日期；[ChatGPT记录](/rankings/chatgpt/#带日期的chatgpt证据)、[流媒体记录](/rankings/streaming/)保留应用状态与原始来源；[完整接收快照](/data/siilas-tests.json)保留原始字段与发布状态。
+[主推荐的测试证据摘要](/posts/jichang/#测试证据摘要)列出各地区最近样本日期；[ChatGPT记录](/rankings/chatgpt/#带日期的chatgpt证据)、[流媒体记录](/rankings/streaming/)保留应用状态与原始来源；[完整接收快照](/data/siilas-tests.json)保留原始字段与发布状态。
 
 例如，已接收的拼好连日本节点在2026年9月23日22:39下载13.3Mbps，ChatGPT状态为“流畅”；网际快车香港2026年9月11日21:54下载662.82Mbps，ChatGPT却为“不可用”。这些带日期的记录说明两个指标不能相互替代，不能据此选出今天最快、长期最稳或所有应用都可用的机场。
 
@@ -139,7 +139,7 @@ Mbps中的小写b表示bit，MB/s中的大写B表示Byte。按1Byte＝8bit换算
 
 ## 相关阅读
 
-- [机场推荐（2026更新）](/posts/jichang-tuijian/)
+- [机场推荐（2026更新）](/posts/jichang/)
 - [Clash节点是什么？新手入门指南](/posts/clash-guide/)
 - [Clash客户端安装与配置教程](/posts/clash-verge-guide-2026/)
 - [FlClash安装、订阅导入与节点选择](/posts/flclash-guide-2026/)

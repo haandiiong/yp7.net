@@ -1,0 +1,18 @@
+{
+  "changed": [
+    "docs/机场评测/全球云.md",
+    "docs/机场评测/光年梯.md",
+    "docs/机场评测/网际快车.md",
+    "docs/机场评测/xxyun.md",
+    "docs/机场评测/flybit.md",
+    "docs/机场评测/runway.md",
+    "docs/机场评测/cocoduck.md",
+    "docs/机场评测/边缘节点.md",
+    "docs/机场评测/xsus.md",
+    "docs/机场推荐/机场推荐.md",
+    "docs/机场榜单/ChatGPT机场榜.md",
+    "docs/机场榜单/流媒体机场榜.md"
+  ],
+  "onlyChange": "Add one space after closing bold delimiter",
+  "commercialAndTestingDatesUnchanged": true
+}

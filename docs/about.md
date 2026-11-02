@@ -53,7 +53,7 @@ yp7.net 由 yp7 维护。本站负责：
 
 本站主要维护：
 
-- [机场推荐主页面](/posts/jichang-tuijian/)：场景筛选、推荐理由、套餐信息和风险提示。
+- [机场推荐主页面](/posts/jichang/)：场景筛选、推荐理由、套餐信息和风险提示。
 - 单个机场页面：官网入口、价格、流量、试用、客户端、历史记录和购买风险。
 - [机场风险监测](/risk-monitor/)：已淘汰、停止推荐、官网异常、客服失联和套餐变化。
 - Clash、Shadowrocket、ChatGPT、Telegram、TikTok、流媒体和常见故障教程。

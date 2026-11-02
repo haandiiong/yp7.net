@@ -1,0 +1,43 @@
+[
+  {
+    "name": "current content",
+    "expectError": false,
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "visible update before table",
+    "expectError": true,
+    "errors": [
+      "heji:19: comparison update records must stay inside collapsed details"
+    ],
+    "passed": true
+  },
+  {
+    "name": "details default open",
+    "expectError": true,
+    "errors": [
+      "heji:158: catalogue update details must be closed by default"
+    ],
+    "passed": true
+  },
+  {
+    "name": "comparison accidentally folded",
+    "expectError": true,
+    "errors": [
+      "heji:174: comparison tables must remain outside collapsed details"
+    ],
+    "passed": true
+  },
+  {
+    "name": "unclosed update container",
+    "expectError": true,
+    "errors": [
+      "heji:174: comparison tables must remain outside collapsed details",
+      "heji:237: comparison tables must remain outside collapsed details",
+      "heji:277: comparison tables must remain outside collapsed details",
+      "heji: unclosed container before airport details"
+    ],
+    "passed": true
+  }
+]

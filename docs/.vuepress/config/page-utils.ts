@@ -23,8 +23,7 @@ export const stripMarkdown = (content = '') => content
 
 const collectionPagePaths = new Set([
   '/guides/',
-  '/posts/jichang-tuijian/',
-  '/posts/jichang-heji/',
+  '/posts/jichang/',
   '/risk-monitor/',
 ])
 

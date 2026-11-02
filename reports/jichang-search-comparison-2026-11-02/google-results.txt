@@ -1,0 +1,398 @@
+- link "跳到主要内容"
+- link "无障碍功能帮助":
+  - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+- search:
+  - link "Google 首页":
+    - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQPHoECAYQBA
+  - combobox "搜索": 机场推荐 机场推荐
+  - button "清除":
+  - button "按语音搜索":
+  - button "按图搜索":
+- button "设置":
+- button "分享":
+- button "Google 应用":
+- link "登录":
+  - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%259C%25BA%25E5%259C%25BA%25E6%258E%25A8%25E8%258D%2590%26hl%3Dzh-CN%26pws%3D0&ec=futura_srp_og_si_72236_p
+  - generic: 登录
+- navigation:
+  - list:
+    - link "AI 模式":
+      - /url: /search?q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&udm=50&fbs=ACAhTvyLl1FT72rIIRCGeP12ubyAMeZc106Ts6vRDxSw0cITDOLf7jDsqvcGyO0hNfLDfr3Lfa3AjjFgZB76Cump2X6-_PGapzasPqy9wf33s0yaxL-CkdW9eABUiJlSgycj9rZShZJ30_VeGsmYEHPLkL0kadlAmelQTkgzBreTilJ8DRFySMPCobMKVv5JilIXJKHPeOp6AHF4z2zacdaxhZXQB4gI2g&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ2J8OegQIGRAD
+      - generic: AI 模式
+    - link "全部" [disabled]:
+      - generic: 全部
+    - link "购物":
+      - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&udm=28&fbs=ACAhTvyLl1FT72rIIRCGeP12ubyAMeZc106Ts6vRDxSw0cITDOLf7jDsqvcGyO0hNfLDfr3Lfa3AjjFgZB76Cump2X6-_PGapzasPqy9wf33s0yaxL-CkdW9eABUiJlSgycj9rZShZJ30_VeGsmYEHPLkL0kadlAmelQTkgzBreTilJ8DRFySMPCobMKVv5JilIXJKHPeOp6AHF4z2zacdaxhZXQB4gI2g&q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&ved=1t:220175&ictx=111
+      - generic: 购物
+    - link "图片":
+      - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&udm=2&fbs=ACAhTvyLl1FT72rIIRCGeP12ubyAMeZc106Ts6vRDxSw0cITDOLf7jDsqvcGyO0hNfLDfr3Lfa3AjjFgZB76Cump2X6-_PGapzasPqy9wf33s0yaxL-CkdW9eABUiJlSgycj9rZShZJ30_VeGsmYEHPLkL0kadlAmelQTkgzBreTilJ8DRFySMPCobMKVv5JilIXJKHPeOp6AHF4z2zacdaxhZXQB4gI2g&q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQtKgLegQILhAB
+      - generic: 图片
+    - link "新闻":
+      - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&tbm=nws&source=lnms&fbs=ACAhTvyLl1FT72rIIRCGeP12ubyAMeZc106Ts6vRDxSw0cITDOLf7jDsqvcGyO0hNfLDfr3Lfa3AjjFgZB76Cump2X6-_PGapzasPqy9wf33s0yaxL-CkdW9eABUiJlSgycj9rZShZJ30_VeGsmYEHPLkL0kadlAmelQTkgzBreTilJ8DRFySMPCobMKVv5JilIXJKHPeOp6AHF4z2zacdaxhZXQB4gI2g&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ0pQJegQILBAB
+      - generic: 新闻
+    - link "视频":
+      - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&udm=vids&fbs=ACAhTvyLl1FT72rIIRCGeP12ubyAMeZc106Ts6vRDxSw0cITDOLf7jDsqvcGyO0hNfLDfr3Lfa3AjjFgZB76Cump2X6-_PGapzasPqy9wf33s0yaxL-CkdW9eABUiJlSgycj9rZShZJ30_VeGsmYEHPLkL0kadlAmelQTkgzBreTilJ8DRFySMPCobMKVv5JilIXJKHPeOp6AHF4z2zacdaxhZXQB4gI2g&q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQtKgLegQIGxAB
+      - generic: 视频
+    - link "短视频":
+      - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&udm=short_vids&fbs=ACAhTvyLl1FT72rIIRCGeP12ubyAMeZc106Ts6vRDxSw0cITDOLf7jDsqvcGyO0hNfLDfr3Lfa3AjjFgZB76Cump2X6-_PGapzasPqy9wf33s0yaxL-CkdW9eABUiJlSgycj9rZShZJ30_VeGsmYEHPLkL0kadlAmelQTkgzBreTilJ8DRFySMPCobMKVv5JilIXJKHPeOp6AHF4z2zacdaxhZXQB4gI2g&q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQs6gLegQIHBAB
+      - generic: 短视频
+    - button "更多过滤条件":
+      - generic "更多过滤条件":
+        - generic: 更多
+  - button "工具":
+    - generic: 工具
+- heading "搜索结果" [level=1]
+- main:
+  - heading "网页搜索结果" [level=2]
+  - 'link "hwanz/SSR-V2ray-Trojan: 2026机场推荐与机场评测 GitHub https://github.com › hwanz"':
+    - /url: /goto?url=CAESZAHrOzAVMugMR1Yx-nqpJgqc2YfEYP_dox4Ma8pKSXLh-5wvL9fFS-S-QiLnQQ9zqnAiKltkcitx7XW7rHCXhbBXSxsvw_x2Z4HF2XS1WaH0Q5FrvBQN0K5EiSV1e7IvqOIbZyI&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+    - 'heading "hwanz/SSR-V2ray-Trojan: 2026机场推荐与机场评测" [level=3]'
+    - generic: GitHub
+    - generic: https://github.com › hwanz
+  - button "关于这条结果的详细信息":
+  - generic: 2026年10月24日 —
+  - emphasis: 机场推荐
+  - text: · 一、BoostNet 机场（IEPL专线｜AnyTLS｜260元/半年200G/月） · 二、悠兔机场(专线+公网｜AnyTLS｜199 元/年200G) · 三、WgetCloud机场(IEPL ...
+  - link:
+    - /url: /goto?url=CAESZAHrOzAVkp7kT2vsQch2EEMSHvVKapAgnEWM_z8zAkbwO8pjz0VPUaIep44pM_NXdxegxxPXppzGkSJLf2d0K3PbJDaxX2CUFCzK72RfoNJbfdFbeNnxyDs0ra97MM_hgRkk8UU&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+  - 'link "lynkco01/jichangtuijian: 2026 好用的付费机场推荐 GitHub https://github.com › lynkco01 › jichangtuijian"':
+    - /url: /goto?url=CAESZQHrOzAVCKpLFzKYiDhBk8eH4DdaxO2HtQTl2Pzzigy57bQFqci_7b5DxfVPQ_OlaEqEgqeRnuf8TArgIfqviTAJj11urotTdsRUIYaWBml_jomiCTvfoNBm00OMyvSKzS-Rbzci&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+    - 'heading "lynkco01/jichangtuijian: 2026 好用的付费机场推荐" [level=3]'
+    - generic: GitHub
+    - generic: https://github.com › lynkco01 › jichangtuijian
+  - button "关于这条结果的详细信息":
+  - text: 2026 好用的翻墙机场- SS/SSR/V2ray/Trojan 协议梯子 ·
+  - emphasis: 1.WgetCloud 全球加速- 2026 稳定翻墙机场首选
+  - text: · 2.BoostNet 机场 · 3.SSRDOG 机场- 2026 稳定专线机场 · 4.悠兔 ...
+  - link:
+    - /url: /goto?url=CAESZQHrOzAVtqT5cvhIJH6GCL4UXntufeTyIUQf1jCxT4WkbhnYtWg0A8E8ZoWEy3As4N26YXZVEcr63sLvMt_EeFihmGwxzH9uiqJm7SKRo1L4nAXCf4Bqabc1bXGH6mlHI3APxGgy&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+  - heading "AI 概览" [level=2]:
+    - strong: AI 概览
+  - generic: 2026年主流且口碑较好的科学上网“机场”推荐及选购指南如下：
+  - heading "热门稳定机场推荐" [level=3]
+  - list:
+    - strong: WgetCloud (微基云)
+    - list:
+      - strong: 特点
+      - text: ：老牌IEPL专线/华为云专线，稳定性极高，支持4K秒开、ChatGPT和主流AI工具。
+      - strong: 参考价格
+      - text: ：约 ¥297 / 90天起（或 ¥237 / 季起）。
+      - strong: 链接
+      - text: ：
+      - generic: WgetCloud (微基云)
+      - link:
+        - /url: /goto?url=CAESYgHrOzAV_qK0Cafuyg1icn9_75XKU4Gh_V95CB0Nmn8zXu96pu5aXPsmUMXvrik40z83mak5Rh-gCvtgEzVnweiFs1RTdYMJJUmyRWUQjvUVvzZYIGjWdbEfMo4iMZXsgyNX
+      - button:
+        - generic: GitHub
+        - generic: "+4"
+    - strong: TAG 机场 (TAG Internet)
+    - list:
+      - strong: 特点
+      - text: ：覆盖90+国家和地区，提供大量原生家宽IP，适合解锁流媒体及跨境业务。
+      - strong: 参考价格
+      - text: ：约 ¥162 / 年起（或 ¥114 / 月起）。
+      - strong: 链接
+      - text: ：
+      - link:
+        - /url: /goto?url=CAESUwHrOzAVFiLEcu3SwOP43zev1sWia1P1sc0U5K7Xuqs6F1enR9HUI9BfLs2UMSh5a0S5Eu73lT3JNvpWvrqWG8QgTcHB09KBqXgdzOTjS9yGpl5j
+        - text: TAG 机场
+      - button:
+    - strong: BoostNet
+    - list:
+      - strong: 特点
+      - text: ：IEPL专线+透传，小众但稳定性好，速度快。
+      - strong: 参考价格
+      - text: ：约 ¥49 / 月起。
+      - button:
+    - strong: 悠兔
+    - list:
+      - strong: 特点
+      - text: ：IEPL专线+公网中转，提供家宽IP，对ChatGPT等AI服务支持良好。
+      - strong: 参考价格
+      - text: ：约 ¥39 / 月起。
+      - button:
+    - strong: SSRDOG
+    - list:
+      - strong: 特点
+      - text: ：提供千兆带宽专线，性价比高，在线率稳定。
+      - strong: 参考价格
+      - text: ：约 ¥25 / 月起。
+      - button:
+    - strong: Just My Socks
+    - list:
+      - strong: 特点
+      - text: ：搬瓦工官方直连服务，支持部分 VLESS Reality 协议，省心抗封锁。
+      - button:
+  - separator
+  - heading [level=3]: 选购与避坑建议
+  - list:
+    - strong: 线路类型选择
+    - text: ：
+    - list:
+      - strong: IPLC / IEPL 专线
+      - text: ：不经过防火墙，速度最快、最稳定，但价格偏贵。
+      - strong: 中转 / 海外中转
+      - text: ：性价比较高，晚高峰表现通常不错。
+      - strong: 直连线路
+      - text: ：价格便宜，但晚高峰容易拥堵卡顿。
+      - button:
+    - strong: 消费建议
+    - text: ：
+    - list:
+      - strong: 切忌盲目年付
+      - text: ：建议先
+      - strong: 月付或购买小流量测试套餐
+      - text: ，重点测试晚高峰速度、YouTube 4K播放以及ChatGPT/Gemini等AI工具的解锁情况。
+      - strong: 准备备用机场
+      - text: ：由于网络环境多变，建议主用+备用各备一个不同来源的节点，防止单点失效。
+      - strong: 查阅实时评测
+      - text: ：可通过开源聚合项目如
+      - link:
+        - /url: /goto?url=CAESYQHrOzAVqQ7Jg3yTwUj-S_6sSuvii2H8WXIbiSvYNfZNI6gSEui-Fnx85ER_imZMGa459tRZ1C5PPHavCxZCazAh42NMH9_S9PLAcIlkzpCCspj4KGtzyfS-itFHtxEqRhg
+        - text: GitHub SSR-V2ray-Trojan 仓库
+      - text: 了解最新动态。
+      - button:
+  - list:
+    - link:
+      - /url: /goto?url=CAESYgHrOzAV_qK0Cafuyg1icn9_75XKU4Gh_V95CB0Nmn8zXu96pu5aXPsmUMXvrik40z83mak5Rh-gCvtgEzVnweiFs1RTdYMJJUmyRWUQjvUVvzZYIGjWdbEfMo4iMZXsgyNX
+    - generic: GitHub
+    - button:
+    - generic: "lynkco01/jichangtuijian: 2026 好用的付费机场推荐 - GitHub"
+    - generic: 2026 好用的翻墙机场- SS/SSR/V2ray/Trojan 协议梯子 · 1.WgetCloud 全球加速- 2...
+    - link:
+      - /url: /goto?url=CAESYQHrOzAVqQ7Jg3yTwUj-S_6sSuvii2H8WXIbiSvYNfZNI6gSEui-Fnx85ER_imZMGa459tRZ1C5PPHavCxZCazAh42NMH9_S9PLAcIlkzpCCspj4KGtzyfS-itFHtxEqRhg
+    - generic: GitHub
+    - button:
+    - generic: "GitHub - hwanz/SSR-V2ray-Trojan: 2026机场推荐与机场评测 · GitHub"
+    - generic: 翻墙机场推荐与评测（2026）： 稳定性与线路优于流量，因中转打击多转向AnyTLS协议或专用客户端；不推荐超便宜机场，...
+    - link:
+      - /url: /goto?url=CAESUQHrOzAVkhiH3vii5_U5LcwS29JoHBX-6pY0gviH1-ReaUtULrVRiCaBJFOzmIhQ9EItXQgOKWXCrQAp4kmJwspj3B6OTVF6nuqpKmQ_4nRQRQ
+    - generic: gptvpnhelper.com
+    - button:
+    - generic: 机场推荐2026｜AI机场与稳定Clash节点实测
+    - generic: "推荐机场: BoostNet (¥49/月起), 悠兔 (¥39/月起), 青云梯 (¥96/年起), TNTCloud..."
+    - link:
+      - /url: /goto?url=CAESUwHrOzAVFiLEcu3SwOP43zev1sWia1P1sc0U5K7Xuqs6F1enR9HUI9BfLs2UMSh5a0S5Eu73lT3JNvpWvrqWG8QgTcHB09KBqXgdzOTjS9yGpl5j
+    - generic: tuijianvpn.com
+    - button:
+    - generic: 2026老牌机场推荐：11款高端稳定专线机场
+    - generic: "老牌专线机场分类: IPLC/IEPL专线不经过防火墙，保障99.9%在线率与无日志原生IP。 推荐榜单: TAG (I..."
+    - link:
+      - /url: /goto?url=CAESagHrOzAVjze6LFO_fAzt7uH-ufQVKW1TE6Rfq25H3hHH-6ly4-hbLJAdSMQMuKIaNshfJcYKoePAoVxAtJBZxfnZ1yIiV3c9QVSL_VXqA_-NvbLta-923zCfsryF_9JJ5VtzVoEguvVDLqo
+    - generic: 墙妈妈
+    - button:
+    - generic: 2026最好用机场推荐：高速稳定机场节点购买必备终极指南 - 墙妈妈
+    - generic: 2026年主力机场快速深度评测 · 1. WgetCloud (微基云) · 2. TAG 机场(TAG Interne...
+    - link:
+      - /url: /goto?url=CAESWAHrOzAVT9nmWnLg2q1iveuD-5iE5QmzxhZ4V0vK6tgI5-tc4b_woW1XDqScvdZIS8sTC8KAhZM8W5vdjnmVSQBPgvXPwi99uUymf2PwAdockMfQ3P4BQUA
+    - generic: teapotium.com
+    - button:
+    - generic: 异域茶壶的机场推荐 | 异域茶壶的神秘庄园
+    - generic: 线路分类：中转、海外中转、专线、直连。 推荐机场： 海外中转：瞬云、唯兔云、轻语机场、Edgenova、Edge-X、光...
+  - button:
+  - status
+  - button:
+  - button:
+  - button:
+  - button:
+  - button:
+  - button "显示更多 AI 概览":
+    - generic: 展开
+  - heading "网页搜索结果" [level=2]
+  - link "机场推荐2026｜AI机场与稳定Clash节点实测 gptvpnhelper.com https://gptvpnhelper.com":
+    - /url: /goto?url=CAESVAHrOzAVX7-6nWrmbrHOTYG1rE5I-Hf6mXOpt58xI-F6neLUpki7XL_AfHttDzOVZN1tsMbGZdlO9cTjcbsCzSXk4JXzittW0XcXbBlHOk3aKHb7bg&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+    - heading "机场推荐2026｜AI机场与稳定Clash节点实测" [level=3]
+    - generic: gptvpnhelper.com
+    - generic: https://gptvpnhelper.com
+  - button "关于这条结果的详细信息":
+  - text: 精选
+  - emphasis: 机场
+  - text: 深度评测（2026 最新） · 1. BoostNet — 综合主力首推，自研客户端，三网直连IEPL · 2. 悠兔
+  - emphasis: 机场
+  - text: — 长期主用优先，高端IEPL 专线，多入口中转更稳 · 3. 青云梯— ...
+  - link:
+    - /url: /goto?url=CAESVAHrOzAVthcGzhUOW32_IKrUW98Lk91WNdoGJzT3nw4KTseU0Rocn-b7L-oyJI7zNnSuorh4Kv_tmvBGO0-GmOv119SAMFU8yj7lHS9O7onHHjOYTg&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+  - link "机场推荐 - 便宜机场评测 pyjichang.com https://www.pyjichang.com › vpnrecs":
+    - /url: /goto?url=CAESXQHrOzAVwECF534OxXazXDnAkADkjx2F3dFfybWu8dGrth5EiUvahRImnGng16Sei2z97EIpJqwDIVqwggPKt2u30j9PZVPdu4Fz1bvdo8jNMMhRuMmBRDMul0fJjA&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+    - heading "机场推荐 - 便宜机场评测" [level=3]
+    - generic: pyjichang.com
+    - generic: https://www.pyjichang.com › vpnrecs
+  - button "关于这条结果的详细信息":
+  - generic: 3天前 —
+  - emphasis: 汇总低价机场的套餐、流量、线路、试用条件与已知风险记录
+  - text: ，便于按预算比较；当前事实以二毛主站在维护页面为准。
+  - heading "视频" [level=2]
+  - button "关于这条结果的详细信息":
+  - link "【2026最强机场推荐】高性价比，高速翻墙！丨 ... YouTube 科技分享 1 个月前":
+    - /url: /goto?url=CAESZgHrOzAVs3t7Ybz4JFV5UOlFkCMH1pWaJAhAJW8TwWYM7a_PhpN-Boe811v8VOFIBbx59QDOHgOxZkqgsQu-eR9IxoHHQsrBIB1pTq9IWNj166-b_XltGFpX---Zk1ESa1Wyn2POQw&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+    - heading "【2026最强机场推荐】高性价比，高速翻墙！丨 ... YouTube 科技分享 1 个月前" [level=3]:
+      - generic: 【2026最强机场推荐】高性价比，高速翻墙！丨 ...
+      - text: YouTube
+      - generic: · 科技分享
+      - generic: 1 个月前
+  - text: YouTube
+  - generic: · 科技分享
+  - button "关于这条结果的详细信息":
+  - button "【2026最强机场推荐】高性价比，高速翻墙！丨 ...，由科技分享上传到YouTube上. 在 Google 上播放. 8:06":
+    - generic: 8:06
+  - button "在此视频中，有 4 个重要时刻":
+    - generic: 在此视频中，有 4 个重要时刻
+  - link "2026最新机场推荐，高速翻墙！支持(Windows/安卓/mac/ios) ... YouTube 科技分享 2 周前":
+    - /url: /goto?url=CAESZgHrOzAVejTzxd7ho6NguRZ3Dtl_XRAppjFlB5_G39590Mzwj3rV2z2-e0Jx_vPUzmhVz1UQUB3rRk3nfy4wl4aJC7SzmpGA2b4dVCDf5J1a9XUsUSXM0f-y4AVucT1PJMc4qaYVWA&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+    - heading "2026最新机场推荐，高速翻墙！支持(Windows/安卓/mac/ios) ... YouTube 科技分享 2 周前" [level=3]:
+      - generic: 2026最新机场推荐，高速翻墙！支持(Windows/安卓/mac/ios) ...
+      - text: YouTube
+      - generic: · 科技分享
+      - generic: 2 周前
+  - text: YouTube
+  - generic: · 科技分享
+  - button "关于这条结果的详细信息":
+  - button "2026最新机场推荐，高速翻墙！支持(Windows/安卓/mac/ios) ...，由科技分享上传到YouTube上. 在 Google 上播放. 7:44":
+    - generic: 7:44
+  - link "【2026】高速机场推荐，4K视频秒开，高速翻墙，免费试用，支持 ... YouTube 科技分享 3 周前":
+    - /url: /goto?url=CAESZgHrOzAVGj-qPFYkJPJDjF4GxLYEOlJIRJ4SWSxtpnplrsbVMg5UoXiRxZDe1RQR6b8E6KTMQPogPPnT65IH_LtxFSkmkpYeL9VesBrkkqU6qAFyM1KucKJwPD1ayjp8Ja63Ssurbw&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+    - heading "【2026】高速机场推荐，4K视频秒开，高速翻墙，免费试用，支持 ... YouTube 科技分享 3 周前" [level=3]:
+      - generic: 【2026】高速机场推荐，4K视频秒开，高速翻墙，免费试用，支持 ...
+      - text: YouTube
+      - generic: · 科技分享
+      - generic: 3 周前
+  - text: YouTube
+  - generic: · 科技分享
+  - button "关于这条结果的详细信息":
+  - button "【2026】高速机场推荐，4K视频秒开，高速翻墙，免费试用，支持 ...，由科技分享上传到YouTube上. 在 Google 上播放. 7:14":
+    - generic: 7:14
+  - button "在此视频中，有 4 个重要时刻":
+    - generic: 在此视频中，有 4 个重要时刻
+  - link "查看所有视频":
+    - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&udm=vids&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ8ccDKAJ6BAgYEAU
+    - separator
+    - generic: 查看全部
+  - heading "网页搜索结果" [level=2]
+  - 'link "免费机场推荐: 一个朋友 一个朋友| 免费机场推荐 https://ygpy.net"':
+    - /url: /goto?url=CAESTAHrOzAV3Nc4_V6a_DScQfSPVN84SIqIAn7zElT9B7_VQMenXVKUNa13AYH1SAeDyIKxlfYDvjWQsAnlF-TaLLT28dy61SwIZe96DCk&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+    - 'heading "免费机场推荐: 一个朋友" [level=3]'
+    - generic: 一个朋友| 免费机场推荐
+    - generic: https://ygpy.net
+  - button "关于这条结果的详细信息":
+  - text: 出海工具推荐网站。涵盖
+  - emphasis: 机场推荐
+  - text: 、软件列表、网址导航。一站式解决你的出海难题。
+  - link "2026最好用机场推荐：高速稳定机场节点购买必备终极指南 墙妈妈 https://www.wallmama.com › best-paid-clash-services":
+    - /url: /goto?url=CAESbQHrOzAVHegr5jPYEEq6sn8Qe6egwu4mbwUiwRiR9CNhtmecNppzlfNZ3fVs-_FQeRGN5-03jpQ1NBgUbmhNGT9Jcez0I7xcgURCgUaGEMCd27UUkyeAXlIt34JhyBiYmldnlAW0yUf7AuUx8sk&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+    - heading "2026最好用机场推荐：高速稳定机场节点购买必备终极指南" [level=3]
+    - generic: 墙妈妈
+    - generic: https://www.wallmama.com › best-paid-clash-services
+  - button "关于这条结果的详细信息":
+  - generic: 2026年10月1日 —
+  - text: 2026年主力机场快速深度评测 ·
+  - emphasis: 1. WgetCloud (微基云
+  - text: ) · 2. TAG 机场(TAG Internet) · 3. MESL 机场 · 4. 魔戒(Mojie Cloud) · 5. 速界(SuJie) · 6. SSR ...
+  - list:
+    - link "2026好用机场推荐":
+      - /url: /goto?url=CAESjAEB6zswFZA3HCQz7CrvUl1x5zZA8EIZGRULMf_FSTO0Y0akU-2xXQuR3h2_-leY13MPRHXisRzxerEYRbTMdAuAWEahkvh3TJC-cFnhZbLSKsAIXZjk-aYr24RvvSQS8oO3TChim_715AnpSnDyrbO8pkNtiKfz8VLGki9b6SaJa6SzCjtGlwMl82d1GA&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+      - generic: 2026好用机场推荐
+    - link "2026好用机场极速选型推荐":
+      - /url: /goto?url=CAESnAEB6zswFewZupVgMVYRcL7pzYWVEhruGxSCqsxIE-AOZbdUvaRCA8jdHUa6eVY1SkwtN2WZSL3md-40dtt9yh2H3Bo8I9yj41n7Fy4xxuQDt6jbKKfDnoJYGZTtGyGgFwoJiBl8GPP4ENldrYIAMe60DD1IgfP8kCzzi8UfXXfyPjRnpVH80_Z-iFsDhiOJLKI6DNt1jz6jUQUYMnw&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+      - generic: 2026好用机场极速选型推荐
+    - link "按是否提供Clash机场订阅推荐":
+      - /url: /goto?url=CAESoAEB6zswFbVt5_5rbPnN7sn4-cm3hAv0mWhhf4tk5wWVhcQO2hPFLOfTIHxKtOPRTwd71Pr2gTNUFCqAqzCiSqiwtEK289grGeLdSf0VvyaH6zWMTunx5BIhbQGG-K1mLXDm8mrZof-Wr9hkOo8zkI6sTwlPgvOnwYAGNGBfl8L1-N24UoU3Uyt_LVYnTb1qLcWDdSJn5hkLPiAg7C7qJW-z&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+      - generic: 按是否提供Clash机场订阅推荐
+  - link "️ 机场推荐& 翻墙实测 YouTube · 科技小露 超过 5.7万位关注者":
+    - /url: /goto?url=CAESgwEB6zswFQtWX2GOPlnYigSGb_WCfteVYJwFLpwVUlfAZF2ZrcH8RWtlFPB1uQPiJtLBmXk7HatmMz0V9i2omev-y9Wfa-76hE1xpuy-kZCauZ8q30HfoHJKorN_GTjJlnQ553Dqr6oRQBou0VbCwpTh6pQKXOwelrivy65QTq1k9YM4-A&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+    - heading "️ 机场推荐& 翻墙实测" [level=3]
+    - generic: YouTube · 科技小露
+    - generic: 超过 5.7万位关注者
+  - button "关于这条结果的详细信息":
+  - text: ✈️ 机场推荐& 翻墙实测 · 中国最强
+  - emphasis: 大陆机场怎么选
+  - text: ？ · 【大陆最强专线机场】无视敏感期安全稳定运行| IEPL专线高速翻墙| 小露跟踪测试2年| 机场推荐| 良心机场| 晚高峰秒开 ...
+  - link:
+    - /url: /goto?url=CAESgwEB6zswFbKl16SeHTKzXYP-lsJd41wMHMX9mhsRSa7vqLkBp1shG69pOItM0LWPS1EZqIFB2K-wmnvDchuL0FZYZeNiez5jfOAUFbBkRsKQPLQYdx5qJ1AHe77KBsJsYxZNmXY4LZ6-jLU5UmbhYQkfbAcGooyZVhZSZFvb6VlEA4kEdA&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+  - link "异域茶壶的机场推荐 teapotium.com https://teapotium.com › promotion":
+    - /url: /goto?url=CAESZQHrOzAVQRJk5cXPVgH-brAqKD8gNHDPYVWriirFrVLjwBNVLSmiPoao-Rs1ouF3y5SMrFV2Op_sl6LkmFqfULBFTC7-KSBa8qxsAasQDMmT8h8qN5gtorvWt0oJhiNBLueLRk7t&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+    - heading "异域茶壶的机场推荐" [level=3]
+    - generic: teapotium.com
+    - generic: https://teapotium.com › promotion
+  - button "关于这条结果的详细信息":
+  - text: "[直连] 三毛"
+  - emphasis: 机场
+  - text: ... 节点维护还算比较及时，协议以hy2，AnyTLS为主，只有一些热门地区的节点。香港、韩国、日本、新加坡、美国。部分节点是闲时2倍高峰期3倍计费。不限制第 ...
+  - link:
+    - /url: /goto?url=CAESZQHrOzAV9wrXRZc8tkRZOOKlArk5yfxjU_uK1HMOjokXYy2RwWnW_16S7njg6pDfXz3-vFFdNJrMAdnr49F1Xv_7X5w5FPw1Pxyx8mwcN2xaxk8q168qq5DtlWjrAswse7xWk7Rj&gsessionid=HD44tMbynMdpXJ1QbWHGPHW7SUDGwMQ17iNrd_KAWPqLZdtC03NlIA
+  - heading "用户还搜索了" [level=2]
+  - link "便宜机场推荐":
+    - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&q=%E4%BE%BF%E5%AE%9C%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ1QJ6BAhCEAE
+    - generic: 便宜机场推荐
+  - link "机场推荐v2ex":
+    - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90v2ex&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ1QJ6BAhGEAE
+    - generic: 机场推荐v2ex
+  - link "机场推荐github":
+    - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90github&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ1QJ6BAhHEAE
+    - generic: 机场推荐github
+  - link "Vpn 机场 推荐":
+    - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&q=Vpn+%E6%9C%BA%E5%9C%BA+%E6%8E%A8%E8%8D%90&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ1QJ6BAhEEAE
+    - generic: Vpn 机场 推荐
+  - link "机场推荐测评":
+    - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%E6%B5%8B%E8%AF%84&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ1QJ6BAhFEAE
+    - generic: 机场推荐测评
+  - link "直连机场推荐":
+    - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&q=%E7%9B%B4%E8%BF%9E%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ1QJ6BAhDEAE
+    - generic: 直连机场推荐
+  - link "V2ray 机场 推荐":
+    - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&q=V2ray+%E6%9C%BA%E5%9C%BA+%E6%8E%A8%E8%8D%90&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ1QJ6BAhAEAE
+    - generic: V2ray 机场 推荐
+  - link "专线机场推荐":
+    - /url: /search?sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&q=%E4%B8%93%E7%BA%BF%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sa=X&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ1QJ6BAhBEAE
+    - generic: 专线机场推荐
+  - navigation:
+    - heading "网页导航" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&ei=6TXoauquFKmZ4-EPg5-kWA&start=10&sa=N&sstk=AS6-VmJqH1nwR9jR0IVRtDUBYvUXXIDQWUKjeI8o-nFGoLKLj_A4C7LsNrIN5eSGbFNy1aGjrwYwer6NTlbuQDPvD7X4ybph-aVLSA&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ8tMDegQIPhAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&ei=6TXoauquFKmZ4-EPg5-kWA&start=20&sa=N&sstk=AS6-VmJqH1nwR9jR0IVRtDUBYvUXXIDQWUKjeI8o-nFGoLKLj_A4C7LsNrIN5eSGbFNy1aGjrwYwer6NTlbuQDPvD7X4ybph-aVLSA&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ8tMDegQIPhAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&ei=6TXoauquFKmZ4-EPg5-kWA&start=30&sa=N&sstk=AS6-VmJqH1nwR9jR0IVRtDUBYvUXXIDQWUKjeI8o-nFGoLKLj_A4C7LsNrIN5eSGbFNy1aGjrwYwer6NTlbuQDPvD7X4ybph-aVLSA&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ8tMDegQIPhAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&ei=6TXoauquFKmZ4-EPg5-kWA&start=40&sa=N&sstk=AS6-VmJqH1nwR9jR0IVRtDUBYvUXXIDQWUKjeI8o-nFGoLKLj_A4C7LsNrIN5eSGbFNy1aGjrwYwer6NTlbuQDPvD7X4ybph-aVLSA&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ8tMDegQIPhAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&ei=6TXoauquFKmZ4-EPg5-kWA&start=50&sa=N&sstk=AS6-VmJqH1nwR9jR0IVRtDUBYvUXXIDQWUKjeI8o-nFGoLKLj_A4C7LsNrIN5eSGbFNy1aGjrwYwer6NTlbuQDPvD7X4ybph-aVLSA&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ8tMDegQIPhAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&ei=6TXoauquFKmZ4-EPg5-kWA&start=60&sa=N&sstk=AS6-VmJqH1nwR9jR0IVRtDUBYvUXXIDQWUKjeI8o-nFGoLKLj_A4C7LsNrIN5eSGbFNy1aGjrwYwer6NTlbuQDPvD7X4ybph-aVLSA&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ8tMDegQIPhAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&ei=6TXoauquFKmZ4-EPg5-kWA&start=70&sa=N&sstk=AS6-VmJqH1nwR9jR0IVRtDUBYvUXXIDQWUKjeI8o-nFGoLKLj_A4C7LsNrIN5eSGbFNy1aGjrwYwer6NTlbuQDPvD7X4ybph-aVLSA&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ8tMDegQIPhAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&ei=6TXoauquFKmZ4-EPg5-kWA&start=80&sa=N&sstk=AS6-VmJqH1nwR9jR0IVRtDUBYvUXXIDQWUKjeI8o-nFGoLKLj_A4C7LsNrIN5eSGbFNy1aGjrwYwer6NTlbuQDPvD7X4ybph-aVLSA&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ8tMDegQIPhAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&ei=6TXoauquFKmZ4-EPg5-kWA&start=90&sa=N&sstk=AS6-VmJqH1nwR9jR0IVRtDUBYvUXXIDQWUKjeI8o-nFGoLKLj_A4C7LsNrIN5eSGbFNy1aGjrwYwer6NTlbuQDPvD7X4ybph-aVLSA&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ8tMDegQIPhAU
+      - text: "10"
+    - heading "下一页" [level=2]:
+      - link "下一页":
+        - /url: /search?q=%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90&sca_esv=a6e9917f60d18831&hl=zh-CN&pws=0&sxsrf=AKL5yDifvFaOg9uGyrQh-OOqJEoIvDSz8A:1793603049342&ei=6TXoauquFKmZ4-EPg5-kWA&start=10&sa=N&sstk=AS6-VmJqH1nwR9jR0IVRtDUBYvUXXIDQWUKjeI8o-nFGoLKLj_A4C7LsNrIN5eSGbFNy1aGjrwYwer6NTlbuQDPvD7X4ybph-aVLSA&ved=2ahUKEwiqx_6E3OiXAxWpzDgGHYMPCQsQ8NMDegQIPhAW
+        - generic: 下一页
+  - navigation
+- contentinfo:
+  - heading "页脚链接" [level=1]
+  - text: 新加坡
+  - button "西部集水区 - 是根据您的 IP 地址推断出来的":
+    - generic: 西部集水区
+    - text: "-"
+    - generic: 是根据您的 IP 地址推断出来的
+  - text: "-"
+  - button "更新位置信息": 更新位置信息
+  - link "帮助":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+  - button "发送反馈":
+    - generic: 发送反馈
+  - link "隐私权":
+    - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+  - link "条款":
+    - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

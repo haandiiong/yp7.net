@@ -107,7 +107,7 @@ description: Tidal潮汐加速机场月付25元100GB起，Plus35元300GB、Pro55
 | 已有Clash等客户端 | 购买后取得通用订阅 | 按客户端选择适配格式 |
 | 已验证服务并考虑年付 | 比较年付页面与最终订单 | 折合月价需要支付全年费用，优惠叠加未确认 |
 
-可继续对比本站[机场大全](/posts/jichang-heji/)、[Clash机场榜](/rankings/clash/)和[不限时套餐榜](/rankings/no-expiry/)，按预算、客户端及有效期选择。
+可继续对比本站[机场价格总表](/posts/jichang/#机场价格总表)、[Clash机场榜](/rankings/clash/)和[不限时套餐榜](/rankings/no-expiry/)，按预算、客户端及有效期选择。
 
 ## 资料来源与核对范围
 
@@ -159,7 +159,7 @@ description: Tidal潮汐加速机场月付25元100GB起，Plus35元300GB、Pro55
 
 ## 本文属于
 
-- [机场大全](/posts/jichang-heji/)
+- [机场推荐](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [专属客户端机场榜](/rankings/dedicated-client/)
@@ -167,9 +167,9 @@ description: Tidal潮汐加速机场月付25元100GB起，Plus35元300GB、Pro55
 
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
+- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
-- [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
+- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [宇宙云机场怎么样？](/posts/yuzhoucloud-review-2026/)

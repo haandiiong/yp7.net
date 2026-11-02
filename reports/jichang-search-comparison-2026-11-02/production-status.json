@@ -1,0 +1,39 @@
+[
+  {
+    "url": "https://yp7.net/posts/jichang/",
+    "status": 404
+  },
+  {
+    "url": "https://yp7.net/posts/jichang-tuijian/",
+    "status": 200,
+    "final": "https://yp7.net/posts/jichang-tuijian/",
+    "title": [
+      "2026机场推荐：7款机场优缺点、价格与试用对比 | yp7.net"
+    ],
+    "canonical": [
+      "https://yp7.net/posts/jichang-tuijian/"
+    ]
+  },
+  {
+    "url": "https://yp7.net/posts/jichang-heji/",
+    "status": 200,
+    "final": "https://yp7.net/posts/jichang-heji/",
+    "title": [
+      "2026机场大全：机场价格、流量与试用对比 | yp7.net"
+    ],
+    "canonical": [
+      "https://yp7.net/posts/jichang-heji/"
+    ]
+  },
+  {
+    "url": "https://yp7.net/",
+    "status": 200,
+    "final": "https://yp7.net/",
+    "title": [
+      "科学上网工具下载与客户端安装教程｜yp7.net"
+    ],
+    "canonical": [
+      "https://yp7.net/"
+    ]
+  }
+]

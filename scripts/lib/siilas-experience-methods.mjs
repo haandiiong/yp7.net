@@ -39,5 +39,5 @@ export const renderSiilasExperienceMethods = (snapshot, field = 'all') => {
     parts.push(`ChatGPT：观察${measurement}；${responseTiers.length} 档为${responseTiers.map((tier) => `${tier.label}＝${tier.status}（${tier.score} 分）`).join('；')}。`)
   }
   if (!parts.length) return ''
-  return `**Siilas 已确认的体验方法（${methods.confirmedAt}）：**${parts.join('')}方法说明不为历史记录补写具体首答秒数、三次缓冲秒数或视频信息；单条记录仍以原始填写内容为准。`
+  return `**Siilas 已确认的体验方法（${methods.confirmedAt}）：** ${parts.join('')}方法说明不为历史记录补写具体首答秒数、三次缓冲秒数或视频信息；单条记录仍以原始填写内容为准。`
 }

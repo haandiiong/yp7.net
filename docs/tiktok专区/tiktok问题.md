@@ -112,7 +112,7 @@ TikTok的[位置信息说明](https://support.tiktok.com/en/account-and-privacy/
 
 先根据对照结果决定是否有必要。若问题只出现在某个已有节点，可按[TikTok节点选择与验证清单](/posts/tiktok-vpn-recommend/)比较备用；若平台已提示账号或作品限制，应先处理对应提示。
 
-确需比较服务时，再核对设备支持、配置格式、试用、流量、设备限制和退款。可从[机场推荐资料](/posts/jichang-tuijian/)了解候选条件，但套餐、地区名、“原生IP”和专线宣传都不能作为TikTok功能已验证的证据。本页不提供国家优先级或新增服务实测结论。
+确需比较服务时，再核对设备支持、配置格式、试用、流量、设备限制和退款。可从[机场推荐资料](/posts/jichang/)了解候选条件，但套餐、地区名、“原生IP”和专线宣传都不能作为TikTok功能已验证的证据。本页不提供国家优先级或新增服务实测结论。
 
 ## 七、常见问题
 
@@ -143,4 +143,4 @@ TikTok的[位置信息说明](https://support.tiktok.com/en/account-and-privacy/
 - [TikTok是什么：下载、注册与内容入门](/posts/tiktok-guide-2026/)
 - [TikTok节点选择与功能验证](/posts/tiktok-vpn-recommend/)
 - [Clash订阅导入与更新失败排查](/posts/clash-subscription-troubleshooting/)
-- [机场推荐与套餐资料](/posts/jichang-tuijian/)
+- [机场推荐与套餐资料](/posts/jichang/)

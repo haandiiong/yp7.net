@@ -13,8 +13,8 @@ Testing policy: 2026-08-18 前的 yp7.net 测速与测试记录仅作为历史�
 | [网际快车](https://yp7.net/posts/wangji-kuaiche-review/) | 28元/30天 | 60GB/日（每日重置） | 支持 | 支持 | 不支持 | 支持 | 未评级 | 2026-06-03 | 170ms | 13.96Mbps（2026-06-03 Speedtest单次原图），上传3.70Mbps | 重点观察 |
 | [全球云](https://yp7.net/posts/quanqiuyun/) | 20元/月 | 120GB/月 | 不支持 | 支持 | 支持 | 不支持 | 未评级 | 2026-05-30 | 82ms | 778.79Mbps（Speedtest 单次历史结果） | 主推观察 |
 | [拼好连](https://yp7.net/posts/runway-review-2026/) | 19.9元/月 | 50GB/月 | 支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [九云](https://yp7.net/posts/jiuyun-review-2026/) | 6元/月 | 150GB/月 | 不支持 | 支持 | 不支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
-| [阿达西](https://yp7.net/posts/adaxi-review-2026/) | 3元/30天 | 20GB/30天 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 低价观察 |
+| [cocoduck](https://yp7.net/posts/cocoduck-review/) | 17元/月 | 100GB/月 | 支持 | 不支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 资料已核对 |
+| [XSUS](https://yp7.net/posts/xsus-review-2026/) | 12元/月 | 168GB/月 | 不支持 | 支持 | 支持 | 支持 | 无 | 无历史记录 | 无历史记录 | 无历史记录 | 性价比观察 |
 
 ## 销量机场
 

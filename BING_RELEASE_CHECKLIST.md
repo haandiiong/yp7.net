@@ -41,7 +41,8 @@
 
 ### URL Inspection
 
-- [ ] 检查首页、`/posts/jichang-tuijian/`、一个机场详情页。
+- [ ] 检查首页、`/posts/jichang/`、一个机场详情页。
+- [ ] 检查原推荐与合集的有、无尾斜杠地址，均应以 301 直接跳转 `/posts/jichang/`，且旧地址不在 Sitemap 中。
 - [ ] 检查一个 301/308 旧 URL，确认 HTTP 响应和目标正确。
 - [ ] 检查一个永久删除 URL，确认返回 404/410 且不再索引。
 - [ ] 对规范页面检查 Index、HTTP、SEO、结构化数据与 Live URL；仅在需要时请求重新索引。

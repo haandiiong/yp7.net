@@ -1,0 +1,21 @@
+{
+  "desktopFirstTableY": 535.4,
+  "mobile": {
+    "deviceLabel": "\"iPhone / iPad\"",
+    "deviceRowDisplay": "block",
+    "firstRowDisplay": "block",
+    "firstTableY": 757.6953125,
+    "pageWidth": 390,
+    "width": 390
+  },
+  "narrow": {
+    "cardDisplay": "block",
+    "pageWidth": 320,
+    "width": 320
+  },
+  "legacyXsUs": {
+    "url": "/posts/jichang/#xsus",
+    "parentOpen": true,
+    "targetTop": 64.24
+  }
+}

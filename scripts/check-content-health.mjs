@@ -31,7 +31,7 @@ const walkFiles = (dir, shouldSkip = () => false) => {
 }
 
 const parseFrontmatter = (content = '') => {
-  const match = content.match(/^---\n([\s\S]*?)\n---/)
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/)
   return match?.[1] || ''
 }
 
@@ -132,8 +132,7 @@ const validateJsonLd = (html, projectPath) => {
   const requiresCollectionPage = (
     projectPath.startsWith('docs/.vuepress/dist/rankings/')
     || projectPath === 'docs/.vuepress/dist/risk-monitor/index.html'
-    || projectPath === 'docs/.vuepress/dist/posts/jichang-tuijian/index.html'
-    || projectPath === 'docs/.vuepress/dist/posts/jichang-heji/index.html'
+    || projectPath === 'docs/.vuepress/dist/posts/jichang/index.html'
   )
 
   if (requiresCollectionPage) {
@@ -215,7 +214,7 @@ if (existsSync(redirectsPath)) {
     if (normalizedSource === normalizedTarget) {
       errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: redirect source and target are identical`)
     }
-    if (redirectSourcePaths.has(normalizedSource)) {
+    if (redirectRules.has(source)) {
       errors.push(`${toProjectPath(redirectsPath)}:${index + 1}: duplicate redirect source ${source}`)
     }
     redirectSourcePaths.add(source)
@@ -233,6 +232,8 @@ const requiredCanonicalRedirects = new Map([
   ['/data/airports.html', { target: '/data/airports', status: '308' }],
   ['/data/rankings.html', { target: '/data/rankings', status: '308' }],
   ['/data/risk-monitor.html', { target: '/data/risk-monitor', status: '308' }],
+  ...['/posts/jichang-tuijian/', '/posts/jichang-tuijian', '/posts/jichang-heji/', '/posts/jichang-heji']
+    .map((source) => [source, { target: '/posts/jichang/', status: '301' }]),
 ])
 
 requiredCanonicalRedirects.forEach((expected, source) => {
@@ -465,8 +466,7 @@ const generatedCleanHtmlResourcePaths = new Set([
   '/data/risk-monitor',
 ])
 const requiredSeoSitemapPaths = [
-  '/posts/jichang-tuijian/',
-  '/posts/jichang-heji/',
+  '/posts/jichang/',
 ]
 const crawlerReadableDataResourcePaths = [
   '/data/siilas-tests.json',
@@ -681,7 +681,6 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(airportDataLastReviewed || '')) {
 
   const freshnessPages = [
     riskMonitorPage,
-    pages.find((page) => page.projectPath === 'docs/机场推荐/机场合集.md'),
     recommendationPage,
   ].filter(Boolean)
 
@@ -715,26 +714,50 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(airportDataLastReviewed || '')) {
   })
 }
 
+if (existsSync(join(docsDir, '机场推荐/机场合集.md'))) {
+  errors.push('docs/机场推荐/机场合集.md: merged catalogue source must be removed')
+}
+
 if (airportMetrics) {
-  const hejiPath = 'docs/机场推荐/机场合集.md'
+  const hejiPath = 'docs/机场推荐/机场推荐.md'
   const hejiContent = existsSync(join(root, hejiPath))
     ? readFileSync(join(root, hejiPath), 'utf8')
     : ''
+  const hejiFrontmatter = parseFrontmatter(hejiContent)
+  const editorialMonth = getDisplayDate(getFrontmatterValue(hejiFrontmatter, 'dateModified'))?.month
+  const titleMonth = getFrontmatterValue(hejiFrontmatter, 'title')?.match(/（(\d{4})年(\d{1,2})月更新）/)
+  if (!editorialMonth || !titleMonth || `${titleMonth[1]}年${Number(titleMonth[2])}月` !== editorialMonth) {
+    errors.push(`${hejiPath}: title update month must match editorial dateModified (${editorialMonth || 'missing'})`)
+  }
+
+  const hejiLines = hejiContent.split(/\r?\n/)
+  const getH2Section = (heading) => {
+    const start = hejiLines.findIndex((line) => line.trim() === `## ${heading}`)
+    if (start < 0) return undefined
+    const end = hejiLines.findIndex((line, index) => index > start && /^## /.test(line))
+    return hejiLines.slice(start + 1, end >= 0 ? end : undefined).join('\n')
+  }
   // Keep maintenance history out of the catalogue's visible comparison preambles.
-  // A current page date and dated product facts are distinct from update logs.
-  const overviewEnd = hejiContent.indexOf('## 各机场套餐详情')
-  const overview = overviewEnd >= 0 ? hejiContent.slice(0, overviewEnd) : hejiContent
+  // Identify each comparison section independently of where full details, FAQs
+  // and current statistics are placed in the merged article.
+  const comparisonHeadings = new Set([
+    '机场价格总表', '便宜的机场汇总', '不限时机场套餐对比', '支持免费试用的机场', '专属客户端机场汇总',
+  ])
+  if (getH2Section('机场价格总表') === undefined) errors.push(`${hejiPath}: missing merged airport catalogue heading`)
   const containerStack = []
+  let comparisonSection = false
   const updateRecordStart = /^(?:本节全量资料复核日期：|此前(?:更新|\d{4}年)|(?:\d{4}年)?\d{1,2}月\d{1,2}日.*(?:更新|复核|补充|新增|重新读取)|同日(?:随后)?(?:读取|补充|阿达西))/
 
-  overview.split('\n').forEach((line, index) => {
+  hejiLines.forEach((line, index) => {
+    const heading = line.match(/^## (.+?)\s*$/)?.[1]
+    if (heading) comparisonSection = comparisonHeadings.has(heading)
     const container = line.trim().match(/^(:{3,})\s*(\S+)?(?:\s+(.*))?$/)
     if (container) {
       if (!container[2]) {
         containerStack.pop()
       } else {
         const isDetails = container[2] === 'details'
-        if (isDetails && /\bopen\b/.test(container[3] || '')) {
+        if (comparisonSection && isDetails && /\bopen\b/.test(container[3] || '')) {
           errors.push(`${hejiPath}:${index + 1}: catalogue update details must be closed by default`)
         }
         containerStack.push(isDetails)
@@ -742,6 +765,7 @@ if (airportMetrics) {
       return
     }
 
+    if (!comparisonSection) return
     if (!containerStack.includes(true) && updateRecordStart.test(line.trim())) {
       errors.push(`${hejiPath}:${index + 1}: comparison update records must stay inside collapsed details`)
     }
@@ -751,11 +775,15 @@ if (airportMetrics) {
   })
 
   if (containerStack.length) {
-    errors.push(`${hejiPath}: unclosed container before airport details`)
+    errors.push(`${hejiPath}: unclosed article container`)
   }
-  if (!/^::: details 更新详情与历史记录$/m.test(hejiContent)) {
-    errors.push(`${hejiPath}: missing collapsed catalogue update history`)
+  const historySection = getH2Section('更新记录')
+  if (hejiLines.filter((line) => line.trim() === '## 更新记录').length !== 1
+    || !/^::: details 更新详情与历史记录$/m.test(historySection || '')) {
+    errors.push(`${hejiPath}: one unified update section must contain closed catalogue history details`)
   }
+  const currentStats = getH2Section('当前收录统计')
+  if (currentStats === undefined) errors.push(`${hejiPath}: missing current statistics section`)
   const percentage = (count) => airportMetrics.count ? Math.round(count / airportMetrics.count * 100) : 0
   const expectedStats = [
     `当前收录机场数量：${airportMetrics.count}`,
@@ -775,7 +803,7 @@ if (airportMetrics) {
   ]
 
   expectedStats.forEach((text) => {
-    if (!hejiContent.includes(text)) {
+    if (currentStats !== undefined && !currentStats.includes(text)) {
       errors.push(`${hejiPath}: missing current generated statistic "${text}"`)
     }
   })

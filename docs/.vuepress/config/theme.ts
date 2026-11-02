@@ -12,8 +12,7 @@ export const theme = plumeTheme({
   },
   navbar: [
     { text: '首页', link: '/', icon: 'material-symbols:home-rounded' },
-    { text: '机场推荐', link: '/posts/jichang-tuijian/', icon: 'material-symbols:flight-takeoff' },
-    { text: '机场大全', link: '/posts/jichang-heji/', icon: 'material-symbols:format-list-bulleted' },
+    { text: '机场推荐', link: '/posts/jichang/', icon: 'material-symbols:flight-takeoff' },
     {
       text: '按需筛选',
       icon: 'material-symbols:leaderboard',
@@ -92,13 +91,15 @@ export const theme = plumeTheme({
     imageSize: 'local',
   },
   blog: {
+    exclude: ['about.md', 'friends.md', '科学上网专区/机场测评方法.md'],
+    pagination: 15,
     tags: true,
     categories: true,
     archives: true,
     tagsLink: '/blog/tags/',
     categoriesLink: '/blog/categories/',
     archivesLink: '/blog/archives/',
-    postCover: 'right',
+    postCover: { layout: 'right', ratio: '16:9', width: 200 },
   },
   plugins: {
     sitemap: {

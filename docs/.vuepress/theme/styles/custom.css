@@ -69,15 +69,15 @@
 }
 
 /* 首推页的对比与证据表：桌面完整表格，手机按机场纵向阅读。 */
-.vp-doc :is(.recommendation-comparison, .recommendation-evidence) table {
+.vp-doc :is(.recommendation-comparison, .recommendation-evidence, .recommendation-devices) table {
   display: table;
   width: 100%;
   table-layout: fixed;
   overflow: visible;
 }
 
-.vp-doc :is(.recommendation-comparison, .recommendation-evidence) th,
-.vp-doc :is(.recommendation-comparison, .recommendation-evidence) td {
+.vp-doc :is(.recommendation-comparison, .recommendation-evidence, .recommendation-devices) th,
+.vp-doc :is(.recommendation-comparison, .recommendation-evidence, .recommendation-devices) td {
   padding: 10px 12px;
   line-height: 1.65;
   vertical-align: top;
@@ -85,7 +85,7 @@
 }
 
 .vp-doc .recommendation-comparison th:first-child {
-  width: 13%;
+  width: 15%;
 }
 
 .vp-doc .recommendation-comparison th:nth-child(2) {
@@ -101,7 +101,7 @@
 }
 
 .vp-doc .recommendation-comparison th:nth-child(5) {
-  width: 24%;
+  width: 22%;
 }
 
 .vp-doc .recommendation-evidence th:nth-child(1) {
@@ -125,14 +125,14 @@
 }
 
 @media (max-width: 640px) {
-  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) table {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence, .recommendation-devices) table {
     display: block;
     position: relative;
     border: 0;
   }
 
   /* 保留列标题供辅助技术读取。 */
-  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) thead {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence, .recommendation-devices) thead {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -145,12 +145,12 @@
     border: 0;
   }
 
-  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) tbody {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence, .recommendation-devices) tbody {
     display: grid;
     gap: 16px;
   }
 
-  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) tbody tr {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence, .recommendation-devices) tbody tr {
     display: block;
     min-width: 0;
     overflow: hidden;
@@ -159,24 +159,24 @@
     border-radius: 10px;
   }
 
-  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) td {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence, .recommendation-devices) td {
     display: block;
     width: auto;
     padding: 10px 14px;
     border: 0;
   }
 
-  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) td + td {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence, .recommendation-devices) td + td {
     border-top: 1px solid var(--vp-c-divider);
   }
 
-  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) td:first-child {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence, .recommendation-devices) td:first-child {
     font-size: 16px;
     font-weight: 600;
     background-color: var(--vp-c-bg-soft);
   }
 
-  .vp-doc :is(.recommendation-comparison, .recommendation-evidence) td + td::before {
+  .vp-doc :is(.recommendation-comparison, .recommendation-evidence, .recommendation-devices) td + td::before {
     display: block;
     margin-bottom: 3px;
     font-size: 12px;
@@ -278,4 +278,15 @@
   header.vp-nav .vp-nav-screen {
     display: block;
   }
+}
+
+/* 按设备选择表沿用手机卡片，避免六列挤压内容。 */
+.vp-doc .recommendation-devices th:first-child { width: 13%; }
+.vp-doc .recommendation-devices th:last-child { width: 31%; }
+@media (max-width: 640px) {
+  .vp-doc .recommendation-devices td:nth-child(2)::before { content: "Android"; }
+  .vp-doc .recommendation-devices td:nth-child(3)::before { content: "iPhone / iPad"; }
+  .vp-doc .recommendation-devices td:nth-child(4)::before { content: "Windows"; }
+  .vp-doc .recommendation-devices td:nth-child(5)::before { content: "Mac"; }
+  .vp-doc .recommendation-devices td:nth-child(6)::before { content: "关键限制"; }
 }

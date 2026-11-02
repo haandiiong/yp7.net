@@ -4,7 +4,7 @@ Data updated: 2026-10-29; last full review: 2026-08-19
 
 | 机场 | 状态 | 风险提示 | 链接 |
 | --- | --- | --- | --- |
-| echo | 已淘汰 | 客服失联，谨慎使用 | [来源](https://yp7.net/posts/jichang-heji/) |
+| echo | 已淘汰 | 客服失联，谨慎使用 | [来源](https://yp7.net/posts/jichang/) |
 | 九云 | 资料已核对 | 不支持试用和退款仍据9月22日；9yun仅排除19.90/29.90元两款365天包、次数不限，截止、叠加及结算待核；当前带宽、倍率和重购余量未列 | [查看](https://yp7.net/posts/jiuyun-review-2026/) |
 | 全球云 | 主推观察 | 不支持免费试用和通用订阅仍据9月27日补充；旧优惠码与退款待核实；不限时重购余量未明确 | [查看](https://yp7.net/posts/quanqiuyun/) |
 | 光年梯 | 资料已核对 | 普通套餐不支持通用订阅或免费试用，套餐不退款；GNT80适用及结算待核实；Android V7/V8文档同链 | [查看](https://yp7.net/posts/guangnianti-review-2026/) |

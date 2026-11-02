@@ -1,0 +1,42 @@
+[
+  {
+    "name": "tables",
+    "code": 0,
+    "output": "Airport tables are in sync."
+  },
+  {
+    "name": "review-sections",
+    "code": 0,
+    "output": "Airport review sections are in sync."
+  },
+  {
+    "name": "content",
+    "code": 0,
+    "output": "Content health check passed for 104 markdown files."
+  },
+  {
+    "name": "siilas",
+    "code": 0,
+    "output": "Siilas 接收快照一致：9 家机场、154 条原始测速；来源状态为 published。"
+  },
+  {
+    "name": "types",
+    "code": 0,
+    "output": ""
+  },
+  {
+    "name": "generated-data",
+    "code": 0,
+    "output": "Generated data is in sync."
+  },
+  {
+    "name": "consistency",
+    "code": 0,
+    "output": "Airport data consistency passed: 9 collections on 8 pages, 57 services, JSON/Markdown/HTML and Schema."
+  },
+  {
+    "name": "diff",
+    "code": 0,
+    "output": ""
+  }
+]

@@ -8,7 +8,7 @@ sidebar: false
 description: 按第一次使用、已有订阅、设备安装与故障现象查找教程，从机场和客户端的区别、购买试用，到订阅导入、应用访问和节点验证，找到适合当前步骤的下一篇指南。
 ---
 
-[机场推荐](/posts/jichang-tuijian/) · [机场大全](/posts/jichang-heji/) · [风险监测](/risk-monitor/)
+[机场推荐](/posts/jichang/) · [机场价格总表](/posts/jichang/#机场价格总表) · [风险监测](/risk-monitor/)
 
 **先按你现在做到哪一步选择。** 还没有订阅，先了解购买和试用规则；已有订阅，直接核对后台提供的客户端与配置格式；已经能连接但某个应用打不开，按现象进入排错教程。
 
@@ -21,7 +21,7 @@ description: 按第一次使用、已有订阅、设备安装与故障现象查�
 | 当前步骤 | 先解决的问题 | 下一篇教程 |
 |---|---|---|
 | 1. 了解基本概念 | 机场、节点、订阅链接和客户端分别负责什么 | [机场与订阅入门](/posts/airport-node-subscription-guide/) |
-| 2. 比较并尝试服务 | 怎样核对套餐周期、试用、付款及退款条件 | [机场购买与试用流程](/posts/jichang-buying-guide/)；需要比较候选时看[机场推荐](/posts/jichang-tuijian/) |
+| 2. 比较并尝试服务 | 怎样核对套餐周期、试用、付款及退款条件 | [机场购买与试用流程](/posts/jichang-buying-guide/)；需要比较候选时看[机场推荐](/posts/jichang/) |
 | 3. 选择自己的使用方式 | 导入第三方订阅，还是使用服务商账号登录 | [客户端选择与官方下载入口](/posts/airport-tools/) |
 | 4. 导入并启用配置 | 按设备教程添加订阅、选择配置和连接节点 | 选择下方[设备教程](#devices)；导入报错时看[订阅排查](/posts/clash-subscription-troubleshooting/) |
 | 5. 验证常用功能 | 网页、登录、对话或视频是否按自己的需求工作 | [个人测速与验证方法](/posts/speedtest-vpn/)；遇到应用问题看[应用教程](#applications) |

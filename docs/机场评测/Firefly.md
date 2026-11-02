@@ -171,7 +171,7 @@ Nextin识别码为 `firefly`。按教程使用外区Apple ID下载，填写识�
 
 ## 本文属于
 
-- [机场大全](/posts/jichang-heji/)
+- [机场推荐](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [专属客户端机场榜](/rankings/dedicated-client/)
@@ -179,9 +179,9 @@ Nextin识别码为 `firefly`。按教程使用外区Apple ID下载，填写识�
 
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
+- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
-- [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
+- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [灵猫网络机场怎么样？](/posts/lingmaowangluo-review-2026/)

@@ -1,0 +1,75 @@
+{
+  "before": {
+    "airportCount": 9,
+    "rawTestCount": 135,
+    "latestTestAt": "2026-10-08"
+  },
+  "after": {
+    "airportCount": 9,
+    "rawTestCount": 154,
+    "latestTestAt": "2026-10-24",
+    "publicationStatus": "published",
+    "pendingRecords": 0
+  },
+  "newRecordCount": 19,
+  "removedRecordCount": 0,
+  "commercialConfigUnchangedExceptEditorialDate": true,
+  "hejiTableRowsIdenticalToHead": true,
+  "hejiTableRowCount": 768,
+  "airports": [
+    {
+      "slug": "globalcloud",
+      "tests": 28,
+      "latestTestAt": "2026-10-08",
+      "score": 5.4
+    },
+    {
+      "slug": "guangnianti",
+      "tests": 16,
+      "latestTestAt": "2026-10-08",
+      "score": 5
+    },
+    {
+      "slug": "interexpress",
+      "tests": 20,
+      "latestTestAt": "2026-10-23",
+      "score": 5.6
+    },
+    {
+      "slug": "xxyun",
+      "tests": 13,
+      "latestTestAt": "2026-10-23",
+      "score": 5.7
+    },
+    {
+      "slug": "flybit",
+      "tests": 17,
+      "latestTestAt": "2026-10-23",
+      "score": 6
+    },
+    {
+      "slug": "pinhaolian",
+      "tests": 16,
+      "latestTestAt": "2026-10-24",
+      "score": 4.4
+    },
+    {
+      "slug": "cocoduck",
+      "tests": 16,
+      "latestTestAt": "2026-10-24",
+      "score": 6.3
+    },
+    {
+      "slug": "edgenode",
+      "tests": 12,
+      "latestTestAt": "2026-10-08",
+      "score": 4
+    },
+    {
+      "slug": "xsus",
+      "tests": 16,
+      "latestTestAt": "2026-10-24",
+      "score": 5.5
+    }
+  ]
+}

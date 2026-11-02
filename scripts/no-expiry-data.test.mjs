@@ -4,13 +4,34 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import test from 'node:test'
 import { loadConfig } from './lib/load-config.mjs'
+import { parseMarkdownTable, renderTable } from './sync-airport-tables.mjs'
 import { htmlTableAfterHeading, markdownTableAfterHeading, htmlTables, markdownTables, validateAirportRows, validateServiceSchema } from './lib/airport-data-validation.mjs'
 
 const { airportCollections } = loadConfig('airport-collections.ts')
-const { getNoExpiryPackage, noExpiryPackages, noExpiryColumns } = loadConfig('no-expiry-packages.ts')
+const { getNoExpiryPackage, getNoExpiryCells, noExpiryPackages, noExpiryColumns } = loadConfig('no-expiry-packages.ts')
 const { generateAirportDataFiles } = loadConfig('generated.ts')
 const { getPageSchema } = loadConfig('schema.ts')
 const { airportData, airportMetrics, airportDataLastModified, airportDataLastReviewed } = loadConfig('airports.ts')
+
+test('the combined-page no-expiry table restores all forty shared candidates and one-off package fields from a stale thirty-four-row table', () => {
+  const collection = airportCollections.noExpiry
+  const stale = [
+    '| 机场 | 不限时价格 | 流量 |', '|---|---|---|',
+    ...collection.items.slice(0, 34).map((airport) => `| [${airport.name}](${airport.path}) | 旧价格 | 旧流量 |`),
+  ]
+  const table = parseMarkdownTable(stale, 0)
+  assert.equal(table.rows.length, 34)
+  const rendered = renderTable(table, collection.items, { noExpiryComparison: true })
+  const rows = markdownTables(`${rendered}\n`)[0]
+  assert.equal(rows.length, 40)
+  assert.deepEqual(rows.map((row) => row.cells['机场']), collection.items.map((airport) => airport.name))
+  assert.deepEqual(Object.keys(rows[0].cells), noExpiryColumns)
+  for (const [index, airport] of collection.items.entries()) {
+    assert.deepEqual(noExpiryColumns.slice(1).map((column) => rows[index].cells[column]), getNoExpiryCells(airport.path))
+  }
+  assert.ok(validateAirportRows(rows.slice(0, 34), collection.items, 'stale').some((error) => error.includes('names/order')))
+  assert.equal(airportData.find((airport) => airport.name === '网际快车').priceText, '28元/30天')
+})
 
 test('no-expiry comparison keeps one-off facts consistent without relabelling monthly prices', (t) => {
   const dest = mkdtempSync(join(tmpdir(), 'yp7-no-expiry-'))

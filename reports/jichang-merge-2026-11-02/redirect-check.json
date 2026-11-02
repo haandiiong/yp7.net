@@ -1,0 +1,132 @@
+{
+  "base": "http://127.0.0.1:8788",
+  "runtime": "Cloudflare Wrangler Pages local 4.156.0",
+  "redirects": [
+    {
+      "source": "/posts/jichang-tuijian/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/posts/jichang-tuijian",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/posts/jichang-heji/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/posts/jichang-heji",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/rankings/stable/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/rankings/sales/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/rankings/all/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/posts/airport-recommend-2026/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/posts/airport-list-2026/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/posts/jichangtuijian/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/posts/low-latency-vpn-guide-2026/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/posts/premium-airport/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/posts/vpn-airport-ranking-2026/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/posts/vpn2/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    },
+    {
+      "source": "/posts/vpnsum/",
+      "target": "/posts/jichang/",
+      "status": 301,
+      "actualStatus": 301,
+      "location": "/posts/jichang/",
+      "passed": true
+    }
+  ],
+  "newPage": {
+    "status": 200,
+    "canonical": "https://yp7.net/posts/jichang/",
+    "itemListCount": 2
+  },
+  "publication": "local verification; not deployed"
+}

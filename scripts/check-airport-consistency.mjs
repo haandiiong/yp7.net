@@ -4,7 +4,7 @@ import { isDeepStrictEqual } from 'node:util'
 import { loadConfig } from './lib/load-config.mjs'
 import {
   htmlTables, markdownTables, htmlTableAfterHeading, markdownTableAfterHeading,
-  jsonLdGraph, validateAirportRows, validateItemList, validateServiceSchema, validateReviewEvidence,
+  jsonLdGraph, validateAirportRows, getCollectionItemList, validateItemList, validateServiceSchema, validateReviewEvidence,
 } from './lib/airport-data-validation.mjs'
 
 const root = process.cwd()
@@ -14,6 +14,7 @@ const { airportData, visibleAirportData } = loadConfig('airports.ts')
 const { airportCollections, airportRankingKeys } = loadConfig('airport-collections.ts')
 const { hostname } = loadConfig('site.ts')
 const { getNoExpiryPackage, getNoExpiryCells, noExpiryColumns } = loadConfig('no-expiry-packages.ts')
+const { catalogueComparisonSections } = loadConfig('airport-comparison.ts')
 const errors = []
 const dataColumns = ['机场', '最低价格', '流量额度', '试用', '不限时', '专属客户端', '通用订阅', '历史证据', '历史测试日期', '历史延迟', '历史速度区间', '状态']
 const salesColumns = ['机场', '销量样本', '最低价格', '流量额度', '试用', '专属客户端', '通用订阅', '状态']
@@ -91,6 +92,7 @@ try {
     const pageHtml = read(join(dist, collection.pagePath, 'index.html'))
     const options = {
       sectionLinks: collection.sectionLinks, hostname,
+      comparisonNotice: key === 'all',
       requiredColumns: key === 'mainRecommendation' ? recommendationColumns : [],
     }
     errors.push(...validateAirportRows(markdownTableAfterHeading(source, collection.heading), collection.items, `${context} Markdown`, options))
@@ -100,8 +102,27 @@ try {
       errors.push(...validateNoExpiryRows(htmlTableAfterHeading(pageHtml, collection.heading), collection.items, `${context} HTML`))
     }
     const lists = jsonLdGraph(pageHtml).filter((schema) => schema['@type'] === 'ItemList')
-    if (lists.length !== 1) errors.push(`${context}: expected exactly one ItemList`)
-    errors.push(...validateItemList(lists[0], records || [], context, hostname, collection.ordered))
+    const expectedCount = Object.values(airportCollections).filter((candidate) => candidate.pagePath === collection.pagePath).length
+    if (lists.length !== expectedCount || new Set(lists.map((list) => list['@id'])).size !== expectedCount) {
+      errors.push(`${context}: expected ${expectedCount} distinct collection ItemLists`)
+    }
+    errors.push(...validateItemList(getCollectionItemList(lists, collection, hostname), records || [], `${context} ${key}`, hostname, collection.ordered))
+  }
+
+  const catalogue = airportCollections.all
+  const catalogueSource = read(join(root, catalogue.sourceFile))
+  const catalogueHtml = read(join(dist, catalogue.pagePath, 'index.html'))
+  for (const section of catalogueComparisonSections) {
+    const collection = airportCollections[section.key]
+    const context = `${catalogue.pagePath} ${section.key}`
+    const tables = [
+      [markdownTableAfterHeading(catalogueSource, section.heading), `${context} Markdown`],
+      [htmlTableAfterHeading(catalogueHtml, section.heading), `${context} HTML`],
+    ]
+    for (const [rows, label] of tables) {
+      if (section.key === 'noExpiry') errors.push(...validateNoExpiryRows(rows, collection.items, label))
+      else errors.push(...validateAirportRows(rows, collection.items, label, { sectionLinks: true, hostname, comparisonNotice: section.notice }))
+    }
   }
 
   const riskJson = JSON.parse(read(join(dist, 'data/risk-monitor.json')))
@@ -132,4 +153,5 @@ if (errors.length) {
   errors.forEach((error) => console.error(`- ${error}`))
   process.exit(1)
 }
-console.log(`Airport data consistency passed: ${Object.values(airportCollections).filter((item) => item.pagePath).length} collection pages, ${visibleAirportData.length} services, JSON/Markdown/HTML and Schema.`)
+const pageCollections = Object.values(airportCollections).filter((item) => item.pagePath)
+console.log(`Airport data consistency passed: ${pageCollections.length} collections on ${new Set(pageCollections.map((item) => item.pagePath)).size} pages, ${visibleAirportData.length} services, JSON/Markdown/HTML and Schema.`)

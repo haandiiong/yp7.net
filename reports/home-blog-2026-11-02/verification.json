@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-02",
+  "build": {
+    "pages": 110,
+    "passed": true
+  },
+  "existing_tests": {
+    "passed": 86,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "content_and_data_checks": "passed",
+  "ssr": {
+    "main": 1,
+    "h1": 1,
+    "article_cards": 15,
+    "canonical": "https://yp7.net/",
+    "first_article": "/posts/jichang-tuijian/",
+    "excludes": [
+      "/methodology/",
+      "/about/",
+      "/friends/"
+    ]
+  },
+  "browser": {
+    "widths": [
+      1280,
+      390,
+      320
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "horizontal_overflow": false,
+    "broken_images": false,
+    "pagination_and_reload": "passed",
+    "article_and_home_metadata": "passed",
+    "final_release_new_console_errors": 0
+  },
+  "publication": "local preview only"
+}

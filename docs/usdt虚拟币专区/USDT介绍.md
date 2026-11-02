@@ -281,5 +281,5 @@ USDT依赖发行公司储备金
 ## 🔗 延伸阅读
 
 - [OKX交易所使用与风险说明](/posts/okx-review/)
-- [机场推荐（2026更新）](/posts/jichang-tuijian/)
-- [机场大全（2026更新）](/posts/jichang-heji/)
+- [机场推荐（2026更新）](/posts/jichang/)
+- [全部机场价格（2026更新）](/posts/jichang/#机场价格总表)

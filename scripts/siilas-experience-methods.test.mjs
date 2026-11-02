@@ -49,9 +49,10 @@ const makeSnapshot = (experienceMethods) => {
 }
 
 const collectionPage = (pagePath) => {
-  const name = pagePath === '/posts/jichang-tuijian/' ? '测试依据'
+  const name = pagePath === '/posts/jichang/' ? '测试依据'
     : pagePath === '/rankings/chatgpt/' ? 'ChatGPT观察' : '视频观察'
   const collection = {
+    key: pagePath === '/posts/jichang/' ? 'mainRecommendation' : pagePath === '/rankings/chatgpt/' ? 'chatgpt' : 'streaming',
     pagePath, sourceFile: 'fixture.md', heading: '## 候选机场',
     items: [{ name: 'Flybit', path: '/posts/flybit/' }],
   }
@@ -89,7 +90,7 @@ test('accepted structured methods explain first-answer timing and all five tiers
 
 test('each collection uses the received method appropriate to its evidence and keeps dates and pending notices', () => {
   const snapshot = makeSnapshot(methods)
-  for (const pagePath of ['/posts/jichang-tuijian/', '/rankings/chatgpt/', '/rankings/streaming/']) {
+  for (const pagePath of ['/posts/jichang/', '/rankings/chatgpt/', '/rankings/streaming/']) {
     const { collection, markdown } = collectionPage(pagePath)
     const rendered = syncSiilasCollectionArticle(markdown, collection, snapshot)
     assert.match(rendered, /已确认的体验方法（2026-10-14）/)
@@ -99,6 +100,10 @@ test('each collection uses the received method appropriate to its evidence and k
     assert.match(rendered, /人工结论保持/)
     assert.ok(!rendered.includes('40 秒'))
     assert.ok(!rendered.includes('不能扩展为 YouTube 4K'))
+    if (pagePath === '/posts/jichang/') {
+      assert.match(rendered, /未记录平台或画质的单条样本仍只称视频观察/)
+      assert.ok(!rendered.includes('已确认的 YouTube 4K 缓冲观察'))
+    }
     if (pagePath !== '/rankings/chatgpt/') {
       assert.match(rendered, /YouTube 4K 画质：拖动进度条 3 次/)
       assert.match(rendered, /不证明 Netflix/)
@@ -118,13 +123,13 @@ test('older receipts without confirmed methods retain generic experience languag
   assert.ok(!article.includes('已确认的体验方法'))
   assert.ok(!article.includes('≤ 5 秒'))
   assert.match(article, /ChatGPT、流媒体是提交者的定性体验/)
-  for (const pagePath of ['/posts/jichang-tuijian/', '/rankings/chatgpt/', '/rankings/streaming/']) {
+  for (const pagePath of ['/posts/jichang/', '/rankings/chatgpt/', '/rankings/streaming/']) {
     const { collection, markdown } = collectionPage(pagePath)
     const rendered = syncSiilasCollectionArticle(markdown, collection, snapshot)
     assert.ok(!rendered.includes('已确认的体验方法'))
     assert.ok(!rendered.includes('≤ 5 秒'))
     if (pagePath === '/rankings/streaming/') assert.match(rendered, /未逐项确认平台的记录不能扩展为 YouTube 4K/)
-    if (pagePath === '/posts/jichang-tuijian/') assert.match(rendered, /未明确平台的记录只称视频\/流媒体/)
+    if (pagePath === '/posts/jichang/') assert.match(rendered, /未明确平台的记录只称视频\/流媒体/)
   }
 })
 

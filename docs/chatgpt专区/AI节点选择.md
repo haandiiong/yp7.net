@@ -224,7 +224,7 @@ OpenAI官方排查说明指出，代理可能把流量送到被标记的IP，也
 ## 相关阅读
 
 - [ChatGPT机场记录：Siilas节点观察与套餐对比](/rankings/chatgpt/)
-- [机场推荐：2026稳定好用的机场排行](/posts/jichang-tuijian/)
+- [机场推荐：2026稳定好用的机场排行](/posts/jichang/)
 - [Clash机场榜：Clash Verge、Clash Meta 与 Shadowrocket 通用订阅机场](/rankings/clash/)
 - [ChatGPT是什么？ChatGPT怎么使用](/posts/chatgpt-guide-2026/)
 - [ChatGPT、Claude、Gemini打不开怎么办](/posts/ai-tools-not-working/)

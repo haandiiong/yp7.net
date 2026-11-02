@@ -141,8 +141,8 @@ description: Clash节点是什么？本文介绍客户端与节点的区别、�
 
 ## 相关阅读
 
-- [机场推荐（2026更新）](/posts/jichang-tuijian/)
-- [机场大全（2026更新）](/posts/jichang-heji/)
+- [机场推荐（2026更新）](/posts/jichang/)
+- [全部机场价格（2026更新）](/posts/jichang/#机场价格总表)
 
 ## 资料来源
 

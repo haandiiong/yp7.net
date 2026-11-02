@@ -72,7 +72,7 @@ Clash Meta for Android 是一款安卓代理客户端，可导入兼容的订阅
 
 → 粘贴你的订阅链接
 
-如果你没有 URL，可以在这里获取：[便宜好用的翻墙机场推荐评测](/posts/jichang-tuijian/)  
+如果你没有 URL，可以在这里获取：[便宜好用的翻墙机场推荐评测](/posts/jichang/)
 
 订阅链接通常是一段由服务商后台生成的 URL，里面会包含 token、key 或订阅标识。它相当于账号凭证，不要公开分享给别人。
 
@@ -148,7 +148,7 @@ Clash Meta for Android 是一款安卓代理客户端，可导入兼容的订阅
 
 👉 你可以参考：
 
-[便宜好用的翻墙机场推荐评测](/posts/jichang-tuijian/)  
+[便宜好用的翻墙机场推荐评测](/posts/jichang/)
 
 选择支持：
 
@@ -218,6 +218,6 @@ Clash Meta for Android 是一款安卓代理客户端，可导入兼容的订阅
 
 ## 👉 延伸阅读
 
-- [机场推荐（2026更新）](/posts/jichang-tuijian/)
+- [机场推荐（2026更新）](/posts/jichang/)
 - [Clash订阅链接导入失败怎么办](/posts/clash-subscription-troubleshooting/)
 - [机场节点地区怎么选](/posts/proxy-node-region-guide/)

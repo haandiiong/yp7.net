@@ -49,13 +49,13 @@ const siilasRecordedNames = [
 const definitions = {
   mainRecommendation: {
     name: '2026机场综合推荐顺序', dataTitle: '综合推荐顺序', ordered: true,
-    pagePath: '/posts/jichang-tuijian/', sourceFile: 'docs/机场推荐/机场推荐.md',
+    pagePath: '/posts/jichang/', sourceFile: 'docs/机场推荐/机场推荐.md',
     heading: '## 2026机场推荐对比', sectionLinks: true,
     select: (airports) => selectNames(airports, mainRecommendationNames),
   },
   all: {
     name: '2026机场大全', dataTitle: '全部机场',
-    pagePath: '/posts/jichang-heji/', sourceFile: 'docs/机场推荐/机场合集.md',
+    pagePath: '/posts/jichang/', sourceFile: 'docs/机场推荐/机场推荐.md',
     heading: '## 机场价格总表', sectionLinks: true,
     select: (airports) => selectNames(airports, [
       '网际快车', 'Flybit', '全球云', 'xxyun', '阿达西', '拼好连', '唯兔云', '99吧',
@@ -129,19 +129,24 @@ const definitions = {
 } satisfies Record<string, AirportCollectionDefinition>
 
 export type AirportCollectionKey = keyof typeof definitions
-export type AirportCollection = Omit<AirportCollectionDefinition, 'select'> & { items: AirportData[] }
+export type AirportCollection = Omit<AirportCollectionDefinition, 'select'> & {
+  key: AirportCollectionKey
+  items: AirportData[]
+}
 
 export const createAirportCollections = (airports: AirportData[]) => Object.fromEntries(
   Object.entries(definitions).map(([key, { select, ...definition }]) => [
-    key, { ...definition, items: select(airports) },
+    key, { ...definition, key, items: select(airports) },
   ]),
 ) as Record<AirportCollectionKey, AirportCollection>
 
 export const airportCollections = createAirportCollections(airportData)
 
-export const getAirportCollectionForPage = (path: string) => (
-  Object.values(airportCollections).find((collection) => collection.pagePath === path)
+export const getAirportCollectionsForPage = (path: string) => (
+  Object.values(airportCollections).filter((collection) => collection.pagePath === path)
 )
+
+export const getAirportCollectionForPage = (path: string) => getAirportCollectionsForPage(path)[0]
 
 export const airportRankingKeys = [
   'mainRecommendation', 'sales', 'stable', 'cheap', 'trial', 'noExpiry',

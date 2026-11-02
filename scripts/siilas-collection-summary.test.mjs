@@ -14,7 +14,7 @@ const candidateRows = (markdown, collection) => {
   const section = markdown.slice(markdown.indexOf(collection.heading) + collection.heading.length)
   return section.match(/^\|.*$/gm).slice(2, 2 + collection.items.length).map((line) => line.split(/(?<!\\)\|/))
 }
-const observedRow = (markdown, collection, name) => collection.pagePath === '/posts/jichang-tuijian/'
+const observedRow = (markdown, collection, name) => collection.key === 'mainRecommendation'
   ? markdown.match(/<!-- siilas-collection-evidence:start -->[\s\S]*?<!-- siilas-collection-evidence:end -->/)[0]
     .split('\n').filter((line) => line.startsWith(`| [${name}](`)).join('\n')
   : candidateRows(markdown, collection).find((cells) => cells[1].includes(`[${name}](`)).join('|')
@@ -57,7 +57,8 @@ const coverageFixture = () => {
     airports: [airport, second, { ...airport, name: '不在编辑名单', yp7Path: '/posts/excluded/' }],
   }
   const collection = {
-    pagePath: '/posts/jichang-tuijian/', heading: '## 编辑候选', sourceFile: 'fixture.md',
+    key: 'mainRecommendation',
+    pagePath: '/posts/jichang/', heading: '## 编辑候选', sourceFile: 'fixture.md',
     items: [{ name: '候选乙', path: '/posts/b/' }, { name: '候选甲', path: '/posts/a/' }, { name: '未接收候选', path: '/posts/c/' }],
   }
   const markdown = [
@@ -73,6 +74,11 @@ const coverageFixture = () => {
   ].join('\n')
   return { accepted, collection, markdown, airport, record }
 }
+
+test('the full catalogue cannot be treated as the recommendation evidence table at the same URL', () => {
+  const { accepted, collection, markdown } = coverageFixture()
+  assert.throws(() => syncSiilasCollectionArticle(markdown, { ...collection, key: 'all' }, accepted), /不支持的 Siilas 合集/)
+})
 
 test('coverage counts raw historical additions without turning same-day records or date spans into extra test days', () => {
   const { accepted, collection, markdown, airport, record } = coverageFixture()
@@ -288,8 +294,13 @@ test('new mixed-region observations replace stale summaries without changing com
   hongkong.streaming = '缓冲明显'
   airport.latestTestAt = hongkong.testedAt
   for (const collection of pages) {
-    // Pin the fixture date; later real article edits are covered separately.
-    const original = read(collection).replace(/^dateModified:.*$/m, 'dateModified: 2026/10/09')
+    // Pin a consistent editorial date and monthly title; later real edits and
+    // cross-month title synchronization are covered separately.
+    const original = read(collection)
+      .replace(/^dateModified:.*$/m, 'dateModified: 2026/10/09')
+      .replace(/^title:[^\r\n]*/m, (title) => collection.key === 'mainRecommendation'
+        ? title.replace(/（\d{4}年\d{1,2}月更新）/, '（2026年10月更新）')
+        : title)
     const markdown = syncSiilasCollectionArticle(original, collection, updated)
     const before = candidateRows(original, collection)
     const after = candidateRows(markdown, collection)
@@ -337,7 +348,7 @@ test('pending evidence, missing regions, unknown experiences and null scores sta
     assert.match(row, /美国未测试/)
     assert.match(markdown, /来源页面与截图可能还是旧版/)
     assert.ok(!markdown.includes('综合分 null/10'))
-    if (collection.pagePath !== '/posts/jichang-tuijian/') {
+    if (collection.key !== 'mainRecommendation') {
       const currentEvidence = markdown.match(/<!-- siilas-collection-evidence:start -->[\s\S]*?<!-- siilas-collection-evidence:end -->/)[0]
       assert.match(currentEvidence, /测速截图（待发布）/)
       assert.ok(!currentEvidence.includes('来源明确为YouTube 4K'), 'generic observations must not inherit historical platform claims')

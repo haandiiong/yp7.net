@@ -1,0 +1,78 @@
+[
+  {
+    "route": "/posts/jichang-tuijian/",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "tableTop": 1260,
+    "firstRowTop": 1260,
+    "tableReachedAfterViewportHeights": 1.4,
+    "tableMinimumScrollToEnterViewport": 360,
+    "firstRowMinimumScrollToEnterViewport": 360,
+    "firstCandidate": "Flybit",
+    "tableClass": "",
+    "documentHeight": 21913,
+    "headingsBeforeTable": [
+      "快速导航",
+      "2026机场推荐对比"
+    ]
+  },
+  {
+    "route": "/rankings/chatgpt/",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "tableTop": 2342,
+    "firstRowTop": 2408,
+    "tableReachedAfterViewportHeights": 2.602222222222222,
+    "tableMinimumScrollToEnterViewport": 1442,
+    "firstRowMinimumScrollToEnterViewport": 1508,
+    "firstCandidate": "Flybit",
+    "tableClass": "",
+    "documentHeight": 14814,
+    "headingsBeforeTable": [
+      "筛选口径",
+      "ChatGPT机场候选"
+    ]
+  },
+  {
+    "route": "/rankings/streaming/",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "tableTop": 2396,
+    "firstRowTop": 2510,
+    "tableReachedAfterViewportHeights": 2.6622222222222223,
+    "tableMinimumScrollToEnterViewport": 1496,
+    "firstRowMinimumScrollToEnterViewport": 1610,
+    "firstCandidate": "Flybit",
+    "tableClass": "",
+    "documentHeight": 12503,
+    "headingsBeforeTable": [
+      "筛选口径",
+      "流媒体机场候选"
+    ]
+  },
+  {
+    "route": "/rankings/dedicated-client/",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "tableTop": 3118,
+    "firstRowTop": 3232,
+    "tableReachedAfterViewportHeights": 3.4644444444444447,
+    "tableMinimumScrollToEnterViewport": 2218,
+    "firstRowMinimumScrollToEnterViewport": 2332,
+    "firstCandidate": "全球云",
+    "tableClass": "",
+    "documentHeight": 13274,
+    "headingsBeforeTable": [
+      "筛选口径",
+      "专属客户端机场候选"
+    ]
+  }
+]

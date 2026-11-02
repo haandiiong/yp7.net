@@ -103,6 +103,41 @@ test('receipt aligns the introductory visible date while preserving commercial a
   assert.equal(syncSiilasArticleDateModified(monthOnly, '2026-10-14'), expected.replace('**2026年10月14日**', '**2026年10月**'))
 })
 
+test('merged recommendation monthly title follows the later editorial date across months and years', () => {
+  for (const newline of ['\n', '\r\n']) {
+    for (const { articleDate, receivedAt, expectedDate, expectedMonth } of [
+      { articleDate: '2026/11/02', receivedAt: '2026-12-02', expectedDate: '2026/12/02', expectedMonth: '2026年12月' },
+      { articleDate: '2026/12/20', receivedAt: '2026-11-29', expectedDate: '2026/12/20', expectedMonth: '2026年12月' },
+      { articleDate: '2026/12/20', receivedAt: '2027-01-02', expectedDate: '2027/01/02', expectedMonth: '2027年1月' },
+    ]) {
+      const page = (date, month) => [
+        '---', `title: '机场推荐：套餐与测试记录（${month}更新）'`,
+        'permalink: "/posts/jichang/"', `dateModified: ${date}`, '---', '',
+        '更新时间：2026年11月2日（套餐核对于2026年10月15日）', '',
+        '## 更新记录', '', 'title: 历史标题（2026年10月更新）',
+        'dateModified: 2099/01/01', '更新时间：2026年10月24日（实际测试日期）', '',
+      ].join(newline)
+      const original = page(articleDate, '2026年11月')
+      const [year, month, day] = expectedDate.split('/').map(Number)
+      const expected = page(expectedDate, expectedMonth).replace('更新时间：2026年11月2日', `更新时间：${year}年${month}月${day}日`)
+      const current = syncSiilasArticleDateModified(original, receivedAt)
+      assert.equal(current, expected, `${articleDate}/${receivedAt}: ${JSON.stringify(newline)}`)
+      assert.equal(syncSiilasArticleDateModified(current, receivedAt), current, 'monthly sync must remain idempotent')
+    }
+  }
+})
+
+test('monthly title synchronization stays limited to the merged recommendation and its existing month label', () => {
+  for (const { path, title } of [
+    { path: '/posts/flybit-review-2026/', title: 'Flybit套餐（2026年11月更新）' },
+    { path: '/posts/jichang/', title: '机场推荐：套餐与测试记录' },
+    { path: '/rankings/chatgpt/', title: 'ChatGPT机场记录' },
+  ]) {
+    const original = `---\ntitle: ${title}\npermalink: ${path}\ndateModified: 2026/11/02\n---\n\n## 历史\n\n2026年10月24日实际测试。\n`
+    assert.equal(syncSiilasArticleDateModified(original, '2026-12-02'), original.replace('dateModified: 2026/11/02', 'dateModified: 2026/12/02'))
+  }
+})
+
 test('accepted Siilas evidence has traceable dates, records and rule versions', () => {
   assert.equal(snapshot.airportCount, snapshot.airports.length)
   assert.equal(snapshot.rawTestCount, snapshot.airports.reduce((count, airport) => count + airport.tests.length, 0))

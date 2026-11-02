@@ -26,9 +26,8 @@ const walk = (dir) => readdirSync(dir, { withFileTypes: true }).flatMap((entry) 
 const value = (frontmatter, key) => frontmatter.match(new RegExp(`^${key}:\\s*(.+)$`, 'm'))?.[1]
   .trim().replace(/^['"]|['"]$/g, '')
 const special = {
-  '/': ['科学上网工具与机场推荐', '按设备选择客户端，再获取订阅', '入门指南', 'devices'],
-  '/posts/jichang-tuijian/': ['机场推荐怎么选', '价格 · 客户端 · 购买限制', '机场选择', 'compare'],
-  '/posts/jichang-heji/': ['机场大全', '横向比较套餐与订阅方式', '机场资料', 'compare'],
+  '/': ['机场推荐与科学上网教程', '机场资料 · 套餐比较 · 客户端教程', 'yp7.net 博客', 'records'],
+  '/posts/jichang/': ['机场推荐与价格对比', '精选推荐 · 全部套餐 · 客户端与限制', '机场选择', 'compare'],
   '/rankings/cheap/': ['低价机场选择', '付款周期 · 流量 · 使用限制', '场景筛选', 'compare'],
   '/rankings/no-expiry/': ['不限时与总量套餐', '有效期 · 总流量 · 计费倍率', '场景筛选', 'compare'],
   '/rankings/trial/': ['免费试用机场', '领取条件 · 额度 · 期限', '场景筛选', 'compare'],

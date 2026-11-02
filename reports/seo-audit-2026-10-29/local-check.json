@@ -1,0 +1,3024 @@
+{
+  "summary": {
+    "htmlFiles": 112,
+    "sitemapUrls": 103,
+    "indexableHtml": 103,
+    "missingOrMultipleTitles": [],
+    "missingOrMultipleH1": [],
+    "missingOrMultipleCanonical": [],
+    "missingOrMultipleDescription": [],
+    "missingJsonLd": [],
+    "duplicateTitles": {},
+    "brokenLocalLinks": [],
+    "brokenFragments": [],
+    "imageCount": 47,
+    "noindexRoutes": [
+      "/404.html",
+      "/blog/",
+      "/blog/archives/",
+      "/blog/tags/",
+      "/blog/categories/",
+      "/friends/",
+      "/data/airports.html",
+      "/data/rankings.html",
+      "/data/risk-monitor.html"
+    ]
+  },
+  "pages": [
+    {
+      "route": "/",
+      "file": "docs/.vuepress/dist/index.html",
+      "bytes": 25666,
+      "title": "科学上网工具下载与客户端安装教程｜yp7.net",
+      "h1": [
+        "科学上网工具下载与客户端安装"
+      ],
+      "canonical": [
+        "https://yp7.net/"
+      ],
+      "description": [
+        "按Android、iPhone、Mac、Windows选择FlClash或Clash Mi客户端，查看项目发布页、应用商店、安装教程与机场订阅导入步骤，学习节点连接和排错；比较价格、试用及购买限制可查看2026机场推荐主榜。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/404.html",
+      "file": "docs/.vuepress/dist/404.html",
+      "bytes": 16071,
+      "title": "页面未找到｜yp7.net",
+      "h1": [
+        "页面未找到"
+      ],
+      "canonical": [
+        "https://yp7.net/404.html"
+      ],
+      "description": [
+        "yp7.net 专注2026机场推荐、套餐与客户端信息整理、风险提示和科学上网教程；2026年8月18日起不再自行测速，相关测试数据统一来自 Siilas。"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/shenxingjiasu-review-2026/",
+      "file": "docs/.vuepress/dist/posts/shenxingjiasu-review-2026/index.html",
+      "bytes": 39850,
+      "title": "神行加速机场套餐与客户端指南：23元120GB月付、96元年付与新客优惠 | yp7.net",
+      "h1": [
+        " 神行加速机场套餐与客户端指南：23元120GB月付、96元年付与新客优惠 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/shenxingjiasu-review-2026/"
+      ],
+      "description": [
+        "神行加速机场月付23元120GB起，另有40元260GB、72元520GB及96元年付60GB每月。整理四档套餐、流量重置、四端客户端、Nextin专属码xs0077与新客7折优惠券sx0077；部分套餐正文额度表述有误，不支持免费试用；通用订阅需购买后联系客服领取，退款规则待核实。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/edge-x-review-2026/",
+      "file": "docs/.vuepress/dist/posts/edge-x-review-2026/index.html",
+      "bytes": 43933,
+      "title": "Edge-X机场套餐与客户端指南：22.8元200GB、全年总量包与退款规则 | yp7.net",
+      "h1": [
+        " Edge-X机场套餐与客户端指南：22.8元200GB、全年总量包与退款规则 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/edge-x-review-2026/"
+      ],
+      "description": [
+        "Edge-X机场月付22.8元200GB起，全年800GB包168元起。整理6款套餐、月度与年度流量重置区别、限条件退款、已结束活动窗口的双节公告，以及Windows、Android、Mac、iOS Nextin和Clash等通用订阅使用方法。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/miaomiaoyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/miaomiaoyun-review-2026/index.html",
+      "bytes": 47156,
+      "title": "秒秒云机场套餐与订阅指南：9元128GB月付、365天总量包与88元包规则 | yp7.net",
+      "h1": [
+        " 秒秒云机场套餐与订阅指南：9元128GB月付、365天总量包与88元包规则 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/miaomiaoyun-review-2026/"
+      ],
+      "description": [
+        "秒秒云88元包为一次性100GB总量，已由10月19日用户确认，按现售不限时间商品记录，首次标价0.880元/GB；另有月付9元128GB起、29.90元365天总量100GB及49.90元200GB。官网套餐与四端教程实际读取日期保持10月18日。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/jichang-tuijian/",
+      "file": "docs/.vuepress/dist/posts/jichang-tuijian/index.html",
+      "bytes": 76239,
+      "title": "2026机场推荐：7款机场优缺点、价格与试用对比 | yp7.net",
+      "h1": [
+        " 2026机场推荐：7款机场优缺点、价格与试用对比 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/jichang-tuijian/"
+      ],
+      "description": [
+        "2026机场推荐精选7款服务，先比较适合人群、优点、主要限制和套餐价格，再查看最新已接收实际测试日期、试用与客户端条件。涵盖Flybit、xxyun、网际快车、全球云、拼好连、九云和阿达西。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/shanyue-review-2026/",
+      "file": "docs/.vuepress/dist/posts/shanyue-review-2026/index.html",
+      "bytes": 47242,
+      "title": "闪跃机场套餐与客户端指南：24元150GB月付、96元年付与不限时 | yp7.net",
+      "h1": [
+        " 闪跃机场套餐与客户端指南：24元150GB月付、96元年付与不限时 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/shanyue-review-2026/"
+      ],
+      "description": [
+        "闪跃10月20日重读8款套餐：24元150GB月付、96元年付60GB/月及150元100GB不限时起。两档不限时重置报价130元、268元，订单流量仍显示0GB；首次100GB、200GB沿用10月18日用户确认，重置交付与余量待核。客户端及试用订阅政策保留原来源。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/liyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/liyun-review-2026/index.html",
+      "bytes": 38892,
+      "title": "鲤云机场套餐与Clash订阅指南：5元100GB月付、88元年付与优惠码 | yp7.net",
+      "h1": [
+        " 鲤云机场套餐与Clash订阅指南：5元100GB月付、88元年付与优惠码 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/liyun-review-2026/"
+      ],
+      "description": [
+        "鲤云机场月付5元100GB起，88元年付含256GB每月，仪表盘展示八折码liyun888。整理6款套餐、2至4台设备限制、周期不退款规则和Clash、Shadowrocket订阅教程；59元200GB包经客服确认有效期1年，不支持免费试用。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/tiktok-not-working/",
+      "file": "docs/.vuepress/dist/posts/tiktok-not-working/index.html",
+      "bytes": 37355,
+      "title": "TikTok看不了怎么办？无网络、地区限制、0播放与节点排查 | yp7.net",
+      "h1": [
+        " TikTok看不了怎么办？无网络、地区限制、0播放与节点排查 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/tiktok-not-working/"
+      ],
+      "description": [
+        "TikTok打不开、无网络连接或0播放时，按加载现象、官方通知、账号状态和内容提示分流，再用同设备网络对照排查；不把地区名、出口IP或换节点当成确定原因。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/weituyun/",
+      "file": "docs/.vuepress/dist/posts/weituyun/index.html",
+      "bytes": 34015,
+      "title": "唯兔云机场怎么样？19.9元150GB月付、年付与不限时套餐 | yp7.net",
+      "h1": [
+        " 唯兔云机场怎么样？19.9元150GB月付、年付与不限时套餐 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/weituyun/"
+      ],
+      "description": [
+        "唯兔云套餐更新：当前月付19.9元150GB起，79.9元年付45GB每月，100元100GB不限时起；说明14.9元节假日套餐状态、自有客户端，以及不支持免费试用和通用订阅的使用限制。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/yifanyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/yifanyun-review-2026/index.html",
+      "bytes": 40908,
+      "title": "一翻云机场套餐与使用指南：20元月付、50元不限时与客户端 | yp7.net",
+      "h1": [
+        " 一翻云机场套餐与使用指南：20元月付、50元不限时与客户端 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/yifanyun-review-2026/"
+      ],
+      "description": [
+        "一翻云机场2026年9月27日套餐资料：20元月付150GB、98元年付每月60GB，中秋限定50元50GB及100元100GB等不限时套餐；整理四端客户端及iOS Nextin使用流程。站长同日补充确认不支持免费试用及通用订阅，退款与旧优惠码待核实。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 1,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/vpn-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/vpn-guide-2026/index.html",
+      "bytes": 34711,
+      "title": "科学上网是什么？翻墙、梯子、VPN、代理和机场区别 | yp7.net",
+      "h1": [
+        " 科学上网是什么？翻墙、梯子、VPN、代理和机场区别 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/vpn-guide-2026/"
+      ],
+      "description": [
+        "科学上网是什么？区分VPN、代理协议、客户端、机场订阅和软路由，说明流量转发与加密的信任边界，并按设备、维护能力和实际用途选择接入方式。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/airport-node-subscription-guide/",
+      "file": "docs/.vuepress/dist/posts/airport-node-subscription-guide/index.html",
+      "bytes": 31661,
+      "title": "机场是什么？机场节点、订阅链接和 Clash 使用入门 | yp7.net",
+      "h1": [
+        " 机场是什么？机场节点、订阅链接和 Clash 使用入门 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/airport-node-subscription-guide/"
+      ],
+      "description": [
+        "机场是什么？本文面向新手解释机场节点、订阅链接、Clash客户端、套餐流量、倍率和线路区别，并给出从注册购买到导入订阅的基础流程与风险提示。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/jisu123-review-2026/",
+      "file": "docs/.vuepress/dist/posts/jisu123-review-2026/index.html",
+      "bytes": 49877,
+      "title": "极速123机场套餐与Clash订阅指南：15.99元月付、6倍扣量与不限时包 | yp7.net",
+      "h1": [
+        " 极速123机场套餐与Clash订阅指南：15.99元月付、6倍扣量与不限时包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/jisu123-review-2026/"
+      ],
+      "description": [
+        "极速123.com月付15.99元起，标称1200G按6倍扣量折合200GB/月；118元年付每月1000G折合约166.7GB，128元不限时包为1000G总量。整理11款套餐、365天包、设备限制、退款与续费重置规则，以及Clash导入步骤。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/jisucloud-review-2026/",
+      "file": "docs/.vuepress/dist/posts/jisucloud-review-2026/index.html",
+      "bytes": 46566,
+      "title": "极速Cloud机场套餐与订阅指南：新人15元、长期30元起及10倍流量 | yp7.net",
+      "h1": [
+        " 极速Cloud机场套餐与订阅指南：新人15元、长期30元起及10倍流量 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/jisucloud-review-2026/"
+      ],
+      "description": [
+        "极速Cloud机场全部套餐标注10倍倍率，新人15元200G折合20GB，仅可购买一次且无法续费；常规30元1000G折合100GB每月，45元档限5台设备。整理11款套餐、365天总量与329元不限时包、Clash Verge订阅、续费及90%用量重置规则；不支持免费试用。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/tiktok-vpn-recommend/",
+      "file": "docs/.vuepress/dist/posts/tiktok-vpn-recommend/index.html",
+      "bytes": 33446,
+      "title": "TikTok用什么节点？地区选择、IP质量、账号环境与节点风险 | yp7.net",
+      "h1": [
+        " TikTok用什么节点？地区选择、IP质量、账号环境与节点风险 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/tiktok-vpn-recommend/"
+      ],
+      "description": [
+        "TikTok节点怎么选？本文提供地区与出口IP核对、视频播放与账号功能验证、客户端排查和购买前测试清单，并引用TikTok官方位置与账号状态说明。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/kuajieyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/kuajieyun-review-2026/index.html",
+      "bytes": 41485,
+      "title": "跨界云机场套餐与使用指南：20元120GB月付、96元年付与不限时 | yp7.net",
+      "h1": [
+        " 跨界云机场套餐与使用指南：20元120GB月付、96元年付与不限时 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/kuajieyun-review-2026/"
+      ],
+      "description": [
+        "跨界云注册后可联系在线客服领取20GB免费试用，购买订阅后可向客服领取通用订阅。整理20元120GB月付、96元年付、200元300GB不限时套餐，以及四端客户端、Nextin识别码kjy与使用流程。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/clash-for-android-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/clash-for-android-guide-2026/index.html",
+      "bytes": 32687,
+      "title": "Clash Meta for Android 安卓教程：下载、订阅导入与连接排查 | yp7.net",
+      "h1": [
+        " Clash Meta for Android 安卓教程：下载、订阅导入与连接排查 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/clash-for-android-guide-2026/"
+      ],
+      "description": [
+        "Clash Meta for Android 安卓教程：从开发者发布页下载，导入订阅 URL，选择节点并排查连接问题；同时说明它与旧版 Clash for Android 的区别。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 6,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/guangnianti-review-2026/",
+      "file": "docs/.vuepress/dist/posts/guangnianti-review-2026/index.html",
+      "bytes": 58397,
+      "title": "光年梯机场怎么样？18元套餐、专属客户端与订阅限制 | yp7.net",
+      "h1": [
+        " 光年梯机场怎么样？18元套餐、专属客户端与订阅限制 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/guangnianti-review-2026/"
+      ],
+      "description": [
+        "光年梯10月17日套餐资料：18元月付110GB、89元年付每月50GB，补季付与半年付总价及五平台客户端限制。普通套餐不提供通用订阅，套餐不退款；GNT80沿用9月27日补充，未验证结算。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 3,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/u1s1-review-2026/",
+      "file": "docs/.vuepress/dist/posts/u1s1-review-2026/index.html",
+      "bytes": 36231,
+      "title": "U1S1机场套餐与订阅：20元月付、IEPL线路说明及历史测速 | yp7.net",
+      "h1": [
+        " U1S1机场套餐与订阅：20元月付、IEPL线路说明及历史测速 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/u1s1-review-2026/"
+      ],
+      "description": [
+        "根据2026年9月27日U1S1后台整理20元/月120GB、96元/年60GB/月等套餐，说明BGP三网优化与IEPL出口宣传、SS订阅、多设备和流媒体AI场景，并保留2026年4月历史测速供参考。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 1,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/jilianyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/jilianyun-review-2026/index.html",
+      "bytes": 35153,
+      "title": "极连云机场怎么样？18元100GB月付、年付与不限时价格说明 | yp7.net",
+      "h1": [
+        " 极连云机场怎么样？18元100GB月付、年付与不限时价格说明 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/jilianyun-review-2026/"
+      ],
+      "description": [
+        "极连云18元100GB月付、96元年付60GB每月，399元一次性600GB不限时。10月20日用户确认重置费用为套餐费用90%，399元包据此计算359.10元；官网与客户端核对仍为9月23日。不支持免费试用和通用订阅，套餐不退款。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/uuone-review-2026/",
+      "file": "docs/.vuepress/dist/posts/uuone-review-2026/index.html",
+      "bytes": 33070,
+      "title": "UUONE机场怎么样？19元150GB月付、99元不限时与订阅教程 | yp7.net",
+      "h1": [
+        " UUONE机场怎么样？19元150GB月付、99元不限时与订阅教程 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/uuone-review-2026/"
+      ],
+      "description": [
+        "UUONE套餐更新：19元150GB月付起、99元450GB不限时，不支持免费试用。整理4款套餐、300至800Mbps标注带宽、10至20台设备限制及Clash Verge、Clash Meta、Nextin订阅使用说明。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/huanyuyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/huanyuyun-review-2026/index.html",
+      "bytes": 38068,
+      "title": "寰宇云机场套餐与使用指南：18元月付、79元年付、客户端与不限时订阅 | yp7.net",
+      "h1": [
+        " 寰宇云机场套餐与使用指南：18元月付、79元年付、客户端与不限时订阅 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/huanyuyun-review-2026/"
+      ],
+      "description": [
+        "寰宇云机场套餐与客户端资料，2026年9月27日核对：18元月付150GB、79元年付每月60GB，另有158元1000GB不限时套餐。支持通用订阅及Android、Windows、Mac官方客户端；不支持免费试用和退款，整理流量重置与安装流程。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/wuyoulianjie-review-2026/",
+      "file": "docs/.vuepress/dist/posts/wuyoulianjie-review-2026/index.html",
+      "bytes": 38380,
+      "title": "无忧链接机场套餐与客户端指南：19元100GB月付、79元年付与不限时 | yp7.net",
+      "h1": [
+        " 无忧链接机场套餐与客户端指南：19元100GB月付、79元年付与不限时 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/wuyoulianjie-review-2026/"
+      ],
+      "description": [
+        "无忧链接机场月付19元100GB起，79元年付提供40GB/月，另有98元100GB及288元300GB不限时包。整理8款套餐、四端客户端和Nextin识别码wylj；不支持免费试用，通用订阅需联系客服索取，设备限制及退款待核实。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/adaxi-review-2026/",
+      "file": "docs/.vuepress/dist/posts/adaxi-review-2026/index.html",
+      "bytes": 50115,
+      "title": "阿达西机场怎么样？3元套餐、不限时流量与客户端订阅说明 | yp7.net",
+      "h1": [
+        " 阿达西机场怎么样？3元套餐、不限时流量与客户端订阅说明 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/adaxi-review-2026/"
+      ],
+      "description": [
+        "阿达西10月17日套餐资料：3元20GB/30天、10元80GB/30天及50元300GB永久包。10月18日用户确认最低充值1元；补Windows GBox和四端订阅教程，手续费与实际付款未测试，不新增测速。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/ssone/",
+      "file": "docs/.vuepress/dist/posts/ssone/index.html",
+      "bytes": 33945,
+      "title": "SSONE机场怎么样？15元60GB套餐、1小时试用与客户端教程 | yp7.net",
+      "h1": [
+        " SSONE机场怎么样？15元60GB套餐、1小时试用与客户端教程 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/ssone/"
+      ],
+      "description": [
+        "SSONE最新套餐资料：15元60GB月付、80元季付300GB每月、200元年付5000GB每年；新用户1小时试用，整理客户端、套餐覆盖与不退款规则。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/flybit-review-2026/",
+      "file": "docs/.vuepress/dist/posts/flybit-review-2026/index.html",
+      "bytes": 59635,
+      "title": "Flybit机场怎么样？套餐价格、Clash订阅与客户端支持 | yp7.net",
+      "h1": [
+        " Flybit机场怎么样？套餐价格、Clash订阅与客户端支持 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/flybit-review-2026/"
+      ],
+      "description": [
+        "Flybit机场2026年10月15日后台资料复核：15元128GB月付、36元128GB不限时起，区分周期套餐设备上限、重置费与192GB季付62元价格；整理5个客户端导入入口及近期公告，试用与优惠仍按原来源说明。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/guangsuyun/",
+      "file": "docs/.vuepress/dist/posts/guangsuyun/index.html",
+      "bytes": 48619,
+      "title": "光速云机场怎么样？套餐价格、专属客户端与购买限制 | yp7.net",
+      "h1": [
+        " 光速云机场怎么样？套餐价格、专属客户端与购买限制 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/guangsuyun/"
+      ],
+      "description": [
+        "光速云机场套餐资料：25元月付168GB、99元年付69GB/月、68元量子版500GB/月与147元247GB永久总量包。量子版月额度由10月19日用户确认，官网套餐读取仍为10月18日，客户端资料沿用10月17日，不新增测速结论。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/v2rayn-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/v2rayn-guide-2026/index.html",
+      "bytes": 31106,
+      "title": "v2rayN使用教程：Windows节点导入、订阅更新、测速和常见问题 | yp7.net",
+      "h1": [
+        " v2rayN使用教程：Windows节点导入、订阅更新、测速和常见问题 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/v2rayn-guide-2026/"
+      ],
+      "description": [
+        "v2rayN怎么用？本文整理 Windows 电脑安装 v2rayN、导入机场订阅、更新节点、测速、设置系统代理、路由模式和常见连接失败排查方法。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/runway-review-2026/",
+      "file": "docs/.vuepress/dist/posts/runway-review-2026/index.html",
+      "bytes": 58647,
+      "title": "拼好连机场怎么样？19.9元50GB套餐与新旧用户规则 | yp7.net",
+      "h1": [
+        " 拼好连机场怎么样？19.9元50GB套餐与新旧用户规则 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/runway-review-2026/"
+      ],
+      "description": [
+        "拼好连机场19.9元50GB月付、70元150GB不限时起；新版机场1天6GB试用由10月16日用户确认，领取与起算方式待核实。新机场使用第三方客户端，独立VPN另有一键服务，历史Siilas记录分开保留。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/kuaili-review-2026/",
+      "file": "docs/.vuepress/dist/posts/kuaili-review-2026/index.html",
+      "bytes": 37785,
+      "title": "快狸机场套餐与客户端指南：月付15元起、Clash Mi订阅与使用流程 | yp7.net",
+      "h1": [
+        " 快狸机场套餐与客户端指南：月付15元起、Clash Mi订阅与使用流程 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/kuaili-review-2026/"
+      ],
+      "description": [
+        "整理快狸机场6款套餐、月付15元50GB和年付120元30GB/月的区别，以及Windows、Mac、Android客户端、iOS Nextin与Clash Mi订阅导入方法。快狸不支持免费试用，退款规则待核实。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/lingmaowangluo-review-2026/",
+      "file": "docs/.vuepress/dist/posts/lingmaowangluo-review-2026/index.html",
+      "bytes": 41241,
+      "title": "灵猫网络机场套餐与客户端指南：25元150GB月付、85元年付小包与不限时 | yp7.net",
+      "h1": [
+        " 灵猫网络机场套餐与客户端指南：25元150GB月付、85元年付小包与不限时 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/lingmaowangluo-review-2026/"
+      ],
+      "description": [
+        "灵猫网络机场月付25元150GB起，85元年付小包含45GB每月，不限时总量包100元100GB起。整理周期价格、流量刷新、四端客户端和Nextin识别码lmwl；不支持免费试用，支持通用订阅，具体领取方法及退款待核实。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/shanshuiyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/shanshuiyun-review-2026/index.html",
+      "bytes": 39931,
+      "title": "山水云机场套餐与订阅指南：12元100GB月付、77元年付与不限时包 | yp7.net",
+      "h1": [
+        " 山水云机场套餐与订阅指南：12元100GB月付、77元年付与不限时包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/shanshuiyun-review-2026/"
+      ],
+      "description": [
+        "山水云机场月付12元100GB起，77元年付含64GB每月，99元100GB不限时用完为止。整理8款套餐、365天不重置流量包、3台设备限制，以及Clash和Shadowrocket订阅使用流程，区分月均折算与实际付款；不支持免费试用。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/proxy-node-region-guide/",
+      "file": "docs/.vuepress/dist/posts/proxy-node-region-guide/index.html",
+      "bytes": 32162,
+      "title": "机场节点地区怎么选？香港、日本、新加坡、美国、台湾节点对比 | yp7.net",
+      "h1": [
+        " 机场节点地区怎么选？香港、日本、新加坡、美国、台湾节点对比 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/proxy-node-region-guide/"
+      ],
+      "description": [
+        "香港、日本、新加坡、美国、台湾节点怎么选？按目标应用、自己的网络与带日期记录比较，不用地区名推断延迟或AI可用性；说明现有Siilas记录覆盖与台湾样本缺口。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/dengta-review-2026/",
+      "file": "docs/.vuepress/dist/posts/dengta-review-2026/index.html",
+      "bytes": 38236,
+      "title": "灯塔加速器套餐与客户端指南：120元年付、免费试用与订阅导出条件 | yp7.net",
+      "h1": [
+        " 灯塔加速器套餐与客户端指南：120元年付、免费试用与订阅导出条件 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/dengta-review-2026/"
+      ],
+      "description": [
+        "灯塔加速器入门档120元年付、60GB每月，轻量档30元月付起，无周付。10月18日用户确认试用300MB、有效期3天，仅限专属客户端；VIP和SVIP支持24小时内且流量使用不超过10%的退款政策。整理四档套餐与付费订阅导出门槛，未确认Clash格式，没有新增测速。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/google-youtube-github-gmail-not-working/",
+      "file": "docs/.vuepress/dist/posts/google-youtube-github-gmail-not-working/index.html",
+      "bytes": 33933,
+      "title": "Google、YouTube、GitHub、Gmail打不开怎么办？外网应用排查指南 | yp7.net",
+      "h1": [
+        " Google、YouTube、GitHub、Gmail打不开怎么办？外网应用排查指南 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/google-youtube-github-gmail-not-working/"
+      ],
+      "description": [
+        "Google、YouTube、GitHub、Gmail打不开怎么办？本文整理代理客户端、节点地区、DNS、浏览器缓存、规则分流、TUN模式和单应用访问失败排查步骤。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/vpn-alternatives-risk-guide/",
+      "file": "docs/.vuepress/dist/posts/vpn-alternatives-risk-guide/index.html",
+      "bytes": 35015,
+      "title": "快连替代、LetsVPN替代、老王VPN替代和免费VPN替代怎么选 | yp7.net",
+      "h1": [
+        " 快连替代、LetsVPN替代、老王VPN替代和免费VPN替代怎么选 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/vpn-alternatives-risk-guide/"
+      ],
+      "description": [
+        "快连、LetsVPN与其他VPN不可用时如何选择替代方案？结合2026年快连大陆业务公告与退款说明，比较机场、Clash通用订阅、专属客户端和迁移验证步骤。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/bianyuan-review-2026/",
+      "file": "docs/.vuepress/dist/posts/bianyuan-review-2026/index.html",
+      "bytes": 45349,
+      "title": "边缘节点机场套餐与客户端：15元50GB起、22元120GB与不限时套餐 | yp7.net",
+      "h1": [
+        " 边缘节点机场套餐与客户端：15元50GB起、22元120GB与不限时套餐 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/bianyuan-review-2026/"
+      ],
+      "description": [
+        "边缘节点15元50GB月付起，另有22元120GB、98元年付45GB/月及两款不限时包。10月20日用户确认重置费用为套餐费用90%：100元100GB包90元、399元450GB包359.10元。官网及客户端资料仍据9月27日，不支持免费试用和通用订阅。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 1,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/iplc-iepl-bgp-relay-direct-guide/",
+      "file": "docs/.vuepress/dist/posts/iplc-iepl-bgp-relay-direct-guide/index.html",
+      "bytes": 39628,
+      "title": "机场线路区别：IPLC、IEPL、BGP、直连、中转和专线怎么选 | yp7.net",
+      "h1": [
+        " 机场线路区别：IPLC、IEPL、BGP、直连、中转和专线怎么选 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/iplc-iepl-bgp-relay-direct-guide/"
+      ],
+      "description": [
+        "分清机场直连、中转、BGP、CN2、IPLC与IEPL的技术含义和商家宣传；对照极连云、XSUS独立IEPL档、二猫云的具体套餐、倍率、客户端、试用退款与测速证据边界。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/jichang-buying-guide/",
+      "file": "docs/.vuepress/dist/posts/jichang-buying-guide/index.html",
+      "bytes": 34148,
+      "title": "机场购买教程：注册、套餐、付款、试用与避坑指南 | yp7.net",
+      "h1": [
+        " 机场购买教程：注册、套餐、付款、试用与避坑指南 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/jichang-buying-guide/"
+      ],
+      "description": [
+        "机场怎么买更稳？本文整理机场注册、套餐选择、付款方式、试用测试、官方客户端登录与订阅导入、退款售后和年付避坑清单，帮助新手降低购买机场踩坑风险。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/okx-review/",
+      "file": "docs/.vuepress/dist/posts/okx-review/index.html",
+      "bytes": 31114,
+      "title": "OKX交易所怎么样？注册、买USDT、手续费与安全风险 | yp7.net",
+      "h1": [
+        " OKX交易所怎么样？注册、买USDT、手续费与安全风险 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/okx-review/"
+      ],
+      "description": [
+        "OKX交易所怎么样？本文整理 OKX 注册、买 USDT、手续费、安全机制、优缺点和使用风险，提醒新手核对官网入口、平台规则和资金安全。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/wangji-kuaiche-review/",
+      "file": "docs/.vuepress/dist/posts/wangji-kuaiche-review/index.html",
+      "bytes": 66213,
+      "title": "网际快车怎么样？6.8元流量包、日享套餐与Clash订阅教程 | yp7.net",
+      "h1": [
+        " 网际快车怎么样？6.8元流量包、日享套餐与Clash订阅教程 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/wangji-kuaiche-review/"
+      ],
+      "description": [
+        "网际快车10月17日套餐资料：6.8元20GB不限时包、28元30天每日60GB日享包，多套餐按日享、月套餐、永久包扣量。整理第三方客户端与9月27日补充的体验券试用规则，保留各期Siilas测试日期。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 2,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/router-vpn-setup-2026/",
+      "file": "docs/.vuepress/dist/posts/router-vpn-setup-2026/index.html",
+      "bytes": 48014,
+      "title": "路由器翻墙怎么设置？OpenWrt与OpenClash二级路由配置教程 | yp7.net",
+      "h1": [
+        " 路由器翻墙怎么设置？OpenWrt与OpenClash二级路由配置教程 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/router-vpn-setup-2026/"
+      ],
+      "description": [
+        "以双网口OpenWrt 25.12二级路由为例，说明OpenClash官方安装来源、LAN/WAN、DHCP、DNS、订阅导入、分流验证和回滚。区分旁路由与二级路由，并说明品牌型号和固件版本的兼容性核对方法。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/telegram-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/telegram-guide-2026/index.html",
+      "bytes": 33896,
+      "title": "Telegram教程：下载安装、注册登录、账号安全、群组频道与代理设置 | yp7.net",
+      "h1": [
+        " Telegram教程：下载安装、注册登录、账号安全、群组频道与代理设置 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/telegram-guide-2026/"
+      ],
+      "description": [
+        "Telegram教程整理下载安装、注册登录、账号安全、群组频道、机器人和 MTProto/SOCKS5 代理设置，并提醒核对官方入口和账号风险。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/chatgpt-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/chatgpt-guide-2026/index.html",
+      "bytes": 31354,
+      "title": "ChatGPT是什么？ChatGPT怎么使用：正版入口、注册登录、提示词与常见问题 | yp7.net",
+      "h1": [
+        " ChatGPT是什么？ChatGPT怎么使用：正版入口、注册登录、提示词与常见问题 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/chatgpt-guide-2026/"
+      ],
+      "description": [
+        "ChatGPT是什么？本文整理 ChatGPT 正版入口、注册登录、基础功能、提示词写法、常见问题和使用风险，帮助新手按官方信息上手。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/ai-tools-not-working/",
+      "file": "docs/.vuepress/dist/posts/ai-tools-not-working/index.html",
+      "bytes": 33883,
+      "title": "ChatGPT、Claude、Gemini打不开怎么办？按错误与连接层级排查 | yp7.net",
+      "h1": [
+        " ChatGPT、Claude、Gemini打不开怎么办？按错误与连接层级排查 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/ai-tools-not-working/"
+      ],
+      "description": [
+        "ChatGPT、Claude、Gemini打不开怎么办？先查平台状态和对应产品要求，再记录地区提示、登录验证、生成中断或API错误，按同设备、单一变量交叉验证，不凭节点国家或其他网站能打开推断原因。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/xiongmaocloud-review-2026/",
+      "file": "docs/.vuepress/dist/posts/xiongmaocloud-review-2026/index.html",
+      "bytes": 38965,
+      "title": "熊猫cloud机场套餐与订阅指南：6元300GB月付、设备限制与365天流量包 | yp7.net",
+      "h1": [
+        " 熊猫cloud机场套餐与订阅指南：6元300GB月付、设备限制与365天流量包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/xiongmaocloud-review-2026/"
+      ],
+      "description": [
+        "熊猫cloud机场6元月付含300GB，10元600GB、15元1200GB，支持Clash等客户端订阅。整理月付、季付和365天流量包的价格、重置方式及3至5台设备限制；套餐不退款，66元600GB包经客服确认有效期1年，不支持免费试用。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/soft-router-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/soft-router-guide-2026/index.html",
+      "bytes": 38282,
+      "title": "软路由是什么？OpenWrt、主路由与旁路由配置入门 | yp7.net",
+      "h1": [
+        " 软路由是什么？OpenWrt、主路由与旁路由配置入门 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/soft-router-guide-2026/"
+      ],
+      "description": [
+        "解释软路由与普通路由器的区别，区分通用硬件实现方式和主路由、二级路由、旁路由部署角色。说明OpenWrt设备兼容性、安装前检查、网口与功耗选择，并提供有IP、DHCP、DNS和回滚步骤的配置教程。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/jinyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/jinyun-review-2026/index.html",
+      "bytes": 38571,
+      "title": "锦云机场套餐与订阅指南：6元50GB月付、99元年付与不限时流量包 | yp7.net",
+      "h1": [
+        " 锦云机场套餐与订阅指南：6元50GB月付、99元年付与不限时流量包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/jinyun-review-2026/"
+      ],
+      "description": [
+        "锦云机场月付6元50GB起，年付99元含128GB每月，另有99元100GB不限时及29.90元起365天流量包。整理8款套餐、3至5台设备限制、流量重置、Clash和Shadowrocket订阅教程；所有套餐明确不退款，不支持免费试用。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/chongshangyunxiao/",
+      "file": "docs/.vuepress/dist/posts/chongshangyunxiao/index.html",
+      "bytes": 33708,
+      "title": "冲上云霄机场怎么样？7元50GB套餐、不限时与订阅使用教程 | yp7.net",
+      "h1": [
+        " 冲上云霄机场怎么样？7元50GB套餐、不限时与订阅使用教程 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/chongshangyunxiao/"
+      ],
+      "description": [
+        "冲上云霄套餐资料更新：7元30天50GB起，365元800GB和800元5120GB不限时；明确不支持免费试用，整理9款套餐、限速与IEPL区别、设备限制、v2rayN和Flyer使用流程。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/naiyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/naiyun-review-2026/index.html",
+      "bytes": 31527,
+      "title": "奈云机场风险记录：2026年6月高度疑似跑路预警、官网异常与停止推荐 | yp7.net",
+      "h1": [
+        " 奈云机场风险记录：2026年6月高度疑似跑路预警、官网异常与停止推荐 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/naiyun-review-2026/"
+      ],
+      "description": [
+        "奈云机场风险记录。根据 2026年6月下旬外部预警与用户反馈，奈云出现官网异常、客服失联、节点不可用和订阅失效等高风险信号，本站已将奈云标记为停止推荐，不建议新购或续费。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/proxy-protocols-guide/",
+      "file": "docs/.vuepress/dist/posts/proxy-protocols-guide/index.html",
+      "bytes": 30717,
+      "title": "代理协议区别：VLESS、Reality、Trojan、Hysteria2、TUIC 怎么选 | yp7.net",
+      "h1": [
+        " 代理协议区别：VLESS、Reality、Trojan、Hysteria2、TUIC 怎么选 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/proxy-protocols-guide/"
+      ],
+      "description": [
+        "VLESS、Reality、Trojan、Hysteria2、TUIC、Shadowsocks、VMess 有什么区别？本文从机场用户角度解释代理协议、客户端兼容、速度、稳定性和选择建议。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/tank-review-2026/",
+      "file": "docs/.vuepress/dist/posts/tank-review-2026/index.html",
+      "bytes": 34713,
+      "title": "坦克云（原坦克加速）怎么样？9.9元80GB套餐、客户端与订阅教程 | yp7.net",
+      "h1": [
+        " 坦克云（原坦克加速）怎么样？9.9元80GB套餐、客户端与订阅教程 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/tank-review-2026/"
+      ],
+      "description": [
+        "坦克云（原坦克加速）套餐与客户端资料：9.9元80GB月付起、49元月付不限流量、50元100GB及199元500GB不限时，支持1天200GB免费试用，整理设备限制、官方客户端和iOS订阅教程。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/ccyz-review-2026/",
+      "file": "docs/.vuepress/dist/posts/ccyz-review-2026/index.html",
+      "bytes": 34300,
+      "title": "CCYZ机场套餐与使用指南：49.9元季付、设备限制与Clash订阅 | yp7.net",
+      "h1": [
+        " CCYZ机场套餐与使用指南：49.9元季付、设备限制与Clash订阅 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/ccyz-review-2026/"
+      ],
+      "description": [
+        "CCYZ机场常规套餐49.9元季付起，Lite提供150GB月流量、5台设备；另有永久550GB套餐。整理季度与年度价格、设备限制、第三方客户端、Clash通用订阅和适合人群。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/china-vpn-april/",
+      "file": "docs/.vuepress/dist/posts/china-vpn-april/index.html",
+      "bytes": 33456,
+      "title": "快连停止中国大陆业务了吗？2026官方公告、恢复运营与退款说明 | yp7.net",
+      "h1": [
+        " 快连停止中国大陆业务了吗？2026官方公告、恢复运营与退款说明 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/china-vpn-april/"
+      ],
+      "description": [
+        "根据快连LetsVPN官网2026年4月28日、5月1日、5月8日和5月15日公告，梳理中国大陆业务终止、全球恢复运营、账号时长与退款安排，区分运营状态和大陆实际可用性。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/shadowrocket-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/shadowrocket-guide-2026/index.html",
+      "bytes": 38888,
+      "title": "Shadowrocket下载与使用教程：小火箭iOS安装、订阅导入与分流配置 | yp7.net",
+      "h1": [
+        " Shadowrocket下载与使用教程：小火箭iOS安装、订阅导入与分流配置 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/shadowrocket-guide-2026/"
+      ],
+      "description": [
+        "Shadowrocket小火箭下载与使用教程，区分App费用和机场订阅，说明已有小火箭怎样挑选明确支持的订阅、导入配置及验收连接，并提供官方App Store与账户说明来源。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/xunda-review-2026/",
+      "file": "docs/.vuepress/dist/posts/xunda-review-2026/index.html",
+      "bytes": 40319,
+      "title": "迅达机场怎么样？15元150GB套餐、不限时流量与客户端下载 | yp7.net",
+      "h1": [
+        " 迅达机场怎么样？15元150GB套餐、不限时流量与客户端下载 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/xunda-review-2026/"
+      ],
+      "description": [
+        "迅达机场2026年9月套餐与使用资料：15元/月150GB起，66元300GB和299元1200GB不限时套餐，支持专属客户端与通用订阅；不支持免费试用及退款，整理年付价格、设备限制和重置规则。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/tiktok-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/tiktok-guide-2026/index.html",
+      "bytes": 36687,
+      "title": "TikTok是什么？中国大陆使用TikTok的下载注册、环境配置与运营入门 | yp7.net",
+      "h1": [
+        " TikTok是什么？中国大陆使用TikTok的下载注册、环境配置与运营入门 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/tiktok-guide-2026/"
+      ],
+      "description": [
+        "TikTok入门：从官方下载安装、按账号提示注册，分别验证播放与发布功能，再用账号状态、作品提示和分析数据排查问题；说明地区、推荐与变现条件的证据边界。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/jichang-heji/",
+      "file": "docs/.vuepress/dist/posts/jichang-heji/index.html",
+      "bytes": 243984,
+      "title": "2026机场大全：机场价格、流量与试用对比 | yp7.net",
+      "h1": [
+        " 2026机场大全：机场价格、流量与试用对比 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/jichang-heji/"
+      ],
+      "description": [
+        "2026机场大全与价格总表，对比机场价格、流量额度、免费试用、不限时套餐、专属客户端和通用订阅。按实际付款与流量重置周期标注，提供机场详情、优惠码及分类榜单入口，方便购买前筛选。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/cocoduck-review/",
+      "file": "docs/.vuepress/dist/posts/cocoduck-review/index.html",
+      "bytes": 40344,
+      "title": "cocoduck机场套餐与使用指南：17元月付、1天2GB试用及客户端 | yp7.net",
+      "h1": [
+        " cocoduck机场套餐与使用指南：17元月付、1天2GB试用及客户端 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/cocoduck-review/"
+      ],
+      "description": [
+        "cocoduck机场个人套餐17元/月含100GB，新用户可体验1天2GB；迷你鸭77元/年含40GB月流量。整理套餐价格、加油包条件、专属客户端与Clash订阅兼容说明。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/clash-mi-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/clash-mi-guide-2026/index.html",
+      "bytes": 40549,
+      "title": "Clash Mi iPhone与iPad教程：下载、订阅导入、选择配置与连接排错 | yp7.net",
+      "h1": [
+        " Clash Mi iPhone与iPad教程：下载、订阅导入、选择配置与连接排错 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/clash-mi-guide-2026/"
+      ],
+      "description": [
+        "Clash Mi怎么用？面向iPhone与iPad说明官方下载、Clash YAML订阅格式、添加配置链接、选中当前配置、VPN连接授权和节点验证，并按导入失败、格式错误、连接后无网络等问题给出排查顺序。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/jiuyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/jiuyun-review-2026/index.html",
+      "bytes": 45502,
+      "title": "九云机场怎么样？6元150GB月付、不限时套餐与Clash订阅教程 | yp7.net",
+      "h1": [
+        " 九云机场怎么样？6元150GB月付、不限时套餐与Clash订阅教程 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/jiuyun-review-2026/"
+      ],
+      "description": [
+        "九云10月19日套餐资料：6元150GB月付起，新增19.90元500GB及29.90元1000GB的365天总量包，另有36元100GB不限时。现售10款限3至5台，88元年付400GB现为4台；9yun八折仅排除两款365天包，其余8款可用、不限次数，试用退款规则仍据9月22日。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/yinyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/yinyun-review-2026/index.html",
+      "bytes": 31667,
+      "title": "隐云机场怎么样？两种订阅模式、季付门槛与设备限制 | yp7.net",
+      "h1": [
+        " 隐云机场怎么样？两种订阅模式、季付门槛与设备限制 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/yinyun-review-2026/"
+      ],
+      "description": [
+        "隐云29元月价参考，轻量首次季付起；专属模式不限流量但限设备，通用模式150GB至1024GB每月。不支持免费试用，整理客户端与流量用尽规则。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/shandianshu-review-2026/",
+      "file": "docs/.vuepress/dist/posts/shandianshu-review-2026/index.html",
+      "bytes": 38627,
+      "title": "闪电鼠机场怎么样？22元120GB月付、96元年付与客户端教程 | yp7.net",
+      "h1": [
+        " 闪电鼠机场怎么样？22元120GB月付、96元年付与客户端教程 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/shandianshu-review-2026/"
+      ],
+      "description": [
+        "闪电鼠机场套餐与使用指南：22元120GB月付起，96元年付60GB/月；不支持免费试用和通用订阅，整理4款套餐、首购七折码sd88、四平台客户端与Nextin使用流程。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/xinghuayun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/xinghuayun-review-2026/index.html",
+      "bytes": 38399,
+      "title": "杏花云机场套餐与Clash订阅指南：3元200GB月付、12元年付与365天总量包 | yp7.net",
+      "h1": [
+        " 杏花云机场套餐与Clash订阅指南：3元200GB月付、12元年付与365天总量包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/xinghuayun-review-2026/"
+      ],
+      "description": [
+        "杏花云机场3元月付含200GB，12元年付含50GB每月，另有20元365天1000GB总量包。整理6款套餐、2至5台设备限制、月度额度与年度总量区别，以及Windows Clash Verge订阅导入流程；不支持免费试用，退款和流量重置日期待核实。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/shunyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/shunyun-review-2026/index.html",
+      "bytes": 39519,
+      "title": "瞬云机场套餐与使用指南：18元月付150GB、99元年付与不限时流量包 | yp7.net",
+      "h1": [
+        " 瞬云机场套餐与使用指南：18元月付150GB、99元年付与不限时流量包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/shunyun-review-2026/"
+      ],
+      "description": [
+        "瞬云机场套餐与使用指南：行者18元/月150GB，限时年付99元每月59GB，另有260元2000GB和600元5000GB不限时流量包。说明不支持免费试用与退款，整理套餐重置规则、专属客户端与Clash通用订阅教程，并保留2026年5月历史测速记录。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 1,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/clash-subscription-troubleshooting/",
+      "file": "docs/.vuepress/dist/posts/clash-subscription-troubleshooting/index.html",
+      "bytes": 32003,
+      "title": "Clash订阅链接导入失败怎么办？更新失败、节点全红排查 | yp7.net",
+      "h1": [
+        " Clash订阅链接导入失败怎么办？更新失败、节点全红排查 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/clash-subscription-troubleshooting/"
+      ],
+      "description": [
+        "Clash订阅链接导入失败怎么办？本文整理订阅更新失败、节点全红、无法连接、TUN模式异常、DNS污染、规则错误和机场账号到期等常见排查步骤。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/speedtest-vpn/",
+      "file": "docs/.vuepress/dist/posts/speedtest-vpn/index.html",
+      "bytes": 39285,
+      "title": "机场测速方法详解：如何评估节点速度、延迟与晚高峰稳定性 | yp7.net",
+      "h1": [
+        " 机场测速方法详解：如何评估节点速度、延迟与晚高峰稳定性 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/speedtest-vpn/"
+      ],
+      "description": [
+        "机场测速怎么做？先记录本地基线与代理路径，再用Clash、Speedtest和目标应用比较节点。区分Mbps与MB/s，保留重复样本、失败记录和平峰晚高峰对照，不以单次结果推断长期可用。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/flclash-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/flclash-guide-2026/index.html",
+      "bytes": 45127,
+      "title": "FlClash下载与使用教程：安卓、Windows、macOS安装与订阅导入 | yp7.net",
+      "h1": [
+        " FlClash下载与使用教程：安卓、Windows、macOS安装与订阅导入 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/flclash-guide-2026/"
+      ],
+      "description": [
+        "FlClash怎么用？整理官方下载安装、安卓与电脑安装包选择、URL订阅导入、节点切换、系统代理、TUN模式、WebDAV备份和常见问题，并对比Clash Verge Rev的适用场景。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/airport-tools/",
+      "file": "docs/.vuepress/dist/posts/airport-tools/index.html",
+      "bytes": 53071,
+      "title": "科学上网工具推荐与下载：按设备选Clash、小火箭和机场客户端 | yp7.net",
+      "h1": [
+        " 科学上网工具推荐与下载：按设备选Clash、小火箭和机场客户端 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/airport-tools/"
+      ],
+      "description": [
+        "科学上网工具怎么选？按iPhone、安卓、Windows和Mac比较Clash Mi、FlClash、小火箭等客户端，分清软件费、机场订阅费与账号一键服务，提供官方下载、配置教程及Flybit和网际快车套餐对比。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/is-vpn-or-airport-better-pros-cons-analysis/",
+      "file": "docs/.vuepress/dist/posts/is-vpn-or-airport-better-pros-cons-analysis/index.html",
+      "bytes": 34138,
+      "title": "翻墙、科学上网、VPN与机场的优缺点对比 | yp7.net",
+      "h1": [
+        " 翻墙、科学上网、VPN与机场的优缺点对比 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/is-vpn-or-airport-better-pros-cons-analysis/"
+      ],
+      "description": [
+        "VPN和机场哪个好？从流量覆盖、客户端、维护责任、隐私信任、成本与故障恢复比较取舍，说明加密和协议名称不能代替安全管理、实际速度与应用验证。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/yuntu-review-2026/",
+      "file": "docs/.vuepress/dist/posts/yuntu-review-2026/index.html",
+      "bytes": 45488,
+      "title": "云图机场套餐与Clash订阅指南：20元150GB月付与78元12个月套餐 | yp7.net",
+      "h1": [
+        " 云图机场套餐与Clash订阅指南：20元150GB月付与78元12个月套餐 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/yuntu-review-2026/"
+      ],
+      "description": [
+        "云图机场月付20元150GB起，40元300GB、79元600GB。78元套餐一次付款，每月50GB、持续12个月；119元套餐一次付款，每月100GB、共12个月，由10月19日用户确认。两款均非不限时，不是一次可用的全年总量；具体刷新日、未用结转与续购余量待核。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/ai-tools-node-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/ai-tools-node-guide-2026/index.html",
+      "bytes": 46350,
+      "title": "ChatGPT、Claude、Gemini 用什么节点？2026 AI工具机场节点选择与打不开排查指南 | yp7.net",
+      "h1": [
+        " ChatGPT、Claude、Gemini 用什么节点？2026 AI工具机场节点选择与打不开排查指南 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/ai-tools-node-guide-2026/"
+      ],
+      "description": [
+        "ChatGPT、Claude、Gemini 节点怎么选？先核对官方支持地区，再比较客户端和订阅兼容性。本文说明连接排查与个人验证流程，机场AI表现仅引用带日期的Siilas记录，不将兼容性或商家宣传当作测试结论。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/tidal-review-2026/",
+      "file": "docs/.vuepress/dist/posts/tidal-review-2026/index.html",
+      "bytes": 42970,
+      "title": "Tidal潮汐加速机场套餐与Clash订阅指南：25元100GB月付、年付与永久流量包 | yp7.net",
+      "h1": [
+        " Tidal潮汐加速机场套餐与Clash订阅指南：25元100GB月付、年付与永久流量包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/tidal-review-2026/"
+      ],
+      "description": [
+        "Tidal潮汐加速机场月付25元100GB起，Plus35元300GB、Pro55元1024GB；永久流量包59元128GB起。整理年付展示价格、Tidal优惠码、设备限制、官方客户端与Clash通用订阅，说明流量重置、账户余额退款及不支持免费试用的规则。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/99ba-review-2026/",
+      "file": "docs/.vuepress/dist/posts/99ba-review-2026/index.html",
+      "bytes": 48383,
+      "title": "99吧机场怎么样？9.9元70GB套餐、免费试用与Clash订阅 | yp7.net",
+      "h1": [
+        " 99吧机场怎么样？9.9元70GB套餐、免费试用与Clash订阅 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/99ba-review-2026/"
+      ],
+      "description": [
+        "99吧机场套餐10月17日核对：9.9元70GB月付起、1天1GB试用与不限时流量包。整理第三方订阅及鸿蒙客户端，记录近期线路波动公告、公告日期和价格文案差异，区分商家说明与实测。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/xingdaomeng-review-2026/",
+      "file": "docs/.vuepress/dist/posts/xingdaomeng-review-2026/index.html",
+      "bytes": 34496,
+      "title": "星岛梦机场套餐与客户端：25元月付、96元年付及不限时流量包 | yp7.net",
+      "h1": [
+        " 星岛梦机场套餐与客户端：25元月付、96元年付及不限时流量包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/xingdaomeng-review-2026/"
+      ],
+      "description": [
+        "根据2026年9月27日星岛梦后台整理套餐：25元/月150GB，96元/年每30天60GB，另有不限时流量包和家宽定制；说明四端客户端、流量重置规则及流媒体与AI使用前的核对事项。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/quanqiuyun/",
+      "file": "docs/.vuepress/dist/posts/quanqiuyun/index.html",
+      "bytes": 63846,
+      "title": "全球云机场套餐与客户端指南：20元120GB月付及不限时流量包 | yp7.net",
+      "h1": [
+        " 全球云机场套餐与客户端指南：20元120GB月付及不限时流量包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/quanqiuyun/"
+      ],
+      "description": [
+        "全球云机场10月18日套餐资料：20元120GB月付、99元年付59GB/月与100元100GB起的不限时包。用户同日确认轻量版每月59GB，旧60GB说明仅作历史；客户端资料沿用10月17日，原测试日期不变。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 8,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/liulianyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/liulianyun-review-2026/index.html",
+      "bytes": 40932,
+      "title": "榴莲云机场套餐与客户端指南：24元140GB月付、96元年付与Nextin | yp7.net",
+      "h1": [
+        " 榴莲云机场套餐与客户端指南：24元140GB月付、96元年付与Nextin "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/liulianyun-review-2026/"
+      ],
+      "description": [
+        "榴莲云机场月付24元140GB起，年付特惠96元含60GB每月。整理5款可见套餐、各付款周期实价、每30天流量刷新规则、四端客户端和iOS Nextin专属码lly，以及七折优惠码ll88；不支持试用，通用订阅需购买后向客服领取，退款待核实。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/xsus-review-2026/",
+      "file": "docs/.vuepress/dist/posts/xsus-review-2026/index.html",
+      "bytes": 38829,
+      "title": "XSUS机场怎么样？12元168GB月付、不限时与IEPL套餐说明 | yp7.net",
+      "h1": [
+        " XSUS机场怎么样？12元168GB月付、不限时与IEPL套餐说明 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/xsus-review-2026/"
+      ],
+      "description": [
+        "XSUS套餐更新：12元168GB月付起、65元188GB不限时起，另有IEPL季付套餐。整理10款套餐、5个IP限制、客户端、流量重置和无法原路退款规则。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/yuzhoucloud-review-2026/",
+      "file": "docs/.vuepress/dist/posts/yuzhoucloud-review-2026/index.html",
+      "bytes": 37810,
+      "title": "宇宙云机场套餐与订阅教程：25元160GB、ClashMi与不限时套餐 | yp7.net",
+      "h1": [
+        " 宇宙云机场套餐与订阅教程：25元160GB、ClashMi与不限时套餐 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/yuzhoucloud-review-2026/"
+      ],
+      "description": [
+        "宇宙云机场最低月付25元160GB，另有96元年付60GB/月、110元120GB及220元240GB不限时套餐；220元档额度由9月27日站长补充确认。整理7款套餐、四端客户端与ClashMi订阅流程，不支持免费试用，退款仍待核实。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/firefly-review-2026/",
+      "file": "docs/.vuepress/dist/posts/firefly-review-2026/index.html",
+      "bytes": 40644,
+      "title": "Firefly机场套餐与客户端指南：25元150GB月付、96元年付与不限时 | yp7.net",
+      "h1": [
+        " Firefly机场套餐与客户端指南：25元150GB月付、96元年付与不限时 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/firefly-review-2026/"
+      ],
+      "description": [
+        "Firefly机场月付25元150GB起，96元年付含60GB每月，100元100GB不限时用完为止。整理6款套餐、年付重置费、专属客户端和iOS Nextin识别码firefly；不支持免费试用，通用订阅可联系客服索取，退款待核实。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/sogo-review-2026/",
+      "file": "docs/.vuepress/dist/posts/sogo-review-2026/index.html",
+      "bytes": 39218,
+      "title": "sogo机场套餐与客户端下载：25元150GB、98元年付与不限时流量 | yp7.net",
+      "h1": [
+        " sogo机场套餐与客户端下载：25元150GB、98元年付与不限时流量 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/sogo-review-2026/"
+      ],
+      "description": [
+        "sogo机场月付25元150GB起，另有98元年付60GB/月与120元120GB不限时套餐。10月18日用户确认按卡片价格、重置费为卡片价90%，四档不限时重置为108、198、405、765元；保留9月27日客户端资料，不支持免费试用和通用订阅。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/xxyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/xxyun-review-2026/index.html",
+      "bytes": 57136,
+      "title": "xxyun机场怎么样？2026套餐价格、官方客户端与使用限制 | yp7.net",
+      "h1": [
+        " xxyun机场怎么样？2026套餐价格、官方客户端与使用限制 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/xxyun-review-2026/"
+      ],
+      "description": [
+        "xxyun机场月付9.99元100GB起，年付89.99元起，不限时66.66元500GB起。整理官方手机、电脑、Linux与x86软路由客户端、每月重置规则和无退款政策，说明不提供Clash通用订阅，并保留原测试日期。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/clash-guide/",
+      "file": "docs/.vuepress/dist/posts/clash-guide/index.html",
+      "bytes": 34078,
+      "title": "Clash节点是什么？2026新手入门指南：订阅导入、协议分类与避坑建议 | yp7.net",
+      "h1": [
+        " Clash节点是什么？2026新手入门指南：订阅导入、协议分类与避坑建议 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/clash-guide/"
+      ],
+      "description": [
+        "Clash节点是什么？本文介绍客户端与节点的区别、订阅导入、规则分流、连接验证和常见配置排查，帮助新手按设备选择客户端并检查订阅是否可用。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/clash-verge-guide-2026/",
+      "file": "docs/.vuepress/dist/posts/clash-verge-guide-2026/index.html",
+      "bytes": 31364,
+      "title": "Clash Verge下载与使用教程：安装、配置、订阅导入与TUN模式 | yp7.net",
+      "h1": [
+        " Clash Verge下载与使用教程：安装、配置、订阅导入与TUN模式 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/clash-verge-guide-2026/"
+      ],
+      "description": [
+        "Clash Verge是什么？本文整理 Clash Verge 下载、安装、订阅导入、系统代理、TUN模式、节点选择和常见连接问题。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 4,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/yunjiexian-review-2026/",
+      "file": "docs/.vuepress/dist/posts/yunjiexian-review-2026/index.html",
+      "bytes": 52552,
+      "title": "云界线机场套餐与客户端指南：22元月付、96元年付及不限时包 | yp7.net",
+      "h1": [
+        " 云界线机场套餐与客户端指南：22元月付、96元年付及不限时包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/yunjiexian-review-2026/"
+      ],
+      "description": [
+        "云界线99元闲云包为80GB一次性不限时总量，已由10月19日用户确认，首次标价约1.238元/GB；另有199元200GB、22元月付150GB起和96元年付60GB/月。官网及客户端资料仍据10月18日，无试用和客服领取订阅仍据10月6日补充。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/yinxingren-review-2026/",
+      "file": "docs/.vuepress/dist/posts/yinxingren-review-2026/index.html",
+      "bytes": 42099,
+      "title": "隐形人机场怎么样？测速结果、24元144GB月付与不限时套餐 | yp7.net",
+      "h1": [
+        " 隐形人机场怎么样？测速结果、24元144GB月付与不限时套餐 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/yinxingren-review-2026/"
+      ],
+      "description": [
+        "隐形人机场套餐与测速资料：收录2026年9月26日晚间用户提供的香港、日本、新加坡、美国和台湾节点测速截图；月付24元144GB起、年付109元80GB每月、不限时229元起。10月18日用户确认全部套餐不限设备数量，不支持试用和通用订阅。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 1,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/huanqiuti-review-2026/",
+      "file": "docs/.vuepress/dist/posts/huanqiuti-review-2026/index.html",
+      "bytes": 39300,
+      "title": "环球梯机场怎么样？23元120GB月付、96元年付与365天按量包 | yp7.net",
+      "h1": [
+        " 环球梯机场怎么样？23元120GB月付、96元年付与365天按量包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/huanqiuti-review-2026/"
+      ],
+      "description": [
+        "环球梯机场套餐与使用指南：23元120GB月付起、96元年付60GB每月，99元80GB和299元400GB按量包均限365天；整理设备上限、流量重置费用、HQ66七折优惠码及Nextin客户端教程。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/andycloud-review-2026/",
+      "file": "docs/.vuepress/dist/posts/andycloud-review-2026/index.html",
+      "bytes": 42474,
+      "title": "AnDy Cloud机场套餐与Clash教程：5元100GB月付、30元年付与不限时包 | yp7.net",
+      "h1": [
+        " AnDy Cloud机场套餐与Clash教程：5元100GB月付、30元年付与不限时包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/andycloud-review-2026/"
+      ],
+      "description": [
+        "AnDy Cloud月付5元100GB起，年付30元提供每月50GB，100元1000GB一次性包无过期日。整理6款套餐的价格、设备限制、标称速率、流量重置和续费规则，以及购买后获取通用订阅、导入Clash的步骤。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/ermiao-vpn-review/",
+      "file": "docs/.vuepress/dist/posts/ermiao-vpn-review/index.html",
+      "bytes": 43451,
+      "title": "二猫云机场怎么样？20元130GB月付、96元年付与不限时套餐 | yp7.net",
+      "h1": [
+        " 二猫云机场怎么样？20元130GB月付、96元年付与不限时套餐 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/ermiao-vpn-review/"
+      ],
+      "description": [
+        "二猫云月付20元130GB起，年付小包96元60GB/月，100元100GB和199元200GB不限时。10月20日用户确认美国原生家庭宽带IP需购前与客服沟通定制；700元一次性、月流量500GB仅为卡片展示，资源、周期和交付按商定方案。套餐全量资料仍据10月18日，试用保留9月26日来源。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 1,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/what-is-usdt/",
+      "file": "docs/.vuepress/dist/posts/what-is-usdt/index.html",
+      "bytes": 32307,
+      "title": "USDT是什么？稳定币原理、TRC20/ERC20区别、购买与风险指南 | yp7.net",
+      "h1": [
+        " USDT是什么？稳定币原理、TRC20/ERC20区别、购买与风险指南 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/what-is-usdt/"
+      ],
+      "description": [
+        "USDT是什么？本文说明泰达币的稳定币原理、TRC20/ERC20区别、购买与充值提现流程，并提醒核对链类型、手续费、到账和资金风险。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/sujie-review-2026/",
+      "file": "docs/.vuepress/dist/posts/sujie-review-2026/index.html",
+      "bytes": 40059,
+      "title": "速界机场怎么样？1天50GB免费试用、15元月付与客户端 | yp7.net",
+      "h1": [
+        " 速界机场怎么样？1天50GB免费试用、15元月付与客户端 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/sujie-review-2026/"
+      ],
+      "description": [
+        "速界注册完成后联系客服可领取1天50GB免费试用，来源为2026年9月27日站长补充。整理15元月付50GB付费包、90元年付50GB/月及25元120GB等套餐，以及四端客户端和iOS Nextin流程；不支持通用订阅，退款规则待核实。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 1,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/posts/kexinyun-review-2026/",
+      "file": "docs/.vuepress/dist/posts/kexinyun-review-2026/index.html",
+      "bytes": 37692,
+      "title": "可信云机场套餐与客户端指南：15元月付、96元年付与50GB不限时包 | yp7.net",
+      "h1": [
+        " 可信云机场套餐与客户端指南：15元月付、96元年付与50GB不限时包 "
+      ],
+      "canonical": [
+        "https://yp7.net/posts/kexinyun-review-2026/"
+      ],
+      "description": [
+        "可信云机场2026年9月27日套餐资料：15元月付60GB、96元年付每月60GB，新增50元50GB不限时包，标准套餐50元月付300GB。整理四个平台客户端及iOS Nextin使用方法；站长同日补充确认不支持免费试用及通用订阅，退款待核实。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/methodology/",
+      "file": "docs/.vuepress/dist/methodology/index.html",
+      "bytes": 38452,
+      "title": "机场推荐方法：yp7.net 如何使用 Siilas 测试数据评估价格、客户端与风险 | yp7.net",
+      "h1": [
+        " 机场推荐方法：yp7.net 如何使用 Siilas 测试数据评估价格、客户端与风险 "
+      ],
+      "canonical": [
+        "https://yp7.net/methodology/"
+      ],
+      "description": [
+        "yp7.net 机场推荐方法与测试数据来源说明。2026年8月18日起本站不再自行测速，当前测试主要引用 Siilas，用户投稿单独注明来源；本站只整理推荐、套餐、客户端、风险提示与商业披露。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/about/",
+      "file": "docs/.vuepress/dist/about/index.html",
+      "bytes": 27249,
+      "title": "关于 yp7.net：机场推荐原则、测试数据来源、商业披露与风险提示 | yp7.net",
+      "h1": [
+        " 关于 yp7.net：机场推荐原则、测试数据来源、商业披露与风险提示 "
+      ],
+      "canonical": [
+        "https://yp7.net/about/"
+      ],
+      "description": [
+        "yp7.net 与 Siilas 由同一站长运营。yp7.net 收集复核套餐与客户端资料，交由 Siilas 独立于商业采集开展实测，再引用带日期的结果整理推荐；资料复核与测试日期分别记录。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/blog/",
+      "file": "docs/.vuepress/dist/blog/index.html",
+      "bytes": 47921,
+      "title": "博客 | yp7.net",
+      "h1": [],
+      "canonical": [
+        "https://yp7.net/blog/"
+      ],
+      "description": [
+        "yp7.net 专注2026机场推荐、套餐与客户端信息整理、风险提示和科学上网教程；2026年8月18日起不再自行测速，相关测试数据统一来自 Siilas。"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 15,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/blog/archives/",
+      "file": "docs/.vuepress/dist/blog/archives/index.html",
+      "bytes": 52330,
+      "title": "归档 | yp7.net",
+      "h1": [],
+      "canonical": [
+        "https://yp7.net/blog/archives/"
+      ],
+      "description": [
+        "yp7.net 专注2026机场推荐、套餐与客户端信息整理、风险提示和科学上网教程；2026年8月18日起不再自行测速，相关测试数据统一来自 Siilas。"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/blog/tags/",
+      "file": "docs/.vuepress/dist/blog/tags/index.html",
+      "bytes": 66027,
+      "title": "标签 | yp7.net",
+      "h1": [],
+      "canonical": [
+        "https://yp7.net/blog/tags/"
+      ],
+      "description": [
+        "yp7.net 专注2026机场推荐、套餐与客户端信息整理、风险提示和科学上网教程；2026年8月18日起不再自行测速，相关测试数据统一来自 Siilas。"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/blog/categories/",
+      "file": "docs/.vuepress/dist/blog/categories/index.html",
+      "bytes": 56213,
+      "title": "分类 | yp7.net",
+      "h1": [],
+      "canonical": [
+        "https://yp7.net/blog/categories/"
+      ],
+      "description": [
+        "yp7.net 专注2026机场推荐、套餐与客户端信息整理、风险提示和科学上网教程；2026年8月18日起不再自行测速，相关测试数据统一来自 Siilas。"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/rankings/cheap/",
+      "file": "docs/.vuepress/dist/rankings/cheap/index.html",
+      "bytes": 37770,
+      "title": "2026低价机场榜：便宜机场、试用机场与备用机场筛选 | yp7.net",
+      "h1": [
+        " 2026低价机场榜：便宜机场、试用机场与备用机场筛选 "
+      ],
+      "canonical": [
+        "https://yp7.net/rankings/cheap/"
+      ],
+      "description": [
+        "2026低价机场榜，按20GB、100GB和300GB月度用量比较低价套餐标价、付款周期、设备和客户端限制，区分免费试用、首充待核实与倍率条件，帮助购买前缩小候选。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/rankings/no-expiry/",
+      "file": "docs/.vuepress/dist/rankings/no-expiry/index.html",
+      "bytes": 57627,
+      "title": "2026不限时机场榜：一次性价格、总流量与每GB成本比较 | yp7.net",
+      "h1": [
+        " 2026不限时机场榜：一次性价格、总流量与每GB成本比较 "
+      ],
+      "canonical": [
+        "https://yp7.net/rankings/no-expiry/"
+      ],
+      "description": [
+        "2026不限时机场套餐比较：列出一次付款金额、一次性总流量、每GB成本、设备限制、有效期与套餐核验日期。按常规入门流量包筛选低频备用方案，价格、额度或有效期冲突不计算确定单价。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/rankings/trial/",
+      "file": "docs/.vuepress/dist/rankings/trial/index.html",
+      "bytes": 33283,
+      "title": "2026免费试用机场榜：注册体验、试用流量与短周期测试入口 | yp7.net",
+      "h1": [
+        " 2026免费试用机场榜：注册体验、试用流量与短周期测试入口 "
+      ],
+      "canonical": [
+        "https://yp7.net/rankings/trial/"
+      ],
+      "description": [
+        "2026免费试用机场榜，整理支持注册试用或体验流量的机场，包含试用时长、流量、客户端、通用订阅和购买前测试建议，帮助新手先验证再付费。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/rankings/dedicated-client/",
+      "file": "docs/.vuepress/dist/rankings/dedicated-client/index.html",
+      "bytes": 49343,
+      "title": "2026专属客户端机场榜：新手一键连接与低配置成本机场筛选 | yp7.net",
+      "h1": [
+        " 2026专属客户端机场榜：新手一键连接与低配置成本机场筛选 "
+      ],
+      "canonical": [
+        "https://yp7.net/rankings/dedicated-client/"
+      ],
+      "description": [
+        "2026专属客户端机场榜，整理提供官方或专属客户端的机场，适合不想折腾 Clash 订阅、规则分流和手动节点配置的新手用户，并提示专属客户端可控性较低。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/rankings/streaming/",
+      "file": "docs/.vuepress/dist/rankings/streaming/index.html",
+      "bytes": 58506,
+      "title": "2026流媒体机场记录：9家Siilas视频状态与套餐对比 | yp7.net",
+      "h1": [
+        " 2026流媒体机场记录：9家Siilas视频状态与套餐对比 "
+      ],
+      "canonical": [
+        "https://yp7.net/rankings/streaming/"
+      ],
+      "description": [
+        "仅收录Siilas已有原始测速和视频状态记录的9家机场，按日期与节点列出流畅、缓冲样本，对比套餐及客户端；明确区分泛视频观察与YouTube 4K、Netflix、Disney+、TikTok解锁。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/rankings/coupons/",
+      "file": "docs/.vuepress/dist/rankings/coupons/index.html",
+      "bytes": 39602,
+      "title": "2026机场优惠码汇总：折扣、试用券与购买前复核清单 | yp7.net",
+      "h1": [
+        " 2026机场优惠码汇总：折扣、试用券与购买前复核清单 "
+      ],
+      "canonical": [
+        "https://yp7.net/rankings/coupons/"
+      ],
+      "description": [
+        "2026机场优惠码汇总，分开整理已有优惠与试用说明、待核实旧码和历史活动；Edge-X双节公告窗口已于10月8日结束，优惠实际适用条件与结算金额仍以官网后台为准。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/rankings/clash/",
+      "file": "docs/.vuepress/dist/rankings/clash/index.html",
+      "bytes": 49588,
+      "title": "Clash机场推荐：2026支持通用订阅的机场节点对比 | yp7.net",
+      "h1": [
+        " Clash机场推荐：2026支持通用订阅的机场节点对比 "
+      ],
+      "canonical": [
+        "https://yp7.net/rankings/clash/"
+      ],
+      "description": [
+        "2026 Clash与通用订阅机场筛选，比较价格、流量、试用和领取条件，并列出已有Shadowrocket教程或导入入口的候选，区分文档支持、专用配置与仍待确认的客户端适配。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/rankings/chatgpt/",
+      "file": "docs/.vuepress/dist/rankings/chatgpt/index.html",
+      "bytes": 67008,
+      "title": "2026 ChatGPT机场记录：9家Siilas节点观察与套餐对比 | yp7.net",
+      "h1": [
+        " 2026 ChatGPT机场记录：9家Siilas节点观察与套餐对比 "
+      ],
+      "canonical": [
+        "https://yp7.net/rankings/chatgpt/"
+      ],
+      "description": [
+        "仅收录Siilas已有原始测速和ChatGPT定性记录的9家机场，列出节点地区、测试日期、流畅及不可用样本，并对比套餐与客户端。说明综合参评状态和Claude、Gemini、API未验证的边界。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:320, max-image-preview:large"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/risk-monitor/",
+      "file": "docs/.vuepress/dist/risk-monitor/index.html",
+      "bytes": 59007,
+      "title": "机场风险监测：跑路预警、官网异常与套餐变化记录 | yp7.net",
+      "h1": [
+        " 机场风险监测：跑路预警、官网异常与套餐变化记录 "
+      ],
+      "canonical": [
+        "https://yp7.net/risk-monitor/"
+      ],
+      "description": [
+        "机场风险监测页，记录跑路预警、官网异常、客服失联、套餐变化、节点波动、已淘汰机场和续费前复核流程，帮助降低机场购买风险。"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/friends/",
+      "file": "docs/.vuepress/dist/friends/index.html",
+      "bytes": 20275,
+      "title": "yp7.net 友情链接：科学上网、机场测评与网络工具资源站点 | yp7.net",
+      "h1": [],
+      "canonical": [
+        "https://yp7.net/friends/"
+      ],
+      "description": [
+        "yp7.net 友情链接页面，收录科学上网、机场测评、VPN 教程和网络工具相关站点，方便读者发现更多中文技术内容；欢迎同类优质站点交换友链。"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 2,
+      "scripts": [
+        "/assets/app-lqb-CWxc.js"
+      ],
+      "styles": [
+        "/assets/style-DeTr0fFD.css"
+      ]
+    },
+    {
+      "route": "/data/airports.html",
+      "file": "docs/.vuepress/dist/data/airports.html",
+      "bytes": 28504,
+      "title": "yp7.net 全量机场推荐数据：价格、流量、客户端、历史记录与风险状态",
+      "h1": [
+        "yp7.net 全量机场数据"
+      ],
+      "canonical": [
+        "https://yp7.net/data/airports"
+      ],
+      "description": [
+        "yp7.net 全量机场推荐数据 HTML 页面，汇总价格、流量、试用、客户端、历史测试记录和风险状态；当前测试数据统一来自 Siilas。数据页提供机器可读 JSON、Markdown 和 HTML 表格，覆盖价格、流量、试用、客户端、订阅兼容和风险状态，方便搜索引擎与读者引用。"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [],
+      "styles": []
+    },
+    {
+      "route": "/data/rankings.html",
+      "file": "docs/.vuepress/dist/data/rankings.html",
+      "bytes": 78305,
+      "title": "yp7.net 机场推荐数据：销量、低价、Clash、ChatGPT、流媒体与历史记录",
+      "h1": [
+        "yp7.net 机场榜单数据"
+      ],
+      "canonical": [
+        "https://yp7.net/data/rankings"
+      ],
+      "description": [
+        "yp7.net 机场推荐数据 HTML 页面，按销量样本、低价、试用、客户端、Clash、ChatGPT和流媒体场景整理资料；旧测试记录统一标记为历史。数据页提供机器可读 JSON、Markdown 和 HTML 表格，覆盖价格、流量、试用、客户端、订阅兼容和风险状态，方便搜索引擎与读者引用。"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [],
+      "styles": []
+    },
+    {
+      "route": "/data/risk-monitor.html",
+      "file": "docs/.vuepress/dist/data/risk-monitor.html",
+      "bytes": 22915,
+      "title": "yp7.net 机场风险监测数据：跑路风险、官网异常、客服失联、套餐变化、节点波动与购买避坑提示汇总",
+      "h1": [
+        "yp7.net 机场风险监测数据"
+      ],
+      "canonical": [
+        "https://yp7.net/data/risk-monitor"
+      ],
+      "description": [
+        "yp7.net 机场风险监测 HTML 页面，整理已淘汰机场、客服失联、官网异常、节点波动和购买前风险提示。数据页提供机器可读 JSON、Markdown 和 HTML 表格，覆盖价格、流量、试用、客户端、订阅兼容和风险状态，方便搜索引擎与读者引用。"
+      ],
+      "robots": [
+        "noindex, follow"
+      ],
+      "jsonLdCount": 1,
+      "imageCount": 0,
+      "scripts": [],
+      "styles": []
+    }
+  ],
+  "sitemap": [
+    "https://yp7.net/about/",
+    "https://yp7.net/",
+    "https://yp7.net/posts/ai-tools-not-working/",
+    "https://yp7.net/posts/ai-tools-node-guide-2026/",
+    "https://yp7.net/posts/chatgpt-guide-2026/",
+    "https://yp7.net/posts/tiktok-guide-2026/",
+    "https://yp7.net/posts/tiktok-vpn-recommend/",
+    "https://yp7.net/posts/tiktok-not-working/",
+    "https://yp7.net/posts/telegram-guide-2026/",
+    "https://yp7.net/posts/what-is-usdt/",
+    "https://yp7.net/posts/okx-review/",
+    "https://yp7.net/posts/clash-verge-guide-2026/",
+    "https://yp7.net/posts/clash-mi-guide-2026/",
+    "https://yp7.net/posts/clash-for-android-guide-2026/",
+    "https://yp7.net/posts/clash-subscription-troubleshooting/",
+    "https://yp7.net/posts/flclash-guide-2026/",
+    "https://yp7.net/posts/shadowrocket-guide-2026/",
+    "https://yp7.net/posts/speedtest-vpn/",
+    "https://yp7.net/posts/v2rayn-guide-2026/",
+    "https://yp7.net/posts/airport-tools/",
+    "https://yp7.net/posts/router-vpn-setup-2026/",
+    "https://yp7.net/posts/jichang-heji/",
+    "https://yp7.net/posts/jichang-tuijian/",
+    "https://yp7.net/posts/jichang-buying-guide/",
+    "https://yp7.net/rankings/chatgpt/",
+    "https://yp7.net/rankings/clash/",
+    "https://yp7.net/rankings/no-expiry/",
+    "https://yp7.net/rankings/dedicated-client/",
+    "https://yp7.net/rankings/cheap/",
+    "https://yp7.net/rankings/trial/",
+    "https://yp7.net/rankings/coupons/",
+    "https://yp7.net/rankings/streaming/",
+    "https://yp7.net/risk-monitor/",
+    "https://yp7.net/posts/clash-guide/",
+    "https://yp7.net/posts/proxy-protocols-guide/",
+    "https://yp7.net/posts/china-vpn-april/",
+    "https://yp7.net/posts/google-youtube-github-gmail-not-working/",
+    "https://yp7.net/posts/vpn-alternatives-risk-guide/",
+    "https://yp7.net/posts/airport-node-subscription-guide/",
+    "https://yp7.net/methodology/",
+    "https://yp7.net/posts/vpn-guide-2026/",
+    "https://yp7.net/posts/iplc-iepl-bgp-relay-direct-guide/",
+    "https://yp7.net/posts/is-vpn-or-airport-better-pros-cons-analysis/",
+    "https://yp7.net/posts/proxy-node-region-guide/",
+    "https://yp7.net/posts/soft-router-guide-2026/",
+    "https://yp7.net/posts/99ba-review-2026/",
+    "https://yp7.net/posts/andycloud-review-2026/",
+    "https://yp7.net/posts/edge-x-review-2026/",
+    "https://yp7.net/posts/firefly-review-2026/",
+    "https://yp7.net/posts/tidal-review-2026/",
+    "https://yp7.net/posts/ccyz-review-2026/",
+    "https://yp7.net/posts/cocoduck-review/",
+    "https://yp7.net/posts/flybit-review-2026/",
+    "https://yp7.net/posts/runway-review-2026/",
+    "https://yp7.net/posts/sogo-review-2026/",
+    "https://yp7.net/posts/ssone/",
+    "https://yp7.net/posts/u1s1-review-2026/",
+    "https://yp7.net/posts/uuone-review-2026/",
+    "https://yp7.net/posts/xsus-review-2026/",
+    "https://yp7.net/posts/xxyun-review-2026/",
+    "https://yp7.net/posts/yifanyun-review-2026/",
+    "https://yp7.net/posts/jiuyun-review-2026/",
+    "https://yp7.net/posts/ermiao-vpn-review/",
+    "https://yp7.net/posts/yuntu-review-2026/",
+    "https://yp7.net/posts/yunjiexian-review-2026/",
+    "https://yp7.net/posts/guangnianti-review-2026/",
+    "https://yp7.net/posts/guangsuyun/",
+    "https://yp7.net/posts/quanqiuyun/",
+    "https://yp7.net/posts/chongshangyunxiao/",
+    "https://yp7.net/posts/kexinyun-review-2026/",
+    "https://yp7.net/posts/weituyun/",
+    "https://yp7.net/posts/tank-review-2026/",
+    "https://yp7.net/posts/naiyun-review-2026/",
+    "https://yp7.net/posts/yuzhoucloud-review-2026/",
+    "https://yp7.net/posts/huanyuyun-review-2026/",
+    "https://yp7.net/posts/shanshuiyun-review-2026/",
+    "https://yp7.net/posts/kuaili-review-2026/",
+    "https://yp7.net/posts/wuyoulianjie-review-2026/",
+    "https://yp7.net/posts/xingdaomeng-review-2026/",
+    "https://yp7.net/posts/xinghuayun-review-2026/",
+    "https://yp7.net/posts/jilianyun-review-2026/",
+    "https://yp7.net/posts/jisu123-review-2026/",
+    "https://yp7.net/posts/jisucloud-review-2026/",
+    "https://yp7.net/posts/liulianyun-review-2026/",
+    "https://yp7.net/posts/dengta-review-2026/",
+    "https://yp7.net/posts/lingmaowangluo-review-2026/",
+    "https://yp7.net/posts/xiongmaocloud-review-2026/",
+    "https://yp7.net/posts/huanqiuti-review-2026/",
+    "https://yp7.net/posts/shunyun-review-2026/",
+    "https://yp7.net/posts/shenxingjiasu-review-2026/",
+    "https://yp7.net/posts/miaomiaoyun-review-2026/",
+    "https://yp7.net/posts/wangji-kuaiche-review/",
+    "https://yp7.net/posts/kuajieyun-review-2026/",
+    "https://yp7.net/posts/bianyuan-review-2026/",
+    "https://yp7.net/posts/xunda-review-2026/",
+    "https://yp7.net/posts/sujie-review-2026/",
+    "https://yp7.net/posts/jinyun-review-2026/",
+    "https://yp7.net/posts/shandianshu-review-2026/",
+    "https://yp7.net/posts/shanyue-review-2026/",
+    "https://yp7.net/posts/adaxi-review-2026/",
+    "https://yp7.net/posts/yinyun-review-2026/",
+    "https://yp7.net/posts/yinxingren-review-2026/",
+    "https://yp7.net/posts/liyun-review-2026/"
+  ]
+}

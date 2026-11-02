@@ -177,16 +177,16 @@ Nextin识别码 `edgex` 用于选择服务；注册入口中的邀请码用于�
 
 ## 本文属于
 
-- [机场大全](/posts/jichang-heji/)
+- [机场推荐](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
 - [专属客户端机场榜](/rankings/dedicated-client/)
 - [机场风险监测](/risk-monitor/)
 
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
+- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
-- [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
+- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [神行加速机场怎么样？](/posts/shenxingjiasu-review-2026/)

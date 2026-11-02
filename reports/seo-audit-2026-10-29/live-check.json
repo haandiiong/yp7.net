@@ -1,0 +1,1580 @@
+[
+  {
+    "url": "https://yp7.net/about/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/about/\n0.574102\n27249",
+    "error": "",
+    "title": "关于 yp7.net：机场推荐原则、测试数据来源、商业披露与风险提示 | yp7.net",
+    "canonical": [
+      "https://yp7.net/about/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/\n0.565589\n25666",
+    "error": "",
+    "title": "科学上网工具下载与客户端安装教程｜yp7.net",
+    "canonical": [
+      "https://yp7.net/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/ai-tools-not-working/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/ai-tools-not-working/\n0.561250\n33883",
+    "error": "",
+    "title": "ChatGPT、Claude、Gemini打不开怎么办？按错误与连接层级排查 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/ai-tools-not-working/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/ai-tools-node-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/ai-tools-node-guide-2026/\n0.640761\n46350",
+    "error": "",
+    "title": "ChatGPT、Claude、Gemini 用什么节点？2026 AI工具机场节点选择与打不开排查指南 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/ai-tools-node-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/chatgpt-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/chatgpt-guide-2026/\n0.616661\n31354",
+    "error": "",
+    "title": "ChatGPT是什么？ChatGPT怎么使用：正版入口、注册登录、提示词与常见问题 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/chatgpt-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/tiktok-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/tiktok-guide-2026/\n0.896088\n36687",
+    "error": "",
+    "title": "TikTok是什么？中国大陆使用TikTok的下载注册、环境配置与运营入门 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/tiktok-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/tiktok-vpn-recommend/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/tiktok-vpn-recommend/\n0.808843\n33446",
+    "error": "",
+    "title": "TikTok用什么节点？地区选择、IP质量、账号环境与节点风险 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/tiktok-vpn-recommend/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/tiktok-not-working/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/tiktok-not-working/\n0.757178\n37355",
+    "error": "",
+    "title": "TikTok看不了怎么办？无网络、地区限制、0播放与节点排查 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/tiktok-not-working/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/telegram-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/telegram-guide-2026/\n0.547695\n33896",
+    "error": "",
+    "title": "Telegram教程：下载安装、注册登录、账号安全、群组频道与代理设置 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/telegram-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/what-is-usdt/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/what-is-usdt/\n0.609888\n32307",
+    "error": "",
+    "title": "USDT是什么？稳定币原理、TRC20/ERC20区别、购买与风险指南 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/what-is-usdt/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/okx-review/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/okx-review/\n0.741846\n31114",
+    "error": "",
+    "title": "OKX交易所怎么样？注册、买USDT、手续费与安全风险 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/okx-review/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/clash-verge-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/clash-verge-guide-2026/\n0.916619\n31364",
+    "error": "",
+    "title": "Clash Verge下载与使用教程：安装、配置、订阅导入与TUN模式 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/clash-verge-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/clash-mi-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/clash-mi-guide-2026/\n0.602382\n40549",
+    "error": "",
+    "title": "Clash Mi iPhone与iPad教程：下载、订阅导入、选择配置与连接排错 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/clash-mi-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/clash-for-android-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/clash-for-android-guide-2026/\n0.912533\n32687",
+    "error": "",
+    "title": "Clash Meta for Android 安卓教程：下载、订阅导入与连接排查 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/clash-for-android-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/clash-subscription-troubleshooting/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/clash-subscription-troubleshooting/\n0.652662\n32003",
+    "error": "",
+    "title": "Clash订阅链接导入失败怎么办？更新失败、节点全红排查 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/clash-subscription-troubleshooting/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/flclash-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/flclash-guide-2026/\n0.558155\n45127",
+    "error": "",
+    "title": "FlClash下载与使用教程：安卓、Windows、macOS安装与订阅导入 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/flclash-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/shadowrocket-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/shadowrocket-guide-2026/\n0.593124\n38888",
+    "error": "",
+    "title": "Shadowrocket下载与使用教程：小火箭iOS安装、订阅导入与分流配置 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/shadowrocket-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/speedtest-vpn/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/speedtest-vpn/\n0.697856\n39285",
+    "error": "",
+    "title": "机场测速方法详解：如何评估节点速度、延迟与晚高峰稳定性 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/speedtest-vpn/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/v2rayn-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/v2rayn-guide-2026/\n0.576872\n31106",
+    "error": "",
+    "title": "v2rayN使用教程：Windows节点导入、订阅更新、测速和常见问题 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/v2rayn-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/airport-tools/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/airport-tools/\n0.673990\n53071",
+    "error": "",
+    "title": "科学上网工具推荐与下载：按设备选Clash、小火箭和机场客户端 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/airport-tools/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/router-vpn-setup-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/router-vpn-setup-2026/\n0.630154\n48014",
+    "error": "",
+    "title": "路由器翻墙怎么设置？OpenWrt与OpenClash二级路由配置教程 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/router-vpn-setup-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/jichang-heji/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/jichang-heji/\n0.810165\n243951",
+    "error": "",
+    "title": "2026机场大全：机场价格、流量与试用对比 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/jichang-heji/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/jichang-tuijian/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/jichang-tuijian/\n0.640600\n76239",
+    "error": "",
+    "title": "2026机场推荐：7款机场优缺点、价格与试用对比 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/jichang-tuijian/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/jichang-buying-guide/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/jichang-buying-guide/\n0.861391\n34148",
+    "error": "",
+    "title": "机场购买教程：注册、套餐、付款、试用与避坑指南 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/jichang-buying-guide/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/rankings/chatgpt/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/rankings/chatgpt/\n0.660533\n67008",
+    "error": "",
+    "title": "2026 ChatGPT机场记录：9家Siilas节点观察与套餐对比 | yp7.net",
+    "canonical": [
+      "https://yp7.net/rankings/chatgpt/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/rankings/clash/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/rankings/clash/\n0.707627\n49588",
+    "error": "",
+    "title": "Clash机场推荐：2026支持通用订阅的机场节点对比 | yp7.net",
+    "canonical": [
+      "https://yp7.net/rankings/clash/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/rankings/no-expiry/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/rankings/no-expiry/\n0.608823\n57627",
+    "error": "",
+    "title": "2026不限时机场榜：一次性价格、总流量与每GB成本比较 | yp7.net",
+    "canonical": [
+      "https://yp7.net/rankings/no-expiry/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/rankings/dedicated-client/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/rankings/dedicated-client/\n0.582620\n49343",
+    "error": "",
+    "title": "2026专属客户端机场榜：新手一键连接与低配置成本机场筛选 | yp7.net",
+    "canonical": [
+      "https://yp7.net/rankings/dedicated-client/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/rankings/cheap/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/rankings/cheap/\n0.838978\n37770",
+    "error": "",
+    "title": "2026低价机场榜：便宜机场、试用机场与备用机场筛选 | yp7.net",
+    "canonical": [
+      "https://yp7.net/rankings/cheap/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/rankings/trial/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/rankings/trial/\n0.563503\n33283",
+    "error": "",
+    "title": "2026免费试用机场榜：注册体验、试用流量与短周期测试入口 | yp7.net",
+    "canonical": [
+      "https://yp7.net/rankings/trial/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/rankings/coupons/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/rankings/coupons/\n0.628086\n39602",
+    "error": "",
+    "title": "2026机场优惠码汇总：折扣、试用券与购买前复核清单 | yp7.net",
+    "canonical": [
+      "https://yp7.net/rankings/coupons/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/rankings/streaming/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/rankings/streaming/\n0.748356\n58506",
+    "error": "",
+    "title": "2026流媒体机场记录：9家Siilas视频状态与套餐对比 | yp7.net",
+    "canonical": [
+      "https://yp7.net/rankings/streaming/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/risk-monitor/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/risk-monitor/\n0.653182\n59007",
+    "error": "",
+    "title": "机场风险监测：跑路预警、官网异常与套餐变化记录 | yp7.net",
+    "canonical": [
+      "https://yp7.net/risk-monitor/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/clash-guide/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/clash-guide/\n0.798347\n34078",
+    "error": "",
+    "title": "Clash节点是什么？2026新手入门指南：订阅导入、协议分类与避坑建议 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/clash-guide/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/proxy-protocols-guide/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/proxy-protocols-guide/\n0.647702\n30717",
+    "error": "",
+    "title": "代理协议区别：VLESS、Reality、Trojan、Hysteria2、TUIC 怎么选 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/proxy-protocols-guide/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/china-vpn-april/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/china-vpn-april/\n0.778415\n33456",
+    "error": "",
+    "title": "快连停止中国大陆业务了吗？2026官方公告、恢复运营与退款说明 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/china-vpn-april/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/google-youtube-github-gmail-not-working/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/google-youtube-github-gmail-not-working/\n0.754173\n33933",
+    "error": "",
+    "title": "Google、YouTube、GitHub、Gmail打不开怎么办？外网应用排查指南 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/google-youtube-github-gmail-not-working/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/vpn-alternatives-risk-guide/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/vpn-alternatives-risk-guide/\n0.580421\n35015",
+    "error": "",
+    "title": "快连替代、LetsVPN替代、老王VPN替代和免费VPN替代怎么选 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/vpn-alternatives-risk-guide/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/airport-node-subscription-guide/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/airport-node-subscription-guide/\n0.753820\n31661",
+    "error": "",
+    "title": "机场是什么？机场节点、订阅链接和 Clash 使用入门 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/airport-node-subscription-guide/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/methodology/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/methodology/\n0.661228\n38452",
+    "error": "",
+    "title": "机场推荐方法：yp7.net 如何使用 Siilas 测试数据评估价格、客户端与风险 | yp7.net",
+    "canonical": [
+      "https://yp7.net/methodology/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/vpn-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/vpn-guide-2026/\n0.647384\n34711",
+    "error": "",
+    "title": "科学上网是什么？翻墙、梯子、VPN、代理和机场区别 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/vpn-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/iplc-iepl-bgp-relay-direct-guide/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/iplc-iepl-bgp-relay-direct-guide/\n0.580037\n39628",
+    "error": "",
+    "title": "机场线路区别：IPLC、IEPL、BGP、直连、中转和专线怎么选 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/iplc-iepl-bgp-relay-direct-guide/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/is-vpn-or-airport-better-pros-cons-analysis/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/is-vpn-or-airport-better-pros-cons-analysis/\n0.735207\n34138",
+    "error": "",
+    "title": "翻墙、科学上网、VPN与机场的优缺点对比 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/is-vpn-or-airport-better-pros-cons-analysis/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/proxy-node-region-guide/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/proxy-node-region-guide/\n0.559771\n32162",
+    "error": "",
+    "title": "机场节点地区怎么选？香港、日本、新加坡、美国、台湾节点对比 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/proxy-node-region-guide/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/soft-router-guide-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/soft-router-guide-2026/\n0.721558\n38282",
+    "error": "",
+    "title": "软路由是什么？OpenWrt、主路由与旁路由配置入门 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/soft-router-guide-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/99ba-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/99ba-review-2026/\n0.952829\n48383",
+    "error": "",
+    "title": "99吧机场怎么样？9.9元70GB套餐、免费试用与Clash订阅 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/99ba-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/andycloud-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/andycloud-review-2026/\n0.846571\n42474",
+    "error": "",
+    "title": "AnDy Cloud机场套餐与Clash教程：5元100GB月付、30元年付与不限时包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/andycloud-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/edge-x-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/edge-x-review-2026/\n0.856775\n43933",
+    "error": "",
+    "title": "Edge-X机场套餐与客户端指南：22.8元200GB、全年总量包与退款规则 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/edge-x-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/firefly-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/firefly-review-2026/\n0.691163\n40644",
+    "error": "",
+    "title": "Firefly机场套餐与客户端指南：25元150GB月付、96元年付与不限时 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/firefly-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/tidal-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/tidal-review-2026/\n0.610923\n42970",
+    "error": "",
+    "title": "Tidal潮汐加速机场套餐与Clash订阅指南：25元100GB月付、年付与永久流量包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/tidal-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/ccyz-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/ccyz-review-2026/\n0.769875\n34300",
+    "error": "",
+    "title": "CCYZ机场套餐与使用指南：49.9元季付、设备限制与Clash订阅 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/ccyz-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/cocoduck-review/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/cocoduck-review/\n0.739472\n40344",
+    "error": "",
+    "title": "cocoduck机场套餐与使用指南：17元月付、1天2GB试用及客户端 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/cocoduck-review/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/flybit-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/flybit-review-2026/\n0.714779\n59635",
+    "error": "",
+    "title": "Flybit机场怎么样？套餐价格、Clash订阅与客户端支持 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/flybit-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/runway-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/runway-review-2026/\n0.781154\n58647",
+    "error": "",
+    "title": "拼好连机场怎么样？19.9元50GB套餐与新旧用户规则 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/runway-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/sogo-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/sogo-review-2026/\n0.950730\n39218",
+    "error": "",
+    "title": "sogo机场套餐与客户端下载：25元150GB、98元年付与不限时流量 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/sogo-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/ssone/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/ssone/\n0.563678\n33945",
+    "error": "",
+    "title": "SSONE机场怎么样？15元60GB套餐、1小时试用与客户端教程 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/ssone/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/u1s1-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/u1s1-review-2026/\n0.771819\n36231",
+    "error": "",
+    "title": "U1S1机场套餐与订阅：20元月付、IEPL线路说明及历史测速 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/u1s1-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/uuone-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/uuone-review-2026/\n0.621689\n33070",
+    "error": "",
+    "title": "UUONE机场怎么样？19元150GB月付、99元不限时与订阅教程 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/uuone-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/xsus-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/xsus-review-2026/\n0.816189\n38829",
+    "error": "",
+    "title": "XSUS机场怎么样？12元168GB月付、不限时与IEPL套餐说明 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/xsus-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/xxyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/xxyun-review-2026/\n0.564191\n57136",
+    "error": "",
+    "title": "xxyun机场怎么样？2026套餐价格、官方客户端与使用限制 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/xxyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/yifanyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/yifanyun-review-2026/\n0.561127\n40908",
+    "error": "",
+    "title": "一翻云机场套餐与使用指南：20元月付、50元不限时与客户端 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/yifanyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/jiuyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/jiuyun-review-2026/\n0.590672\n45502",
+    "error": "",
+    "title": "九云机场怎么样？6元150GB月付、不限时套餐与Clash订阅教程 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/jiuyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/ermiao-vpn-review/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/ermiao-vpn-review/\n0.677635\n43451",
+    "error": "",
+    "title": "二猫云机场怎么样？20元130GB月付、96元年付与不限时套餐 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/ermiao-vpn-review/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/yuntu-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/yuntu-review-2026/\n0.619669\n45488",
+    "error": "",
+    "title": "云图机场套餐与Clash订阅指南：20元150GB月付与78元12个月套餐 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/yuntu-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/yunjiexian-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/yunjiexian-review-2026/\n0.602305\n52552",
+    "error": "",
+    "title": "云界线机场套餐与客户端指南：22元月付、96元年付及不限时包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/yunjiexian-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/guangnianti-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/guangnianti-review-2026/\n0.653176\n58397",
+    "error": "",
+    "title": "光年梯机场怎么样？18元套餐、专属客户端与订阅限制 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/guangnianti-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/guangsuyun/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/guangsuyun/\n1.028333\n48619",
+    "error": "",
+    "title": "光速云机场怎么样？套餐价格、专属客户端与购买限制 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/guangsuyun/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/quanqiuyun/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/quanqiuyun/\n0.672387\n63846",
+    "error": "",
+    "title": "全球云机场套餐与客户端指南：20元120GB月付及不限时流量包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/quanqiuyun/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/chongshangyunxiao/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/chongshangyunxiao/\n0.943072\n33708",
+    "error": "",
+    "title": "冲上云霄机场怎么样？7元50GB套餐、不限时与订阅使用教程 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/chongshangyunxiao/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/kexinyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/kexinyun-review-2026/\n0.940789\n37692",
+    "error": "",
+    "title": "可信云机场套餐与客户端指南：15元月付、96元年付与50GB不限时包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/kexinyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/weituyun/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/weituyun/\n0.934388\n34015",
+    "error": "",
+    "title": "唯兔云机场怎么样？19.9元150GB月付、年付与不限时套餐 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/weituyun/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/tank-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/tank-review-2026/\n0.771852\n34713",
+    "error": "",
+    "title": "坦克云（原坦克加速）怎么样？9.9元80GB套餐、客户端与订阅教程 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/tank-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/naiyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/naiyun-review-2026/\n0.994943\n31527",
+    "error": "",
+    "title": "奈云机场风险记录：2026年6月高度疑似跑路预警、官网异常与停止推荐 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/naiyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/yuzhoucloud-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/yuzhoucloud-review-2026/\n0.888738\n37810",
+    "error": "",
+    "title": "宇宙云机场套餐与订阅教程：25元160GB、ClashMi与不限时套餐 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/yuzhoucloud-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/huanyuyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/huanyuyun-review-2026/\n0.908840\n38068",
+    "error": "",
+    "title": "寰宇云机场套餐与使用指南：18元月付、79元年付、客户端与不限时订阅 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/huanyuyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/shanshuiyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/shanshuiyun-review-2026/\n0.908478\n39931",
+    "error": "",
+    "title": "山水云机场套餐与订阅指南：12元100GB月付、77元年付与不限时包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/shanshuiyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/kuaili-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/kuaili-review-2026/\n1.074936\n37785",
+    "error": "",
+    "title": "快狸机场套餐与客户端指南：月付15元起、Clash Mi订阅与使用流程 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/kuaili-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/wuyoulianjie-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/wuyoulianjie-review-2026/\n0.895531\n38380",
+    "error": "",
+    "title": "无忧链接机场套餐与客户端指南：19元100GB月付、79元年付与不限时 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/wuyoulianjie-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/xingdaomeng-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/xingdaomeng-review-2026/\n0.741885\n34496",
+    "error": "",
+    "title": "星岛梦机场套餐与客户端：25元月付、96元年付及不限时流量包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/xingdaomeng-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/xinghuayun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/xinghuayun-review-2026/\n0.902442\n38399",
+    "error": "",
+    "title": "杏花云机场套餐与Clash订阅指南：3元200GB月付、12元年付与365天总量包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/xinghuayun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/jilianyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/jilianyun-review-2026/\n1.052385\n35153",
+    "error": "",
+    "title": "极连云机场怎么样？18元100GB月付、年付与不限时价格说明 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/jilianyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/jisu123-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/jisu123-review-2026/\n0.950896\n49877",
+    "error": "",
+    "title": "极速123机场套餐与Clash订阅指南：15.99元月付、6倍扣量与不限时包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/jisu123-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/jisucloud-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/jisucloud-review-2026/\n0.864794\n46566",
+    "error": "",
+    "title": "极速Cloud机场套餐与订阅指南：新人15元、长期30元起及10倍流量 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/jisucloud-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/liulianyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/liulianyun-review-2026/\n0.786122\n40932",
+    "error": "",
+    "title": "榴莲云机场套餐与客户端指南：24元140GB月付、96元年付与Nextin | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/liulianyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/dengta-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/dengta-review-2026/\n1.031735\n38236",
+    "error": "",
+    "title": "灯塔加速器套餐与客户端指南：120元年付、免费试用与订阅导出条件 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/dengta-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/lingmaowangluo-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/lingmaowangluo-review-2026/\n0.671440\n41241",
+    "error": "",
+    "title": "灵猫网络机场套餐与客户端指南：25元150GB月付、85元年付小包与不限时 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/lingmaowangluo-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/xiongmaocloud-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/xiongmaocloud-review-2026/\n0.815605\n38965",
+    "error": "",
+    "title": "熊猫cloud机场套餐与订阅指南：6元300GB月付、设备限制与365天流量包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/xiongmaocloud-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/huanqiuti-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/huanqiuti-review-2026/\n0.775569\n39300",
+    "error": "",
+    "title": "环球梯机场怎么样？23元120GB月付、96元年付与365天按量包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/huanqiuti-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/shunyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/shunyun-review-2026/\n0.651253\n39519",
+    "error": "",
+    "title": "瞬云机场套餐与使用指南：18元月付150GB、99元年付与不限时流量包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/shunyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/shenxingjiasu-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/shenxingjiasu-review-2026/\n0.766832\n39850",
+    "error": "",
+    "title": "神行加速机场套餐与客户端指南：23元120GB月付、96元年付与新客优惠 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/shenxingjiasu-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/miaomiaoyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/miaomiaoyun-review-2026/\n0.774210\n47156",
+    "error": "",
+    "title": "秒秒云机场套餐与订阅指南：9元128GB月付、365天总量包与88元包规则 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/miaomiaoyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/wangji-kuaiche-review/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/wangji-kuaiche-review/\n0.776802\n66213",
+    "error": "",
+    "title": "网际快车怎么样？6.8元流量包、日享套餐与Clash订阅教程 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/wangji-kuaiche-review/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/kuajieyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/kuajieyun-review-2026/\n0.576934\n41485",
+    "error": "",
+    "title": "跨界云机场套餐与使用指南：20元120GB月付、96元年付与不限时 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/kuajieyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/bianyuan-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/bianyuan-review-2026/\n0.699587\n45349",
+    "error": "",
+    "title": "边缘节点机场套餐与客户端：15元50GB起、22元120GB与不限时套餐 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/bianyuan-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/xunda-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/xunda-review-2026/\n0.583581\n40319",
+    "error": "",
+    "title": "迅达机场怎么样？15元150GB套餐、不限时流量与客户端下载 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/xunda-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/sujie-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/sujie-review-2026/\n0.602501\n40059",
+    "error": "",
+    "title": "速界机场怎么样？1天50GB免费试用、15元月付与客户端 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/sujie-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/jinyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/jinyun-review-2026/\n0.850465\n38571",
+    "error": "",
+    "title": "锦云机场套餐与订阅指南：6元50GB月付、99元年付与不限时流量包 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/jinyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/shandianshu-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/shandianshu-review-2026/\n0.631947\n38627",
+    "error": "",
+    "title": "闪电鼠机场怎么样？22元120GB月付、96元年付与客户端教程 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/shandianshu-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/shanyue-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/shanyue-review-2026/\n0.636279\n47242",
+    "error": "",
+    "title": "闪跃机场套餐与客户端指南：24元150GB月付、96元年付与不限时 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/shanyue-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/adaxi-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/adaxi-review-2026/\n0.605031\n50115",
+    "error": "",
+    "title": "阿达西机场怎么样？3元套餐、不限时流量与客户端订阅说明 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/adaxi-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/yinyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/yinyun-review-2026/\n0.844748\n31667",
+    "error": "",
+    "title": "隐云机场怎么样？两种订阅模式、季付门槛与设备限制 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/yinyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/yinxingren-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/yinxingren-review-2026/\n1.098747\n42099",
+    "error": "",
+    "title": "隐形人机场怎么样？测速结果、24元144GB月付与不限时套餐 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/yinxingren-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/posts/liyun-review-2026/",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/posts/liyun-review-2026/\n0.814769\n38892",
+    "error": "",
+    "title": "鲤云机场套餐与Clash订阅指南：5元100GB月付、88元年付与优惠码 | yp7.net",
+    "canonical": [
+      "https://yp7.net/posts/liyun-review-2026/"
+    ],
+    "robots": [
+      "index, follow, max-snippet:320, max-image-preview:large"
+    ],
+    "h1Count": 1,
+    "jsonLdCount": 1
+  },
+  {
+    "url": "https://yp7.net/robots.txt",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/robots.txt\n0.548097\n62",
+    "error": "",
+    "title": "",
+    "canonical": [],
+    "robots": [],
+    "h1Count": 0,
+    "jsonLdCount": 0
+  },
+  {
+    "url": "https://yp7.net/sitemap.xml",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/sitemap.xml\n0.676433\n14410",
+    "error": "",
+    "title": "",
+    "canonical": [],
+    "robots": [],
+    "h1Count": 0,
+    "jsonLdCount": 0
+  },
+  {
+    "url": "https://yp7.net/deploy-sha.txt",
+    "curlExit": 0,
+    "result": "200\nhttps://yp7.net/deploy-sha.txt\n0.539452\n40",
+    "error": "",
+    "title": "",
+    "canonical": [],
+    "robots": [],
+    "h1Count": 0,
+    "jsonLdCount": 0
+  }
+]

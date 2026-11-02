@@ -193,16 +193,16 @@ description: 极速Cloud机场全部套餐标注10倍倍率，新人15元200G折
 
 ## 本文属于
 
-- [机场大全](/posts/jichang-heji/)
+- [机场推荐](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [机场风险监测](/risk-monitor/)
 
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
+- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
-- [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
+- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [山水云机场怎么样？](/posts/shanshuiyun-review-2026/)

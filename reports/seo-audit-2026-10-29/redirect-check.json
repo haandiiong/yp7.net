@@ -1,0 +1,709 @@
+{
+  "auditDate": "2026-10-29",
+  "recordedAtUtc": "2026-10-29T01:27:41.884968+00:00",
+  "scope": "Read-only source review and direct production HTTP HEAD checks. No business source files modified.",
+  "httpChecks": [
+    {
+      "url": "https://yp7.net/",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "expectedFirstHopLocation": null,
+      "actualFirstHopLocation": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "http://yp7.net/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "https://yp7.net/",
+      "actualFirstHopLocation": "https://yp7.net/",
+      "contentType": "text/html; charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://www.yp7.net/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "https://yp7.net/",
+      "actualFirstHopLocation": "https://yp7.net/",
+      "contentType": "text/html; charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://www.yp7.net/posts/jichang-tuijian/?utm_source=seo-check",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "https://yp7.net/posts/jichang-tuijian/?utm_source=seo-check",
+      "actualFirstHopLocation": "https://yp7.net/posts/jichang-tuijian/?utm_source=seo-check",
+      "contentType": "text/html; charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "http://yp7.net/posts/jichang-tuijian/?utm_source=seo-check",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "https://yp7.net/posts/jichang-tuijian/?utm_source=seo-check",
+      "actualFirstHopLocation": "https://yp7.net/posts/jichang-tuijian/?utm_source=seo-check",
+      "contentType": "text/html; charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/jichang-tuijian",
+      "expectedStatus": 308,
+      "actualStatus": 308,
+      "expectedFirstHopLocation": "/posts/jichang-tuijian/",
+      "actualFirstHopLocation": "/posts/jichang-tuijian/",
+      "contentType": null,
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/jichang-tuijian/index.html",
+      "expectedStatus": 308,
+      "actualStatus": 308,
+      "expectedFirstHopLocation": "/posts/jichang-tuijian/",
+      "actualFirstHopLocation": "/posts/jichang-tuijian/",
+      "contentType": null,
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/nonexistent-seo-audit-20261029/",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedFirstHopLocation": null,
+      "actualFirstHopLocation": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/data/airports",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "expectedFirstHopLocation": null,
+      "actualFirstHopLocation": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/data/airports.json",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "expectedFirstHopLocation": null,
+      "actualFirstHopLocation": null,
+      "contentType": "application/json",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/data/airports.md",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "expectedFirstHopLocation": null,
+      "actualFirstHopLocation": null,
+      "contentType": "text/markdown; charset=utf-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/robots.txt",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "expectedFirstHopLocation": null,
+      "actualFirstHopLocation": null,
+      "contentType": "text/plain; charset=utf-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/sitemap.xml",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "expectedFirstHopLocation": null,
+      "actualFirstHopLocation": null,
+      "contentType": "application/xml",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/deploy-sha.txt",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "expectedFirstHopLocation": null,
+      "actualFirstHopLocation": null,
+      "contentType": "text/plain; charset=utf-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/article/0gematwc/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/clash-verge-guide-2026/",
+      "actualFirstHopLocation": "/posts/clash-verge-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/article/eh8f4n86/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/clash-for-android-guide-2026/",
+      "actualFirstHopLocation": "/posts/clash-for-android-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/article/fanqiang/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/router-vpn-setup-2026/",
+      "actualFirstHopLocation": "/posts/router-vpn-setup-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/article/uu1se2y8/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/wangji-kuaiche-review/",
+      "actualFirstHopLocation": "/posts/wangji-kuaiche-review/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/article/weituyun/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/weituyun/",
+      "actualFirstHopLocation": "/posts/weituyun/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/article/z747kgjd/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/shadowrocket-guide-2026/",
+      "actualFirstHopLocation": "/posts/shadowrocket-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/article/zf12sje8/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/adaxi-review-2026/",
+      "actualFirstHopLocation": "/posts/adaxi-review-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/Clash/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/clash-verge-guide-2026/",
+      "actualFirstHopLocation": "/posts/clash-verge-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/OKX/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/okx-review/",
+      "actualFirstHopLocation": "/posts/okx-review/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/okx/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/okx-review/",
+      "actualFirstHopLocation": "/posts/okx-review/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/Shadowrocket/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/shadowrocket-guide-2026/",
+      "actualFirstHopLocation": "/posts/shadowrocket-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/Telegram/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/telegram-guide-2026/",
+      "actualFirstHopLocation": "/posts/telegram-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/USDT/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/what-is-usdt/",
+      "actualFirstHopLocation": "/posts/what-is-usdt/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/cfa/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/clash-for-android-guide-2026/",
+      "actualFirstHopLocation": "/posts/clash-for-android-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/clashverge/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/clash-verge-guide-2026/",
+      "actualFirstHopLocation": "/posts/clash-verge-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/chatgpt/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/chatgpt-guide-2026/",
+      "actualFirstHopLocation": "/posts/chatgpt-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/jieshao/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/vpn-guide-2026/",
+      "actualFirstHopLocation": "/posts/vpn-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/maininfo/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/vpn-guide-2026/",
+      "actualFirstHopLocation": "/posts/vpn-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/pac/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/is-vpn-or-airport-better-pros-cons-analysis/",
+      "actualFirstHopLocation": "/posts/is-vpn-or-airport-better-pros-cons-analysis/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/ruanluyou/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/soft-router-guide-2026/",
+      "actualFirstHopLocation": "/posts/soft-router-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/seo-vpn-guide-2026/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/vpn-guide-2026/",
+      "actualFirstHopLocation": "/posts/vpn-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/tiktok1/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/tiktok-guide-2026/",
+      "actualFirstHopLocation": "/posts/tiktok-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/tiktok2/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/tiktok-guide-2026/",
+      "actualFirstHopLocation": "/posts/tiktok-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/tiktok3/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/tiktok-guide-2026/",
+      "actualFirstHopLocation": "/posts/tiktok-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/vpn3/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/clash-verge-guide-2026/",
+      "actualFirstHopLocation": "/posts/clash-verge-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/vpn-recommend/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/vpn-guide-2026/",
+      "actualFirstHopLocation": "/posts/vpn-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/what-is-vpn/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/vpn-guide-2026/",
+      "actualFirstHopLocation": "/posts/vpn-guide-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/rankings/stable/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/jichang-tuijian/",
+      "actualFirstHopLocation": "/posts/jichang-tuijian/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/rankings/sales/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/jichang-heji/",
+      "actualFirstHopLocation": "/posts/jichang-heji/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/rankings/all/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/jichang-heji/",
+      "actualFirstHopLocation": "/posts/jichang-heji/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/airport-recommend-2026/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/jichang-tuijian/",
+      "actualFirstHopLocation": "/posts/jichang-tuijian/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/airport-recommend-2026-best/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/guangnianti-review-2026/",
+      "actualFirstHopLocation": "/posts/guangnianti-review-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/airport-list-2026/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/jichang-heji/",
+      "actualFirstHopLocation": "/posts/jichang-heji/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/echo-review-2026/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/risk-monitor/",
+      "actualFirstHopLocation": "/risk-monitor/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/flybit-seo/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/flybit-review-2026/",
+      "actualFirstHopLocation": "/posts/flybit-review-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/guangnianti/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/guangnianti-review-2026/",
+      "actualFirstHopLocation": "/posts/guangnianti-review-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/jichangtuijian/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/jichang-tuijian/",
+      "actualFirstHopLocation": "/posts/jichang-tuijian/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/kuaiche/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/wangji-kuaiche-review/",
+      "actualFirstHopLocation": "/posts/wangji-kuaiche-review/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/low-latency-vpn-guide-2026/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/jichang-tuijian/",
+      "actualFirstHopLocation": "/posts/jichang-tuijian/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/premium-airport/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/jichang-tuijian/",
+      "actualFirstHopLocation": "/posts/jichang-tuijian/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/runway-review/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/runway-review-2026/",
+      "actualFirstHopLocation": "/posts/runway-review-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/sogo-airport-review-2026/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/sogo-review-2026/",
+      "actualFirstHopLocation": "/posts/sogo-review-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/u1s1/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/u1s1-review-2026/",
+      "actualFirstHopLocation": "/posts/u1s1-review-2026/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/vpn-airport-ranking-2026/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/jichang-tuijian/",
+      "actualFirstHopLocation": "/posts/jichang-tuijian/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/vpn2/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/jichang-tuijian/",
+      "actualFirstHopLocation": "/posts/jichang-tuijian/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/vpn5/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/ssone/",
+      "actualFirstHopLocation": "/posts/ssone/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/posts/vpnsum/",
+      "expectedStatus": 301,
+      "actualStatus": 301,
+      "expectedFirstHopLocation": "/posts/jichang-tuijian/",
+      "actualFirstHopLocation": "/posts/jichang-tuijian/",
+      "contentType": "text/plain;charset=UTF-8",
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/data/airports.html",
+      "expectedStatus": 308,
+      "actualStatus": 308,
+      "expectedFirstHopLocation": "/data/airports",
+      "actualFirstHopLocation": "/data/airports",
+      "contentType": null,
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/data/rankings.html",
+      "expectedStatus": 308,
+      "actualStatus": 308,
+      "expectedFirstHopLocation": "/data/rankings",
+      "actualFirstHopLocation": "/data/rankings",
+      "contentType": null,
+      "xRobotsTag": null,
+      "passed": true
+    },
+    {
+      "url": "https://yp7.net/data/risk-monitor.html",
+      "expectedStatus": 308,
+      "actualStatus": 308,
+      "expectedFirstHopLocation": "/data/risk-monitor",
+      "actualFirstHopLocation": "/data/risk-monitor",
+      "contentType": null,
+      "xRobotsTag": null,
+      "passed": true
+    }
+  ],
+  "httpSummary": {
+    "checked": 64,
+    "passed": 64,
+    "failed": 0
+  },
+  "productionRevision": {
+    "deployedSha": "ee4cc2d4f465f1d6f66af78c2a0db6efbe7809e0",
+    "localHeadSha": "ee4cc2d4f465f1d6f66af78c2a0db6efbe7809e0",
+    "matches": true
+  },
+  "passedSourceChecks": [
+    {
+      "check": "Canonical, robots, description, Open Graph, Twitter and JSON-LD generated centrally",
+      "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/.vuepress/config/page-head.ts",
+      "line": 110
+    },
+    {
+      "check": "Noindex for blog indexes, archive/category/tag indexes, friends and 404",
+      "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/.vuepress/config/page-head.ts",
+      "line": 54
+    },
+    {
+      "check": "Noindex utility pages excluded from sitemap; lastmod uses maintained content dates",
+      "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/.vuepress/config/theme.ts",
+      "line": 74
+    },
+    {
+      "check": "Collection ItemList generated from shared collection data",
+      "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/.vuepress/config/schema.ts",
+      "line": 172
+    },
+    {
+      "check": "Affiliate links identified and marked sponsored nofollow; rendered Siilas editorial citations verified without nofollow",
+      "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/.vuepress/config/generated.ts",
+      "line": 50
+    },
+    {
+      "check": "Data HTML pages are noindex, follow with extensionless canonical",
+      "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/docs/.vuepress/config/generated.ts",
+      "line": 238
+    },
+    {
+      "check": "Deployment performs typecheck, tests, table/data/content checks",
+      "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/.github/workflows/deploy.yml",
+      "line": 48
+    },
+    {
+      "check": "IndexNow waits for matching deployed revision and verifies redirects/deleted status before submission",
+      "file": "/Users/aaaaa/Documents/Codex/2026-09-16/con/outputs/projects/yp7.net/.github/workflows/indexnow.yml",
+      "line": 34
+    }
+  ],
+  "lowPriorityFindings": [
+    {
+      "priority": "Observation",
+      "finding": "Public JSON/Markdown data resources return 200 without X-Robots-Tag",
+      "evidence": "HEAD /data/airports.json and /data/airports.md",
+      "recommendation": "Only if the intended policy is to keep all data variants out of search, consider noindex headers at hosting level.",
+      "limitation": "Current evidence does not show these resources are indexed or competing; do not report as a confirmed SEO defect."
+    }
+  ],
+  "conclusion": "No confirmed P0/P1 crawl/indexing blocker found in this technical sub-audit. Production host normalization, clean URL normalization, redirect map, missing-page 404, robots/sitemap accessibility and version marker are healthy."
+}

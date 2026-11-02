@@ -146,15 +146,15 @@ sogo不支持免费试用，站长于2026年9月27日补充确认。退款规则
 
 ## 本文属于
 
-- [机场大全](/posts/jichang-heji/)
+- [机场推荐](/posts/jichang/)
 - [不限时套餐榜](/rankings/no-expiry/)
 - [专属客户端机场榜](/rankings/dedicated-client/)
 - [机场风险监测](/risk-monitor/)
 
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang-tuijian/)
-- [机场大全：价格、流量、试用与风险状态](/posts/jichang-heji/)
+- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
+- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
 - [机场推荐方法与测试数据来源](/methodology/)
 - [一翻云机场怎么样？](/posts/yifanyun-review-2026/)

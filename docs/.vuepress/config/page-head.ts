@@ -94,7 +94,7 @@ const getBasicPageHead = (page: any) => {
 
 export const extendPageWithSeo = (page: any) => {
   page.data.siteBreadcrumbs = getSiteBreadcrumbs(page)
-  if (page.path === '/posts/jichang-heji/') {
+  if (page.path === '/posts/jichang/') {
     page.data.airportBrandIndex = visibleAirportData
       .map(({ name, path }) => ({ name, path }))
       .sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'))

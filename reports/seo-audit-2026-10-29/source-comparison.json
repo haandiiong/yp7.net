@@ -1,0 +1,101 @@
+[
+  {
+    "name": "全球云",
+    "url": "https://siilas.com/airport/globalcloud/",
+    "acceptedLatestTest": "2026-10-08",
+    "liveLatestTest": "2026-10-08",
+    "acceptedVerifiedTests": 28,
+    "liveVerifiedTests": 28,
+    "acceptedScore": 5.4,
+    "liveScore": 5.4,
+    "changedLatestTest": false
+  },
+  {
+    "name": "光年梯",
+    "url": "https://siilas.com/airport/guangnianti/",
+    "acceptedLatestTest": "2026-10-08",
+    "liveLatestTest": "2026-10-08",
+    "acceptedVerifiedTests": 16,
+    "liveVerifiedTests": 16,
+    "acceptedScore": 5,
+    "liveScore": 5.0,
+    "changedLatestTest": false
+  },
+  {
+    "name": "网际快车",
+    "url": "https://siilas.com/airport/interexpress/",
+    "acceptedLatestTest": "2026-10-08",
+    "liveLatestTest": "2026-10-23",
+    "acceptedVerifiedTests": 17,
+    "liveVerifiedTests": 20,
+    "acceptedScore": 5.7,
+    "liveScore": 5.6,
+    "changedLatestTest": true
+  },
+  {
+    "name": "xxyun",
+    "url": "https://siilas.com/airport/xxyun/",
+    "acceptedLatestTest": "2026-10-08",
+    "liveLatestTest": "2026-10-23",
+    "acceptedVerifiedTests": 12,
+    "liveVerifiedTests": 13,
+    "acceptedScore": 6.1,
+    "liveScore": 5.7,
+    "changedLatestTest": true
+  },
+  {
+    "name": "Flybit",
+    "url": "https://siilas.com/airport/flybit/",
+    "acceptedLatestTest": "2026-08-13",
+    "liveLatestTest": "2026-10-23",
+    "acceptedVerifiedTests": 13,
+    "liveVerifiedTests": 17,
+    "acceptedScore": 6.9,
+    "liveScore": 6.0,
+    "changedLatestTest": true
+  },
+  {
+    "name": "拼好连（原 Runway）",
+    "url": "https://siilas.com/airport/pinhaolian/",
+    "acceptedLatestTest": "2026-09-23",
+    "liveLatestTest": "2026-10-24",
+    "acceptedVerifiedTests": 12,
+    "liveVerifiedTests": 16,
+    "acceptedScore": 5.6,
+    "liveScore": 4.4,
+    "changedLatestTest": true
+  },
+  {
+    "name": "cocoduck",
+    "url": "https://siilas.com/airport/cocoduck/",
+    "acceptedLatestTest": "2026-08-13",
+    "liveLatestTest": "2026-10-24",
+    "acceptedVerifiedTests": 12,
+    "liveVerifiedTests": 16,
+    "acceptedScore": 5.9,
+    "liveScore": 6.3,
+    "changedLatestTest": true
+  },
+  {
+    "name": "边缘节点",
+    "url": "https://siilas.com/airport/edgenode/",
+    "acceptedLatestTest": "2026-10-08",
+    "liveLatestTest": "2026-10-08",
+    "acceptedVerifiedTests": 12,
+    "liveVerifiedTests": 12,
+    "acceptedScore": 4,
+    "liveScore": 4.0,
+    "changedLatestTest": false
+  },
+  {
+    "name": "XSUS",
+    "url": "https://siilas.com/airport/xsus/",
+    "acceptedLatestTest": "2026-10-08",
+    "liveLatestTest": "2026-10-24",
+    "acceptedVerifiedTests": 13,
+    "liveVerifiedTests": 16,
+    "acceptedScore": 5.3,
+    "liveScore": 5.5,
+    "changedLatestTest": true
+  }
+]

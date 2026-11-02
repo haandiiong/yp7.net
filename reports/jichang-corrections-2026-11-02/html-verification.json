@@ -1,0 +1,32 @@
+{
+  "redirects": [
+    {
+      "url": "http://127.0.0.1:8788/posts/jichang-tuijian",
+      "status": 301,
+      "location": "/posts/jichang/"
+    },
+    {
+      "url": "http://127.0.0.1:8788/posts/jichang-tuijian/",
+      "status": 301,
+      "location": "/posts/jichang/"
+    },
+    {
+      "url": "http://127.0.0.1:8788/posts/jichang-heji",
+      "status": 301,
+      "location": "/posts/jichang/"
+    },
+    {
+      "url": "http://127.0.0.1:8788/posts/jichang-heji/",
+      "status": 301,
+      "location": "/posts/jichang/"
+    }
+  ],
+  "targetStatus": 200,
+  "missingOldAnchors": [],
+  "duplicateIds": [],
+  "brokenLocalFragments": [],
+  "h1": 1,
+  "canonical": [
+    "https://yp7.net/posts/jichang/"
+  ]
+}

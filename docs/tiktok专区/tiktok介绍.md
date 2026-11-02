@@ -146,4 +146,4 @@ TikTok的[官方推荐说明](https://support.tiktok.com/en/using-tiktok/explori
 - [TikTok无网络、登录失败与0播放排查](/posts/tiktok-not-working/)
 - [TikTok节点选择、地区与账号功能验证](/posts/tiktok-vpn-recommend/)
 - [机场、节点和订阅是什么](/posts/airport-node-subscription-guide/)
-- [机场推荐与套餐资料](/posts/jichang-tuijian/)
+- [机场推荐与套餐资料](/posts/jichang/)
