@@ -157,21 +157,12 @@ description: Tidal潮汐加速机场月付25元100GB起，Plus35元300GB、Pro55
 | 适合场景 | Clash、新手 |
 | 风险记录 | 不支持免费试用；取消套餐按使用比例退回账户余额，不等于原路退款；年付优惠期限、叠加与结算未验证 |
 
-## 本文属于
-
-- [机场推荐](/posts/jichang/)
-- [Clash机场榜](/rankings/clash/)
-- [不限时套餐榜](/rankings/no-expiry/)
-- [专属客户端机场榜](/rankings/dedicated-client/)
-- [机场风险监测](/risk-monitor/)
-
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
+<span id="本文属于"></span>
+
+- [机场推荐：7款对比与价格总表](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
-- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
-- [机场推荐方法与测试数据来源](/methodology/)
 - [宇宙云机场怎么样？](/posts/yuzhoucloud-review-2026/)
 - [sogo机场怎么样？](/posts/sogo-review-2026/)
-- [极速123机场怎么样？](/posts/jisu123-review-2026/)

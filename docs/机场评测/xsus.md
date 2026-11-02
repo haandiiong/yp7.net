@@ -135,23 +135,12 @@ ChatGPT、流媒体是提交者的定性体验；Speedtest 佐证测速数值，
 | 适合场景 | 低价、流媒体、Clash |
 | 风险记录 | 无法原路退款；流量不叠加，续费不立即重置；不支持免费试用 |
 
-## 本文属于
-
-- [机场推荐](/posts/jichang/)
-- [低价机场榜](/rankings/cheap/)
-- [ChatGPT机场榜](/rankings/chatgpt/)
-- [流媒体机场榜](/rankings/streaming/)
-- [不限时套餐榜](/rankings/no-expiry/)
-- [专属客户端机场榜](/rankings/dedicated-client/)
-- [机场风险监测](/risk-monitor/)
-
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
+<span id="本文属于"></span>
+
+- [机场推荐：7款对比与价格总表](/posts/jichang/)
 - [低价机场榜](/rankings/cheap/)
-- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
-- [机场推荐方法与测试数据来源](/methodology/)
 - [xxyun机场怎么样？](/posts/xxyun-review-2026/)
 - [极速Cloud机场怎么样？](/posts/jisucloud-review-2026/)
-- [U1S1机场怎么样？](/posts/u1s1-review-2026/)

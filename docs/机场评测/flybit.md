@@ -149,6 +149,8 @@ Flybit 提供月付和不限时流量包，本次后台列出 **5 个具名客�
 
 以上为商家后台展示与声明，不是yp7.net新增测速、连接测试或服务恢复验证。
 
+<span id="flybit好用吗-1"></span>
+
 ## Flybit好用吗？
 
 如果你已经会使用订阅客户端，Flybit 后台的一键导入入口可减少手动复制的步骤。是否好用仍取决于客户端版本、订阅能否正常更新，以及所选节点在自己的网络上是否可用。
@@ -170,6 +172,8 @@ Flybit 提供月付和不限时流量包，本次后台列出 **5 个具名客�
 - 希望不经试用就获得稳定性保证的人
 
 如果你的主要顾虑是订阅配置，而不是套餐流量，可先看[7款机场的客户端与试用条件对比](/posts/jichang/)，再决定是否用 Flybit 的试用流量验证导入流程。
+
+<span id="flybit稳定吗-1"></span>
 
 ## Flybit稳定吗？
 
@@ -315,14 +319,6 @@ Flybit提供通用订阅和Clash系列/Mihomo导入入口，并有FlClash教程�
 
 Flybit提供15元/月128GB起的周期套餐和36元128GB起的不限时流量包，当前后台有5个具名客户端导入入口。周期套餐有设备上限，192GB档季付62元；先核对条款与客户端，再验证实际使用。
 
-### Flybit好用吗？
-
-一键导入可简化配置步骤，但仍需先安装客户端并验证节点。若1天2GB试用实际到账，可先用它确认自己的设备与常用功能是否正常。
-
-### Flybit稳定吗？
-
-本站本次没有新增速度或稳定性实测；已接收的最新实际测试日期、各地区结果及来源发布状态见上方Siilas摘要。请按原始日期阅读，并在自己的网络和常用时段试用，不能把单次样本当成持续稳定的保证。
-
 ### Flybit支持Clash吗？
 
 当前后台提供Clash系列/Mihomo入口与通用订阅复制，并有FlClash教程。Clash Verge等客户端仍需按具体版本和格式核对，不能将入口存在视为已连接实测。
@@ -359,23 +355,12 @@ Flybit提供多种付费周期、不限时流量包及5个具名客户端导入�
 
 需要横向比较时，可继续查看 [Clash机场榜](/rankings/clash/)、[免费试用机场榜](/rankings/trial/)和[不限时套餐榜](/rankings/no-expiry/)。
 
-## 本文属于
-
-- [机场推荐](/posts/jichang/)
-- [Clash机场榜](/rankings/clash/)
-- [ChatGPT机场榜](/rankings/chatgpt/)
-- [流媒体机场榜](/rankings/streaming/)
-- [免费试用机场榜](/rankings/trial/)
-- [不限时套餐榜](/rankings/no-expiry/)
-- [机场风险监测](/risk-monitor/)
-
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
+<span id="本文属于"></span>
+
+- [机场推荐：7款对比与价格总表](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
-- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
-- [机场推荐方法与测试数据来源](/methodology/)
 - [SSONE机场怎么样？](/posts/ssone/)
 - [99吧机场怎么样？](/posts/99ba-review-2026/)
-- [cocoduck机场怎么样？](/posts/cocoduck-review/)

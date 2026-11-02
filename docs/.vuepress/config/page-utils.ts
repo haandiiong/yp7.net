@@ -111,3 +111,26 @@ const truncateMetaDescription = (description = '') => {
 export const getPageDescription = (page: any) => truncateMetaDescription(
   stripMarkdown(page.frontmatter.description || siteDescription),
 )
+
+// Plume stores every post's excerpt in its shared blog data. Use short metadata
+// instead of copying the article introduction, which can contain full tables.
+export const getPageExcerpt = (page: any): string | false => {
+  const excerpt = page.frontmatter.excerpt
+  if (excerpt === false) return false
+
+  const text = stripMarkdown(
+    typeof excerpt === 'string' && excerpt.trim()
+      ? excerpt
+      : page.frontmatter.description || siteDescription,
+  )
+  const characters = Array.from(text)
+  const shortened = characters.length > 120 ? `${characters.slice(0, 119).join('')}…` : text
+
+  // Blog excerpts are rendered as HTML; keep the summary itself plain text.
+  return shortened
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}

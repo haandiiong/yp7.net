@@ -8,7 +8,7 @@ const airportsPath = join(root, 'docs/.vuepress/config/airports.ts')
 const checkOnly = process.argv.includes('--check')
 const { splitMarkdownTableRow, escapeMarkdownTableCell } = loadConfig('markdown-table.ts')
 const {
-  catalogueComparisonSections, comparisonNoticeColumn, getAirportComparisonNotice,
+  comparisonNoticeColumn, getAirportComparisonNotice,
   getRecommendationPackagePrimary, getRecommendationPackageSecondary,
 } = loadConfig('airport-comparison.ts')
 
@@ -103,7 +103,7 @@ const airportLink = (airport, _index, row, config) => {
 }
 
 const capabilityCell = (field, header) => (airport, _index, row, config) => {
-  if (!config.sectionLinks) return booleanText(airport[field])
+  if (config.capabilityStyle !== 'checkmark') return booleanText(airport[field])
   if (airport[field] === null) return '待核实'
   // The catalogue keeps its existing trial/temporary-subscription qualifications.
   // Only the boolean comes from the shared record; false must clear a stale checkmark.
@@ -151,16 +151,10 @@ const tableConfigs = [
     filePath: collection.sourceFile,
     heading: collection.heading,
     sectionLinks: collection.sectionLinks,
+    capabilityStyle: collection.capabilityStyle,
     notice: key === 'all',
     noExpiryComparison: key === 'noExpiry',
     items: collection.items,
-  })),
-  ...catalogueComparisonSections.map((section) => ({
-    ...section,
-    filePath: airportCollections.all.sourceFile,
-    sectionLinks: true,
-    noExpiryComparison: section.key === 'noExpiry',
-    items: airportCollections[section.key].items,
   })),
   {
     filePath: 'docs/风险监测/机场风险监测.md',

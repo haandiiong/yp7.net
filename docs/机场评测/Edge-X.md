@@ -175,20 +175,12 @@ Nextin识别码 `edgex` 用于选择服务；注册入口中的邀请码用于�
 | 适合场景 | 新手、Clash、ChatGPT、流媒体 |
 | 风险记录 | 不支持免费试用；普通订阅需关闭DNS覆写，特殊网络按专用教程；全年流量包不退款；月付退款须流量≤5GB、支付宝付款及生效未满12小时同时满足并提交工单；优惠叠加与结算未验证 |
 
-## 本文属于
-
-- [机场推荐](/posts/jichang/)
-- [Clash机场榜](/rankings/clash/)
-- [专属客户端机场榜](/rankings/dedicated-client/)
-- [机场风险监测](/risk-monitor/)
-
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
+<span id="本文属于"></span>
+
+- [机场推荐：7款对比与价格总表](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
-- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
-- [机场推荐方法与测试数据来源](/methodology/)
 - [神行加速机场怎么样？](/posts/shenxingjiasu-review-2026/)
 - [榴莲云机场怎么样？](/posts/liulianyun-review-2026/)
-- [闪跃机场怎么样？](/posts/shanyue-review-2026/)

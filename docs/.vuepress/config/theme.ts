@@ -89,10 +89,11 @@ export const theme = plumeTheme({
   markdown: {
     collapse: true,
     imageSize: 'local',
+    math: false,
   },
   blog: {
     exclude: ['about.md', 'friends.md', '科学上网专区/机场测评方法.md'],
-    pagination: 15,
+    pagination: 10,
     tags: false,
     categories: true,
     archives: true,

@@ -11,6 +11,7 @@ const configDir = fileURLToPath(new URL('../docs/.vuepress/config/', import.meta
 const { extendPageWithSeo } = loadConfig(join(configDir, 'page-head.ts'))
 const { patchGeneratedHtml } = loadConfig(join(configDir, 'generated.ts'))
 const { defaultRobots, siteName } = loadConfig(join(configDir, 'site.ts'))
+const { getPageExcerpt } = loadConfig(join(configDir, 'page-utils.ts'))
 const homepageTitle = 'yp7.net｜机场资料、风险监测与科学上网教程'
 
 const makePage = (path, title = '') => {
@@ -29,6 +30,24 @@ const getTitles = (head) => head.filter(([tag]) => tag === 'title').map(([, , ti
 const getRobots = (head) => head
   .filter(([tag, attrs]) => tag === 'meta' && attrs.name === 'robots')
   .map(([, attrs]) => attrs.content)
+
+test('blog summaries use concise metadata without copying article tables or history', () => {
+  const page = {
+    frontmatter: { description: '对比套餐、试用和客户端限制，完整测试记录见正文。' },
+    contentRendered: '<table><tr><td>大型测试记录</td></tr></table><p>历史更新</p>',
+  }
+  assert.equal(getPageExcerpt(page), page.frontmatter.description)
+  page.frontmatter.description = '套餐与客户端说明。'.repeat(30)
+  const excerpt = getPageExcerpt(page)
+  assert.equal(Array.from(excerpt).length, 120)
+  assert.ok(excerpt.endsWith('…'))
+})
+
+test('explicit blog summaries remain plain text and disabled summaries stay disabled', () => {
+  const page = { frontmatter: { excerpt: '**Clash** & "iPhone" [教程](/guide/)', description: '默认简介' } }
+  assert.equal(getPageExcerpt(page), 'Clash &amp; &quot;iPhone&quot; 教程')
+  assert.equal(getPageExcerpt({ frontmatter: { excerpt: false, description: '不显示此简介' } }), false)
+})
 
 test('homepage title is in serialized page data and overrides the default site suffix', () => {
   const page = makePage('/', homepageTitle)

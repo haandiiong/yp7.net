@@ -741,9 +741,7 @@ if (airportMetrics) {
   // Keep maintenance history out of the catalogue's visible comparison preambles.
   // Identify each comparison section independently of where full details, FAQs
   // and current statistics are placed in the merged article.
-  const comparisonHeadings = new Set([
-    '机场价格总表', '便宜的机场汇总', '不限时机场套餐对比', '支持免费试用的机场', '专属客户端机场汇总',
-  ])
+  const comparisonHeadings = new Set(['机场价格总表'])
   if (getH2Section('机场价格总表') === undefined) errors.push(`${hejiPath}: missing merged airport catalogue heading`)
   const containerStack = []
   let comparisonSection = false
@@ -779,9 +777,15 @@ if (airportMetrics) {
     errors.push(`${hejiPath}: unclosed article container`)
   }
   const historySection = getH2Section('更新记录')
+  const historyEntries = (historySection || '').match(/^- \*\*/gm) || []
   if (hejiLines.filter((line) => line.trim() === '## 更新记录').length !== 1
-    || !/^::: details 更新详情与历史记录$/m.test(historySection || '')) {
-    errors.push(`${hejiPath}: one unified update section must contain closed catalogue history details`)
+    || historyEntries.length < 1 || historyEntries.length > 3
+    || /^:{3,}\s+details/m.test(historySection || '')) {
+    errors.push(`${hejiPath}: one concise update section must contain one to three recent entries`)
+  }
+  if (/^## 各机场套餐详情$/m.test(hejiContent)
+    || /展开全部品牌套餐与历史资料/.test(hejiContent)) {
+    errors.push(`${hejiPath}: full brand archives belong on independent brand pages`)
   }
   const currentStats = getH2Section('当前收录统计')
   if (currentStats === undefined) errors.push(`${hejiPath}: missing current statistics section`)

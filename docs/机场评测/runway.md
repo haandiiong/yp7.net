@@ -255,23 +255,12 @@ Siilas 表中的“流媒体”是泛称体验状态，并未逐项验证 Netfli
 
 本次资料未确认明确的退款条款。付款前应先向客服确认，不能把免费试用理解为付费后可退款。
 
-## 本文属于
-
-- [机场推荐](/posts/jichang/)
-- [Clash机场榜](/rankings/clash/)
-- [ChatGPT机场榜](/rankings/chatgpt/)
-- [流媒体机场榜](/rankings/streaming/)
-- [免费试用机场榜](/rankings/trial/)
-- [不限时套餐榜](/rankings/no-expiry/)
-- [机场风险监测](/risk-monitor/)
-
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
+<span id="本文属于"></span>
+
+- [机场推荐：7款对比与价格总表](/posts/jichang/)
 - [免费试用机场榜](/rankings/trial/)
-- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
-- [机场推荐方法与测试数据来源](/methodology/)
 - [云图机场怎么样？](/posts/yuntu-review-2026/)
 - [跨界云机场怎么样？](/posts/kuajieyun-review-2026/)
-- [网际快车机场怎么样？](/posts/wangji-kuaiche-review/)

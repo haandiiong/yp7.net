@@ -136,22 +136,12 @@ cocoduck 提供专属客户端和通用订阅，个人套餐为 **17元/月、10
 
 先查看后台最新公告并更新订阅。9月5日公告说明DNS污染问题已修复，如主用 Clash 地址仍失败，可尝试备用地址，并检查客户端是否属于已提示不兼容的旧版本。
 
-## 本文属于
-
-- [机场推荐](/posts/jichang/)
-- [ChatGPT机场榜](/rankings/chatgpt/)
-- [流媒体机场榜](/rankings/streaming/)
-- [免费试用机场榜](/rankings/trial/)
-- [专属客户端机场榜](/rankings/dedicated-client/)
-- [机场风险监测](/risk-monitor/)
-
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
+<span id="本文属于"></span>
+
+- [机场推荐：7款对比与价格总表](/posts/jichang/)
 - [流媒体机场榜](/rankings/streaming/)
-- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
-- [机场推荐方法与测试数据来源](/methodology/)
 - [瞬云机场怎么样？](/posts/shunyun-review-2026/)
 - [SSONE机场怎么样？](/posts/ssone/)
-- [拼好连机场怎么样？](/posts/runway-review-2026/)

@@ -7,12 +7,14 @@ import {
 } from './config/generated'
 import { extendSponsoredMarkdown } from './config/markdown'
 import { extendPageWithSeo } from './config/page-seo'
+import { getPageExcerpt } from './config/page-utils'
 import { defaultRobots, siteDescription, siteName } from './config/site'
 import { theme } from './config/theme'
 
 // Plume uses H2 for every feature card; keep H2 for homepage sections and H3 for cards.
 const homeFeatureComponent = fileURLToPath(new URL('./theme/components/VPHomeFeature.vue', import.meta.url))
 const breadcrumbComponent = fileURLToPath(new URL('./theme/components/VPDocBreadcrumbs.vue', import.meta.url))
+const postListItemComponent = fileURLToPath(new URL('./theme/components/VPPostItem.vue', import.meta.url))
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -25,6 +27,12 @@ export default defineUserConfig({
     ['link', { rel: 'apple-touch-icon', href: '/logo.png' }],
   ],
   plugins: [
+    {
+      name: 'yp7-post-list-dates',
+      define: (app: any) => ({
+        __YP7_RECOMMENDATION_UPDATED__: app.pages.find((page: any) => page.path === '/posts/jichang/')?.frontmatter.dateModified || '',
+      }),
+    },
     {
       name: 'yp7-link-rel',
       extendsMarkdownOptions: (options: any) => {
@@ -46,6 +54,7 @@ export default defineUserConfig({
   ],
   extendsPage: (page: any) => {
     extendPageWithSeo(page)
+    page.frontmatter.excerpt = getPageExcerpt(page)
     // Keep source topics in the generated metadata, then omit Plume's tag UI and blog tag data.
     delete page.frontmatter.tags
   },
@@ -58,6 +67,7 @@ export default defineUserConfig({
         alias: {
           '@theme/Home/VPHomeFeature.vue': homeFeatureComponent,
           '@theme/VPDocBreadcrumbs.vue': breadcrumbComponent,
+          '@theme/Blog/VPPostItem.vue': postListItemComponent,
         },
       },
       build: {

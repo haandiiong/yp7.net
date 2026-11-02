@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import { buildRelatedAirports } from './lib/related-airports.mjs'
 import { loadConfig } from './lib/load-config.mjs'
+import { getAirportRelatedLinks } from './sync-airport-review-sections.mjs'
 
 const airport = (path, scenarios = ['clash']) => ({ path, scenarios, price: 15, dedicatedClient: false, universalSubscription: true })
 const paths = (related) => [...related].map(([path, peers]) => [path, peers.map((peer) => peer.path)])
@@ -42,5 +43,35 @@ test('production recommendations cover all eligible airports without unrelated p
     const eligible = visibleAirportData.some((peer) => peer.path !== airport.path
       && peer.scenarios.some((scenario) => airport.scenarios.includes(scenario)))
     if (eligible) assert.ok([...related.values()].flat().some((peer) => peer.path === airport.path), airport.name)
+  }
+})
+
+test('review footers keep one recommendation entry and only relevant, distinct destinations', () => {
+  const { airportData, visibleAirportData, hiddenAirportStatuses } = loadConfig('airports.ts')
+  const { airportCollections } = loadConfig('airport-collections.ts')
+  const related = buildRelatedAirports(visibleAirportData, 2)
+  const names = new Map(airportData.map((item) => [item.path, item.name]))
+  const visiblePaths = new Set(visibleAirportData.map((item) => item.path))
+
+  for (const item of airportData) {
+    const links = getAirportRelatedLinks(item, related, names, hiddenAirportStatuses, airportCollections)
+    const destinations = links.map((link) => link.link)
+    assert.equal(new Set(destinations).size, destinations.length, item.name)
+    assert.ok(destinations.length >= 3 && destinations.length <= 5, item.name)
+    assert.equal(destinations.filter((path) => path.startsWith('/posts/jichang/')).length, 1, item.name)
+    assert.ok(destinations.includes('/risk-monitor/'), item.name)
+    const peers = destinations.filter((path) => visiblePaths.has(path))
+    if (hiddenAirportStatuses.has(item.status)) {
+      assert.deepEqual(destinations, ['/risk-monitor/', '/methodology/', '/posts/jichang/'])
+    } else {
+      assert.ok(peers.length <= 2 && peers.every((path) => path !== item.path), item.name)
+    }
+  }
+
+  const linkedPeers = [...related.values()].flat().map((item) => item.path)
+  for (const item of visibleAirportData) {
+    const hasPeer = visibleAirportData.some((peer) => peer.path !== item.path
+      && peer.scenarios.some((scenario) => item.scenarios.includes(scenario)))
+    if (hasPeer) assert.ok(linkedPeers.includes(item.path), item.name)
   }
 })

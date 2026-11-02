@@ -16,7 +16,7 @@ const { airportData } = loadConfig('airports.ts')
 const { airportCollections, createAirportCollections } = loadConfig('airport-collections.ts')
 const { generateAirportDataFiles } = loadConfig('generated.ts')
 const { getPageSchema } = loadConfig('schema.ts')
-const { catalogueComparisonSections, comparisonNoticeColumn, getRecommendationPackagePrimary, getRecommendationPackageSecondary } = loadConfig('airport-comparison.ts')
+const { comparisonNoticeColumn, getRecommendationPackagePrimary, getRecommendationPackageSecondary } = loadConfig('airport-comparison.ts')
 const { noExpiryColumns, getNoExpiryCells } = loadConfig('no-expiry-packages.ts')
 const replaceServiceFact = (service, name, value) => {
   service.description = service.description.split('\n').map((line) => (
@@ -361,19 +361,6 @@ test('table sync updates compact recommendation facts and preserves every editor
   while (lines[tableEnd]?.startsWith('|')) tableEnd += 1
   lines.splice(tableStart, tableEnd - tableStart,
     '| 机场 | 适用场景 | 套餐与试用 | 客户端与限制 | 测试依据 |', '|---|---|---|---|---|', ...rows)
-  for (const section of catalogueComparisonSections) {
-    const heading = lines.findIndex((line) => line === section.heading)
-    const start = lines.findIndex((line, index) => index > heading && line.startsWith('|'))
-    let end = start
-    while (lines[end]?.startsWith('|')) end += 1
-    if (section.key === 'noExpiry') lines.splice(start + 2 + 34, end - start - 2 - 34)
-    if (section.key === 'trial') lines.splice(end - 1, 1)
-    if (section.key === 'dedicatedClient') {
-      const hidden = lines.findIndex((line, index) => index > start && index < end && line.startsWith('| [隐云]('))
-      assert.ok(hidden > 0)
-      lines[hidden] = lines[hidden].replace(/^(\| \[隐云\]\([^)]*\) \|)[^|]*\|/, '$1 29元/季<br>需首购季付确认 |')
-    }
-  }
   copySource(collection.sourceFile, lines.join('\n'))
   const synced = spawnSync(process.execPath, [resolve('scripts/sync-airport-tables.mjs')], { cwd: dest, encoding: 'utf8' })
   assert.equal(synced.status, 0, synced.stderr)
@@ -393,24 +380,7 @@ test('table sync updates compact recommendation facts and preserves every editor
     cells: Object.fromEntries(Object.entries(row.cells).filter(([column]) => column !== comparisonNoticeColumn)), href: row.href,
   }))
   assert.deepEqual(withoutNotice(markdownTableAfterHeading(source, airportCollections.all.heading)), withoutNotice(markdownTableAfterHeading(original, airportCollections.all.heading)), 'updating the selected seven must preserve the catalogue facts in the same file')
-  assert.deepEqual(validateAirportRows(markdownTableAfterHeading(source, airportCollections.all.heading), airportCollections.all.items, 'catalogue', { sectionLinks: true, comparisonNotice: true }), [])
-  for (const section of catalogueComparisonSections) {
-    const rows = markdownTableAfterHeading(source, section.heading)
-    const expected = airportCollections[section.key].items
-    assert.deepEqual(rows.map((row) => row.cells['机场']), expected.map((airport) => airport.name), section.heading)
-    assert.deepEqual(validateAirportRows(rows, expected, section.heading, { sectionLinks: true, comparisonNotice: section.notice }), [])
-    if (section.key === 'noExpiry') {
-      assert.deepEqual(Object.keys(rows[0].cells), noExpiryColumns)
-      for (const [index, airport] of expected.entries()) {
-        assert.deepEqual(noExpiryColumns.slice(1).map((column) => rows[index].cells[column]), getNoExpiryCells(airport.path))
-      }
-    }
-    if (section.key === 'dedicatedClient') {
-      const hidden = rows.find((row) => row.cells['机场'] === '隐云')
-      assert.match(hidden.cells['最低价格'], /首购季付起/)
-      assert.ok(hidden.rawCells['最低价格'].endsWith('<br>需首购季付确认'))
-    }
-  }
+  assert.deepEqual(validateAirportRows(markdownTableAfterHeading(source, airportCollections.all.heading), airportCollections.all.items, 'catalogue', { comparisonNotice: true }), [])
   const checked = spawnSync(process.execPath, [resolve('scripts/sync-airport-tables.mjs'), '--check'], { cwd: dest, encoding: 'utf8' })
   assert.equal(checked.status, 0, checked.stderr)
 })

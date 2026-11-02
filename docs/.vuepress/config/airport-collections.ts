@@ -9,6 +9,7 @@ interface AirportCollectionDefinition {
   sourceFile?: string
   heading?: string
   sectionLinks?: boolean
+  capabilityStyle?: 'checkmark'
   ordered?: boolean
   select: (airports: AirportData[]) => AirportData[]
 }
@@ -56,7 +57,7 @@ const definitions = {
   all: {
     name: '2026机场大全', dataTitle: '全部机场',
     pagePath: '/posts/jichang/', sourceFile: 'docs/机场推荐/机场推荐.md',
-    heading: '## 机场价格总表', sectionLinks: true,
+    heading: '## 机场价格总表', sectionLinks: false, capabilityStyle: 'checkmark',
     select: (airports) => selectNames(airports, [
       '网际快车', 'Flybit', '全球云', 'xxyun', '阿达西', '拼好连', '唯兔云', '99吧',
       '光年梯', '迅达', 'ccyz', 'uuone', '冲上云霄', 'SSONE', 'U1S1', '隐云',

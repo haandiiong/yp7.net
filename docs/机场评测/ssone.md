@@ -118,20 +118,12 @@ iOS教程目录未在本次核对中确认具体Clash应用名称；鸿蒙兼容
 | 适合场景 | Clash、试用 |
 | 风险记录 | 购买后不退款，新套餐覆盖旧套餐；年付超值无忧按年重置流量 |
 
-## 本文属于
-
-- [机场推荐](/posts/jichang/)
-- [免费试用机场榜](/rankings/trial/)
-- [专属客户端机场榜](/rankings/dedicated-client/)
-- [机场风险监测](/risk-monitor/)
-
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
-- [Clash机场榜](/rankings/clash/)
-- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
+<span id="本文属于"></span>
+
+- [机场推荐：7款对比与价格总表](/posts/jichang/)
+- [免费试用机场榜](/rankings/trial/)
 - [机场风险监测](/risk-monitor/)
-- [机场推荐方法与测试数据来源](/methodology/)
 - [Flybit机场怎么样？](/posts/flybit-review-2026/)
 - [cocoduck机场怎么样？](/posts/cocoduck-review/)
-- [坦克云（原坦克加速）机场怎么样？](/posts/tank-review-2026/)

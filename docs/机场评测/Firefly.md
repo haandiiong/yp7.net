@@ -169,21 +169,12 @@ Nextin识别码为 `firefly`。按教程使用外区Apple ID下载，填写识�
 | 适合场景 | ChatGPT、流媒体、新手、Clash |
 | 风险记录 | 不支持免费试用；通用订阅需向客服索取；退款、不限时设备数及重置规则待核实 |
 
-## 本文属于
-
-- [机场推荐](/posts/jichang/)
-- [Clash机场榜](/rankings/clash/)
-- [不限时套餐榜](/rankings/no-expiry/)
-- [专属客户端机场榜](/rankings/dedicated-client/)
-- [机场风险监测](/risk-monitor/)
-
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
+<span id="本文属于"></span>
+
+- [机场推荐：7款对比与价格总表](/posts/jichang/)
 - [Clash机场榜](/rankings/clash/)
-- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
-- [机场推荐方法与测试数据来源](/methodology/)
 - [灵猫网络机场怎么样？](/posts/lingmaowangluo-review-2026/)
 - [闪跃机场怎么样？](/posts/shanyue-review-2026/)
-- [榴莲云机场怎么样？](/posts/liulianyun-review-2026/)

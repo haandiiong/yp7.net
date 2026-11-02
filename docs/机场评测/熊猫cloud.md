@@ -139,20 +139,12 @@ description: 熊猫cloud机场6元月付含300GB，10元600GB、15元1200GB，�
 | 适合场景 | 低价、Clash、ChatGPT、流媒体 |
 | 风险记录 | 不支持免费试用；套餐不退款；66元600GB包客服确认有效期1年（站长2026-10-05提供），此前官网商品名写不限时 |
 
-## 本文属于
-
-- [机场推荐](/posts/jichang/)
-- [低价机场榜](/rankings/cheap/)
-- [Clash机场榜](/rankings/clash/)
-- [机场风险监测](/risk-monitor/)
-
 ## 相关阅读
 
-- [机场推荐：2026场景筛选与风险提示](/posts/jichang/)
+<span id="本文属于"></span>
+
+- [机场推荐：7款对比与价格总表](/posts/jichang/)
 - [低价机场榜](/rankings/cheap/)
-- [机场价格总表：流量、试用与风险状态](/posts/jichang/#机场价格总表)
 - [机场风险监测](/risk-monitor/)
-- [机场推荐方法与测试数据来源](/methodology/)
 - [秒秒云机场怎么样？](/posts/miaomiaoyun-review-2026/)
 - [杏花云机场怎么样？](/posts/xinghuayun-review-2026/)
-- [99吧机场怎么样？](/posts/99ba-review-2026/)

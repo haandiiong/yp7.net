@@ -7,6 +7,7 @@ interface AirportBrand {
   path: string
 }
 
+const props = defineProps<{ legacyAnchors?: Record<string, string[]> }>()
 const page = usePageData()
 const query = ref('')
 const airports = computed(() => (
@@ -34,6 +35,7 @@ const matches = computed(() => {
     <p class="brand-count" role="status" aria-live="polite">显示 {{ matches.length }} / {{ airports.length }} 家</p>
     <ul v-if="matches.length" class="brand-list">
       <li v-for="airport in matches" :key="airport.path">
+        <span v-for="id in props.legacyAnchors?.[airport.path] || []" :id="id" :key="id" aria-hidden="true" />
         <a :href="airport.path">{{ airport.name }}</a>
       </li>
     </ul>

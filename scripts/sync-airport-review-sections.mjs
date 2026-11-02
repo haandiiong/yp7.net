@@ -199,64 +199,39 @@ export const getAirportMembershipLinks = (airport, collections, hiddenAirportSta
   ])
 }
 
-const renderMembershipSection = (airport, hiddenAirportStatuses, collections) => {
+export const getAirportRelatedLinks = (airport, relatedAirportsByPath, displayNameByPath, hiddenAirportStatuses, collections) => {
+  const recommendationLink = { label: '机场推荐：7款对比与价格总表', link: '/posts/jichang/' }
+  const riskLink = { label: '机场风险监测', link: '/risk-monitor/' }
   if (hiddenAirportStatuses.has(airport.status)) {
-    return [
-      '## 本文属于',
-      '',
-      '- [机场风险监测](/risk-monitor/)',
-    ].join('\n')
-  }
-
-  const links = getAirportMembershipLinks(airport, collections, hiddenAirportStatuses)
-
-  return [
-    '## 本文属于',
-    '',
-    renderMarkdownLinks(uniqueLinks(links)),
-  ].join('\n')
-}
-
-const renderRelatedSection = (airport, relatedAirportsByPath, displayNameByPath, hiddenAirportStatuses, collections) => {
-  if (hiddenAirportStatuses.has(airport.status)) {
-    return [
-      '## 相关阅读',
-      '',
-      renderMarkdownLinks([
-        { label: '机场风险监测', link: '/risk-monitor/' },
-        { label: '机场推荐方法与测试数据来源', link: '/methodology/' },
-        { label: '机场推荐：2026场景筛选与风险提示', link: '/posts/jichang/' },
-        { label: '机场价格总表：流量、试用与风险状态', link: '/posts/jichang/#机场价格总表' },
-      ]),
-    ].join('\n')
+    return [riskLink, { label: '机场推荐方法与测试数据来源', link: '/methodology/' }, recommendationLink]
   }
 
   const peerAirports = relatedAirportsByPath.get(airport.path) || []
-  const membershipPaths = new Set(getAirportMembershipLinks(airport, collections, hiddenAirportStatuses).map((item) => item.link))
-
+  const membershipLinks = getAirportMembershipLinks(airport, collections, hiddenAirportStatuses)
+  const membershipPaths = new Set(membershipLinks.map((item) => item.link))
   const primaryScenarioLink = airport.scenarios
     .map((scenario) => scenarioRankingLinks[scenario])
-    .find((link) => link && (
-      !['/rankings/chatgpt/', '/rankings/streaming/'].includes(link.link)
-      || membershipPaths.has(link.link)
-    ))
+    .find((link) => link && link.link !== recommendationLink.link && membershipPaths.has(link.link))
+    || membershipLinks.find((link) => link.link !== recommendationLink.link && link.link !== riskLink.link)
 
-  const links = uniqueLinks([
-    { label: '机场推荐：2026场景筛选与风险提示', link: '/posts/jichang/' },
+  return uniqueLinks([
+    recommendationLink,
     primaryScenarioLink,
-    { label: '机场价格总表：流量、试用与风险状态', link: '/posts/jichang/#机场价格总表' },
-    { label: '机场风险监测', link: '/risk-monitor/' },
-    { label: '机场推荐方法与测试数据来源', link: '/methodology/' },
-    ...peerAirports.map((item) => ({
+    riskLink,
+    ...peerAirports.slice(0, 2).map((item) => ({
       label: `${displayNameByPath.get(normalizeRoute(item.path)) || item.name}机场怎么样？`,
       link: item.path,
     })),
   ])
+}
 
+const renderRelatedSection = (airport, relatedAirportsByPath, displayNameByPath, hiddenAirportStatuses, collections) => {
   return [
     '## 相关阅读',
     '',
-    renderMarkdownLinks(links),
+    '<span id="本文属于"></span>',
+    '',
+    renderMarkdownLinks(getAirportRelatedLinks(airport, relatedAirportsByPath, displayNameByPath, hiddenAirportStatuses, collections)),
   ].join('\n')
 }
 
@@ -292,7 +267,7 @@ const syncReviewSections = () => {
 
   const { airportData, visibleAirportData, airportDataLastReviewed, airportDataLastModified, hiddenAirportStatuses } = loadConfig('airports.ts')
   const { airportCollections } = loadConfig('airport-collections.ts')
-  const relatedAirportsByPath = buildRelatedAirports(visibleAirportData)
+  const relatedAirportsByPath = buildRelatedAirports(visibleAirportData, 2)
   const airportReviewFiles = walkFiles(airportReviewDir).filter((filePath) => filePath.endsWith('.md'))
   const pageByRoute = new Map()
 
@@ -329,16 +304,16 @@ const syncReviewSections = () => {
 
     const displayName = displayNameByPath.get(normalizeRoute(airport.path)) || airport.name
     const evidenceSection = renderEvidenceSection(airport, airportDataLastReviewed, displayName, hiddenAirportStatuses)
-    const membershipSection = renderMembershipSection(airport, hiddenAirportStatuses, airportCollections)
     const relatedSection = renderRelatedSection(airport, relatedAirportsByPath, displayNameByPath, hiddenAirportStatuses, airportCollections)
     const withoutManagedBottom = stripManagedBottomSections(page.content)
     const withEvidence = upsertEvidenceSection(withoutManagedBottom, evidenceSection)
-    let next = `${withEvidence.trimEnd()}\n\n${membershipSection}\n\n${relatedSection}\n`
+    const evidenceChanged = withEvidence.trimEnd() !== withoutManagedBottom.trimEnd()
+    let next = `${withEvidence.trimEnd()}\n\n${relatedSection}\n`
 
     if (next !== page.content) {
-      // Generated links may change after a newer editorial edit. Never regress its date.
+      // Navigation-only changes do not make the source facts newer.
       const currentDate = getFrontmatterValue(parseFrontmatter(page.content), 'dateModified')?.replace(/\//g, '-')
-      if (!currentDate || currentDate < airportDataLastModified) {
+      if (evidenceChanged && (!currentDate || currentDate < airportDataLastModified)) {
         next = next.replace(/^dateModified: .+$/m, `dateModified: ${airportDataLastModified.replace(/-/g, '/')}`)
       }
       if (!checkOnly) writeFileSync(page.filePath, next)

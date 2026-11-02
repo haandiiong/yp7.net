@@ -1,14 +1,6 @@
 import type { AirportData } from './airports'
 import { getNoExpiryPackage } from './no-expiry-packages'
 
-// These are additional views of the same curated collections on the combined page.
-export const catalogueComparisonSections = [
-  { key: 'cheap', heading: '## 便宜的机场汇总', notice: true },
-  { key: 'noExpiry', heading: '## 不限时机场套餐对比' },
-  { key: 'trial', heading: '## 支持免费试用的机场', notice: true },
-  { key: 'dedicatedClient', heading: '## 专属客户端机场汇总' },
-] as const
-
 export const comparisonNoticeColumn = '近期提示'
 export const getAirportComparisonNotice = (path: string) => path === '/posts/99ba-review-2026/'
   ? { text: '10月17日读取线路波动公告，现状未复核', sourcePath: path }
