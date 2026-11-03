@@ -11,15 +11,25 @@ tags:
 description: UUONE套餐更新：19元150GB月付起、99元450GB不限时，不支持免费试用。整理4款套餐、300至800Mbps标注带宽、10至20台设备限制及Clash Verge、Clash Meta、Nextin订阅使用说明。
 ---
 
+<!-- airport-basics:start -->
+**参考套餐** 19元/月，150GB/月
+
+**免费试用** 不支持 · **不限时套餐** 支持
+
+**专属客户端** 不支持 · **通用订阅** 支持
+<!-- airport-basics:end -->
+
+## UUONE官网入口
+
+<a href="https://uuone.at/?code=bKQXx1jc" rel="sponsored nofollow">UUONE官网注册入口</a>
+
+<!-- airport-intro:end -->
+
 更新时间：2026年10月16日（仅同步相关阅读，套餐资料核对与原测试日期仍以各自记录为准）。
 
 此前页面更新：2026年10月5日（仅同步榜单归属；免费试用状态于9月28日补充确认）；套餐与客户端资料核对：2026年9月23日。
 
 **UUONE当前月付19元150GB起，另有99元450GB不限时包。** 官网提供第三方客户端教程与订阅导入，本文依据套餐列表、使用文档和仪表盘整理。
-
-## UUONE官网入口
-
-<a href="https://uuone.at/?code=bKQXx1jc" rel="sponsored nofollow">UUONE官网注册入口</a>
 
 ## UUONE套餐价格与设备限制
 

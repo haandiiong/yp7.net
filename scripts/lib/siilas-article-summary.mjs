@@ -1,4 +1,4 @@
-import { syncSiilasArticleDateModified } from './siilas-article-date.mjs'
+import { getArticleIntroEnd, syncSiilasArticleDateModified } from './siilas-article-date.mjs'
 import { renderSiilasExperienceMethods } from './siilas-experience-methods.mjs'
 
 export const renderSiilasSummary = (airport, snapshot) => {
@@ -63,9 +63,10 @@ export const renderSiilasSummary = (airport, snapshot) => {
 export const syncSiilasArticleSummary = (markdown, airport, snapshot) => {
   const summary = renderSiilasSummary(airport, snapshot)
   const block = /<!-- siilas-testing:start -->[\s\S]*?<!-- siilas-testing:end -->/
+  const introEnd = getArticleIntroEnd(markdown)
   const next = block.test(markdown)
     ? markdown.replace(block, () => summary)
-    : markdown.replace(/^## /m, () => `${summary}\n\n## `)
+    : markdown.slice(0, introEnd) + markdown.slice(introEnd).replace(/^## /, () => `${summary}\n\n## `)
   if (!block.test(next)) throw new Error(`无法插入 ${airport.name} 的 Siilas 接收摘要`)
   return syncSiilasArticleDateModified(next, snapshot.receivedAt)
 }

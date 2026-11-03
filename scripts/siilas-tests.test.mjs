@@ -34,6 +34,18 @@ test('existing and newly inserted airport summaries preserve literal replacement
   }
 })
 
+test('a first Siilas receipt follows the review opening and updates its article date', () => {
+  const accepted = { ...snapshot, receivedAt: '2026-10-09' }
+  const airport = snapshot.airports[0]
+  const opening = '## 官网入口\n\n[官网](https://example.com/)\n\n<!-- airport-intro:end -->\n\n'
+  const body = '## 套餐\n\n历史记录。\n'
+  const markdown = `---\ntitle: 测试文章\ndateModified: 2026/10/08\n---\n\n${opening}更新时间：2026年10月8日\n\n${body}`
+
+  const current = syncSiilasArticleSummary(markdown, airport, accepted)
+  assert.equal(current, `---\ntitle: 测试文章\ndateModified: 2026/10/09\n---\n\n${opening}更新时间：2026年10月9日\n\n${renderSiilasSummary(airport, accepted)}\n\n${body}`)
+  assert.equal(syncSiilasArticleSummary(current, airport, accepted), current)
+})
+
 test('unchanged airport evidence still corrects an article date older than the receipt', () => {
   const accepted = { ...snapshot, receivedAt: '2026-10-09' }
   const airport = snapshot.airports[0]

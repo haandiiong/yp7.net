@@ -11,6 +11,20 @@ tags:
 description: XSUS套餐更新：12元168GB月付起、65元188GB不限时起，另有IEPL季付套餐。整理10款套餐、5个IP限制、客户端、流量重置和无法原路退款规则。
 ---
 
+<!-- airport-basics:start -->
+**参考套餐** 12元/月，168GB/月
+
+**免费试用** 不支持 · **不限时套餐** 支持
+
+**专属客户端** 支持 · **通用订阅** 支持
+<!-- airport-basics:end -->
+
+## XSUS官网入口
+
+<a href="https://xsus.cloud/register?code=6hl2OXGR" rel="sponsored nofollow">XSUS官网注册入口</a>
+
+<!-- airport-intro:end -->
+
 更新时间：2026年10月29日（接收 Siilas 测试记录、最新分区体验与评分）。套餐与客户端资料仍按9月23日的核对记录；9月27日站长补充确认XSUS不支持免费试用，本次未重新核价或新增本站测速。
 
 **XSUS当前月付12元168GB起，另有不限时流量包和IEPL企业专线套餐。** 本文按官网套餐、购买须知、帮助中心及仪表盘整理，适合比较月度流量、备用流量包与第三方订阅的用户。
@@ -39,10 +53,6 @@ Siilas 当前规则计算的综合评分为 **5.5/10**，参评要求为四地�
 
 ChatGPT、流媒体是提交者的定性体验；Speedtest 佐证测速数值，不证明各平台解锁、其他 AI 服务或长期稳定性。Siilas 与 yp7.net 由同一站长运营，不能当作独立第三方背书。
 <!-- siilas-testing:end -->
-
-## XSUS官网入口
-
-<a href="https://xsus.cloud/register?code=6hl2OXGR" rel="sponsored nofollow">XSUS官网注册入口</a>
 
 ## XSUS套餐价格
 

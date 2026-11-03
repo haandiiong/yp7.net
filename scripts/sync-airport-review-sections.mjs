@@ -87,6 +87,23 @@ const escapeTableCell = (value) => String(value ?? '')
   .replace(/\|/g, '\\|')
   .replace(/\n+/g, '<br>')
 
+const reviewBasicsPattern = /<!-- airport-basics:start -->[\s\S]*?<!-- airport-basics:end -->\n*/
+
+const syncReviewBasics = (content, airport) => {
+  const basics = [
+    '<!-- airport-basics:start -->',
+    `**参考套餐** ${airport.priceText}，${airport.traffic}`,
+    '',
+    `**免费试用** ${booleanText(airport.trial)} · **不限时套餐** ${booleanText(airport.noExpiry)}`,
+    '',
+    `**专属客户端** ${booleanText(airport.dedicatedClient)} · **通用订阅** ${booleanText(airport.universalSubscription)}`,
+    '<!-- airport-basics:end -->',
+  ].join('\n') + '\n\n'
+
+  const withoutBasics = content.replace(reviewBasicsPattern, '')
+  return withoutBasics.replace(/^(---\n[\s\S]*?\n---\n)\n*/, (_, frontmatter) => `${frontmatter}\n${basics}`)
+}
+
 const uniqueLinks = (links) => {
   const seen = new Set()
 
@@ -308,7 +325,10 @@ const syncReviewSections = () => {
     const withoutManagedBottom = stripManagedBottomSections(page.content)
     const withEvidence = upsertEvidenceSection(withoutManagedBottom, evidenceSection)
     const evidenceChanged = withEvidence.trimEnd() !== withoutManagedBottom.trimEnd()
-    let next = `${withEvidence.trimEnd()}\n\n${relatedSection}\n`
+    const withBasics = hiddenAirportStatuses.has(airport.status)
+      ? withEvidence.replace(reviewBasicsPattern, '')
+      : syncReviewBasics(withEvidence, airport)
+    let next = `${withBasics.trimEnd()}\n\n${relatedSection}\n`
 
     if (next !== page.content) {
       // Navigation-only changes do not make the source facts newer.

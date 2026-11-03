@@ -3,6 +3,13 @@
 const frontmatterPattern = /^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/
 const monthlyTitlePattern = /（\d{4}年\d{1,2}月更新）/
 
+export const getArticleIntroEnd = (markdown) => {
+  const openingEnd = markdown.indexOf('<!-- airport-intro:end -->')
+  const offset = Math.max(0, openingEnd)
+  const heading = markdown.slice(offset).search(/^## /m)
+  return heading < 0 ? markdown.length : offset + heading
+}
+
 export const getSiilasArticleDateModified = (markdown, receivedAt) => {
   const frontmatter = markdown.match(frontmatterPattern)?.[1] ?? ''
   const modifiedAt = frontmatter.match(/^dateModified:\s*['"]?(\d{4})[/-](\d{2})[/-](\d{2})(?:['"]|\s|$)/m)?.slice(1).join('-')
@@ -24,8 +31,7 @@ export const syncSiilasArticleDateModified = (markdown, receivedAt) => {
       : dated
   })
   // Align an existing introductory date without rewriting later historical notes.
-  const firstSection = next.search(/^## /m)
-  const boundary = firstSection < 0 ? next.length : firstSection
+  const boundary = getArticleIntroEnd(next)
   const intro = next.slice(0, boundary).replace(/^更新时间：(\*\*)?(\d{4}年\d{1,2}月(?:\d{1,2}日)?)/gm,
     (_, bold = '', original) => `更新时间：${bold}${year}年${month}月${original.endsWith('日') ? `${day}日` : ''}`)
   return intro + next.slice(boundary)

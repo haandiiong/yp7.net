@@ -11,13 +11,23 @@ tags:
 description: SSONE最新套餐资料：15元60GB月付、80元季付300GB每月、200元年付5000GB每年；新用户1小时试用，整理客户端、套餐覆盖与不退款规则。
 ---
 
-更新时间：2026年9月28日
+<!-- airport-basics:start -->
+**参考套餐** 15元/月，60GB/月
 
-**SSONE月付15元60GB起，新注册账号可免费体验1小时。** 官网提供自有客户端和第三方订阅教程，套餐分Lite与Pro。以下整理本次商店与使用文档所见资料。
+**免费试用** 支持 · **不限时套餐** 不支持
+
+**专属客户端** 支持 · **通用订阅** 支持
+<!-- airport-basics:end -->
 
 ## SSONE官网入口
 
 <a href="https://hello-ssone.com/register?aff=QpXdVaKY" rel="sponsored nofollow">SSONE官网注册入口</a>
+
+<!-- airport-intro:end -->
+
+更新时间：2026年9月28日
+
+**SSONE月付15元60GB起，新注册账号可免费体验1小时。** 官网提供自有客户端和第三方订阅教程，套餐分Lite与Pro。以下整理本次商店与使用文档所见资料。
 
 ## 套餐价格、流量与线路
 

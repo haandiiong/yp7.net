@@ -12,6 +12,20 @@ tags:
 description: cocoduck机场个人套餐17元/月含100GB，新用户可体验1天2GB；迷你鸭77元/年含40GB月流量。整理套餐价格、加油包条件、专属客户端与Clash订阅兼容说明。
 ---
 
+<!-- airport-basics:start -->
+**参考套餐** 17元/月，100GB/月
+
+**免费试用** 支持 · **不限时套餐** 不支持
+
+**专属客户端** 支持 · **通用订阅** 支持
+<!-- airport-basics:end -->
+
+## cocoduck机场官网入口
+
+👉 [cocoduck官网入口](https://cocoduck.live/auth/register?code=ca0cfb89fa)
+
+<!-- airport-intro:end -->
+
 页面更新：2026年10月29日，同步接收 Siilas 带日期的记录与评分；最新实际测试日期、各地区结果与来源发布状态见下表。套餐和客户端资料仍按2026年9月27日核对记录，本次没有重新核价或新增本站测速。
 
 <!-- siilas-testing:start -->
@@ -48,10 +62,6 @@ cocoduck 提供专属客户端和通用订阅，个人套餐为 **17元/月、10
 连接表现可查看[Siilas 的 cocoduck 原始记录](https://siilas.com/airport/cocoduck/)及上方接收摘要，按香港、日本、新加坡和美国分别核对实际日期、正反结果与来源发布状态。不同日期的观察可能不同，不能将某次“流畅”当作当前所有流媒体平台解锁或持续连接质量的保证。Siilas 与本站由同一站长运营，本文没有新增本站测试。
 
 <!-- more -->
-
-## cocoduck机场官网入口
-
-👉 [cocoduck官网入口](https://cocoduck.live/auth/register?code=ca0cfb89fa)
 
 ## cocoduck套餐价格与月流量
 

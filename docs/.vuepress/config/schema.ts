@@ -225,10 +225,7 @@ export const getPageSchema = (page: any) => {
           contactType: 'editorial',
           url: siteContactUrl,
         },
-        sameAs: [
-          'https://github.com/haandiiong',
-          siteContactUrl,
-        ],
+        sameAs: [siteContactUrl],
       },
       {
         '@type': 'Person',
@@ -236,10 +233,7 @@ export const getPageSchema = (page: any) => {
         name: siteAuthorName,
         description: siteAuthorDescription,
         url: siteAuthorUrl,
-        sameAs: [
-          'https://github.com/haandiiong',
-          siteContactUrl,
-        ],
+        sameAs: [siteContactUrl],
         knowsAbout: [
           '机场推荐',
           '机场测评',
