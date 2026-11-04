@@ -1,7 +1,7 @@
 ---
 title: 2026 ChatGPT机场记录：9家Siilas节点观察与套餐对比
 createTime: 2026/06/04
-dateModified: 2026/10/29
+dateModified: 2026/11/04
 permalink: /rankings/chatgpt/
 tags:
   - ChatGPT机场
@@ -18,7 +18,7 @@ description: 仅收录Siilas已有原始测速和ChatGPT定性记录的9家机�
 
 <!-- siilas-page-updated:start -->
 
-更新时间：2026年10月29日（同步 Siilas 接收快照；各地区实际测试日期见下表，本次没有新增 yp7.net 现场测试）
+更新时间：2026年11月4日（同步 Siilas 接收快照；各地区实际测试日期见下表，本次没有新增 yp7.net 现场测试）
 
 <!-- siilas-page-updated:end -->
 
@@ -42,21 +42,21 @@ description: 仅收录Siilas已有原始测速和ChatGPT定性记录的9家机�
 
 | 机场 | 价格 | 流量 | 客户端 | ChatGPT观察 | 风险提示 |
 |---|---:|---|---|---|---|
-| [Flybit](/posts/flybit-review-2026/) | 15元/月 | 128GB/月 | 通用订阅 | 2026-10-23：新加坡、日本、美国流畅，香港不可用<br>已参评；综合分 6/10 | 套餐标注不退款；协议公告残留AnyTLS；入口恢复仅为商家声明，旧订阅需按公告重新获取 |
-| [拼好连](/posts/runway-review-2026/) | 19.9元/月 | 50GB/月 | 通用订阅 | 2026-10-24：香港、日本流畅；2026-10-23：新加坡流畅，美国响应严重延迟<br>已参评；综合分 4.4/10 | 新机场账号不提供专属客户端，需第三方订阅工具；试用领取及起算方式、退款、不限时重置费及老用户锁价期限待核实 |
-| [光年梯](/posts/guangnianti-review-2026/) | 18元/月 | 110GB/月 | 专属客户端 | 2026-10-08：新加坡流畅，香港不可用，日本、美国轻微延迟<br>已参评；综合分 5/10 | 普通套餐不支持通用订阅或免费试用，套餐不退款；GNT80适用及结算待核实；Android V7/V8文档同链 |
+| [Flybit](/posts/flybit-review-2026/) | 15元/月 | 128GB/月 | 通用订阅 | 2026-11-04：日本、美国流畅；2026-10-23：新加坡流畅，香港不可用<br>已参评；综合分 6/10 | 套餐标注不退款；协议公告残留AnyTLS；入口恢复仅为商家声明，旧订阅需按公告重新获取 |
+| [拼好连](/posts/runway-review-2026/) | 19.9元/月 | 50GB/月 | 通用订阅 | 2026-11-04：美国响应严重延迟；2026-10-24：香港、日本流畅；2026-10-23：新加坡流畅<br>已参评；综合分 4.1/10 | 新机场账号不提供专属客户端，需第三方订阅工具；试用领取及起算方式、退款、不限时重置费及老用户锁价期限待核实 |
+| [光年梯](/posts/guangnianti-review-2026/) | 18元/月 | 110GB/月 | 专属客户端 | 2026-11-04：日本、美国流畅；2026-10-08：新加坡流畅，香港不可用<br>已参评；综合分 5.3/10 | 普通套餐不支持通用订阅或免费试用，套餐不退款；GNT80适用及结算待核实；Android V7/V8文档同链 |
 | [cocoduck](/posts/cocoduck-review/) | 17元/月 | 100GB/月 | 专属客户端、通用订阅 | 2026-10-24：新加坡、香港、日本、美国流畅<br>已参评；综合分 6.3/10 | 试用无人工支持；加油包需搭配常规套餐，旧客户端需确认兼容性 |
 | [网际快车](/posts/wangji-kuaiche-review/) | 28元/30天 | 60GB/日（每日重置） | 通用订阅 | 2026-10-23：新加坡、日本、美国流畅；2026-10-08：香港不可用<br>已参评；综合分 5.6/10 | 日享限60GB/日；体验券yp7net的1天5GB沿用9月27日补充，本次未兑券、起算未核；旧优惠码与退款待核实 |
 | [全球云](/posts/quanqiuyun/) | 20元/月 | 120GB/月 | 专属客户端 | 2026-10-08：新加坡、日本、美国流畅，香港不可用<br>已参评；综合分 5.4/10 | 不支持免费试用和通用订阅仍据9月27日补充；旧优惠码与退款待核实；不限时重购余量未明确 |
 | [XSUS](/posts/xsus-review-2026/) | 12元/月 | 168GB/月 | 专属客户端、通用订阅 | 2026-10-24：香港、日本、美国流畅；2026-10-08：新加坡轻微延迟<br>已参评；综合分 5.5/10 | 无法原路退款；流量不叠加，续费不立即重置；不支持免费试用 |
-| [xxyun](/posts/xxyun-review-2026/) | 9.99元/月 | 100GB/月 | 专属客户端 | 2026-10-23：美国轻微延迟；2026-10-08：新加坡、日本流畅，香港不可用<br>已参评；综合分 5.7/10 | 仅官方客户端，不支持第三方通用订阅；无退款政策，不支持新疆，校园网不保证；Linux和软路由限所列系统及架构 |
+| [xxyun](/posts/xxyun-review-2026/) | 9.99元/月 | 100GB/月 | 专属客户端 | 2026-11-04：美国响应严重延迟；2026-10-08：新加坡、日本流畅，香港不可用<br>已参评；综合分 5.5/10 | 仅官方客户端，不支持第三方通用订阅；无退款政策，不支持新疆，校园网不保证；Linux和软路由限所列系统及架构 |
 | [边缘节点](/posts/bianyuan-review-2026/) | 15元/月 | 50GB/月 | 专属客户端 | 2026-10-08：新加坡、日本、美国流畅，香港不可用<br>已参评；综合分 4/10 | 月付体验不参加优惠；不支持免费试用和通用订阅，退款待核实；重置后额度与余量处理未列 |
 
 ## 带日期的ChatGPT证据
 
 <!-- siilas-collection-evidence:start -->
 
-2026-10-29 接收 [Siilas 原始记录](https://siilas.com/test/)；最新实际测试日为 2026-10-24。接收与页面编辑没有新增 yp7.net 测试或重新核价。已核对 Siilas 来源正式发布版本。完整记录、测试环境与证据版本见[接收快照](/data/siilas-tests.json)。
+2026-11-04 接收 [Siilas 原始记录](https://siilas.com/test/)；最新实际测试日为 2026-11-04。接收与页面编辑没有新增 yp7.net 测试或重新核价。已核对 Siilas 来源正式发布版本。完整记录、测试环境与证据版本见[接收快照](/data/siilas-tests.json)。
 
 参评状态、综合分与分项分直接采用 Siilas 计算结果；参评要求为四地区各至少 3 个不同测试日。样本日数不等于连续稳定运行天数，综合分不决定本页编辑顺序。[评分方法](https://siilas.com/methodology/)。
 
@@ -68,16 +68,16 @@ description: 仅收录Siilas已有原始测速和ChatGPT定性记录的9家机�
 | --- | --- | --- | ---: | --- |
 | Flybit·新加坡 | 2026-10-23 21:16 | 流畅 | 441.95 | [来源](https://siilas.com/airport/flybit/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19823427729) · [测速截图](https://siilas.com/evidence/flybit/2026-10-23-2116-sg-speedtest.png) |
 | Flybit·香港 | 2026-10-23 21:12 | 不可用 | 418.61 | [来源](https://siilas.com/airport/flybit/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19823409383) · [测速截图](https://siilas.com/evidence/flybit/2026-10-23-2112-hk-speedtest.png) |
-| Flybit·日本 | 2026-10-23 21:28 | 流畅 | 27.72 | [来源](https://siilas.com/airport/flybit/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19823474954) · [测速截图](https://siilas.com/evidence/flybit/2026-10-23-2128-jp-speedtest.png) |
-| Flybit·美国 | 2026-10-23 21:33 | 流畅 | 20.19 | [来源](https://siilas.com/airport/flybit/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19823493183) · [测速截图](https://siilas.com/evidence/flybit/2026-10-23-2133-us-speedtest.png) |
+| Flybit·日本 | 2026-11-04 09:08 | 流畅 | 526.73 | [来源](https://siilas.com/airport/flybit/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19867516507) · [测速截图](https://siilas.com/evidence/flybit/2026-11-04-0908-jp-speedtest.png) |
+| Flybit·美国 | 2026-11-04 09:05 | 流畅 | 114.72 | [来源](https://siilas.com/airport/flybit/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19867510032) · [测速截图](https://siilas.com/evidence/flybit/2026-11-04-0905-us-speedtest.png) |
 | 拼好连·新加坡 | 2026-10-23 22:35 | 流畅 | 184.63 | [来源](https://siilas.com/airport/pinhaolian/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19823742140) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-10-23-2235-sg-speedtest.png) |
 | 拼好连·香港 | 2026-10-24 18:24 | 流畅 | 997.91 | [来源](https://siilas.com/airport/pinhaolian/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19826672930) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-10-24-1824-hk-speedtest.png) |
 | 拼好连·日本 | 2026-10-24 18:18 | 流畅 | 727.72 | [来源](https://siilas.com/airport/pinhaolian/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19826657668) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-10-24-1818-jp-speedtest.png) |
-| 拼好连·美国 | 2026-10-23 22:45 | 响应严重延迟 | 3.88 | [来源](https://siilas.com/airport/pinhaolian/) · [Speedtest](https://www.speedtest.net/result/19823782366) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-10-23-2245-us-speedtest.png) |
+| 拼好连·美国 | 2026-11-04 08:14 | 响应严重延迟 | 7.86 | [来源](https://siilas.com/airport/pinhaolian/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19867409616) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png) |
 | 光年梯·新加坡 | 2026-10-08 20:17 | 流畅 | 107.26 | [来源](https://siilas.com/airport/guangnianti/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19765286002) · [测速截图](https://siilas.com/evidence/guangnianti/2026-10-08-2017-sg-speedtest.png) |
 | 光年梯·香港 | 2026-10-08 20:43 | 不可用 | 121.46 | [来源](https://siilas.com/airport/guangnianti/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19765381537) · [测速截图](https://siilas.com/evidence/guangnianti/2026-10-08-2043-hk-speedtest.png) |
-| 光年梯·日本 | 2026-10-08 20:39 | 轻微延迟 | 67.53 | [来源](https://siilas.com/airport/guangnianti/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19765366735) · [测速截图](https://siilas.com/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png) |
-| 光年梯·美国 | 2026-10-08 20:30 | 轻微延迟 | 8.22 | [来源](https://siilas.com/airport/guangnianti/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19765333047) · [测速截图](https://siilas.com/evidence/guangnianti/2026-10-08-2030-us-speedtest.png) |
+| 光年梯·日本 | 2026-11-04 09:01 | 流畅 | 526.4 | [来源](https://siilas.com/airport/guangnianti/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19867502742) · [测速截图](https://siilas.com/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png) |
+| 光年梯·美国 | 2026-11-04 08:58 | 流畅 | 360.13 | [来源](https://siilas.com/airport/guangnianti/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19867495243) · [测速截图](https://siilas.com/evidence/guangnianti/2026-11-04-0858-us-speedtest.png) |
 | cocoduck·新加坡 | 2026-10-24 17:20 | 流畅 | 559.68 | [来源](https://siilas.com/airport/cocoduck/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19826508132) · [测速截图](https://siilas.com/evidence/cocoduck/2026-10-24-1720-sg-speedtest.png) |
 | cocoduck·香港 | 2026-10-24 18:06 | 流畅 | 811.98 | [来源](https://siilas.com/airport/cocoduck/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19826626708) · [测速截图](https://siilas.com/evidence/cocoduck/2026-10-24-1806-hk-speedtest.png) |
 | cocoduck·日本 | 2026-10-24 17:39 | 流畅 | 618.9 | [来源](https://siilas.com/airport/cocoduck/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19826556316) · [测速截图](https://siilas.com/evidence/cocoduck/2026-10-24-1739-jp-speedtest.png) |
@@ -97,7 +97,7 @@ description: 仅收录Siilas已有原始测速和ChatGPT定性记录的9家机�
 | xxyun·新加坡 | 2026-10-08 19:19 | 流畅 | 183.53 | [来源](https://siilas.com/airport/xxyun/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19765091965) · [测速截图](https://siilas.com/evidence/xxyun/2026-10-08-1919-sg-speedtest.png) |
 | xxyun·香港 | 2026-10-08 19:39 | 不可用 | 17.01 | [来源](https://siilas.com/airport/xxyun/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19765155474) · [测速截图](https://siilas.com/evidence/xxyun/2026-10-08-1939-hk-speedtest.png) |
 | xxyun·日本 | 2026-10-08 19:28 | 流畅 | 115.9 | [来源](https://siilas.com/airport/xxyun/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19765121073) · [测速截图](https://siilas.com/evidence/xxyun/2026-10-08-1928-jp-speedtest.png) |
-| xxyun·美国 | 2026-10-23 15:36 | 轻微延迟 | 21.82 | [来源](https://siilas.com/airport/xxyun/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19822385470) · [测速截图](https://siilas.com/evidence/xxyun/2026-10-23-1536-us-speedtest.png) |
+| xxyun·美国 | 2026-11-04 08:20 | 响应严重延迟 | 4.8 | [来源](https://siilas.com/airport/xxyun/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19867421977) · [测速截图](https://siilas.com/evidence/xxyun/2026-11-04-0820-us-speedtest.png) |
 | 边缘节点·新加坡 | 2026-10-08 19:42 | 流畅 | 551.47 | [来源](https://siilas.com/airport/edgenode/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19765167377) · [测速截图](https://siilas.com/evidence/edgenode/2026-10-08-1942-sg-speedtest.png) |
 | 边缘节点·香港 | 2026-10-08 19:59 | 不可用 | 541.78 | [来源](https://siilas.com/airport/edgenode/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19765222685) · [测速截图](https://siilas.com/evidence/edgenode/2026-10-08-1959-hk-speedtest.png) |
 | 边缘节点·日本 | 2026-10-08 19:53 | 流畅 | 78.75 | [来源](https://siilas.com/airport/edgenode/) · [Speedtest](https://www.speedtest.net/zh-Hans/result/19765202122) · [测速截图](https://siilas.com/evidence/edgenode/2026-10-08-1953-jp-speedtest.png) |

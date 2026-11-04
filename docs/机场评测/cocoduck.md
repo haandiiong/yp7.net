@@ -1,7 +1,7 @@
 ---
 title: cocoduck机场套餐与使用指南：17元月付、1天2GB试用及客户端
 createTime: 2026/04/25
-dateModified: 2026/10/29
+dateModified: 2026/11/04
 permalink: /posts/cocoduck-review/
 tags:
   - cocoduck机场
@@ -26,12 +26,12 @@ description: cocoduck机场个人套餐17元/月含100GB，新用户可体验1�
 
 <!-- airport-intro:end -->
 
-页面更新：2026年10月29日，同步接收 Siilas 带日期的记录与评分；最新实际测试日期、各地区结果与来源发布状态见下表。套餐和客户端资料仍按2026年9月27日核对记录，本次没有重新核价或新增本站测速。
+更新时间：2026年11月4日，同步接收 Siilas 带日期的记录与评分。最新实际测试日期、各地区结果与来源发布状态见下表。套餐和客户端资料仍按2026年9月27日核对记录，本次没有重新核价或新增本站测速。
 
 <!-- siilas-testing:start -->
 ## Siilas 测速与使用体验记录
 
-2026-10-29 接收 [Siilas cocoduck原始记录](https://siilas.com/airport/cocoduck/) **16 条已验证测速**，覆盖 4 个不同测试日，采样跨度为 2026-07-13 至 2026-10-24。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
+2026-11-04 接收 [Siilas cocoduck原始记录](https://siilas.com/airport/cocoduck/) **16 条已验证测速**，覆盖 4 个不同测试日，采样跨度为 2026-07-13 至 2026-10-24。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
 
 已核对 Siilas 来源正式发布版本。完整记录、测试环境与证据见[接收快照](/data/siilas-tests.json)。
 

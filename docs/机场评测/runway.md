@@ -1,7 +1,7 @@
 ---
 title: 拼好连机场怎么样？19.9元50GB套餐与新旧用户规则
 createTime: 2026/05/12
-dateModified: 2026/10/29
+dateModified: 2026/11/04
 permalink: /posts/runway-review-2026/
 tags:
   - 拼好连机场
@@ -43,7 +43,7 @@ description: 拼好连机场19.9元50GB月付、70元150GB不限时起；新版�
 
 > **测试资料来源：** 自2026年8月18日起，yp7.net 不再自行测试。本页引用同一站长运营的 [Siilas 拼好连原始记录](https://siilas.com/airport/pinhaolian/)，并非独立第三方背书；结果只对应所列日期、节点和网络，本站旧记录仅作历史资料。
 
-更新时间：2026年10月29日（同步接收 Siilas 原始记录与评分；最新实际测试日期、分区结果与来源发布状态见下表）。商店与公告复核、当前1天6GB试用的用户再次确认均为10月16日；领取方式与起算仍未核实。本次没有重新核价、实际领取试用或新增本站连接测试。
+更新时间：2026年11月4日（同步接收 Siilas 原始记录与评分；最新实际测试日期、分区结果与来源发布状态见下表）。商店与公告复核、当前1天6GB试用的用户再次确认均为10月16日；领取方式与起算仍未核实。本次没有重新核价、实际领取试用或新增本站连接测试。
 
 **当前新购标价为19.9元/月50GB起，另有70元150GB不限时包。** 新机场用户使用第三方客户端，不再提供专属客户端；独立VPN的一键客户端路线另列。新版机场仍有1天6GB试用，由10月16日用户确认；领取渠道、起算方式与实际到账未核实。
 
@@ -54,11 +54,11 @@ description: 拼好连机场19.9元50GB月付、70元150GB不限时起；新版�
 <!-- siilas-testing:start -->
 ## Siilas 测速与使用体验记录
 
-2026-10-29 接收 [Siilas 拼好连（原 Runway）原始记录](https://siilas.com/airport/pinhaolian/) **16 条已验证测速**，覆盖 7 个不同测试日，采样跨度为 2026-07-13 至 2026-10-24。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
+2026-11-04 接收 [Siilas 拼好连（原 Runway）原始记录](https://siilas.com/airport/pinhaolian/) **17 条已验证测速**，覆盖 8 个不同测试日，采样跨度为 2026-07-13 至 2026-11-04。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
 
 已核对 Siilas 来源正式发布版本。完整记录、测试环境与证据见[接收快照](/data/siilas-tests.json)。
 
-Siilas 当前规则计算的综合评分为 **4.4/10**，参评要求为四地区各至少 3 个不同测试日。评分来自其全部有效样本，含所列性价比计分套餐；它不直接改写 yp7.net 推荐顺序。[查看 Siilas 评分方法](https://siilas.com/methodology/)。
+Siilas 当前规则计算的综合评分为 **4.1/10**，参评要求为四地区各至少 3 个不同测试日。评分来自其全部有效样本，含所列性价比计分套餐；它不直接改写 yp7.net 推荐顺序。[查看 Siilas 评分方法](https://siilas.com/methodology/)。
 
 各地区最新一条记录分别如下，时间为北京时间。不同地区的最近日期可能不同：
 
@@ -67,7 +67,7 @@ Siilas 当前规则计算的综合评分为 **4.4/10**，参评要求为四地�
 | 新加坡 | 2026-10-23 22:35 | 184.63 | 42.6 | 174 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19823742140) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-10-23-2235-sg-speedtest.png) |
 | 香港 | 2026-10-24 18:24 | 997.91 | 39.45 | 111 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19826672930) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-10-24-1824-hk-speedtest.png) |
 | 日本 | 2026-10-24 18:18 | 727.72 | 40.69 | 60 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19826657668) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-10-24-1818-jp-speedtest.png) |
-| 美国 | 2026-10-23 22:45 | 3.88 | 0.99 | 187 | 响应严重延迟 | 缓冲严重 | [Speedtest](https://www.speedtest.net/result/19823782366) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-10-23-2245-us-speedtest.png) |
+| 美国 | 2026-11-04 08:14 | 7.86 | 14.34 | 511 | 响应严重延迟 | 缓冲严重 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19867409616) · [测速截图](https://siilas.com/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png) |
 
 上述最近记录所列代理客户端：FlClash；测速工具：Speedtest Desktop。每条原始记录保留自己的网络、设备和工具字段，未记录的历史条件不套用到新样本。
 

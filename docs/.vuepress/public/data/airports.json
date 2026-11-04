@@ -2,7 +2,7 @@
   "site": "yp7.net",
   "url": "https://yp7.net",
   "lastReviewed": "2026-08-19",
-  "lastModified": "2026-10-29",
+  "lastModified": "2026-11-04",
   "testingPolicy": {
     "effectiveDate": "2026-08-18",
     "yp7ConductsCurrentTests": false,
@@ -323,7 +323,7 @@
           }
         ],
         "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-        "receivedAt": "2026-10-29",
+        "receivedAt": "2026-11-04",
         "sourcePublicationStatus": "published",
         "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
         "methodologyUrl": "https://siilas.com/methodology/",
@@ -466,21 +466,21 @@
         "name": "Flybit",
         "yp7Path": "/posts/flybit-review-2026/",
         "sourceUrl": "https://siilas.com/airport/flybit/",
-        "latestTestAt": "2026-10-23",
-        "verifiedTestCount": 17,
-        "testDateCount": 5,
+        "latestTestAt": "2026-11-04",
+        "verifiedTestCount": 19,
+        "testDateCount": 6,
         "regionalSampleDays": {
           "新加坡": 4,
           "香港": 5,
-          "日本": 4,
-          "美国": 4
+          "日本": 5,
+          "美国": 5
         },
         "rankingEligible": true,
         "score": 6,
         "stability": 49.4,
         "scoreBreakdown": {
           "stability": 49.4,
-          "speed": 43.5,
+          "speed": 41.4,
           "chatgpt": 75,
           "streaming": 98.8,
           "value": 85.3
@@ -497,8 +497,8 @@
           "trafficLabel": "128GB/月"
         },
         "latestExperience": {
-          "chatgpt": "新加坡 2026-10-23：流畅；香港 2026-10-23：不可用；日本 2026-10-23：流畅；美国 2026-10-23：流畅",
-          "streaming": "新加坡 2026-10-23：流畅；香港 2026-10-23：流畅；日本 2026-10-23：流畅；美国 2026-10-23：流畅"
+          "chatgpt": "新加坡 2026-10-23：流畅；香港 2026-10-23：不可用；日本 2026-11-04：流畅；美国 2026-11-04：流畅",
+          "streaming": "新加坡 2026-10-23：流畅；香港 2026-10-23：流畅；日本 2026-11-04：流畅；美国 2026-11-04：流畅"
         },
         "latestRegionTests": [
           {
@@ -598,44 +598,44 @@
           {
             "region": "日本",
             "test": {
-              "id": "20261023-2128-jp",
-              "testedAt": "2026-10-23",
-              "time": "21:28",
-              "window": "晚高峰",
+              "id": "20261104-0908-jp",
+              "testedAt": "2026-11-04",
+              "time": "09:08",
+              "window": "日间",
               "node": "日本节点",
               "exitRegion": "日本",
               "baselineDownloadMbps": 1000,
-              "downloadMbps": 27.72,
-              "uploadMbps": 24.75,
+              "downloadMbps": 526.73,
+              "uploadMbps": 31.85,
               "chatgpt": "流畅",
               "streaming": "流畅",
-              "latencyMs": 123,
-              "downloadLatencyMs": 169,
-              "uploadLatencyMs": 126,
+              "latencyMs": 177,
+              "downloadLatencyMs": 205,
+              "uploadLatencyMs": 120,
               "jitterMs": null,
               "packetLossPercent": null,
-              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19823474954",
-              "evidenceImage": "/evidence/flybit/2026-10-23-2128-jp-speedtest.png",
-              "evidenceNote": "截图时间为 2026-10-23 GMT 1:28 PM（13:28），换算北京时间 2026-10-23 21:28。用户按已确认的出口 IP 地区口径提交日本节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。截图中的 Speedtest Desktop 为测速工具。",
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867516507",
+              "evidenceImage": "/evidence/flybit/2026-11-04-0908-jp-speedtest.png",
+              "evidenceNote": "截图时间为 2026-11-04 GMT 1:08 AM（01:08），换算北京时间 2026-11-04 09:08。用户按已确认的出口 IP 地区口径提交日本节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。Speedtest 显示的网络名称按截图截断文字记录。",
               "sourceRegion": null,
               "connectionType": "Wi-Fi",
-              "isp": "Google Cloud Platform",
-              "server": "IPA CyberLab 400G · Tokyo",
+              "isp": "Eons Data Communic...",
+              "server": "Verizon · Tokyo",
               "device": "MacBook",
               "client": "FlClash",
               "measurementTool": "Speedtest Desktop",
-              "evidenceUrl": "https://siilas.com/evidence/flybit/2026-10-23-2128-jp-speedtest.png",
+              "evidenceUrl": "https://siilas.com/evidence/flybit/2026-11-04-0908-jp-speedtest.png",
               "evidenceUrls": [
-                "https://siilas.com/evidence/flybit/2026-10-23-2128-jp-speedtest.png"
+                "https://siilas.com/evidence/flybit/2026-11-04-0908-jp-speedtest.png"
               ],
               "publication": {
                 "status": "published",
-                "versionSha256": "468de9097bf34b254c2a73bdce0d19fc5486dce63001fceafc02bec7f3109229",
+                "versionSha256": "0178c43128fd19b6e1f701e28fc8087e685f76921525647ca9ebcb68d460cc73",
                 "evidenceVersions": [
                   {
                     "label": "测速截图",
-                    "url": "https://siilas.com/evidence/flybit/2026-10-23-2128-jp-speedtest.png",
-                    "sha256": "29fd50c29d3d6114704f61de5ce71b01a4e911712036e13dcf20e8ed9d8bcba3",
+                    "url": "https://siilas.com/evidence/flybit/2026-11-04-0908-jp-speedtest.png",
+                    "sha256": "0767365b1da21e15ab2f77306e120d09123ac5ec78d96e79f3efc3a25ca5b541",
                     "status": "published"
                   }
                 ]
@@ -645,44 +645,44 @@
           {
             "region": "美国",
             "test": {
-              "id": "20261023-2133-us",
-              "testedAt": "2026-10-23",
-              "time": "21:33",
-              "window": "晚高峰",
+              "id": "20261104-0905-us",
+              "testedAt": "2026-11-04",
+              "time": "09:05",
+              "window": "日间",
               "node": "美国节点",
               "exitRegion": "美国",
               "baselineDownloadMbps": 1000,
-              "downloadMbps": 20.19,
-              "uploadMbps": 6.29,
+              "downloadMbps": 114.72,
+              "uploadMbps": 50.96,
               "chatgpt": "流畅",
               "streaming": "流畅",
-              "latencyMs": 303,
-              "downloadLatencyMs": 302,
-              "uploadLatencyMs": 304,
+              "latencyMs": 278,
+              "downloadLatencyMs": 277,
+              "uploadLatencyMs": 284,
               "jitterMs": null,
               "packetLossPercent": null,
-              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19823493183",
-              "evidenceImage": "/evidence/flybit/2026-10-23-2133-us-speedtest.png",
-              "evidenceNote": "截图时间为 2026-10-23 GMT 1:33 PM（13:33），换算北京时间 2026-10-23 21:33。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。截图中的 Speedtest Desktop 为测速工具。",
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867510032",
+              "evidenceImage": "/evidence/flybit/2026-11-04-0905-us-speedtest.png",
+              "evidenceNote": "截图时间为 2026-11-04 GMT 1:05 AM（01:05），换算北京时间 2026-11-04 09:05。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。",
               "sourceRegion": null,
               "connectionType": "Wi-Fi",
               "isp": "Astound",
-              "server": "Frontier · Ashburn, VA",
+              "server": "GSL Networks · Ashburn, VA",
               "device": "MacBook",
               "client": "FlClash",
               "measurementTool": "Speedtest Desktop",
-              "evidenceUrl": "https://siilas.com/evidence/flybit/2026-10-23-2133-us-speedtest.png",
+              "evidenceUrl": "https://siilas.com/evidence/flybit/2026-11-04-0905-us-speedtest.png",
               "evidenceUrls": [
-                "https://siilas.com/evidence/flybit/2026-10-23-2133-us-speedtest.png"
+                "https://siilas.com/evidence/flybit/2026-11-04-0905-us-speedtest.png"
               ],
               "publication": {
                 "status": "published",
-                "versionSha256": "be2a88d94993f2e407bb9a5ec6c9ed636babf3d5346fcc1e4244548613e788aa",
+                "versionSha256": "87b4f9e63c1e93d144109635e98f8bdf50c8077011e787931bdb732d28d26123",
                 "evidenceVersions": [
                   {
                     "label": "测速截图",
-                    "url": "https://siilas.com/evidence/flybit/2026-10-23-2133-us-speedtest.png",
-                    "sha256": "9df676b7592009a0e9c786c767d7e0163b0cbda79346ee045d531c59f0131323",
+                    "url": "https://siilas.com/evidence/flybit/2026-11-04-0905-us-speedtest.png",
+                    "sha256": "8b1d0ed8d7a7ec53bd57d23698ae0af274a7080595d83eccc6c9d3beaf50910d",
                     "status": "published"
                   }
                 ]
@@ -691,7 +691,7 @@
           }
         ],
         "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-        "receivedAt": "2026-10-29",
+        "receivedAt": "2026-11-04",
         "sourcePublicationStatus": "published",
         "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
         "methodologyUrl": "https://siilas.com/methodology/",
@@ -1001,7 +1001,7 @@
           }
         ],
         "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-        "receivedAt": "2026-10-29",
+        "receivedAt": "2026-11-04",
         "sourcePublicationStatus": "published",
         "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
         "methodologyUrl": "https://siilas.com/methodology/",
@@ -1113,28 +1113,28 @@
         "name": "xxyun",
         "yp7Path": "/posts/xxyun-review-2026/",
         "sourceUrl": "https://siilas.com/airport/xxyun/",
-        "latestTestAt": "2026-10-23",
-        "verifiedTestCount": 13,
-        "testDateCount": 6,
+        "latestTestAt": "2026-11-04",
+        "verifiedTestCount": 14,
+        "testDateCount": 7,
         "regionalSampleDays": {
           "新加坡": 3,
           "香港": 3,
           "日本": 3,
-          "美国": 4
+          "美国": 5
         },
         "rankingEligible": true,
-        "score": 5.7,
-        "stability": 64.6,
+        "score": 5.5,
+        "stability": 59,
         "scoreBreakdown": {
-          "stability": 64.6,
-          "speed": 14.3,
-          "chatgpt": 68.8,
-          "streaming": 76,
+          "stability": 59,
+          "speed": 14.2,
+          "chatgpt": 66.3,
+          "streaming": 74.2,
           "value": 100
         },
         "experienceScores": {
-          "chatgpt": 68.8,
-          "streaming": 76
+          "chatgpt": 66.3,
+          "streaming": 74.2
         },
         "scoringPlan": {
           "name": "初级月付",
@@ -1144,8 +1144,8 @@
           "trafficLabel": "100GB/月"
         },
         "latestExperience": {
-          "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-10-08：流畅；美国 2026-10-23：轻微延迟",
-          "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：轻微缓冲；日本 2026-10-08：流畅；美国 2026-10-23：缓冲严重"
+          "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-10-08：流畅；美国 2026-11-04：响应严重延迟",
+          "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：轻微缓冲；日本 2026-10-08：流畅；美国 2026-11-04：缓冲严重"
         },
         "latestRegionTests": [
           {
@@ -1292,44 +1292,44 @@
           {
             "region": "美国",
             "test": {
-              "id": "20261023-1536-us",
-              "testedAt": "2026-10-23",
-              "time": "15:36",
+              "id": "20261104-0820-us",
+              "testedAt": "2026-11-04",
+              "time": "08:20",
               "window": "日间",
               "node": "美国节点",
               "exitRegion": "美国",
               "baselineDownloadMbps": 1000,
-              "downloadMbps": 21.82,
-              "uploadMbps": 24.61,
-              "chatgpt": "轻微延迟",
+              "downloadMbps": 4.8,
+              "uploadMbps": 3.31,
+              "chatgpt": "响应严重延迟",
               "streaming": "缓冲严重",
-              "latencyMs": 203,
-              "downloadLatencyMs": 167,
-              "uploadLatencyMs": 200,
+              "latencyMs": 214,
+              "downloadLatencyMs": 646,
+              "uploadLatencyMs": 1564,
               "jitterMs": null,
               "packetLossPercent": null,
-              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19822385470",
-              "evidenceImage": "/evidence/xxyun/2026-10-23-1536-us-speedtest.png",
-              "evidenceNote": "截图时间为 2026-10-23 GMT 07:36 AM，换算北京时间 2026-10-23 15:36。用户确认节点出口 IP 位于美国，连接使用 xxyun 专属客户端；ChatGPT 轻微延迟、流媒体缓冲严重按用户当次体验保存。截图中的 Speedtest Desktop 为测速工具。",
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867421977",
+              "evidenceImage": "/evidence/xxyun/2026-11-04-0820-us-speedtest.png",
+              "evidenceNote": "截图时间为 2026-11-04 GMT 12:20 AM（00:20），换算北京时间 2026-11-04 08:20。用户按已确认的出口 IP 地区口径提交美国节点，并确认连接使用 xxyun 专属客户端；ChatGPT 响应严重延迟、流媒体缓冲严重，均为用户当次体验。",
               "sourceRegion": null,
               "connectionType": "Wi-Fi",
               "isp": "DMIT",
-              "server": "Clouvider Ltd · Los Angeles, CA",
+              "server": "GSL Networks · Los Angeles, CA",
               "device": "MacBook",
               "client": "xxyun 官方专属客户端",
               "measurementTool": "Speedtest Desktop",
-              "evidenceUrl": "https://siilas.com/evidence/xxyun/2026-10-23-1536-us-speedtest.png",
+              "evidenceUrl": "https://siilas.com/evidence/xxyun/2026-11-04-0820-us-speedtest.png",
               "evidenceUrls": [
-                "https://siilas.com/evidence/xxyun/2026-10-23-1536-us-speedtest.png"
+                "https://siilas.com/evidence/xxyun/2026-11-04-0820-us-speedtest.png"
               ],
               "publication": {
                 "status": "published",
-                "versionSha256": "44dab00fd00e3b8b9ea4527cec3c094adccafcdd90f826e9fc9eae371a259e25",
+                "versionSha256": "62857bd0cbc6d56cf8587f0cc8375eda318f752441fd03c4eef17866c3bff657",
                 "evidenceVersions": [
                   {
                     "label": "测速截图",
-                    "url": "https://siilas.com/evidence/xxyun/2026-10-23-1536-us-speedtest.png",
-                    "sha256": "e20718250a55ed4979f0f2f449a11a33d8a266226316525369ccc570cab36fc1",
+                    "url": "https://siilas.com/evidence/xxyun/2026-11-04-0820-us-speedtest.png",
+                    "sha256": "0b762d1f72a7ff246c202b03e0390ca849bd8a1cc0a94a20cc347f45d60d3e08",
                     "status": "published"
                   }
                 ]
@@ -1338,7 +1338,7 @@
           }
         ],
         "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-        "receivedAt": "2026-10-29",
+        "receivedAt": "2026-11-04",
         "sourcePublicationStatus": "published",
         "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
         "methodologyUrl": "https://siilas.com/methodology/",
@@ -1571,28 +1571,28 @@
         "name": "拼好连（原 Runway）",
         "yp7Path": "/posts/runway-review-2026/",
         "sourceUrl": "https://siilas.com/airport/pinhaolian/",
-        "latestTestAt": "2026-10-24",
-        "verifiedTestCount": 16,
-        "testDateCount": 7,
+        "latestTestAt": "2026-11-04",
+        "verifiedTestCount": 17,
+        "testDateCount": 8,
         "regionalSampleDays": {
           "新加坡": 4,
           "香港": 4,
           "日本": 4,
-          "美国": 4
+          "美国": 5
         },
         "rankingEligible": true,
-        "score": 4.4,
-        "stability": 37.2,
+        "score": 4.1,
+        "stability": 32.4,
         "scoreBreakdown": {
-          "stability": 37.2,
-          "speed": 21.9,
-          "chatgpt": 81.3,
-          "streaming": 89.1,
+          "stability": 32.4,
+          "speed": 21.5,
+          "chatgpt": 78.4,
+          "streaming": 86.3,
           "value": 25.1
         },
         "experienceScores": {
-          "chatgpt": 81.3,
-          "streaming": 89.1
+          "chatgpt": 78.4,
+          "streaming": 86.3
         },
         "scoringPlan": {
           "name": "天天尝鲜拼",
@@ -1602,8 +1602,8 @@
           "trafficLabel": "50GB/月"
         },
         "latestExperience": {
-          "chatgpt": "新加坡 2026-10-23：流畅；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-10-23：响应严重延迟",
-          "streaming": "新加坡 2026-10-23：流畅；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-10-23：缓冲严重"
+          "chatgpt": "新加坡 2026-10-23：流畅；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-11-04：响应严重延迟",
+          "streaming": "新加坡 2026-10-23：流畅；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-11-04：缓冲严重"
         },
         "latestRegionTests": [
           {
@@ -1750,44 +1750,44 @@
           {
             "region": "美国",
             "test": {
-              "id": "20261023-2245-us",
-              "testedAt": "2026-10-23",
-              "time": "22:45",
-              "window": "晚高峰",
+              "id": "20261104-0814-us",
+              "testedAt": "2026-11-04",
+              "time": "08:14",
+              "window": "日间",
               "node": "美国节点",
               "exitRegion": "美国",
               "baselineDownloadMbps": 1000,
-              "downloadMbps": 3.88,
-              "uploadMbps": 0.99,
+              "downloadMbps": 7.86,
+              "uploadMbps": 14.34,
               "chatgpt": "响应严重延迟",
               "streaming": "缓冲严重",
-              "latencyMs": 187,
-              "downloadLatencyMs": 1204,
-              "uploadLatencyMs": 1756,
+              "latencyMs": 511,
+              "downloadLatencyMs": 804,
+              "uploadLatencyMs": 787,
               "jitterMs": null,
               "packetLossPercent": null,
-              "resultUrl": "https://www.speedtest.net/result/19823782366",
-              "evidenceImage": "/evidence/pinhaolian/2026-10-23-2245-us-speedtest.png",
-              "evidenceNote": "截图时间为 2026-10-23 GMT 2:45 PM（14:45），换算北京时间 2026-10-23 22:45。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 响应严重延迟，流媒体缓冲严重，按用户当次体验保存，不反推具体等待或缓冲秒数。截图中的 Speedtest Desktop 为测速工具。",
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867409616",
+              "evidenceImage": "/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png",
+              "evidenceNote": "截图时间为 2026-11-04 GMT 12:14 AM（00:14），换算北京时间 2026-11-04 08:14。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 响应严重延迟，流媒体缓冲严重，均为用户当次体验。",
               "sourceRegion": null,
               "connectionType": "Wi-Fi",
               "isp": "BAGE",
-              "server": "Clouvider Ltd · Los Angeles, CA",
+              "server": "ReliableSite Hosting · Los Angeles, CA",
               "device": "MacBook",
               "client": "FlClash",
               "measurementTool": "Speedtest Desktop",
-              "evidenceUrl": "https://siilas.com/evidence/pinhaolian/2026-10-23-2245-us-speedtest.png",
+              "evidenceUrl": "https://siilas.com/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png",
               "evidenceUrls": [
-                "https://siilas.com/evidence/pinhaolian/2026-10-23-2245-us-speedtest.png"
+                "https://siilas.com/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png"
               ],
               "publication": {
                 "status": "published",
-                "versionSha256": "2d534f2b4112417935fa6d618359db334927816044a90c5e596edfe4df509726",
+                "versionSha256": "ca3204ef998df06a0ca31a2fbe43f4b2b79751c13d8085baa4b2e5462e087bf6",
                 "evidenceVersions": [
                   {
                     "label": "测速截图",
-                    "url": "https://siilas.com/evidence/pinhaolian/2026-10-23-2245-us-speedtest.png",
-                    "sha256": "ad2316ad2e1f506b8dd495ce55de1b87b995b55cd56541504acfe4a6260b7045",
+                    "url": "https://siilas.com/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png",
+                    "sha256": "edc36cf7ae73b24e3bdfb0d0dcba3ab2a7523122c76666e68b9e0d9ea16cdd07",
                     "status": "published"
                   }
                 ]
@@ -1796,7 +1796,7 @@
           }
         ],
         "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-        "receivedAt": "2026-10-29",
+        "receivedAt": "2026-11-04",
         "sourcePublicationStatus": "published",
         "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
         "methodologyUrl": "https://siilas.com/methodology/",
@@ -1998,28 +1998,28 @@
         "name": "光年梯",
         "yp7Path": "/posts/guangnianti-review-2026/",
         "sourceUrl": "https://siilas.com/airport/guangnianti/",
-        "latestTestAt": "2026-10-08",
-        "verifiedTestCount": 16,
-        "testDateCount": 4,
+        "latestTestAt": "2026-11-04",
+        "verifiedTestCount": 18,
+        "testDateCount": 5,
         "regionalSampleDays": {
           "新加坡": 4,
           "香港": 4,
-          "日本": 4,
-          "美国": 4
+          "日本": 5,
+          "美国": 5
         },
         "rankingEligible": true,
-        "score": 5,
-        "stability": 38.6,
+        "score": 5.3,
+        "stability": 43.9,
         "scoreBreakdown": {
-          "stability": 38.6,
-          "speed": 33,
-          "chatgpt": 71.9,
-          "streaming": 90.6,
+          "stability": 43.9,
+          "speed": 38,
+          "chatgpt": 72.5,
+          "streaming": 92.5,
           "value": 61.1
         },
         "experienceScores": {
-          "chatgpt": 71.9,
-          "streaming": 90.6
+          "chatgpt": 72.5,
+          "streaming": 92.5
         },
         "scoringPlan": {
           "name": "光年梯入门版",
@@ -2029,8 +2029,8 @@
           "trafficLabel": "110GB/月"
         },
         "latestExperience": {
-          "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-10-08：轻微延迟；美国 2026-10-08：轻微延迟",
-          "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：流畅；日本 2026-10-08：缓冲严重；美国 2026-10-08：缓冲严重"
+          "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-11-04：流畅；美国 2026-11-04：流畅",
+          "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：流畅；日本 2026-11-04：流畅；美国 2026-11-04：流畅"
         },
         "latestRegionTests": [
           {
@@ -2130,44 +2130,44 @@
           {
             "region": "日本",
             "test": {
-              "id": "20261008-2039-jp",
-              "testedAt": "2026-10-08",
-              "time": "20:39",
-              "window": "晚高峰",
+              "id": "20261104-0901-jp",
+              "testedAt": "2026-11-04",
+              "time": "09:01",
+              "window": "日间",
               "node": "日本节点",
               "exitRegion": "日本",
               "baselineDownloadMbps": 1000,
-              "downloadMbps": 67.53,
-              "uploadMbps": 48.92,
-              "chatgpt": "轻微延迟",
-              "streaming": "缓冲严重",
-              "latencyMs": 373,
-              "downloadLatencyMs": 555,
-              "uploadLatencyMs": 742,
+              "downloadMbps": 526.4,
+              "uploadMbps": 30.32,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 108,
+              "downloadLatencyMs": 168,
+              "uploadLatencyMs": 108,
               "jitterMs": null,
               "packetLossPercent": null,
-              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765366735",
-              "evidenceImage": "/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png",
-              "evidenceNote": "截图时间为 GMT 12:39 PM，换算北京时间 20:39。用户确认使用光年梯客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867502742",
+              "evidenceImage": "/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png",
+              "evidenceNote": "截图时间为 2026-11-04 GMT 1:01 AM（01:01），换算北京时间 2026-11-04 09:01。用户按已确认的出口 IP 地区口径提交日本节点，连接使用光年梯客户端；ChatGPT 与流媒体均流畅，按用户当次体验保存。测速服务器名称按截图截断文字记录。",
               "sourceRegion": null,
               "connectionType": "Wi-Fi",
-              "isp": "Deutsche Telekom",
-              "server": "Rakuten Mobile, Inc · Tokyo",
+              "isp": "Komi",
+              "server": "OPEN Project (via 20G ... · Tokyo",
               "device": "MacBook",
               "client": "光年梯客户端",
               "measurementTool": "Speedtest Desktop",
-              "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png",
+              "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png",
               "evidenceUrls": [
-                "https://siilas.com/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png"
+                "https://siilas.com/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png"
               ],
               "publication": {
                 "status": "published",
-                "versionSha256": "64b2edb1d47b7654c45c430b3d3a7bdfa074f996a07968c757ea886dc3f8e7e6",
+                "versionSha256": "11d89d71f4d0acd9c73dc885a73576c727ff873607f4b5be5936e03105be395e",
                 "evidenceVersions": [
                   {
                     "label": "测速截图",
-                    "url": "https://siilas.com/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png",
-                    "sha256": "620cce7e488141fa6a7d0fae2c318fcebe87e5c9fb655f570cc33e90b922a2a2",
+                    "url": "https://siilas.com/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png",
+                    "sha256": "124f36234cb8e86d81368de57b974053f0b3ded745efdb670e3e3dfcd83d4371",
                     "status": "published"
                   }
                 ]
@@ -2177,44 +2177,44 @@
           {
             "region": "美国",
             "test": {
-              "id": "20261008-2030-us",
-              "testedAt": "2026-10-08",
-              "time": "20:30",
-              "window": "晚高峰",
+              "id": "20261104-0858-us",
+              "testedAt": "2026-11-04",
+              "time": "08:58",
+              "window": "日间",
               "node": "美国节点",
               "exitRegion": "美国",
               "baselineDownloadMbps": 1000,
-              "downloadMbps": 8.22,
-              "uploadMbps": 46.29,
-              "chatgpt": "轻微延迟",
-              "streaming": "缓冲严重",
-              "latencyMs": 204,
-              "downloadLatencyMs": 230,
-              "uploadLatencyMs": 228,
+              "downloadMbps": 360.13,
+              "uploadMbps": 46.82,
+              "chatgpt": "流畅",
+              "streaming": "流畅",
+              "latencyMs": 254,
+              "downloadLatencyMs": 295,
+              "uploadLatencyMs": 251,
               "jitterMs": null,
               "packetLossPercent": null,
-              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765333047",
-              "evidenceImage": "/evidence/guangnianti/2026-10-08-2030-us-speedtest.png",
-              "evidenceNote": "截图时间为 GMT 12:30 PM，换算北京时间 20:30。用户确认使用光年梯客户端；截图中的 Speedtest Desktop 为测速工具。",
+              "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867495243",
+              "evidenceImage": "/evidence/guangnianti/2026-11-04-0858-us-speedtest.png",
+              "evidenceNote": "截图时间为 2026-11-04 GMT 12:58 AM（00:58），换算北京时间 2026-11-04 08:58。用户按已确认的出口 IP 地区口径提交美国节点，连接使用光年梯客户端；ChatGPT 与流媒体均流畅，按用户当次体验保存。",
               "sourceRegion": null,
               "connectionType": "Wi-Fi",
-              "isp": "Pegasus Technologies",
-              "server": "Misaka Network, Inc. · Los Angeles, CA",
+              "isp": "Komi",
+              "server": "IdeaTek Telcom · Wichita, KS",
               "device": "MacBook",
               "client": "光年梯客户端",
               "measurementTool": "Speedtest Desktop",
-              "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-10-08-2030-us-speedtest.png",
+              "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-11-04-0858-us-speedtest.png",
               "evidenceUrls": [
-                "https://siilas.com/evidence/guangnianti/2026-10-08-2030-us-speedtest.png"
+                "https://siilas.com/evidence/guangnianti/2026-11-04-0858-us-speedtest.png"
               ],
               "publication": {
                 "status": "published",
-                "versionSha256": "9855917cbf07d9493f61301745c72dea4589018327f46cde562f4baddbcfb3ee",
+                "versionSha256": "7828af1c9fb6e3f63cd9e77e3538e1746732b27826bd5d6844fb71a9b4a56d0a",
                 "evidenceVersions": [
                   {
                     "label": "测速截图",
-                    "url": "https://siilas.com/evidence/guangnianti/2026-10-08-2030-us-speedtest.png",
-                    "sha256": "630400756b819a6d5a34fd4987788ea4cd56cc525569a4386eaea29d7a405951",
+                    "url": "https://siilas.com/evidence/guangnianti/2026-11-04-0858-us-speedtest.png",
+                    "sha256": "92baf2e3b40d3a76013d44a1c2e2e6e7563094fd6c1ef0af53f304946b5d712c",
                     "status": "published"
                   }
                 ]
@@ -2223,7 +2223,7 @@
           }
         ],
         "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-        "receivedAt": "2026-10-29",
+        "receivedAt": "2026-11-04",
         "sourcePublicationStatus": "published",
         "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
         "methodologyUrl": "https://siilas.com/methodology/",
@@ -2925,7 +2925,7 @@
           }
         ],
         "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-        "receivedAt": "2026-10-29",
+        "receivedAt": "2026-11-04",
         "sourcePublicationStatus": "published",
         "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
         "methodologyUrl": "https://siilas.com/methodology/",
@@ -3214,7 +3214,7 @@
           }
         ],
         "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-        "receivedAt": "2026-10-29",
+        "receivedAt": "2026-11-04",
         "sourcePublicationStatus": "published",
         "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
         "methodologyUrl": "https://siilas.com/methodology/",
@@ -4113,7 +4113,7 @@
           }
         ],
         "rawRecordsUrl": "https://yp7.net/data/siilas-tests.json",
-        "receivedAt": "2026-10-29",
+        "receivedAt": "2026-11-04",
         "sourcePublicationStatus": "published",
         "sourcePublicationNotice": "已核对 Siilas 来源正式发布版本。",
         "methodologyUrl": "https://siilas.com/methodology/",

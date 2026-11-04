@@ -1,7 +1,7 @@
 ---
 title: Flybit机场怎么样？套餐价格、Clash订阅与客户端支持
 createTime: 2026/05/12
-dateModified: 2026/10/29
+dateModified: 2026/11/04
 lastUpdated: false
 permalink: /posts/flybit-review-2026/
 tags:
@@ -41,12 +41,12 @@ description: Flybit机场2026年10月15日后台资料复核：15元128GB月付�
 
 > **测试资料来源：** 自2026年8月18日起，yp7.net 不再自行测试。当前表现可参考 [Siilas 测速中心](https://siilas.com/test/) 对应日期的记录；本站旧记录仅作历史资料。用户投稿另标来源、测试时间与环境，不代表本站复测。
 
-更新时间：2026年10月29日（同步接收 Siilas 原始记录与评分；最新实际测试日期、分区结果与来源发布状态见下表）。后台套餐、设备限制、客户端入口与公告的复核日为10月15日；1天2GB试用仍据9月27日站长补充。本次没有重新核价、新注册验证试用或新增本站连接测试。
+更新时间：2026年11月4日（同步接收 Siilas 原始记录与评分；最新实际测试日期、分区结果与来源发布状态见下表）。后台套餐、设备限制、客户端入口与公告的复核日为10月15日；1天2GB试用仍据9月27日站长补充。本次没有重新核价、新注册验证试用或新增本站连接测试。
 
 <!-- siilas-testing:start -->
 ## Siilas 测速与使用体验记录
 
-2026-10-29 接收 [Siilas Flybit原始记录](https://siilas.com/airport/flybit/) **17 条已验证测速**，覆盖 5 个不同测试日，采样跨度为 2026-07-13 至 2026-10-23。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
+2026-11-04 接收 [Siilas Flybit原始记录](https://siilas.com/airport/flybit/) **19 条已验证测速**，覆盖 6 个不同测试日，采样跨度为 2026-07-13 至 2026-11-04。接收日期不是测速日期；yp7.net 没有重新测速或重新核价。
 
 已核对 Siilas 来源正式发布版本。完整记录、测试环境与证据见[接收快照](/data/siilas-tests.json)。
 
@@ -58,8 +58,8 @@ Siilas 当前规则计算的综合评分为 **6/10**，参评要求为四地区�
 | --- | --- | ---: | ---: | ---: | --- | --- | --- |
 | 新加坡 | 2026-10-23 21:16 | 441.95 | 5.58 | 118 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19823427729) · [测速截图](https://siilas.com/evidence/flybit/2026-10-23-2116-sg-speedtest.png) |
 | 香港 | 2026-10-23 21:12 | 418.61 | 12.61 | 88 | 不可用 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19823409383) · [测速截图](https://siilas.com/evidence/flybit/2026-10-23-2112-hk-speedtest.png) |
-| 日本 | 2026-10-23 21:28 | 27.72 | 24.75 | 123 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19823474954) · [测速截图](https://siilas.com/evidence/flybit/2026-10-23-2128-jp-speedtest.png) |
-| 美国 | 2026-10-23 21:33 | 20.19 | 6.29 | 303 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19823493183) · [测速截图](https://siilas.com/evidence/flybit/2026-10-23-2133-us-speedtest.png) |
+| 日本 | 2026-11-04 09:08 | 526.73 | 31.85 | 177 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19867516507) · [测速截图](https://siilas.com/evidence/flybit/2026-11-04-0908-jp-speedtest.png) |
+| 美国 | 2026-11-04 09:05 | 114.72 | 50.96 | 278 | 流畅 | 流畅 | [Speedtest](https://www.speedtest.net/zh-Hans/result/19867510032) · [测速截图](https://siilas.com/evidence/flybit/2026-11-04-0905-us-speedtest.png) |
 
 上述最近记录所列代理客户端：FlClash；测速工具：Speedtest Desktop。每条原始记录保留自己的网络、设备和工具字段，未记录的历史条件不套用到新样本。
 

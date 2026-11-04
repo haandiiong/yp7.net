@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "receivedAt": "2026-10-29",
+  "receivedAt": "2026-11-04",
   "source": {
     "name": "Siilas",
     "origin": "https://siilas.com",
@@ -14,7 +14,7 @@
     "unpublishedTestDates": [],
     "sourceFilesSha256": {
       "src/data/airport-data.ts": "a9193e0ca1a97a8e64dfa95675161df39b0a47a2f0f59e17689cffe386408d3a",
-      "src/data/airports.json": "d6fb04c134446df393ed573e4ee12554f1f1a0ea5398d29b5c2975077c5bd5c6",
+      "src/data/airports.json": "27855de710fdd5581a7f3c93d00460df83bd473a5c2c652598e0cb29e8662a0a",
       "src/data/date-schema.ts": "53d619d9ed3afb2586922328af8a74558019a5f05d24bccd9a22927688a0c09f",
       "src/data/date-utils.mjs": "7ea6ecaf18d60fab760b9f18b3a2ee819c017b53446ebf1b87f97a8cfa9d0a91",
       "src/data/test-experience-schema.mjs": "a75a726e254c2c71825a08dfc23da1e74526eb66e343c1b773dc4c5fdbe0a369",
@@ -73,9 +73,9 @@
     }
   },
   "airportCount": 9,
-  "rawTestCount": 154,
-  "verifiedTestCount": 154,
-  "latestTestAt": "2026-10-24",
+  "rawTestCount": 160,
+  "verifiedTestCount": 160,
+  "latestTestAt": "2026-11-04",
   "airports": [
     {
       "slug": "globalcloud",
@@ -742,12 +742,15 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 84,
+          "downloadLatencyMs": 178,
+          "uploadLatencyMs": 105,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446018458",
           "evidenceImage": "/evidence/globalcloud/2026-07-18-1629-sg-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 8:29 AM GMT（北京时间 16:29），测速服务器 M1 Limited，新加坡；负载延迟下载 178 ms、上传 105 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Komi",
+          "server": "M1 Limited · Singapore",
           "device": "macOS",
           "client": "全球云官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -757,7 +760,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "79dc5e9a48549fadcad0fa70f66d0906ca0d291e79b9c92c492fadfef04e7844",
+            "versionSha256": "1269d303f849195733f2b2360ab52a21098d67c5d315a01a1c05aede3c60ccff",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -781,12 +784,15 @@
           "chatgpt": "不可用",
           "streaming": "流畅",
           "latencyMs": 112,
+          "downloadLatencyMs": 143,
+          "uploadLatencyMs": 117,
           "resultUrl": "https://www.speedtest.net/result/19446033844",
           "evidenceImage": "/evidence/globalcloud/2026-07-18-1636-hk-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 8:36 AM GMT（北京时间 16:36），测速服务器 Sun Mobile，香港；负载延迟下载 143 ms、上传 117 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Lshiy-user-content",
+          "server": "Sun Mobile · Hong Kong",
           "device": "macOS",
           "client": "全球云官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -796,7 +802,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "dc26a5461980f6d8b56d6758d4b05bb1b63210e56a3439233d913aea796b91f3",
+            "versionSha256": "3b197d6bd1de6277c009bcf4f03e8b01185aa8848eef895e23a6d37595ab6743",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -820,12 +826,15 @@
           "chatgpt": "响应较慢",
           "streaming": "缓冲明显",
           "latencyMs": 286,
+          "downloadLatencyMs": 281,
+          "uploadLatencyMs": 298,
           "resultUrl": "https://www.speedtest.net/result/19446056876",
           "evidenceImage": "/evidence/globalcloud/2026-07-18-1645-us-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 8:45 AM GMT（北京时间 16:45），测速服务器 Chisholm Broadband，Enid, OK；负载延迟下载 281 ms、上传 298 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Komi",
+          "server": "Chisholm Broadband · Enid, OK",
           "device": "macOS",
           "client": "全球云官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -835,7 +844,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "2cba4883453ed80c1ec1e7a49d4fd74c0e16cd67f88940cfb55a47fee5b83e4d",
+            "versionSha256": "4c636e0d0688de3c8f7e3f55255d130114f28dcff3bf3a0d8f72570cdea77e62",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -859,12 +868,15 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 146,
+          "downloadLatencyMs": 162,
+          "uploadLatencyMs": 147,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446113484",
           "evidenceImage": "/evidence/globalcloud/2026-07-18-1708-jp-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 9:08 AM GMT（北京时间 17:08），测速服务器 fdcservers.net，东京；负载延迟下载 162 ms、上传 147 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Komi",
+          "server": "fdcservers.net · Tokyo",
           "device": "macOS",
           "client": "全球云官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -874,7 +886,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "f077b65af1a36440eb87ede9a02f9a15ff19f20e990a11b7995cde79e615cf01",
+            "versionSha256": "13556387c19c2e08d2ec41295be483c23f464a480649ff40420a2da3cc087f67",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -898,12 +910,15 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 280,
+          "downloadLatencyMs": 289,
+          "uploadLatencyMs": 285,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446767571",
           "evidenceImage": "/evidence/globalcloud/2026-07-18-2106-us-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 1:06 PM GMT（北京时间 21:06），测速服务器 Chisholm Broadband，Enid, OK；负载延迟下载 289 ms、上传 285 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Komi",
+          "server": "Chisholm Broadband · Enid, OK",
           "device": "macOS",
           "client": "全球云官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -913,7 +928,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "34ee2aff0efe1ef82ac21868576710e792affe8b6b4ee75325d7191906f62b77",
+            "versionSha256": "1fcee287b56b6095e5672356e563d0d4228de63ee95c1f790ff55179530ed902",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -937,12 +952,15 @@
           "chatgpt": "轻微延迟",
           "streaming": "轻微缓冲",
           "latencyMs": 129,
+          "downloadLatencyMs": 163,
+          "uploadLatencyMs": 136,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19486832407",
           "evidenceImage": "/evidence/globalcloud/2026-07-28-2107-sg-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 1:07 PM GMT（北京时间 21:07），测速服务器 M1 Limited，新加坡；未记录抖动和丢包",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Komi",
+          "server": "M1 Limited · Singapore",
           "device": "macOS",
           "client": "全球云官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -952,7 +970,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "65c664e1a6c40fe0489e70bd485cf36c9595bd05600bee2b5b960c65318d765d",
+            "versionSha256": "51304b1140f952a0c1b6c9837b52145ae587558ffbd71c1a492fbfda6b3d753d",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -976,12 +994,15 @@
           "chatgpt": "响应较慢",
           "streaming": "缓冲明显",
           "latencyMs": 294,
+          "downloadLatencyMs": 306,
+          "uploadLatencyMs": 293,
           "resultUrl": "https://www.speedtest.net/result/19487121958",
           "evidenceImage": "/evidence/globalcloud/2026-07-28-2216-us-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 2:16 PM GMT（北京时间 22:16），测速服务器 IdeaTek Telcom，Wichita, KS；未记录抖动和丢包",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Komi",
+          "server": "IdeaTek Telcom · Wichita, KS",
           "device": "macOS",
           "client": "全球云官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -991,7 +1012,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "84f697a55e57c32fe9196067e4520e4c1c196c2cb5c20c12c9c89c62a003a8ee",
+            "versionSha256": "24523a72802504f02962a92df306e0060356fa247baa177d3e31273cb8d36896",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -1015,12 +1036,15 @@
           "chatgpt": "响应较慢",
           "streaming": "缓冲明显",
           "latencyMs": 149,
+          "downloadLatencyMs": 149,
+          "uploadLatencyMs": 160,
           "resultUrl": "https://www.speedtest.net/result/19487148444",
           "evidenceImage": "/evidence/globalcloud/2026-07-28-2222-jp-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 2:22 PM GMT（北京时间 22:22），测速服务器 IPA CyberLab，Bunkyo；未记录抖动和丢包",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Komi",
+          "server": "IPA CyberLab · Bunkyo",
           "device": "macOS",
           "client": "全球云官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -1030,7 +1054,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "6edefc561fc87f668f1f3474e4939401c9556ee2ca0c5dcb190be8a57d1ca881",
+            "versionSha256": "155cfab18414c9401e221e8946c49845afa00701ea1dd1485db9687134c267ca",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -1054,12 +1078,15 @@
           "chatgpt": "不可用",
           "streaming": "流畅",
           "latencyMs": 116,
+          "downloadLatencyMs": 145,
+          "uploadLatencyMs": 115,
           "resultUrl": "https://www.speedtest.net/result/19487169986",
           "evidenceImage": "/evidence/globalcloud/2026-07-28-2227-hk-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 2:27 PM GMT（北京时间 22:27），测速服务器 1010，香港；未记录抖动和丢包",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Lshiy-user-content",
+          "server": "1010 · Hong Kong",
           "device": "macOS",
           "client": "全球云官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -1069,7 +1096,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "3ae143f1de329ef57e6df47079fdf97d0f8c9f71baedbc052cac4037cb1dd008",
+            "versionSha256": "8b82b8d4b1236f876b11e3fda4be166ba6c97e379166c492c1bb9a8975ededbb",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -1263,28 +1290,28 @@
       "name": "光年梯",
       "yp7Path": "/posts/guangnianti-review-2026/",
       "sourceUrl": "https://siilas.com/airport/guangnianti/",
-      "latestTestAt": "2026-10-08",
-      "verifiedTestCount": 16,
-      "testDateCount": 4,
+      "latestTestAt": "2026-11-04",
+      "verifiedTestCount": 18,
+      "testDateCount": 5,
       "regionalSampleDays": {
         "新加坡": 4,
         "香港": 4,
-        "日本": 4,
-        "美国": 4
+        "日本": 5,
+        "美国": 5
       },
       "rankingEligible": true,
-      "score": 5,
-      "stability": 38.6,
+      "score": 5.3,
+      "stability": 43.9,
       "scoreBreakdown": {
-        "stability": 38.6,
-        "speed": 33,
-        "chatgpt": 71.9,
-        "streaming": 90.6,
+        "stability": 43.9,
+        "speed": 38,
+        "chatgpt": 72.5,
+        "streaming": 92.5,
         "value": 61.1
       },
       "experienceScores": {
-        "chatgpt": 71.9,
-        "streaming": 90.6
+        "chatgpt": 72.5,
+        "streaming": 92.5
       },
       "scoringPlan": {
         "name": "光年梯入门版",
@@ -1294,8 +1321,8 @@
         "trafficLabel": "110GB/月"
       },
       "latestExperience": {
-        "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-10-08：轻微延迟；美国 2026-10-08：轻微延迟",
-        "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：流畅；日本 2026-10-08：缓冲严重；美国 2026-10-08：缓冲严重"
+        "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-11-04：流畅；美国 2026-11-04：流畅",
+        "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：流畅；日本 2026-11-04：流畅；美国 2026-11-04：流畅"
       },
       "latestRegionTests": [
         {
@@ -1395,44 +1422,44 @@
         {
           "region": "日本",
           "test": {
-            "id": "20261008-2039-jp",
-            "testedAt": "2026-10-08",
-            "time": "20:39",
-            "window": "晚高峰",
+            "id": "20261104-0901-jp",
+            "testedAt": "2026-11-04",
+            "time": "09:01",
+            "window": "日间",
             "node": "日本节点",
             "exitRegion": "日本",
             "baselineDownloadMbps": 1000,
-            "downloadMbps": 67.53,
-            "uploadMbps": 48.92,
-            "chatgpt": "轻微延迟",
-            "streaming": "缓冲严重",
-            "latencyMs": 373,
-            "downloadLatencyMs": 555,
-            "uploadLatencyMs": 742,
+            "downloadMbps": 526.4,
+            "uploadMbps": 30.32,
+            "chatgpt": "流畅",
+            "streaming": "流畅",
+            "latencyMs": 108,
+            "downloadLatencyMs": 168,
+            "uploadLatencyMs": 108,
             "jitterMs": null,
             "packetLossPercent": null,
-            "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765366735",
-            "evidenceImage": "/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png",
-            "evidenceNote": "截图时间为 GMT 12:39 PM，换算北京时间 20:39。用户确认使用光年梯客户端；截图中的 Speedtest Desktop 为测速工具。",
+            "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867502742",
+            "evidenceImage": "/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png",
+            "evidenceNote": "截图时间为 2026-11-04 GMT 1:01 AM（01:01），换算北京时间 2026-11-04 09:01。用户按已确认的出口 IP 地区口径提交日本节点，连接使用光年梯客户端；ChatGPT 与流媒体均流畅，按用户当次体验保存。测速服务器名称按截图截断文字记录。",
             "sourceRegion": null,
             "connectionType": "Wi-Fi",
-            "isp": "Deutsche Telekom",
-            "server": "Rakuten Mobile, Inc · Tokyo",
+            "isp": "Komi",
+            "server": "OPEN Project (via 20G ... · Tokyo",
             "device": "MacBook",
             "client": "光年梯客户端",
             "measurementTool": "Speedtest Desktop",
-            "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png",
+            "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png",
             "evidenceUrls": [
-              "https://siilas.com/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png"
+              "https://siilas.com/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png"
             ],
             "publication": {
               "status": "published",
-              "versionSha256": "64b2edb1d47b7654c45c430b3d3a7bdfa074f996a07968c757ea886dc3f8e7e6",
+              "versionSha256": "11d89d71f4d0acd9c73dc885a73576c727ff873607f4b5be5936e03105be395e",
               "evidenceVersions": [
                 {
                   "label": "测速截图",
-                  "url": "https://siilas.com/evidence/guangnianti/2026-10-08-2039-jp-speedtest.png",
-                  "sha256": "620cce7e488141fa6a7d0fae2c318fcebe87e5c9fb655f570cc33e90b922a2a2",
+                  "url": "https://siilas.com/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png",
+                  "sha256": "124f36234cb8e86d81368de57b974053f0b3ded745efdb670e3e3dfcd83d4371",
                   "status": "published"
                 }
               ]
@@ -1442,44 +1469,44 @@
         {
           "region": "美国",
           "test": {
-            "id": "20261008-2030-us",
-            "testedAt": "2026-10-08",
-            "time": "20:30",
-            "window": "晚高峰",
+            "id": "20261104-0858-us",
+            "testedAt": "2026-11-04",
+            "time": "08:58",
+            "window": "日间",
             "node": "美国节点",
             "exitRegion": "美国",
             "baselineDownloadMbps": 1000,
-            "downloadMbps": 8.22,
-            "uploadMbps": 46.29,
-            "chatgpt": "轻微延迟",
-            "streaming": "缓冲严重",
-            "latencyMs": 204,
-            "downloadLatencyMs": 230,
-            "uploadLatencyMs": 228,
+            "downloadMbps": 360.13,
+            "uploadMbps": 46.82,
+            "chatgpt": "流畅",
+            "streaming": "流畅",
+            "latencyMs": 254,
+            "downloadLatencyMs": 295,
+            "uploadLatencyMs": 251,
             "jitterMs": null,
             "packetLossPercent": null,
-            "resultUrl": "https://www.speedtest.net/zh-Hans/result/19765333047",
-            "evidenceImage": "/evidence/guangnianti/2026-10-08-2030-us-speedtest.png",
-            "evidenceNote": "截图时间为 GMT 12:30 PM，换算北京时间 20:30。用户确认使用光年梯客户端；截图中的 Speedtest Desktop 为测速工具。",
+            "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867495243",
+            "evidenceImage": "/evidence/guangnianti/2026-11-04-0858-us-speedtest.png",
+            "evidenceNote": "截图时间为 2026-11-04 GMT 12:58 AM（00:58），换算北京时间 2026-11-04 08:58。用户按已确认的出口 IP 地区口径提交美国节点，连接使用光年梯客户端；ChatGPT 与流媒体均流畅，按用户当次体验保存。",
             "sourceRegion": null,
             "connectionType": "Wi-Fi",
-            "isp": "Pegasus Technologies",
-            "server": "Misaka Network, Inc. · Los Angeles, CA",
+            "isp": "Komi",
+            "server": "IdeaTek Telcom · Wichita, KS",
             "device": "MacBook",
             "client": "光年梯客户端",
             "measurementTool": "Speedtest Desktop",
-            "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-10-08-2030-us-speedtest.png",
+            "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-11-04-0858-us-speedtest.png",
             "evidenceUrls": [
-              "https://siilas.com/evidence/guangnianti/2026-10-08-2030-us-speedtest.png"
+              "https://siilas.com/evidence/guangnianti/2026-11-04-0858-us-speedtest.png"
             ],
             "publication": {
               "status": "published",
-              "versionSha256": "9855917cbf07d9493f61301745c72dea4589018327f46cde562f4baddbcfb3ee",
+              "versionSha256": "7828af1c9fb6e3f63cd9e77e3538e1746732b27826bd5d6844fb71a9b4a56d0a",
               "evidenceVersions": [
                 {
                   "label": "测速截图",
-                  "url": "https://siilas.com/evidence/guangnianti/2026-10-08-2030-us-speedtest.png",
-                  "sha256": "630400756b819a6d5a34fd4987788ea4cd56cc525569a4386eaea29d7a405951",
+                  "url": "https://siilas.com/evidence/guangnianti/2026-11-04-0858-us-speedtest.png",
+                  "sha256": "92baf2e3b40d3a76013d44a1c2e2e6e7563094fd6c1ef0af53f304946b5d712c",
                   "status": "published"
                 }
               ]
@@ -1717,12 +1744,15 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 81,
+          "downloadLatencyMs": 124,
+          "uploadLatencyMs": 90,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446121913",
           "evidenceImage": "/evidence/guangnianti/2026-07-18-1711-sg-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 9:11 AM GMT（北京时间 17:11），测速服务器 PT. Indonesia Comnets Plus，新加坡；负载延迟下载 124 ms、上传 90 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Komi",
+          "server": "PT. Indonesia Comnets... · Singapore",
           "device": "macOS",
           "client": "光年梯官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -1732,7 +1762,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "57f2f6691712b10a36ef9d36e80c1bba4f702fa0efd7dc4912f293b481da8fd8",
+            "versionSha256": "c66215aaab50c1894578b907ea515f2d66d3fd4f363f740df75de9b6ba488628",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -1756,12 +1786,15 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 281,
+          "downloadLatencyMs": 279,
+          "uploadLatencyMs": 280,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446143276",
           "evidenceImage": "/evidence/guangnianti/2026-07-18-1720-us-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 9:20 AM GMT（北京时间 17:20），测速服务器 Chisholm Broadband，Enid, OK；负载延迟下载 279 ms、上传 280 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Komi",
+          "server": "Chisholm Broadband · Enid, OK",
           "device": "macOS",
           "client": "光年梯官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -1771,7 +1804,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "075ff8156aa0a4194d6e5ca778412e855a9b6c4c5f53ebd660b2c8c7d5e8867b",
+            "versionSha256": "c1db10a0bbeda399a82547754b1ac23f34a567ff9dc5fa7691ea0e8200c21795",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -1795,12 +1828,15 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 169,
+          "downloadLatencyMs": 166,
+          "uploadLatencyMs": 183,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446150508",
           "evidenceImage": "/evidence/guangnianti/2026-07-18-1723-jp-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 9:23 AM GMT（北京时间 17:23），测速服务器 サーバーならDDPS.jp，东京；负载延迟下载 166 ms、上传 183 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Komi",
+          "server": "サーバーならDDPS.jp · Tokyo",
           "device": "macOS",
           "client": "光年梯官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -1810,7 +1846,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "834dd3d354742b853946862c8f8f58cc35c8aefad84e16b1ab6cd25d059a114f",
+            "versionSha256": "1357ac86d923e8c08d5208f10ca03ed6c356bb74c4595896d980b677af2f3de5",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -1834,12 +1870,15 @@
           "chatgpt": "不可用",
           "streaming": "流畅",
           "latencyMs": 119,
+          "downloadLatencyMs": 145,
+          "uploadLatencyMs": 116,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446214139",
           "evidenceImage": "/evidence/guangnianti/2026-07-18-1748-hk-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 9:48 AM GMT（北京时间 17:48），测速服务器 Sun Mobile，香港；负载延迟下载 145 ms、上传 116 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Lshiy-user-content",
+          "server": "Sun Mobile · Hong Kong",
           "device": "macOS",
           "client": "光年梯官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -1849,7 +1888,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "6fdb2b5cb3851072de9e23586a50777b162ee4f625ac1e99cb4018bed8f1166c",
+            "versionSha256": "5451ad413abd34b8fded1e2f3fc3a0e2f5c0062f3da0367b19b4d60d5d4824bc",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -2031,6 +2070,94 @@
                 "label": "测速截图",
                 "url": "https://siilas.com/evidence/guangnianti/2026-10-08-2043-hk-speedtest.png",
                 "sha256": "08344ad753f83966ce2ee3f34afcd84a7eeca579db17831320a203d94c014afb",
+                "status": "published"
+              }
+            ]
+          }
+        },
+        {
+          "id": "20261104-0858-us",
+          "testedAt": "2026-11-04",
+          "time": "08:58",
+          "window": "日间",
+          "node": "美国节点",
+          "exitRegion": "美国",
+          "baselineDownloadMbps": 1000,
+          "downloadMbps": 360.13,
+          "uploadMbps": 46.82,
+          "chatgpt": "流畅",
+          "streaming": "流畅",
+          "latencyMs": 254,
+          "downloadLatencyMs": 295,
+          "uploadLatencyMs": 251,
+          "jitterMs": null,
+          "packetLossPercent": null,
+          "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867495243",
+          "evidenceImage": "/evidence/guangnianti/2026-11-04-0858-us-speedtest.png",
+          "evidenceNote": "截图时间为 2026-11-04 GMT 12:58 AM（00:58），换算北京时间 2026-11-04 08:58。用户按已确认的出口 IP 地区口径提交美国节点，连接使用光年梯客户端；ChatGPT 与流媒体均流畅，按用户当次体验保存。",
+          "sourceRegion": null,
+          "connectionType": "Wi-Fi",
+          "isp": "Komi",
+          "server": "IdeaTek Telcom · Wichita, KS",
+          "device": "MacBook",
+          "client": "光年梯客户端",
+          "measurementTool": "Speedtest Desktop",
+          "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-11-04-0858-us-speedtest.png",
+          "evidenceUrls": [
+            "https://siilas.com/evidence/guangnianti/2026-11-04-0858-us-speedtest.png"
+          ],
+          "publication": {
+            "status": "published",
+            "versionSha256": "7828af1c9fb6e3f63cd9e77e3538e1746732b27826bd5d6844fb71a9b4a56d0a",
+            "evidenceVersions": [
+              {
+                "label": "测速截图",
+                "url": "https://siilas.com/evidence/guangnianti/2026-11-04-0858-us-speedtest.png",
+                "sha256": "92baf2e3b40d3a76013d44a1c2e2e6e7563094fd6c1ef0af53f304946b5d712c",
+                "status": "published"
+              }
+            ]
+          }
+        },
+        {
+          "id": "20261104-0901-jp",
+          "testedAt": "2026-11-04",
+          "time": "09:01",
+          "window": "日间",
+          "node": "日本节点",
+          "exitRegion": "日本",
+          "baselineDownloadMbps": 1000,
+          "downloadMbps": 526.4,
+          "uploadMbps": 30.32,
+          "chatgpt": "流畅",
+          "streaming": "流畅",
+          "latencyMs": 108,
+          "downloadLatencyMs": 168,
+          "uploadLatencyMs": 108,
+          "jitterMs": null,
+          "packetLossPercent": null,
+          "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867502742",
+          "evidenceImage": "/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png",
+          "evidenceNote": "截图时间为 2026-11-04 GMT 1:01 AM（01:01），换算北京时间 2026-11-04 09:01。用户按已确认的出口 IP 地区口径提交日本节点，连接使用光年梯客户端；ChatGPT 与流媒体均流畅，按用户当次体验保存。测速服务器名称按截图截断文字记录。",
+          "sourceRegion": null,
+          "connectionType": "Wi-Fi",
+          "isp": "Komi",
+          "server": "OPEN Project (via 20G ... · Tokyo",
+          "device": "MacBook",
+          "client": "光年梯客户端",
+          "measurementTool": "Speedtest Desktop",
+          "evidenceUrl": "https://siilas.com/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png",
+          "evidenceUrls": [
+            "https://siilas.com/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png"
+          ],
+          "publication": {
+            "status": "published",
+            "versionSha256": "11d89d71f4d0acd9c73dc885a73576c727ff873607f4b5be5936e03105be395e",
+            "evidenceVersions": [
+              {
+                "label": "测速截图",
+                "url": "https://siilas.com/evidence/guangnianti/2026-11-04-0901-jp-speedtest.png",
+                "sha256": "124f36234cb8e86d81368de57b974053f0b3ded745efdb670e3e3dfcd83d4371",
                 "status": "published"
               }
             ]
@@ -2497,12 +2624,15 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 83,
+          "downloadLatencyMs": 128,
+          "uploadLatencyMs": 80,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446251344",
           "evidenceImage": "/evidence/interexpress/2026-07-18-1803-sg-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 10:03 AM GMT（北京时间 18:03），测速服务器 PT. Indosat Tbk，新加坡；负载延迟下载 128 ms、上传 80 ms；历史记录曾标注“网际快车官方专属客户端 + Speedtest Desktop”；现存测速截图只显示 Speedtest Desktop 测速工具，连接客户端待当时测试者确认。",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Akile",
+          "server": "PT. Indosat Tbk · Singapore",
           "device": "macOS",
           "client": null,
           "measurementTool": "Speedtest Desktop",
@@ -2512,7 +2642,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "2e6c1529e64fbcefdbb051b0b4845a1105f05ab8e6d1c390277d51779f60fe04",
+            "versionSha256": "bb2cbaa8e5f01a0ccbf172f595d09443ba2013c2aea74f4b5e433d772286e07c",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -2536,12 +2666,15 @@
           "chatgpt": "不可用",
           "streaming": "流畅",
           "latencyMs": 109,
+          "downloadLatencyMs": 149,
+          "uploadLatencyMs": 151,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446266785",
           "evidenceImage": "/evidence/interexpress/2026-07-18-1809-hk-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 10:09 AM GMT（北京时间 18:09），测速服务器 CMC Telecom，香港；负载延迟下载 149 ms、上传 151 ms；历史记录曾标注“网际快车官方专属客户端 + Speedtest Desktop”；现存测速截图只显示 Speedtest Desktop 测速工具，连接客户端待当时测试者确认。",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Astrix",
+          "server": "CMC Telecom · Hong Kong",
           "device": "macOS",
           "client": null,
           "measurementTool": "Speedtest Desktop",
@@ -2551,7 +2684,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "1631490bc194b87debe4850043949177b18b9e633d065a3e335510d58c3e7a58",
+            "versionSha256": "fb200062d38af520f46666425780f6df1e5377bc8f962841504cdf3890c0c5e4",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -2575,12 +2708,15 @@
           "chatgpt": "轻微延迟",
           "streaming": "轻微缓冲",
           "latencyMs": 64,
+          "downloadLatencyMs": 101,
+          "uploadLatencyMs": 70,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446279022",
           "evidenceImage": "/evidence/interexpress/2026-07-18-1813-jp-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 10:13 AM GMT（北京时间 18:13），测速服务器 fdcservers.net，东京；负载延迟下载 101 ms、上传 70 ms；历史记录曾标注“网际快车官方专属客户端 + Speedtest Desktop”；现存测速截图只显示 Speedtest Desktop 测速工具，连接客户端待当时测试者确认。",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Astrix",
+          "server": "fdcservers.net · Tokyo",
           "device": "macOS",
           "client": null,
           "measurementTool": "Speedtest Desktop",
@@ -2590,7 +2726,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "3750f3fe567ed9161ccb81323f308c0d734ebc6e702dbe7c6d0a2e36ebce3cc6",
+            "versionSha256": "56443cd246d4b03ae2bf14c0c0d82887b2e1fd76ac2ecc17a7a26124e63767ec",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -2614,12 +2750,15 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 207,
+          "downloadLatencyMs": 247,
+          "uploadLatencyMs": 213,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446284167",
           "evidenceImage": "/evidence/interexpress/2026-07-18-1815-us-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 10:15 AM GMT（北京时间 18:15），测速服务器 Mutual Telephone Company，McPherson, KS；负载延迟下载 247 ms、上传 213 ms；历史记录曾标注“网际快车官方专属客户端 + Speedtest Desktop”；现存测速截图只显示 Speedtest Desktop 测速工具，连接客户端待当时测试者确认。",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "IDC",
+          "server": "Mutual Telephone Co... · McPherson, KS",
           "device": "macOS",
           "client": null,
           "measurementTool": "Speedtest Desktop",
@@ -2629,7 +2768,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "dd92c2220f0b8a31c988d83cc560101b4c35f8f1fedee8405246a1ad87b2a411",
+            "versionSha256": "42c9a86c854693be67abea912686779248bef45d7b0e70364e96f12a0daaa692",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -2653,6 +2792,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 96,
+          "downloadLatencyMs": 138,
+          "uploadLatencyMs": 106,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19660922179",
@@ -2661,6 +2802,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Akile",
+          "server": "PT. Indosat Tbk · Singapore",
           "device": null,
           "client": null,
           "measurementTool": "Speedtest Desktop",
@@ -2670,7 +2812,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "5613ac1857b5cd75709bbf94527f7246d739a6f2da8e261ba447b2fe209d7d77",
+            "versionSha256": "3b88c70fcdaca6996649a9576945efe7683cc9eac8bc8515fc7983d197c572bb",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -2694,6 +2836,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 194,
+          "downloadLatencyMs": 175,
+          "uploadLatencyMs": 184,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19660943229",
@@ -2702,6 +2846,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Astrix",
+          "server": "fdcservers.net · Tokyo",
           "device": null,
           "client": null,
           "measurementTool": "Speedtest Desktop",
@@ -2711,7 +2856,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "f7760c444e71043311e83dbf2a949178a4987b7df96eff3b389746ebe4ded0b9",
+            "versionSha256": "41ef1e3f0c01d1f10f2c9f69c1f2d981a2da1e5417b7a47cb5a583f75d9bbe45",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -2735,6 +2880,8 @@
           "chatgpt": "不可用",
           "streaming": "流畅",
           "latencyMs": 129,
+          "downloadLatencyMs": 156,
+          "uploadLatencyMs": 131,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19660982963",
@@ -2749,6 +2896,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "NETVIGATOR",
+          "server": "Netvigator · Hong Kong",
           "device": null,
           "client": null,
           "measurementTool": "Speedtest Desktop",
@@ -2759,7 +2907,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "c5cd19301b8510486836d227bc24435fa3c7b237aa2b6976d0e7679f884eaedc",
+            "versionSha256": "8543a4bf28e3ead504fc36a343c88f0b9ada00a50da6b293b999b678b96ede1b",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -2789,6 +2937,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 254,
+          "downloadLatencyMs": 285,
+          "uploadLatencyMs": 295,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19660996608",
@@ -2797,6 +2947,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "IDC",
+          "server": "Mutual Telephone Co... · McPherson, KS",
           "device": null,
           "client": null,
           "measurementTool": "Speedtest Desktop",
@@ -2806,7 +2957,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "646b36f356802845cc15c2a8dd0a803f0abea730917f67bfabd3d2d273b2638b",
+            "versionSha256": "9888210399243e468dd328a9059aa0cdaf14890a9b1026276cf822ddc144108f",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -3000,28 +3151,28 @@
       "name": "xxyun",
       "yp7Path": "/posts/xxyun-review-2026/",
       "sourceUrl": "https://siilas.com/airport/xxyun/",
-      "latestTestAt": "2026-10-23",
-      "verifiedTestCount": 13,
-      "testDateCount": 6,
+      "latestTestAt": "2026-11-04",
+      "verifiedTestCount": 14,
+      "testDateCount": 7,
       "regionalSampleDays": {
         "新加坡": 3,
         "香港": 3,
         "日本": 3,
-        "美国": 4
+        "美国": 5
       },
       "rankingEligible": true,
-      "score": 5.7,
-      "stability": 64.6,
+      "score": 5.5,
+      "stability": 59,
       "scoreBreakdown": {
-        "stability": 64.6,
-        "speed": 14.3,
-        "chatgpt": 68.8,
-        "streaming": 76,
+        "stability": 59,
+        "speed": 14.2,
+        "chatgpt": 66.3,
+        "streaming": 74.2,
         "value": 100
       },
       "experienceScores": {
-        "chatgpt": 68.8,
-        "streaming": 76
+        "chatgpt": 66.3,
+        "streaming": 74.2
       },
       "scoringPlan": {
         "name": "初级月付",
@@ -3031,8 +3182,8 @@
         "trafficLabel": "100GB/月"
       },
       "latestExperience": {
-        "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-10-08：流畅；美国 2026-10-23：轻微延迟",
-        "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：轻微缓冲；日本 2026-10-08：流畅；美国 2026-10-23：缓冲严重"
+        "chatgpt": "新加坡 2026-10-08：流畅；香港 2026-10-08：不可用；日本 2026-10-08：流畅；美国 2026-11-04：响应严重延迟",
+        "streaming": "新加坡 2026-10-08：流畅；香港 2026-10-08：轻微缓冲；日本 2026-10-08：流畅；美国 2026-11-04：缓冲严重"
       },
       "latestRegionTests": [
         {
@@ -3179,44 +3330,44 @@
         {
           "region": "美国",
           "test": {
-            "id": "20261023-1536-us",
-            "testedAt": "2026-10-23",
-            "time": "15:36",
+            "id": "20261104-0820-us",
+            "testedAt": "2026-11-04",
+            "time": "08:20",
             "window": "日间",
             "node": "美国节点",
             "exitRegion": "美国",
             "baselineDownloadMbps": 1000,
-            "downloadMbps": 21.82,
-            "uploadMbps": 24.61,
-            "chatgpt": "轻微延迟",
+            "downloadMbps": 4.8,
+            "uploadMbps": 3.31,
+            "chatgpt": "响应严重延迟",
             "streaming": "缓冲严重",
-            "latencyMs": 203,
-            "downloadLatencyMs": 167,
-            "uploadLatencyMs": 200,
+            "latencyMs": 214,
+            "downloadLatencyMs": 646,
+            "uploadLatencyMs": 1564,
             "jitterMs": null,
             "packetLossPercent": null,
-            "resultUrl": "https://www.speedtest.net/zh-Hans/result/19822385470",
-            "evidenceImage": "/evidence/xxyun/2026-10-23-1536-us-speedtest.png",
-            "evidenceNote": "截图时间为 2026-10-23 GMT 07:36 AM，换算北京时间 2026-10-23 15:36。用户确认节点出口 IP 位于美国，连接使用 xxyun 专属客户端；ChatGPT 轻微延迟、流媒体缓冲严重按用户当次体验保存。截图中的 Speedtest Desktop 为测速工具。",
+            "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867421977",
+            "evidenceImage": "/evidence/xxyun/2026-11-04-0820-us-speedtest.png",
+            "evidenceNote": "截图时间为 2026-11-04 GMT 12:20 AM（00:20），换算北京时间 2026-11-04 08:20。用户按已确认的出口 IP 地区口径提交美国节点，并确认连接使用 xxyun 专属客户端；ChatGPT 响应严重延迟、流媒体缓冲严重，均为用户当次体验。",
             "sourceRegion": null,
             "connectionType": "Wi-Fi",
             "isp": "DMIT",
-            "server": "Clouvider Ltd · Los Angeles, CA",
+            "server": "GSL Networks · Los Angeles, CA",
             "device": "MacBook",
             "client": "xxyun 官方专属客户端",
             "measurementTool": "Speedtest Desktop",
-            "evidenceUrl": "https://siilas.com/evidence/xxyun/2026-10-23-1536-us-speedtest.png",
+            "evidenceUrl": "https://siilas.com/evidence/xxyun/2026-11-04-0820-us-speedtest.png",
             "evidenceUrls": [
-              "https://siilas.com/evidence/xxyun/2026-10-23-1536-us-speedtest.png"
+              "https://siilas.com/evidence/xxyun/2026-11-04-0820-us-speedtest.png"
             ],
             "publication": {
               "status": "published",
-              "versionSha256": "44dab00fd00e3b8b9ea4527cec3c094adccafcdd90f826e9fc9eae371a259e25",
+              "versionSha256": "62857bd0cbc6d56cf8587f0cc8375eda318f752441fd03c4eef17866c3bff657",
               "evidenceVersions": [
                 {
                   "label": "测速截图",
-                  "url": "https://siilas.com/evidence/xxyun/2026-10-23-1536-us-speedtest.png",
-                  "sha256": "e20718250a55ed4979f0f2f449a11a33d8a266226316525369ccc570cab36fc1",
+                  "url": "https://siilas.com/evidence/xxyun/2026-11-04-0820-us-speedtest.png",
+                  "sha256": "0b762d1f72a7ff246c202b03e0390ca849bd8a1cc0a94a20cc347f45d60d3e08",
                   "status": "published"
                 }
               ]
@@ -3373,6 +3524,8 @@
           "chatgpt": "响应严重延迟",
           "streaming": "缓冲严重",
           "latencyMs": 396,
+          "downloadLatencyMs": 158,
+          "uploadLatencyMs": 481,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19531449616",
@@ -3381,6 +3534,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "365 Data Centers",
+          "server": "Rakuten Mobile, Inc · Tokyo",
           "device": "macOS",
           "client": "xxyun 官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -3390,7 +3544,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "1085ffb3c0f0d8aed9b4179c7c2809511de6f216cd362acffc0609a40e6cc4d8",
+            "versionSha256": "a8ccc7cfc5d25a5b7a0649e082e51c85aa338699ae7571e13f18873c34d8a1fc",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -3414,6 +3568,8 @@
           "chatgpt": "轻微延迟",
           "streaming": "轻微缓冲",
           "latencyMs": 382,
+          "downloadLatencyMs": 203,
+          "uploadLatencyMs": 294,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19531510081",
@@ -3422,6 +3578,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "DMIT",
+          "server": "Frontier · Los Angeles, CA",
           "device": "macOS",
           "client": "xxyun 官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -3431,7 +3588,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "d7221f538a0188d8f11921438d3723ed4e6e2d35abb8db3bbf60c0c2df4b8232",
+            "versionSha256": "83f0b4efc3cd800baa827d11575b9a9251fcfaecaa76a1544e9574a2e75633bc",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -3455,6 +3612,8 @@
           "chatgpt": "轻微延迟",
           "streaming": "缓冲严重",
           "latencyMs": 116,
+          "downloadLatencyMs": 207,
+          "uploadLatencyMs": 202,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19531521721",
@@ -3463,6 +3622,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Akamai Technologies",
+          "server": "Axclusive Pte Ltd · Singapore",
           "device": "macOS",
           "client": "xxyun 官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -3472,7 +3632,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "551d1f87b4bf454cc676e67a9e46d5ad334e8e47b944527fb9333a2ffbc6a4f3",
+            "versionSha256": "9b16918b363fe2e1f384ca000a1c37c963fea6d95bdceead4435bbc46cff10df",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -3496,6 +3656,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 167,
+          "downloadLatencyMs": 195,
+          "uploadLatencyMs": 171,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19660886736",
@@ -3504,6 +3666,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "DMIT",
+          "server": "Hutchison HK · Hong Kong",
           "device": null,
           "client": null,
           "measurementTool": "Speedtest Desktop",
@@ -3513,7 +3676,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "5f67600e7c77fc20df7fee486ac05c58c2d6f679b56777cdf57c768124479f8e",
+            "versionSha256": "8011794517573cb5bd3fe9350ecf7696c6e116c2c176e43c2ee447f35b54f532",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -3699,6 +3862,50 @@
               }
             ]
           }
+        },
+        {
+          "id": "20261104-0820-us",
+          "testedAt": "2026-11-04",
+          "time": "08:20",
+          "window": "日间",
+          "node": "美国节点",
+          "exitRegion": "美国",
+          "baselineDownloadMbps": 1000,
+          "downloadMbps": 4.8,
+          "uploadMbps": 3.31,
+          "chatgpt": "响应严重延迟",
+          "streaming": "缓冲严重",
+          "latencyMs": 214,
+          "downloadLatencyMs": 646,
+          "uploadLatencyMs": 1564,
+          "jitterMs": null,
+          "packetLossPercent": null,
+          "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867421977",
+          "evidenceImage": "/evidence/xxyun/2026-11-04-0820-us-speedtest.png",
+          "evidenceNote": "截图时间为 2026-11-04 GMT 12:20 AM（00:20），换算北京时间 2026-11-04 08:20。用户按已确认的出口 IP 地区口径提交美国节点，并确认连接使用 xxyun 专属客户端；ChatGPT 响应严重延迟、流媒体缓冲严重，均为用户当次体验。",
+          "sourceRegion": null,
+          "connectionType": "Wi-Fi",
+          "isp": "DMIT",
+          "server": "GSL Networks · Los Angeles, CA",
+          "device": "MacBook",
+          "client": "xxyun 官方专属客户端",
+          "measurementTool": "Speedtest Desktop",
+          "evidenceUrl": "https://siilas.com/evidence/xxyun/2026-11-04-0820-us-speedtest.png",
+          "evidenceUrls": [
+            "https://siilas.com/evidence/xxyun/2026-11-04-0820-us-speedtest.png"
+          ],
+          "publication": {
+            "status": "published",
+            "versionSha256": "62857bd0cbc6d56cf8587f0cc8375eda318f752441fd03c4eef17866c3bff657",
+            "evidenceVersions": [
+              {
+                "label": "测速截图",
+                "url": "https://siilas.com/evidence/xxyun/2026-11-04-0820-us-speedtest.png",
+                "sha256": "0b762d1f72a7ff246c202b03e0390ca849bd8a1cc0a94a20cc347f45d60d3e08",
+                "status": "published"
+              }
+            ]
+          }
         }
       ]
     },
@@ -3707,21 +3914,21 @@
       "name": "Flybit",
       "yp7Path": "/posts/flybit-review-2026/",
       "sourceUrl": "https://siilas.com/airport/flybit/",
-      "latestTestAt": "2026-10-23",
-      "verifiedTestCount": 17,
-      "testDateCount": 5,
+      "latestTestAt": "2026-11-04",
+      "verifiedTestCount": 19,
+      "testDateCount": 6,
       "regionalSampleDays": {
         "新加坡": 4,
         "香港": 5,
-        "日本": 4,
-        "美国": 4
+        "日本": 5,
+        "美国": 5
       },
       "rankingEligible": true,
       "score": 6,
       "stability": 49.4,
       "scoreBreakdown": {
         "stability": 49.4,
-        "speed": 43.5,
+        "speed": 41.4,
         "chatgpt": 75,
         "streaming": 98.8,
         "value": 85.3
@@ -3738,8 +3945,8 @@
         "trafficLabel": "128GB/月"
       },
       "latestExperience": {
-        "chatgpt": "新加坡 2026-10-23：流畅；香港 2026-10-23：不可用；日本 2026-10-23：流畅；美国 2026-10-23：流畅",
-        "streaming": "新加坡 2026-10-23：流畅；香港 2026-10-23：流畅；日本 2026-10-23：流畅；美国 2026-10-23：流畅"
+        "chatgpt": "新加坡 2026-10-23：流畅；香港 2026-10-23：不可用；日本 2026-11-04：流畅；美国 2026-11-04：流畅",
+        "streaming": "新加坡 2026-10-23：流畅；香港 2026-10-23：流畅；日本 2026-11-04：流畅；美国 2026-11-04：流畅"
       },
       "latestRegionTests": [
         {
@@ -3839,44 +4046,44 @@
         {
           "region": "日本",
           "test": {
-            "id": "20261023-2128-jp",
-            "testedAt": "2026-10-23",
-            "time": "21:28",
-            "window": "晚高峰",
+            "id": "20261104-0908-jp",
+            "testedAt": "2026-11-04",
+            "time": "09:08",
+            "window": "日间",
             "node": "日本节点",
             "exitRegion": "日本",
             "baselineDownloadMbps": 1000,
-            "downloadMbps": 27.72,
-            "uploadMbps": 24.75,
+            "downloadMbps": 526.73,
+            "uploadMbps": 31.85,
             "chatgpt": "流畅",
             "streaming": "流畅",
-            "latencyMs": 123,
-            "downloadLatencyMs": 169,
-            "uploadLatencyMs": 126,
+            "latencyMs": 177,
+            "downloadLatencyMs": 205,
+            "uploadLatencyMs": 120,
             "jitterMs": null,
             "packetLossPercent": null,
-            "resultUrl": "https://www.speedtest.net/zh-Hans/result/19823474954",
-            "evidenceImage": "/evidence/flybit/2026-10-23-2128-jp-speedtest.png",
-            "evidenceNote": "截图时间为 2026-10-23 GMT 1:28 PM（13:28），换算北京时间 2026-10-23 21:28。用户按已确认的出口 IP 地区口径提交日本节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。截图中的 Speedtest Desktop 为测速工具。",
+            "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867516507",
+            "evidenceImage": "/evidence/flybit/2026-11-04-0908-jp-speedtest.png",
+            "evidenceNote": "截图时间为 2026-11-04 GMT 1:08 AM（01:08），换算北京时间 2026-11-04 09:08。用户按已确认的出口 IP 地区口径提交日本节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。Speedtest 显示的网络名称按截图截断文字记录。",
             "sourceRegion": null,
             "connectionType": "Wi-Fi",
-            "isp": "Google Cloud Platform",
-            "server": "IPA CyberLab 400G · Tokyo",
+            "isp": "Eons Data Communic...",
+            "server": "Verizon · Tokyo",
             "device": "MacBook",
             "client": "FlClash",
             "measurementTool": "Speedtest Desktop",
-            "evidenceUrl": "https://siilas.com/evidence/flybit/2026-10-23-2128-jp-speedtest.png",
+            "evidenceUrl": "https://siilas.com/evidence/flybit/2026-11-04-0908-jp-speedtest.png",
             "evidenceUrls": [
-              "https://siilas.com/evidence/flybit/2026-10-23-2128-jp-speedtest.png"
+              "https://siilas.com/evidence/flybit/2026-11-04-0908-jp-speedtest.png"
             ],
             "publication": {
               "status": "published",
-              "versionSha256": "468de9097bf34b254c2a73bdce0d19fc5486dce63001fceafc02bec7f3109229",
+              "versionSha256": "0178c43128fd19b6e1f701e28fc8087e685f76921525647ca9ebcb68d460cc73",
               "evidenceVersions": [
                 {
                   "label": "测速截图",
-                  "url": "https://siilas.com/evidence/flybit/2026-10-23-2128-jp-speedtest.png",
-                  "sha256": "29fd50c29d3d6114704f61de5ce71b01a4e911712036e13dcf20e8ed9d8bcba3",
+                  "url": "https://siilas.com/evidence/flybit/2026-11-04-0908-jp-speedtest.png",
+                  "sha256": "0767365b1da21e15ab2f77306e120d09123ac5ec78d96e79f3efc3a25ca5b541",
                   "status": "published"
                 }
               ]
@@ -3886,44 +4093,44 @@
         {
           "region": "美国",
           "test": {
-            "id": "20261023-2133-us",
-            "testedAt": "2026-10-23",
-            "time": "21:33",
-            "window": "晚高峰",
+            "id": "20261104-0905-us",
+            "testedAt": "2026-11-04",
+            "time": "09:05",
+            "window": "日间",
             "node": "美国节点",
             "exitRegion": "美国",
             "baselineDownloadMbps": 1000,
-            "downloadMbps": 20.19,
-            "uploadMbps": 6.29,
+            "downloadMbps": 114.72,
+            "uploadMbps": 50.96,
             "chatgpt": "流畅",
             "streaming": "流畅",
-            "latencyMs": 303,
-            "downloadLatencyMs": 302,
-            "uploadLatencyMs": 304,
+            "latencyMs": 278,
+            "downloadLatencyMs": 277,
+            "uploadLatencyMs": 284,
             "jitterMs": null,
             "packetLossPercent": null,
-            "resultUrl": "https://www.speedtest.net/zh-Hans/result/19823493183",
-            "evidenceImage": "/evidence/flybit/2026-10-23-2133-us-speedtest.png",
-            "evidenceNote": "截图时间为 2026-10-23 GMT 1:33 PM（13:33），换算北京时间 2026-10-23 21:33。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。截图中的 Speedtest Desktop 为测速工具。",
+            "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867510032",
+            "evidenceImage": "/evidence/flybit/2026-11-04-0905-us-speedtest.png",
+            "evidenceNote": "截图时间为 2026-11-04 GMT 1:05 AM（01:05），换算北京时间 2026-11-04 09:05。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。",
             "sourceRegion": null,
             "connectionType": "Wi-Fi",
             "isp": "Astound",
-            "server": "Frontier · Ashburn, VA",
+            "server": "GSL Networks · Ashburn, VA",
             "device": "MacBook",
             "client": "FlClash",
             "measurementTool": "Speedtest Desktop",
-            "evidenceUrl": "https://siilas.com/evidence/flybit/2026-10-23-2133-us-speedtest.png",
+            "evidenceUrl": "https://siilas.com/evidence/flybit/2026-11-04-0905-us-speedtest.png",
             "evidenceUrls": [
-              "https://siilas.com/evidence/flybit/2026-10-23-2133-us-speedtest.png"
+              "https://siilas.com/evidence/flybit/2026-11-04-0905-us-speedtest.png"
             ],
             "publication": {
               "status": "published",
-              "versionSha256": "be2a88d94993f2e407bb9a5ec6c9ed636babf3d5346fcc1e4244548613e788aa",
+              "versionSha256": "87b4f9e63c1e93d144109635e98f8bdf50c8077011e787931bdb732d28d26123",
               "evidenceVersions": [
                 {
                   "label": "测速截图",
-                  "url": "https://siilas.com/evidence/flybit/2026-10-23-2133-us-speedtest.png",
-                  "sha256": "9df676b7592009a0e9c786c767d7e0163b0cbda79346ee045d531c59f0131323",
+                  "url": "https://siilas.com/evidence/flybit/2026-11-04-0905-us-speedtest.png",
+                  "sha256": "8b1d0ed8d7a7ec53bd57d23698ae0af274a7080595d83eccc6c9d3beaf50910d",
                   "status": "published"
                 }
               ]
@@ -4053,6 +4260,8 @@
           "chatgpt": "不可用",
           "streaming": "流畅",
           "latencyMs": 121,
+          "downloadLatencyMs": 156,
+          "uploadLatencyMs": 117,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19442908387",
@@ -4061,6 +4270,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Debee Network",
+          "server": "Hutchison HK · Hong Kong",
           "device": "macOS",
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -4070,7 +4280,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "efb90b8439aa26f793a140f5f69385a6dc3453a9adef0e6c41194703435a408c",
+            "versionSha256": "3a458df40d444f9e0a5a3c45f7f9d31e0db6504fc4b802c8f29788bb68d31f8f",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -4094,6 +4304,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 104,
+          "downloadLatencyMs": 114,
+          "uploadLatencyMs": 283,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19490546094",
@@ -4102,6 +4314,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Google Cloud Platform",
+          "server": "MyRepublic Singapore · Singapore",
           "device": "macOS",
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -4111,7 +4324,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "2d2c5f655515396e1c3e61f183508a7876dc7fb579906f2caef051c37ef9f5a6",
+            "versionSha256": "388c15c6d5912f5ae9bd58e6b3ca0fca92b234253217858c52259edf2c4e1f1d",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -4135,6 +4348,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 104,
+          "downloadLatencyMs": 157,
+          "uploadLatencyMs": 245,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19490582236",
@@ -4143,6 +4358,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Google Cloud Platform",
+          "server": "サーバーならDDPS.jp · Tokyo",
           "device": "macOS",
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -4152,7 +4368,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "58b8d25e34602f3a998e2f6bc09b008d206d16d0cfda3619242bb810d8de7103",
+            "versionSha256": "c01a27ee3be2d6276c1c930a437b39daf4e3dd57840e8f022cfe13bacfd0274b",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -4176,6 +4392,8 @@
           "chatgpt": "不可用",
           "streaming": "轻微缓冲",
           "latencyMs": 168,
+          "downloadLatencyMs": 180,
+          "uploadLatencyMs": 177,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19490664210",
@@ -4184,6 +4402,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Teyvat Continent",
+          "server": "Misaka Network, Inc. · Hong Kong",
           "device": "macOS",
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -4193,7 +4412,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "40434feef177b162763e15e82f89bcb8d782dc02fc0472805744846f2e28899b",
+            "versionSha256": "996ac48b61eb41893374b4217572111a64c8269dc385f5614185da59b2beb6c2",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -4217,6 +4436,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 269,
+          "downloadLatencyMs": 330,
+          "uploadLatencyMs": 419,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19490676184",
@@ -4225,6 +4446,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Redoubt Networks",
+          "server": "NoaNet · Spokane, WA",
           "device": "macOS",
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -4234,7 +4456,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "e17724dbc690a312f8c6e9ddaecf8ebbd0ee7e958872bc550c325d85dc6c7794",
+            "versionSha256": "ec73415f24f80ffa724d67ff5d0764365d3bdd171aa9feb152f4e9cc84a8f367",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -4258,6 +4480,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 87,
+          "downloadLatencyMs": 185,
+          "uploadLatencyMs": 97,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19551127158",
@@ -4266,6 +4490,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Google Cloud Platform",
+          "server": "fdcservers.net · Singapore",
           "device": null,
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -4275,7 +4500,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "fc1c8abafaf0fd3a6c1a3f32bcfeb7143e64b37ae12aa48c8e04bc81a140c3de",
+            "versionSha256": "77fb6fb196362f8d282cc68e99d39919e3b0c8d3b14afb6843565cb52b24e4ab",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -4299,6 +4524,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 118,
+          "downloadLatencyMs": 170,
+          "uploadLatencyMs": 302,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19551352299",
@@ -4307,6 +4534,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Google Cloud Platform",
+          "server": "fdcservers.net · Tokyo",
           "device": null,
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -4316,7 +4544,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "4ad7864846d6c4f8040b08eb974342c75c9b9bdb96394396d8a04b272265f906",
+            "versionSha256": "6260e257d0bda6d802d06fd37b29ec110710e6d6962d40bde7e93e661e7cca2e",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -4340,6 +4568,8 @@
           "chatgpt": "不可用",
           "streaming": "流畅",
           "latencyMs": 275,
+          "downloadLatencyMs": 318,
+          "uploadLatencyMs": 311,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19551367517",
@@ -4348,6 +4578,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Teyvat Continent",
+          "server": "STC · Hong Kong",
           "device": null,
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -4357,7 +4588,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "8513fd0e87844fef6f0412c24673393bb8f2d091dcbc9b5ec9cb2061372543e4",
+            "versionSha256": "865d220308a4132d38dfa7c8deb80a89bc8bfca7cb689b2a5e33b84c72108d75",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -4381,6 +4612,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 275,
+          "downloadLatencyMs": 298,
+          "uploadLatencyMs": 450,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19551406884",
@@ -4389,6 +4622,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Redoubt Networks",
+          "server": "Intermax Networks · Coeur d'Alene, ID",
           "device": null,
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -4398,7 +4632,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "32598268a197703fb61bb3e63c7f49f78d17d70c8b3cb93b0344372c016221c5",
+            "versionSha256": "4fcc53f0231248f99a98f14707819f288b8268c66cb5fa70e24c00a9463e4c77",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -4584,6 +4818,94 @@
               }
             ]
           }
+        },
+        {
+          "id": "20261104-0905-us",
+          "testedAt": "2026-11-04",
+          "time": "09:05",
+          "window": "日间",
+          "node": "美国节点",
+          "exitRegion": "美国",
+          "baselineDownloadMbps": 1000,
+          "downloadMbps": 114.72,
+          "uploadMbps": 50.96,
+          "chatgpt": "流畅",
+          "streaming": "流畅",
+          "latencyMs": 278,
+          "downloadLatencyMs": 277,
+          "uploadLatencyMs": 284,
+          "jitterMs": null,
+          "packetLossPercent": null,
+          "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867510032",
+          "evidenceImage": "/evidence/flybit/2026-11-04-0905-us-speedtest.png",
+          "evidenceNote": "截图时间为 2026-11-04 GMT 1:05 AM（01:05），换算北京时间 2026-11-04 09:05。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。",
+          "sourceRegion": null,
+          "connectionType": "Wi-Fi",
+          "isp": "Astound",
+          "server": "GSL Networks · Ashburn, VA",
+          "device": "MacBook",
+          "client": "FlClash",
+          "measurementTool": "Speedtest Desktop",
+          "evidenceUrl": "https://siilas.com/evidence/flybit/2026-11-04-0905-us-speedtest.png",
+          "evidenceUrls": [
+            "https://siilas.com/evidence/flybit/2026-11-04-0905-us-speedtest.png"
+          ],
+          "publication": {
+            "status": "published",
+            "versionSha256": "87b4f9e63c1e93d144109635e98f8bdf50c8077011e787931bdb732d28d26123",
+            "evidenceVersions": [
+              {
+                "label": "测速截图",
+                "url": "https://siilas.com/evidence/flybit/2026-11-04-0905-us-speedtest.png",
+                "sha256": "8b1d0ed8d7a7ec53bd57d23698ae0af274a7080595d83eccc6c9d3beaf50910d",
+                "status": "published"
+              }
+            ]
+          }
+        },
+        {
+          "id": "20261104-0908-jp",
+          "testedAt": "2026-11-04",
+          "time": "09:08",
+          "window": "日间",
+          "node": "日本节点",
+          "exitRegion": "日本",
+          "baselineDownloadMbps": 1000,
+          "downloadMbps": 526.73,
+          "uploadMbps": 31.85,
+          "chatgpt": "流畅",
+          "streaming": "流畅",
+          "latencyMs": 177,
+          "downloadLatencyMs": 205,
+          "uploadLatencyMs": 120,
+          "jitterMs": null,
+          "packetLossPercent": null,
+          "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867516507",
+          "evidenceImage": "/evidence/flybit/2026-11-04-0908-jp-speedtest.png",
+          "evidenceNote": "截图时间为 2026-11-04 GMT 1:08 AM（01:08），换算北京时间 2026-11-04 09:08。用户按已确认的出口 IP 地区口径提交日本节点，连接使用 FlClash；ChatGPT 与流媒体均流畅，按用户当次体验保存。Speedtest 显示的网络名称按截图截断文字记录。",
+          "sourceRegion": null,
+          "connectionType": "Wi-Fi",
+          "isp": "Eons Data Communic...",
+          "server": "Verizon · Tokyo",
+          "device": "MacBook",
+          "client": "FlClash",
+          "measurementTool": "Speedtest Desktop",
+          "evidenceUrl": "https://siilas.com/evidence/flybit/2026-11-04-0908-jp-speedtest.png",
+          "evidenceUrls": [
+            "https://siilas.com/evidence/flybit/2026-11-04-0908-jp-speedtest.png"
+          ],
+          "publication": {
+            "status": "published",
+            "versionSha256": "0178c43128fd19b6e1f701e28fc8087e685f76921525647ca9ebcb68d460cc73",
+            "evidenceVersions": [
+              {
+                "label": "测速截图",
+                "url": "https://siilas.com/evidence/flybit/2026-11-04-0908-jp-speedtest.png",
+                "sha256": "0767365b1da21e15ab2f77306e120d09123ac5ec78d96e79f3efc3a25ca5b541",
+                "status": "published"
+              }
+            ]
+          }
         }
       ]
     },
@@ -4592,28 +4914,28 @@
       "name": "拼好连（原 Runway）",
       "yp7Path": "/posts/runway-review-2026/",
       "sourceUrl": "https://siilas.com/airport/pinhaolian/",
-      "latestTestAt": "2026-10-24",
-      "verifiedTestCount": 16,
-      "testDateCount": 7,
+      "latestTestAt": "2026-11-04",
+      "verifiedTestCount": 17,
+      "testDateCount": 8,
       "regionalSampleDays": {
         "新加坡": 4,
         "香港": 4,
         "日本": 4,
-        "美国": 4
+        "美国": 5
       },
       "rankingEligible": true,
-      "score": 4.4,
-      "stability": 37.2,
+      "score": 4.1,
+      "stability": 32.4,
       "scoreBreakdown": {
-        "stability": 37.2,
-        "speed": 21.9,
-        "chatgpt": 81.3,
-        "streaming": 89.1,
+        "stability": 32.4,
+        "speed": 21.5,
+        "chatgpt": 78.4,
+        "streaming": 86.3,
         "value": 25.1
       },
       "experienceScores": {
-        "chatgpt": 81.3,
-        "streaming": 89.1
+        "chatgpt": 78.4,
+        "streaming": 86.3
       },
       "scoringPlan": {
         "name": "天天尝鲜拼",
@@ -4623,8 +4945,8 @@
         "trafficLabel": "50GB/月"
       },
       "latestExperience": {
-        "chatgpt": "新加坡 2026-10-23：流畅；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-10-23：响应严重延迟",
-        "streaming": "新加坡 2026-10-23：流畅；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-10-23：缓冲严重"
+        "chatgpt": "新加坡 2026-10-23：流畅；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-11-04：响应严重延迟",
+        "streaming": "新加坡 2026-10-23：流畅；香港 2026-10-24：流畅；日本 2026-10-24：流畅；美国 2026-11-04：缓冲严重"
       },
       "latestRegionTests": [
         {
@@ -4771,44 +5093,44 @@
         {
           "region": "美国",
           "test": {
-            "id": "20261023-2245-us",
-            "testedAt": "2026-10-23",
-            "time": "22:45",
-            "window": "晚高峰",
+            "id": "20261104-0814-us",
+            "testedAt": "2026-11-04",
+            "time": "08:14",
+            "window": "日间",
             "node": "美国节点",
             "exitRegion": "美国",
             "baselineDownloadMbps": 1000,
-            "downloadMbps": 3.88,
-            "uploadMbps": 0.99,
+            "downloadMbps": 7.86,
+            "uploadMbps": 14.34,
             "chatgpt": "响应严重延迟",
             "streaming": "缓冲严重",
-            "latencyMs": 187,
-            "downloadLatencyMs": 1204,
-            "uploadLatencyMs": 1756,
+            "latencyMs": 511,
+            "downloadLatencyMs": 804,
+            "uploadLatencyMs": 787,
             "jitterMs": null,
             "packetLossPercent": null,
-            "resultUrl": "https://www.speedtest.net/result/19823782366",
-            "evidenceImage": "/evidence/pinhaolian/2026-10-23-2245-us-speedtest.png",
-            "evidenceNote": "截图时间为 2026-10-23 GMT 2:45 PM（14:45），换算北京时间 2026-10-23 22:45。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 响应严重延迟，流媒体缓冲严重，按用户当次体验保存，不反推具体等待或缓冲秒数。截图中的 Speedtest Desktop 为测速工具。",
+            "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867409616",
+            "evidenceImage": "/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png",
+            "evidenceNote": "截图时间为 2026-11-04 GMT 12:14 AM（00:14），换算北京时间 2026-11-04 08:14。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 响应严重延迟，流媒体缓冲严重，均为用户当次体验。",
             "sourceRegion": null,
             "connectionType": "Wi-Fi",
             "isp": "BAGE",
-            "server": "Clouvider Ltd · Los Angeles, CA",
+            "server": "ReliableSite Hosting · Los Angeles, CA",
             "device": "MacBook",
             "client": "FlClash",
             "measurementTool": "Speedtest Desktop",
-            "evidenceUrl": "https://siilas.com/evidence/pinhaolian/2026-10-23-2245-us-speedtest.png",
+            "evidenceUrl": "https://siilas.com/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png",
             "evidenceUrls": [
-              "https://siilas.com/evidence/pinhaolian/2026-10-23-2245-us-speedtest.png"
+              "https://siilas.com/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png"
             ],
             "publication": {
               "status": "published",
-              "versionSha256": "2d534f2b4112417935fa6d618359db334927816044a90c5e596edfe4df509726",
+              "versionSha256": "ca3204ef998df06a0ca31a2fbe43f4b2b79751c13d8085baa4b2e5462e087bf6",
               "evidenceVersions": [
                 {
                   "label": "测速截图",
-                  "url": "https://siilas.com/evidence/pinhaolian/2026-10-23-2245-us-speedtest.png",
-                  "sha256": "ad2316ad2e1f506b8dd495ce55de1b87b995b55cd56541504acfe4a6260b7045",
+                  "url": "https://siilas.com/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png",
+                  "sha256": "edc36cf7ae73b24e3bdfb0d0dcba3ab2a7523122c76666e68b9e0d9ea16cdd07",
                   "status": "published"
                 }
               ]
@@ -5401,6 +5723,50 @@
               }
             ]
           }
+        },
+        {
+          "id": "20261104-0814-us",
+          "testedAt": "2026-11-04",
+          "time": "08:14",
+          "window": "日间",
+          "node": "美国节点",
+          "exitRegion": "美国",
+          "baselineDownloadMbps": 1000,
+          "downloadMbps": 7.86,
+          "uploadMbps": 14.34,
+          "chatgpt": "响应严重延迟",
+          "streaming": "缓冲严重",
+          "latencyMs": 511,
+          "downloadLatencyMs": 804,
+          "uploadLatencyMs": 787,
+          "jitterMs": null,
+          "packetLossPercent": null,
+          "resultUrl": "https://www.speedtest.net/zh-Hans/result/19867409616",
+          "evidenceImage": "/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png",
+          "evidenceNote": "截图时间为 2026-11-04 GMT 12:14 AM（00:14），换算北京时间 2026-11-04 08:14。用户按已确认的出口 IP 地区口径提交美国节点，连接使用 FlClash；ChatGPT 响应严重延迟，流媒体缓冲严重，均为用户当次体验。",
+          "sourceRegion": null,
+          "connectionType": "Wi-Fi",
+          "isp": "BAGE",
+          "server": "ReliableSite Hosting · Los Angeles, CA",
+          "device": "MacBook",
+          "client": "FlClash",
+          "measurementTool": "Speedtest Desktop",
+          "evidenceUrl": "https://siilas.com/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png",
+          "evidenceUrls": [
+            "https://siilas.com/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png"
+          ],
+          "publication": {
+            "status": "published",
+            "versionSha256": "ca3204ef998df06a0ca31a2fbe43f4b2b79751c13d8085baa4b2e5462e087bf6",
+            "evidenceVersions": [
+              {
+                "label": "测速截图",
+                "url": "https://siilas.com/evidence/pinhaolian/2026-11-04-0814-us-speedtest.png",
+                "sha256": "edc36cf7ae73b24e3bdfb0d0dcba3ab2a7523122c76666e68b9e0d9ea16cdd07",
+                "status": "published"
+              }
+            ]
+          }
         }
       ]
     },
@@ -5755,6 +6121,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 116,
+          "downloadLatencyMs": 225,
+          "uploadLatencyMs": 326,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19531190277",
@@ -5763,6 +6131,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Eons Data Communications",
+          "server": "Nearoute Limited · Singapore",
           "device": "macOS",
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -5772,7 +6141,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "43d631a3a738690aa8a21dcf5c942da0fa0d0bbaee8380a977716352d04b7a9a",
+            "versionSha256": "e307f0e8e1eade6a1f83b1ee0dd6890596601aa598abbc383883e3f3c7d4ae1b",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -5796,6 +6165,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 267,
+          "downloadLatencyMs": 161,
+          "uploadLatencyMs": 317,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19531236808",
@@ -5804,6 +6175,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Eons Data Communications",
+          "server": "IPA CyberLab · Bunkyo",
           "device": "macOS",
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -5813,7 +6185,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "b02b369ff4c551176a5a7465d90c02b69c2ad38978eb6f7618d8b4ccf13aa6ad",
+            "versionSha256": "ca35eb20450a131c735dcac66536782e2fce327040cd488c8078b4205ae6e245",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -5837,6 +6209,8 @@
           "chatgpt": "不可用",
           "streaming": "流畅",
           "latencyMs": 258,
+          "downloadLatencyMs": 153,
+          "uploadLatencyMs": 342,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19531309963",
@@ -5845,6 +6219,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "HKBN",
+          "server": "SmarTone · Hong Kong",
           "device": "macOS",
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -5854,7 +6229,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "6e5444fa113953092744209227cd7783241644f191f2bd88c828181a2957ebcb",
+            "versionSha256": "d3f26463a5b081f77668e5f0fdeb4ee9683fa78cc6b9ed48cedd5cb54c3c1e4c",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -5878,6 +6253,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 195,
+          "downloadLatencyMs": 226,
+          "uploadLatencyMs": 428,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19531387056",
@@ -5886,6 +6263,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Eons Data Communications",
+          "server": "WiLine Networks · San Leandro, CA",
           "device": "macOS",
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -5895,7 +6273,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "b8f5715b0030d222e309ea334a98b197352340c39442d842d7fceaefc8c9f78b",
+            "versionSha256": "7b1812257f1d89567533f6765c272169902baa65083147ea0fafea61877f3c04",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -5919,6 +6297,8 @@
           "chatgpt": "响应较慢",
           "streaming": "缓冲明显",
           "latencyMs": 231,
+          "downloadLatencyMs": 242,
+          "uploadLatencyMs": 442,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19551454767",
@@ -5927,6 +6307,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "NETVIGATOR",
+          "server": "CTCSCI TECH LTD · Hong Kong",
           "device": null,
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -5936,7 +6317,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "9570779d6389e43599ef39bf73108d1f6e4c24aae32533ed1430a7a2246dd43e",
+            "versionSha256": "2b733cbb779cf93e9739f7d45e401a9df36cf2302345bdbc5f3d4502704aa01a",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -5960,6 +6341,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 169,
+          "downloadLatencyMs": 211,
+          "uploadLatencyMs": 367,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19551495564",
@@ -5968,6 +6351,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Eons Data Communications",
+          "server": "IPA CyberLab · Bunkyo",
           "device": null,
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -5977,7 +6361,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "dda104e98ca0177040acf16f0d92d73bf597ba08adcf7fbe3b6ea8954ba160b8",
+            "versionSha256": "8f05d8e25b8531b8fce2c2ba53841900189da6d26bf301c554eca8a145093f9a",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -6001,6 +6385,8 @@
           "chatgpt": "响应较慢",
           "streaming": "缓冲明显",
           "latencyMs": 628,
+          "downloadLatencyMs": 588,
+          "uploadLatencyMs": 426,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19551536675",
@@ -6009,6 +6395,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Eons Data Communications",
+          "server": "EGI Hosting · Santa Clara, CA",
           "device": null,
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -6018,7 +6405,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "dce93855504b2f3e63d59756cd37d5b77ec3287858f5d63ace3908e0f261105e",
+            "versionSha256": "af35340669a48d805e6b250d22ce2c99bdf99bac18b38584e3ba16d635013018",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -6042,6 +6429,8 @@
           "chatgpt": "轻微延迟",
           "streaming": "轻微缓冲",
           "latencyMs": 259,
+          "downloadLatencyMs": 264,
+          "uploadLatencyMs": 338,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/d/19551583411",
@@ -6050,6 +6439,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Eons Data Communications",
+          "server": "Axclusive Pte Ltd · Singapore",
           "device": null,
           "client": "FlClash",
           "measurementTool": "Speedtest Desktop",
@@ -6059,7 +6449,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "5c6e0bd4551ea7f4059dbb4e40c0e35ffd23f9d637995324a2109c91422c4eac",
+            "versionSha256": "26feb4ada11a2290980e1a54660297c792454fa7f30e2d77104bcc4108a9dcd3",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -6572,6 +6962,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 129,
+          "downloadLatencyMs": 160,
+          "uploadLatencyMs": 126,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": null,
@@ -6579,7 +6971,8 @@
           "evidenceNote": "Speedtest Desktop 截图时间为 12:31 PM GMT（北京时间 20:31），测速服务器 Pacific Internet (S)，新加坡；负载延迟下载 160 ms、上传 126 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
-          "isp": null,
+          "isp": "Southeast Asia Teleco...",
+          "server": "Pacific Internet (S) · Singapore",
           "device": null,
           "client": "机场官方专属客户端",
           "measurementTool": "Speedtest Desktop",
@@ -6589,7 +6982,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "36b1bb3f4382b9a0eeec77f63b721ac7b7c22083217466e01a9cd1620eeb78e4",
+            "versionSha256": "613086bb3996800feb8ba3362563d3d8ca1fc828b6c82ab6068a3b1973e92590",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -6613,6 +7006,8 @@
           "chatgpt": "不可用",
           "streaming": "缓冲严重",
           "latencyMs": 162,
+          "downloadLatencyMs": 165,
+          "uploadLatencyMs": 181,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19551023189",
@@ -6621,6 +7016,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Lshiy-user-content",
+          "server": "GSL Networks · Hong Kong",
           "device": null,
           "client": "边缘客户端",
           "measurementTool": "Speedtest Desktop",
@@ -6630,7 +7026,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "9f01f7ccb77edaf35993b7731316496b48dcaf7fc08f4f633d4b8638ccd8e4a3",
+            "versionSha256": "b1142b9a9395572bbeb38acd787e8f515de1f5ee78c70ef2c988032bdae885e0",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -6654,6 +7050,8 @@
           "chatgpt": "轻微延迟",
           "streaming": "轻微缓冲",
           "latencyMs": 347,
+          "downloadLatencyMs": 327,
+          "uploadLatencyMs": 330,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19551044456",
@@ -6662,6 +7060,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Komi",
+          "server": "Mutual Telephone Co... · McPherson, KS",
           "device": null,
           "client": "边缘客户端",
           "measurementTool": "Speedtest Desktop",
@@ -6671,7 +7070,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "cdb472eca852a563b878189fb4ae2ef1f57e6fd12e3d300e76c07f828a674a2c",
+            "versionSha256": "16eb10903322ac7db360d808567b993214251986153a26e08aa91c1fada8377d",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -6695,6 +7094,8 @@
           "chatgpt": "轻微延迟",
           "streaming": "轻微缓冲",
           "latencyMs": 213,
+          "downloadLatencyMs": 219,
+          "uploadLatencyMs": 202,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19551074198",
@@ -6703,6 +7104,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Southeast Asia Teleco…（截图截断）",
+          "server": "Pacific Internet (S) · Singapore",
           "device": null,
           "client": "边缘客户端",
           "measurementTool": "Speedtest Desktop",
@@ -6712,7 +7114,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "0e69fdeb019d7a7514555599642e155eb68214cd877722fc88598f207b819928",
+            "versionSha256": "0543ecae8d1df2f2ade4deff4f48030d75741eec4d9773c9b3a195c178fc3d92",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -6736,6 +7138,8 @@
           "chatgpt": "轻微延迟",
           "streaming": "轻微缓冲",
           "latencyMs": 327,
+          "downloadLatencyMs": 344,
+          "uploadLatencyMs": 256,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19551098819",
@@ -6744,6 +7148,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Dodo",
+          "server": "IPA CyberLab · Bunkyo",
           "device": null,
           "client": "边缘客户端",
           "measurementTool": "Speedtest Desktop",
@@ -6753,7 +7158,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "6484bee33db0330eb5a5831bc425355e154c81672bd78e12f4bd5afc4e4f09af",
+            "versionSha256": "aab6bf998282f3cfa6c9b5c0ba2d7ec7b31c1b086a583c1a5c20a13cc1fb89c9",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -7185,12 +7590,15 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 142,
+          "downloadLatencyMs": 165,
+          "uploadLatencyMs": 144,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446547844",
           "evidenceImage": "/evidence/xsus/2026-07-18-1953-sg-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 11:53 AM GMT（北京时间 19:53），测速服务器 Firstmedia，新加坡；负载延迟下载 165 ms、上传 144 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Akari Networks",
+          "server": "Firstmedia · Singapore",
           "device": "macOS",
           "client": "FlClash（macOS）",
           "measurementTool": "Speedtest Desktop",
@@ -7200,7 +7608,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "4c6c3631fae5be9dc222609e7f5804ac7c423db5bccb4d6b4bb8c56865e69cd4",
+            "versionSha256": "7e07093b3958fd448d02a47beb174acdc65d55973369e62b1e3d58a8b71abb34",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -7224,12 +7632,15 @@
           "chatgpt": "不可用",
           "streaming": "流畅",
           "latencyMs": 103,
+          "downloadLatencyMs": 131,
+          "uploadLatencyMs": 111,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446583873",
           "evidenceImage": "/evidence/xsus/2026-07-18-2005-hk-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 12:05 PM GMT（北京时间 20:05），测速服务器 CSL，香港；负载延迟下载 131 ms、上传 111 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Astrix",
+          "server": "CSL · Hong Kong",
           "device": "macOS",
           "client": "FlClash（macOS）",
           "measurementTool": "Speedtest Desktop",
@@ -7239,7 +7650,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "4700f49be00352f2645c9fac5a9f9db61dea51bff016f49da59a528c333ccd17",
+            "versionSha256": "2729a1e8082defc27377c77941a4dc79ff8ccf3d239c325160a4e1a6808fc817",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -7263,12 +7674,15 @@
           "chatgpt": "轻微延迟",
           "streaming": "轻微缓冲",
           "latencyMs": 261,
+          "downloadLatencyMs": 222,
+          "uploadLatencyMs": 247,
           "resultUrl": "https://www.speedtest.net/result/19446824124",
           "evidenceImage": "/evidence/xsus/2026-07-18-2124-jp-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 1:24 PM GMT（北京时间 21:24），测速服务器 fdcservers.net，东京；负载延迟下载 222 ms、上传 247 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Akari Networks",
+          "server": "fdcservers.net · Tokyo",
           "device": "macOS",
           "client": "FlClash（macOS）",
           "measurementTool": "Speedtest Desktop",
@@ -7278,7 +7692,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "fd683af62828ac09409553c1758b33efa7201f8449c2ed4cfd238430e0a1176f",
+            "versionSha256": "e87476019e4c477c9e455ad2d9c783425c50bc29827ebc16e799ba5662f73e6b",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -7302,12 +7716,15 @@
           "chatgpt": "响应较慢",
           "streaming": "缓冲严重",
           "latencyMs": 267,
+          "downloadLatencyMs": 273,
+          "uploadLatencyMs": 262,
           "resultUrl": "https://www.speedtest.net/zh-Hans/result/19446854600",
           "evidenceImage": "/evidence/xsus/2026-07-18-2134-us-speedtest.png",
           "evidenceNote": "Speedtest Desktop 截图时间为 1:34 PM GMT（北京时间 21:34），测速服务器 Uniti，Los Angeles, CA；负载延迟下载 273 ms、上传 262 ms",
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Akari Networks",
+          "server": "Uniti · Los Angeles, CA",
           "device": "macOS",
           "client": "FlClash（macOS）",
           "measurementTool": "Speedtest Desktop",
@@ -7317,7 +7734,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "dd58574530c1c02ec118767cc6630bb81157047050d4388f4df267b3781ae00c",
+            "versionSha256": "eb2de6426bb5fece919f2313ca78a8c9571f5c3268e7838865d2f2b3691b94c9",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -7341,6 +7758,8 @@
           "chatgpt": "流畅",
           "streaming": "轻微缓冲",
           "latencyMs": 164,
+          "downloadLatencyMs": 164,
+          "uploadLatencyMs": 121,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19547039887",
@@ -7349,6 +7768,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Akari Networks",
+          "server": "fdcservers.net · Tokyo",
           "device": "macOS",
           "client": "FlClash（macOS）",
           "measurementTool": "Speedtest Desktop",
@@ -7358,7 +7778,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "95e237a18a7697c296e0a67c439d09cfdd42c7cac2b8448339e40e1b1007382d",
+            "versionSha256": "e1293a7cee1a32fd4048905bea383aa3cef45c840466007a0b35bf4f8f1d9c06",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -7382,6 +7802,8 @@
           "chatgpt": "轻微延迟",
           "streaming": "轻微缓冲",
           "latencyMs": 196,
+          "downloadLatencyMs": 240,
+          "uploadLatencyMs": 199,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19547085405",
@@ -7390,6 +7812,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Akari Networks",
+          "server": "Nearoute Limited · Singapore",
           "device": "macOS",
           "client": "FlClash（macOS）",
           "measurementTool": "Speedtest Desktop",
@@ -7399,7 +7822,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "d3cee3684b1c3546f66803a8d8f8a6f30f13f11c53b989807d42ac1fb173908d",
+            "versionSha256": "ab9e386bd7834bc630d3a3d68b9f63a2ef9f758488f75a598eafdf84ef1068b0",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -7423,6 +7846,8 @@
           "chatgpt": "轻微延迟",
           "streaming": "流畅",
           "latencyMs": 275,
+          "downloadLatencyMs": 255,
+          "uploadLatencyMs": 216,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19547122003",
@@ -7431,6 +7856,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Akari Networks",
+          "server": "Sharktech Inc. · Los Angeles, CA",
           "device": "macOS",
           "client": "FlClash（macOS）",
           "measurementTool": "Speedtest Desktop",
@@ -7440,7 +7866,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "c54a92ff0990ed43274afd41da9112fd42951db4ddbabde1aa094acd79b07c30",
+            "versionSha256": "83dc8584b47a1433f19ae9292f9dcd31e82148c90f55930afcc97bb83f534576",
             "evidenceVersions": [
               {
                 "label": "测速截图",
@@ -7464,6 +7890,8 @@
           "chatgpt": "流畅",
           "streaming": "流畅",
           "latencyMs": 109,
+          "downloadLatencyMs": 127,
+          "uploadLatencyMs": 119,
           "jitterMs": null,
           "packetLossPercent": null,
           "resultUrl": "https://www.speedtest.net/result/19547213591",
@@ -7472,6 +7900,7 @@
           "sourceRegion": null,
           "connectionType": "Wi-Fi",
           "isp": "Astrix",
+          "server": "Tata Communications · Hong Kong",
           "device": "macOS",
           "client": "FlClash（macOS）",
           "measurementTool": "Speedtest Desktop",
@@ -7481,7 +7910,7 @@
           ],
           "publication": {
             "status": "published",
-            "versionSha256": "95226fb8d0bf3cfecfb5e483a66c2e3e23860a65501a198916d483e568087253",
+            "versionSha256": "7626e0d5476d589844bbb79cf48206720b3318238c71091c793cec2c8b9eb33b",
             "evidenceVersions": [
               {
                 "label": "测速截图",

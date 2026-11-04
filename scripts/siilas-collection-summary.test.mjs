@@ -84,6 +84,8 @@ test('coverage counts raw historical additions without turning same-day records 
   const { accepted, collection, markdown, airport, record } = coverageFixture()
   const summarize = () => syncSiilasCollectionArticle(markdown, collection, accepted)
   let current = summarize()
+  assert.match(current, /页面更新：2026年10月15日/)
+  assert.match(current, /2026年10月14日接收，最新样本2026年10月8日/)
   const rowFor = (text) => coverageRows(text).find(([name]) => name.includes('[候选甲]('))
   assert.equal(rowFor(current)[1], '3条原始记录；3个不同测试日')
   assert.equal(rowFor(current)[2], '2026-10-08')

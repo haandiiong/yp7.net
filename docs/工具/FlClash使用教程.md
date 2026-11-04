@@ -1,7 +1,7 @@
 ---
 title: FlClash下载与使用教程：安卓、Windows、macOS安装与订阅导入
 createTime: 2026/09/09
-dateModified: 2026/09/09
+dateModified: 2026/11/04
 permalink: /posts/flclash-guide-2026/
 tags:
   - FlClash
@@ -10,10 +10,10 @@ tags:
   - 订阅配置
   - Clash教程
   - 网络工具
-description: FlClash怎么用？整理官方下载安装、安卓与电脑安装包选择、URL订阅导入、节点切换、系统代理、TUN模式、WebDAV备份和常见问题，并对比Clash Verge Rev的适用场景。
+description: FlClash怎么用？按 v0.9.2 整理 Android、Windows、macOS 和 Linux 官方安装包选择、订阅导入、系统代理、TUN 模式和 WebDAV 备份。
 ---
 
-更新时间：2026年9月9日。本文按官方正式版 **v0.8.96** 的发布文件、中文界面文案和配置流程整理；后续版本的按钮位置可能调整。
+更新时间：2026年11月4日。本文按 **FlClash v0.9.2** 的官方发布文件和该版本的中文界面文案复核下载及配置流程。
 
 **FlClash 是支持安卓和电脑的代理客户端。** 基础使用顺序是：安装软件 → 导入订阅 → 选中配置和节点 → 启动代理 → 验证访问。软件本身不附送机场账号、套餐或可用节点，需要准备兼容的订阅或配置文件。
 
@@ -37,21 +37,25 @@ FlClash 是基于 Clash.Meta／Mihomo 内核的开源客户端，提供订阅管
 
 ## FlClash官方下载地址与安装包选择
 
-优先从 **[FlClash 官方最新发布页](https://github.com/chen08209/FlClash/releases/latest)** 下载。展开页面中的 **Assets**，选择与你设备匹配的安装文件；不要误把 `Source code` 源码压缩包当作安装包。
+优先从 **[GitHub 最新发布页](https://github.com/chen08209/FlClash/releases/latest)** 或 [开发者官网下载区](https://chen08209.github.io/FlClash/zh/#download) 获取安装包。在 GitHub 上展开 **Assets**，按系统和处理器架构选包。`Source code` 是源码压缩包。
 
-截至本文复核时，最新正式版为 [v0.8.96，2026年8月17日发布](https://github.com/chen08209/FlClash/releases/tag/v0.8.96)。后续下载以官方最新发布页为准，下面列出的是这一版本的文件识别方式。
+截至 2026 年 11 月 4 日，最新正式版是 10 月 24 日发布的 [v0.9.2](https://github.com/chen08209/FlClash/releases/tag/v0.9.2)。需要核对文件时，可对照该版本的 [SHA256SUMS](https://github.com/chen08209/FlClash/releases/download/v0.9.2/SHA256SUMS)。本次核对时，flclash.cc 的镜像表仍列出 v0.9.1，下载 v0.9.2 请使用上方入口。
+
+**v0.9.2 的主要变化**包括内核升级至 Mihomo v1.19.33，修复 Android 打开应用时会重载正在运行的 VPN 的问题，并支持分享配置二维码以及手动或在网络切换时清理 DNS 缓存。详见 [v0.9.2 发布说明](https://github.com/chen08209/FlClash/releases/tag/v0.9.2)。
+
+下表按 v0.9.2 的发布附件列出文件名后缀。开发者文档列出的桌面系统要求为 Windows 10 或更高版本、macOS 12 或更高版本。
 
 | 系统或架构 | 文件名中的识别部分 | 怎么选 |
 |---|---|---|
 | 安卓 ARM64 | `android-arm64-v8a.apk` | 常见的现代安卓手机；不确定时查看设备架构 |
 | 安卓 ARM 32 位 | `android-armeabi-v7a.apk` | 使用对应架构的旧设备 |
 | 安卓 x86_64 | `android-x86_64.apk` | 部分模拟器或 x86 设备 |
-| Windows Intel／AMD 64 位 | `windows-amd64-setup.exe` | 常见电脑使用安装版；另有 ZIP 版本 |
-| Windows ARM64 | `windows-arm64-setup.exe` | Windows on ARM 设备 |
+| Windows Intel／AMD 64 位 | `windows-amd64-setup.exe`、`windows-amd64.zip` | 常见电脑，新手优先选择安装版 |
+| Windows ARM64 | `windows-arm64-setup.exe`、`windows-arm64.zip` | Windows on ARM 设备 |
 | macOS Apple 芯片 | `macos-arm64.dmg` | M 系列芯片的 Mac |
 | macOS Intel 芯片 | `macos-amd64.dmg` | Intel Mac；这里的 amd64 表示 x86-64 架构 |
-| Linux x86-64 | `linux-amd64.deb`、`.rpm`、`.AppImage` | 根据发行版选择 |
-| Linux ARM64 | `linux-arm64.deb` | 本次发行版提供 ARM64 DEB 包 |
+| Linux x86-64 | `linux-amd64.deb`、`linux-amd64.rpm`、`linux-amd64.AppImage` | 根据发行版选择 |
+| Linux ARM64 | `linux-arm64.deb`、`linux-arm64.rpm`、`linux-arm64.AppImage` | 64 位 ARM Linux 设备 |
 
 如果你看到“FlClash iOS版”“FlClash会员”或同名下载站，应先回到上述官方仓库核对，区分第三方服务和客户端本身。
 
@@ -94,7 +98,7 @@ sudo apt install ./FlClash-版本号-linux-amd64.deb
 sudo dnf install ./FlClash-版本号-linux-amd64.rpm
 ```
 
-这两条命令按发行版择一使用。如果缺少托盘或快捷键依赖，请按 [官方 Linux 使用说明](https://github.com/chen08209/FlClash/blob/main/README_zh_CN.md#linux)核对；官方给出的 Debian／Ubuntu 依赖为 `libayatana-appindicator3-dev` 和 `libkeybinder-3.0-dev`，其他发行版的包名可能不同。
+这两条命令按发行版择一使用。按照 [v0.9.2 中文说明](https://github.com/chen08209/FlClash/blob/v0.9.2/README_zh_CN.md#下载)，DEB 会自动安装所需依赖。使用 AppImage 或 RPM 时，托盘图标依赖 AyatanaAppIndicator 库，Debian／Ubuntu 的包名为 `libayatana-appindicator3-1`，Fedora 为 `libayatana-appindicator-gtk3`。
 
 ## FlClash怎么导入订阅？
 
@@ -103,13 +107,13 @@ sudo dnf install ./FlClash-版本号-linux-amd64.rpm
 这是没有专用“一键导入 FlClash”按钮时也可以使用的方法。
 
 1. 在服务商后台找到订阅区域，复制适用于 **Clash／Clash Meta／Mihomo** 的配置订阅地址。
-2. 打开 FlClash 的 **“配置”** 页面，点击添加按钮，进入 **“添加配置”**。
-3. 选择 **“URL”**，在 **“从URL导入”** 对话框中粘贴完整地址并提交。
+2. 打开 FlClash 的 **“配置”** 页面，点击 **“添加配置”**。已有配置时，点击 **“+”**。
+3. 选择 **“链接”**，在 **“从链接导入”** 对话框中粘贴完整地址并提交。
 4. 等待配置下载完成，确认列表出现新配置，再选中它作为当前配置。
 5. 进入代理或策略组页面，确认节点已经载入，选择准备使用的节点。
 6. 回到仪表盘启动，并按设备开启系统代理或 VPN。
 
-菜单名称按 [v0.8.96 配置导入实现](https://github.com/chen08209/FlClash/blob/v0.8.96/lib/views/profiles/add.dart)核对。订阅地址通常带有个人访问凭据，请勿公开到评论区、截图或第三方转换网站。
+菜单名称按 [v0.9.2 配置导入实现](https://github.com/chen08209/FlClash/blob/v0.9.2/lib/views/profiles/add.dart)和[简体中文文案](https://github.com/chen08209/FlClash/blob/v0.9.2/arb/intl_zh_CN.arb)核对。订阅地址通常带有个人访问凭据，请勿公开到评论区、截图或第三方转换网站。
 
 **注册邀请链接、官网首页、后台登录地址都不是订阅地址。** 如果导入后出现 HTML、登录提示或 YAML 解析错误，先重新核对复制的地址和后台提供的格式。
 
@@ -118,7 +122,7 @@ sudo dnf install ./FlClash-版本号-linux-amd64.rpm
 “添加配置”还提供 **“文件”** 和 **“二维码”** 入口：
 
 - 已有兼容配置文件：选择“文件”，导入本地 YAML 配置。
-- 后台提供订阅二维码：选择“二维码”，按设备提示扫描或读取图片。
+- 后台提供订阅二维码：选择“二维码”，安卓端进入扫码界面，桌面端选择本地二维码图片。
 - 二维码内容必须是可用配置地址；不能把付款码或注册邀请二维码当成订阅。
 
 本地文件导入不等于建立了远程订阅，后续服务商更换节点时，需要重新获取配置或改用可更新的 URL 订阅。
@@ -151,7 +155,7 @@ sudo dnf install ./FlClash-版本号-linux-amd64.rpm
 
 先启动 FlClash，再开启 **“系统代理”**，让遵循系统代理设置的浏览器和应用使用它。如果某些应用不读取系统代理，可检查 **“虚拟网卡（TUN）”** 是否需要启用。
 
-TUN 用于接收流量，接收后如何分流仍由规则和出站模式决定。桌面端启用虚拟网卡时，请按客户端要求检查管理员或辅助服务权限；不要同时运行多个客户端争用系统代理、端口和虚拟网卡。[FlClash 网络设置](https://github.com/chen08209/FlClash/blob/v0.8.96/lib/views/config/network.dart)
+TUN 用于接收流量，接收后如何分流仍由规则和出站模式决定。桌面端启用虚拟网卡时，请按客户端要求检查管理员或辅助服务权限；不要同时运行多个客户端争用系统代理、端口和虚拟网卡。[FlClash 网络设置](https://github.com/chen08209/FlClash/blob/v0.9.2/lib/views/config/network.dart)
 
 ### 安卓：开启VPN连接
 
@@ -163,7 +167,7 @@ TUN 用于接收流量，接收后如何分流仍由规则和出站模式决定�
 
 ### 如何更新节点列表？
 
-在配置卡片中使用同步入口重新获取远程配置；编辑配置时可开启 **“自动更新”** 并设置更新间隔，界面单位为分钟。套餐到期、订阅地址被重置或服务商删除节点时，自动更新不能恢复账号权限。[配置编辑说明对应源码](https://github.com/chen08209/FlClash/blob/v0.8.96/lib/views/profiles/edit.dart)
+在配置卡片中使用同步入口重新获取远程配置；编辑配置时可开启 **“自动更新”** 并设置更新间隔，界面单位为分钟。套餐到期、订阅地址被重置或服务商删除节点时，自动更新不能恢复账号权限。[配置编辑说明对应源码](https://github.com/chen08209/FlClash/blob/v0.9.2/lib/views/profiles/edit.dart)
 
 更新订阅和升级 FlClash 是两件事：前者更新服务商配置，后者更新客户端。升级前先保存配置，再从官方发布页获取匹配系统的版本。
 
@@ -171,7 +175,7 @@ TUN 用于接收流量，接收后如何分流仍由规则和出站模式决定�
 
 进入 **“备份与恢复”**，可以选择本地文件备份，也可以绑定自己的 WebDAV 服务。需要远程备份时，填写服务地址、账号和密码，确认连通后再备份；另一设备安装 FlClash 后，从相同位置恢复。
 
-恢复前先备份目标设备现有数据，并确认恢复范围。安卓 VPN 权限与电脑系统代理设置需要在各设备上分别核对。备份文件可能包含订阅凭据，应放在自己控制的存储位置。[备份与恢复功能](https://github.com/chen08209/FlClash/blob/v0.8.96/lib/views/backup_and_restore.dart)
+恢复前先备份目标设备现有数据，并确认恢复范围。安卓 VPN 权限与电脑系统代理设置需要在各设备上分别核对。备份文件可能包含订阅凭据，应放在自己控制的存储位置。[备份与恢复功能](https://github.com/chen08209/FlClash/blob/v0.9.2/lib/views/backup_and_restore.dart)
 
 ## FlClash常见问题与排查顺序
 
@@ -202,7 +206,7 @@ FlClash 客户端开源免费；节点、流量与套餐由你使用的服务商
 | 已经有一款运行正常，只想更换机场 | 先更新订阅，无需仅为换机场而更换客户端 |
 | iPhone 或 iPad | [Shadowrocket 教程](/posts/shadowrocket-guide-2026/) |
 
-两款客户端都采用 Mihomo 体系；具体协议与配置兼容性仍取决于所带内核版本。FlClash 也提供配置覆写功能，不能简单理解成“只能导入订阅的精简版”。选择时看设备、配置需求和操作习惯，不用 GitHub 星标数判断连接速度。[FlClash 配置覆写](https://github.com/chen08209/FlClash/tree/v0.8.96/lib/views/profiles/overwrite)、[Clash Verge Rev 功能介绍](https://github.com/clash-verge-rev/clash-verge-rev#features)
+两款客户端都采用 Mihomo 体系，具体协议与配置兼容性取决于各自的内核版本。FlClash 提供常规设置覆写功能，选择时可比较设备支持、配置需求和操作习惯。[FlClash 常规设置覆写](https://github.com/chen08209/FlClash/blob/v0.9.2/lib/views/config/general/overrides.dart) · [Clash Verge Rev 功能介绍](https://github.com/clash-verge-rev/clash-verge-rev#features)
 
 ## 相关阅读
 

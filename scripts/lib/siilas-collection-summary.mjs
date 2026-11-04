@@ -271,7 +271,11 @@ export const syncSiilasCollectionArticle = (markdown, collection, snapshot) => {
   const dateModified = getSiilasArticleDateModified(markdown, snapshot.receivedAt)
   let next = syncEvidenceColumn(markdown, collection, snapshot, field)
   next = replaceBlock(next, 'siilas-page-updated', field === 'main'
-    ? `**页面更新：${dateLabel(dateModified)}。**`
+    ? [
+        `**页面更新：${dateLabel(dateModified)}。**`,
+        '<div id="推荐原则与商业披露"></div>',
+        `<small>来源：[Siilas](${snapshot.source.archiveUrl})，与本站同一站长运营。${dateLabel(snapshot.receivedAt)}接收，最新样本${dateLabel(snapshot.latestTestAt ?? '未记录')}。部分官网链接含推广佣金。月更不代表重测或全量核价。</small>`,
+      ].join('\n\n')
     : `更新时间：${dateLabel(dateModified)}（同步 Siilas 接收快照；各地区实际测试日期见下表，本次没有新增 yp7.net 现场测试）`)
   next = replaceBlock(next, 'siilas-collection-evidence', field === 'main'
     ? renderRecommendationEvidence(collection, snapshot) : renderScenarioEvidence(collection, snapshot, field))
